@@ -1,0 +1,46 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+*:focus { outline: 0; }
+
+body { line-height: 1; color: #000; background: #fff; }
+
+ol, ul { list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+a img { border: none; }
+
+@font-face { font-family: 'MolotRegular'; src: url('../assets/Molot.eot'); src: local('../assets/Molot'), local('../assets/Molot'), url('../assets/Molot.woff') format('woff'), url('../assets/Molot.ttf') format('truetype'), url('../assets/Molot.svg#Molot') format('svg'); }
+
+@font-face { font-family: 'Lane-UpperRegular'; src: url('../assets/LANEUP__.eot'); src: local('Lane - Upper'), local('Lane-Upper'), url('../assets/LANEUP__.woff') format('woff'), url('../assets/LANEUP__.ttf') format('truetype'), url('../assets/LANEUP__.svg#Lane-Upper') format('svg'); }
+
+h1, .focus { font-family: 'MolotRegular', Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
+
+h1 { font-size: 100px; line-height: 120px; text-align: center; }
+h1:hover { color: #e16734; }
+
+body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px 'Lane-UpperRegular', "Helvetica Neue", helvetica, arial, sans-serif; text-transform: uppercase; }
+
+a { color: #e3d7bf; text-decoration: none; }
+a:visited { color: #e3d7bf; }
+a:hover, a:focus { color: #e16734; }
+
+b { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
+b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: -1em; }
+b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; left: 2em; top: 0; }
+b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
+
+#footer { width: 960px; margin: 0 auto; position: relative; text-align: center; }
+
+#body { font-size: 2em; padding: 2em 0; }
+#body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }
+#body .focus { font-size: 2em; margin-right: 0.2em; }
+
+#footer p { font-size: 1.6em; line-height: 2; }
+#footer .focus { font-size: 1.3em; margin-right: 1em; }
