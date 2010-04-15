@@ -1,115 +1,99 @@
 @import compass/reset.sass
 
 @font-face
-  font-family: 'MolotRegular'
+  font-family: "MolotRegular"
   src: url('../assets/Molot.eot')
-  src: local('../assets/Molot'), local('../assets/Molot'), url('../assets/Molot.woff') format('woff'), url('../assets/Molot.ttf') format('truetype'), url('../assets/Molot.svg#Molot') format('svg')
+  src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg")
+
 
 @font-face
-  font-family: 'Lane-UpperRegular'
+  font-family: "Lane-UpperRegular"
   src: url('../assets/LANEUP__.eot')
-  src: local('Lane - Upper'), local('Lane-Upper'), url('../assets/LANEUP__.woff') format('woff'), url('../assets/LANEUP__.ttf') format('truetype'), url('../assets/LANEUP__.svg#Lane-Upper') format('svg')
-  	
-  	
+  src: local("Lane - Upper"), local("Lane-Upper"), url('../assets/LANEUP__.woff') format("woff"), url('../assets/LANEUP__.ttf') format("truetype"), url('../assets/LANEUP__.svg#Lane-Upper') format("svg")
+
+
 h1,
 .focus
-  font-family: 'MolotRegular', Arial, sans-serif     
-  text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871                        
+  font-family: "MolotRegular", Arial, sans-serif
+  text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871
 
 h1
   font-size: 100px
-  line-height: 120px  
-  text-align: center  
-  
+  line-height: 120px
+  text-align: center
   &:hover
-    color: #e16734  
-  
+    color: #e16734
+
 body
   background: #232927
   color: #e3d7bf
   text-align: center
-  font: 12px/18px 'Lane-UpperRegular', "Helvetica Neue", helvetica, arial, sans-serif                                                                
-  text-transform: uppercase  
-  
-a
-  color: #e3d7bf  
-  text-decoration: none
+  font: 12px / 18px "Lane-UpperRegular", "Helvetica Neue", helvetica, arial, sans-serif
+  text-transform: uppercase
 
-  &:visited       
-    color: #e3d7bf    
-  
+a
+  color: #e3d7bf
+  text-decoration: none
+  &:visited
+    color: #e3d7bf
   &:hover,
   &:focus
     color: #e16734
-    
+
 b
   display: block
   position: fixed
   top: 50%
   left: -1em
   width: 1em
-  height: 100% 
+  height: 100%
   z-index: -1
-  background = darken(#232927, 1%)
-  -webkit-transform: scale(1.5) rotate(-45deg)     
-  -webkit-transform-origin: 20% 0%  
-  -moz-transform: scale(1.5) rotate(-45deg)     
+  background: darken(#232927, 1%)
+  -webkit-transform: scale(1.5) rotate(-45deg)
+  -webkit-transform-origin: 20% 0%
+  -moz-transform: scale(1.5) rotate(-45deg)
   -moz-transform-origin: 20% 0%
-  
-  border = 1px "dotted" darken(#232927, 2%)
-  
+  border: 1px dotted darken(#232927, 2%)
   &.border-b
-    -webkit-transform: scale(1.5) rotate(45deg)     
-    -webkit-transform-origin: 80% 0%  
-    -moz-transform: scale(1.5) rotate(45deg)     
-    -moz-transform-origin: 80% 0% 
-    
+    -webkit-transform: scale(1.5) rotate(45deg)
+    -webkit-transform-origin: 80% 0%
+    -moz-transform: scale(1.5) rotate(45deg)
+    -moz-transform-origin: 80% 0%
     left: auto
-    right: -1em 
-    
+    right: -1em
   &.border-c
-    -webkit-transform: scale(1.5) rotate(-45deg)     
-    -webkit-transform-origin: 20% 0%  
-    -moz-transform: scale(1.5) rotate(-45deg)     
-    -moz-transform-origin: 20% 0% 
-    
-    left: 2em  
+    -webkit-transform: scale(1.5) rotate(-45deg)
+    -webkit-transform-origin: 20% 0%
+    -moz-transform: scale(1.5) rotate(-45deg)
+    -moz-transform-origin: 20% 0%
+    left: 2em
     top: 0
-
   &.border-d
-    -webkit-transform: scale(1.5) rotate(45deg)     
-    -webkit-transform-origin: 80% 0%  
-    -moz-transform: scale(1.5) rotate(45deg)     
-    -moz-transform-origin: 80% 0%  
-    
+    -webkit-transform: scale(1.5) rotate(45deg)
+    -webkit-transform-origin: 80% 0%
+    -moz-transform: scale(1.5) rotate(45deg)
+    -moz-transform-origin: 80% 0%
     left: auto
-    right: 2em  
+    right: 2em
     top: 0
-    
-#footer
-  width: 960px
-  margin: 0 auto
-  position: relative
-  text-align: center
-        
-#body
-  font-size: 2em 
-  padding: 2em 0
 
+#body
+  font-size: 2em
+  padding: 2em 0
   p
-    border-bottom = 5px "dotted" darken(#232927, 2%)
+    border-bottom: 5px dotted darken(#232927, 2%)
     padding-bottom: 0.5em
-    text-shadow = 1px 1px 0px darken(#232927, 20%)  
-    
+    text-shadow: 1px 1px 0px darken(#232927, 20%)
   .focus
     font-size: 2em
-    margin-right: 0.2em  
-    
-#footer             
+    margin-right: 0.2em
+
+#footer
+  position: relative
+  text-align: center
   p
     font-size: 1.6em
-    line-height: 2  
-  
+    line-height: 2
   .focus
     font-size: 1.3em
     margin-right: 1em
