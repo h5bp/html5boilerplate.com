@@ -18,18 +18,17 @@ a img { border: none; }
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 
-@font-face { font-family: "Lane-UpperRegular"; src: url('../assets/LANEUP__.eot'); src: local("Lane - Upper"), local("Lane-Upper"), url('../assets/LANEUP__.woff') format("woff"), url('../assets/LANEUP__.ttf') format("truetype"), url('../assets/LANEUP__.svg#Lane-Upper') format("svg"); }
 
-h1, .focus { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
+h1, em, #body h3 { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
 
 h1 { font-size: 100px; line-height: 120px; text-align: center; }
 h1:hover { color: #e16734; }
 
-body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Lane-UpperRegular", "Helvetica Neue", helvetica, arial, sans-serif; text-transform: uppercase; }
+body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", "Gill Sans", HelveticaNeue, Arial, "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
 
 a { color: #e3d7bf; text-decoration: none; }
 a:visited { color: #e3d7bf; }
-a:hover, a:focus { color: #e16734; }
+a:hover, a:focus, #body p a { color: #e16734; }
 
 b { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
 b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: -1em; }
@@ -37,9 +36,16 @@ b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-ori
 b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
 #body { font-size: 2em; padding: 2em 0; }
-#body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }
-#body .focus { font-size: 2em; margin-right: 0.2em; }
-
+#body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
+#body i, #body h3, #body li { margin:0 auto; width: 70%; display: block; font-style: normal; }
+::-moz-selection, ::selection { text-shadow: none;}
+#body ul { text-align: left; }  
+#body em { margin-right: 0.2em; }
+#body em, #body h3 { font-size: 2em; }
+#body h3 { margin:1em auto 0.5em auto;}  
+#body li { font-size: 0.8em; line-height: 2; text-transform: none; width: 30em; white-space: nowrap; }
+#body li:before { content: "★"; padding-right: 0.5em; }
+#body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }
 #footer { position: relative; text-align: center; }
 #footer p { font-size: 1.6em; line-height: 2; }
 #footer .focus { font-size: 1.3em; margin-right: 1em; }
