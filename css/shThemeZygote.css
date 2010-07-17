@@ -181,4 +181,11 @@
 
 .syntaxhighlighter .comments a:hover { 
     	border-bottom: 1px solid #44A1DB;
-    }
+}
+
+@media screen and (max-device-width: 480px) {
+  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */             
+  .syntaxhighlighter .lines
+  { width: 90% !important; margin: 0 auto !important; }
+  html { -webkit-text-size-adjust:none; } /* Prevent iPhone from adjusting font size */
+}

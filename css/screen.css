@@ -21,7 +21,7 @@ a img { border: none; }
 
 h1, em, #body h3 { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
 
-h1 { font-size: 100px; line-height: 120px; text-align: center; }
+h1 { font-size: 6em; line-height: 1.5; text-align: center; }
 h1:hover { color: #e16734; }
 
 body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", "Gill Sans", HelveticaNeue, Arial, "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
@@ -35,17 +35,52 @@ b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; left: 2em; top: 0; }
 b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
-#body { font-size: 2em; padding: 2em 0; }
+#body { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
 #body i, #body h3, #body li { margin:0 auto; width: 70%; display: block; font-style: normal; }
 ::-moz-selection, ::selection { text-shadow: none;}
-#body ul { text-align: left; }  
+#body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3 { font-size: 2em; }
-#body h3 { margin:1em auto 0.5em auto;}  
-#body li { font-size: 0.8em; line-height: 2; text-transform: none; width: 35em; white-space: nowrap; }
+#body h3 { margin: 1em auto 0.5em auto; }  
+#body li { line-height: 2; text-transform: none; width: 35em; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }
 #footer { position: relative; text-align: center; padding: 1em 0; }
-#footer p { font-size: 1.6em; line-height: 2; }
-#footer .focus { font-size: 1.3em; margin-right: 1em; }
+#footer p { font-size: 1em; line-height: 3; }
+#footer .focus { font-size: 1.3em; margin-right: 1em; }  
+
+@media print {
+	* { background:transparent !important; color:#444 !important; text-shadow:none; }
+	a, a:visited { color:#444 !important; text-decoration:underline; }
+	a:after { content:" (" attr(href) ")"; } 
+	abbr:after { content: " (" attr(title) ")"; }
+	pre, blockquote { border:1px solid #999; page-break-inside:avoid; }
+
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans:3; widows:3; }
+	h2, h3{ page-break-after:avoid; }
+}
+
+
+
+
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+}
+
+@media screen and (max-device-width: 480px) {
+  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */  
+  h1 { font-size: 5em; }           
+  #body { font-size: 1em; }  
+  #body em, #body h3 { font-size: 1.5em; }
+  #body li { width: 300px ; }
+  html { -webkit-text-size-adjust:none; } /* Prevent iPhone from adjusting font size */
+}
+
+

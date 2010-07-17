@@ -202,6 +202,8 @@ d="M41 0v367l483 657v49h-413l-70 182v179h995v-369l-485 -657v-50h504v-358h-1014z"
     <glyph glyph-name="guillemotleft" unicode="&#xab;" horiz-adv-x="1021" 
 d="M940 1022l-192 -336l192 -338v-94h-240l-219 367v129l219 366h240v-94zM500 1022l-195 -336l195 -338v-94h-242l-217 367v129l217 366h242v-94z" />
     <glyph glyph-name="guillemotright" unicode="&#xbb;" horiz-adv-x="1024" 
+d="M82 1022v94h240l219 -366v-129l-219 -367h-240v94l192 338zM524 1022v94h240l219 -366v-129l-219 -367h-240v94l193 338z" />   
+    <glyph glyph-name="star" unicode="&#x2605;" horiz-adv-x="1024" 
 d="M82 1022v94h240l219 -366v-129l-219 -367h-240v94l192 338zM524 1022v94h240l219 -366v-129l-219 -367h-240v94l193 338z" />
   </font>
 </defs></svg>
