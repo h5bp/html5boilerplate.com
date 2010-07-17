@@ -73,12 +73,9 @@
 				<li>Conditional-classes on &lt;body&gt; to detect IE version.</li>
 				<li>HTML5 enabled and ready.</li>
 			</ul>
-			
-			<pre class="brush: html">
-				 &lt;html&gt;
-				 	&lt;body&gt;Rawk a bye baby&lt;/body&gt;
-				 &lt;/html&gt;
-			</pre>
+		
+			<h3 id="thesource">Walk though it with me, now</h3>
+		
 			<div class="recos"><!--START CLASS recos-->
 				<h3>Make it even better!</h3>
 				<ul>
@@ -104,18 +101,22 @@
   	];
   	
     var local = [
-     '/template/index.html',
-     '/template/css/style.css',
-     '/template/js/script.js'
+     './template/index.html',
+     './template/css/style.css',
+     './template/js/script.js'
     ];
 
 	
 		function mycallback(data,status,xhr,fileext){
-		  	  console.log(arguments);
+		  	  //console.log(arguments);
       
 	    data = data.replace(/</g,'&lt;')
 	
-		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden').appendTo('#body');
+		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
+		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
+		  elem.insertAfter(point);
+		  
+		  
 		  setTimeout(function(){
 		    console.log(  elem[0] )
 		    SyntaxHighlighter.highlight(undefined, elem[0]);
