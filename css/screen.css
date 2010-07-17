@@ -43,7 +43,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #body em { margin-right: 0.2em; }
 #body em, #body h3 { font-size: 2em; }
 #body h3 { margin:1em auto 0.5em auto;}  
-#body li { font-size: 0.8em; line-height: 2; text-transform: capitalize; width: 30em; white-space: nowrap; }
+#body li { font-size: 0.8em; line-height: 2; text-transform: none; width: 30em; white-space: nowrap; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }
 #footer { position: relative; text-align: center; }
