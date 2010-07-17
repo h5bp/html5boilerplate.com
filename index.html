@@ -107,42 +107,47 @@
     ];
 
 	
-		function mycallback(data,status,xhr,fileext){
+		function mycallback(data,status,xhr,filename){
 		  	  //console.log(arguments);
       
 	    data = data.replace(/</g,'&lt;')
-	
+	    
+	    var fileext = filename.split('.').slice(-1)[0];
 		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
 		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
+		  
 		  elem.insertAfter(point);
-		  
-		  
-		  setTimeout(function(){
-		    console.log(  elem[0] )
-		    SyntaxHighlighter.highlight(undefined, elem[0]);
-		  },30)
+		  $('<h4>').text(filename).insertAfter(point);
+
+	    SyntaxHighlighter.highlight(undefined, elem[0]);
+
 		}
 		
-		$.each(local,function(k,v){
+		$.each(local,function(k,path){
   		$.ajax({
   		  method: 'GET',
   		  dataType : 'text',
   		  success : function(data,status,xhr){
   		    mycallback(data,status,xhr,
-  		              v.split('.').slice(-1))
+  		              path.split('/').slice(-1)[0])
   		  },
-  		  url : v
+  		  url : path
   		})
 		});
 		
-		//function initSH(){
-  	  	SyntaxHighlighter.config.tagName = 'textarea';
-        SyntaxHighlighter.defaults['wrap-lines'] = true; // maybe change this
-        SyntaxHighlighter.defaults['auto-links'] = false;
-        SyntaxHighlighter.defaults['toolbar'] = false;
-        SyntaxHighlighter.defaults['tab-size'] = 4;
-        //SyntaxHighlighter.all();
-    //}
+
+  	SyntaxHighlighter.config.tagName = 'textarea';
+    SyntaxHighlighter.defaults['wrap-lines'] = true; // maybe change this
+    SyntaxHighlighter.defaults['auto-links'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.defaults['tab-size'] = 4;
+
 	</script>
+	<style>
+	  .syntaxhighlighter, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody {
+	    font-size: 15px !important;
+	  }
+	</style>
+	
 </body>
 </html>
