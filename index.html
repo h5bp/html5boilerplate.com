@@ -89,7 +89,7 @@
 
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
+  <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
 	<script type="text/javascript" src="js/syntax.js"></script>
 	
 	<script  >
@@ -110,7 +110,8 @@
 		function mycallback(data,status,xhr,filename){
 		  	  //console.log(arguments);
       
-	    data = data.replace(/</g,'&lt;')
+	    data = data.replace(/</g,'&lt;');
+	   
 	    
 	    var fileext = filename.split('.').slice(-1)[0];
 		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
@@ -119,7 +120,19 @@
 		  elem.insertAfter(point);
 		  $('<h4>').text(filename).insertAfter(point);
 
-	    SyntaxHighlighter.highlight(undefined, elem[0]);
+	    var x = SyntaxHighlighter.highlight(undefined, elem[0]);
+	    
+	    console.log(x,'comments', $('code.comments').length  )
+	    
+	    if (mycallback.countdown === undefined) mycallback.countdown = local.length;
+
+      mycallback.countdown--;
+      console.log( mycallback.countdown );
+	    (mycallback.countdown === 0) && $('code.comments').each(function(){
+	      $(this).html(  linkify( this.innerHTML ) );
+	    })
+    
+
 
 		}
 		

@@ -171,3 +171,14 @@
 { 
 	color: #FFAA3E !important; 
 }
+
+
+.syntaxhighlighter .comments a
+{ 
+	color: #44A1DB !important;
+}
+
+
+.syntaxhighlighter .comments a:hover { 
+    	border-bottom: 1px solid #44A1DB;
+    }
