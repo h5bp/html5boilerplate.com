@@ -1,0 +1,91 @@
+
+# http://hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/
+# Disabled. Uncomment to serve cross-domain ajax requests
+#<IfModule mod_headers.c>
+#  Header set Access-Control-Allow-Origin "*"
+#</IfModule>
+
+
+
+
+# allow access from all domains for webfonts
+# alternatively you could only whitelist
+#   your subdomains like "sub.domain.com"
+
+<FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+
+# Proper svg serving. Required for svg webfonts on iPad
+# http://twitter.com/FontSquirrel/status/14855840545
+AddType image/svg+xml svg svgz 
+
+
+
+# allow concatenation from within specific js and css files 
+
+# e.g. Inside of script.combined.js you could have
+#   <!--#include file="jquery-1.4.2.js" -->
+#   <!--#include file="jquery.idletimer.js" -->
+# and they would be included into this single file
+
+<FilesMatch "\.combined\.js">
+        Options +Includes
+        SetOutputFilter INCLUDES
+</FilesMatch>
+<FilesMatch "\.combined\.css">
+        Options +Includes
+        SetOutputFilter INCLUDES
+</FilesMatch>
+
+
+
+# gzip compression.
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript application/javascript application/json 
+
+# html, xml, css, and js above. webfonts and svg below.
+<FilesMatch "\.(ttf|otf|woff|eot|svg|svgz)$" >
+    SetOutputFilter DEFLATE
+</FilesMatch>
+
+
+
+
+# these are pretty far-future expires headers
+# they assume you control versioning with something like
+#   <script src="application.js?20100608">
+# if you don't do that, lower the css and js to 
+#   "access plus 1 week" or so
+
+<IfModule mod_expires.c>
+ExpiresActive On
+
+# images
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+
+# favicon.ico
+ExpiresByType image/vnd.microsoft.icon "access plus 1 week" 
+
+# css and javascript
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/x-javascript "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+</IfModule>
+
+
+
+# Allow cookies to be set from iframes (for IE only)
+# If needed, uncomment and specify a path or regex in the Location directive
+
+# <IfModule mod_headers.c>
+#   <Location />
+#     Header set P3P "policyref=\"/w3c/p3p.xml\", CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+#   </Location>
+# </IfModule>
+

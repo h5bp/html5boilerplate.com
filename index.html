@@ -103,7 +103,13 @@
     var local = [
      './template/index.html',
      './template/css/style.css',
-     './template/js/script.js'
+     './template/css/mobile.css',
+     './template/js/script.js',
+     './template/js/plugins.js',
+     './template/crossdomain.xml',
+     './template/robots.txt?.xml',
+     './template/htaccess.txt?.xml',
+     
     ];
 
 	
@@ -118,7 +124,7 @@
 		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
 		  
 		  elem.insertAfter(point);
-		  $('<h4>').text(filename).insertAfter(point);
+		  $('<h4>').text(filename.replace('?.xml','')).insertAfter(point);
 
 	    var x = SyntaxHighlighter.highlight(undefined, elem[0]);
 	    
@@ -140,6 +146,7 @@
   		$.ajax({
   		  method: 'GET',
   		  dataType : 'text',
+  		  cache : false,
   		  success : function(data,status,xhr){
   		    mycallback(data,status,xhr,
   		              path.split('/').slice(-1)[0])
