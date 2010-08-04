@@ -80,6 +80,7 @@
 				<h3>Make it even better!</h3>
 				<ul>
 					<li>Use <code>rel="prefetch"</code> for documents to pre-fetch.</li>
+					<li>Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.
 				</ul> 
 			</div><!--END CLASS recos-->			
     </div>  
@@ -128,15 +129,21 @@
 
 	    var x = SyntaxHighlighter.highlight(undefined, elem[0]);
 	    
-	    console.log(x,'comments', $('code.comments').length  )
 	    
 	    if (mycallback.countdown === undefined) mycallback.countdown = local.length;
 
       mycallback.countdown--;
-      console.log( mycallback.countdown );
-	    (mycallback.countdown === 0) && $('code.comments').each(function(){
-	      $(this).html(  linkify( this.innerHTML ) );
-	    })
+      
+	    if (mycallback.countdown === 0){ 
+	      
+	      // not sure why the movile viewport block doesnt get commented but.. it doesnt
+	      var viewport = $('code.plain:contains(Mobile Viewport Fix)').closest('div.line');
+	      viewport.nextAll().slice(0,5).add(viewport).find('.plain').toggleClass('plain comments');
+	      
+	      $('code.comments').each(function(){
+	        $(this).html(  linkify( this.innerHTML ) );
+	      })
+      }
     
 
 
