@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- http://www.phpied.com/conditional-comments-block-downloads/ -->
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
   <!--[if IE]><![endif]-->
 
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
@@ -15,7 +15,7 @@
   <meta name="author" content="">
 
   <!--  Mobile Viewport Fix
-        http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag 
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
   device-width : Occupy full width of the screen in its current orientation
   initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
   maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
@@ -35,12 +35,12 @@
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
 
  
-  <!-- All JavaScript at the bottom, except for Modernizr. -->
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/modernizr-1.5.min.js"></script>
 
 </head>
 
-<!-- http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
@@ -87,5 +87,18 @@
   <!-- end profiling code -->
 
 
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
 </body>
 </html>
