@@ -1,15 +1,121 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, figure, footer, header, 
+hgroup, nav, section { display:block; }
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+body { font:13px arial,helvetica,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
+
+table { font-size:inherit; font:100%; }
+
+select, input, textarea { font:99% arial,helvetica,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; }
+
+code, pre { font-family: "Courier New", monospace, serif; font-size: 1em; }
+                                                                         
+body, select, input, textarea { color:#444; }
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+                                                          
+a:active { outline: none; }
+
+a, a:active, a:visited { color:#607890; }
+a:hover { color:#036; }
+
+ul { margin-left:30px; }
+ol { margin-left:30px; list-style-type: decimal; }
+
+small { font-size:85%; }
+strong, th { font-weight: bold; }
+
+td, td img { vertical-align:top; } 
+
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+pre { 
+  padding: 15px;
+ white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+                                               
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+html { overflow-y: scroll; }
+
+button {  width: auto; overflow: visible; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; } 
+
+
+
+ 
 h1, h2, h3, h4, h5 { font-weight: normal;}
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 
 
-h1, em, #body h3, #disqus_thread h3, h4 { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
+h1, em, #body h3, #disqus_thread h3, h4 { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
+
 h4, #body h4 em { font-size: 25px; margin: 25px 0 10px;}
+h4 em { font-style: normal; }
 
 h1 { font-size: 6em; line-height: 1.5; text-align: center; cursor: default; }
 h1:hover { color: #e16734; }
 
-body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", "Gill Sans", HelveticaNeue, Arial, "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
+body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", HelveticaNeue, Helvetica, Arial, "Gill Sans", "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
 
 a, a:visited { color: #e3d7bf; text-decoration: none; } 
 #body ul a, a:hover, a:focus, #body p a { color: #e16734; }
@@ -20,16 +126,13 @@ b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-ori
 b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
 #body, #disqus_thread { font-size: 1.5em; padding: 2em 0; }
-#body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
+#body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; }                 
 #header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
 #header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 15px; line-height: 1.4; text-align: left;}  
 #header h2 { font-size: 1.5em; margin-bottom: 1em; }
-h2 + p {
-  font-size: 14px;
-  white-space: nowrap;
-}
+h2 + p { font-size: 14px; white-space: nowrap; } 
 
-::-moz-selection, ::selection { text-shadow: none;}   
+                                                
 #body .dwn a { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
 #body .dwn a:before, #body .dwn a:after { position: absolute; top: 0; left: 0; height: 0; border: 1em solid #000; content: ""; border-color: transparent transparent transparent #232927; }   
 #body .dwn a:after { left: auto; right: 0; border-color: transparent #232927 transparent transparent;}
@@ -37,15 +140,19 @@ h2 + p {
 #body .dwn i { font-size: 0.8em; display: inline; text-transform: none; }    
 .dwn a:visited { color: #fff; }
 p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
-#body p.dwn + p a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }
+#body p.dwn + p a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }   
+
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3, #disqus_thread h3 { font-size: 2em; }
 #body h3, #disqus_thread h3 { margin: 1em auto 0.5em auto; }  
+#body i { padding: 1em 0; }  
+
 #body li { line-height: 2; width: 40em; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }  
 #body li:first-child:after { border-bottom: 0; }
+
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
 #footer .focus { font-size: 1.5em; margin-right: 1em; }  
@@ -59,41 +166,51 @@ p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #footer a { white-space: nowrap; } 
 #footer li:after { content: " ★"; padding-left: 1em;}
 #footer li:last-child:after { content: ""; }  
+
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { font-size: 1.2em; } 
 #disqus_thread li:after { border: 0; }
-#body i { padding: 1em 0; }
+
 @media print {
-	* { background:transparent !important; color:#444 !important; text-shadow:none; }
-	a, a:visited { color:#444 !important; text-decoration:underline; }
-	a:after { content:" (" attr(href) ")"; } 
-	abbr:after { content: " (" attr(title) ")"; }
-	pre, blockquote { border:1px solid #999; page-break-inside:avoid; }
+  * { background: transparent !important; color: #444 !important; text-shadow: none; }
 
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans:3; widows:3; }
-	h2, h3{ page-break-after:avoid; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+
+  a:after { content: " (" attr(href) ")"; } 
+
+  abbr:after { content: " (" attr(title) ")"; }
+  
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  
+  img { page-break-inside: avoid; }
+
+  @page { margin: 0.5cm; }
+
+  p, h2, h3 { orphans: 3; widows: 3; }
+
+  h2, h3{ page-break-after: avoid; }
 }
 
 
-
-
-
-@media all and (orientation:portrait) { 
-  /* Style adjustments for portrait mode goes here */
+@media all and (orientation:portrait) {                
+  
 }
 
-@media all and (orientation:landscape) { 
-  /* Style adjustments for landscape mode goes here */
+@media all and (orientation:landscape) {               
+  
 }
 
 @media screen and (max-device-width: 480px) {
-  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */  
+  /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
   h1 { font-size: 5em; }           
   #body { font-size: 1em; }  
   #body em, #body h3 { font-size: 1.5em; }
   #body li { width: 300px ; }
-  html { -webkit-text-size-adjust:none; } /* Prevent iPhone from adjusting font size */
 }
+
+
 
 
