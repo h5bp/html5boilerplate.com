@@ -1,27 +1,11 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
-
-*:focus { outline: 0; }
-
-body { line-height: 1; color: black; background: white; }
-
-ol, ul { list-style: none; }
-
-/* tables still need 'cellspacing="0"' in the markup */
-table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: "" ""; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; }
-
-a img { border: none; }
+h1, h2, h3, h4, h5 { font-weight: normal;}
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 
 
 h1, em, #body h3 { font-family: "MolotRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }
 
-h1 { font-size: 6em; line-height: 1.5; text-align: center; }
+h1 { font-size: 6em; line-height: 1.5; text-align: center; cursor: default; }
 h1:hover { color: #e16734; }
 
 body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", "Gill Sans", HelveticaNeue, Arial, "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
@@ -38,7 +22,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #body { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
 #header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 70%; display: block; font-style: normal; }
-#header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 1.5em; }  
+#header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 15px; line-height: 1.4;}  
 #header h2 { font-size: 1.5em; margin-bottom: 1em; }
 ::-moz-selection, ::selection { text-shadow: none;}   
 #body .dwn a { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
