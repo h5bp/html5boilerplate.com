@@ -60,8 +60,8 @@
     </div>     
 
     <div id="body">   	
-			<p><i><em>Download</em> For <a href="#">Production</a>  or <a href="#">Learning</a></i></p> 
-			<p><i><em>Develop</em> <a href="#">the source</a> for more superpowers! </i></p>
+			<p><i><em>Download</em> For <a href="#" onclick="alert('Coming soon!')">Production</a>  or <a href="http://github.com/paulirish/html5-boilerplate">Learning</a></i></p> 
+			<p><i><em>Develop</em> <a href="http://github.com/paulirish/html5-boilerplate">the source</a> for more superpowers! </i></p>
 			<h3>Why it is awesome</h3>
 			<ul>
 			  <li>Cross-browser compatible (IE6, yeah we got that.)
@@ -81,8 +81,6 @@
 				<li>IE6 pngfix baked in.</li>
 				<li>.htaccess file that allows proper use of HTML5 features and faster page load</li>
 				<li>CDN hosted jQuery with local fallback failsafe.</li>
-				<li>Conditional-classes on &lt;body&gt; to detect IE version.</li>
-				<li>HTML5 enabled and ready.</li>
 			</ul>
 		
 			<h3 id="thesource">Walk though it with me, now</h3>
@@ -106,7 +104,7 @@
     <div id="footer">
 			<p><em class="focus">Brought to you by</em> <a href="http://paulirish.com">Paul Irish</a> &#x2605; <a href="http://nimbupani.com">Divya Manian</a></p>
 			<p>It would not have been possible without the efforts of these superheroes:</p>
-			<ul><li><a href="www.phpied.com">Stoyan Stefanov</a></li><li><a href="#">Eric Meyer</a></li><li><a href="#">Richard Clark</a></li><li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li><li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li><li><a href="http://timvandamme.com">Tim Van Damme</a></li><li><a href="http://www.pathf.com/blogs/author/brian-dillard/">Brian Dillard</a></li><li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li><li><a href="http://miketaylr.com">Mike Taylor</a></li><li><a href="http://iecss.com">Jonathan Neal</a></li><li><a href="http://camendesign.com">Kroc Camen</a></li><li><a href="http://fontsquirrel.com">Ethan Dunham</a></li><li><a href="http://code.flickr.com/blog/">Flickr Developer Blog</a></li><li><a href="http://www.viget.com/inspire/">Viget Inspire</a></li></ul>
+			<ul><li><a href="www.phpied.com">Stoyan Stefanov</a></li><li><a href="#">Eric Meyer</a></li><li><a href="#">Richard Clark</a></li><li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li><li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li><li><a href="http://timvandamme.com">Tim Van Damme</a></li><li><a href="http://www.pathf.com/blogs/author/brian-dillard/">Brian Dillard</a></li><li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li><li><a href="http://miketaylr.com">Mike Taylor</a></li><li><a href="http://iecss.com">Jonathan Neal</a></li><li><a href="http://camendesign.com">Kroc Camen</a></li><li><a href="http://fontsquirrel.com">Ethan Dunham</a></li><li><a href="http://code.flickr.com/blog/">Flickr</a></li><li><a href="http://www.viget.com/inspire/">Viget</a></li></ul>
     </div> 
 
   </div>
@@ -125,7 +123,7 @@
     var local = [
      './template/index.html',
      './template/css/style.css',
-     './template/css/mobile.css',
+     './template/css/handheld.css',
      './template/js/script.js',
      './template/js/plugins.js',
      './template/crossdomain.xml',
@@ -146,7 +144,7 @@
 		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
 		  
 		  elem.insertAfter(point);
-		  $('<h4>').text(filename.replace('?.xml','')).insertAfter(point);
+		  $('<h4>').text(filename.replace('?.xml','').replace('htaccess.txt','.htaccess')).insertAfter(point);
 
 	    var x = SyntaxHighlighter.highlight(undefined, elem[0]);
 	    
