@@ -69,20 +69,24 @@
 			  <li>HTML5 ready. Use the new tags with certainty.
 			  <li>Optimal caching and compression rules for grade-A performance</li>
         <li>Best practice site configuration defaults</li>
-        <li>Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)</li>
         <li>Mobile browser optimizations</li>
         <li>Progressive enhancement graceful degradation &hellip; yeah yeah we got that</li>
         <li>IE specific classes for maximum cross-browser control</li>
         <li>Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.</li>
+      </ul>
+      
+      <h3>Why it is awesome-er</h3>
+      <ul>
         <li>Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.</li>
         <li>Console.log nerfing so you won't break anyone by mistake.</li>
 				<li>Never go wrong with your doctype or markup!</li>
 				<li>An optimal print stylesheet, performance optimized</li>
 				<li>iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.</li>
 				<li>IE6 pngfix baked in.</li>
-				<li>.clearfix, .visuallyhidden classes to style things the right way
+				<li>.clearfix, .visuallyhidden classes to style things wisely and accessibly.
 				<li>.htaccess file that allows proper use of HTML5 features and faster page load</li>
 				<li>CDN hosted jQuery with local fallback failsafe.</li>
+				<li>Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)</li>
 			</ul>
 		
 			<h3 id="thesource">Walk though it with me, now</h3>
@@ -99,7 +103,7 @@
 				<ul>
 					<li>Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.</li>
 					<li>Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.</li>                          
-					<li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a>.</li>
+					<li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.</li>
 					
 					<!-- <li> Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.</li> -->
 				</ul> 
@@ -163,7 +167,7 @@
 	    data = data.replace(/</g,'&lt;');
 	   
 	    
-	    var fileext = filename.split('.').slice(-1)[0];
+	    var fileext = filename.replace('htaccess.txt','htaccess.xml').split('.').slice(-1)[0];
 		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
 		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
 		  
