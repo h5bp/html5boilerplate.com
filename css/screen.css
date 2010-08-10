@@ -55,8 +55,13 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #body li:first-child:after { border-bottom: 0; }
 #footer { position: relative; text-align: center; padding: 1em 0 3em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
-#footer .focus { font-size: 1.5em; margin-right: 1em; }   
-#footer p+p, #footer li, #body li { text-transform: none; }
+#footer .focus { font-size: 1.5em; margin-right: 1em; }  
+#footer p:first-child { margin: 1em 0;}
+#footer p:first-child em { vertical-align: top; line-height: 2; }  
+#footer p:first-child a img { float: left; margin: 0 0.5em 0 0;}
+#footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
+#footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
+#footer p+p, #footer li, #body li, #footer p:first-child i { text-transform: none; }
 #footer li { display: inline; margin: 0 1em 0 0; } 
 #footer a { white-space: nowrap; } 
 #footer li:after { content: " ★"; padding-left: 1em;}
