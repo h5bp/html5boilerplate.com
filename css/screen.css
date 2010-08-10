@@ -37,19 +37,25 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 
 #body { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
-#header p, #body i, #body h3, #body li, #disqus_thread { margin:0 auto; width: 70%; display: block; font-style: normal; }
+#header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 70%; display: block; font-style: normal; }
 #header p { margin: 1em auto; text-transform: none; font-size: 1.5em; }
 ::-moz-selection, ::selection { text-shadow: none;}
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3 { font-size: 2em; }
 #body h3 { margin: 1em auto 0.5em auto; }  
-#body li { line-height: 2; text-transform: none; width: 35em; }
+#body li { line-height: 2; width: 35em; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }
-#footer { position: relative; text-align: center; padding: 1em 0; }
-#footer p { font-size: 1em; line-height: 3; }
-#footer .focus { font-size: 1.3em; margin-right: 1em; }  
+#footer { position: relative; text-align: center; padding: 1em 0 3em 0; }
+#footer p { font-size: 1.2em; line-height: 3; } 
+#footer .focus { font-size: 1.5em; margin-right: 1em; }   
+#footer p+p, #footer li, #body li { text-transform: none; }
+#footer li { display: inline; margin: 0 1em 0 0; } 
+#footer a { white-space: nowrap; }
+#footer a:after { content:" "; }
+#footer li:after { content: "★"; padding-left: 1em;}
+#footer li:last-child:after { content: ""; }
 #disqus_thread { margin: 3em auto; }
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { font-size: 1.2em; } 
