@@ -11,8 +11,7 @@ h1:hover { color: #e16734; }
 
 body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", "Gill Sans", HelveticaNeue, Arial, "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
 
-a { color: #e3d7bf; text-decoration: none; } 
-a:visited { color: #e3d7bf; }
+a, a:visited { color: #e3d7bf; text-decoration: none; } 
 #body ul a, a:hover, a:focus, #body p a { color: #e16734; }
 
 b { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
@@ -38,6 +37,7 @@ h2 + p {
 #body .dwn i { font-size: 0.8em; display: inline; text-transform: none; }    
 .dwn a:visited { color: #fff; }
 p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
+#body p.dwn + p a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3, #disqus_thread h3 { font-size: 2em; }
