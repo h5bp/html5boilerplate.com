@@ -83,7 +83,11 @@
 					<li>Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.
 				</ul> 
 			</div><!--END CLASS recos-->			
+			<div id="disqus_thread">
+				<h3>Feedback</h3>
+			</div>      
     </div>  
+
     <div id="footer">
 			<p><em class="focus">Brought to you by</em> <a href="http://paulirish.com">Paul Irish</a> &#x2605; <a href="http://nimbupani.com">Divya Manian</a> &#x2605; and other web superheroes.</p>
     </div> 
@@ -174,7 +178,19 @@
 	  .syntaxhighlighter, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody {
 	    font-size: 15px !important;
 	  }
-	</style>
-	
+	</style>  
+	<script type="text/javascript">   
+		ar disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {  
+
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://boilerplate.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=boilerplate">comments powered by Disqus.</a></noscript>
 </body>
 </html>

@@ -37,7 +37,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 
 #body { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
-#body i, #body h3, #body li { margin:0 auto; width: 70%; display: block; font-style: normal; }
+#body i, #body h3, #body li, #disqus_thread { margin:0 auto; width: 70%; display: block; font-style: normal; }
 ::-moz-selection, ::selection { text-shadow: none;}
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
@@ -49,7 +49,10 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1em; line-height: 3; }
 #footer .focus { font-size: 1.3em; margin-right: 1em; }  
-
+#disqus_thread { margin: 3em auto; }
+#disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
+#disqus_thread .dsq-comment-message { font-size: 1.2em; } 
+#disqus_thread li:after { border: 0; }
 @media print {
 	* { background:transparent !important; color:#444 !important; text-shadow:none; }
 	a, a:visited { color:#444 !important; text-decoration:underline; }
