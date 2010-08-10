@@ -36,25 +36,36 @@ b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-ori
 b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
 #body { font-size: 1.5em; padding: 2em 0; }
-#body p { border-bottom: 5px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
+#body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; }                 
 #header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 70%; display: block; font-style: normal; }
-#header p { margin: 1em auto; text-transform: none; font-size: 1.5em; }
-::-moz-selection, ::selection { text-shadow: none;}
+#header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 1.5em; }  
+#header h2 { font-size: 1.5em; margin-bottom: 1em; }
+::-moz-selection, ::selection { text-shadow: none;}   
+#body .dwn a { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
+#body .dwn a:before, #body .dwn a:after { position: absolute; top: 0; left: 0; height: 0; border: 1em solid #000; content: ""; border-color: transparent transparent transparent #232927; }   
+#body .dwn a:after { left: auto; right: 0; border-color: transparent #232927 transparent transparent;}
+#body .dwn a:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; }    
+.dwn a:visited { color: #fff; }
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3 { font-size: 2em; }
 #body h3 { margin: 1em auto 0.5em auto; }  
 #body li { line-height: 2; width: 35em; }
 #body li:before { content: "★"; padding-right: 0.5em; }
-#body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }
+#body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }  
+#body li:first-child:after { border-bottom: 0; }
 #footer { position: relative; text-align: center; padding: 1em 0 3em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
-#footer .focus { font-size: 1.5em; margin-right: 1em; }   
-#footer p+p, #footer li, #body li { text-transform: none; }
+#footer .focus { font-size: 1.5em; margin-right: 1em; }  
+#footer p:first-child { margin: 1em 0;}
+#footer p:first-child em { vertical-align: top; line-height: 2; }  
+#footer p:first-child a img { float: left; margin: 0 0.5em 0 0;}
+#footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
+#footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
+#footer p+p, #footer li, #body li, #footer p:first-child i { text-transform: none; }
 #footer li { display: inline; margin: 0 1em 0 0; } 
-#footer a { white-space: nowrap; }
-#footer a:after { content:" "; }
-#footer li:after { content: "★"; padding-left: 1em;}
+#footer a { white-space: nowrap; } 
+#footer li:after { content: " ★"; padding-left: 1em;}
 #footer li:last-child:after { content: ""; }
 #disqus_thread { margin: 3em auto; }
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
