@@ -53,6 +53,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-message { font-size: 1.2em; } 
 #disqus_thread li:after { border: 0; }
+#body i { padding: 1em 0; }
 @media print {
 	* { background:transparent !important; color:#444 !important; text-shadow:none; }
 	a, a:visited { color:#444 !important; text-decoration:underline; }
