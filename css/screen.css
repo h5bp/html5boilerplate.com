@@ -131,7 +131,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
 #header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 15px; line-height: 1.4; text-align: left;}  
 #header h2 { font-size: 1.5em; margin-bottom: 1em; }
-h2 + p { font-size: 14px; white-space: nowrap; } 
+h2 + p { font-size: 14px; } 
 
                                                 
 #body .dwn a { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
