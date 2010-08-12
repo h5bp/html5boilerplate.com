@@ -1360,15 +1360,13 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
     
     var redirects = 'Redirect  RedirectMatch  RedirectPermanent  RedirectTemp';
     
-    var files = '<Files>  <FilesMatch>';
-    
     var cache = 'CacheDefaultExpire  CacheDirLength  CacheDirLevels  CacheForceCompletion  CacheGcInterval  CacheLastModifiedFactor  CacheMaxExpire  CacheNegotiatedDocs  CacheRoot  CacheSize';
     
     
 		var r = SyntaxHighlighter.regexLib;
 		
 		this.regexList = [
-			{ regex: /\s*#.*/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
+			{ regex: /\s*#.*/gm,									css: 'comments' },		// preprocessor tags like #region and #endregion
 			{ regex: new RegExp(this.getKeywords(keywords), 'gmi'),	css: 'keyword' },			// keywords
 			{ regex: new RegExp(this.getKeywords(operators), 'gmi'),	css: 'color2' },			// keywords  
 
@@ -1376,11 +1374,10 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
 
 			{ regex: new RegExp(this.getKeywords(directories), 'gmi'),	css: 'value' },	
 			{ regex: new RegExp(this.getKeywords(defaults), 'gmi'),	css: 'constants' },  
-      { regex: new RegExp(this.getKeywords(expires), 'gmi'),	css: 'functions' },	    
-			{ regex: new RegExp(this.getKeywords(limits), 'gmi'),	css: 'color1' },	 
+      { regex: new RegExp(this.getKeywords(expires), 'gmi'),	css: 'value' },	    
+			{ regex: new RegExp(this.getKeywords(limits), 'gmi'),	css: 'functions' },	 
 
 			{ regex: new RegExp(this.getKeywords(redirects), 'gmi'),	css: 'script' },	 
-			{ regex: new RegExp(this.getKeywords(files), 'gmi'),	css: 'preprocessor' },
 			{ regex: new RegExp(this.getKeywords(cache), 'gmi'),	css: 'string' },	 
 			{ regex: new XRegExp('(&lt;|<)[\\s\\/\\?]*(\\w+)(?<attributes>.*?)[\\s\\/\\?]*(&gt;|>)', 'sg'), func: process }
 			];
