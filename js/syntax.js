@@ -1343,17 +1343,45 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
 						'Anonymous_MustGiveEmail Anonymous_NoUserID Anonymous_VerifyEmail AuthAuthoritative' +
 						'AuthDBAuthoritative AuthDBGroupFile AuthDBMAuthoritative AuthDBMGroupFile' +
 						'AuthDBMGroupFile AuthDBUserFile AuthDBMUserFile AuthDigestFile AuthGroupFile' +
-						'AuthName AuthType AuthUserFile BindAddress  BrowserMatch  BrowserMatchNoCase  BS2000Account  CacheDefaultExpire  CacheDirLength  CacheDirLevels  CacheForceCompletion  CacheGcInterval  CacheLastModifiedFactor  CacheMaxExpire  CacheNegotiatedDocs  CacheRoot  CacheSize  CheckSpelling  ClearModuleList  ContentDigest  CookieExpires  CookieLog CookieLog CookieTracking  CoreDumpDirectory  CustomLog  DefaultIcon  DefaultLanguage  DefaultType  deny  <Directory>  <DirectoryMatch>  DirectoryIndex  DocumentRoot  ErrorDocument  ErrorLog  Example  ExpiresActive  ExpiresByType  ExpiresDefault  ExtendedStatus  FancyIndexing  <Files>  <FilesMatch>  ForceType  Group  Header  HeaderName  HostNameLookups  IdentityCheck  <IfDefine>  <IfModule>  ImapBase  ImapDefault  ImapMenu  Include  IndexIgnore  IndexOptions  KeepAlive  KeepAliveTimeout  LanguagePriority  <Limit>  <LimitExcept>  LimitRequestBody  LimitRequestFields  LimitRequestFieldsize  LimitRequestLine  Listen  ListenBacklog  LoadFile  LoadModule  <Location>  <LocationMatch>  LockFile  LogFormat  LogLevel  MaxClients  MaxKeepAliveRequests  MaxRequestsPerChild  MaxSpareServers  MetaDir  MetaFiles  MetaSuffix  MimeMagicFile  MinSpareServers  MMapFile  NameVirtualHost  NoCache  Options  order  PassEnv  PidFile  Port  ProxyBlock  ProxyDomain  ProxyPass  ProxyPassReverse  ProxyReceiveBufferSize  ProxyRemote  ProxyRequests  ProxyVia  ReadmeName  Redirect  RedirectMatch  RedirectPermanent  RedirectTemp  RefererIgnore  RefererLog  RemoveHandler  require  ResourceConfig  RewriteBase  RewriteCond  RewriteEngine  RewriteLock  RewriteLog  RewriteLogLevel  RewriteMap  RewriteOptions  RewriteRule  RLimitCPU  RLimitMEM  RLimitNPROC  Satisfy  ScoreBoardFile  Script  ScriptAlias  ScriptAliasMatch  ScriptInterpreterSource  ScriptLog  ScriptLogBuffer  ScriptLogLength  SendBufferSize  ServerAdmin  ServerAlias  ServerName  ServerPath  ServerRoot  ServerSignature  ServerTokens  ServerType  SetEnv  SetEnvIf  SetEnvIfNoCase  SetHandler  StartServers  ThreadsPerChild  TimeOut  TransferLog  TypesConfig  UnsetEnv  UseCanonicalName  User  UserDir  <VirtualHost>  VirtualDocumentRoot  VirtualDocumentRootIP  VirtualScriptAlias  VirtualScriptAliasIP  XBitHack FileEtag AddOutputFilterByType SetOutputFilter AddDefaultCharset AddCharset';
+						'AuthName AuthType AuthUserFile BindAddress  BrowserMatch  BrowserMatchNoCase  BS2000Account  CheckSpelling  ClearModuleList  ContentDigest  CookieExpires  CookieLog CookieLog CookieTracking  CoreDumpDirectory  CustomLog  deny  ErrorDocument  ErrorLog  Example  ExtendedStatus  FancyIndexing  ForceType  Group  Header  HeaderName  HostNameLookups  IdentityCheck  <IfDefine>  <IfModule>  ImapBase  ImapDefault  ImapMenu  Include  IndexIgnore  IndexOptions  KeepAlive  KeepAliveTimeout  LanguagePriority  Listen  ListenBacklog  LoadFile  LoadModule  <Location>  <LocationMatch>  LockFile  LogFormat  LogLevel  MaxClients  MaxKeepAliveRequests  MaxRequestsPerChild  MaxSpareServers  MetaDir  MetaFiles  MetaSuffix  MimeMagicFile  MinSpareServers  MMapFile  NameVirtualHost  NoCache  Options  order  PassEnv  PidFile  Port  ProxyBlock  ProxyDomain  ProxyPass  ProxyPassReverse  ProxyReceiveBufferSize  ProxyRemote  ProxyRequests  ProxyVia  ReadmeName  RefererIgnore  RefererLog  RemoveHandler  require  ResourceConfig RLimitCPU  RLimitMEM  RLimitNPROC  Satisfy  ScoreBoardFile  Script  ScriptAlias  ScriptAliasMatch  ScriptInterpreterSource  ScriptLog  ScriptLogBuffer  ScriptLogLength  SendBufferSize  ServerAdmin  ServerAlias  ServerName  ServerPath  ServerRoot  ServerSignature  ServerTokens  ServerType  SetEnv  SetEnvIf  SetEnvIfNoCase  SetHandler  StartServers  ThreadsPerChild  TimeOut  TransferLog  TypesConfig  UnsetEnv  UseCanonicalName  User  UserDir  <VirtualHost>  VirtualDocumentRoot  VirtualDocumentRootIP  VirtualScriptAlias  VirtualScriptAliasIP  XBitHack FileEtag AddOutputFilterByType SetOutputFilter AddDefaultCharset AddCharset';
 								;
 		var operators =	'set append DEFLATE'
 						;
-
+    
+    var rewrites = 'RewriteBase  RewriteCond  RewriteEngine  RewriteLock  RewriteLog  RewriteLogLevel  RewriteMap  RewriteOptions  RewriteRule';
+    
+    var directories = '<Directory>  <DirectoryMatch>  DirectoryIndex  DocumentRoot';
+    
+    var defaults = 'DefaultIcon  DefaultLanguage  DefaultType';
+    
+    var expires = 'ExpiresActive  ExpiresByType  ExpiresDefault';
+    
+    var limits = '<Limit>  <LimitExcept>  LimitRequestBody  LimitRequestFields  LimitRequestFieldsize  LimitRequestLine';
+    
+    var redirects = 'Redirect  RedirectMatch  RedirectPermanent  RedirectTemp';
+    
+    var files = '<Files>  <FilesMatch>';
+    
+    var cache = 'CacheDefaultExpire  CacheDirLength  CacheDirLevels  CacheForceCompletion  CacheGcInterval  CacheLastModifiedFactor  CacheMaxExpire  CacheNegotiatedDocs  CacheRoot  CacheSize';
+    
+    
 		var r = SyntaxHighlighter.regexLib;
 		
 		this.regexList = [
 			{ regex: /\s*#.*/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
 			{ regex: new RegExp(this.getKeywords(keywords), 'gmi'),	css: 'keyword' },			// keywords
-			{ regex: new RegExp(this.getKeywords(operators), 'gmi'),	css: 'color2' },			// keywords
+			{ regex: new RegExp(this.getKeywords(operators), 'gmi'),	css: 'color2' },			// keywords  
+
+			{ regex: new RegExp(this.getKeywords(rewrites), 'gmi'),	css: 'color3' }, 
+
+			{ regex: new RegExp(this.getKeywords(directories), 'gmi'),	css: 'value' },	
+			{ regex: new RegExp(this.getKeywords(defaults), 'gmi'),	css: 'constants' },  
+      { regex: new RegExp(this.getKeywords(expires), 'gmi'),	css: 'functions' },	    
+			{ regex: new RegExp(this.getKeywords(limits), 'gmi'),	css: 'color1' },	 
+
+			{ regex: new RegExp(this.getKeywords(redirects), 'gmi'),	css: 'script' },	 
+			{ regex: new RegExp(this.getKeywords(files), 'gmi'),	css: 'preprocessor' },
+			{ regex: new RegExp(this.getKeywords(cache), 'gmi'),	css: 'string' },	 
 			{ regex: new XRegExp('(&lt;|<)[\\s\\/\\?]*(\\w+)(?<attributes>.*?)[\\s\\/\\?]*(&gt;|>)', 'sg'), func: process }
 			];
 	
