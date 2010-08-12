@@ -162,7 +162,7 @@ p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #footer p:first-child a img { float: left; margin: 0 0.5em 0 0;}
 #footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
 #footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
-#footer p+p, #footer li, #body li, #footer p:first-child i, #disqus_thread, #body .dwn { text-transform: none; }
+#footer p+p, #footer li, #body li, #footer p:first-child i, #disqus_thread { text-transform: none; }
 #footer li { display: inline; margin: 0 1em 0 0; } 
 #footer a { white-space: nowrap; } 
 #footer li:after { content: " ★"; padding-left: 1em;}
