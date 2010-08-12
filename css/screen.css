@@ -119,7 +119,7 @@ h1:hover { color: #e16734; }
 body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", HelveticaNeue, Helvetica, Arial, "Gill Sans", "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
 
 a, a:visited { color: #e3d7bf; text-decoration: none; } 
-#body ul a, a:hover, a:focus, #body p a { color: #e16734; }
+#body ul a, a:hover, a:focus, #body p a, #disqus_thread a { color: #e16734; }
 
 b { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
 b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: -1em; }
@@ -162,7 +162,7 @@ p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #footer p:first-child a img { float: left; margin: 0 0.5em 0 0;}
 #footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
 #footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
-#footer p+p, #footer li, #body li, #footer p:first-child i, #disqus_thread { text-transform: none; }
+#footer p+p, #footer li, #body li, #footer p:first-child i, #disqus_thread, #body .dwn { text-transform: none; }
 #footer li { display: inline; margin: 0 1em 0 0; } 
 #footer a { white-space: nowrap; } 
 #footer li:after { content: " ★"; padding-left: 1em;}
