@@ -162,7 +162,7 @@ RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 
-# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the same name does not exist (e.g. “/blog/hello”)
+# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the same name does not exist (e.g. "/blog/hello")
 #   webmasterworld.com/apache/3808792.htm
 Options -MultiViews 
 # -Indexes will have Apache block users from browsing folders without a default document

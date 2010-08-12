@@ -1295,3 +1295,76 @@ SyntaxHighlighter.brushes.Xml = function () {
 };
 SyntaxHighlighter.brushes.Xml.prototype = new SyntaxHighlighter.Highlighter();
 SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"];
+
+
+
+// apache config brush from rileyw
+;(function()
+{
+	// CommonJS
+	typeof(require) != 'undefined' ? SyntaxHighlighter = require('shCore').SyntaxHighlighter : null;
+
+	function Brush()
+	{
+		function process(match, regexInfo)
+		{
+			var constructor = SyntaxHighlighter.Match,
+				code = match[0],
+				tag = new XRegExp('(&lt;|<)[\\s\\/\\?]*(?<name>[:\\w-\\.]+)', 'xg').exec(code),
+				result = []
+				;
+		
+			if (match.attributes != null) 
+			{
+				var attributes,
+					regex = new XRegExp('(?<name> [\\w:\\-\\.]+)' +
+										'\\s*=\\s*' +
+										'(?<value> ".*?"|\'.*?\'|\\w+)',
+										'xg');
+
+				while ((attributes = regex.exec(code)) != null) 
+				{
+					result.push(new constructor(attributes.name, match.index + attributes.index, 'color1'));
+					result.push(new constructor(attributes.value, match.index + attributes.index + attributes[0].indexOf(attributes.value), 'string'));
+				}
+			}
+
+			if (tag != null)
+				result.push(
+					new constructor(tag.name, match.index + tag[0].indexOf(tag.name), 'keyword')
+				);
+
+			return result;
+		}
+		var keywords =  'AccessConfig AccessFileName Action AddAlt AddAltByEncoding AddAltByType' +
+						'AddDescription AddEncoding AddHandler AddIcon AddIconByEncoding AddIconByType' +
+						'AddLanguage AddModule AddModuleInfo AddType AgentLog Alias AliasMatch' +
+						'allow AllowCONNECT AllowOverride Anonymous Anonymous_Authoritative Anonymous_LogEmail' +
+						'Anonymous_MustGiveEmail Anonymous_NoUserID Anonymous_VerifyEmail AuthAuthoritative' +
+						'AuthDBAuthoritative AuthDBGroupFile AuthDBMAuthoritative AuthDBMGroupFile' +
+						'AuthDBMGroupFile AuthDBUserFile AuthDBMUserFile AuthDigestFile AuthGroupFile' +
+						'AuthName AuthType AuthUserFile BindAddress  BrowserMatch  BrowserMatchNoCase  BS2000Account  CacheDefaultExpire  CacheDirLength  CacheDirLevels  CacheForceCompletion  CacheGcInterval  CacheLastModifiedFactor  CacheMaxExpire  CacheNegotiatedDocs  CacheRoot  CacheSize  CheckSpelling  ClearModuleList  ContentDigest  CookieExpires  CookieLog CookieLog CookieTracking  CoreDumpDirectory  CustomLog  DefaultIcon  DefaultLanguage  DefaultType  deny  <Directory>  <DirectoryMatch>  DirectoryIndex  DocumentRoot  ErrorDocument  ErrorLog  Example  ExpiresActive  ExpiresByType  ExpiresDefault  ExtendedStatus  FancyIndexing  <Files>  <FilesMatch>  ForceType  Group  Header  HeaderName  HostNameLookups  IdentityCheck  <IfDefine>  <IfModule>  ImapBase  ImapDefault  ImapMenu  Include  IndexIgnore  IndexOptions  KeepAlive  KeepAliveTimeout  LanguagePriority  <Limit>  <LimitExcept>  LimitRequestBody  LimitRequestFields  LimitRequestFieldsize  LimitRequestLine  Listen  ListenBacklog  LoadFile  LoadModule  <Location>  <LocationMatch>  LockFile  LogFormat  LogLevel  MaxClients  MaxKeepAliveRequests  MaxRequestsPerChild  MaxSpareServers  MetaDir  MetaFiles  MetaSuffix  MimeMagicFile  MinSpareServers  MMapFile  NameVirtualHost  NoCache  Options  order  PassEnv  PidFile  Port  ProxyBlock  ProxyDomain  ProxyPass  ProxyPassReverse  ProxyReceiveBufferSize  ProxyRemote  ProxyRequests  ProxyVia  ReadmeName  Redirect  RedirectMatch  RedirectPermanent  RedirectTemp  RefererIgnore  RefererLog  RemoveHandler  require  ResourceConfig  RewriteBase  RewriteCond  RewriteEngine  RewriteLock  RewriteLog  RewriteLogLevel  RewriteMap  RewriteOptions  RewriteRule  RLimitCPU  RLimitMEM  RLimitNPROC  Satisfy  ScoreBoardFile  Script  ScriptAlias  ScriptAliasMatch  ScriptInterpreterSource  ScriptLog  ScriptLogBuffer  ScriptLogLength  SendBufferSize  ServerAdmin  ServerAlias  ServerName  ServerPath  ServerRoot  ServerSignature  ServerTokens  ServerType  SetEnv  SetEnvIf  SetEnvIfNoCase  SetHandler  StartServers  ThreadsPerChild  TimeOut  TransferLog  TypesConfig  UnsetEnv  UseCanonicalName  User  UserDir  <VirtualHost>  VirtualDocumentRoot  VirtualDocumentRootIP  VirtualScriptAlias  VirtualScriptAliasIP  XBitHack FileEtag AddOutputFilterByType SetOutputFilter AddDefaultCharset AddCharset';
+								;
+		var operators =	'set append DEFLATE'
+						;
+
+		var r = SyntaxHighlighter.regexLib;
+		
+		this.regexList = [
+			{ regex: /\s*#.*/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
+			{ regex: new RegExp(this.getKeywords(keywords), 'gmi'),	css: 'keyword' },			// keywords
+			{ regex: new RegExp(this.getKeywords(operators), 'gmi'),	css: 'color2' },			// keywords
+			{ regex: new XRegExp('(&lt;|<)[\\s\\/\\?]*(\\w+)(?<attributes>.*?)[\\s\\/\\?]*(&gt;|>)', 'sg'), func: process }
+			];
+	
+		this.forHtmlScript(r.scriptScriptTags);
+	};
+
+	Brush.prototype	= new SyntaxHighlighter.Highlighter();
+	Brush.aliases	= ['apache', 'htaccess'];
+
+	SyntaxHighlighter.brushes.Apache = Brush;
+
+	// CommonS
+	typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
+})();

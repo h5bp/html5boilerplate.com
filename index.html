@@ -175,7 +175,7 @@
 	    data = data.replace(/</g,'&lt;');
 	   
 	    
-	    var fileext = filename.replace('htaccess.txt','htaccess.xml').split('.').slice(-1)[0];
+	    var fileext = filename.replace('htaccess.txt?.xml','htaccess.apache').split('.').slice(-1)[0];
 		  var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
 		  var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
 		  
