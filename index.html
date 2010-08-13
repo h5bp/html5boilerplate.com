@@ -139,11 +139,11 @@
         <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
       </ul>
     </div> 
-    <div class="disqus-wrapper">
-  		<a href="#dsq-content">Show comments</a>    
+    <div class="disqus-wrapper">   
   		<div id="disqus_thread">
   			<h3>Comments</h3>
   		</div>
+  		<a href="#dsq-content">Show comments</a> 
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -236,12 +236,20 @@
             e.preventDefault();
         });
     }
-    
+
+    var dsqlength = jQuery('ul#dsq-comments').length + 1;
+        
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
+    jQuery('a[href=#dsq-content]').text(function() {
+       return 'Show ' + dsqlength + ' Comments';
+    }); 
+    
+    
     jQuery('a[href=#dsq-content]').toggle(function(){
       jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
     }, function() { 
-      jQuery(this).text('Show Comments'); jQuery('#disqus_thread').hide(); 
+      jQuery(this).text('Show ' + dsqlength + ' Comments'); 
+      jQuery('#disqus_thread').hide(); 
     });
 	</script>
 	<style>

@@ -170,8 +170,8 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #footer li:after { content: " ★"; padding-left: 1em;}
 #footer li:last-child:after { content: ""; }  
 
-#disqus_thread { display: none; padding-top: 0;} 
-
+#disqus_thread { display: none; padding-top: 0; } 
+#disqus_thread h3 { margin-top: 0.5em; }
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { font-size: 1.2em; } 
 #disqus_thread li:after { border: 0; }
