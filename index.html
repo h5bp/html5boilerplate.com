@@ -231,8 +231,13 @@
     // smooth scrolling to in-page anchors.
     $.fn.smoothScrollTo = function(){
         
-        return this.live('click',function(e){
-            $('html,body').animate({'scrollTop': $($(this).attr('href')).offset().top-40+'px'}); // 40px buffer to top.    
+        return this.live('click',function(e){  
+            var elm = $(this).attr('href');
+            if(!$(elm).is(':visible')) {
+              $('a[href=#dsq-content]').trigger('click');                
+            } 
+            $('html,body').animate({'scrollTop': $(elm).offset().top-40+'px'}); // 40px buffer to top. 
+   
             e.preventDefault();
         });
     }
@@ -245,11 +250,11 @@
     }); 
     
     
-    jQuery('a[href=#dsq-content]').toggle(function(){
+    jQuery('a[href=#dsq-content]').toggle(function(){ 
       jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
-    }, function() { 
-      jQuery(this).text('Show 200+ Comments'); 
-      jQuery('#disqus_thread').hide(); 
+    }, function() {
+        jQuery(this).text('Show 200+ Comments'); 
+        jQuery('#disqus_thread').hide();         
     });
 	</script>
 	<style>
