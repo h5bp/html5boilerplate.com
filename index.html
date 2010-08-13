@@ -236,19 +236,17 @@
             e.preventDefault();
         });
     }
-
-    var dsqlength = jQuery('ul#dsq-comments').length + 1;
         
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
     jQuery('a[href=#dsq-content]').text(function() {
-       return 'Show ' + dsqlength + ' Comments';
+       return 'Show 200+ Comments';
     }); 
     
     
     jQuery('a[href=#dsq-content]').toggle(function(){
       jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
     }, function() { 
-      jQuery(this).text('Show ' + dsqlength + ' Comments'); 
+      jQuery(this).text('Show 200+ Comments'); 
       jQuery('#disqus_thread').hide(); 
     });
 	</script>
