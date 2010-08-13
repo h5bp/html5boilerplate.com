@@ -56,7 +56,7 @@
     </div>     
 
     <div id="body"> 
-			<p class="dwn">Want to dive in? <a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9">Download Boilerplate v0.9 (zip)</a></p> 
+			<p class="dwn">Want to dive in? <a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1">Download Boilerplate v0.9.1 (zip)</a> <small style="font-size: 11px">Updated Aug. 13th</small></p> 
 			<p><i><a href="http://twitter.com/boiler_plate">Follow updates on twitter</a>   &#x2605;  <a href="http://github.com/paulirish/html5-boilerplate">Contribute on Github</a>   &#x2605;   <a href="#disqus_thread">Comment right here</a></i></p>
 			<h3>Why it is awesome</h3>
 			<ul>
@@ -236,17 +236,19 @@
             e.preventDefault();
         });
     }
+
+    var dsqlength = jQuery('ul#dsq-comments').length + 1;
         
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
     jQuery('a[href=#dsq-content]').text(function() {
-       return 'Show 200+ Comments';
+       return 'Show ' + dsqlength + ' Comments';
     }); 
     
     
     jQuery('a[href=#dsq-content]').toggle(function(){
       jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
     }, function() { 
-      jQuery(this).text('Show 200+ Comments'); 
+      jQuery(this).text('Show ' + dsqlength + ' Comments'); 
       jQuery('#disqus_thread').hide(); 
     });
 	</script>
