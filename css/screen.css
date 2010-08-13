@@ -119,14 +119,14 @@ h1:hover { color: #e16734; }
 body { background: #232927; color: #e3d7bf; text-align: center; font: 12px/18px "Helvetica Neue Light", "HelveticaNeue-Light", HelveticaNeue, Helvetica, Arial, "Gill Sans", "DejaVu LGC Sans Light", sans-serif; text-transform: uppercase; }
 
 a, a:visited { color: #e3d7bf; text-decoration: none; } 
-#body ul a, a:hover, a:focus, #body p a, #disqus_thread a { color: #e16734; }
+#body ul a, a:hover, a:focus, #body p a, .disqus-wrapper a { color: #e16734; }
 
 b { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
 b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: -1em; }
 b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; left: 2em; top: 0; }
 b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
-#body, #disqus_thread { font-size: 1.5em; padding: 2em 0; }
+#body, .disqus-wrapper { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; }                 
 #header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
 #header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 15px; line-height: 1.4; text-align: left;}  
@@ -134,10 +134,10 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 h2 + p { font-size: 14px; } 
 
                                                 
-#body .dwn a { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
-#body .dwn a:before, #body .dwn a:after { position: absolute; top: 0; left: 0; height: 0; border: 1em solid #000; content: ""; border-color: transparent transparent transparent #232927; }   
-#body .dwn a:after { left: auto; right: 0; border-color: transparent #232927 transparent transparent;}
-#body .dwn a:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; }
+#body .dwn a, a[href="#dsq-content"] { position: relative; display: inline-block; padding: 0.5em 1.5em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); font-size: 0.9em; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
+#body .dwn a:before, #body .dwn a:after, a[href="#dsq-content"]:before, a[href="#dsq-content"]:after { position: absolute; top: 0; left: 0; height: 0; border: 1em solid #000; content: ""; border-color: transparent transparent transparent #232927; }   
+#body .dwn a:after, a[href="#dsq-content"]:after { left: auto; right: 0; border-color: transparent #232927 transparent transparent;}
+#body .dwn a:hover, a[href="#dsq-content"]:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; }
 #body .dwn i { font-size: 0.8em; display: inline; text-transform: none; }    
 .dwn a:visited { color: #fff; }
 p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
@@ -154,6 +154,8 @@ p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }  
 #body li:first-child:after { border-bottom: 0; }
 
+a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
+
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
 #footer .focus { font-size: 1.5em; margin-right: 1em; }  
@@ -167,6 +169,8 @@ p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #footer a { white-space: nowrap; } 
 #footer li:after { content: " ★"; padding-left: 1em;}
 #footer li:last-child:after { content: ""; }  
+
+#disqus_thread { display: none; padding-top: 0;} 
 
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { font-size: 1.2em; } 

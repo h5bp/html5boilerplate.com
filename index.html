@@ -139,9 +139,12 @@
         <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
       </ul>
     </div> 
-		<div id="disqus_thread">
-			<h3>Comments</h3>
-		</div>
+    <div class="disqus-wrapper">
+  		<a href="#dsq-content">Show comments</a>    
+  		<div id="disqus_thread">
+  			<h3>Comments</h3>
+  		</div>
+    </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
@@ -235,7 +238,11 @@
     }
     
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
-    
+    jQuery('a[href=#dsq-content]').toggle(function(){
+      jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
+    }, function() { 
+      jQuery(this).text('Show Comments'); jQuery('#disqus_thread').hide(); 
+    });
 	</script>
 	<style>
 	  .syntaxhighlighter, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody {
