@@ -128,7 +128,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 
 #body, .disqus-wrapper { font-size: 1.5em; padding: 2em 0; }
 #body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; }                 
-#header p, #body i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
+#header p, #body p.dwn + p i, #body h3, #body li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
 #header p { margin: 1em auto 0.5em auto; text-transform: none; font-size: 15px; line-height: 1.4; text-align: left;}  
 #header h2 { font-size: 1.5em; margin-bottom: 1em; }
 h2 + p { font-size: 14px; } 
@@ -138,13 +138,17 @@ h2 + p { font-size: 14px; }
 #body .dwn a:before, #body .dwn a:after, a[href="#dsq-content"]:before, a[href="#dsq-content"]:after { position: absolute; top: 0; left: 0; height: 0; border: 1em solid #000; content: ""; border-color: transparent transparent transparent #232927; }   
 #body .dwn a:after, a[href="#dsq-content"]:after { left: auto; right: 0; border-color: transparent #232927 transparent transparent;}
 #body .dwn a:hover, a[href="#dsq-content"]:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; }
-#body .dwn i { font-size: 0.6em; display: inline; text-transform: uppercase; }    
-.dwn a:visited { color: #fff; }
-p.dwn { line-height: 1.5em; }
+
+
+.bptext { font-size: 0.8em; line-height: 2em; }
+
+.dwn i { vertical-align: top; font-style: normal; }    
+.dwn a:visited { color: #fff; } 
+p.dwn { line-height: 1.5em; padding: 0.5em 0; }
 p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #body p.dwn + p a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }   
 .dwn span { display: inline-block; vertical-align: middle;}
-.dwn span small { display:block;   font-size: 11px; }
+.dwn span small { display:block; margin-top: 0.2em; font-size: 0.6em; line-height: 1.7em;}
 
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
