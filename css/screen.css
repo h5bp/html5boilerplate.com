@@ -140,9 +140,11 @@ h2 + p { font-size: 14px; }
 #body .dwn a:hover, a[href="#dsq-content"]:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; }
 #body .dwn i { font-size: 0.6em; display: inline; text-transform: uppercase; }    
 .dwn a:visited { color: #fff; }
-p.dwn { line-height: 2em; }
+p.dwn { line-height: 1.5em; }
 p.dwn + p a { font-size: 0.9em; padding: 0 1em; }
 #body p.dwn + p a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }   
+.dwn span { display: inline-block; vertical-align: middle;}
+.dwn span small { display:block;   font-size: 11px; }
 
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
