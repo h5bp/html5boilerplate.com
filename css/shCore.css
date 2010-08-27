@@ -520,3 +520,9 @@
   { width: 90% !important; margin: 0 auto !important; }
   html { -webkit-text-size-adjust:none; } /* Prevent iPhone from adjusting font size */
 }
+
+
+  .syntaxhighlighter, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody {
+    font-size: 15px !important;
+  }
+  
