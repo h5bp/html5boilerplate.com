@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=8;chrome=1" >
   <meta charset="utf-8">
 
-  <title>HTML5 Boilerplate - A rock-solid default for HTML5 awesome.</title>
+  <title>{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</title>
 
   <meta name="viewport" content="width=device-width; initial-scale=1.0;" >
 
@@ -22,7 +22,7 @@
     (function(B,C){B[C]=B[C].replace(/\bno-js\b/,'js');if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})(document.documentElement,'className');
   </script>
 </head>
-<!--[if lt IE 7 ]> <body class="ie6 "> <![endif]--> 
+<!--[if lt IE 7 ]> <body class="ie6 "> <![endif]-->
 <!--[if IE 7 ]>    <body class="ie7 "> <![endif]--> 
 <!--[if IE 8 ]>    <body class="ie8 "> <![endif]--> 
 <!--[if !IE]><!--> <body> <!--<![endif]-->
@@ -34,89 +34,93 @@
 
     <div id="header">
          <h1>HTML5  <i>&#x2605;</i> Boilerplate</h1> 
-         <h2>A rock-solid default for HTML5 awesome.</h2> 
-         <p>HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.</p>
-         <p>After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain ajax and flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.</p>
-         <p>Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.</p>
+         <h2>{% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</h2> 
+         <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
+         <p>{% blocktrans %}After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain ajax and flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
+         <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
     </div>
 
     <div id="body">
-      <h3>Want to dive in?</h3>
-      <p class="bptext">Download Boilerplate v0.9.1 <small><a href="http://github.com/paulirish/html5-boilerplate#readme">Updated Aug. 13th</a></small></p>
+      <h3>{% blocktrans %}Want to dive in?{% endblocktrans %}</h3>
+      <p class="bptext">{% blocktrans %}Download Boilerplate v0.9.1{% endblocktrans %} <small><a href="http://github.com/paulirish/html5-boilerplate#readme">Updated Aug. 13th</a></small></p>
 
       <p class="dwn">
-        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1">Boilerplate documented</a> <small>Keep the hints and links</small></span>
-        <i>or</i>
-        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span>
+        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1">{% blocktrans %}Boilerplate documented</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
+        <i>{% blocktrans %}or{% endblocktrans %}</i>
+        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1stripped">{% blocktrans %}Boilerplate "stripped"</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
       </p>
 
 
       <p><i>
-        <a href="http://twitter.com/boiler_plate">Follow updates on twitter</a>
+        <a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow updates on twitter{% endblocktrans %}</a>
         &#x2605;
-        <a href="http://github.com/paulirish/html5-boilerplate">Contribute on Github</a>
+        <a href="http://github.com/paulirish/html5-boilerplate">{% blocktrans %}Contribute on Github{% endblocktrans %}</a>
         &#x2605;
-        <a href="#disqus_thread">Comment right here</a>
+        <a href="#disqus_thread">{% blocktrans %}Comment right here{% endblocktrans %}</a>
       </i></p>
 
-      <h3>Why it is awesome</h3>
+      <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
       <ul>
-        <li>Cross-browser compatible (IE6, yeah we got that.)
-        <li>HTML5 ready. Use the new tags with certainty.
-        <li>Optimal caching and compression rules for grade-A performance</li>
-        <li>Best practice site configuration defaults</li>
-        <li>Mobile browser optimizations</li>
-        <li>Progressive enhancement graceful degradation &hellip; yeah yeah we got that</li>
-        <li>IE specific classes for maximum cross-browser control</li>
-        <li>Handy .no-js and .js classes to style based on capability
-        <li>Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.</li>
+        <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
+        <li>{% blocktrans %}HTML5 ready. Use the new tags with certainty.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Optimal caching and compression rules for grade-A performance{% endblocktrans %}</li>
+        <li>{% blocktrans %}Best practice site configuration defaults{% endblocktrans %}</li>
+        <li>{% blocktrans %}Mobile browser optimizations{% endblocktrans %}</li>
+        <li>{% blocktrans %}Progressive enhancement graceful degradation &hellip; yeah yeah we got that{% endblocktrans %}</li>
+        <li>{% blocktrans %}IE specific classes for maximum cross-browser control{% endblocktrans %}</li>
+        <li>{% blocktrans %}Handy .no-js and .js classes to style based on capability{% endblocktrans %}</li>
+        <li>{% blocktrans %}Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.{% endblocktrans %}</li>
       </ul>
 
-      <h3>Why it is awesome-er</h3>
+      <h3>{% blocktrans %}Why it is awesome-er</h3>
       <ul>
-        <li>Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.</li>
-        <li>Console.log nerfing so you won't break anyone by mistake.</li>
-        <li>Never go wrong with your doctype or markup!</li>
-        <li>An optimal print stylesheet, performance optimized</li>
-        <li>iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.</li>
-        <li>IE6 pngfix baked in.</li>
-        <li>.clearfix, .visuallyhidden classes to style things wisely and accessibly.
-        <li>.htaccess file that allows proper use of HTML5 features and faster page load</li>
-        <li>CDN hosted jQuery with local fallback failsafe.</li>
-        <li>Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)</li>
+        <li>{% blocktrans %}Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Console.log nerfing so you won't break anyone by mistake.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Never go wrong with your doctype or markup!{% endblocktrans %}</li>
+        <li>{% blocktrans %}An optimal print stylesheet, performance optimized.{% endblocktrans %}</li>
+        <li>{% blocktrans %}iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.{% endblocktrans %}</li>
+        <li>{% blocktrans %}IE6 pngfix baked in.{% endblocktrans %}</li>
+        <li>{% blocktrans %}.clearfix, .visuallyhidden classes to style things wisely and accessibly.{% endblocktrans %}</li>
+        <li>{% blocktrans %}.htaccess file that allows proper use of HTML5 features and faster page load{% endblocktrans %}</li>
+        <li>{% blocktrans %}CDN hosted jQuery with local fallback failsafe.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Think there's too much? The HTML5 Boilerplate is delete-key friendly. :){% endblocktrans %}</li>
       </ul>
 
-      <h4>Future Awesome <em>(Coming Soon)</em></h4>
+      <h4>{% blocktrans %}Future Awesome{% endblocktrans %} <em>{% blocktrans %}(Coming Soon){% endblocktrans %}</em></h4>
       <ul>
-        <li>Build script to concatenate/minify your script &amp; style and optimizes images.</li>
-        <li>Enable gzip technique (from Even Faster Websites) for <strong>all</strong> capable users.</li>
-        <li><s>Release with no explanatory comments, just the meat.</s> Boilerplate "stripped" is here!
-        <li><s>SASS/HAML ports.</s> <a href="http://github.com/paulirish/html5-boilerplate/issues/#issue/43">They're coming.</a>
+        <li>{% blocktrans %}Build script to concatenate/minify your script &amp; style and optimizes images.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Enable gzip technique (from Even Faster Websites) for <strong>all</strong> capable users.{% endblocktrans %}</li>
+        <li>{% blocktrans %}<s>Release with no explanatory comments, just the meat.</s> Boilerplate "stripped" is here!{% endblocktrans %}</li>
+        <li>{% blocktrans %}<s>SASS/HAML ports.</s>{% endblocktrans %} <a href="http://github.com/paulirish/html5-boilerplate/issues/#issue/43">They're coming.{% endblocktrans %}</a></li>
       </ul>
 
-      <h3 id="thesource">Walk through it with me, now</h3>
+      <h3 id="thesource">{% blocktrans %}Walk through it with me, now</h3>
 
-      <h3>Get the lowdown in 40 minutes, flat!</h3>
+      <h3>{% blocktrans %}Get the lowdown in 40 minutes, flat!</h3>
       <embed src="http://blip.tv/play/gcMVgffAOgI%2Em4v" type="application/x-shockwave-flash" width="480" height="330" allowscriptaccess="always" allowfullscreen="true"></embed>
 
       <div class="recos">
-        <h3>Make it even better!</h3>
+        <h3>{% blocktrans %}Make it even better!</h3>
         <ul>
-          <li>Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.</li>
-          <li>Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.</li>                          
-          <li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.</li>
-          <li>Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.</li>
-          <li>Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.</li>
-          <li>Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a></li>
-          <li>Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.</li>
-          <li>You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.</li>        
+          <li>{% blocktrans %}Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.{% endblocktrans %}</li>
+          <li>{% blocktrans %}Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.{% endblocktrans %}</li>
+          <li>{% blocktrans %}Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.{% endblocktrans %}</li>
+          <li>{% blocktrans %}Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.{% endblocktrans %}</li>
+          <li>{% blocktrans %}Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.{% endblocktrans %}</li>
+          <li>{% blocktrans %}Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a>{% endblocktrans %}</li>
+          <li>{% blocktrans %}Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.{% endblocktrans %}</li>
+          <li>{% blocktrans %}You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.{% endblocktrans %}</li>
           <!-- <li> Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.</li> -->
         </ul>
       </div>
     </div>
     <div id="footer">
-      <p><em class="focus">Brought to you by</em> <a href="http://paulirish.com"><img width="50" height="50" src="assets/paul-irish.png"> Paul Irish <i>Google Chrome, jQuery</i></a> <a href="http://nimbupani.com"><img width="50" height="50" src="assets/divya-manian.png">Divya Manian <i>Open Web Vigilante</i></a></p>
-      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <p>
+        <em class="focus">{% blocktrans %}Brought to you by{% endblocktrans %}</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="assets/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="assets/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Open Web Vigilante{% endblocktrans %}</i></a>
+      </p>
+      <p>{% blocktrans %}It would not have been possible without the efforts of these superheroes:{% endblocktrans %}</p>
       <ul>
         <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
         <li><a href="http://mathiasbynens.be/">Mathias Bynens</a></li>   
@@ -125,7 +129,7 @@
         <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
         <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
         <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
-        <li><a href="http://farukat.es/">Faruk Ateş</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
         <li><a href="http://remysharp.com/">Remy Sharp</a></li>
         <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
         <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
@@ -144,9 +148,9 @@
     </div> 
     <div class="disqus-wrapper">
       <div id="disqus_thread">
-        <h3>Comments</h3>
+        <h3>{% blocktrans %}Comments{% endblocktrans %}</h3>
       </div>
-      <a href="#dsq-content">Show 300+ comments</a> 
+      <a href="#dsq-content">{% blocktrans %}Show 300+ comments{% endblocktrans %}</a> 
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -269,7 +273,7 @@
      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=boilerplate">comments powered by Disqus.</a></noscript>
+  <noscript>{% blocktrans %}Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=boilerplate">comments powered by Disqus.</a>{% endblocktrans %}</noscript>
   
   <script>
    var _gaq = [['_setAccount', 'UA-17904194-1'], ['_trackPageview']];
