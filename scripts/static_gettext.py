@@ -11,31 +11,28 @@ from itertools import dropwhile
 import codecs
 from shutil import copyfile
 
-parse_re = re.compile ( r'{% blocktrans %}(.+?){% endblocktrans %}' )
-escape_re = re.compile( r'(\')' )
-blankout_re = re.compile( r'\S' )
-
-localedir = "./locale"
-languages = [ 'en_US', 'de_DE' ]
-
 class LocalizerGettextException( BaseException ):
     pass
 
 class Localizer( object ):
     GETTEXT = 0
     PUTTEXT = 1
-    TEMPLATE_EXTS   = [ '.html', '.txt', '.markdown' ]
+    TEMPLATE_EXTS   = [ '.html', '.js', '.css', '.xml', '.txt', '.markdown' ]
+      
+    ESCAPE_RE       = re.compile( r'(\')' )
+    BLANKOUT_RE     = re.compile( r'\S' )
 
     XGETTEXT_CMD    = u'xgettext -L Perl --from-code=utf-8 -o - -'
     MSGUNIQ_CMD     = u'msguniq --to-code=utf-8 "%s"'
     MSGMERGE_CMD    = u'msgmerge -q "%s" "%s"'
 
-    def __init__( self, domain, inputbase, localebase, outputbase ):
+    def __init__( self, domain, inputbase, localebase, outputbase, languages ):
         self.dir        = dir
         self.domain     = domain
         self.inputbase  = inputbase
         self.localebase = localebase
         self.outputbase = outputbase
+        self.languages  = languages
 
     def localedir( self, locale ):
         return os.path.join( self.localebase, locale, 'LC_MESSAGES' )
@@ -54,7 +51,7 @@ class Localizer( object ):
 
         potfile = self.potpath( locale )
 
-        msgs, errors = _popen( Localizer.XGETTEXT_CMD, src )
+        msgs, errors = _popen( Localizer.XGETTEXT_CMD, src.encode( 'utf-8' ) )
         msgs = re.sub( r'#: standard input:(\d+)', r'#: %s:\1' % file, msgs )
         if os.path.exists( potfile ):
             msgs = '\n'.join( dropwhile( len, msgs.split( '\n' ) ) )
@@ -116,7 +113,7 @@ class Localizer( object ):
         for root, dirs, files in os.walk( self.inputbase ):
             for name in files:
                 basename, extension = os.path.splitext( name )
-        if extension in Localizer.TEMPLATE_EXTS:
+                if extension in Localizer.TEMPLATE_EXTS:
                     self.xgettext( os.path.join( root, name ), locale )
         self.xgettext_postprocessing( locale )
 
@@ -137,20 +134,20 @@ class Localizer( object ):
         with codecs.open( file, 'rU', 'utf-8' ) as f:
             src     = f.read()
             newsrc  = []
-            blocks  = re.split( r'{% blocktrans %}', src )
+            blocks  = re.split( r'{% blocktrans %}|<blocktrans>|<!-- blocktrans -->|/\* blocktrans \*/', src )
             
             for block in blocks:
                 try:
-                    ( pre, post ) = re.split( r'{% endblocktrans %}', block )
+                    ( pre, post ) = re.split( r'{% endblocktrans %}|</blocktrans>|<!-- /blocktrans -->|/\* /blocktrans \*/', block )
                     if type is Localizer.GETTEXT:
-                        newsrc.append( u" gettext('%s') " % escape_re.sub( r'\\\1', pre ) )
-                        newsrc.append( blankout_re.sub( u'X', post ) )
+                        newsrc.append( u" gettext('%s') " % Localizer.ESCAPE_RE.sub( r'\\\1', pre ) )
+                        newsrc.append( Localizer.BLANKOUT_RE.sub( u'X', post ) )
                     else:
                         newsrc.append( self.translate( pre, l10n ) )
                         newsrc.append( post )
                 except ValueError:  # No `post`
                     if type is Localizer.GETTEXT:
-                        newsrc.append( blankout_re.sub( u'X', block ) )
+                        newsrc.append( Localizer.BLANKOUT_RE.sub( u'X', block ) )
                     else:
                         newsrc.append( block )
 
@@ -180,20 +177,24 @@ def main():
                         help="The directory into which translated files ought be rendered." )
     parser.add_option(  "-i", "--input", dest="inputbase", default="./src", metavar="DIR", 
                         help="The directory from which to read the translation templates." )
+    parser.add_option(  "--languages", dest="languages", default="en_US,de_DE", metavar="LANG1,LANG2,LANG3...",
+                        help="A comma seperated list of the languages in which translations should be made." )
 
     (options, args) = parser.parse_args()
+    options.languages = options.languages.split( ',' )
 
     l10n = Localizer(   domain=options.domain, outputbase=options.outputbase, 
-                        inputbase=options.inputbase, localebase=options.localebase )
+                        inputbase=options.inputbase, localebase=options.localebase,
+                        languages=options.languages )
 
     if options.compile:
-        for locale in languages:
+        for locale in options.languages:
             l10n.compile( locale )
     elif options.render:
-        for locale in languages:
+        for locale in options.languages:
             l10n.puttext( locale )
     else:
-        for locale in languages:
+        for locale in options.languages:
             src = l10n.gettext( locale )
 
 if __name__ == "__main__":

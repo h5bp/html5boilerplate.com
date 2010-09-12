@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-12 13:58+0200\n"
+"POT-Creation-Date: 2010-09-12 20:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/404.html:2
-msgid "not found"
-msgstr ""
-
-#: src/404.html:17
+#: src/404.html:2 standard input:17 src/template/404.html:2
 msgid "Not found"
 msgstr ""
 
@@ -283,4 +279,485 @@ msgstr ""
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
+msgstr ""
+
+#: src/template/crossdomain.xml:4
+msgid ""
+"\n"
+"<!--\n"
+"    If you host a crossdomain.xml file with allow-access-from domain=“*” \n"
+"    and don’t understand all of the points described here, you probably \n"
+"    have a nasty security vulnerability. ~ simon willison \n"
+"\n"
+"    Please read: www.adobe.com/devnet/flashplayer/articles/"
+"cross_domain_policy.html\n"
+"\n"
+"    <allow-access-from domain=\"*\" to-ports=\"*\" />\n"
+"-->\n"
+msgstr ""
+
+#: src/template/htaccess.txt:1
+msgid ""
+"\n"
+"# Apache configuration file\n"
+"# httpd.apache.org/docs/2.2/mod/quickreference.html\n"
+msgstr ""
+
+#: src/template/htaccess.txt:6
+msgid ""
+"\n"
+"# Techniques in here adapted from all over, \n"
+"#   including Kroc Camen: camendesign.com/.htaccess\n"
+msgstr ""
+
+#: src/template/htaccess.txt:12
+msgid ""
+"\n"
+"# Force the latest IE version, in various cases when it may fall back to IE7 "
+"mode\n"
+"#  github.com/rails/rails/commit/123eb25#commitcomment-118920\n"
+"# Use ChromeFrame if it's installed for a better experience for the poor IE "
+"folk\n"
+msgstr ""
+
+#: src/template/htaccess.txt:25
+msgid ""
+"\n"
+"# hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/\n"
+"# Disabled. Uncomment to serve cross-domain ajax requests\n"
+msgstr ""
+
+#: src/template/htaccess.txt:36
+msgid ""
+"\n"
+"# allow access from all domains for webfonts\n"
+"# alternatively you could only whitelist\n"
+"#   your subdomains like \"sub.domain.com\"\n"
+msgstr ""
+
+#: src/template/htaccess.txt:48
+msgid ""
+"\n"
+"# video\n"
+msgstr ""
+
+#: src/template/htaccess.txt:55
+msgid ""
+"\n"
+"# Proper svg serving. Required for svg webfonts on iPad\n"
+"#   twitter.com/FontSquirrel/status/14855840545\n"
+msgstr ""
+
+#: src/template/htaccess.txt:61 standard input:163
+msgid ""
+"\n"
+"# webfonts\n"
+msgstr ""
+
+#: src/template/htaccess.txt:71
+msgid ""
+"\n"
+"# allow concatenation from within specific js and css files \n"
+"#\n"
+"# e.g. Inside of script.combined.js you could have\n"
+"#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
+"#   <!--#include file=\"jquery.idletimer.js\" -->\n"
+"# and they would be included into this single file\n"
+"#\n"
+"# this is not in use in the boilerplate as it stands. you may\n"
+"#   choose to name your files in this way for this advantage\n"
+"#   or concatenate and minify them manually.\n"
+"# Disabled by default.\n"
+msgstr ""
+
+#: src/template/htaccess.txt:93
+msgid ""
+"\n"
+"# gzip compression.\n"
+msgstr ""
+
+#: src/template/htaccess.txt:98
+msgid ""
+"\n"
+"# html, xml, css, and js:\n"
+msgstr ""
+
+#: src/template/htaccess.txt:103
+msgid ""
+"\n"
+"# webfonts and svg:\n"
+msgstr ""
+
+#: src/template/htaccess.txt:114
+msgid ""
+"\n"
+"# these are pretty far-future expires headers\n"
+"# they assume you control versioning with cachebusting query params like\n"
+"#   <script src=\"application.js?20100608\">\n"
+"# additionally, consider that outdated proxies may miscache \n"
+"#   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-"
+"querystring/\n"
+"#\n"
+"# if you don't use filenames to version, lower the css and js to something "
+"like\n"
+"#   \"access plus 1 week\" or so\n"
+msgstr ""
+
+#: src/template/htaccess.txt:128
+msgid ""
+"\n"
+"# Perhaps better to whitelist expires rules? Perhaps.\n"
+msgstr ""
+
+#: src/template/htaccess.txt:133
+msgid ""
+"\n"
+"# cache.manifest needs re-reqeusts in FF 3.6 (thx Remy ~Introducing HTML5)\n"
+msgstr ""
+
+#: src/template/htaccess.txt:138
+msgid ""
+"\n"
+"# your document html \n"
+msgstr ""
+
+#: src/template/htaccess.txt:143
+msgid ""
+"\n"
+"# rss feed\n"
+msgstr ""
+
+#: src/template/htaccess.txt:148
+msgid ""
+"\n"
+"# favicon (cannot be renamed)\n"
+msgstr ""
+
+#: src/template/htaccess.txt:153
+msgid ""
+"\n"
+"# media: images, video, audio\n"
+msgstr ""
+
+#: src/template/htaccess.txt:170
+msgid ""
+"\n"
+"# css and javascript\n"
+msgstr ""
+
+#: src/template/htaccess.txt:181
+msgid ""
+"\n"
+"# Since we're sending far-future expires, we don't need ETags for\n"
+"# static content.\n"
+"#   developer.yahoo.com/performance/rules.html#etags\n"
+msgstr ""
+
+#: src/template/htaccess.txt:191
+msgid ""
+"\n"
+"# Allow cookies to be set from iframes (for IE only)\n"
+"# If needed, uncomment and specify a path or regex in the Location "
+"directive\n"
+msgstr ""
+
+#: src/template/htaccess.txt:203
+msgid ""
+"\n"
+"# you probably want www.example.com to forward to example.com -- shorter "
+"URLs are sexier.\n"
+"#   no-www.org/faq.php?q=class_b\n"
+msgstr ""
+
+#: src/template/htaccess.txt:212
+msgid ""
+"\n"
+"# without -MultiViews, Apache will give a 404 for a rewrite if a folder of "
+"the same name does not exist (e.g. “/blog/hello”)\n"
+"#   webmasterworld.com/apache/3808792.htm\n"
+msgstr ""
+
+#: src/template/htaccess.txt:217
+msgid ""
+"\n"
+"# -Indexes will have Apache block users from browsing folders without a "
+"default document\n"
+msgstr ""
+
+#: src/template/htaccess.txt:224
+msgid ""
+"\n"
+"# custom 404 page\n"
+msgstr ""
+
+#: src/template/htaccess.txt:231
+msgid ""
+"\n"
+"# use utf-8 encoding for anything served text/plain or text/html\n"
+msgstr ""
+
+#: src/template/htaccess.txt:235
+msgid ""
+"\n"
+"# force utf-8 for a number of file formats\n"
+msgstr ""
+
+#: src/template/index.html:10
+msgid "IE User Agent Manipulation"
+msgstr ""
+
+#: src/template/index.html:12
+msgid ""
+"Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
+"  Remove this if you use the .htaccess"
+msgstr ""
+
+#: src/template/index.html:22
+msgid "Mobile Viewport Fix"
+msgstr ""
+
+#: src/template/index.html:26
+msgid ""
+"device-width : Occupy full width of the screen in its current orientation"
+msgstr ""
+
+#: src/template/index.html:27
+msgid ""
+"initial-scale = 1.0 retains dimensions instead of zooming out if page height "
+"> device height"
+msgstr ""
+
+#: src/template/index.html:28
+msgid ""
+"maximum-scale = 1.0 retains dimensions instead of zooming in if page width < "
+"device width"
+msgstr ""
+
+#: src/template/index.html:33
+msgid ""
+"Place favicon.ico and apple-touch-icon.png in the root of your domain and "
+"delete these references"
+msgstr ""
+
+#: src/template/index.html:38
+msgid "CSS : implied media=\"all\""
+msgstr ""
+
+#: src/template/index.html:41
+msgid "For the less-enabled mobile browsers like Opera Mini"
+msgstr ""
+
+#: src/template/index.html:45
+msgid ""
+"All JavaScript at the bottom, except for Modernizr which enables HTML5 "
+"elements & feature detects"
+msgstr ""
+
+#: src/template/index.html:70
+msgid "end of #container"
+msgstr ""
+
+#: src/template/index.html:73
+msgid "Javascript at the bottom for fast page loading"
+msgstr ""
+
+#: src/template/index.html:75
+msgid "Grab Google CDN's jQuery. fall back to local if necessary"
+msgstr ""
+
+#: src/template/index.html:88
+msgid "yui profiler and profileviewer - remove for production"
+msgstr ""
+
+#: src/template/index.html:91
+msgid "end profiling code"
+msgstr ""
+
+#: src/template/index.html:95
+msgid "asynchronous google analytics:"
+msgstr ""
+
+#: src/template/index.html:96
+msgid "change the UA-XXXXX-X to be your site's ID"
+msgstr ""
+
+#: src/template/css/handheld.css:3 src/template/css/mobile.css:3
+msgid "Screens are not big enough to account for floats"
+msgstr ""
+
+#: src/template/css/handheld.css:4 src/template/css/mobile.css:4
+msgid "Slightly reducing font size to reduce need to scroll"
+msgstr ""
+
+#: src/template/css/handheld.css:5 src/template/css/mobile.css:5
+msgid "As much contrast as possible"
+msgstr ""
+
+#: src/template/css/style.css:3
+msgid "style.css contains a reset, font normalization and some base styles."
+msgstr ""
+
+#: src/template/css/style.css:5
+msgid "credit is left where credit is due."
+msgstr ""
+
+#: src/template/css/style.css:6
+msgid "additionally, much inspiration was taken from these projects:"
+msgstr ""
+
+#: src/template/css/style.css:14
+msgid ""
+"html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
+"baseline)"
+msgstr ""
+
+#: src/template/css/style.css:15
+msgid "Authors"
+msgstr ""
+
+#: src/template/css/style.css:60
+msgid "tables still need cellspacing=\"0\" in the markup"
+msgstr ""
+
+#: src/template/css/style.css:66
+msgid "END RESET CSS"
+msgstr ""
+
+#: src/template/css/style.css:70
+msgid "fonts.css from the YUI Library"
+msgstr ""
+
+#: src/template/css/style.css:74
+msgid ""
+"Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages"
+msgstr ""
+
+#: src/template/css/style.css:76
+msgid "There are three custom edits:"
+msgstr ""
+
+#: src/template/css/style.css:78
+msgid "remove arial, helvetica from explicit font stack"
+msgstr ""
+
+#: src/template/css/style.css:79
+msgid "make the line-height relative and unit-less"
+msgstr ""
+
+#: src/template/css/style.css:80
+msgid "remove the pre, code styles"
+msgstr ""
+
+#: src/template/css/style.css:89
+msgid "normalize monospace sizing"
+msgstr ""
+
+#: src/template/css/style.css:97
+msgid "minimal base styles"
+msgstr ""
+
+#: src/template/css/style.css:101
+msgid "#444 looks better than black"
+msgstr ""
+
+#: src/template/css/style.css:104
+msgid ""
+"Headers (h1,h2,etc) have no default font-size or margin, you'll want to "
+"define those yourself."
+msgstr ""
+
+#: src/template/css/style.css:113
+msgid "Accessible focus treatment:"
+msgstr ""
+
+#: src/template/css/style.css:141
+msgid "align checkboxes, radios, text inputs with their label"
+msgstr ""
+
+#: src/template/css/style.css:151
+msgid "No text-shadow"
+msgstr ""
+
+#: src/template/css/style.css:152
+msgid "These selection declarations have to be separate."
+msgstr ""
+
+#: src/template/css/style.css:154
+msgid "Also: hot pink."
+msgstr ""
+
+#: src/template/css/style.css:164
+msgid "always force a scrollbar in non-IE"
+msgstr ""
+
+#: src/template/css/style.css:167
+msgid "make buttons play nice in IE:"
+msgstr ""
+
+#: src/template/css/style.css:171
+msgid "bicubic resizing for non-native sized IMG:"
+msgstr ""
+
+#: src/template/css/style.css:178
+msgid "Non-semantic helper classes"
+msgstr ""
+
+#: src/template/css/style.css:181
+msgid "for image replacement"
+msgstr ""
+
+#: src/template/css/style.css:184
+msgid "Hide for both screenreaders and browsers"
+msgstr ""
+
+#: src/template/css/style.css:188
+msgid "Hide only visually, but have it available for screenreaders"
+msgstr ""
+
+#: src/template/css/style.css:195
+msgid "Hide visually and from screenreaders, but maintain layout"
+msgstr ""
+
+#: src/template/css/style.css:198
+msgid "The Magnificent CLEARFIX"
+msgstr ""
+
+#: src/template/css/style.css:201
+msgid "/* Hides from IE-mac \\*/"
+msgstr ""
+
+#: src/template/css/style.css:208
+msgid "Primary Styles"
+msgstr ""
+
+#: src/template/css/style.css:209 src/template/js/script.js:1
+msgid "Author"
+msgstr ""
+
+#: src/template/css/style.css:223
+msgid "print styles"
+msgstr ""
+
+#: src/template/css/style.css:224
+msgid "inlined to avoid required HTTP connection"
+msgstr ""
+
+#: src/template/css/style.css:235
+msgid "Don't show links for images"
+msgstr ""
+
+#: src/template/js/plugins.js:2
+msgid "remap jQuery to $"
+msgstr ""
+
+#: src/template/js/plugins.js:20
+msgid "usage: log('inside coolFunc',this,arguments);"
+msgstr ""
+
+#: src/template/js/plugins.js:24
+msgid "store logs to an array for reference"
+msgstr ""
+
+#: src/template/js/plugins.js:33
+msgid "catch all document.write() calls"
 msgstr ""

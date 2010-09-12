@@ -6,36 +6,43 @@
   <!-- www.phpied.com/conditional-comments-block-downloads/ -->
   <!--[if IE]><![endif]-->
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
+<!--
+  {% blocktrans %}IE User Agent Manipulation{% endblocktrans %}
+
+  {% blocktrans %}Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+  Remove this if you use the .htaccess{% endblocktrans %}
+-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--  Mobile Viewport Fix
-        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-  device-width : Occupy full width of the screen in its current orientation
-  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-  -->
+<!--
+  {% blocktrans %}Mobile Viewport Fix{% endblocktrans %}
+
+  j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+
+  {% blocktrans %}device-width : Occupy full width of the screen in its current orientation{% endblocktrans %}
+  {% blocktrans %}initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height{% endblocktrans %}
+  {% blocktrans %}maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width{% endblocktrans %}
+-->
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+<!-- {% blocktrans %}Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references{% endblocktrans %} -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <!-- CSS : implied media="all" -->
+  <!-- {% blocktrans %}CSS : implied media="all"{% endblocktrans %} -->
   <link rel="stylesheet" href="css/style.css?v=1">
 
-  <!-- For the less-enabled mobile browsers like Opera Mini -->
+  <!-- {% blocktrans %}For the less-enabled mobile browsers like Opera Mini{% endblocktrans %} -->
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
 
  
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <!-- {% blocktrans %}All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects{% endblocktrans %} -->
   <script src="js/modernizr-1.5.min.js"></script>
 
 </head>
@@ -60,12 +67,12 @@
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div> <!--! {% blocktrans %}end of #container{% endblocktrans %} -->
 
 
-  <!-- Javascript at the bottom for fast page loading -->
+  <!-- {% blocktrans %}Javascript at the bottom for fast page loading{% endblocktrans %} -->
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <!-- {% blocktrans %}Grab Google CDN's jQuery. fall back to local if necessary{% endblocktrans %} -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 
@@ -78,14 +85,16 @@
   <![endif]-->
 
 
-  <!-- yui profiler and profileviewer - remove for production -->
+  <!-- {% blocktrans %}yui profiler and profileviewer - remove for production{% endblocktrans %} -->
   <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
   <script src="js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
+  <!-- {% blocktrans %}end profiling code{% endblocktrans %} -->
 
 
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
+<!--
+  {% blocktrans %}asynchronous google analytics:{% endblocktrans %} mathiasbynens.be/notes/async-analytics-snippet 
+  {% blocktrans %}change the UA-XXXXX-X to be your site's ID{% endblocktrans %}
+-->
   <script>
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
    (function(d, t) {
