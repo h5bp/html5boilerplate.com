@@ -7,6 +7,9 @@ import re, os, sys
 from optparse import OptionParser
 from subprocess import PIPE, Popen
 from gettext import translation
+from itertools import dropwhile
+import codecs
+from shutil import copyfile
 
 parse_re = re.compile ( r'{% blocktrans %}(.+?){% endblocktrans %}' )
 escape_re = re.compile( r'(\')' )
@@ -21,16 +24,18 @@ class LocalizerGettextException( BaseException ):
 class Localizer( object ):
     GETTEXT = 0
     PUTTEXT = 1
+    TEMPLATE_EXTS   = [ '.html', '.txt', '.markdown' ]
 
     XGETTEXT_CMD    = u'xgettext -L Perl --from-code=utf-8 -o - -'
     MSGUNIQ_CMD     = u'msguniq --to-code=utf-8 "%s"'
     MSGMERGE_CMD    = u'msgmerge -q "%s" "%s"'
 
-    def __init__( self, dir, domain ):
+    def __init__( self, domain, inputbase, localebase, outputbase ):
         self.dir        = dir
         self.domain     = domain
-        self.localebase = './locale'
-        self.buildbase  = './build'
+        self.inputbase  = inputbase
+        self.localebase = localebase
+        self.outputbase = outputbase
 
     def localedir( self, locale ):
         return os.path.join( self.localebase, locale, 'LC_MESSAGES' )
@@ -44,21 +49,13 @@ class Localizer( object ):
     def potpath( self, locale ):
         return os.path.join( self.localedir( locale ), "%s.pot" % self.domain )
 
-    def gettextize( self, file, locale ):
+    def xgettext( self, file, locale ):
         src     = self.templatize( file, Localizer.GETTEXT, locale )
 
-        basedir = self.localedir( locale )
-        if not os.path.isdir( basedir ):
-            os.makedirs( basedir)
-        pofile = self.popath( locale )
         potfile = self.potpath( locale )
-
-        if os.path.exists( potfile ):
-            os.unlink( potfile )
 
         msgs, errors = _popen( Localizer.XGETTEXT_CMD, src )
         msgs = re.sub( r'#: standard input:(\d+)', r'#: %s:\1' % file, msgs )
-
         if os.path.exists( potfile ):
             msgs = '\n'.join( dropwhile( len, msgs.split( '\n' ) ) )
         else:
@@ -66,6 +63,19 @@ class Localizer( object ):
 
         with open( potfile, 'ab' ) as f:
             f.write( msgs )
+
+    def xgettext_preprocessing( self, locale ):
+        basedir = self.localedir( locale )
+        if not os.path.isdir( basedir ):
+            os.makedirs( basedir)
+
+        potfile = self.potpath( locale )
+        if os.path.exists( potfile ):
+            os.unlink( potfile )
+
+    def xgettext_postprocessing( self, locale ):
+        pofile  = self.popath( locale )
+        potfile = self.potpath( locale )
 
         if os.path.exists( potfile ):
             msgs, errors = _popen( Localizer.MSGUNIQ_CMD % potfile)
@@ -87,15 +97,33 @@ class Localizer( object ):
 
     def puttextize( self, file, locale ):
         l10n    = translation( domain=self.domain, localedir=self.localebase, languages=[ locale ] )
-        src     = self.templatize( file=file, type=Localizer.PUTTEXT, locale=locale, l10n=l10n )
+        outfile = re.sub( r'^\%s' % self.inputbase, r'%s/%s' % ( self.outputbase, locale ), file )
+        dir     = os.path.normpath( os.path.join( os.path.dirname( outfile ) ) )
 
-        outfile = re.sub( r'^\./src', r'./build/%s' % locale, file )
-        dir = os.path.normpath( os.path.join( os.path.dirname( outfile ) ) )
         if not os.path.isdir( dir ):
             os.makedirs( dir )
 
-        with open( outfile, 'wb' ) as f:
-            f.write( src.encode( 'utf-8' ) )
+        basename, extension = os.path.splitext( file )
+        if extension in Localizer.TEMPLATE_EXTS:
+            src = self.templatize( file=file, type=Localizer.PUTTEXT, locale=locale, l10n=l10n )
+            with open( outfile, 'wb' ) as f:
+                f.write( src.encode( 'utf-8' ) )
+        else:
+            copyfile( file, outfile )
+
+    def gettext( self, locale ):
+        self.xgettext_preprocessing( locale )
+        for root, dirs, files in os.walk( self.inputbase ):
+            for name in files:
+                basename, extension = os.path.splitext( name )
+        if extension in Localizer.TEMPLATE_EXTS:
+                    self.xgettext( os.path.join( root, name ), locale )
+        self.xgettext_postprocessing( locale )
+
+    def puttext( self, locale ):
+        for root, dirs, files in os.walk( self.inputbase ):
+            for name in files:
+                self.puttextize( os.path.join( root, name ), locale )
 
     def compile( self, locale ):
         mo          = self.mopath( locale )
@@ -106,7 +134,7 @@ class Localizer( object ):
             raise LocalizerGettextException( u"`msgfmt` errors: %s" % errors )
 
     def templatize( self, file, type, locale, l10n=None ):
-        with open( file, 'rU' ) as f:
+        with codecs.open( file, 'rU', 'utf-8' ) as f:
             src     = f.read()
             newsrc  = []
             blocks  = re.split( r'{% blocktrans %}', src )
@@ -146,21 +174,27 @@ def main():
                         help="Compile all `.po` files into `.mo` binaries." )
     parser.add_option(  "-r", "--render", dest="render", default=False, action="store_true",
                         help="Render all files in their respective languages." )
-                        
+    parser.add_option(  "-l", "--locale", dest="localebase", default="./locale", metavar="DIR",
+                        help="The directory where the .po/.mo files ought be located" )
+    parser.add_option(  "-o", "--output", dest="outputbase", default="./build", metavar="DIR",
+                        help="The directory into which translated files ought be rendered." )
+    parser.add_option(  "-i", "--input", dest="inputbase", default="./src", metavar="DIR", 
+                        help="The directory from which to read the translation templates." )
+
     (options, args) = parser.parse_args()
 
-    l10n = Localizer( dir='omg', domain=options.domain )
+    l10n = Localizer(   domain=options.domain, outputbase=options.outputbase, 
+                        inputbase=options.inputbase, localebase=options.localebase )
 
     if options.compile:
         for locale in languages:
             l10n.compile( locale )
     elif options.render:
         for locale in languages:
-            l10n.puttextize( args[ 0 ], locale )
+            l10n.puttext( locale )
     else:
-        if args[ 0 ]:
-            for locale in languages:
-                src = l10n.gettextize( args[ 0 ], locale )
+        for locale in languages:
+            src = l10n.gettext( locale )
 
 if __name__ == "__main__":
     sys.exit(main())
