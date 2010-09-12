@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-12 01:18+0200\n"
+"POT-Creation-Date: 2010-09-12 03:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,13 +23,15 @@ msgstr ""
 
 #: src/index.html:7 standard input:37
 msgid "A rock-solid default for HTML5 awesome."
-msgstr ""
+msgstr "ein felsenfester Standard für HTML5"
 
 #: src/index.html:38
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
+"HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage des knallhartes Profis: Es ist "
+"die Basis für eine schnelle, robuste und zukunftssichere Seite."
 
 #: src/index.html:39
 msgid ""
