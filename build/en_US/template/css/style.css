@@ -1,3 +1,4 @@
+
 /* 
   style.css contains a reset, font normalization and some base styles.
   
@@ -7,6 +8,7 @@
     camendesign.com/design/
     praegnanz.de/weblog/htmlcssjs-kickstart
 */
+
 
 /* 
   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
@@ -65,13 +67,17 @@ input, select { vertical-align:middle; }
 
 
 /*
-fonts.css from the YUI Library: developer.yahoo.com/yui/
-          Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+  fonts.css from the YUI Library
+  
+  developer.yahoo.com/yui/
+  
+  Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
 
-There are three custom edits:
- * remove arial, helvetica from explicit font stack
- * make the line-height relative and unit-less
- * remove the pre, code styles
+  There are three custom edits:
+  
+  *  remove arial, helvetica from explicit font stack
+  *  make the line-height relative and unit-less
+  *  remove the pre, code styles
 */
 body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
 
@@ -95,8 +101,7 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
 body, select, input, textarea { color:#444; }
 
-/* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
+/* Headers (h1,h2,etc) have no default font-size or margin, you'll want to define those yourself. */ 
  
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
@@ -143,9 +148,12 @@ input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 
 
-/* These selection declarations have to be separate.
-   No text-shadow: twitter.com/miketaylr/status/12228805301 
-   Also: hot pink. */
+/* No text-shadow
+   These selection declarations have to be separate.
+
+   Also: hot pink.
+   
+   twitter.com/miketaylr/status/12228805301 */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
 

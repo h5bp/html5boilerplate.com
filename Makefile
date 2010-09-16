@@ -15,9 +15,9 @@ info:
 	@echo ""
 
 messages: force
-	@python ./scripts/static_gettext.py --languages en_US,de_DE
+	@python ./scripts/static_gettext.py --languages en_US,de_DE,it
 
 build: force
-	@python ./scripts/static_gettext.py --languages en_US,de_DE --compile && python ./scripts/static_gettext.py --languages en_US,de_DE --render
+	@python ./scripts/static_gettext.py --languages en_US,de_DE,it --compile && python ./scripts/static_gettext.py --languages en_US,de_DE,it --render
 
 force: ;
