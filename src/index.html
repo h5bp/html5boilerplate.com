@@ -72,7 +72,7 @@
         <li>{% blocktrans %}Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.{% endblocktrans %}</li>
       </ul>
 
-      <h3>{% blocktrans %}Why it is awesome-er</h3>
+      <h3>{% blocktrans %}Why it is awesome-er{% endblocktrans %}</h3>
       <ul>
         <li>{% blocktrans %}Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.{% endblocktrans %}</li>
         <li>{% blocktrans %}Console.log nerfing so you won't break anyone by mistake.{% endblocktrans %}</li>
@@ -91,16 +91,16 @@
         <li>{% blocktrans %}Build script to concatenate/minify your script &amp; style and optimizes images.{% endblocktrans %}</li>
         <li>{% blocktrans %}Enable gzip technique (from Even Faster Websites) for <strong>all</strong> capable users.{% endblocktrans %}</li>
         <li>{% blocktrans %}<s>Release with no explanatory comments, just the meat.</s> Boilerplate "stripped" is here!{% endblocktrans %}</li>
-        <li>{% blocktrans %}<s>SASS/HAML ports.</s>{% endblocktrans %} <a href="http://github.com/paulirish/html5-boilerplate/issues/#issue/43">They're coming.{% endblocktrans %}</a></li>
+        <li>{% blocktrans %}<s>SASS/HAML ports.</s>{% endblocktrans %} <a href="http://github.com/paulirish/html5-boilerplate/issues/#issue/43">{% blocktrans %}They're coming.{% endblocktrans %}</a></li>
       </ul>
 
-      <h3 id="thesource">{% blocktrans %}Walk through it with me, now</h3>
+      <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
 
-      <h3>{% blocktrans %}Get the lowdown in 40 minutes, flat!</h3>
+      <h3>{% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</h3>
       <embed src="http://blip.tv/play/gcMVgffAOgI%2Em4v" type="application/x-shockwave-flash" width="480" height="330" allowscriptaccess="always" allowfullscreen="true"></embed>
 
       <div class="recos">
-        <h3>{% blocktrans %}Make it even better!</h3>
+        <h3>{% blocktrans %}Make it even better!{% endblocktrans %}</h3>
         <ul>
           <li>{% blocktrans %}Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.{% endblocktrans %}</li>
           <li>{% blocktrans %}Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.{% endblocktrans %}</li>
@@ -251,11 +251,11 @@
 
     jQuery('a[href=#dsq-content]').toggle(
       function () {
-        jQuery(this).text('Hide Comments');
+        jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
         jQuery('#disqus_thread').show();
       },
       function () {
-        jQuery(this).text('Show 200+ Comments');
+        jQuery(this).text('{% blocktrans %}Show 300+ Comments{% endblocktrans %}');
         jQuery('#disqus_thread').hide();
       }
     );

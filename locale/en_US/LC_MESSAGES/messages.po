@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-16 08:26+0200\n"
+"POT-Creation-Date: 2010-09-17 21:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,6 +127,10 @@ msgid ""
 "for you."
 msgstr ""
 
+#: src/index.html:75
+msgid "Why it is awesome-er"
+msgstr ""
+
 #: src/index.html:77
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
 msgstr ""
@@ -194,6 +198,26 @@ msgstr ""
 msgid ""
 "<s>Release with no explanatory comments, just the meat.</s> Boilerplate "
 "\"stripped\" is here!"
+msgstr ""
+
+#: src/index.html:94
+msgid "<s>SASS/HAML ports.</s>"
+msgstr ""
+
+#: src/index.html:94
+msgid "They're coming."
+msgstr ""
+
+#: src/index.html:97
+msgid "Walk through it with me, now"
+msgstr ""
+
+#: src/index.html:99
+msgid "Get the lowdown in 40 minutes, flat!"
+msgstr ""
+
+#: src/index.html:103
+msgid "Make it even better!"
 msgstr ""
 
 #: src/index.html:105
@@ -273,6 +297,10 @@ msgstr ""
 
 #: src/index.html:153
 msgid "Show 300+ comments"
+msgstr ""
+
+#: src/index.html:258
+msgid "Show 300+ Comments"
 msgstr ""
 
 #: src/index.html:276
