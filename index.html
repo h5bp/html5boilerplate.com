@@ -244,6 +244,9 @@
         
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
     
+    if (location.hash.replace('#','')){
+      jQuery('#disqus_thread').show();
+    }
     
     jQuery('a[href=#dsq-content]').toggle(function(){ 
       jQuery(this).text('Hide Comments'); jQuery('#disqus_thread').show();
