@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=8;chrome=1" >
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
 
   <title>HTML5 Boilerplate - A rock-solid default for HTML5 awesome.</title>
@@ -98,6 +98,7 @@
 
       <h3>Get the lowdown in 40 minutes, flat!</h3>
       <embed src="http://blip.tv/play/gcMVgffAOgI%2Em4v" type="application/x-shockwave-flash" width="480" height="330" allowscriptaccess="always" allowfullscreen="true"></embed>
+      <p>Or read through this good explanation of <a href="http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/">20 snippets you should be using</a>.</p>
 
       <div class="recos">
         <h3>Make it even better!</h3>
@@ -141,7 +142,6 @@
         <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
         <li><a href="http://www.viget.com/inspire/">Viget</a></li>
         <li><a href="http://stevesouders.com/">Steve Souders</a></li>
-        <li><a href="http://zeldman.com">Jeffery Zeldman</a></li>
         <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
         <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
       </ul>
@@ -248,6 +248,10 @@
     var dsqlength = jQuery('ul#dsq-comments').length + 1;
 
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
+
+    if (location.hash.replace('#','')){
+      jQuery('#disqus_thread').show();
+    }
 
     jQuery('a[href=#dsq-content]').toggle(
       function () {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-17 21:29+0200\n"
+"POT-Creation-Date: 2010-09-25 09:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,50 +216,57 @@ msgstr ""
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr ""
 
-#: src/index.html:103
+#: src/index.html:101
+msgid ""
+"Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
+"com/development/snippets-html5-boilerplate/\">20 snippets you should be "
+"using</a>."
+msgstr ""
+
+#: src/index.html:104
 msgid "Make it even better!"
 msgstr ""
 
-#: src/index.html:105
+#: src/index.html:106
 msgid ""
 "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
 
-#: src/index.html:106
+#: src/index.html:107
 msgid ""
 "Using border-radius with a border in Webkit? Try <a href=\"http://tumble."
 "sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
 "clip</a> to fix the bleed."
 msgstr ""
 
-#: src/index.html:107
+#: src/index.html:108
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
 msgstr ""
 
-#: src/index.html:108
+#: src/index.html:109
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
 
-#: src/index.html:109
+#: src/index.html:110
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
 
-#: src/index.html:110
+#: src/index.html:111
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</a>"
 msgstr ""
 
-#: src/index.html:111
+#: src/index.html:112
 msgid ""
 "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
 "<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
@@ -267,26 +274,26 @@ msgid ""
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
 
-#: src/index.html:112
+#: src/index.html:113
 msgid ""
 "You can use the <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
 
-#: src/index.html:119
+#: src/index.html:120
 msgid "Brought to you by"
 msgstr ""
 
-#: src/index.html:120
+#: src/index.html:121
 msgid "Google Chrome, jQuery"
 msgstr ""
 
-#: src/index.html:121
+#: src/index.html:122
 msgid "Open Web Vigilante"
 msgstr ""
 
-#: src/index.html:123
+#: src/index.html:124
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr ""
@@ -299,11 +306,11 @@ msgstr ""
 msgid "Show 300+ comments"
 msgstr ""
 
-#: src/index.html:258
+#: src/index.html:262
 msgid "Show 300+ Comments"
 msgstr ""
 
-#: src/index.html:276
+#: src/index.html:280
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"

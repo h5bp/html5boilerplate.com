@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-17 21:29+0200\n"
+"POT-Creation-Date: 2010-09-25 09:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
-"HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage für knallharte Profis: "
-"die Basis für eine schnelle, robuste und zukunftssichere Seite."
+"HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage für knallharte Profis: die "
+"Basis für eine schnelle, robuste und zukunftssichere Seite."
 
 #: src/index.html:39
 msgid ""
@@ -48,10 +48,11 @@ msgid ""
 msgstr ""
 "In mehr als Zwei Jahren iterativer Entwicklung, haben wir die bewährtesten "
 "Vorgehensweisen schon eingebaut: Cross-Browser-Normalisierung, Performance-"
-"Optimierungen und sogar optionale Features wie cross-domain AJAX und "
-"Flash.  Die Vorlage für die Apache-.htaccess-Konfigurationsdatei kommt mit "
+"Optimierungen und sogar optionale Features wie cross-domain AJAX und Flash.  "
+"Die Vorlage für die Apache-.htaccess-Konfigurationsdatei kommt mit "
 "praktischen Caching-Regeln daher, bereitet Deine Seite für HTML5-Video vor "
-"erlaubt Dir einfache @font-face-Nutzung und gzip-Auslieferung Deines Contents."
+"erlaubt Dir einfache @font-face-Nutzung und gzip-Auslieferung Deines "
+"Contents."
 
 #: src/index.html:40
 msgid ""
@@ -60,9 +61,9 @@ msgid ""
 "quickly and right-footed."
 msgstr ""
 "Boilerplate ist weder ein Framework, noch schreibt es dir eine "
-"Entwicklungsphilosophie vor.  Es ist eine Sammlung von Tips und Tricks, "
-"die Dir hilfen, deine Projekt schnellstmöglich und flexibel auf die Beine "
-"zu stellen."
+"Entwicklungsphilosophie vor.  Es ist eine Sammlung von Tips und Tricks, die "
+"Dir hilfen, deine Projekt schnellstmöglich und flexibel auf die Beine zu "
+"stellen."
 
 #: src/index.html:44
 msgid "Want to dive in?"
@@ -123,8 +124,7 @@ msgstr "Optimierungen für mobile Browser"
 #: src/index.html:69
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr ""
-"Progressives Erweitern, elegante Degradierung &mdash; natürlich dabei"
+msgstr "Progressives Erweitern, elegante Degradierung &mdash; natürlich dabei"
 
 #: src/index.html:70
 msgid "IE specific classes for maximum cross-browser control"
@@ -132,7 +132,9 @@ msgstr "IE-spezifische CSS-Klassen für maximale Cross-Browser-Kontrolle"
 
 #: src/index.html:71
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Praktische <code>.no-js</code>- und <code>.js</code>-Klassen für Fähigkeiten-basierte Styles"
+msgstr ""
+"Praktische <code>.no-js</code>- und <code>.js</code>-Klassen für Fähigkeiten-"
+"basierte Styles"
 
 #: src/index.html:72
 msgid ""
@@ -165,8 +167,8 @@ msgstr "Ein perfektes Druck-Stylesheet, optimiert für Performance"
 #: src/index.html:81
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr ""
-"Ein Markup- und CSS-Gerüst, das funktioniert unter iOS, Android und "
-"Opera Mobile "
+"Ein Markup- und CSS-Gerüst, das funktioniert unter iOS, Android und Opera "
+"Mobile "
 
 #: src/index.html:82
 msgid "IE6 pngfix baked in."
@@ -183,8 +185,8 @@ msgstr ""
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
-"Die <code>.htaccess</code>-Datei ermöglicht die korrekte Nutzung der HTML5-Funktionen "
-"bei geringere Ladezeiten"
+"Die <code>.htaccess</code>-Datei ermöglicht die korrekte Nutzung der HTML5-"
+"Funktionen bei geringere Ladezeiten"
 
 #: src/index.html:85
 msgid "CDN hosted jQuery with local fallback failsafe."
@@ -194,8 +196,7 @@ msgstr ""
 #: src/index.html:86
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
-msgstr ""
-"Zu viel, zu komplex?  HTML5 Boilerplate ist Löschtasten-kompatibel. :)"
+msgstr "Zu viel, zu komplex?  HTML5 Boilerplate ist Löschtasten-kompatibel. :)"
 
 #: src/index.html:89
 msgid "Future Awesome"
@@ -210,16 +211,16 @@ msgid ""
 "Build script to concatenate/minify your script &amp; style and optimizes "
 "images."
 msgstr ""
-"Ein Build-Script, das Deine Scripts und Styles zusammenfügt &amp; "
-"minimiert, und Deine Grafiken optimiert."
+"Ein Build-Script, das Deine Scripts und Styles zusammenfügt &amp; minimiert, "
+"und Deine Grafiken optimiert."
 
 #: src/index.html:92
 msgid ""
 "Enable gzip technique (from Even Faster Websites) for <strong>all</strong> "
 "capable users."
 msgstr ""
-"Aktiviertes gzip für <strong>alle</strong> Nutzer, die es unterstützen "
-"(via Even Faster Websites)"
+"Aktiviertes gzip für <strong>alle</strong> Nutzer, die es unterstützen (via "
+"Even Faster Websites)"
 
 #: src/index.html:93
 msgid ""
@@ -244,31 +245,40 @@ msgstr "Die einzelnen Bausteine"
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Die wichtigsten Punkte in 40 Minuten"
 
-#: src/index.html:103
+#: src/index.html:101
+msgid ""
+"Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
+"com/development/snippets-html5-boilerplate/\">20 snippets you should be "
+"using</a>."
+msgstr ""
+"Oder, lese diese gute Erklärung von <a href=\"http://www.1stwebdesigner."
+"com/development/snippets-html5-boilerplate/\">20 Snippets, die du nuzten solltest</a>."
+
+#: src/index.html:104
 msgid "Make it even better!"
 msgstr "Es geht noch besser!"
 
-#: src/index.html:105
+#: src/index.html:106
 msgid ""
 "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
 "Nutze <code>rel=\"prefetch\"</code> um <a href=\"http://www.stevesouders.com/"
-"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">Dokumente präventiv"
-"zu laden</a>."
+"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">Dokumente "
+"präventivzu laden</a>."
 
-#: src/index.html:106
+#: src/index.html:107
 msgid ""
 "Using border-radius with a border in Webkit? Try <a href=\"http://tumble."
 "sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
 "clip</a> to fix the bleed."
 msgstr ""
 "Nutze <a href=\"http://tumble.sneak.co.nz/post/928998513/fixing-the-"
-"background-bleed\">-webkit-background-clip</a>, um das Durchschlagen von Rändern "
-"bei border-radius im Webkit zu verhindern."
+"background-bleed\">-webkit-background-clip</a>, um das Durchschlagen von "
+"Rändern bei border-radius im Webkit zu verhindern."
 
-#: src/index.html:107
+#: src/index.html:108
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
@@ -276,25 +286,25 @@ msgstr ""
 "Schreibe <a href=\"http://css-tricks.com/efficiently-rendering-css/"
 "\">effizientes CSS</a> für die optimale Browser-Performance."
 
-#: src/index.html:108
+#: src/index.html:109
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
-"Starte Deine seiten-spezifischie Javascripts <a href=\"http://paulirish.com/2009/"
-"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">basierend auf "
-"Deinem Markup</a>."
+"Starte Deine seiten-spezifischie Javascripts <a href=\"http://paulirish."
+"com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/"
+"\">basierend auf Deinem Markup</a>."
 
-#: src/index.html:109
+#: src/index.html:110
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
-"Mach Dich mit den möglichen <a href=\"http://paulirish.com/2009/browser-specific-css-"
-"hacks/\">browser-spezifischen CSS-Hacks</a> vertraut."
+"Mach Dich mit den möglichen <a href=\"http://paulirish.com/2009/browser-"
+"specific-css-hacks/\">browser-spezifischen CSS-Hacks</a> vertraut."
 
-#: src/index.html:110
+#: src/index.html:111
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</a>"
@@ -303,19 +313,20 @@ msgstr ""
 "com/standards/\">die gleichen Frontend-Code-Standards halten</a>, und die "
 "gleichen bewährtesten Vorgehensweisen nutzen."
 
-#: src/index.html:111
+#: src/index.html:112
 msgid ""
 "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
 "<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
-"Nutze <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
-"<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) für "
+"Nutze <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> "
+"(via <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) für "
 "die bestmögliche <a href=\"http://googlewebmastercentral.blogspot."
-"com/2009/05/introducing-rich-snippets.html\">Auffindbarkeit in Suchmaschinen</a>."
+"com/2009/05/introducing-rich-snippets.html\">Auffindbarkeit in "
+"Suchmaschinen</a>."
 
-#: src/index.html:112
+#: src/index.html:113
 msgid ""
 "You can use the <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
@@ -324,19 +335,19 @@ msgstr ""
 "Das <code>body</code>-Element kann als Wrapper genutzt werden, ein "
 "<code>div#container</code> ist nicht notwendig."
 
-#: src/index.html:119
+#: src/index.html:120
 msgid "Brought to you by"
 msgstr "Präsentiert von"
 
-#: src/index.html:120
+#: src/index.html:121
 msgid "Google Chrome, jQuery"
 msgstr ""
 
-#: src/index.html:121
+#: src/index.html:122
 msgid "Open Web Vigilante"
 msgstr ""
 
-#: src/index.html:123
+#: src/index.html:124
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "Ohne diese Superhelden, wäre HTML5 Boilerplate nicht möglich gewesen:"
@@ -349,12 +360,12 @@ msgstr "Kommentar"
 msgid "Show 300+ comments"
 msgstr "Zeige 300+ Kommentar an"
 
-#: src/index.html:258
+#: src/index.html:262
 #, fuzzy
 msgid "Show 300+ Comments"
 msgstr "Zeige 300+ Kommentar an"
 
-#: src/index.html:276
+#: src/index.html:280
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
