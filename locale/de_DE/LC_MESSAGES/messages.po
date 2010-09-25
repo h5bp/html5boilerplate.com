@@ -27,14 +27,14 @@ msgstr ""
 
 #: src/index.html:7 standard input:37
 msgid "A rock-solid default for HTML5 awesome."
-msgstr "ein felsenfester Standard für HTML5"
+msgstr "ein grundsolider Standard für HTML5"
 
 #: src/index.html:38
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
-"HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage des knallhartes Profis: Es ist "
+"HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage für knallharte Profis: "
 "die Basis für eine schnelle, robuste und zukunftssichere Seite."
 
 #: src/index.html:39
@@ -46,12 +46,12 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
-"Nach mehr als Zwei Jahren iterative Entwicklung, bieten wir die bewährtesten "
-"bewährte Methoden an: Cross-Browser-Normalisierung, Performance-"
-"Optimierungen sowie wahlweise eingebaute Features wie cross-domain AJAX oder "
-"Flash.  Hier zeigen wir wie man HTML5-Video und @font-face vorbereitet, un "
-"klären wir die dunkele Welt des Apache-Configs auf, wie man alles mögliche "
-"cachen, gzippen und ausliefern kann."
+"In mehr als Zwei Jahren iterativer Entwicklung, haben wir die bewährtesten "
+"Vorgehensweisen schon eingebaut: Cross-Browser-Normalisierung, Performance-"
+"Optimierungen und sogar optionale Features wie cross-domain AJAX und "
+"Flash.  Die Vorlage für die Apache-.htaccess-Konfigurationsdatei kommt mit "
+"praktischen Caching-Regeln daher, bereitet Deine Seite für HTML5-Video vor "
+"erlaubt Dir einfache @font-face-Nutzung und gzip-Auslieferung Deines Contents."
 
 #: src/index.html:40
 msgid ""
@@ -59,9 +59,10 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
-"Boilerplate ist nicht nur ein Framework, und schreibt keine "
-"Entwicklungsphilosophie vor.  Es ist nur eine Sammlung von Tips und Tricks, "
-"die hilfen, deine Projekt schnellstmöglich auf die Beine zu stellen."
+"Boilerplate ist weder ein Framework, noch schreibt es dir eine "
+"Entwicklungsphilosophie vor.  Es ist eine Sammlung von Tips und Tricks, "
+"die Dir hilfen, deine Projekt schnellstmöglich und flexibel auf die Beine "
+"zu stellen."
 
 #: src/index.html:44
 msgid "Want to dive in?"
@@ -81,7 +82,7 @@ msgstr "oder"
 
 #: src/index.html:50
 msgid "No comments, just the bizniss."
-msgstr "Kein Kommentar, nur Code"
+msgstr "Kein Kommentare, nur Code"
 
 #: src/index.html:55
 msgid "Follow updates on twitter"
@@ -97,135 +98,135 @@ msgstr "Kommentar schreiben"
 
 #: src/index.html:62
 msgid "Why it is awesome"
-msgstr "Wahrum ist es so gut?"
+msgstr "Wahrum es so gut ist"
 
 #: src/index.html:64
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "cross-browser Fähigkeiten (selbst IE6 beherrschen wir)"
+msgstr "cross-browser Fähigkeiten (ja, auch IE6, Baby)"
 
 #: src/index.html:65
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr "HTML5 Bereitschaft.  Nutze neue Tags mit Gewissheit."
+msgstr "Vorbereitet für HTML5.  Nutze die neuen Tags mit Gewissheit."
 
 #: src/index.html:66
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr "optimale Cache- und Komprimerung-Regeln"
+msgstr "Optimale Cache- und Komprimerungsregeln für beste Performance"
 
 #: src/index.html:67
 msgid "Best practice site configuration defaults"
-msgstr "empfolene Standards für Site-Konfiguration"
+msgstr "Empfohlene und bewährte Standards für die Konfiguration Deiner Site"
 
 #: src/index.html:68
 msgid "Mobile browser optimizations"
-msgstr "Optimierungen für mobile Browsern"
+msgstr "Optimierungen für mobile Browser"
 
 #: src/index.html:69
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
-"progressive Verbesserung und graceful degradation &mdash; natürlich dabei"
+"Progressives Erweitern, elegante Degradierung &mdash; natürlich dabei"
 
 #: src/index.html:70
 msgid "IE specific classes for maximum cross-browser control"
-msgstr "Body-Klassen bieten komplette Kontrolle über IE an"
+msgstr "IE-spezifische CSS-Klassen für maximale Cross-Browser-Kontrolle"
 
 #: src/index.html:71
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Praktische .no-js und .js Klassen für Style basierend auf Fähigkeiten"
+msgstr "Praktische <code>.no-js</code>- und <code>.js</code>-Klassen für Fähigkeiten-basierte Styles"
 
 #: src/index.html:72
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
-"Kein Unittesten aus reiner Faulheit?  Unsere durchgehende Testsuite wartet "
-"auf dich."
+"Du hättest gern Unit-Tests, bist aber zu faul?  Eine volständige Test-Suite "
+"wartet auf Dich."
 
 #: src/index.html:75
 msgid "Why it is awesome-er"
-msgstr "Wahrum ist es so schrecklich gut?"
+msgstr "Wahrum es noch viel grossartiger ist"
 
 #: src/index.html:77
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr "JavaScript-Profilierung, auch in IE6 und IE7?  Kein Problem."
+msgstr "JavaScript-Profiling... in IE6 und IE7?  Klar, kein Problem."
 
 #: src/index.html:78
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log stillgelegt, um Produktionsfehler zu vermeiden"
+msgstr "Clevere console.log-Einschrängungen, um Produktionsfehler zu vermeiden"
 
 #: src/index.html:79
 msgid "Never go wrong with your doctype or markup!"
-msgstr "Nie wieder falsche Doktype bzw. Markup!"
+msgstr "Hab nie wieder Probleme mit Deinem Dokumenttyp oder HTML-Code!"
 
 #: src/index.html:80
 msgid "An optimal print stylesheet, performance optimized."
-msgstr "optimale Druck-Stylesheet, ohne zusätzliche HTTP-Request"
+msgstr "Ein perfektes Druck-Stylesheet, optimiert für Performance"
 
 #: src/index.html:81
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr ""
-"Markup- und CSS-Gerüst, das einwandfrei funktioniert im iOS, Android und "
+"Ein Markup- und CSS-Gerüst, das funktioniert unter iOS, Android und "
 "Opera Mobile "
 
 #: src/index.html:82
 msgid "IE6 pngfix baked in."
-msgstr "eingebaute pngfix für IE6"
+msgstr "eingebaute PNG-Fix für IE6"
 
 #: src/index.html:83
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
-"klares und barrierefreies Markup durch .clearfix und .visuallyhidden Klassen"
+"Sinnvolles und barrierefreies Markup durch <code>.clearfix</code>- und "
+"<code>.visuallyhidden</code>- Klassen"
 
 #: src/index.html:84
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
-".htaccess-Datei ermöglicht geringere Ladezeiten und korrekte Anwendung HTML5-"
-"Funktionen"
+"Die <code>.htaccess</code>-Datei ermöglicht die korrekte Nutzung der HTML5-Funktionen "
+"bei geringere Ladezeiten"
 
 #: src/index.html:85
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr ""
-"jQuery via CDN geladen, mit localer Sicherheitskopie als Ausweichlösung"
+"jQuery-Auslieferung via CDN mit localer Sicherheitskopie als Ausweichlösung"
 
 #: src/index.html:86
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
-"Zu viel für dich?  Glücklicherweise ist HTML5 Boilerplate total nachgiebig. "
-"Alles, was dir nicht passt, ist löschbar."
+"Zu viel, zu komplex?  HTML5 Boilerplate ist Löschtasten-kompatibel. :)"
 
 #: src/index.html:89
 msgid "Future Awesome"
-msgstr "Zukünftige Schönheiten"
+msgstr "Zukünftige Grossartigteiten"
 
 #: src/index.html:89
 msgid "(Coming Soon)"
-msgstr "(bald)"
+msgstr "(in kürze verfügbar)"
 
 #: src/index.html:91
 msgid ""
 "Build script to concatenate/minify your script &amp; style and optimizes "
 "images."
 msgstr ""
-"Build-Skript um deine Bilder zu optimieren, und deine JavaScript und CSS "
-"aneinanderzuhängen und zu minifizieren."
+"Ein Build-Script, das Deine Scripts und Styles zusammenfügt &amp; "
+"minimiert, und Deine Grafiken optimiert."
 
 #: src/index.html:92
 msgid ""
 "Enable gzip technique (from Even Faster Websites) for <strong>all</strong> "
 "capable users."
 msgstr ""
-"Gzip ermöglichen für <strong>alle</strong> taugliche Nutzer (via Even Faster "
-"Websites)"
+"Aktiviertes gzip für <strong>alle</strong> Nutzer, die es unterstützen "
+"(via Even Faster Websites)"
 
 #: src/index.html:93
 msgid ""
 "<s>Release with no explanatory comments, just the meat.</s> Boilerplate "
 "\"stripped\" is here!"
 msgstr ""
-"<s>Release ohne Kommentar, nur Code.</s> Boilerplate \"stripped\" ist da!"
+"<s>Release ohne Kommentar, nur Code.</s> Boilerplate \"kompakt\" ist da!"
 
 #: src/index.html:94
 msgid "<s>SASS/HAML ports.</s>"
@@ -233,19 +234,19 @@ msgstr "<s>SASS/HAML Portierungen</s>"
 
 #: src/index.html:94
 msgid "They're coming."
-msgstr "Fast da."
+msgstr "Sind im Arbeit."
 
 #: src/index.html:97
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Die einzelnen Bausteine"
 
 #: src/index.html:99
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr ""
+msgstr "Die wichtigsten Punkte in 40 Minuten"
 
 #: src/index.html:103
 msgid "Make it even better!"
-msgstr ""
+msgstr "Es geht noch besser!"
 
 #: src/index.html:105
 msgid ""
@@ -253,9 +254,9 @@ msgid ""
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
-"<code>rel=\"prefetch\"</code> für  <a href=\"http://www.stevesouders.com/"
-"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">Dokumente, die "
-"prefetchbar sind</a>."
+"Nutze <code>rel=\"prefetch\"</code> um <a href=\"http://www.stevesouders.com/"
+"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">Dokumente präventiv"
+"zu laden</a>."
 
 #: src/index.html:106
 msgid ""
@@ -264,8 +265,8 @@ msgid ""
 "clip</a> to fix the bleed."
 msgstr ""
 "Nutze <a href=\"http://tumble.sneak.co.nz/post/928998513/fixing-the-"
-"background-bleed\">-webkit-background-clip</a> um Durchschlagen der Ränder "
-"bei border-radius zu lösen."
+"background-bleed\">-webkit-background-clip</a>, um das Durchschlagen von Rändern "
+"bei border-radius im Webkit zu verhindern."
 
 #: src/index.html:107
 msgid ""
@@ -273,7 +274,7 @@ msgid ""
 "CSS</a> for optimum browser performance."
 msgstr ""
 "Schreibe <a href=\"http://css-tricks.com/efficiently-rendering-css/"
-"\">effizientes CSS</a> für den besten Performance."
+"\">effizientes CSS</a> für die optimale Browser-Performance."
 
 #: src/index.html:108
 msgid ""
@@ -281,25 +282,26 @@ msgid ""
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
-"Ruf deine seiten-spezifischie JavaScript <a href=\"http://paulirish.com/2009/"
-"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">Markup-"
-"Basiert</a> ab."
+"Starte Deine seiten-spezifischie Javascripts <a href=\"http://paulirish.com/2009/"
+"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">basierend auf "
+"Deinem Markup</a>."
 
 #: src/index.html:109
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
-"Lerne mögliche <a href=\"http://paulirish.com/2009/browser-specific-css-"
-"hacks/\"> Browser-Spezifische CSS-Hacks</a> kennen."
+"Mach Dich mit den möglichen <a href=\"http://paulirish.com/2009/browser-specific-css-"
+"hacks/\">browser-spezifischen CSS-Hacks</a> vertraut."
 
 #: src/index.html:110
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</a>"
 msgstr ""
-"Als Team, nutzen Sie die gleiche <a href=\"http://molecularvoices.molecular."
-"com/standards/\">Frontend-Codierungsformat und bewährte Methoden</a>."
+"Dein gesamtes Team sollte sich an <a href=\"http://molecularvoices.molecular."
+"com/standards/\">die gleichen Frontend-Code-Standards halten</a>, und die "
+"gleichen bewährtesten Vorgehensweisen nutzen."
 
 #: src/index.html:111
 msgid ""
@@ -308,6 +310,10 @@ msgid ""
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
+"Nutze <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
+"<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) für "
+"die bestmögliche <a href=\"http://googlewebmastercentral.blogspot."
+"com/2009/05/introducing-rich-snippets.html\">Auffindbarkeit in Suchmaschinen</a>."
 
 #: src/index.html:112
 msgid ""
@@ -315,6 +321,8 @@ msgid ""
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
+"Das <code>body</code>-Element kann als Wrapper genutzt werden, ein "
+"<code>div#container</code> ist nicht notwendig."
 
 #: src/index.html:119
 msgid "Brought to you by"
@@ -331,7 +339,7 @@ msgstr ""
 #: src/index.html:123
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
-msgstr "Ohne diese Helden, wäre das Ganze nicht möglich:"
+msgstr "Ohne diese Superhelden, wäre HTML5 Boilerplate nicht möglich gewesen:"
 
 #: src/index.html:151
 msgid "Comments"
