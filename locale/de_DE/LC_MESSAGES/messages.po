@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-25 09:11+0200\n"
+"POT-Creation-Date: 2010-09-26 08:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 #: src/404.html:2 standard input:17 src/template/404.html:2
 msgid "Not found"
 msgstr "Nicht gefunden"
+
+#: src/index.html:2
+msgid "lang=\"en\""
+msgstr "lang=\"de\""
 
 #: src/index.html:7
 msgid "HTML5 Boilerplate"
@@ -251,8 +255,9 @@ msgid ""
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
-"Oder, lese diese gute Erklärung von <a href=\"http://www.1stwebdesigner."
-"com/development/snippets-html5-boilerplate/\">20 Snippets, die du nuzten solltest</a>."
+"Oder, lese diese gute Erklärung von <a href=\"http://www.1stwebdesigner.com/"
+"development/snippets-html5-boilerplate/\">20 Snippets, die du nuzten "
+"solltest</a>."
 
 #: src/index.html:104
 msgid "Make it even better!"
