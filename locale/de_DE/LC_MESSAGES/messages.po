@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-26 08:52+0200\n"
+"POT-Creation-Date: 2010-10-03 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: src/404.html:2 standard input:17 src/template/404.html:2
 msgid "Not found"
 msgstr "Nicht gefunden"
-
-#: src/index.html:2
-msgid "lang=\"en\""
-msgstr "lang=\"de\""
 
 #: src/index.html:7
 msgid "HTML5 Boilerplate"
@@ -74,8 +70,8 @@ msgid "Want to dive in?"
 msgstr "Wagst du den großen Sprung?"
 
 #: src/index.html:45
-msgid "Download Boilerplate v0.9.1"
-msgstr "Lade Boilerplate v0.9.1 runter."
+msgid "Download Boilerplate {{ version }}"
+msgstr "Lade Boilerplate {{ version }} runter."
 
 #: src/index.html:48
 msgid "Keep the hints and links"
@@ -362,13 +358,8 @@ msgid "Comments"
 msgstr "Kommentar"
 
 #: src/index.html:153
-msgid "Show 300+ comments"
-msgstr "Zeige 300+ Kommentar an"
-
-#: src/index.html:262
-#, fuzzy
-msgid "Show 300+ Comments"
-msgstr "Zeige 300+ Kommentar an"
+msgid "Show {{ num_comments }} comments"
+msgstr "Zeige {{ num_comments }} Kommentar an"
 
 #: src/index.html:280
 msgid ""
@@ -858,3 +849,9 @@ msgstr ""
 #: src/template/js/plugins.js:33
 msgid "catch all document.write() calls"
 msgstr ""
+
+#~ msgid "Show 300+ comments"
+#~ msgstr "Zeige 300+ Kommentar an"
+
+#~ msgid "lang=\"en\""
+#~ msgstr "lang=\"de\""

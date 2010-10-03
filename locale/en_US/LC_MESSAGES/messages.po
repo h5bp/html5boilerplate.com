@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-26 08:52+0200\n"
+"POT-Creation-Date: 2010-10-03 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,6 @@ msgstr ""
 
 #: src/404.html:2 standard input:17 src/template/404.html:2
 msgid "Not found"
-msgstr ""
-
-#: src/index.html:2
-msgid "lang=\"en\""
 msgstr ""
 
 #: src/index.html:7
@@ -61,7 +57,7 @@ msgid "Want to dive in?"
 msgstr ""
 
 #: src/index.html:45
-msgid "Download Boilerplate v0.9.1"
+msgid "Download Boilerplate {{ version }}"
 msgstr ""
 
 #: src/index.html:48
@@ -307,7 +303,7 @@ msgid "Comments"
 msgstr ""
 
 #: src/index.html:153
-msgid "Show 300+ comments"
+msgid "Show {{ num_comments }} comments"
 msgstr ""
 
 #: src/index.html:262

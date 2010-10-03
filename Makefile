@@ -18,6 +18,6 @@ messages: force
 	@python ./scripts/static_gettext.py --languages en_US,de_DE,it
 
 build: force
-	@python ./scripts/static_gettext.py --languages en_US,de_DE,it --compile && python ./scripts/static_gettext.py --languages en_US,de_DE,it --render
+	@python ./scripts/static_gettext.py --languages en_US,de_DE,it --build
 
 force: ;
