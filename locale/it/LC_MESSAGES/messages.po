@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-03 09:46+0200\n"
+"POT-Creation-Date: 2010-10-21 20:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,200 +73,208 @@ msgid "No comments, just the bizniss."
 msgstr ""
 
 #: src/index.html:55
-msgid "Follow updates on twitter"
+msgid "Follow on twitter"
+msgstr ""
+
+#: src/index.html:56
+msgid "Join The Mailing List"
 msgstr ""
 
 #: src/index.html:57
-msgid "Contribute on Github"
+msgid "Contribute "
 msgstr ""
 
-#: src/index.html:59
-msgid "Comment right here"
+#: src/index.html:58
+msgid "Comment"
 msgstr ""
 
-#: src/index.html:62
-msgid "Why it is awesome"
+#: src/index.html:60
+msgid "What&rsquo;s New"
 msgstr ""
 
 #: src/index.html:64
-msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
-
-#: src/index.html:65
-msgid "HTML5 ready. Use the new tags with certainty."
+msgid "Why it is awesome"
 msgstr ""
 
 #: src/index.html:66
-msgid "Optimal caching and compression rules for grade-A performance"
+msgid "Cross-browser compatible (IE6, yeah we got that.)"
 msgstr ""
 
 #: src/index.html:67
-msgid "Best practice site configuration defaults"
+msgid "HTML5 ready. Use the new tags with certainty."
 msgstr ""
 
 #: src/index.html:68
-msgid "Mobile browser optimizations"
+msgid "Optimal caching and compression rules for grade-A performance"
 msgstr ""
 
 #: src/index.html:69
+msgid "Best practice site configuration defaults"
+msgstr ""
+
+#: src/index.html:70
+msgid "Mobile browser optimizations"
+msgstr ""
+
+#: src/index.html:71
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
 
-#: src/index.html:70
+#: src/index.html:72
 msgid "IE specific classes for maximum cross-browser control"
 msgstr ""
 
-#: src/index.html:71
+#: src/index.html:73
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr ""
 
-#: src/index.html:72
+#: src/index.html:74
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
 
-#: src/index.html:75
+#: src/index.html:77
 msgid "Why it is awesome-er"
 msgstr ""
 
-#: src/index.html:77
+#: src/index.html:79
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
 msgstr ""
 
-#: src/index.html:78
+#: src/index.html:80
 msgid "Console.log nerfing so you won't break anyone by mistake."
 msgstr ""
 
-#: src/index.html:79
+#: src/index.html:81
 msgid "Never go wrong with your doctype or markup!"
 msgstr ""
 
-#: src/index.html:80
+#: src/index.html:82
 msgid "An optimal print stylesheet, performance optimized."
 msgstr ""
 
-#: src/index.html:81
+#: src/index.html:83
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr ""
 
-#: src/index.html:82
+#: src/index.html:84
 msgid "IE6 pngfix baked in."
 msgstr ""
 
-#: src/index.html:83
+#: src/index.html:85
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
 
-#: src/index.html:84
+#: src/index.html:86
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
 
-#: src/index.html:85
+#: src/index.html:87
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr ""
 
-#: src/index.html:86
+#: src/index.html:88
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
 
-#: src/index.html:89
+#: src/index.html:91
 msgid "Future Awesome"
 msgstr ""
 
-#: src/index.html:89
+#: src/index.html:91
 msgid "(Coming Soon)"
 msgstr ""
 
-#: src/index.html:91
+#: src/index.html:93
 msgid ""
 "Build script to concatenate/minify your script &amp; style and optimizes "
 "images."
 msgstr ""
 
-#: src/index.html:92
+#: src/index.html:94
 msgid ""
 "Enable gzip technique (from Even Faster Websites) for <strong>all</strong> "
 "capable users."
 msgstr ""
 
-#: src/index.html:93
+#: src/index.html:95
 msgid ""
 "<s>Release with no explanatory comments, just the meat.</s> Boilerplate "
 "\"stripped\" is here!"
 msgstr ""
 
-#: src/index.html:94
+#: src/index.html:96
 msgid "<s>SASS/HAML ports.</s>"
 msgstr ""
 
-#: src/index.html:94
+#: src/index.html:96
 msgid "They're coming."
 msgstr ""
 
-#: src/index.html:97
+#: src/index.html:99
 msgid "Walk through it with me, now"
 msgstr ""
 
-#: src/index.html:99
+#: src/index.html:101
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr ""
 
-#: src/index.html:101
+#: src/index.html:103
 msgid ""
 "Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
 
-#: src/index.html:104
+#: src/index.html:106
 msgid "Make it even better!"
 msgstr ""
 
-#: src/index.html:106
+#: src/index.html:108
 msgid ""
 "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
 
-#: src/index.html:107
+#: src/index.html:109
 msgid ""
 "Using border-radius with a border in Webkit? Try <a href=\"http://tumble."
 "sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
 "clip</a> to fix the bleed."
 msgstr ""
 
-#: src/index.html:108
+#: src/index.html:110
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
 msgstr ""
 
-#: src/index.html:109
+#: src/index.html:111
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
 
-#: src/index.html:110
+#: src/index.html:112
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
 
-#: src/index.html:111
+#: src/index.html:113
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</a>"
 msgstr ""
 
-#: src/index.html:112
+#: src/index.html:114
 msgid ""
 "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
 "<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
@@ -274,43 +282,43 @@ msgid ""
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
 
-#: src/index.html:113
+#: src/index.html:115
 msgid ""
 "You can use the <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
 
-#: src/index.html:120
+#: src/index.html:122
 msgid "Brought to you by"
 msgstr ""
 
-#: src/index.html:121
+#: src/index.html:123
 msgid "Google Chrome, jQuery"
 msgstr ""
 
-#: src/index.html:122
+#: src/index.html:124
 msgid "Open Web Vigilante"
 msgstr ""
 
-#: src/index.html:124
+#: src/index.html:126
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr ""
 
-#: src/index.html:151
+#: src/index.html:153
 msgid "Comments"
 msgstr ""
 
-#: src/index.html:153
+#: src/index.html:155
 msgid "Show {{ num_comments }} comments"
 msgstr ""
 
-#: src/index.html:262
-msgid "Show 300+ Comments"
+#: src/index.html:263
+msgid "Show 400+ Comments"
 msgstr ""
 
-#: src/index.html:280
+#: src/index.html:281
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"

@@ -152,7 +152,7 @@
       <div id="disqus_thread">
         <h3>{% blocktrans %}Comments{% endblocktrans %}</h3>
       </div>
-      <a href="#dsq-content">{% blocktrans with "300+" as num_comments %}Show {{ num_comments }} comments{% endblocktrans %}</a> 
+      <a href="#dsq-content">{% blocktrans with "400+" as num_comments %}Show {{ num_comments }} comments{% endblocktrans %}</a> 
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -260,7 +260,7 @@
         jQuery('#disqus_thread').show();
       },
       function () {
-        jQuery(this).text('{% blocktrans %}Show 400+ Comments{% endblocktrans %}');
+        jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show {{ num_comments }} comments{% endblocktrans %}');
         jQuery('#disqus_thread').hide();
       }
     );
