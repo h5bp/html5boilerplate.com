@@ -720,7 +720,7 @@ msgstr "Autoren"
 
 #: src/template/css/style.css:60
 msgid "tables still need cellspacing=\"0\" in the markup"
-msgstr "Tabelen brauchen immer noch `cellspacing=\"0\" im Markup""
+msgstr "Tabelen brauchen immer noch `cellspacing=\"0\" im Markup"
 
 #: src/template/css/style.css:66
 msgid "END RESET CSS"

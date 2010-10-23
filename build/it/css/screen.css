@@ -166,7 +166,7 @@ h2 + p { font-size: 14px; }
 #body p { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; font-size: 0.9em; }                 
 #body p.social { padding-bottom: 0; }
 #body embed { margin-bottom: 0.5em; }
-#body li { line-height: 2; width: 40em; }
+#body li { line-height: 2; width: 42em; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }  
 #body li:first-child:after { border-bottom: 0; }

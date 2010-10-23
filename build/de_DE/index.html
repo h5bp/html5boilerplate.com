@@ -52,14 +52,24 @@
 
 
       <p class="social"><i>
-        <a href="http://twitter.com/boiler_plate">Follow on twitter</a>
-        <a href="http://groups.google.com/group/html5boilerplate/">Join The Mailing List</a>        
-        <a href="http://github.com/paulirish/html5-boilerplate">Contribute </a>        
-        <a href="#disqus_thread">Comment</a>
+        <a href="http://twitter.com/boiler_plate">Folge uns auf Twitter</a>
+        <a href="http://groups.google.com/group/html5boilerplate/">An unsere Email-Verteiler teilnehmen</a>        
+        <a href="http://github.com/paulirish/html5-boilerplate">Forke uns bei Github</a>        
+        <a href="#disqus_thread">Kommentieren</a>
       </i></p>
-       <h3>What&rsquo;s New</h3>
+       <h3>What&rsquo;s New in 0.9.5</h3>
        <ul>
-        <li></li>
+        <li>Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace too thin.</li>
+         <li>IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to the <code>&lt;html&gt;</code> tag ( #44 ).</li>
+         <li>Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-caps and looks odd on Linux machines.</li> 
+         <li>Added a IE6 call for the minified <code>dd_belatedpng</code>.</li>
+         <li>Revised viewport declaration to allow user scaling and clear Webkit console errors ( #37 ).</li>
+         <li>Updated Modernizr to 1.6 </li>
+         <li>Added <code>web.config</code> file for Microsoft IIS</li>
+         <li>Beta release of the <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script ">Build Script</a></li>
+         <li>New project scaffolding <a href="http://github.com/paulirish/html5-boilerplate/wiki/makep.sh">bash script</a> and AIR app.</li>
+         <li><a href="http://github.com/paulirish/html5-boilerplate/blob/master/README.markdown">.... and over 100 other fixes and improvements.</a></li>
+        </li>
        </ul>
       <h3>Wahrum es so gut ist</h3>
       <ul>
@@ -152,7 +162,7 @@
       <div id="disqus_thread">
         <h3>Kommentar</h3>
       </div>
-      <a href="#dsq-content">Zeige 300+ Kommentar an</a> 
+      <a href="#dsq-content">Zeige 400+ Kommentar an</a> 
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -260,7 +270,7 @@
         jQuery('#disqus_thread').show();
       },
       function () {
-        jQuery(this).text('Show 300+ Comments');
+        jQuery(this).text('Zeige 400+ Kommentar an');
         jQuery('#disqus_thread').hide();
       }
     );

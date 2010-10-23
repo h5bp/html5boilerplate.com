@@ -23,26 +23,26 @@
 
   j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
 
-  device-width : Occupy full width of the screen in its current orientation
-  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+  `device-width`: Nutze das Gesamtbreite des Bildschirms
+  `maximum-scale = 1.0` heisst, dass Großen bleiben fest, selbst wenn Seitenhöhe < Geräthöhe
+  `maximum-scale = 1.0` heisst, dass Großen bleiben fest, selbst wenn Seitenbreite < Gerätbreite
 -->
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+<!-- `favicon.ico` und `apple-touch-icon.png` soll in dein Root-Verzeichnis sein, dann kanst du diese Zeilen löschen. -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <!-- CSS : implied media="all" -->
+  <!-- CSS : kein `media`-Attribute impliziert `media="all"` -->
   <link rel="stylesheet" href="css/style.css?v=1">
 
-  <!-- For the less-enabled mobile browsers like Opera Mini -->
+  <!-- Für `handheld` Mobil-Browsern wie Opera Mini -->
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
 
  
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <!-- JavaScript am Ende, ausser Modernizr.  Den brauchen wir für HTML5-Elementen und Feature-Detektion. -->
   <script src="js/modernizr-1.5.min.js"></script>
 
 </head>
@@ -67,12 +67,12 @@
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div> <!--! Ende des `#container` DIVs -->
 
 
-  <!-- Javascript at the bottom for fast page loading -->
+  <!-- JavaScript am Ende, un die Seite schneller zu laden -->
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <!-- jQuery von Googles CDN.  Lokal als Rückfallstrategie. -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 
@@ -85,15 +85,15 @@
   <![endif]-->
 
 
-  <!-- yui profiler and profileviewer - remove for production -->
+  <!-- YUI Profiler und ProfileViewer - Soll vor dem Live-Ausspielen entfernt werden -->
   <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
   <script src="js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
+  <!-- Ende des Profil-Codes -->
 
 
 <!--
-  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-  change the UA-XXXXX-X to be your site's ID
+  asynchrone Google Analytics mathiasbynens.be/notes/async-analytics-snippet 
+  Schreieb deine Site-ID statt `UA-XXXXX-X`
 -->
   <script>
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];

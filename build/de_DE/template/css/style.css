@@ -1,9 +1,9 @@
 
 /* 
-  style.css contains a reset, font normalization and some base styles.
+  style.css beinhaltet Reset, Schriftgrße-Normalisierung, und grundlagende Stil
   
-  credit is left where credit is due.
-  additionally, much inspiration was taken from these projects:
+  Anerkennung steht da, wo es klare Inspiration gab.
+  Diese Projekten waren auch super Inspirationsreich:
     yui.yahooapis.com/2.8.1/build/base/base.css
     camendesign.com/design/
     praegnanz.de/weblog/htmlcssjs-kickstart
@@ -12,7 +12,7 @@
 
 /* 
   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
-  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  v1.4 2009-07-27 | Autoren: Eric Meyer & Richard Clark
   html5doctor.com/html-5-reset-stylesheet/
 */
 
@@ -57,27 +57,27 @@ del { text-decoration: line-through; }
 
 abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
 
-/* tables still need cellspacing="0" in the markup */
+/* Tabelen brauchen immer noch `cellspacing="0" im Markup */
 table { border-collapse:collapse; border-spacing:0; }
 
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 
 input, select { vertical-align:middle; }
-/* END RESET CSS */
+/* ENDE VON RESET CSS */
 
 
 /*
-  fonts.css from the YUI Library
+  fonts.css von die YUI Bibliothek
   
   developer.yahoo.com/yui/
   
-  Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+  Bitte dich an developer.yahoo.com/yui/fonts/ wenden, um die richtige `font-size` Prozente zu finden
 
-  There are three custom edits:
+  Drei Veränderungen waren nötig:
   
-  *  remove arial, helvetica from explicit font stack
-  *  make the line-height relative and unit-less
-  *  remove the pre, code styles
+  *  Arial und Helvetica von explizites Stack löschen
+  *  `line-height` ist hier Maßlos und relativ
+  *  `pre` und `code` Regeln abschaffen
 */
 body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
 
@@ -86,7 +86,7 @@ table { font-size:inherit; font:100%; }
 select, input, textarea { font:99% sans-serif; }
 
 
-/* normalize monospace sizing 
+/* nichtproportionale Schriftgroßen normen 
  * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
  */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
@@ -94,14 +94,14 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 /* 
- * minimal base styles 
+ * minimale Grund-Stil 
  */
 
 
-/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+/* `#444` ist einfach schöner als Schwartz.: twitter.com/H_FJ/statuses/11800719859 */ 
 body, select, input, textarea { color:#444; }
 
-/* Headers (h1,h2,etc) have no default font-size or margin, you'll want to define those yourself. */ 
+/* Header-Elementen (h1, h2, usw.) haben kein standard `font-size` und `margin`.Du musst die eigentlich selber definieren. */ 
  
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
 html { -webkit-font-smoothing: antialiased; }
 
  
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* Barrierefreies fokus: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
 a, a:active, a:visited { color:#607890; }
@@ -138,7 +138,7 @@ pre {
   word-wrap: break-word; /* IE */
 }
 
-/* align checkboxes, radios, text inputs with their label
+/* bringen Checkboxen, Radio Buttons, Text-Felder, und die zugehörige Labels auf eine Reihe
    by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
@@ -148,10 +148,10 @@ input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 
 
-/* No text-shadow
-   These selection declarations have to be separate.
+/* kein `text-shadow`
+   die Selektoren mussen separat geschrieben sein
 
-   Also: hot pink.
+   Auch: Pink
    
    twitter.com/miketaylr/status/12228805301 */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
@@ -161,52 +161,52 @@ label, input[type=button], input[type=submit], button { cursor: pointer; }
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
 
-/* always force a scrollbar in non-IE */
+/* immer ein Rollbalken im Browsern (ausser IE) */
 html { overflow-y: scroll; }
 
-/* make buttons play nice in IE:    
+/* brave Buttons im IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
  
-/* bicubic resizing for non-native sized IMG: 
+/* Bikubische-Skalieriung für angepassten IMG: 
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
 
 /* 
- * Non-semantic helper classes 
+ * Unsemantische Hilfsklassen 
  */
 
-/* for image replacement */
+/* um Grafiken zu ersetzen */
 .ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
 
-/* Hide for both screenreaders and browsers
+/* Versteckt von Browsern sowie auch Screenreader
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display:none; visibility:hidden; } 
 
-/* Hide only visually, but have it available for screenreaders 
+/* optisch versteckt, aber mit Screenreader lesbar 
    www.webaim.org/techniques/css/invisiblecontent/ 
    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
 .visuallyhidden { position:absolute !important;    
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-/* Hide visually and from screenreaders, but maintain layout */
+/* optisch verstecken (von Screenreader auch), aber halte Platz im Layout */
 .invisible { visibility: hidden; }
 
-/* >> The Magnificent CLEARFIX << */
+/* >> Das großartige CLEARFIX << */
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { display: inline-block; }
-* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+* html .clearfix { height: 1%; } /* von IE-Mac verstecken \*/
 .clearfix { display: block; }
 
 
 
 
 
- /* Primary Styles
-    Author: 
+ /* Hauptlayout
+    Autor: 
  */
 
 
@@ -220,8 +220,8 @@ button {  width: auto; overflow: visible; }
 
 
 /* 
- * print styles
- * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ * Drucklayout
+ * inline geschrieben, um zusätzliche HTTP-Aufrufen zu vermeiden www.phpied.com/delay-loading-your-print-css/ 
  */
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none; }
@@ -232,7 +232,7 @@ button {  width: auto; overflow: visible; }
 
   abbr:after { content: " (" attr(title) ")"; }
   
-  .ir a:after { content: ""; }  /* Don't show links for images */
+  .ir a:after { content: ""; }  /* zeige Links für Bilder nicht an */
   
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   
