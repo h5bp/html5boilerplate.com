@@ -315,7 +315,7 @@ msgid "Show {{ num_comments }} comments"
 msgstr ""
 
 #: src/index.html:263
-msgid "Show 400+ Comments"
+msgid "Show Comments"
 msgstr ""
 
 #: src/index.html:281

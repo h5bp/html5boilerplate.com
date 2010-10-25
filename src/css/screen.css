@@ -7,8 +7,8 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, figure, footer, header, 
-hgroup, menu, nav, section, menu,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin:0;
   padding:0;
@@ -19,8 +19,10 @@ time, mark, audio, video {
   background:transparent;
 }                  
 
-article, aside, figure, footer, header, 
-hgroup, nav, section { display:block; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+} 
 
 nav ul { list-style:none; }
 
@@ -29,7 +31,7 @@ blockquote, q { quotes:none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content:''; content:none; }
 
-a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
 
 ins { background-color:#ff9; color:#000; text-decoration:none; }
 
@@ -37,33 +39,35 @@ mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
 
 del { text-decoration: line-through; }
 
-abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
 
+/* tables still need cellspacing="0" in the markup */
 table { border-collapse:collapse; border-spacing:0; }
 
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 
 input, select { vertical-align:middle; }
 
-body { font:13px arial,helvetica,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
 
-table { font-size:inherit; font:100%; }
+body { font:13px/1.231 sans-serif; *font-size:small; }
 
-select, input, textarea { font:99% arial,helvetica,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; }
+select, input, textarea, button { font:99% sans-serif; }  
 
-code, pre { font-family: "Courier New", monospace, serif; font-size: 1em; }
-                                                                         
+pre, code, kbd, samp { font-family: monospace, sans-serif; } 
+                                                                        
 body, select, input, textarea { color:#444; }
 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; } 
                                                           
 a:active { outline: none; }
 
 a, a:active, a:visited { color:#607890; }
 a:hover { color:#036; }
 
-ul { margin-left:30px; }
-ol { margin-left:30px; list-style-type: decimal; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+                                          
+nav ul, nav li { margin: 0; }
 
 small { font-size:85%; }
 strong, th { font-weight: bold; }
@@ -81,6 +85,9 @@ pre {
   word-wrap: break-word; /* IE */
 }
 
+textarea { overflow: auto; } 
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
 
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
@@ -88,21 +95,44 @@ input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
                                                
 label, input[type=button], input[type=submit], button { cursor: pointer; }
 
+button, input, select, textarea { margin: 0; }  
+
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { 
+      border-radius: 1px;
+    -moz-box-shadow: 0px 0px 5px red; 
+ -webkit-box-shadow: 0px 0px 5px red; 
+         box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
 
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
-html { overflow-y: scroll; }
-
 button {  width: auto; overflow: visible; }
 
 .ie7 img { -ms-interpolation-mode: bicubic; } 
 
-
-
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }      
  
-h1, h2, h3, h4, h5 { font-weight: normal; text-transform: uppercase; }
+.hidden { display: none; visibility: hidden; } 
+
+.visuallyhidden { position: absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+  
+.clearfix:before, .clearfix:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }         
+ 
+h1, h2, h3, h4, h5 { text-transform: uppercase; }
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 @font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
@@ -198,31 +228,21 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
 @media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none; }
-
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
-
   a:after { content: " (" attr(href) ")"; } 
-
   abbr:after { content: " (" attr(title) ")"; }
-  
-  .ir a:after { content: ""; }  /* Don't show links for images */
-  
+  .ir a:after { content: ""; } 
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  
-  img { page-break-inside: avoid; }
-
+  thead { display: table-header-group; } 
+  tr, img { page-break-inside: avoid; }
   @page { margin: 0.5cm; }
-
   p, h2, h3 { orphans: 3; widows: 3; }
-
   h2, h3{ page-break-after: avoid; }
 }
 
 
 @media screen and (max-device-width: 480px) {
-  /* Prevent iOS, WinMobile from adjusting font size */
-  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
   h1 { font-size: 5em; }           
   #body { font-size: 1em; }  
   #body em, #body h3 { font-size: 1.5em; }
