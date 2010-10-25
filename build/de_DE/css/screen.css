@@ -132,7 +132,7 @@ button {  width: auto; overflow: visible; }
 
 .clearfix { zoom: 1; }         
  
-h1, h2, h3, h4, h5 { text-transform: uppercase; }
+h1, h2, h3, h4, h5 { font-weight: normal; text-transform: uppercase; }
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 @font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }

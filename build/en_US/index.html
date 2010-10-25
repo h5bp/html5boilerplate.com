@@ -1,6 +1,4 @@
 <!doctype html>  
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
 <!--[if lt IE 7 ]> <html lang="en-us" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
@@ -128,8 +126,8 @@
     <div id="footer">
       <p>
         <em class="focus">Brought to you by</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="assets/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="assets/divya-manian.png" alt="">Divya Manian <i>Open Web Vigilante</i></a>
+        <a href="http://paulirish.com"><img width="50" height="50" src="images/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="images/divya-manian.png" alt="">Divya Manian <i>Open Web Vigilante</i></a>
       </p>
       <p>It would not have been possible without the efforts of these superheroes:</p>
       <ul>
@@ -149,6 +147,7 @@
         <li><a href="http://iecss.com">Jonathan Neal</a></li>
         <li><a href="http://camendesign.com">Kroc Camen</a></li>
         <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
         <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
         <li><a href="http://www.viget.com/inspire/">Viget</a></li>
         <li><a href="http://stevesouders.com/">Steve Souders</a></li>
@@ -165,7 +164,7 @@
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
-  <script type="text/javascript" src="js/syntax.js?apache"></script>
+  <script type="text/javascript" src="js/plugins.js?apache"></script>
 
   <script  >
 
@@ -275,9 +274,8 @@
   </script>
 
   <script type="text/javascript">
-    //var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
-    var disqus_developer = 1;
-    //var disqus_category_id = 517513;
+    var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
+    var disqus_category_id = 517513;
     (function() {
 
      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
