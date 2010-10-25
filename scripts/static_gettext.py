@@ -40,7 +40,9 @@ class Localizer( object ):
     XGETTEXT_CMD    = u'xgettext -L Perl --from-code=utf-8 -o - -'
     MSGUNIQ_CMD     = u'msguniq --to-code=utf-8 "%s"'
     MSGMERGE_CMD    = u'msgmerge -q "%s" "%s"'
-
+    
+    IGNORED_NAMES   = ['build']
+    
     def __init__( self, domain, inputbase, localebase, outputbase, languages, extensions=None ):
         self.dir        = dir
         self.domain     = domain
@@ -133,7 +135,10 @@ class Localizer( object ):
 
     def gettext( self, locale ):
         self.xgettext_preprocessing( locale )
-        for root, dirs, files in os.walk( self.inputbase ):
+        for root, dirs, files in os.walk( self.inputbase ): 
+            for name in dirs:
+              if name in Localizer.IGNORED_NAMES:
+                 continue
             for name in files:
                 basename, extension = os.path.splitext( name )
                 if extension in self.extensions:
@@ -141,7 +146,10 @@ class Localizer( object ):
         self.xgettext_postprocessing( locale )
 
     def puttext( self, locale ):
-        for root, dirs, files in os.walk( self.inputbase ):
+        for root, dirs, files in os.walk( self.inputbase ):   
+            for name in dirs:
+              if name in Localizer.IGNORED_NAMES:
+                 continue
             for name in files:
                 self.puttextize( os.path.join( root, name ), locale )
 
