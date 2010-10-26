@@ -102,16 +102,41 @@
 
       <div class="recos">
         <h3>{% blocktrans %}Make it even better!{% endblocktrans %}</h3>
-        <ul>
-          <li>{% blocktrans %}Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.{% endblocktrans %}</li>
-          <li>{% blocktrans %}Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.{% endblocktrans %}</li>
-          <li>{% blocktrans %}Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.{% endblocktrans %}</li>
-          <li>{% blocktrans %}Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.{% endblocktrans %}</li>
-          <li>{% blocktrans %}Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.{% endblocktrans %}</li>
-          <li>{% blocktrans %}Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a>{% endblocktrans %}</li>
-          <li>{% blocktrans %}Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.{% endblocktrans %}</li>
-          <li>{% blocktrans %}You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.{% endblocktrans %}</li>
-          <!-- <li> Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.</li> -->
+          <ul> 
+            <li>{% blocktrans %}Use a script loader like <a href="http://github.com/SlexAxton/yepnope.js">yepnope.js</a> in combo with your  <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> to bring the future to all browsers.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Consider <a href="http://css3please.com">CSS3please.com</a> to assist in writing CSS3{% endblocktrans %}</li> 
+            <li>{% blocktrans %} 
+            <a href="http://css3pie.com/">css3pie.com</a> and all the other <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Learn HTML5 elements better: <a href="http://html5doctor.com/glossary/">HTML5 Doctor Glossary</a> and <a href="http://diveintohtml5.org/semantics.html#new-elements">Dive Into HTML5 : semantic elements</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}<a href="http://gist.github.com/581868">More `meta` tag tracks for your `&lt;head&gt;`</a>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}If you're a photo gallery site you might want this for ie6 to not show that stupid thing on <img> tags: 
+
+            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="imagetoolbar" content="no" /&gt;&lt;![endif]--&gt;</code></p> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Read some <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips">CSS Spriting tips</a> or you could use <a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">Lemonade</a> if you are using <a href="http://sass-lang.com">Sass</a>.</p>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}<a href="http://github.com/paulirish/html5-boilerplate/issues/closed#issue/115/comment/439219">Tell your users to Enable JavaScript</a>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}<a href="http://www.merttol.com/articles/css/too-light-for-print.html">Color considerations for printing</a>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Use Google's recommendations for SEO: <a href="http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html">the Google SEO Starter Guide</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Dig into the new <a href="http://blog.whatwg.org/the-road-to-html-5-link-relations">link relations</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Consider some opinionated <a href="http://webdosanddonts.com/">web do's and web dont's</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}To remove gloss from iPhone home screen rel value should be <code>"apple-touch-icon-precomposed"</code>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}<a href="http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx">Simulate link printing in IE with JS</a>{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a> 
+            {% endblocktrans %}</li> 
+            <li>{% blocktrans %}Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.{% endblocktrans %}</li> 
+            <li>{% blocktrans %}You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.{% endblocktrans %}</li>
         </ul>
       </div>
     </div>
