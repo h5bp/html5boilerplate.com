@@ -28,9 +28,10 @@
     <b class="border-c"></b>
     <b class="border-d"></b>
 
-    <div id="header">
+    <div id="header">  
+         <p class="lang">Now offered in: <a href=#>Deutsch</a></p>        
          <h1>HTML5  <i>&#x2605;</i> Boilerplate</h1> 
-         <h2>ein grundsolider Standard für HTML5</h2> 
+         <h2>ein grundsolider Standard für HTML5</h2>  
          <p>HTML5 Boilerplate ist die HTML/CSS/JS-Vorlage für knallharte Profis: die Basis für eine schnelle, robuste und zukunftssichere Seite.</p>
          <p>In mehr als Zwei Jahren iterativer Entwicklung, haben wir die bewährtesten Vorgehensweisen schon eingebaut: Cross-Browser-Normalisierung, Performance-Optimierungen und sogar optionale Features wie cross-domain AJAX und Flash.  Die Vorlage für die Apache-.htaccess-Konfigurationsdatei kommt mit praktischen Caching-Regeln daher, bereitet Deine Seite für HTML5-Video vor erlaubt Dir einfache @font-face-Nutzung und gzip-Auslieferung Deines Contents.</p>
          <p>Boilerplate ist weder ein Framework, noch schreibt es dir eine Entwicklungsphilosophie vor.  Es ist eine Sammlung von Tips und Tricks, die Dir hilfen, deine Projekt schnellstmöglich und flexibel auf die Beine zu stellen.</p>
@@ -38,7 +39,7 @@
 
     <div id="body">
       <h3>Wagst du den großen Sprung?</h3>
-      <p class="bptext">Lade Boilerplate v0.9.1 runter. <small><a href="http://github.com/paulirish/html5-boilerplate#readme">Updated Aug. 13th</a></small></p>
+      <p class="bptext">Lade Boilerplate v0.9.5 runter. <small><a href="http://github.com/paulirish/html5-boilerplate#readme">Updated Oct. 30th</a></small></p>
 
       <p class="dwn">
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.1">Boilerplate documented</a> <small>Mit Tips und Links</small></span>
@@ -48,11 +49,13 @@
 
 
       <p class="social"><i>
-        <a href="http://twitter.com/boiler_plate">Folge uns auf Twitter</a>
-        <a href="http://groups.google.com/group/html5boilerplate/">An unsere Email-Verteiler teilnehmen</a>        
-        <a href="http://github.com/paulirish/html5-boilerplate">Forke uns bei Github</a>        
-        <a href="#disqus_thread">Kommentieren</a>
-      </i></p>
+        <a href="http://github.com/paulirish/html5-boilerplate/wiki">Read the docs</a>        
+        <a href="http://github.com/paulirish/html5-boilerplate">Contribute on Github </a>        
+        <a href="#disqus_thread">Comment here</a>        
+      </i>
+      <i><a href="http://twitter.com/boiler_plate">Folge uns auf Twitter</a>
+      <a href="http://groups.google.com/group/html5boilerplate/">An unsere Email-Verteiler teilnehmen</a></i>
+      </p>
        <h3>What&rsquo;s New in 0.9.5</h3>
        <ul>
         <li>Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace too thin.</li>
@@ -62,8 +65,8 @@
          <li>Revised viewport declaration to allow user scaling and clear Webkit console errors ( #37 ).</li>
          <li>Updated Modernizr to 1.6 </li>
          <li>Added <code>web.config</code> file for Microsoft IIS</li>
-         <li>Beta release of the <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script ">Build Script</a></li>
-         <li>New project scaffolding <a href="http://github.com/paulirish/html5-boilerplate/wiki/makep.sh">bash script</a> and AIR app.</li>
+         <li>Beta release of the <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script">Build Script</a></li>
+         <li>New project scaffolding <a href="http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh">bash script</a> and AIR app.</li>
          <li><a href="http://github.com/paulirish/html5-boilerplate/blob/master/README.markdown">.... and over 100 other fixes and improvements.</a></li>
         </li>
        </ul>
@@ -92,14 +95,6 @@
         <li>Die <code>.htaccess</code>-Datei ermöglicht die korrekte Nutzung der HTML5-Funktionen bei geringere Ladezeiten</li>
         <li>jQuery-Auslieferung via CDN mit localer Sicherheitskopie als Ausweichlösung</li>
         <li>Zu viel, zu komplex?  HTML5 Boilerplate ist Löschtasten-kompatibel. :)</li>
-      </ul>
-
-      <h4>Zukünftige Grossartigteiten <em>(in kürze verfügbar)</em></h4>
-      <ul>
-        <li>Ein Build-Script, das Deine Scripts und Styles zusammenfügt &amp; minimiert, und Deine Grafiken optimiert.</li>
-        <li>Aktiviertes gzip für <strong>alle</strong> Nutzer, die es unterstützen (via Even Faster Websites)</li>
-        <li><s>Release ohne Kommentar, nur Code.</s> Boilerplate "kompakt" ist da!</li>
-        <li><s>SASS/HAML Portierungen</s> <a href="http://github.com/paulirish/html5-boilerplate/issues/#issue/43">Sind im Arbeit.</a></li>
       </ul>
 
       <h3 id="thesource">Die einzelnen Bausteine</h3>
@@ -276,8 +271,8 @@
   <script type="text/javascript">
     var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
     var disqus_category_id = 517910;
+    var disqus_url = 'http://html5boilerplate.com/v095'; 
     (function() {
-
      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
      dsq.src = 'http://boilerplate.disqus.com/embed.js';
      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
