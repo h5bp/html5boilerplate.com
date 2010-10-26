@@ -17,8 +17,10 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-# {% blocktrans %}Because X-UA-Compatible isn't sent to non-IE (to save header bytes),{% endblocktrans %}
-# {% blocktrans %}We need to inform proxies that content changes based on UA{% endblocktrans %}
+# {% blocktrans %}
+# Because X-UA-Compatible isn't sent to non-IE (to save header bytes),
+# We need to inform proxies that content changes based on UA
+# {% endblocktrans %}
   Header append Vary User-Agent
 # {% blocktrans %}Cache control is set only if mod_headers is enabled, so that's unncessary to declare{% endblocktrans %}
 </IfModule>
@@ -32,10 +34,11 @@
 
 
 
-# {% blocktrans %}allow access from all domains for webfonts{% endblocktrans %}
-# {% blocktrans %}alternatively you could only whitelist{% endblocktrans %}
-#   {% blocktrans %}your subdomains like{% endblocktrans %} "sub.domain.com"
-
+# {% blocktrans %}
+# allow access from all domains for webfonts
+# alternatively you could only whitelist
+# your subdomains like "sub.domain.com"
+# {% endblocktrans %}
 <FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
   <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
@@ -69,16 +72,22 @@ AddType application/x-chrome-extension crx
 
 
 
-# {% blocktrans %}allow concatenation from within specific js and css files {% endblocktrans %}
-
-# {% blocktrans %}e.g. Inside of script.combined.js you could have{% endblocktrans %}
+# {% blocktrans %}
+# allow concatenation from within specific js and css files
+#
+# e.g. Inside of script.combined.js you could have
+#
 #   <!--#include file="jquery-1.4.2.js" -->
 #   <!--#include file="jquery.idletimer.js" -->
-# {% blocktrans %}and they would be included into this single file{% endblocktrans %}
-
-# {% blocktrans %}this is not in use in the boilerplate as it stands. you may{% endblocktrans %}
-#   {% blocktrans %}choose to name your files in this way for this advantage{% endblocktrans %}
-#  {% blocktrans %} or concatenate and minify them manually.{% endblocktrans %}
+#
+# and they would be included into this single file
+# {% endblocktrans %}
+#
+# {% blocktrans %}
+# this is not in use in the boilerplate as it stands. you may
+# choose to name your files in this way for this advantage
+# or concatenate and minify them manually.
+# {% endblocktrans %}
 # {% blocktrans %}Disabled by default.{% endblocktrans %}
 
 # <FilesMatch "\.combined\.(js|css)$">
@@ -106,14 +115,20 @@ AddType application/x-chrome-extension crx
 
 
 
-# {% blocktrans %}these are pretty far-future expires headers{% endblocktrans %}
-# {% blocktrans %}they assume you control versioning with cachebusting query params like{% endblocktrans %}
+# {% blocktrans %}
+# these are pretty far-future expires headers
+# they assume you control versioning with cachebusting query params like
+#
 #   <script src="application.js?20100608">
-# {% blocktrans %}additionally, consider that outdated proxies may miscache {% endblocktrans %}
+#
+# additionally, consider that outdated proxies may miscache
+# {% endblocktrans %}
 #   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
-# {% blocktrans %}if you don't use filenames to version, lower the css and js to something like{% endblocktrans %}
-# {% blocktrans %}"access plus 1 week" or so{% endblocktrans %}
+# {% blocktrans %}
+# if you don't use filenames to version, lower the css and js to something like
+# "access plus 1 week" or so
+# {% endblocktrans %}
 
 <IfModule mod_expires.c>
   Header set Cache-Control "public"
@@ -166,8 +181,10 @@ AddType application/x-chrome-extension crx
 
 
 
-# {% blocktrans %}Since we're sending far-future expires, we don't need ETags for{% endblocktrans %}
-# {% blocktrans %}static content.{% endblocktrans %}
+# {% blocktrans %}
+# Since we're sending far-future expires, we don't need ETags for
+# static content.
+# {% endblocktrans %}
 #   developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
