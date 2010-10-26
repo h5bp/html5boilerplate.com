@@ -149,7 +149,16 @@
         <em class="focus">{% blocktrans %}Brought to you by{% endblocktrans %}</em>
         <a href="http://paulirish.com"><img width="50" height="50" src="images/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
         <a href="http://nimbupani.com"><img width="50" height="50" src="images/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Open Web Vigilante{% endblocktrans %}</i></a>
-      </p>
+      </p> 
+      <ul>
+        <li><a href="http://www.blog.highub.com/">Shi Chuan</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="www.mintusability.com">Mikkotikkanen</a></li>
+        <li><a href="http://twitter.com/niksy">Ivannikolic</a></li>
+        <li><a href="http://adeelejaz.com/">Adeel Ejaz</a></li>
+        <li><a href="http://garowetz.ca/">Stephen Gariepy</a></li>
+      </ul> <br>
       <p>{% blocktrans %}It would not have been possible without the efforts of these superheroes:{% endblocktrans %}</p>
       <ul>
         <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
@@ -283,7 +292,7 @@
         jQuery('#disqus_thread').show();
       },
       function () {
-        jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show {{ num_comments }} comments{% endblocktrans %}');
+        jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
         jQuery('#disqus_thread').hide();
       }
     );
