@@ -7,8 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-26 21:42+0200\n"
+"POT-Creation-Date: 2010-10-26 22:44+0200\n"
+"PO-Revision-Date: \n"
 "Last-Translator: Mike West <mike@mikewest.org>\n"
+"Language-Team: \n"
 "Language: Deutsch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +22,7 @@ msgstr "Nicht gefunden"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
-msgstr ""
+msgstr "HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
@@ -380,7 +382,6 @@ msgstr ""
 "\">Link-Beziehungen</a> abtauchen.\n"
 "            "
 
-
 #: src/index.html:129
 msgid ""
 "Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
@@ -501,11 +502,11 @@ msgstr "Präsentiert von"
 
 #: src/index.html:149
 msgid "Google Chrome, jQuery"
-msgstr ""
+msgstr "Google Chrome, jQuery"
 
 #: src/index.html:150
 msgid "Open Web Vigilante"
-msgstr ""
+msgstr "Open Web Vigilante"
 
 #: src/index.html:161
 msgid ""
@@ -528,7 +529,8 @@ msgstr "Kommentar"
 msgid "517513"
 msgstr "517910"
 
-#src/index.html:304
+# src/index.html:304
+#: src/index.html:304
 msgid "http://html5boilerplate.com/v095"
 msgstr "http://de.html5boilerplate.com/"
 
@@ -824,6 +826,10 @@ msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
 "       Remove this if you use the .htaccess"
 msgstr ""
+"Immer die neuste IE Rendering-Engine nutzen (selbst im Intranet), und Chrome "
+"Frame \n"
+"       Wenn du die `.htaccess` Regeln benutztst, kannst die dieses Code "
+"entfernen"
 
 #: src/template/index.html:20
 msgid "Mobile viewport optimized:"
@@ -844,7 +850,7 @@ msgstr "CSS : kein `media`-Attribute impliziert `media=\"all\"`"
 #: src/template/index.html:31
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
-msgstr ""
+msgstr "Unkommentieren wenn das mobil Zielbrowser weniger funktionsfähig ist"
 
 #: src/template/index.html:34
 msgid ""
@@ -865,14 +871,15 @@ msgstr "jQuery von Googles CDN.  Lokal als Rückfallstrategie."
 #: src/template/index.html:63
 msgid "scripts concatenated and minified via ant build script"
 msgstr ""
+"Skripten zusammengeknüpft und minimiziert durch unsere Ant Build-Skript"
 
 #: src/template/index.html:66
 msgid "end concatenated and minified scripts"
-msgstr ""
+msgstr "ende von zusammengeknüpfte und minimizierte Skripten"
 
 #: src/template/index.html:71
 msgid "fix any <img> or .png_bg background-images"
-msgstr ""
+msgstr "`<img>` und `.png_bg` Hintergrund-Bilder reparieren"
 
 #: src/template/index.html:74
 msgid "yui profiler and profileviewer - remove for production"
@@ -889,6 +896,8 @@ msgid ""
 "snippet \n"
 "       change the UA-XXXXX-X to be your site's ID"
 msgstr ""
+"asynchron Google Analytics: mathiasbynens.be/notes/async-analytics-snippet \n"
+"       `UA-XXXXX-X` in deinen Site-ID verwandeln"
 
 #: src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
@@ -900,7 +909,6 @@ msgid "credit is left where credit is due."
 msgstr "Anerkennung steht da, wo es klare Inspiration gab."
 
 #: src/template/css/style.css:7
-#, fuzzy
 msgid "much inspiration was taken from these projects:"
 msgstr "Diese Projekten waren auch super Inspirationsreich:"
 
@@ -909,6 +917,8 @@ msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
+"html5doctor.com Reset Stylesheet (Reset Reloaded + HTML5 baseline von Eric "
+"Meyer)"
 
 #: src/template/css/style.css:15
 msgid "v1.4 2009-07-27 | Authors:"
@@ -923,17 +933,15 @@ msgid "END RESET CSS"
 msgstr "ENDE VON RESET CSS"
 
 #: src/template/css/style.css:72
-#, fuzzy
 msgid "fonts.css from the YUI Library:"
 msgstr "fonts.css von die YUI Bibliothek"
 
 #: src/template/css/style.css:73
-#, fuzzy
 msgid ""
 "Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages"
 msgstr ""
-"Bitte dich an developer.yahoo.com/yui/fonts/ wenden, um die richtige `font-"
-"size` Prozente zu finden"
+"Bitte dich an developer.yahoo.com/yui/3/cssfonts/ wenden, um die richtige "
+"`font-size` Prozente zu finden"
 
 #: src/template/css/style.css:75
 msgid "There are three custom edits:"
@@ -944,7 +952,6 @@ msgid "remove arial, helvetica from explicit font stack"
 msgstr "Arial und Helvetica von explizites Stack löschen"
 
 #: src/template/css/style.css:77
-#, fuzzy
 msgid "we normalize monospace styles ourselves"
 msgstr "nichtproportionale Schriftgroßen normen"
 
@@ -953,22 +960,22 @@ msgid ""
 "table font-size is reset in the HTML5 reset above so there is no need to "
 "repeat"
 msgstr ""
+"`font-size` für Tabeln ist daoben genullt.  es gibt also kein grund uns zu "
+"wiederholen."
 
 #: src/template/css/style.css:80
 msgid "hack retained to preserve specificity"
-msgstr ""
+msgstr "Hack beibehalten, um Spezifität aufzuheben"
 
 #: src/template/css/style.css:84
 msgid "normalize monospace sizing"
 msgstr "nichtproportionale Schriftgroßen normen"
 
 #: src/template/css/style.css:91
-#, fuzzy
 msgid "minimal base styles "
 msgstr "minimale Grund-Stil"
 
 #: src/template/css/style.css:96
-#, fuzzy
 msgid "#444 looks better than black:"
 msgstr "`#444` ist einfach schöner als Schwartz."
 
@@ -977,13 +984,13 @@ msgid "set your base font here, to apply evenly"
 msgstr ""
 
 #: src/template/css/style.css:102
-#, fuzzy
 msgid ""
 "Headers (h1,h2,etc) have no default font-size or margin,\n"
 "   you'll want to define those yourself."
 msgstr ""
-"Header-Elementen (h1, h2, usw.) haben kein standard `font-size` und `margin`."
-"Du musst die eigentlich selber definieren."
+"Header-Elementen (h1, h2, usw.) haben kein standard `font-size` und "
+"`margin`.\n"
+"   Du musst die selber definieren."
 
 #: src/template/css/style.css:106
 msgid "always force a scrollbar in non-IE"
@@ -1020,7 +1027,6 @@ msgid "These selection declarations have to be separate."
 msgstr "die Selektoren mussen separat geschrieben sein"
 
 #: src/template/css/style.css:171
-#, fuzzy
 msgid "No text-shadow:"
 msgstr "kein `text-shadow`"
 
@@ -1071,9 +1077,8 @@ msgid "Primary Styles"
 msgstr "Hauptlayout"
 
 #: src/template/css/style.css:224
-#, fuzzy
 msgid "Author: "
-msgstr "Autor"
+msgstr "Autor:"
 
 #: src/template/css/style.css:242
 msgid "Media queries for responsive design"
@@ -1093,7 +1098,7 @@ msgstr ""
 
 #: src/template/css/style.css:256
 msgid "Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)"
-msgstr ""
+msgstr "Grade-A Mobile Browsern (Opera Mobil, iPhone Safari, Android Chrome)"
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
@@ -1123,10 +1128,9 @@ msgstr "`jQuery` in `$` umbennen"
 
 #: src/template/js/plugins.js:19
 msgid "usage"
-msgstr ""
+msgstr "Nutzung"
 
 #: src/template/js/plugins.js:22
-#, fuzzy
 msgid "store logs to an array for"
 msgstr "Logs in einen Array speichern"
 
@@ -1135,9 +1139,8 @@ msgid "catch all document.write() calls"
 msgstr "fange alle `document.write()` aufrufe ab"
 
 #: src/template/js/script.js:1
-#, fuzzy
 msgid "Author:"
-msgstr "Autor"
+msgstr "Autor:"
 
 #~ msgid "your subdomains like"
 #~ msgstr "Deine Subdomains"
