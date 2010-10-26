@@ -29,6 +29,10 @@ msgstr ""
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "ein grundsolider Standard für HTML5"
 
+#: src/index.html:32
+msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
+msgstr "<a href=\"http://html5boilerplate.com\">English</a>"
+
 #: src/index.html:38
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
