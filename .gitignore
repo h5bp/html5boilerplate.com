@@ -1,7 +1,7 @@
+.DS_Store 
+.svn
 build/en_US/build
 build/de_DE/build
 build/it/build
-.DS_Store 
 build/buildinfo.properties  
-.svn/
 publish/
