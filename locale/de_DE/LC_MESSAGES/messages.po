@@ -377,6 +377,10 @@ msgstr "Zeige {{ num_comments }} Kommentar an"
 msgid "517513"
 msgstr "517910"
 
+#src/index.html:304
+msgid "http://html5boilerplate.com/v095"
+msgstr "http://de.html5boilerplate.com/"
+
 #: src/index.html:281
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
