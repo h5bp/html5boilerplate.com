@@ -1,7 +1,5 @@
 .DS_Store 
 .svn
-build/en_US/
-build/de_DE/
-build/it/
-build/buildinfo.properties  
+build/
 publish/
+*.mo
