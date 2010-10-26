@@ -1,4 +1,4 @@
-/* {% blocktrans %}Author{% endblocktrans %}: 
+/* Author: 
 
 */
 
