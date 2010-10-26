@@ -1,5 +1,5 @@
 
-// `jQuery` in `$` umbennen
+// remap jQuery to $
 (function($){
 
  
@@ -12,16 +12,14 @@
 
 
 
-})(window.jQuery);
+})(this.jQuery);
 
 
 
-
-// Usage: log( 'von coolFunk', this, arguments );
+// usage: log('inside coolFunc',this,arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-
 window.log = function(){
-  log.history = log.history || [];   // Logs in einen Array speichern
+  log.history = log.history || [];   // store logs to an array for reference
   log.history.push(arguments);
   if(this.console){
     console.log( Array.prototype.slice.call(arguments) );
@@ -30,7 +28,7 @@ window.log = function(){
 
 
 
-// fange alle `document.write()` aufrufe ab
+// catch all document.write() calls
 (function(doc){
   var write = doc.write;
   doc.write = function(q){ 

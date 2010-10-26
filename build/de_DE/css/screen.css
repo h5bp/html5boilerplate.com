@@ -185,7 +185,7 @@ h2 + p { font-size: 14px; }
 .dwn span small { display:block; margin-top: 0.5em; font-size: 0.6em; line-height: 1em; }
 
 .social, .lang { padding-bottom: 0; } 
-.social a, p.lang a { font-size: 0.9em; padding: 0 1em; white-space: nowrap; line-height: 2em; text-transform: uppercase; }
+.social a, p.lang a { font-size: 0.9em; padding: 0 0 0 1em; white-space: nowrap; line-height: 2em; text-transform: uppercase; }
 .social a:hover, p.lang a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }
 
 

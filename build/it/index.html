@@ -105,16 +105,41 @@
 
       <div class="recos">
         <h3>Make it even better!</h3>
-        <ul>
-          <li>Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.</li>
-          <li>Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.</li>
-          <li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.</li>
-          <li>Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.</li>
-          <li>Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.</li>
-          <li>Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a></li>
-          <li>Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.</li>
-          <li>You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.</li>
-          <!-- <li> Consider some more opinionated styles by default, <a href="http://camendesign.com/design/">by Kroc Camen</a>.</li> -->
+          <ul> 
+            <li>Use a script loader like <a href="http://github.com/SlexAxton/yepnope.js">yepnope.js</a> in combo with your  <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> to bring the future to all browsers.</li> 
+            <li>Consider <a href="http://css3please.com">CSS3please.com</a> to assist in writing CSS3</li> 
+            <li> 
+            <a href="http://css3pie.com/">css3pie.com</a> and all the other <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> 
+            </li> 
+            <li>Learn HTML5 elements better: <a href="http://html5doctor.com/glossary/">HTML5 Doctor Glossary</a> and <a href="http://diveintohtml5.org/semantics.html#new-elements">Dive Into HTML5 : semantic elements</a> 
+            </li> 
+            <li><a href="http://gist.github.com/581868">More `meta` tag tracks for your `&lt;head&gt;`</a></li> 
+            <li>If you're a photo gallery site you might want this for ie6 to not show that stupid thing on <img> tags: 
+
+            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="imagetoolbar" content="no" /&gt;&lt;![endif]--&gt;</code></p> 
+            </li> 
+            <li>Read some <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips">CSS Spriting tips</a> or you could use <a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">Lemonade</a> if you are using <a href="http://sass-lang.com">Sass</a>.</p></li> 
+            <li><a href="http://github.com/paulirish/html5-boilerplate/issues/closed#issue/115/comment/439219">Tell your users to Enable JavaScript</a></li> 
+            <li><a href="http://www.merttol.com/articles/css/too-light-for-print.html">Color considerations for printing</a></li> 
+            <li>Use Google's recommendations for SEO: <a href="http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html">the Google SEO Starter Guide</a> 
+            </li> 
+            <li>Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a> 
+            </li> 
+            <li>Dig into the new <a href="http://blog.whatwg.org/the-road-to-html-5-link-relations">link relations</a> 
+            </li> 
+            <li>Consider some opinionated <a href="http://webdosanddonts.com/">web do's and web dont's</a> 
+            </li> 
+            <li>To remove gloss from iPhone home screen rel value should be <code>"apple-touch-icon-precomposed"</code></li> 
+            <li><a href="http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx">Simulate link printing in IE with JS</a></li> 
+            <li>Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.</li> 
+            <li>Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.</li> 
+            <li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.</li> 
+            <li>Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.</li> 
+            <li>Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.</li> 
+            <li>Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices.</a> 
+            </li> 
+            <li>Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.</li> 
+            <li>You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.</li>
         </ul>
       </div>
     </div>
@@ -163,16 +188,11 @@
 
   <script  >
 
-    var pages = [
-     'http://github.com/paulirish/frontend-pro-template/raw/master/index.html',
-     'http://github.com/paulirish/frontend-pro-template/blob/master/css/style.css',
-     'http://github.com/paulirish/frontend-pro-template/blob/master/js/script.js'
-    ];
+
 
     var local = [
      './template/index.html',
      './template/css/style.css',
-     './template/css/handheld.css',
      './template/js/script.js',
      './template/js/plugins.js',
      './template/crossdomain.xml',
