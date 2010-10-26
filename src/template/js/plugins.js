@@ -1,5 +1,5 @@
 
-// {% blocktrans %}remap jQuery to ${% endblocktrans %}
+// remap jQuery to $
 (function($){
 
  
@@ -12,16 +12,14 @@
 
 
 
-})(window.jQuery);
+})(this.jQuery);
 
 
 
-
-// {% blocktrans %}usage: log('inside coolFunc',this,arguments);{% endblocktrans %}
+// usage: log('inside coolFunc',this,arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-
 window.log = function(){
-  log.history = log.history || [];   // {% blocktrans %}store logs to an array for reference{% endblocktrans %}
+  log.history = log.history || [];   // store logs to an array for reference
   log.history.push(arguments);
   if(this.console){
     console.log( Array.prototype.slice.call(arguments) );
@@ -30,7 +28,7 @@ window.log = function(){
 
 
 
-// {% blocktrans %}catch all document.write() calls{% endblocktrans %}
+// catch all document.write() calls
 (function(doc){
   var write = doc.write;
   doc.write = function(q){ 

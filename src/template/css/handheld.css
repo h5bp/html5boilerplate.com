@@ -1,7 +1,8 @@
-
 * {
-  float: none;       /* {% blocktrans %}Screens are not big enough to account for floats{% endblocktrans %} */
-  font-size: 80%;    /* {% blocktrans %}Slightly reducing font size to reduce need to scroll{% endblocktrans %} */ 
-  background: #fff;  /* {% blocktrans %}As much contrast as possible{% endblocktrans %} */
+  float: none;       /* Screens are not big enough to account for floats */
+  background: #fff;  /*  As much contrast as possible */
   color: #000;
 }
+
+/* Slightly reducing font size to reduce need to scroll */
+body { font-size: 80%; }
