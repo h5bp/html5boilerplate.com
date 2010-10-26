@@ -611,42 +611,16 @@ msgid "IE User Agent Manipulation"
 msgstr ""
 
 #: src/template/index.html:12
-msgid ""
-"Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
-"  Remove this if you use the .htaccess"
+msgid "Always force latest IE rendering engine (even in intranet) & Chrome Frame \n Remove this if you use the .htaccess"
 msgstr ""
 
 #: src/template/index.html:22
 msgid "Mobile Viewport Fix"
 msgstr ""
 
-#: src/template/index.html:26
-msgid ""
-"device-width : Occupy full width of the screen in its current orientation"
-msgstr ""
-"`device-width`: Nutze das Gesamtbreite des Bildschirms"
-
-#: src/template/index.html:27
-msgid ""
-"initial-scale = 1.0 retains dimensions instead of zooming out if page height "
-"> device height"
-msgstr ""
-"`maximum-scale = 1.0` heisst, dass Großen bleiben fest, selbst wenn Seitenhöhe < Geräthöhe"
-
-#: src/template/index.html:28
-msgid ""
-"maximum-scale = 1.0 retains dimensions instead of zooming in if page width < "
-"device width"
-msgstr ""
-"`maximum-scale = 1.0` heisst, dass Großen bleiben fest, selbst wenn Seitenbreite < Gerätbreite"
-
 #: src/template/index.html:33
-msgid ""
-"Place favicon.ico and apple-touch-icon.png in the root of your domain and "
-"delete these references"
-msgstr ""
-"`favicon.ico` und `apple-touch-icon.png` soll in dein Root-Verzeichnis sein, "
-"dann kanst du diese Zeilen löschen."
+msgid "Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references"
+msgstr "`favicon.ico` und `apple-touch-icon.png` soll in dein Root-Verzeichnis sein, dann kanst du diese Zeilen löschen."
 
 #: src/template/index.html:38
 msgid "CSS : implied media=\"all\""
@@ -657,12 +631,8 @@ msgid "For the less-enabled mobile browsers like Opera Mini"
 msgstr "Für `handheld` Mobil-Browsern wie Opera Mini"
 
 #: src/template/index.html:45
-msgid ""
-"All JavaScript at the bottom, except for Modernizr which enables HTML5 "
-"elements & feature detects"
-msgstr ""
-"JavaScript am Ende, ausser Modernizr.  Den brauchen wir für HTML5-Elementen "
-"und Feature-Detektion."
+msgid "All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects"
+msgstr "JavaScript am Ende, ausser Modernizr.  Den brauchen wir für HTML5-Elementen und Feature-Detektion."
 
 #: src/template/index.html:70
 msgid "end of #container"
@@ -691,18 +661,6 @@ msgstr "asynchrone Google Analytics"
 #: src/template/index.html:96
 msgid "change the UA-XXXXX-X to be your site's ID"
 msgstr "Schreieb deine Site-ID statt `UA-XXXXX-X`"
-
-#: src/template/css/handheld.css:3 src/template/css/mobile.css:3
-msgid "Screens are not big enough to account for floats"
-msgstr "Bildschirmen sind nicht groß genug für `float`"
-
-#: src/template/css/handheld.css:4 src/template/css/mobile.css:4
-msgid "Slightly reducing font size to reduce need to scroll"
-msgstr "Kleiner Schriftgröße, weniger Verschieben"
-
-#: src/template/css/handheld.css:5 src/template/css/mobile.css:5
-msgid "As much contrast as possible"
-msgstr "So viel Kontrast wie möglich"
 
 #: src/template/css/style.css:3
 msgid "style.css contains a reset, font normalization and some base styles."
@@ -836,9 +794,6 @@ msgstr "optisch verstecken (von Screenreader auch), aber halte Platz im Layout"
 msgid "The Magnificent CLEARFIX"
 msgstr "Das großartige CLEARFIX"
 
-#: src/template/css/style.css:201
-msgid "/* Hides from IE-mac \\*/"
-msgstr "/* von IE-Mac verstecken \\*/"
 
 #: src/template/css/style.css:208
 msgid "Primary Styles"

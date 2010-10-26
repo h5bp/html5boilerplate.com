@@ -77,7 +77,7 @@ input, select { vertical-align:middle; }
    * we normalize monospace styles ourselves
    * table font-size is reset in the HTML5 reset above so there is no need to repeat
 */
-body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */  
 
 select, input, textarea, button { font:99% sans-serif; }
 
@@ -180,14 +180,14 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
  
-/* bicubic resizing for non-native sized IMG: 
+/* bicubic resizing for non-native sized IMG:
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
 
 /* 
- * Non-semantic helper classes 
+ * Non-semantic helper classes
  */
 
 /* for image replacement */

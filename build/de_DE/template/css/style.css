@@ -1,9 +1,9 @@
 /* 
   HTML5 ✰ Boilerplate 
   
-  style.css contains a reset, font normalization and some base styles.
+  style.css beinhaltet Reset, Schriftgrße-Normalisierung, und grundlagende Stil
   
-  credit is left where credit is due.
+  Anerkennung steht da, wo es klare Inspiration gab.
   much inspiration was taken from these projects:
     yui.yahooapis.com/2.8.1/build/base/base.css
     camendesign.com/design/
@@ -59,29 +59,29 @@ del { text-decoration: line-through; }
 
 abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
 
-/* tables still need cellspacing="0" in the markup */
+/* Tabelen brauchen immer noch `cellspacing="0" im Markup */
 table { border-collapse:collapse; border-spacing:0; }
 
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 
 input, select { vertical-align:middle; }
 
-/* END RESET CSS */
+/* ENDE VON RESET CSS */
 
 
 /* fonts.css from the YUI Library: developer.yahoo.com/yui/
    Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
 
-  There are three custom edits:
-   * remove arial, helvetica from explicit font stack
+  Drei Veränderungen waren nötig:
+   * Arial und Helvetica von explizites Stack löschen
    * we normalize monospace styles ourselves
    * table font-size is reset in the HTML5 reset above so there is no need to repeat
 */
-body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */  
 
 select, input, textarea, button { font:99% sans-serif; }
 
-/* normalize monospace sizing 
+/* nichtproportionale Schriftgroßen normen 
  * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
  */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
@@ -103,11 +103,11 @@ body, select, input, textarea {
    you'll want to define those yourself. */ 
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
-/* always force a scrollbar in non-IE */ 
+/* immer ein Rollbalken im Browsern (ausser IE) */ 
 html { overflow-y: scroll; }
 
  
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* Barrierefreies fokus: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
 a, a:active, a:visited { color: #607890; }
@@ -142,7 +142,7 @@ textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/0
 
 .ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
 
-/* align checkboxes, radios, text inputs with their label
+/* bringen Checkboxen, Radio Buttons, Text-Felder, und die zugehörige Labels auf eine Reihe
    by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
@@ -167,43 +167,43 @@ input:invalid, textarea:invalid {
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
-/* These selection declarations have to be separate.
+/* die Selektoren mussen separat geschrieben sein
    No text-shadow: twitter.com/miketaylr/status/12228805301 
-   Also: hot pink. */
+   Auch: Pink */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
-/* make buttons play nice in IE:    
+/* brave Buttons im IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
  
-/* bicubic resizing for non-native sized IMG: 
+/* Bikubische-Skalieriung für angepassten IMG:
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 
 
 /* 
- * Non-semantic helper classes 
+ * Unsemantische Hilfsklassen
  */
 
-/* for image replacement */
+/* um Grafiken zu ersetzen */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
-/* Hide for both screenreaders and browsers
+/* Versteckt von Browsern sowie auch Screenreader
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display: none; visibility: hidden; } 
 
-/* Hide only visually, but have it available for screenreaders 
+/* optisch versteckt, aber mit Screenreader lesbar 
    www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
 .visuallyhidden { position: absolute !important;    
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-/* Hide visually and from screenreaders, but maintain layout */
+/* optisch verstecken (von Screenreader auch), aber halte Platz im Layout */
 .invisible { visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
@@ -220,7 +220,7 @@ button {  width: auto; overflow: visible; }
 
 
 
- /* Primary Styles
+ /* Hauptlayout
     Author: 
  */
 
@@ -264,15 +264,15 @@ button {  width: auto; overflow: visible; }
 }
 
 /* 
- * print styles
- * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ * Drucklayout
+ * inline geschrieben, um zusätzliche HTTP-Aufrufen zu vermeiden www.phpied.com/delay-loading-your-print-css/ 
  */
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a:after { content: " (" attr(href) ")"; } 
   abbr:after { content: " (" attr(title) ")"; }
-  .ir a:after { content: ""; }  /* Don't show links for images */
+  .ir a:after { content: ""; }  /* zeige Links für Bilder nicht an */
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
   tr, img { page-break-inside: avoid; }

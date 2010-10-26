@@ -7,7 +7,7 @@
 
 
 # Force the latest IE version, in various cases when it may fall back to IE7 mode
-#  github.com/rails/rails/commit/123eb25#commitcomment-118920
+# github.com/rails/rails/commit/123eb25#commitcomment-118920
 # Use ChromeFrame if it's installed for a better experience for the poor IE folk
 <IfModule mod_setenvif.c>
   <IfModule mod_headers.c>
@@ -18,7 +18,7 @@
 
 <IfModule mod_headers.c>
 # Because X-UA-Compatible isn't sent to non-IE (to save header bytes),
-#   We need to inform proxies that content changes based on UA
+# We need to inform proxies that content changes based on UA
   Header append Vary User-Agent
 # Cache control is set only if mod_headers is enabled, so that's unncessary to declare
 </IfModule>
@@ -113,7 +113,7 @@ AddType application/x-chrome-extension crx
 #   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
 # if you don't use filenames to version, lower the css and js to something like
-#   "access plus 1 week" or so
+# "access plus 1 week" or so
 
 <IfModule mod_expires.c>
   Header set Cache-Control "public"

@@ -1,5 +1,5 @@
 
-// remap jQuery to $
+// `jQuery` in `$` umbennen
 (function($){
 
  
@@ -28,7 +28,7 @@ window.log = function(){
 
 
 
-// catch all document.write() calls
+// fange alle `document.write()` aufrufe ab
 (function(doc){
   var write = doc.write;
   doc.write = function(q){ 
