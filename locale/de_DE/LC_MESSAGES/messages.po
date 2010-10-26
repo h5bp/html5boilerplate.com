@@ -369,6 +369,10 @@ msgstr "Kommentar"
 msgid "Show {{ num_comments }} comments"
 msgstr "Zeige {{ num_comments }} Kommentar an"
 
+#: src/index.html:278
+msgid "517513"
+msgstr "517910"
+
 #: src/index.html:281
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
