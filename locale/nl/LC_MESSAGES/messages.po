@@ -171,7 +171,7 @@ msgstr "Javascript profiling&hellip;in IE6 en IE7? Geen enkel probleem. "
 
 #: src/index.html:89
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
+msgstr "Console.log zwakker maken zodat je niet per ongeluk iemand breekt"
 
 #: src/index.html:90
 msgid "Never go wrong with your doctype or markup!"
@@ -192,40 +192,40 @@ msgstr "Ingebouwde oplossing voor het correct weergeven van png's in IE6."
 #: src/index.html:94
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
-msgstr ""
+msgstr ".clearfix, .visuallyhidden classes om dingen slim en accessible te stylen."
 
 #: src/index.html:95
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ""
+msgstr ".htaccess file die goed gebruik van HTML5 eigenschappen en het sneller laden van de pagina mogelijk maakt"
 
 #: src/index.html:96
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr ""
+msgstr "jQuery gehost op een CDN met een lokale verwijzing als terugvalmogelijkheid."
 
 #: src/index.html:97
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
-msgstr ""
+msgstr "Denk je dat er te veel is? Verwijderen uit de HTML5 bakplaat is geen probleem. :)"
 
 #: src/index.html:100
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Loop er nu met me doorheen"
 
 #: src/index.html:102
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr ""
+msgstr "In 40 minuten heb je de essentie!"
 
 #: src/index.html:104
 msgid ""
 "Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
-msgstr ""
+msgstr "Of lees deze goede uitleg van <a href=\"http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 snippets die je zou moeten gebruiken</a>."
 
 #: src/index.html:107
 msgid "Make it even better!"
-msgstr ""
+msgstr "Maak het nog beter!"
 
 #: src/index.html:109
 msgid ""
@@ -233,7 +233,7 @@ msgid ""
 "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
 "Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
 "the future to all browsers."
-msgstr ""
+msgstr "Gebruik een script lader zoals <a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> in combinatie met je <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> om alle browsers de toekomst te laten zien."
 
 #: src/index.html:110
 msgid ""
