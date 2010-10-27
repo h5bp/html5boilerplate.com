@@ -53,6 +53,20 @@ class Localizer( object ):
         else:
             self.extensions = extensions
 
+    def gettextIsAvailable( self ):
+        requirements = { 'xgettext': False, 'msguniq': False , 'msgmerge': False }
+        for path in os.environ["PATH"].split( os.pathsep ):
+            for name in requirements:
+                file = os.path.join( path, name )
+                if not(requirements[name]) and os.path.exists(file) and os.access(file, os.X_OK):
+                    requirements[name] = True;
+
+        for name in requirements:
+            if not requirements[name]:
+                return False
+
+        return True
+
     def localedir( self, locale ):
         return os.path.join( self.localebase, locale, 'LC_MESSAGES' )
 
@@ -226,16 +240,17 @@ def main():
     l10n = Localizer(   domain=options.domain, outputbase=options.outputbase, 
                         inputbase=options.inputbase, localebase=options.localebase,
                         languages=options.languages, extensions=options.extensions )
-
     
-
-    if options.build:
-        for locale in options.languages:
-            l10n.compile( locale )
-            l10n.puttext( locale )
+    if not l10n.gettextIsAvailable():
+        parser.error( "Couldn't find `gettext` in your PATH.  Can you please verify that it's correctly installed? (See http://www.gnu.org/software/gettext/#downloading )" );
     else:
-        for locale in options.languages:
-            src = l10n.gettext( locale )
+        if options.build:
+            for locale in options.languages:
+                l10n.compile( locale )
+                l10n.puttext( locale )
+        else:
+            for locale in options.languages:
+                src = l10n.gettext( locale )
 
 if __name__ == "__main__":
     sys.exit(main())
