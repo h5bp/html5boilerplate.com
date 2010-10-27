@@ -120,11 +120,11 @@ msgstr "Wat is er nieuw in 0.9.5?"
 
 #: src/index.html:73
 msgid "Why it is awesome"
-msgstr "Waarom het vet geil is"
+msgstr "Waarom het supercool is"
 
 #: src/index.html:75
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Cross-browser-compatibel (zelfs voor IE6)"
+msgstr "Werkt voor alle browsers (ja zelfs voor IE6)"
 
 #: src/index.html:76
 msgid "HTML5 ready. Use the new tags with certainty."
@@ -132,7 +132,7 @@ msgstr "Klaar voor HTML5. Gebruik de nieuwe tags zonder enig probleem."
 
 #: src/index.html:77
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr "Caching en compressie-instellingen voor een optimale performantie"
+msgstr "Caching en compressie-instellingen voor optimale prestaties"
 
 #: src/index.html:78
 msgid "Best practice site configuration defaults"
@@ -159,15 +159,15 @@ msgstr "Handige .no-js en .js classes om gepaste stijling te voorzien"
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
-msgstr ""
+msgstr "Wil je unittest schrijven, maar ben je te lui? Een complete en aangesloten testomgeving staat klaar"
 
 #: src/index.html:86
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "Waarom het fantastischer is"
 
 #: src/index.html:88
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Javascript profiling&hellip;in IE6 en IE7? Geen enkel probleem. "
 
 #: src/index.html:89
 msgid "Console.log nerfing so you won't break anyone by mistake."
@@ -175,19 +175,19 @@ msgstr ""
 
 #: src/index.html:90
 msgid "Never go wrong with your doctype or markup!"
-msgstr ""
+msgstr "Nooit de mist ingaan met je doctype of je HTML code"
 
 #: src/index.html:91
 msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
+msgstr "Een optimaal print stylesheet, geoptimaliseerd voor goede prestaties"
 
 #: src/index.html:92
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
+msgstr "iOS, Android en Opera Mobile-aanpasbare HTML code en CSS raamwerk."
 
 #: src/index.html:93
 msgid "IE6 pngfix baked in."
-msgstr ""
+msgstr "Ingebouwde oplossing voor het correct weergeven van png's in IE6."
 
 #: src/index.html:94
 msgid ""
