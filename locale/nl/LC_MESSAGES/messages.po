@@ -1,7 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Dutch translation for the HTML5 Boilerplate and its website
+# Copyright (C) 2010
+# This file is distributed under the same license as the HTML5 Boilerplate.
+# Mathias Bynens <http://mathiasbynens.be/>, 2010.
 #
 #, fuzzy
 msgid ""
@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-27 12:15+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2010-10-27 13:37+1\n"
+"Last-Translator: Mathias Bynens <http://mathiasbynens.be/>\n"
+"Language-Team: Dutch <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,43 +19,43 @@ msgstr ""
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
-msgstr ""
+msgstr "Niet gevonden"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
-msgstr ""
+msgstr "HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
-msgstr ""
+msgstr "Archief met Reacties"
 
 #: src/commentarchive.html:34
 msgid "from before October 26th 2010"
-msgstr ""
+msgstr "van voor 26 oktober 2010"
 
 #: src/commentarchive.html:38 src/index.html:189
 msgid "Comments"
-msgstr ""
+msgstr "Reacties"
 
 #: src/commentarchive.html:58 src/index.html:311
 msgid ""
-"Please enable JavaScript to view the <a href=\"http://disqus.com/?"
-"ref_noscript=boilerplate\">comments powered by Disqus.</a>"
+"Gelieve JavaScript in te schakelen om de <a href=\"http://disqus.com/?"
+"ref_noscript=boilerplate\">reacties te lezen.</a>"
 msgstr ""
 
 #: src/index.html:11 standard input:34
 msgid "A rock-solid default for HTML5 awesome."
-msgstr ""
+msgstr "Een robuuste bakplaat voor HTML5-lekkers."
 
 #: src/index.html:32
 msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
-msgstr ""
+msgstr "<a href=\"http://nl.html5boilerplate.com/\">Dutch</a>"
 
 #: src/index.html:35
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
-msgstr ""
+msgstr "HTML5 Boilerplate is een professionele, snelle en betrouwbare basis-template voor HTML/CSS/JS-ontwikkelaars."
 
 #: src/index.html:36
 msgid ""
@@ -65,95 +65,95 @@ msgid ""
 "starter apache .htaccess config file hooks you the eff up with caching rules "
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
-msgstr ""
+msgstr "De HTML5 Boilerplate is het resultaat van jaren onderzoek, waarbij alle best practices in acht genomen werden: cross-browser-compatibiliteit en -normalisatie, performantie, allerhande optimalisaties, en zelfs optionele dingen als cross-domain Ajax en Flash. Een basis .htaccess-bestand zorgt ervoor dat je Apache-server caching toelaat en voorziet ook in de juiste instellingen voor HTML5 video, @font-face en gzip."
 
 #: src/index.html:37
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
-msgstr ""
+msgstr "Boilerplate is geen framework, en verplicht je ook niet om een bepaalde ontwikkelfilosofie te volgen; het is gewoon een verzameling van slimme trucjes waarmee je snel en goed nieuwe projecten kan opstarten."
 
 #: src/index.html:41
 msgid "Want to dive in?"
-msgstr ""
+msgstr "Benieuwd?"
 
 #: src/index.html:42
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Download Boilerplate {{ version}}"
 
 #: src/index.html:45
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "Laat de tips en links intact"
 
 #: src/index.html:46
 msgid "or"
-msgstr ""
+msgstr "of"
 
 #: src/index.html:47
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Geen commentaren en links in de code"
 
 #: src/index.html:52
 msgid "Read the docs"
-msgstr ""
+msgstr "Lees de documentatie"
 
 #: src/index.html:53
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Draag bij via GitHub"
 
 #: src/index.html:54
 msgid "Comment here"
-msgstr ""
+msgstr "Reageer hier"
 
 #: src/index.html:56
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Volg op Twitter"
 
 #: src/index.html:57
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Schrijf je in voor de mailing-lijst"
 
 #: src/index.html:59
 msgid "What&rsquo;s New in 0.9.5"
-msgstr ""
+msgstr "Wat is er nieuw in 0.9.5?"
 
 #: src/index.html:73
 msgid "Why it is awesome"
-msgstr ""
+msgstr "Waarom het vet geil is"
 
 #: src/index.html:75
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Cross-browser-compatibel (zelfs voor IE6)"
 
 #: src/index.html:76
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "Klaar voor HTML5. Gebruik de nieuwe tags zonder enig probleem."
 
 #: src/index.html:77
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Caching en compressie-instellingen voor een optimale performantie"
 
 #: src/index.html:78
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Best practices inclusief"
 
 #: src/index.html:79
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Optimalisaties voor mobiele browsers"
 
 #: src/index.html:80
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr ""
+msgstr "Progressive enhancement, graceful degradation… Geen probleem!"
 
 #: src/index.html:81
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "IE-specifieke classes om vlot compatibiliteitsproblemen op te lossen"
 
 #: src/index.html:82
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
+msgstr "Handige .no-js en .js classes om gepaste stijling te voorzien"
 
 #: src/index.html:83
 msgid ""
