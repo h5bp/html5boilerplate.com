@@ -7,6 +7,8 @@ PYTHON ?= python
 
 .PHONY = info messages build force
 
+LANGUAGES="en_US,de_DE,it,pt_BR,fr_FR,nl"
+
 info:
 	@echo "Usage:"
 	@echo ""
@@ -15,9 +17,9 @@ info:
 	@echo ""
 
 messages: force
-	@python ./scripts/static_gettext.py --languages en_US,de_DE,it
+	@python ./scripts/static_gettext.py --languages "${LANGUAGES}"
 
 build: force
-	@python ./scripts/static_gettext.py --languages en_US,de_DE,it --build
+	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
 
 force: ;
