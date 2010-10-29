@@ -223,20 +223,22 @@ msgstr ""
 
 #: src/index.html:96
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr ""
+msgstr "jQuery ospitato su CDN con riferimento locale come opzione di ripiego."
 
 #: src/index.html:97
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
+"Pensi ci sia troppo? Puoi tranquillamente usare il tasto canc su "
+"HTML5 Boilerplate. :)"
 
 #: src/index.html:100
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Fai un giro con me, ora"
 
 #: src/index.html:102
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr ""
+msgstr "L'essenziale, in 40 minuti!"
 
 #: src/index.html:104
 msgid ""
@@ -244,10 +246,11 @@ msgid ""
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
+"Oppure leggi questa ottima illustrazione sui <a href=\"http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 snippet che dovresti usare</a>."
 
 #: src/index.html:107
 msgid "Make it even better!"
-msgstr ""
+msgstr "Fai ancora meglio!"
 
 #: src/index.html:109
 msgid ""
@@ -256,18 +259,23 @@ msgid ""
 "Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
 "the future to all browsers."
 msgstr ""
+"Usa uno script loader come <a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> in combinazione con <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> per portare il futuro in tutti i browser."
 
 #: src/index.html:110
 msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
 msgstr ""
+"Utilizza lo script, posticipa le tue scadenze di 1 anno, e fornisci un sito "
+"superveloce."
 
 #: src/index.html:111
 msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
 msgstr ""
+"Considera <a href=\"http://css3please.com\">CSS3please.com</a> per aiutarti "
+"nella scrittura di CSS3"
 
 #: src/index.html:112
 msgid ""
@@ -277,6 +285,11 @@ msgid ""
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
 msgstr ""
+" \n"
+"            <a href=\"http://css3pie.com/\">css3pie.com</a> e tutti gli "
+"altri <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
+"browser-Polyfills\">HTML5 polyfills</a> \n"
+"            "
 
 #: src/index.html:115
 msgid ""
@@ -285,12 +298,18 @@ msgid ""
 "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
 "            "
 msgstr ""
+"Impara meglio gli elementi HTML5: <a href=\"http://html5doctor.com/glossary/"
+"\">HTML5 Doctor Glossary</a> e <a href=\"http://diveintohtml5.org/"
+"semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
+"            "
 
 #: src/index.html:117
 msgid ""
 "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
 "`&lt;head&gt;`</a>"
 msgstr ""
+"<a href=\"http://gist.github.com/581868\">Più `meta` tag per il tuo "
+"`&lt;head&gt;`</a>"
 
 #: src/index.html:118
 msgid ""
@@ -301,6 +320,12 @@ msgid ""
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
 msgstr ""
+"Se nel sito hai una galleria fotografica magari vuoi questo per ie6 per non "
+"vedere quella stupida cosa sul tag &lt;img&gt; : \n"
+"\n"
+"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
+"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+"            "
 
 #: src/index.html:122
 msgid ""
@@ -309,18 +334,27 @@ msgid ""
 "hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
 "a> if you are using <a href=\"http://sass-lang.com\">Sass</a>.</p>"
 msgstr ""
+"Leggi qualche <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-"
+"spriting-tips\">CSS Spriting tips</a> o potresti usare <a href=\"http://www."
+"hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
+"a> se già utilizzi <a href=\"http://sass-lang.com\">Sass</a>.</p>"
 
 #: src/index.html:123
 msgid ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
 "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
 msgstr ""
+"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+"closed#issue/115/comment/439219\">Avvisa i tuoi utenti di Abilitare "
+"JavaScript</a>"
 
 #: src/index.html:124
 msgid ""
 "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
 "\">Color considerations for printing</a>"
 msgstr ""
+"<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
+"\">Considerazioni sul colore per la stampa</a>"
 
 #: src/index.html:125
 msgid ""
@@ -329,6 +363,10 @@ msgid ""
 "\">the Google SEO Starter Guide</a> \n"
 "            "
 msgstr ""
+"Usa le raccomandazioni di Google per il SEO: <a href=\"http://"
+"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+"\">Google SEO Starter Guide</a> \n"
+"            "
 
 #: src/index.html:127
 msgid ""
@@ -336,6 +374,9 @@ msgid ""
 "relations\">link relations</a> \n"
 "            "
 msgstr ""
+"Scava dentro i <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-"
+"relations\">link relations</a> \n"
+"            "
 
 #: src/index.html:129
 msgid ""
@@ -343,12 +384,17 @@ msgid ""
 "and web dont's</a> \n"
 "            "
 msgstr ""
+"Considera alcune cose <a href=\"http://webdosanddonts.com/\">da fare "
+"e non fare nel web</a> \n"
+"            "
 
 #: src/index.html:131
 msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 msgstr ""
+"Per rimuovere la patina lucida dall'icona nella home dell'iPhone il valore di rel dovrebbe essere <code>\"apple-"
+"touch-icon-precomposed\"</code>"
 
 #: src/index.html:132
 msgid ""
@@ -356,6 +402,9 @@ msgid ""
 "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
 "\">Simulate link printing in IE with JS</a>"
 msgstr ""
+"<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
+"Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
+"\">Simulare la stampa dei link su IE tramite JS</a>"
 
 #: src/index.html:133
 msgid ""
@@ -363,6 +412,9 @@ msgid ""
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
+"Usa <code>rel=\"prefetch\"</code> per i <a href=\"http://www.stevesouders.com/"
+"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documenti da "
+"precaricare</a>."
 
 #: src/index.html:134
 msgid ""
@@ -370,25 +422,32 @@ msgid ""
 "sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
 "clip</a> to fix the bleed."
 msgstr ""
+"Usi border-radius con un bordo in Webkit? Prova <a href=\"http://tumble."
+"sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
+"clip</a> per sistemare la sbavatura."
 
 #: src/index.html:135
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
 msgstr ""
+"Scrivi <a href=\"http://css-tricks.com/efficiently-rendering-css/\">CSS "
+"efficiente</a> per prestazioni del browser ottimali."
 
 #: src/index.html:136
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
-msgstr ""
+msgstr "TODO!!!!"
 
 #: src/index.html:137
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
+"Impara i <a href=\"http://paulirish.com/2009/browser-specific-css-"
+"hacks/\">CSS browser hack</a> che hai a disposizione."
 
 #: src/index.html:138
 msgid ""
@@ -397,6 +456,10 @@ msgid ""
 "a> \n"
 "            "
 msgstr ""
+"Fai in modo che tutto il tuo team usi gli stessi "
+"<a href=\"http://molecularvoices.molecular.com/standards/\">standard di "
+"programmazione front-end e le migliori pratiche.</a> \n"
+"            "
 
 #: src/index.html:140
 msgid ""
@@ -405,6 +468,10 @@ msgid ""
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
+"Usa i <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (tramite <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) per "
+"una ottima <a href=\"http://googlewebmastercentral.blogspot."
+"com/2009/05/introducing-rich-snippets.html\">visibilità</a> dei risultati "
+"di ricerca."
 
 #: src/index.html:141
 msgid ""
@@ -412,12 +479,18 @@ msgid ""
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
+"Puoi utilizzare <a href=\"http://camendesign.com/code/"
+"developpeurs_sans_frontieres\">l'elemento body come contenitore</a>, in "
+"modo da non aver bisogno di un div#container."
 
 #: src/index.html:142
 msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
+"Continua a leggere per <a href=\"http://github.com/paulirish/"
+"html5-boilerplate/wiki/Make-it-better/\">ulteriori tecniche per "
+"migliorare.</a> "
 
 #: src/index.html:148
 msgid "Brought to you by"
