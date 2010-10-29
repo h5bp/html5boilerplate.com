@@ -19,36 +19,38 @@ msgstr ""
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
-msgstr ""
+msgstr "Non trovato"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
-msgstr ""
+msgstr "HTML5 Boilerplate ITA"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
-msgstr ""
+msgstr "Archivio Commenti"
 
 #: src/commentarchive.html:34
 msgid "from before October 26th 2010"
-msgstr ""
+msgstr "precedenti al 26 Ottobre 2010"
 
 #: src/commentarchive.html:38 src/index.html:189
 msgid "Comments"
-msgstr ""
+msgstr "Commenti"
 
 #: src/commentarchive.html:58 src/index.html:311
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
+"Perfavore abilita JavaScript per vedere i <a href=\"http://disqus.com/?"
+"ref_noscript=boilerplate\">commenti forniti da Disqus.</a>"
 
 #: src/index.html:11 standard input:34
 msgid "A rock-solid default for HTML5 awesome."
-msgstr ""
+msgstr "Una base solida come la roccia per HTML5."
 
 #: src/index.html:32
-msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
+msgid "<a href=\"http://html5boilerplate.com\">English</a>"
 msgstr ""
 
 #: src/index.html:35
@@ -56,6 +58,8 @@ msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
+"HTML5 Boilerplate è il template base professionale per HTML/CSS/JS per un "
+"sito veloce, robusto e garantito per il futuro."
 
 #: src/index.html:36
 msgid ""
@@ -66,6 +70,12 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
+"Dopo due anni di sviluppo iterativo, hai il meglio delle migliori pratiche "
+"già pronte: normalizzazione cross-browser, ottimizzazione delle prestazioni, "
+"perfino funzionalità opzionali come Ajax cross-domain e Flash. Un modello "
+"per il file di configurazione .htaccess di Apache consente la memorizzazione "
+"nella cache e fornisce le impostazioni per usare video in HTML5, @font-face "
+"e gzip."
 
 #: src/index.html:37
 msgid ""
@@ -73,131 +83,143 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
+"Boilerplate non è un framework, né prescrive alcune filosofia di "
+"sviluppo, è solo una raccolta di trucchi per cominciare il tuo progetto "
+"velocemente e col piede giusto."
 
 #: src/index.html:41
 msgid "Want to dive in?"
-msgstr ""
+msgstr "Vuoi tuffarti?"
 
 #: src/index.html:42
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Scarica Boilerplate {{ version }}"
 
 #: src/index.html:45
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "Mantieni i suggerimenti e i link"
 
 #: src/index.html:46
 msgid "or"
-msgstr ""
+msgstr "oppure"
 
 #: src/index.html:47
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Niente commenti, solo codice."
 
 #: src/index.html:52
 msgid "Read the docs"
-msgstr ""
+msgstr "Leggi la documentazione"
 
 #: src/index.html:53
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Contribuisci su Github"
 
 #: src/index.html:54
 msgid "Comment here"
-msgstr ""
+msgstr "Commenta qui"
 
 #: src/index.html:56
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Segui su twitter"
 
 #: src/index.html:57
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Iscriviti alla Mailing List"
 
 #: src/index.html:59
 msgid "What&rsquo;s New in 0.9.5"
-msgstr ""
+msgstr "Novità nella 0.9.5"
 
 #: src/index.html:73
 msgid "Why it is awesome"
-msgstr ""
+msgstr "Perché è fantastico"
 
 #: src/index.html:75
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Cross-browser compatibile (IE6, sì ce l'abbiamo.)"
 
 #: src/index.html:76
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "Pronto per HTML5. Usa i nuovi tag con sicurezza."
 
 #: src/index.html:77
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Impostazioni di caching e compressione ottimali per le migliori "
+"prestazioni"
 
 #: src/index.html:78
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Le migliori pratiche per la configurazione standard"
 
 #: src/index.html:79
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Ottimizzazioni per i mobile browser"
 
 #: src/index.html:80
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
+"Progressive enhancement, graceful degradation &hellip; sì sì è incluso"
 
 #: src/index.html:81
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "Classi specifiche per IE per il massimo controllo cross-browser"
 
 #: src/index.html:82
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
+msgstr "Comode classi .no-js e .js per stili basati sulla capacità del browser"
 
 #: src/index.html:83
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
+"Vorresti scrivere un unit test ma sei troppo pigro? Un ambiente di test "
+"pronto e operativo ti sta aspettando."
 
 #: src/index.html:86
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "Perché è ancora più fantastico"
 
 #: src/index.html:88
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Javascript profiling&hellip;in IE6 e IE7? Certo, nessun problema."
 
 #: src/index.html:89
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
+msgstr "Console.log indebolita per evitare errori di produzione."
 
 #: src/index.html:90
 msgid "Never go wrong with your doctype or markup!"
-msgstr ""
+msgstr "Nessuno sbaglio col tuo doctype o codice!"
 
 #: src/index.html:91
 msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
+msgstr "Un ottimale foglio di stile per la stampa, ottimizzato per le "
+"prestazioni."
 
 #: src/index.html:92
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
+msgstr "Markup adattabile e scheletro CSS per iOS, Android e Opera Mobile."
 
 #: src/index.html:93
 msgid "IE6 pngfix baked in."
-msgstr ""
+msgstr "IE6 pngfix incluso."
 
 #: src/index.html:94
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
+"Classi .clearfix e .visuallyhidden per stilizzare le cose saggiamente e "
+"accessibilmente."
 
 #: src/index.html:95
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
+"File .htaccess che permette il corretto uso delle funzionalità HTML5 e "
+"una maggior velocità di caricamento della pagina"
 
 #: src/index.html:96
 msgid "CDN hosted jQuery with local fallback failsafe."
@@ -954,4 +976,4 @@ msgstr ""
 
 #: src/template/js/script.js:1
 msgid "Author:"
-msgstr ""
+msgstr "Autore:"
