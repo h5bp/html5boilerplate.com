@@ -832,59 +832,67 @@ msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
 "       Remove this if you use the .htaccess"
 msgstr ""
+"Forza sempre all'ultimo motore di rendering di IE (anche nelle intranet) e a "
+"Chrome Frame \n"
+"       Da rimuovere se usi il file .htaccess"
 
 #: src/template/index.html:20
 msgid "Mobile viewport optimized:"
-msgstr ""
+msgstr "viewport per i browser Mobile ottimizzato:"
 
 #: src/template/index.html:23
 msgid ""
 "Place favicon.ico & apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr ""
+"Sistema i file favicon.ico & apple-touch-icon.png nella root del tuo dominio "
+"e cancella queste righe"
 
 #: src/template/index.html:28
 msgid "CSS : implied media=\"all\""
-msgstr ""
+msgstr "CSS : è implicito media=\"all\""
 
 #: src/template/index.html:31
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
 msgstr ""
+"Decommenta se ti stai rivolgendo specificamente a browser mobile meno avanzati"
 
 #: src/template/index.html:34
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements & feature detects"
 msgstr ""
+"Tutti i JavaScript vanno in fondo, ad eccezione di Modernizr che abilita gli "
+"elementi HTML5 e il rilevamento delle funzionalità supportate"
 
 #: src/template/index.html:56
 msgid "Javascript at the bottom for fast page loading"
-msgstr ""
+msgstr "Javascript in fondo per un caricamento della pagina più veloce"
 
 #: src/template/index.html:58
 msgid "Grab Google CDN's jQuery. fall back to local if necessary"
-msgstr ""
+msgstr "Carica jQuery dal CDN di Google. ripiega su quello locale se necessario"
 
 #: src/template/index.html:63
 msgid "scripts concatenated and minified via ant build script"
-msgstr ""
+msgstr "script concatenati e minificati tramite ant build script"
 
 #: src/template/index.html:66
 msgid "end concatenated and minified scripts"
-msgstr ""
+msgstr "fine degli script concatenati e minificati"
 
 #: src/template/index.html:71
 msgid "fix any <img> or .png_bg background-images"
-msgstr ""
+msgstr "aggiusta qualsiasi <img> o .png_bg background-images"
 
 #: src/template/index.html:74
 msgid "yui profiler and profileviewer - remove for production"
-msgstr ""
+msgstr "yui profiler e profileviewer - rimuovi in produzione"
 
 #: src/template/index.html:77
 msgid "end profiling code"
-msgstr ""
+msgstr "fine del codice di profiling"
 
 #: src/template/index.html:80
 msgid ""
@@ -892,6 +900,9 @@ msgid ""
 "snippet \n"
 "       change the UA-XXXXX-X to be your site's ID"
 msgstr ""
+"google analytics asincrono: mathiasbynens.be/notes/async-analytics-"
+"snippet \n"
+"       cambia la stringa UA-XXXXX-X con l'ID del tuo sito"
 
 #: src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
@@ -1106,19 +1117,19 @@ msgstr ""
 
 #: src/template/js/plugins.js:2
 msgid "remap jQuery to $"
-msgstr ""
+msgstr "rinomina jQuery in $"
 
 #: src/template/js/plugins.js:19
 msgid "usage"
-msgstr ""
+msgstr "utilizzo"
 
 #: src/template/js/plugins.js:22
 msgid "store logs to an array for"
-msgstr ""
+msgstr "memorizza i log in un array per"
 
 #: src/template/js/plugins.js:31
 msgid "catch all document.write() calls"
-msgstr ""
+msgstr "cattura tutte le chiamate a document.write()"
 
 #: src/template/js/script.js:1
 msgid "Author:"
