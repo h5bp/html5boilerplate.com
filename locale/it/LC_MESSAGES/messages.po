@@ -6,13 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-27 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: Giulia Alfonsi <electric.g@gmail.com>\n"
+"Language-Team: \n"
+"Language: Italiano\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -246,7 +246,9 @@ msgid ""
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
-"Oppure leggi questa ottima illustrazione sui <a href=\"http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 snippet che dovresti usare</a>."
+"Oppure leggi questa ottima illustrazione sui <a href=\"http://www."
+"1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 snippet che "
+"dovresti usare</a>."
 
 #: src/index.html:107
 msgid "Make it even better!"
@@ -259,7 +261,10 @@ msgid ""
 "Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
 "the future to all browsers."
 msgstr ""
-"Usa uno script loader come <a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> in combinazione con <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> per portare il futuro in tutti i browser."
+"Usa uno script loader come <a href=\"http://github.com/SlexAxton/yepnope."
+"js\">yepnope.js</a> in combinazione con <a href=\"http://github.com/Modernizr"
+"/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> per "
+"portare il futuro in tutti i browser."
 
 #: src/index.html:110
 msgid ""
@@ -393,7 +398,8 @@ msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 msgstr ""
-"Per rimuovere la patina lucida dall'icona nella home dell'iPhone il valore di rel dovrebbe essere <code>\"apple-"
+"Per rimuovere la patina lucida dall'icona nella home dell'iPhone il valore di "
+"rel dovrebbe essere <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 
 #: src/index.html:132
@@ -439,7 +445,7 @@ msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
-msgstr "TODO!!!!"
+msgstr "!!TODO!!"
 
 #: src/index.html:137
 msgid ""
@@ -468,8 +474,9 @@ msgid ""
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
-"Usa i <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (tramite <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) per "
-"una ottima <a href=\"http://googlewebmastercentral.blogspot."
+"Usa i <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> "
+"(tramite <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) "
+"per una ottima <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibilità</a> dei risultati "
 "di ricerca."
 
@@ -494,51 +501,55 @@ msgstr ""
 
 #: src/index.html:148
 msgid "Brought to you by"
-msgstr ""
+msgstr "Offerto da"
 
 #: src/index.html:149
 msgid "Google Chrome, jQuery"
-msgstr ""
+msgstr "Google Chrome, jQuery"
 
 #: src/index.html:150
 msgid "Open Web Vigilante"
-msgstr ""
+msgstr "Open Web Vigilante"
 
 #: src/index.html:161
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr ""
+"Non sarebbe stato possibile senza l'impegno di questi supereroi:"
 
 #: src/index.html:190
 msgid ""
 "Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
 "html\">archive</a>"
 msgstr ""
+"I commenti a Boilerplate v0.9.1 si trovano nell'<a href=\"commentarchive."
+"html\">archivio</a>"
 
 #: src/index.html:192 standard input:295
 msgid "Show comments"
-msgstr ""
+msgstr "Mostra commenti"
 
 #: src/index.html:303
 msgid "517513"
-msgstr ""
+msgstr "!!TODO!!"
 
 #: src/index.html:304
 msgid "http://html5boilerplate.com/v095"
-msgstr ""
+msgstr "http://it.html5boilerplate.com/"
 
 #: src/template/crossdomain.xml:6
 msgid ""
 "Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 msgstr ""
+"Leggi qui: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 
 #: src/template/crossdomain.xml:8
 msgid "Most restrictive policy:"
-msgstr ""
+msgstr "La policy più restrittiva:"
 
 #: src/template/crossdomain.xml:13
 msgid "Least restrictive policy:"
-msgstr ""
+msgstr "La policy meno restrittiva:"
 
 #: src/template/crossdomain.xml:20
 msgid ""
@@ -547,26 +558,33 @@ msgid ""
 "    and don’t understand all of the points described here, you probably\n"
 "    have a nasty security vulnerability. ~ simon willison\n"
 msgstr ""
+"\n"
+"    Se hai un file crossdomain.xml con allow-access-from domain=“*”\n"
+"    e non capisci tutti i punti descritti qui, probabilmente\n"
+"    hai una pericolosa vulnerabilità nella sicurezza. ~ simon willison\n"
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
-msgstr ""
+msgstr "File di configurazione di Apache"
 
 #: src/template/htaccess.txt:4
 msgid "Techniques in here adapted from all over, including:"
-msgstr ""
+msgstr "Le tecniche qui sono prese da un po' ovunque, compreso:"
 
 #: src/template/htaccess.txt:9
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
+"!!TODO!!"
 
 #: src/template/htaccess.txt:11
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
+"Usa ChromeFrame se è installato, per una migliore esperienza per i poveri "
+"utenti di IE"
 
 #: src/template/htaccess.txt:20
 msgid ""
@@ -575,16 +593,23 @@ msgid ""
 "# We need to inform proxies that content changes based on UA\n"
 "# "
 msgstr ""
+"\n"
+"# Siccome X-UA-Compatible non viene spedito ai non-IE (per risparmiare bytes "
+"nell'header),\n"
+"# Dobbiamo informare i proxy che il contenuto cambia in base allo User Agent\n"
+"# "
 
 #: src/template/htaccess.txt:25
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that's unncessary to "
 "declare"
 msgstr ""
+"Il controllo della cache è settato solo se mod_headers è abilitato, per cui "
+"non è necessario dichiararlo"
 
 #: src/template/htaccess.txt:29
 msgid "Disabled. Uncomment to serve cross-domain ajax requests"
-msgstr ""
+msgstr "Disabilitato. Decommenta per servire richieste ajax cross-domain"
 
 #: src/template/htaccess.txt:37
 msgid ""
@@ -594,22 +619,27 @@ msgid ""
 "# your subdomains like \"sub.domain.com\"\n"
 "# "
 msgstr ""
+"\n"
+"# consenti l'accesso ai webfonts da tutti i domini\n"
+"# in alternativa puoi solo fare una whitelist\n"
+"# dei tuoi sottodomini come \"sub.domain.com\"\n"
+"# "
 
 #: src/template/htaccess.txt:49
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: src/template/htaccess.txt:54
 msgid "Proper svg serving. Required for svg webfonts on iPad"
-msgstr ""
+msgstr "Corretto invio degli svg. Necessario per i webfont svg su iPad"
 
 #: src/template/htaccess.txt:59 standard input:168
 msgid "webfonts"
-msgstr ""
+msgstr "webfont"
 
 #: src/template/htaccess.txt:65
 msgid "assorted types"
-msgstr ""
+msgstr "vari tipi assortiti"
 
 #: src/template/htaccess.txt:75
 msgid ""
@@ -624,6 +654,16 @@ msgid ""
 "# and they would be included into this single file\n"
 "# "
 msgstr ""
+"\n"
+"# consente la concatenazione all'interno di specifici file js e css\n"
+"#\n"
+"# per es. Dentro a script.combined.js puoi avere\n"
+"#\n"
+"#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
+"#   <!--#include file=\"jquery.idletimer.js\" -->\n"
+"#\n"
+"# e sarebbero inclusi dentro questo singolo file\n"
+"# "
 
 #: src/template/htaccess.txt:86
 msgid ""
@@ -633,18 +673,23 @@ msgid ""
 "# or concatenate and minify them manually.\n"
 "# "
 msgstr ""
+"\n"
+"# questo non è incluso in boilerplate così com'è. puoi\n"
+"# scegliere di nominare i file in questo modo per questo vantaggio\n"
+"# o concatenarli e minificarli a mano.\n"
+"# "
 
 #: src/template/htaccess.txt:91
 msgid "Disabled by default."
-msgstr ""
+msgstr "Disabilitato di default"
 
 #: src/template/htaccess.txt:102
 msgid "gzip compression."
-msgstr ""
+msgstr "compressione gzip"
 
 #: src/template/htaccess.txt:110
 msgid "webfonts and svg:"
-msgstr ""
+msgstr "webfont e svg"
 
 #: src/template/htaccess.txt:118
 msgid ""
@@ -657,6 +702,16 @@ msgid ""
 "# additionally, consider that outdated proxies may miscache\n"
 "# "
 msgstr ""
+"\n"
+"# questi sono header che scadono in un futuro molto lontano\n"
+"# si aspettano che sia tu a controllare le versioni tramite i "
+"parametri query come\n"
+"#\n"
+"#   <script src=\"application.js?20100608\">\n"
+"#\n"
+"# in aggiunta, considera che i vecchi proxy potrebbero non salvare nella "
+"cache\n"
+"# "
 
 #: src/template/htaccess.txt:128
 msgid ""
@@ -666,39 +721,44 @@ msgid ""
 "# \"access plus 1 week\" or so\n"
 "# "
 msgstr ""
+"\n"
+"# se non metti la versione nel nome del file, abbassa i css e js a qualcosa "
+"come\n"
+"# \"access plus 1 week\" o simile\n"
+"# "
 
 #: src/template/htaccess.txt:137
 msgid "Perhaps better to whitelist expires rules? Perhaps."
-msgstr ""
+msgstr "Forse è meglio mettere in whitelist le regole di scadenza? Forse."
 
 #: src/template/htaccess.txt:140
 msgid ""
 "cache.manifest needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
-msgstr ""
+msgstr "!!TODO!! (grazie Remy ~Introducing HTML5)"
 
 #: src/template/htaccess.txt:143
 msgid "your document html "
-msgstr ""
+msgstr "il tuo documento html"
 
 #: src/template/htaccess.txt:146
 msgid "data"
-msgstr ""
+msgstr "dati"
 
 #: src/template/htaccess.txt:152
 msgid "rss feed"
-msgstr ""
+msgstr "rss feed"
 
 #: src/template/htaccess.txt:155
 msgid "favicon (cannot be renamed)"
-msgstr ""
+msgstr "favicon (non può essere rinominata)"
 
 #: src/template/htaccess.txt:158
 msgid "media: images, video, audio"
-msgstr ""
+msgstr "media: immagini, video, audio"
 
 #: src/template/htaccess.txt:175
 msgid "css and javascript"
-msgstr ""
+msgstr "css e javascript"
 
 #: src/template/htaccess.txt:184
 msgid ""
@@ -707,52 +767,65 @@ msgid ""
 "# static content.\n"
 "# "
 msgstr ""
+"\n"
+"# Siccome stiamo spedendo scadenze molto lontane nel futuro, non abbiamo\n"
+"# bisogno di ETags per il contenuto statico.\n"
+"# "
 
 #: src/template/htaccess.txt:194
 msgid "Allow cookies to be set from iframes (for IE only)"
-msgstr ""
+msgstr "Consenti ai cookies di esser impostati dagli iframes (solo per IE)"
 
 #: src/template/htaccess.txt:195
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
+"Se necessario, decommenta e specifica un percorso o espressione regolare "
+"nella direttiva Location"
 
 #: src/template/htaccess.txt:204
 msgid ""
 "you probably want www.example.com to forward to example.com -- shorter URLs "
 "are sexier."
 msgstr ""
+"probabilmente vuoi che www.example.com rispedisca a example.com -- gli URL "
+"più corti sono più sexy."
 
 #: src/template/htaccess.txt:213
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist"
 msgstr ""
+"senza -MultiViews, Apache ritornerà un 404 per un rewrite se una cartella con "
+"lo stesso nome non esiste"
 
 #: src/template/htaccess.txt:214
 msgid "e.g."
-msgstr ""
+msgstr "per es."
 
 #: src/template/htaccess.txt:216
 msgid ""
 "will have Apache block users from browsing folders without a default document"
 msgstr ""
+"farà in modo che Apache blocchi gli utenti dal navigare le cartelle che non "
+"hanno un documento di default"
 
 #: src/template/htaccess.txt:221
 msgid "custom 404 page"
-msgstr ""
+msgstr "pagina 404 personalizzata"
 
 #: src/template/htaccess.txt:226
 msgid "use utf-8 encoding for anything served text/plain or text/html"
-msgstr ""
+msgstr "usa l'encoding utf-8 per qualsiasi cosa servita come text/plain o "
+"text/html"
 
 #: src/template/htaccess.txt:228
 msgid "force utf-8 for a number of file formats"
-msgstr ""
+msgstr "forza utf-8 per certi formati"
 
 #: src/template/htaccess.txt:233
 msgid "We don't need to tell everyone we're apache."
-msgstr ""
+msgstr "Non abbiamo bisogno di dire a tutti che siamo sotto Apache."
 
 #: src/template/index.html:12
 msgid ""
