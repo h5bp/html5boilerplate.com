@@ -906,214 +906,228 @@ msgstr ""
 
 #: src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
-msgstr ""
+msgstr "style.css contiene reset, normalizzazione dei font e alcuni stili "
+"di base"
 
 #: src/template/css/style.css:6
 msgid "credit is left where credit is due."
-msgstr ""
+msgstr "credito lasciato dove dovuto."
 
 #: src/template/css/style.css:7
 msgid "much inspiration was taken from these projects:"
-msgstr ""
+msgstr "i seguenti progetti sono stati grande fonte di ispirazione:"
 
 #: src/template/css/style.css:14
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
+"html5doctor.com Reset Stylesheet (Reset Reloaded di Eric Meyer + HTML5 "
+"baseline)"
 
 #: src/template/css/style.css:15
 msgid "v1.4 2009-07-27 | Authors:"
-msgstr ""
+msgstr "v1.4 2009-07-27 | Autori:"
 
 #: src/template/css/style.css:62
 msgid "tables still need cellspacing=\"0\" in the markup"
-msgstr ""
+msgstr "le tabelle ancora necessitano di cellspacing=\"0\" nel markup"
 
 #: src/template/css/style.css:69
 msgid "END RESET CSS"
-msgstr ""
+msgstr "FINE CSS RESET"
 
 #: src/template/css/style.css:72
 msgid "fonts.css from the YUI Library:"
-msgstr ""
+msgstr "fonts.css dalla YUI Library:"
 
 #: src/template/css/style.css:73
 msgid ""
 "Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages"
 msgstr ""
+"Fai riferimento a developer.yahoo.com/yui/3/cssfonts/ per le dimensioni dei "
+"font in percentuale"
 
 #: src/template/css/style.css:75
 msgid "There are three custom edits:"
-msgstr ""
+msgstr "Ci sono tre modifiche personalizzate:"
 
 #: src/template/css/style.css:76
 msgid "remove arial, helvetica from explicit font stack"
-msgstr ""
+msgstr "rimosso arial, helvetica dal font-stack esplicito"
 
 #: src/template/css/style.css:77
 msgid "we normalize monospace styles ourselves"
-msgstr ""
+msgstr "normalizziamo gli stili monospace per conto nostro"
 
 #: src/template/css/style.css:78
 msgid ""
 "table font-size is reset in the HTML5 reset above so there is no need to "
 "repeat"
 msgstr ""
+"il font-size della tabella è sistemato nell'HTML5 reset sopra per cui non c'è "
+"bisogno di ripeterlo"
 
 #: src/template/css/style.css:80
 msgid "hack retained to preserve specificity"
-msgstr ""
+msgstr "hack mantenuto per preservare la specificità"
 
 #: src/template/css/style.css:84
 msgid "normalize monospace sizing"
-msgstr ""
+msgstr "normalizza la dimensione del monospace"
 
 #: src/template/css/style.css:91
 msgid "minimal base styles "
-msgstr ""
+msgstr "stile di base minimale"
 
 #: src/template/css/style.css:96
 msgid "#444 looks better than black:"
-msgstr ""
+msgstr "#444 figura meglio del nero:"
 
 #: src/template/css/style.css:98
 msgid "set your base font here, to apply evenly"
-msgstr ""
+msgstr "imposta il font di base qui, per applicarlo in modo uniforme"
 
 #: src/template/css/style.css:102
 msgid ""
 "Headers (h1,h2,etc) have no default font-size or margin,\n"
 "   you'll want to define those yourself."
 msgstr ""
+"Gli header (h1,h2,ecc) non hanno un font-size o un margine di default,\n"
+"   dovrai definirli da te."
 
 #: src/template/css/style.css:106
 msgid "always force a scrollbar in non-IE"
-msgstr ""
+msgstr "mostra sempre la scrollbar nei browser non-IE"
 
 #: src/template/css/style.css:110
 msgid "Accessible focus treatment:"
-msgstr ""
+msgstr "Sistemazione accessibile del focus"
 
 #: src/template/css/style.css:120
 msgid "Remove margins for navigation lists"
-msgstr ""
+msgstr "Rimuove i margini per le liste di navigazione"
 
 #: src/template/css/style.css:145
 msgid "align checkboxes, radios, text inputs with their label"
-msgstr ""
+msgstr "allinea checkbox, radio, text input con le rispettive label"
 
 #: src/template/css/style.css:152
 msgid "hand cursor on clickable input elements"
-msgstr ""
+msgstr "cursore a forma di mano sugli elementi input cliccabili"
 
 #: src/template/css/style.css:155
 msgid "webkit browsers add a 2px margin outside the chrome of form elements"
-msgstr ""
+msgstr "i browser webkit aggiungono un margine esterno di 2px agli elementi "
+"dei form"
 
 #: src/template/css/style.css:158
 msgid "colors for form validity"
-msgstr ""
+msgstr "colori per la validazione dei form"
 
 #: src/template/css/style.css:170
 msgid "These selection declarations have to be separate."
-msgstr ""
+msgstr "Queste dichiarazioni di selezione devono essere separate."
 
 #: src/template/css/style.css:171
 msgid "No text-shadow:"
-msgstr ""
+msgstr "No text-shadow:"
 
 #: src/template/css/style.css:172
 msgid "Also: hot pink."
-msgstr ""
+msgstr "Inoltre: rosa acceso."
 
 #: src/template/css/style.css:179
 msgid "make buttons play nice in IE:"
-msgstr ""
+msgstr "sistema i padding dei button in IE:"
 
 #: src/template/css/style.css:183
 msgid "bicubic resizing for non-native sized IMG:"
-msgstr ""
+msgstr "!!TODO!!"
 
 #: src/template/css/style.css:190
 msgid "Non-semantic helper classes"
-msgstr ""
+msgstr "Classi d'aiuto non semantiche"
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
-msgstr ""
+msgstr "per l'image replacement"
 
 #: src/template/css/style.css:196
 msgid "Hide for both screenreaders and browsers"
-msgstr ""
+msgstr "Nascosto sia agli screenreader che ai browser"
 
 #: src/template/css/style.css:200
 msgid "Hide only visually, but have it available for screenreaders"
-msgstr ""
+msgstr "Nascosto solo visivamente, ma leggibile dagli screenreader"
 
 #: src/template/css/style.css:206
 msgid "Hide visually and from screenreaders, but maintain layout"
-msgstr ""
+msgstr "Nascosto visivamente e agli screenreader, ma mantiene lo spazio nel "
+"layout"
 
 #: src/template/css/style.css:209
 msgid ""
 "The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child "
 "elements"
 msgstr ""
+"Il Magnifico CLEARFIX: Aggiornato per impedire il collasso dei margini negli "
+"elementi figli"
 
 #: src/template/css/style.css:215
 msgid "Fix clearfix:"
-msgstr ""
+msgstr "Sistema clearfix:"
 
 #: src/template/css/style.css:223
 msgid "Primary Styles"
-msgstr ""
+msgstr "Stili Principali"
 
 #: src/template/css/style.css:224
 msgid "Author: "
-msgstr ""
+msgstr "Autore: "
 
 #: src/template/css/style.css:242
 msgid "Media queries for responsive design"
-msgstr ""
+msgstr "Media query per un design dinamico"
 
 #: src/template/css/style.css:243
 msgid "These follow after primary styles so they will successfully override."
-msgstr ""
+msgstr "Vanno dopo gli stili principali in modo da sovrascriverli con successo"
 
 #: src/template/css/style.css:247
 msgid "Style adjustments for portrait mode goes here"
-msgstr ""
+msgstr "Adattamenti per la modalità ritratto"
 
 #: src/template/css/style.css:252
 msgid "Style adjustments for landscape mode goes here"
-msgstr ""
+msgstr "Adattamenti per la modalità paesaggio"
 
 #: src/template/css/style.css:256
 msgid "Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)"
-msgstr ""
+msgstr "Grade-A Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome)"
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
-msgstr ""
+msgstr "Considera questo:"
 
 #: src/template/css/style.css:261
 msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you"
 msgstr ""
+"Decommenta se non vuoi che iOS e Winmobile ottimizzino il testo per te"
 
 #: src/template/css/style.css:267
 msgid "print styles"
-msgstr ""
+msgstr "stili per la stampa"
 
 #: src/template/css/style.css:268
 msgid "inlined to avoid required HTTP connection"
-msgstr ""
+msgstr "in linea per evitare ulteriori chiamate HTTP"
 
 #: src/template/css/style.css:275
 msgid "Don't show links for images"
-msgstr ""
+msgstr "Non mostra i link per le immagini"
 
 #: src/template/js/plugins.js:2
 msgid "remap jQuery to $"
