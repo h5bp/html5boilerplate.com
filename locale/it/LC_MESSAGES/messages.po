@@ -50,16 +50,16 @@ msgid "A rock-solid default for HTML5 awesome."
 msgstr "Una base solida come la roccia per HTML5."
 
 #: src/index.html:32
-msgid "<a href=\"http://html5boilerplate.com\">English</a>"
-msgstr "" #!!TODO!!
+msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
+msgstr ""
 
 #: src/index.html:35
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
-"HTML5 Boilerplate &egrave; il template base professionale per HTML/CSS/JS per "
-"un sito veloce, robusto e garantito per il futuro."
+"HTML5 Boilerplate &egrave; il template base professionale per HTML/CSS/JS "
+"per un sito veloce, robusto e garantito per il futuro."
 
 #: src/index.html:36
 msgid ""
@@ -72,10 +72,10 @@ msgid ""
 msgstr ""
 "Dopo due anni di sviluppo iterativo, hai il meglio delle migliori pratiche "
 "gi&agrave; pronte: normalizzazione cross-browser, ottimizzazione delle "
-"prestazioni, perfino funzionalit&agrave; opzionali come Ajax cross-domain e "
-"Flash. Un modello per il file di configurazione .htaccess di Apache consente "
-"la memorizzazione nella cache e fornisce le impostazioni per usare video in "
-"HTML5, @font-face e gzip."
+"prestazioni, perfino funzionalit&agrave; opzionali come Ajax e Flash "
+"cross-domain. Un modello del file di configurazione .htaccess di Apache "
+"consente la memorizzazione nella cache e fornisce le impostazioni per usare "
+"video in HTML5, @font-face e gzip."
 
 #: src/index.html:37
 msgid ""
@@ -137,11 +137,11 @@ msgstr "Perch&eacute; &egrave; fantastico"
 
 #: src/index.html:75
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Cross-browser compatibile (IE6, s&igrave; ce l'abbiamo.)"
+msgstr "Compatibilit&agrave; cross-browser (IE6, s&igrave; ce l'abbiamo.)"
 
 #: src/index.html:76
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr "Pronto per HTML5. Usa i nuovi tag con sicurezza."
+msgstr "Pronto per HTML5. Usa i nuovi tag in tutta sicurezza."
 
 #: src/index.html:77
 msgid "Optimal caching and compression rules for grade-A performance"
@@ -161,7 +161,7 @@ msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
 "Progressive enhancement, graceful degradation &hellip; s&igrave; s&igrave; "
-"&egrave; incluso"
+"&egrave; tutto incluso"
 
 #: src/index.html:81
 msgid "IE specific classes for maximum cross-browser control"
@@ -169,7 +169,7 @@ msgstr "Classi specifiche per IE per il massimo controllo cross-browser"
 
 #: src/index.html:82
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Comode classi .no-js e .js per stili basati sulla capacit&agrave; del "
+msgstr "Comode classi .no-js e .js per stili basati sulle capacit&agrave; del "
 "browser"
 
 #: src/index.html:83
@@ -177,7 +177,7 @@ msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
-"Vorresti scrivere un unit test ma sei troppo pigro? Un ambiente di test "
+"Vorresti scrivere degli unit test ma sei troppo pigro? Un ambiente di test "
 "pronto e operativo ti sta aspettando."
 
 #: src/index.html:86
@@ -190,11 +190,11 @@ msgstr "Javascript profiling&hellip;in IE6 e IE7? Certo, nessun problema."
 
 #: src/index.html:89
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log indebolita per evitare errori in produzione."
+msgstr "Console.log moderata per evitare errori in produzione."
 
 #: src/index.html:90
 msgid "Never go wrong with your doctype or markup!"
-msgstr "Non sbagli mai col tuo doctype o markup!"
+msgstr "Non sbagli mai col tuo doctype o col markup!"
 
 #: src/index.html:91
 msgid "An optimal print stylesheet, performance optimized."
@@ -220,8 +220,8 @@ msgstr ""
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
-"File .htaccess che permette il corretto uso delle funzionalit&agrave; HTML5 e "
-"una maggior velocit&agrave; di caricamento della pagina"
+"File .htaccess che permette il corretto uso delle funzionalit&agrave; HTML5 "
+"e una maggior velocit&agrave; di caricamento della pagina"
 
 #: src/index.html:96
 msgid "CDN hosted jQuery with local fallback failsafe."
@@ -273,8 +273,8 @@ msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
 msgstr ""
-"Utilizza lo script, posticipa le tue scadenze di 1 anno, e fornisci un sito "
-"superveloce."
+"Utilizza lo script, posticipa le scadenze degli header di 1 anno, e fornisci "
+"un sito superveloce."
 
 #: src/index.html:111
 msgid ""
@@ -342,7 +342,7 @@ msgid ""
 "a> if you are using <a href=\"http://sass-lang.com\">Sass</a>.</p>"
 msgstr ""
 "Leggi qualche <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-"
-"spriting-tips\">CSS Spriting tips</a> o potresti usare <a href=\"http://www."
+"spriting-tips\">CSS Spriting tips</a> o magari usa <a href=\"http://www."
 "hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
 "a> se gi&agrave; utilizzi <a href=\"http://sass-lang.com\">Sass</a>.</p>"
 
@@ -400,9 +400,8 @@ msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 msgstr ""
-"Per rimuovere la patina lucida dall'icona nella home dell'iPhone il valore di "
-"rel dovrebbe essere <code>\"apple-"
-"touch-icon-precomposed\"</code>"
+"Per rimuovere la patina lucida dall'icona nella home dell'iPhone, il valore "
+"di rel dovrebbe essere <code>\"apple-touch-icon-precomposed\"</code>"
 
 #: src/index.html:132
 msgid ""
@@ -412,7 +411,7 @@ msgid ""
 msgstr ""
 "<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
 "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
-"\">Simulare la stampa dei link su IE tramite JS</a>"
+"\">Simula la stampa dei link su IE tramite JS</a>"
 
 #: src/index.html:133
 msgid ""
@@ -469,7 +468,7 @@ msgid ""
 msgstr ""
 "Fai in modo che tutto il tuo team usi gli stessi "
 "<a href=\"http://molecularvoices.molecular.com/standards/\">standard di "
-"programmazione front-end e le migliori pratiche.</a> \n"
+"programmazione front-end e le pratiche migliori.</a> \n"
 "            "
 
 #: src/index.html:140
@@ -479,10 +478,10 @@ msgid ""
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
-"Usa i <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> "
+"Usa i <a href=\"http://microformats.org/wiki/Main_Page\">Microformati</a> "
 "(tramite <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) "
 "per una ottima <a href=\"http://googlewebmastercentral.blogspot."
-"com/2009/05/introducing-rich-snippets.html\">visibilit&agrave;</a> dei "
+"com/2009/05/introducing-rich-snippets.html\">visibilit&agrave;</a> nei "
 "risultati di ricerca."
 
 #: src/index.html:141
@@ -500,9 +499,9 @@ msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
-"Continua a leggere per <a href=\"http://github.com/paulirish/"
-"html5-boilerplate/wiki/Make-it-better/\">ulteriori tecniche per "
-"migliorare.</a> "
+"Continua a leggere <a href=\"http://github.com/paulirish/"
+"html5-boilerplate/wiki/Make-it-better/\">ulteriori tecniche per fare "
+"meglio.</a> "
 
 #: src/index.html:148
 msgid "Brought to you by"
@@ -536,11 +535,11 @@ msgstr "Mostra i commenti"
 
 #: src/index.html:303
 msgid "517513"
-msgstr "" #!!TODO!!
+msgstr ""
 
 #: src/index.html:304
 msgid "http://html5boilerplate.com/v095"
-msgstr "" #!!TODO!!
+msgstr ""
 
 #: src/template/crossdomain.xml:6
 msgid ""
@@ -575,7 +574,7 @@ msgstr "File di configurazione di Apache"
 
 #: src/template/htaccess.txt:4
 msgid "Techniques in here adapted from all over, including:"
-msgstr "Le tecniche qui sono prese da un po' ovunque, compreso:"
+msgstr "Le tecniche qui presenti sono prese da un po' ovunque, compreso:"
 
 #: src/template/htaccess.txt:9
 msgid ""
@@ -638,7 +637,7 @@ msgstr "video"
 
 #: src/template/htaccess.txt:54
 msgid "Proper svg serving. Required for svg webfonts on iPad"
-msgstr "Corretto invio degli svg. Necessario per i webfont svg su iPad"
+msgstr "Invio corretto degli svg. Necessario per i webfont svg su iPad"
 
 #: src/template/htaccess.txt:59 standard input:168
 msgid "webfonts"
@@ -664,12 +663,12 @@ msgstr ""
 "\n"
 "# consente la concatenazione all'interno di specifici file js e css\n"
 "#\n"
-"# per es. Dentro a script.combined.js puoi avere\n"
+"# per es. Dentro a script.combined.js potresti avere\n"
 "#\n"
 "#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
 "#   <!--#include file=\"jquery.idletimer.js\" -->\n"
 "#\n"
-"# e sarebbero inclusi dentro questo singolo file\n"
+"# e verrebbero inclusi dentro questo singolo file\n"
 "# "
 
 #: src/template/htaccess.txt:86
@@ -682,7 +681,7 @@ msgid ""
 msgstr ""
 "\n"
 "# questo non &egrave; incluso in boilerplate cos&igrave; com'&egrave;. puoi\n"
-"# scegliere di nominare i file in questo modo per questo vantaggio\n"
+"# scegliere di nominare i file in questo modo per questo scopo\n"
 "# o concatenarli e minificarli a mano.\n"
 "# "
 
@@ -710,7 +709,7 @@ msgid ""
 "# "
 msgstr ""
 "\n"
-"# questi sono header che scadono in un futuro molto lontano\n"
+"# questi sono header che scadono in un futuro abbastanza lontano\n"
 "# si aspettano che sia tu a controllare le versioni tramite i "
 "parametri query come\n"
 "#\n"
@@ -778,7 +777,7 @@ msgid ""
 "# "
 msgstr ""
 "\n"
-"# Siccome stiamo spedendo scadenze molto lontane nel futuro, non abbiamo\n"
+"# Siccome stiamo spedendo scadenze lontane nel futuro, non abbiamo\n"
 "# bisogno di ETags per il contenuto statico.\n"
 "# "
 
@@ -842,8 +841,8 @@ msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
 "       Remove this if you use the .htaccess"
 msgstr ""
-"Forza sempre all'ultimo motore di rendering di IE (anche nelle intranet) e a "
-"Chrome Frame \n"
+"Forza sempre l'uso dell'ultimo motore di rendering di IE (anche nelle "
+"intranet) e di Chrome Frame \n"
 "       Da rimuovere se usi il file .htaccess"
 
 #: src/template/index.html:20
@@ -855,7 +854,7 @@ msgid ""
 "Place favicon.ico & apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr ""
-"Sistema i file favicon.ico & apple-touch-icon.png nella root del tuo dominio "
+"Metti i file favicon.ico & apple-touch-icon.png nella root del tuo dominio "
 "e cancella queste righe"
 
 #: src/template/index.html:28
@@ -926,7 +925,7 @@ msgstr "credito lasciato dove dovuto."
 
 #: src/template/css/style.css:7
 msgid "much inspiration was taken from these projects:"
-msgstr "i seguenti progetti sono stati grande fonte di ispirazione:"
+msgstr "i seguenti progetti sono stati fonte di grande ispirazione:"
 
 #: src/template/css/style.css:14
 msgid ""
@@ -969,7 +968,7 @@ msgstr "rimosso arial, helvetica dal font-stack esplicito"
 
 #: src/template/css/style.css:77
 msgid "we normalize monospace styles ourselves"
-msgstr "normalizziamo gli stili monospace per conto nostro"
+msgstr "uniformiamo gli stili monospace per conto nostro"
 
 #: src/template/css/style.css:78
 msgid ""
@@ -985,7 +984,7 @@ msgstr "hack mantenuto per preservare la specificit&agrave;"
 
 #: src/template/css/style.css:84
 msgid "normalize monospace sizing"
-msgstr "normalizza la dimensione del monospace"
+msgstr "uniforma la dimensione del monospace"
 
 #: src/template/css/style.css:91
 msgid "minimal base styles "
@@ -1021,7 +1020,7 @@ msgstr "Rimuove i margini per le liste di navigazione"
 
 #: src/template/css/style.css:145
 msgid "align checkboxes, radios, text inputs with their label"
-msgstr "allinea checkbox, radio, text input con le rispettive label"
+msgstr "allinea i checkbox, radio, text input con le rispettive label"
 
 #: src/template/css/style.css:152
 msgid "hand cursor on clickable input elements"
@@ -1087,7 +1086,7 @@ msgstr ""
 
 #: src/template/css/style.css:215
 msgid "Fix clearfix:"
-msgstr "Aggiusta clearfix:"
+msgstr "Aggiusta il clearfix:"
 
 #: src/template/css/style.css:223
 msgid "Primary Styles"
