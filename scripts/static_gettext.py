@@ -53,7 +53,8 @@ class Localizer( object ):
         else:
             self.extensions = extensions
 
-    def gettextIsAvailable( self ):
+    @staticmethod
+    def gettextIsAvailable():
         requirements = { 'xgettext': False, 'msguniq': False , 'msgmerge': False }
         for path in os.environ["PATH"].split( os.pathsep ):
             for name in requirements:
@@ -66,6 +67,24 @@ class Localizer( object ):
                 return False
 
         return True
+
+    @staticmethod
+    def getLocaleDirection( locale ):
+        # Directionality culled from http://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
+        langToDir = {
+            "ar":   "rtl",  # Arabic
+            "arc":  "rtl",  # Aramaic
+            "dv":   "rtl",  # Divehi
+            "fa":   "rtl",  # Persian
+            "ha":   "rtl",  # Hausa
+            "he":   "rtl",  # Hebrew
+            "ks":   "rtl",  # Kashmiri
+            "ku":   "rtl",  # Kurdish
+            "ps":   "rtl",  # Pashto
+            "ur":   "rtl",  # Urdu
+            "yi":   "rtl"   # Yiddish
+        }
+        return langToDir.get( locale, "ltr" )
 
     def localedir( self, locale ):
         return os.path.join( self.localebase, locale, 'LC_MESSAGES' )
@@ -137,8 +156,11 @@ class Localizer( object ):
         if extension in self.extensions:
             src = self.templatize( file=file, type=Localizer.PUTTEXT, locale=locale, l10n=l10n )
 
-            # Replace `{{ LANGUAGE_CODE }}` with a BCP47 language tag
+            # Replace `{{ LANGUAGE_CODE }}` with a BCP47 language tag:
             src = src.replace( r'{{ LANGUAGE_CODE }}', locale.lower().replace( '_', '-' ) )
+
+            # Replace `{{ LANGUAGE_DIRECTION }}` with `ltr` or `rtl`, depending:
+            src = src.replace( r'{{ LANGUAGE_DIRECTION }}', Localizer.getLocaleDirection( locale ) ) 
 
             with open( outfile, 'wb' ) as f:
                 f.write( src.encode( 'utf-8' ) )
@@ -241,7 +263,7 @@ def main():
                         inputbase=options.inputbase, localebase=options.localebase,
                         languages=options.languages, extensions=options.extensions )
     
-    if not l10n.gettextIsAvailable():
+    if not Localizer.gettextIsAvailable():
         parser.error( "Couldn't find `gettext` in your PATH.  Can you please verify that it's correctly installed? (See http://www.gnu.org/software/gettext/#downloading )" );
     else:
         if options.build:
