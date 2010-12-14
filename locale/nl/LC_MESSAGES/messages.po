@@ -424,13 +424,10 @@ msgstr ""
 msgid "Show comments"
 msgstr ""
 
-#: src/index.html:303
-msgid "517513"
-msgstr ""
 
-#: src/index.html:304
+#: src/index.html:311
 msgid "http://html5boilerplate.com/v095"
-msgstr ""
+msgstr "http://nl.html5boilerplate.com"
 
 #: src/template/crossdomain.xml:6
 msgid ""

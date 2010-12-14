@@ -364,13 +364,10 @@ msgstr "Comentários para o Boilerplate v0.9.1 podem ser encontrados no  <a href
 msgid "Show comments"
 msgstr "Ver comentários"
 
-#: src/index.html:303
-msgid "517513"
-msgstr ""
 
-#: src/index.html:304
+#: src/index.html:311
 msgid "http://html5boilerplate.com/v095"
-msgstr ""
+msgstr "http://br.html5boilerplate.com"
 
 #: src/template/crossdomain.xml:6
 msgid "Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"

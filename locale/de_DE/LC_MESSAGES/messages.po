@@ -527,12 +527,8 @@ msgstr ""
 msgid "Show comments"
 msgstr "zeige Kommentare"
 
-#: src/index.html:303
-msgid "517513"
-msgstr "517910"
 
-# src/index.html:304
-#: src/index.html:304
+#: src/index.html:311
 msgid "http://html5boilerplate.com/v095"
 msgstr "http://de.html5boilerplate.com/"
 
