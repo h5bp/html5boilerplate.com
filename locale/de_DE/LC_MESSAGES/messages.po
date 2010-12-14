@@ -249,7 +249,7 @@ msgid ""
 "using</a>."
 msgstr ""
 "Oder, lese diese gute Erklärung von <a href=\"http://www.1stwebdesigner.com/"
-"development/snippets-html5-boilerplate/\" hreflang="en">20 Snippets, "
+"development/snippets-html5-boilerplate/\">20 Snippets, "
 "die du nuzten solltest (Englisch)</a>."
 
 #: src/index.html:107
