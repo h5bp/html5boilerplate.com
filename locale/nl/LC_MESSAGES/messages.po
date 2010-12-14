@@ -171,7 +171,7 @@ msgstr "Javascript profiling&hellip;in IE6 en IE7? Geen enkel probleem. "
 
 #: src/index.html:89
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log zwakker maken zodat je niet per ongeluk iemand breekt"
+msgstr "Console.log sowieso beschikbaar maken, zodat er niets stukgaat wanneer je het per ongeluk laat staan"
 
 #: src/index.html:90
 msgid "Never go wrong with your doctype or markup!"
@@ -179,7 +179,7 @@ msgstr "Nooit de mist ingaan met je doctype of je HTML code"
 
 #: src/index.html:91
 msgid "An optimal print stylesheet, performance optimized."
-msgstr "Een optimaal print stylesheet, geoptimaliseerd voor goede prestaties"
+msgstr "Een handige print-stylesheet, geoptimaliseerd voor goede prestaties"
 
 #: src/index.html:92
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
@@ -187,17 +187,17 @@ msgstr "iOS, Android en Opera Mobile-aanpasbare HTML code en CSS raamwerk."
 
 #: src/index.html:93
 msgid "IE6 pngfix baked in."
-msgstr "Ingebouwde oplossing voor het correct weergeven van png's in IE6."
+msgstr "Ingebouwde oplossing voor het correct weergeven van PNG's in IE6."
 
 #: src/index.html:94
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
-msgstr ".clearfix, .visuallyhidden classes om dingen slim en accessible te stylen."
+msgstr ".clearfix, .visuallyhidden classes om dingen slim en toegankelijk te stylen."
 
 #: src/index.html:95
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ".htaccess file die goed gebruik van HTML5 eigenschappen en het sneller laden van de pagina mogelijk maakt"
+msgstr ".htaccess file die goed gebruik van HTML5-eigenschappen en het sneller laden van de pagina mogelijk maakt"
 
 #: src/index.html:96
 msgid "CDN hosted jQuery with local fallback failsafe."
@@ -233,19 +233,19 @@ msgid ""
 "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
 "Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
 "the future to all browsers."
-msgstr "Gebruik een script lader zoals <a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> in combinatie met je <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> om alle browsers de toekomst te laten zien."
+msgstr "Gebruik een script-lader zoals <a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> in combinatie met je <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> om alle browsers de toekomst te laten zien."
 
 #: src/index.html:110
 msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
-msgstr ""
+msgstr "Gebruik het build-script, stel je Expire-headers in op 1 jaar, en lever een supersnelle site af."
 
 #: src/index.html:111
 msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
-msgstr ""
+msgstr "Overweeg <a href=\"http://css3please.com\">CSS3please.com</a> te gebruiken wanneer je CSS3 schrijft"
 
 #: src/index.html:112
 msgid ""
@@ -254,7 +254,9 @@ msgid ""
 "other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
-msgstr ""
+msgstr "\n <a href=\"http://css3pie.com/\">css3pie.com</a> en alle "
+"andere <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
+"browser-Polyfills\">HTML5 polyfills</a> \n"
 
 #: src/index.html:115
 msgid ""
@@ -262,13 +264,15 @@ msgid ""
 "\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
 "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
 "            "
-msgstr ""
+msgstr "Leer meer over de nieuwe HTML5-elementen: <a href=\"http://html5doctor.com/glossary/"
+"\">HTML5 Doctor Glossary</a> en <a href=\"http://diveintohtml5.org/"
+"semantics.html#new-elements\">Dive Into HTML5: semantic elements</a> \n"
 
 #: src/index.html:117
 msgid ""
 "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
 "`&lt;head&gt;`</a>"
-msgstr ""
+msgstr "<a href=\"http://gist.github.com/581868\">Meer `meta` tag tracks voor in de `&lt;head&gt;`</a>"
 
 #: src/index.html:118
 msgid ""
@@ -278,7 +282,8 @@ msgid ""
 "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
-msgstr ""
+msgstr "Als je een fotogalerij bouwt, wil je wellicht deze code gebruiken om te voorkomen dat die irritante toolbar verschijnt boven elke afbeelding. <p><code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
+"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 
 #: src/index.html:122
 msgid ""
@@ -320,13 +325,13 @@ msgid ""
 "Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
 "and web dont's</a> \n"
 "            "
-msgstr ""
+msgstr "Hou rekening met deze <a href=\"http://webdosanddonts.com/\">web do's &amp; dont's</a> \n"
 
 #: src/index.html:131
 msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
-msgstr ""
+msgstr "Om het glossy effect te vermijden op iPhone home screen-icoontjes, moet je de rel value <code>\"apple-touch-icon-precomposed\"</code> gebruiken"
 
 #: src/index.html:132
 msgid ""
@@ -913,7 +918,7 @@ msgstr ""
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
-msgstr ""
+msgstr "Hou rekening met..."
 
 #: src/template/css/style.css:261
 msgid ""
@@ -923,7 +928,7 @@ msgstr ""
 
 #: src/template/css/style.css:267
 msgid "print styles"
-msgstr ""
+msgstr "print-stijlen"
 
 #: src/template/css/style.css:268
 msgid "inlined to avoid required HTTP connection"
@@ -935,11 +940,11 @@ msgstr ""
 
 #: src/template/js/plugins.js:2
 msgid "remap jQuery to $"
-msgstr ""
+msgstr "Koppel jQuery aan $"
 
 #: src/template/js/plugins.js:19
 msgid "usage"
-msgstr ""
+msgstr "gebruik"
 
 #: src/template/js/plugins.js:22
 msgid "store logs to an array for"
