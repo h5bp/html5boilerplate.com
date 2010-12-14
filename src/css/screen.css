@@ -167,7 +167,6 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 h2 + p { font-size: 14px; } 
 
 #header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px dotted #1e2322; padding-right: 1%;}
-#header p.lang a:first-child { padding-left: 0; }
 
 /* BUTTONS */                                               
 #body .dwn a, a[href="#dsq-content"] { position: relative; display: inline-block; padding: 0.5em 1.5em; line-height: 1em; background: rgba(225, 103, 52, 0.8); color: #e3d7bf; margin: 0 0.5em; text-shadow: black 0px 1px 0px; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;-webkit-transition: all 0.2s ease-out; letter-spacing: 0.5px; } 
