@@ -51,7 +51,7 @@ if (!window.SyntaxHighlighter) {
                 singleQuotedString: /'(?:\.|(\\\')|[^\''\n])*'/g,
                 multiLineDoubleQuotedString: /"(?:\.|(\\\")|[^\""])*"/g,
                 multiLineSingleQuotedString: /'(?:\.|(\\\')|[^\''])*'/g,
-                url: /\w+:\/\/[\w-.\/?%&=]*/g,
+                url: /\w+:\/\/[\w-.\/?%&=:@;]*/g,
                 phpScriptTags: {
                     left: /(&lt;|<)\?=?/g,
                     right: /\?(&gt;|>)/g
