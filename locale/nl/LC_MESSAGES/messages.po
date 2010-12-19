@@ -254,9 +254,12 @@ msgid ""
 "other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
-msgstr "\n <a href=\"http://css3pie.com/\">css3pie.com</a> en alle "
+msgstr ""
+" \n"
+" <a href=\"http://css3pie.com/\">css3pie.com</a> en alle "
 "andere <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
 "browser-Polyfills\">HTML5 polyfills</a> \n"
+" "
 
 #: src/index.html:115
 msgid ""
@@ -267,6 +270,7 @@ msgid ""
 msgstr "Leer meer over de nieuwe HTML5-elementen: <a href=\"http://html5doctor.com/glossary/"
 "\">HTML5 Doctor Glossary</a> en <a href=\"http://diveintohtml5.org/"
 "semantics.html#new-elements\">Dive Into HTML5: semantic elements</a> \n"
+" "
 
 #: src/index.html:117
 msgid ""
@@ -284,6 +288,7 @@ msgid ""
 "            "
 msgstr "Als je een fotogalerij bouwt, wil je wellicht deze code gebruiken om te voorkomen dat die irritante toolbar verschijnt boven elke afbeelding. <p><code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+" "
 
 #: src/index.html:122
 msgid ""
@@ -326,6 +331,7 @@ msgid ""
 "and web dont's</a> \n"
 "            "
 msgstr "Hou rekening met deze <a href=\"http://webdosanddonts.com/\">web do's &amp; dont's</a> \n"
+" "
 
 #: src/index.html:131
 msgid ""
