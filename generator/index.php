@@ -13,6 +13,22 @@
 <form action="generate.php" method="post">
 <table width="510px" border="0" cellspacing="0" cellpadding="5px" style="font-family:Verdana, Geneva, sans-serif;">
 <tr>
+    <td><label>Presets</label></td>
+    <td><select name="preset">
+    <option value="">Select a preset</option>
+      <option value="default">Default</option>
+      <option value="mobile">Mobile</option>
+      <option value="ie8">IE8 Support</option>
+      <option value="ie7">IE7 Support</option>
+      <option value="ie6">IE6 Support</option>
+      <option value="ie">Full IE Support</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td><br></td>
+  </tr>
+<tr>
+<tr>
     <td><h2>HTML</h2></td>
   </tr>
 <tr>
