@@ -102,8 +102,8 @@ copy("template/js/libs/jquery-1.4.4.min.js", $folder."/js/libs/jquery-1.4.4.min.
 copy("template/js/libs/jquery-1.4.4.js", $folder."/js/libs/jquery-1.4.4.js");
 }
 copy("template/js/libs/modernizr-1.6.min.js", $folder."/js/libs/modernizr-1.6.min.js");
-exec("tar -cvzpf tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".tar.gz ".$folder."");
-$file = "tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".tar.gz";
+exec("zip -r tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".zip ".$folder."");
+$file = "tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".zip";
 ?> 
 <p class="dwn">
         <span><?php echo "<a href='".$file."'>Download your boilerplate</a>";?></span>
