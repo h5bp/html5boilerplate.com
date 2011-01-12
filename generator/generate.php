@@ -47,131 +47,68 @@
 
     <div id="body">
 	<h3>Generator</h3>
-     <form action="generate.php" method="post" id="generator_form">
-<table width="1000px" border="0" cellspacing="0" cellpadding="5px" style="font-family:Verdana, Geneva, sans-serif;" align="left">
-<tr>
-    <td><label>Presets</label></td>
-    <td><select name="preset">
-    <option value="">Select a preset</option>
-      <option value="default">Default</option>
-      <option value="mobile">Mobile</option>
-      <option value="ie8">IE8 Support</option>
-      <option value="ie7">IE7 Support</option>
-      <option value="ie6">IE6 Support</option>
-      <option value="ie">Full IE Support</option>
-    </select></td>
-  </tr>
-  <tr>
-    <td><br></td>
-  </tr>
-<tr>
-<tr>
-    <td><h3>HTML</h3></td>
-  </tr>
-<tr>
-    <td><h4>Internet Explorer Support</h4></td>
-  </tr>
-  <tr>
-    <td><label>Internet Explorer 6 and Below</label></td>
-    <td><input name="ie6" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Internet Explorer 7</label></td>
-    <td><input name="ie7" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Internet Explorer 8</label></td>
-    <td><input name="ie8" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-     <td><label>Force Latest IE Rendering Engine or Chrome Frame</label></td>
-    <td><input name="iere" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><h4>Mobile Support</h4></td>
-  </tr>
-  <tr>
-    <td><label>Mobile Viewport</label></td>
-    <td><input name="viewport" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>iOS Homescreen Icon</label></td>
-    <td><input name="iosIcon" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>None Smartphone Stylesheet</label></td>
-    <td><input name="noSmart" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><h4>Javascript</h4></td>
-  </tr>
-  <tr>
-    <td><label>jQuery</label></td>
-    <td><input name="jQuery" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Separate Script Files</label></td>
-    <td><input name="scriptFiles" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>IE6 PNG Transparency Fix</label></td>
-    <td><input name="pngFix" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>YUI Profiler</label></td>
-    <td><input name="yui" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Google Analytics</label></td>
-    <td><input name="tracking" type="checkbox" value="true"></td>
-  </tr>
-  <td>
-    <h3>CSS</h3>
-  </td>
-  <tr>
-    <td><label>CSS Reset</label></td>
-    <td><input name="cssReset" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Font</label></td>
-    <td><input name="font" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Minimal Base Styles</label></td>
-    <td><input name="base" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Non-semantic helper classes</label></td>
-    <td><input name="nonSem" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Media Queries</label></td>
-    <td><input name="mediaQuery" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><label>Print Styles</label></td>
-    <td><input name="printStyle" type="checkbox" value="true"></td>
-  </tr>
-  <tr>
-    <td><br></td>
-  </tr>
-   <tr>
-   <td>
-    <label>Server Type</label></td>
-    <td><select name="serverType">
-      <option value="noServer">No Server</option>
-      <option value="linux">Apache</option>
-      <option value="windows">IIS</option>
-      <option value="nginx">nginx</option>
-    </select></td>
-  </tr>
-  <tr>
-    <td><label>Build</label></td>
-    <td><input name="build" type="checkbox" value="true"></td>
-  </tr>
-</table>
-<input name="" type="submit" value="Submit">
-</form>
+     <?php
+include 'gen_classes.php';
+$now = getdate();
+$folder = "output/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'];
+mkdir($folder);
+mkdir($folder."/js");
+mkdir($folder."/css");
+mkdir($folder."/images");
+mkdir($folder."/js/libs");	
+mkdir($folder."/js/mylibs");	
+$ourFileName = $folder."/index.html";
+$ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
+fwrite($ourFileHandle, $doctype.$ie6.$ie7.$ie8.$head_start.$iere.$title.$viewport.$favicon.$iosIcon.$main_style.$noSmart.$modernizr.$main_body.$jquery.$script.$png.$yui.$tracking.$end_body);
+fclose($ourFileHandle);
+
+$ourFileName = $folder."/css/style.css";
+$ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
+fwrite($ourFileHandle, $cssReset.$font.$baseStyles.$nonsem.$primarystyles.$mediaQuery.$printStyle);
+fclose($ourFileHandle);
+copy("template/favicon.ico", $folder."/favicon.ico");
+copy("template/404.html", $folder."/404.html");
+if($fetchIosIcon =="true"){
+copy("template/apple-touch-icon.png", $folder."/apple-touch-icon.png");
+}
+
+if($fetchscriptFiles =="true"){
+copy("template/js/script.js", $folder."/js/script.js");
+copy("template/js/plugins.js", $folder."/js/plugins.js");
+}
+if($fetchNoSmart == "true"){
+copy("template/css/handheld.css", $folder."/css/handheld.css");
+}
+
+if($fetchpng == "true"){
+copy("template/js/libs/dd_belatedpng.js", $folder."/js/libs/dd_belatedpng.js");
+}
+
+if($server =="linux"){
+	copy("template/.htaccess", $folder."/.htaccess");
+}
+elseif($server =="windows"){
+	copy("template/web.config", $folder."/web.config");
+}
+elseif($server=="nginx"){
+	copy("template/nginx.conf", $folder."/nginx.conf");
+}
+elseif($server == "noServer"){
+
+}
+
+if($fetchjquery =="true"){
+copy("template/js/libs/jquery-1.4.4.min.js", $folder."/js/libs/jquery-1.4.4.min.js");
+copy("template/js/libs/jquery-1.4.4.js", $folder."/js/libs/jquery-1.4.4.js");
+}
+copy("template/js/libs/modernizr-1.6.min.js", $folder."/js/libs/modernizr-1.6.min.js");
+exec("tar -cvzpf tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".tar.gz ".$folder."");
+$file = "tmp/html5".$now['seconds'].$now['minutes'].$now['mday'].$now['mon'].".tar.gz";
+?> 
+<p class="dwn">
+        <span><?php echo "<a href='".$file."'>Download your boilerplate</a>";?></span>
+      </p>
+
     </div>
     <div id="footer">
       <p>

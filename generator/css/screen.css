@@ -244,6 +244,11 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #disqus_thread li:after { border: 0; }
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
+#generator_form{width:1000px; margin:auto;}
+#generator_form table label{font-family:Verdana, Arial, Helvetica, sans-serif;}
+#generator_form table{text-align:left;}
+
+
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }

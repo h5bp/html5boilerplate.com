@@ -11,7 +11,7 @@
 </div>
 <div id="content">
 <form action="generate.php" method="post">
-<table width="510px" border="0" cellspacing="0" cellpadding="5px" style="font-family:Verdana, Geneva, sans-serif;">
+<table width="510px" border="0" cellspacing="0" cellpadding="5px">
 <tr>
     <td><label>Presets</label></td>
     <td><select name="preset">
