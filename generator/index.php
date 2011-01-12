@@ -121,10 +121,15 @@
     </tr>
     <tr>
     <td align="left" valign="middle"><select name="serverType">
+      <option value="noServer">No Server</option>
       <option value="linux">Apache</option>
       <option value="windows">IIS</option>
       <option value="nginx">nginx</option>
     </select></td>
+  </tr>
+  <tr>
+    <td><label>Build</label></td>
+    <td align="left"><input name="build" type="checkbox" value="true"></td>
   </tr>
 </table>
 <input name="" type="submit" value="Submit">
