@@ -58,6 +58,9 @@ elseif($server =="windows"){
 elseif($server=="nginx"){
 	copy("source/nginx.conf", $folder."/nginx.conf");
 }
+elseif($server == "noServer"){
+
+}
 
 if($fetchjquery =="true"){
 copy("source/js/libs/jquery-1.4.4.min.js", $folder."/js/libs/jquery-1.4.4.min.js");
