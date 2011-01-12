@@ -96,6 +96,9 @@ elseif($server=="nginx"){
 elseif($server == "noServer"){
 
 }
+if($build == "true"){
+copy("template/build/*");	
+}
 
 if($fetchjquery =="true"){
 copy("template/js/libs/jquery-1.4.4.min.js", $folder."/js/libs/jquery-1.4.4.min.js");

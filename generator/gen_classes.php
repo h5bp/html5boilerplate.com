@@ -18,7 +18,7 @@ $baseStyles = $_POST['base'];
 $nonsem = $_POST['nonSem'];
 $mediaQuery = $_POST['mediaQuery'];
 $printStyle = $_POST['printStyle'];
-
+$build = $_POST['build'];
 
 mysql_connect("host","user", "pass") or die(mysql_error());
 mysql_select_db("db") or die(mysql_error());
