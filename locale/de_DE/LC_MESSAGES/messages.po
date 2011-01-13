@@ -45,7 +45,7 @@ msgstr ""
 "ref_noscript=boilerplate\">Disqus-Kommentare</a> zu sehen."
 
 #: src/index.html:11 standard input:34
-msgid "A rock-solid default for HTML5 awesome."
+msgid "A rock-solid default template for HTML5 awesome."
 msgstr "ein grundsolider Standard für HTML5"
 
 #: src/index.html:32

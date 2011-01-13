@@ -46,7 +46,7 @@ msgstr "Por favor ative o JavaScript para visualizar os comentários do <a href=
 
 #: src/index.html:11
 #: standard input:34
-msgid "A rock-solid default for HTML5 awesome."
+msgid "A rock-solid default template for HTML5 awesome."
 msgstr "Um padrão sólido para HTML5 impressionante."
 
 #: src/index.html:32
