@@ -19,7 +19,7 @@
 // {% blocktrans %}usage{% endblocktrans %}: log('inside coolFunc',this,arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
 window.log = function(){
-  log.history = log.history || [];   // {% blocktrans %}store logs to an array for{% endblocktrans %} reference
+  log.history = log.history || [];   // {% blocktrans %}store logs to an array for reference{% endblocktrans %}
   log.history.push(arguments);
   if(this.console){
     console.log( Array.prototype.slice.call(arguments) );
