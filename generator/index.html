@@ -54,7 +54,7 @@
         <i>{% blocktrans %}or{% endblocktrans %}</i>
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.5stripped">{% blocktrans %}Boilerplate "stripped"</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
         <i>{% blocktrans %}or{% endblocktrans %}</i>
-         <span><a href="#generate">{% blocktrans %}Generate your own</a> <small>{% blocktrans %}Pick and choose at the bits you want{% endblocktrans %}</small></span>
+         <span><a href="#generate">{% blocktrans %}Generate your own{% endblocktrans %}</a> <small>{% blocktrans %}Pick and choose at the bits you want{% endblocktrans %}</small></span>
       </p>
 
 <div id="generate">
@@ -275,9 +275,21 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
   <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js"></script>
-
-  <script  >
-
+  <script>
+  jQuery(document).ready(function(){
+	 jQuery('#generate').hide(); 
+  })
+ 
+ jQuery('a[href=#generate]').toggle(
+      function () {
+        jQuery(this).text('{% blocktrans %}Hide Generator{% blocktrans %}');
+        jQuery('#generate').slideDown();
+      },
+      function () {
+        jQuery(this).text('{% blocktrans %}Generate your own{% endblocktrans %}');
+        jQuery('#generate').slideUp();
+      }
+    );
 
 
     var local = [
