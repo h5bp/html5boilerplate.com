@@ -3,59 +3,66 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-12 23:38-0800\n"
+"POT-Creation-Date: 2011-01-14 13:16-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
-msgstr ""
+msgstr "Нет такой страницы"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
-msgstr ""
+msgstr "HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
-msgstr ""
+msgstr "Архив Комментариев"
 
 #: src/commentarchive.html:34
 msgid "from before October 26th 2010"
-msgstr ""
+msgstr "опубликованных до 26 октября 2010 года"
 
 #: src/commentarchive.html:38 src/index.html:198
 msgid "Comments"
-msgstr ""
+msgstr "Комментарии"
 
 #: src/commentarchive.html:58
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
+"Вам нужно включить поддержку JavaScript, чтобы увидеть <a href=\"http://"
+"disqus.com/?ref_noscript=boilerplate\">Disqus комментарии</a>."
 
 #: src/index.html:11
 msgid "A rock-solid default template for HTML5 awesome."
-msgstr ""
+msgstr "Пуленепробиваемый шаблон для разработки HTML5 сайтов."
+
+#: src/index.html:32
+msgid "Now offered in:"
+msgstr "Переводы:"
 
 #: src/index.html:42
 msgid "A rock-solid default for HTML5 awesome."
-msgstr ""
+msgstr "Пуленепробиваемый шаблон для разработки HTML5 сайтов."
 
 #: src/index.html:43
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
+"HTML5 Boilerplate &mdash; это HTML/CSS/JS шаблон для всех маньяков, пишущих "
+"быстрые, неглючные и ориентированные на будущее сайты."
 
 #: src/index.html:44
 msgid ""
@@ -66,6 +73,11 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
+"После более чем двух лет разработки, мы собрали лучшие хаки для кросс-"
+"браузерной совместимости, настройки производительности и даже таких вещей, "
+"как кросс-домменых Ajax запросов и Flash. А наш пример .htaccess для Apache "
+"поможет настроить правила кеширования, сжатия (gzip!) и и подготовит ваш "
+"сайт к работе с HTML5 видео и @font-face."
 
 #: src/index.html:45
 msgid ""
@@ -73,148 +85,226 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
+"Boilerplate &mdash; это не фреймворк. Мы также на навязываем какой-либо "
+"конкретный тип разработки. Это просто набор штуковин, помогающий быстро и "
+"безболезненно начать делать ваш сайт."
 
 #: src/index.html:49
 msgid "Want to dive in?"
-msgstr ""
+msgstr "Хочется попробовать?"
 
 #: src/index.html:50
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Скачайте Boilerplate {{ version }}"
 
 #: src/index.html:53
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "С подсказками и ссылками"
 
 #: src/index.html:54
 msgid "or"
-msgstr ""
+msgstr "или"
 
 #: src/index.html:55
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Без комментариев, только код."
 
 #: src/index.html:60
 msgid "Read the docs"
-msgstr ""
+msgstr "Документация"
 
 #: src/index.html:61
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Код на GitHub"
 
 #: src/index.html:62
 msgid "Comment here"
-msgstr ""
+msgstr "Комментарии"
 
 #: src/index.html:64
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Твиттер"
 
 #: src/index.html:65
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Список рассылки"
 
 #: src/index.html:67
 msgid "What&rsquo;s New in 0.9.5"
+msgstr "Что нового в 0.9.5"
+
+#: src/index.html:69
+msgid ""
+"Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
+"too thin."
 msgstr ""
+"Убрано правило <code>-webkit-font-smoothing: antialiased;</code> поскольку "
+"оно делает моношринные шрифты слишком тонкими."
+
+#: src/index.html:70
+msgid ""
+"IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
+"the <code>&lt;html&gt;</code> tag."
+msgstr ""
+"Условные классы для IE были перемещены из <code>&lt;body&gt;</code> в "
+"<code>&lt;html&gt;</code>."
+
+#: src/index.html:71
+msgid ""
+"Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
+"caps and looks odd on Linux machines."
+msgstr ""
+"Убрано правило <code>text-rendering: optimizeLegibility</code> поскольку оно "
+"ломает капители (small-caps) и странно выглядит в Linux."
+
+#: src/index.html:72
+msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
+msgstr "Добавлен вызов минифицированного <code>dd_belatedpng</code> в IE6."
+
+#: src/index.html:73
+msgid ""
+"Revised viewport declaration to allow user scaling and clear Webkit console "
+"errors."
+msgstr ""
+"Исправлено объявление viewport для того, чтобы пользователи могли сами "
+"изменять масштаб и чтобы ошибки в консоли Webkit были более понятными."
+
+#: src/index.html:74
+msgid "Updated Modernizr to 1.6."
+msgstr "Modernizr обновлен до версии 1.6"
+
+#: src/index.html:75
+msgid "Added <code>web.config</code> file for Microsoft IIS."
+msgstr "Добавлен файл <code>web.config</code> для Microsoft IIS."
+
+#: src/index.html:76
+msgid ""
+"Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
+"wiki/Build-script\">Build Script</a>."
+msgstr ""
+"Бета-версия <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+"Build-script/\">скрипта для сборки</a>."
+
+#: src/index.html:77
+msgid ""
+"New project scaffolding <a href=\"http://github.com/paulirish/html5-"
+"boilerplate/wiki/createproject.sh\">bash script</a>."
+msgstr ""
+"Новый <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+"createproject.sh\">баш-скрипт</a> для создания проекта."
+
+#: src/index.html:78
+msgid ".... and over 100 other fixes and improvements.</a>"
+msgstr "... и более 100 других исправлений и улучшений."
 
 #: src/index.html:81
 msgid "Why it is awesome"
-msgstr ""
+msgstr "Почему это круто"
 
 #: src/index.html:83
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Кросс-браузерность (ага, даже IE6)."
 
 #: src/index.html:84
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "Настоящий HTML5. Можно сразу использовать новые теги."
 
 #: src/index.html:85
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Правила сжатия и кеширования для супер производительности."
 
 #: src/index.html:86
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Оптимальные параметры для настройки сайта."
 
 #: src/index.html:87
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Поддержка мобильных браузеров."
 
 #: src/index.html:88
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
+"Использование фич в зависимости от возможностей браузера &mdash; мы это учли."
 
 #: src/index.html:89
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "Специальные классы для Internet Explorer."
 
 #: src/index.html:90
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr ""
+"Классы .no-js и .js, чтобы можно было по-разному стилизовать страницу в "
+"зависимости от того, включен ли JavaScript."
 
 #: src/index.html:91
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
+"Хочется юнит-тестов, но лениво их писать? Мы уже написали подробнейшие юнит-"
+"тесты для проекта."
 
 #: src/index.html:94
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "Почему это ещё круче"
 
 #: src/index.html:96
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Профайлинг JavaScript в IE6 и IE7? У матросов нет вопросов."
 
 #: src/index.html:97
 msgid "Console.log nerfing so you won't break anyone by mistake."
 msgstr ""
+"Заглушка для console.log, чтобы ни у кого ничего случайно не поломалось."
 
 #: src/index.html:98
 msgid "Never go wrong with your doctype or markup!"
 msgstr ""
+"Вы никогда больше не будете использовать неправильную разметку или doctype."
 
 #: src/index.html:99
 msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
+msgstr "Оптимальные стили для печати."
 
 #: src/index.html:100
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
+msgstr "Код для iOS, Android и Opera Mobile, а также шаблон для CSS."
 
 #: src/index.html:101
 msgid "IE6 pngfix baked in."
-msgstr ""
+msgstr "Встроенный IE6 pngfix."
 
 #: src/index.html:102
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
+"Классы .clearfix и .visuallyhiden для правильной и доступной стилизации."
 
 #: src/index.html:103
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
+"Конфиг .htaccess для правильного использования HTML5 и более быстрой "
+"загрузки страниц."
 
 #: src/index.html:104
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr ""
+msgstr "jQuery скачиваемый с CDN (и локальная копия, на всякий случай)."
 
 #: src/index.html:105
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
+"Думаете слишком много всего? HTML5 Boilerplate можно настроить на ваш вкус."
 
 #: src/index.html:108
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Ну а теперь всё по порядку"
 
 #: src/index.html:110
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr ""
+msgstr "Всё тоже самое, только в 40-минутном видео!"
 
 #: src/index.html:112
 msgid ""
@@ -222,10 +312,13 @@ msgid ""
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
+"Также можете почитать замечательное описание <a href=\"http://"
+"www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 трюков, "
+"которые нужно использовать</a>."
 
 #: src/index.html:115
 msgid "Make it even better!"
-msgstr ""
+msgstr "Можно сделать ещё лучше!"
 
 #: src/index.html:117
 msgid ""
@@ -234,18 +327,25 @@ msgid ""
 "Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
 "the future to all browsers."
 msgstr ""
+"<a href=\"http://github.com/SlexAxton/yepnope.js\">yepnope.js</a> вместе с "
+"<a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
+"Polyfills\">некоторыми костылями</a> принесет будущее в каждый браузер."
 
 #: src/index.html:118
 msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
 msgstr ""
+"С помощью нашего билд-скрипта и expires настроенных на год поможет сделать "
+"сайт супер быстрым."
 
 #: src/index.html:119
 msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
 msgstr ""
+"Для помощи с CSS3 посмотрите в сторону <a href\"http://css3please.com"
+"\">CSS3please.com</a>"
 
 #: src/index.html:120
 msgid ""
@@ -255,6 +355,11 @@ msgid ""
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
 msgstr ""
+" \n"
+"<a href=\"http://css3pie.com/\">css3pie.com</a> и другие <a href=\"http://"
+"github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 "
+"костыли</a> \n"
+"            "
 
 #: src/index.html:123
 msgid ""
@@ -263,12 +368,16 @@ msgid ""
 "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
 "            "
 msgstr ""
+"Ещё лучше изучите HTML5: <a href=\"http://html5doctor.com/glossary/\">HTML5 "
+"Doctor Glossary</a> и <a href=\"http://diveintohtml5.org/semantics.html#new-"
+"elements\">Dive Into HTML5: semantic elements</a> \n"
+"            "
 
 #: src/index.html:125
 msgid ""
 "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
 "`&lt;head&gt;`</a>"
-msgstr ""
+msgstr "<a href=\"http://gist.github.com/581868\">Трюки с мета-тегами</a>."
 
 #: src/index.html:126
 msgid ""
@@ -279,6 +388,12 @@ msgid ""
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
 msgstr ""
+"Этот мета-тег поможет убрать дурацкий тулбар, который появляется над "
+"картинками в IE6: \n"
+"\n"
+"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
+"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+"            "
 
 #: src/index.html:130
 msgid ""
@@ -287,18 +402,27 @@ msgid ""
 "hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
 "a> if you are using <a href=\"http://sass-lang.com\">Sass</a>."
 msgstr ""
+"Почитайте о <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
+"tips\">CSS спрайтинге</a>, ну или просто пользуйтесь <a href=\"http://www."
+"hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
+"a> если вы уже сидите на <a href=\"http://sass-lang.com\">Sass</a>."
 
 #: src/index.html:131
 msgid ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
 "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
 msgstr ""
+"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+"closed#issue/115/comment/439219\">Заставьте пользователей включить "
+"JavaScript</a>"
 
 #: src/index.html:132
 msgid ""
 "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
 "\">Color considerations for printing</a>"
 msgstr ""
+"<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
+"\">Рекоммендации по цветовой гамме для печати</a>"
 
 #: src/index.html:133
 msgid ""
@@ -307,6 +431,10 @@ msgid ""
 "\">the Google SEO Starter Guide</a> \n"
 "            "
 msgstr ""
+"Следуйте рекоммендация Google для SEO: <a href=\"http://"
+"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+"\">the Google SEO Starter Guide</a> \n"
+"            "
 
 #: src/index.html:135
 msgid ""
@@ -314,6 +442,9 @@ msgid ""
 "relations\">link relations</a> \n"
 "            "
 msgstr ""
+"Встречайте <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-relations"
+"\">новые значения для аттрибута rel</a> \n"
+"            "
 
 #: src/index.html:137
 msgid ""
@@ -321,12 +452,17 @@ msgid ""
 "and web dont's</a> \n"
 "            "
 msgstr ""
+"Почитайте (достаточно субъективные) заметки о том, <a href=\"http://"
+"webdosanddonts.com/\">что делать нужно, а что нет</a>\n"
+"            "
 
 #: src/index.html:139
 msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 msgstr ""
+"Чтобы iPhone не обрабатывал вашу иконку, значение rel должно быть <code>"
+"\"apple-touch-icon-precomposed\"</code>"
 
 #: src/index.html:140
 msgid ""
@@ -334,6 +470,10 @@ msgid ""
 "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
 "\">Simulate link printing in IE with JS</a>"
 msgstr ""
+"<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
+"Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
+"\">Показывайте ссылки на страницы после самого текста при печати через IE6 и "
+"IE7</a>"
 
 #: src/index.html:141
 msgid ""
@@ -341,19 +481,27 @@ msgid ""
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
+"Используйте <code>rel=\"prefetch\"</code> для <a href=\"http://www."
+"stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch"
+"\">вещей, которые нужно заранее подгрузить</a>."
 
 #: src/index.html:142
 msgid ""
-"Using border-radius with a border in Webkit? Try <a href=\"http://tumble."
-"sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
-"clip</a> to fix the bleed."
+"Using border-radius with background color in Webkit? Try <a href=\"http://"
+"tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
+"background-clip</a> to fix the bleed."
 msgstr ""
+"Используете border-radius с background в Webkit? <a href=\"http://tumble."
+"sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
+"clip</a> предотвратит наложение бэкграунда на границу."
 
 #: src/index.html:143
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
 msgstr ""
+"<a href=\"http://css-tricks.com/efficiently-rendering-css/\">Оптимальный "
+"CSS</a> для наилучшей производительности в браузере."
 
 #: src/index.html:144
 msgid ""
@@ -361,12 +509,17 @@ msgid ""
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
+"Исполнение разного JavaScript <a href=\"http://paulirish.com/2009/markup-"
+"based-unobtrusive-comprehensive-dom-ready-execution/\">в зависимости от "
+"разметки</a>."
 
 #: src/index.html:145
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
+"Доступные <a href=\"http://paulirish.com/2009/browser-specific-css-hacks/"
+"\">CSS хаки</a>."
 
 #: src/index.html:146
 msgid ""
@@ -375,6 +528,9 @@ msgid ""
 "a> \n"
 "            "
 msgstr ""
+"Подсадите вашу команду на единый <a href=\"http://molecularvoices.molecular."
+"com/standards/\">стиль кодирования фронт-енд приложений.</a> \n"
+"            "
 
 #: src/index.html:148
 msgid ""
@@ -383,6 +539,11 @@ msgid ""
 "optimum search results <a href=\"http://googlewebmastercentral.blogspot."
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
+"Пользуйтесь <a href=\"http://microformats.org/wiki/Main_Page"
+"\">Микроформатами</a> (с помощью <a href=\"http://microformats.org/wiki/"
+"microdata\">microdata</a>) для оптимальной <a href=\"http://"
+"googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html"
+"\">видимости</a> в результатах поисковиков."
 
 #: src/index.html:149
 msgid ""
@@ -390,56 +551,62 @@ msgid ""
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
+"Вы можете использовать <a href=\"http://camendesign.com/code/"
+"developpeurs_sans_frontieres\">body</a>, как обертку вместо div#container."
 
 #: src/index.html:150
 msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
+"Больше информации о том, <a href=\"http://github.com/paulirish/html5-"
+"boilerplate/wiki/Make-it-better/\">как сделать ваш сайт лучше.</a> "
 
 #: src/index.html:156
 msgid "Brought to you by"
-msgstr ""
+msgstr "С любовью от"
 
 #: src/index.html:157
 msgid "Google Chrome, jQuery"
-msgstr ""
+msgstr "Google Chrome, jQuery"
 
 #: src/index.html:158
 msgid "Open Web Vigilante"
-msgstr ""
+msgstr "Смотритель Сети"
 
 #: src/index.html:170
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
-msgstr ""
+msgstr "Но ничего бы не было без помощи всех этих супергероев:"
 
 #: src/index.html:199
 msgid ""
 "Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
 "html\">archive</a>"
 msgstr ""
+"Комментарии к Boilerplate v0.9.1 <a href=\"commentarchive.html\">в архиве</a>"
 
 #: src/index.html:201 standard input:304
 msgid "Show comments"
-msgstr ""
+msgstr "Комментарии"
 
 #: src/index.html:313
 msgid "http://html5boilerplate.com/v095"
-msgstr ""
+msgstr "http://html5boilerplate.com/v095"
 
 #: src/template/crossdomain.xml:6
 msgid ""
 "Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 msgstr ""
+"Подробнее: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 
 #: src/template/crossdomain.xml:8
 msgid "Most restrictive policy:"
-msgstr ""
+msgstr "Наиболее жесткая политика:"
 
 #: src/template/crossdomain.xml:13
 msgid "Least restrictive policy:"
-msgstr ""
+msgstr "Менее жесткая политика:"
 
 #: src/template/crossdomain.xml:20
 msgid ""
@@ -448,26 +615,33 @@ msgid ""
 "    and don’t understand all of the points described here, you probably\n"
 "    have a nasty security vulnerability. ~ simon willison\n"
 msgstr ""
+"\n"
+"    Если вы используете crossdomain.xml с allow-access-from domain=“*”\n"
+"    и не полностью понимаете всё, что тут описано, результатом, скорее "
+"всего,     будет опасная брешь в безопасности. ~ simon willison\n"
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
-msgstr ""
+msgstr "Конфиг Апача"
 
 #: src/template/htaccess.txt:4
 msgid "Techniques in here adapted from all over, including:"
-msgstr ""
+msgstr "Трюки описанные ниже были собраны отовсюду в сети, включая:"
 
 #: src/template/htaccess.txt:9
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
+"Не даем IE войти в режим совместимости с IE7, даже когда он сам этого хочет"
 
 #: src/template/htaccess.txt:11
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
+"Используем ChromeFrame, если он установлен, чтобы сделать жизнь бедных "
+"пользователей IE немного лучше"
 
 #: src/template/htaccess.txt:20
 msgid ""
@@ -476,16 +650,23 @@ msgid ""
 "# We need to inform proxies that content changes based on UA\n"
 "# "
 msgstr ""
+"\n"
+"# Поскольку мы не отправляем X-UA-Compatible для браузеров отличных от IE "
+"(чтобы сократить размер заголовка),\n"
+"# Нам нужно дать знать прокси-серверам об измененении контента на основе UA\n"
+"# "
 
 #: src/template/htaccess.txt:25
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that's unncessary to "
 "declare"
 msgstr ""
+"Кеш-контроль включается только когда включен модуль mod_headers, так что нам "
+"необходимо его здесь объявить"
 
 #: src/template/htaccess.txt:29
 msgid "Disabled. Uncomment to serve cross-domain ajax requests"
-msgstr ""
+msgstr "Раскомментируйте, чтобы разрешить кросс-доменные Ajax запросы"
 
 #: src/template/htaccess.txt:37
 msgid ""
@@ -495,22 +676,28 @@ msgid ""
 "# your subdomains like \"sub.domain.com\"\n"
 "# "
 msgstr ""
+"\n"
+"# разрешаем доступ к веб-шрифтам со всех доменов\n"
+"# в качестве альтернативы можно разрешить доступ только\n"
+"# к вашим субдоменам, например \"sub.domain.com\"\n"
+"# "
 
 #: src/template/htaccess.txt:49
 msgid "video"
-msgstr ""
+msgstr "видео"
 
 #: src/template/htaccess.txt:54
 msgid "Proper svg serving. Required for svg webfonts on iPad"
 msgstr ""
+"Правильный формат для svg. Необходимо для работы svg шрифтов в iPad Safari"
 
 #: src/template/htaccess.txt:59 standard input:168
 msgid "webfonts"
-msgstr ""
+msgstr "веб-шрифты"
 
 #: src/template/htaccess.txt:65
 msgid "assorted types"
-msgstr ""
+msgstr "другие форматы"
 
 #: src/template/htaccess.txt:75
 msgid ""
@@ -525,6 +712,16 @@ msgid ""
 "# and they would be included into this single file\n"
 "# "
 msgstr ""
+"\n"
+"# разрешаем некоторым JS/CSS файлам включать в себя другие файлы\n"
+"#\n"
+"# к примеру, внутри script.combined.js можно написать\n"
+"#\n"
+"#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
+"#   <!--#include file=\"jquery.idletimer.js\" -->\n"
+"#\n"
+"# и эти файлы будут автоматически включены в состав файла\n"
+"# "
 
 #: src/template/htaccess.txt:86
 msgid ""
@@ -534,18 +731,23 @@ msgid ""
 "# or concatenate and minify them manually.\n"
 "# "
 msgstr ""
+"\n"
+"# по умолчанию, boilerplate этим не пользуется. вы можете либо\n"
+"# переименовать файлы, чтобы воспользоваться этой возможностью,\n"
+"# либо объединить и минифицировать эти файлы вручную.\n"
+"# "
 
 #: src/template/htaccess.txt:91
 msgid "Disabled by default."
-msgstr ""
+msgstr "По умолчанию отключено."
 
 #: src/template/htaccess.txt:102
 msgid "gzip compression."
-msgstr ""
+msgstr "gzip сжатие."
 
 #: src/template/htaccess.txt:110
 msgid "webfonts and svg:"
-msgstr ""
+msgstr "веб-шрифты и svg:"
 
 #: src/template/htaccess.txt:118
 msgid ""
@@ -558,6 +760,16 @@ msgid ""
 "# additionally, consider that outdated proxies may miscache\n"
 "# "
 msgstr ""
+"\n"
+"# эти заголовки ставят дату протухания кеша на далекое будущее\n"
+"# подразумевается, что вы контролируете версиями файлов с помощью GET "
+"параметров\n"
+"#\n"
+"#   <script src=\"application.js?20100608\">\n"
+"#\n"
+"# (к тому же, имейте ввиду, что некоторые старые прокси неправильно "
+"обрабатывают такие параметры)\n"
+"# "
 
 #: src/template/htaccess.txt:128
 msgid ""
@@ -567,39 +779,46 @@ msgid ""
 "# \"access plus 1 week\" or so\n"
 "# "
 msgstr ""
+"\n"
+"# если вы не вставляете версии файла в его имя, спустите дату протухания до "
+"одной недели:\n"
+"# \"access plus 1 week\" \n"
+"# "
 
 #: src/template/htaccess.txt:137
 msgid "Perhaps better to whitelist expires rules? Perhaps."
-msgstr ""
+msgstr "Может лучше явно указать, какие правила протухания кеша нам нужны?"
 
 #: src/template/htaccess.txt:140
 msgid ""
 "cache.manifest needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
 msgstr ""
+"cache.manifest требует доп. запросов в FF 3.6 (спасибо Remy ~Introducing "
+"HTML5)"
 
 #: src/template/htaccess.txt:143
 msgid "your document html "
-msgstr ""
+msgstr "html вашего сайта"
 
 #: src/template/htaccess.txt:146
 msgid "data"
-msgstr ""
+msgstr "дата"
 
 #: src/template/htaccess.txt:152
 msgid "rss feed"
-msgstr ""
+msgstr "rss поток"
 
 #: src/template/htaccess.txt:155
 msgid "favicon (cannot be renamed)"
-msgstr ""
+msgstr "фавикон (переименовывать нельзя)"
 
 #: src/template/htaccess.txt:158
 msgid "media: images, video, audio"
-msgstr ""
+msgstr "медиа: картинки, видео, аудио"
 
 #: src/template/htaccess.txt:175
 msgid "css and javascript"
-msgstr ""
+msgstr "css и javascript"
 
 #: src/template/htaccess.txt:184
 msgid ""
@@ -608,111 +827,133 @@ msgid ""
 "# static content.\n"
 "# "
 msgstr ""
+"\n"
+"# Нам не нужны Etags для статического контента, поскольку мы отправляем\n"
+"# \"долгие\" заголовки expires.\n"
+"# "
 
 #: src/template/htaccess.txt:194
 msgid "Allow cookies to be set from iframes (for IE only)"
-msgstr ""
+msgstr "Разрешаем IE сохранять куки из айфреймов."
 
 #: src/template/htaccess.txt:195
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
+"Если необходимо, раскоментируйте и укажите путь или регульярное выражние в "
+"директиве Location"
 
 #: src/template/htaccess.txt:204
 msgid ""
 "you probably want www.example.com to forward to example.com -- shorter URLs "
 "are sexier."
-msgstr ""
+msgstr "www.example.com должен направлять пользователей на example.com."
 
 #: src/template/htaccess.txt:213
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist"
 msgstr ""
+"без -MultiViews, Апач вернет 404 для правила mod_rewrite если не существует "
+"директории с таким же именем"
 
 #: src/template/htaccess.txt:214
 msgid "e.g."
-msgstr ""
+msgstr "например"
 
 #: src/template/htaccess.txt:216
 msgid ""
 "will have Apache block users from browsing folders without a default document"
 msgstr ""
+"заставляет Апач запрещать пользователям браузить по директориям, в которых "
+"нет дефолтного документа"
 
 #: src/template/htaccess.txt:221
 msgid "custom 404 page"
-msgstr ""
+msgstr "кастомная страница 404"
 
 #: src/template/htaccess.txt:226
 msgid "use utf-8 encoding for anything served text/plain or text/html"
-msgstr ""
+msgstr "используем utf-8 для text/plain и text/html"
 
 #: src/template/htaccess.txt:228
 msgid "force utf-8 for a number of file formats"
-msgstr ""
+msgstr "используем utf-8 для всех этих форматов"
 
 #: src/template/htaccess.txt:233
 msgid "We don't need to tell everyone we're apache."
-msgstr ""
+msgstr "Не обязательно всем рассказывать, что это Апач"
 
 #: src/template/index.html:12
 msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame \n"
 "       Remove this if you use the .htaccess"
 msgstr ""
+"Всегда пытаемся использовать самый последний движок в IE и Chrome Frame\n"
+"       Удалите, если есть .htaccess"
 
 #: src/template/index.html:20
 msgid "Mobile viewport optimized:"
-msgstr ""
+msgstr "Оптимизируем для экранов мобильников:"
 
 #: src/template/index.html:23
 msgid ""
 "Place favicon.ico & apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr ""
+"Если поместить favicon.ico и apple-touch-icon.png в корень вашего домена, то "
+"эти ссылки можно удалить"
 
 #: src/template/index.html:28
 msgid "CSS : implied media=\"all\""
-msgstr ""
+msgstr "В CSS аттрибут media по умолчанию стоит в \"all\""
 
 #: src/template/index.html:31
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
 msgstr ""
+"Раскомментируйте если вы поддерживаете мобильники с не очень хорошими "
+"браузерами"
 
 #: src/template/index.html:34
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements & feature detects"
 msgstr ""
+"Весь JavaScript снизу страницы, кроме Modernizr, который добавляет HTML5 "
+"теги и выясняет какие возможности поддерживаются браузером"
 
 #: src/template/index.html:56
 msgid "Javascript at the bottom for fast page loading"
-msgstr ""
+msgstr "Javascript в самом низу для более быстрой загрузки страницы"
 
 #: src/template/index.html:58
 msgid "Grab Google CDN's jQuery. fall back to local if necessary"
 msgstr ""
+"Стараемся скачать jQuery с Гугловского CDN. Если не получается, берем "
+"локальную копию."
 
 #: src/template/index.html:63
 msgid "scripts concatenated and minified via ant build script"
-msgstr ""
+msgstr "скрипты объединенные и минифицированные с помощью ant скрипта"
 
 #: src/template/index.html:66
 msgid "end concatenated and minified scripts"
-msgstr ""
+msgstr "всё"
 
 #: src/template/index.html:71
 msgid "fix any <img> or .png_bg background-images"
 msgstr ""
+"исправляем все <img> или элементы с классом .png_bg и бэкрграундными "
+"картинками"
 
 #: src/template/index.html:74
 msgid "yui profiler and profileviewer - remove for production"
-msgstr ""
+msgstr "профайлер yui - уберите беред релизом"
 
 #: src/template/index.html:77
 msgid "end profiling code"
-msgstr ""
+msgstr "всё"
 
 #: src/template/index.html:80
 msgid ""
@@ -720,163 +961,175 @@ msgid ""
 "snippet \n"
 "       change the UA-XXXXX-X to be your site's ID"
 msgstr ""
+"асинхронная загрузка google analytics: mathiasbynens.be/notes/async-"
+"analytics-snippet \n"
+"       измените UA-XXXXX-X на ID вашего сайта"
 
 #: src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
 msgstr ""
+"style.css убирает дефолтные стили, нормализует шрифты и добавляет самые "
+"базовые стили."
 
 #: src/template/css/style.css:6
 msgid "credit is left where credit is due."
-msgstr ""
+msgstr "благодарности источникам"
 
 #: src/template/css/style.css:7
 msgid "much inspiration was taken from these projects:"
-msgstr ""
+msgstr "среди которых следующие проекты:"
 
 #: src/template/css/style.css:14
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
+"html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
+"baseline)"
 
 #: src/template/css/style.css:15
 msgid "v1.4 2009-07-27 | Authors:"
-msgstr ""
+msgstr "v1.4 2009-07-27 | Авторы:"
 
 #: src/template/css/style.css:62
 msgid "tables still need cellspacing=\"0\" in the markup"
-msgstr ""
+msgstr "таблицы всё равно нуждаются в cellspacing=\"0\""
 
 #: src/template/css/style.css:69
 msgid "END RESET CSS"
-msgstr ""
+msgstr "КОНЕЦ RESET CSS"
 
 #: src/template/css/style.css:72
 msgid "fonts.css from the YUI Library:"
-msgstr ""
+msgstr "fonts.css из YUI Library:"
 
 #: src/template/css/style.css:73
 msgid ""
 "Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages"
-msgstr ""
+msgstr "Проценты для размеров шрифтов: developer.yahoo.com/yui/3/cssfonts/"
 
 #: src/template/css/style.css:75
 msgid "There are three custom edits:"
-msgstr ""
+msgstr "Меняем три вещи:"
 
 #: src/template/css/style.css:76
 msgid "remove arial, helvetica from explicit font stack"
-msgstr ""
+msgstr "убираем arial и helvetica из списка шрифтов"
 
 #: src/template/css/style.css:77
 msgid "we normalize monospace styles ourselves"
-msgstr ""
+msgstr "сами нормализуем стили для моноширинных шрифтов"
 
 #: src/template/css/style.css:78
 msgid ""
 "table font-size is reset in the HTML5 reset above so there is no need to "
 "repeat"
 msgstr ""
+"font-size для таблицы был исправлен выше, так что повторять это не нужно"
 
 #: src/template/css/style.css:80
 msgid "hack retained to preserve specificity"
-msgstr ""
+msgstr "оставляем хак, для точности"
 
 #: src/template/css/style.css:84
 msgid "normalize monospace sizing"
-msgstr ""
+msgstr "нормализуем размеры моноширинных шрифтов"
 
 #: src/template/css/style.css:91
 msgid "minimal base styles "
-msgstr ""
+msgstr "базовые стили (самый минимум)"
 
 #: src/template/css/style.css:96
 msgid "#444 looks better than black:"
-msgstr ""
+msgstr "#444 выглядит лучше черного цвета:"
 
 #: src/template/css/style.css:98
 msgid "set your base font here, to apply evenly"
-msgstr ""
+msgstr "укажите ваш базовый шрифт здесь, чтобы он везде был одинаковым"
 
 #: src/template/css/style.css:102
 msgid ""
 "Headers (h1,h2,etc) have no default font-size or margin,\n"
 "   you'll want to define those yourself."
 msgstr ""
+"У заголовков (h1,h2,etc) нет дефолтных размеров или отступов,\n"
+"   вам нужно будет указать их самим."
 
 #: src/template/css/style.css:106
 msgid "always force a scrollbar in non-IE"
-msgstr ""
+msgstr "всегда показывайте полосу прокрутки в браузерах отличных от IE"
 
 #: src/template/css/style.css:110
 msgid "Accessible focus treatment:"
-msgstr ""
+msgstr "Делаем фокус доступным (accessible):"
 
 #: src/template/css/style.css:120
 msgid "Remove margins for navigation lists"
-msgstr ""
+msgstr "Убераем отступы от навигационных списков"
 
 #: src/template/css/style.css:145
 msgid "align checkboxes, radios, text inputs with their label"
 msgstr ""
+"выравниваем чекбоксы, радио кнопки и тектовые поля по отношению к их меткам"
 
 #: src/template/css/style.css:152
 msgid "hand cursor on clickable input elements"
-msgstr ""
+msgstr "курсор в виде руки для всех кликабельных элементов input"
 
 #: src/template/css/style.css:155
 msgid "webkit browsers add a 2px margin outside the chrome of form elements"
-msgstr ""
+msgstr "браузеры на webkit добавляют двухпиксельный отступ к элементам формы"
 
 #: src/template/css/style.css:158
 msgid "colors for form validity"
-msgstr ""
+msgstr "цвета для правильно/неправильно заполненных полей"
 
 #: src/template/css/style.css:170
 msgid "These selection declarations have to be separate."
-msgstr ""
+msgstr "Эти селекторы должны быть разделены"
 
 #: src/template/css/style.css:171
 msgid "No text-shadow:"
-msgstr ""
+msgstr "Убираем text-shadow"
 
 #: src/template/css/style.css:172
 msgid "Also: hot pink."
-msgstr ""
+msgstr "Плюс: розовенько"
 
 #: src/template/css/style.css:179
 msgid "make buttons play nice in IE:"
-msgstr ""
+msgstr "исправляем кнопки для IE"
 
 #: src/template/css/style.css:183
 msgid "bicubic resizing for non-native sized IMG:"
-msgstr ""
+msgstr "бикубическое изменение размеров для IMG с не-нативными размерами"
 
 #: src/template/css/style.css:190
 msgid "Non-semantic helper classes"
-msgstr ""
+msgstr "Не-семантически классы-помошники"
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
-msgstr ""
+msgstr "для замены картинки"
 
 #: src/template/css/style.css:196
 msgid "Hide for both screenreaders and browsers"
-msgstr ""
+msgstr "Прячем как от скринридеров, так и от браузеров"
 
 #: src/template/css/style.css:200
 msgid "Hide only visually, but have it available for screenreaders"
-msgstr ""
+msgstr "Прямем визуально, но не от скринридеров"
 
 #: src/template/css/style.css:206
 msgid "Hide visually and from screenreaders, but maintain layout"
-msgstr ""
+msgstr "Прячем визуально и от скринридеров, оставляя при этом разметку"
 
 #: src/template/css/style.css:209
 msgid ""
 "The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child "
 "elements"
 msgstr ""
+"Великолепный CLEARFIX: Update to prevent margin-collapsing on child elements"
 
 #: src/template/css/style.css:215
 msgid "Fix clearfix:"
@@ -884,70 +1137,74 @@ msgstr ""
 
 #: src/template/css/style.css:223
 msgid "Primary Styles"
-msgstr ""
+msgstr "Главные стили:"
 
 #: src/template/css/style.css:224
 msgid "Author: "
-msgstr ""
+msgstr "Автор:"
 
 #: src/template/css/style.css:242
 msgid "Media queries for responsive design"
-msgstr ""
+msgstr "Правила для более отзывчивого дизайна"
 
 #: src/template/css/style.css:243
 msgid "These follow after primary styles so they will successfully override."
-msgstr ""
+msgstr "Эти стили следуют за главными стилями, чтобы успешно их заменить."
 
 #: src/template/css/style.css:247
 msgid "Style adjustments for portrait mode goes here"
-msgstr ""
+msgstr "Стили для портретного режима"
 
 #: src/template/css/style.css:252
 msgid "Style adjustments for landscape mode goes here"
-msgstr ""
+msgstr "Стили для альбомного режима"
 
 #: src/template/css/style.css:256
 msgid "Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)"
 msgstr ""
+"Хорошие (Grade-A) мобильные браузерв (Opera Mobile, iPhone Safari, Android "
+"Chrome)"
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
-msgstr ""
+msgstr "На заметку:"
 
 #: src/template/css/style.css:261
 msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you"
 msgstr ""
+"Разкомментируйте, если не хотите, чтобы iOS и WinMobile сами оптимизировали "
+"текст для своих экранов"
 
 #: src/template/css/style.css:267
 msgid "print styles"
-msgstr ""
+msgstr "стили для печати"
 
 #: src/template/css/style.css:268
 msgid "inlined to avoid required HTTP connection"
-msgstr ""
+msgstr "прямо в файле, чтобы избежать дополнительного HTTP запроса"
 
 #: src/template/css/style.css:275
 msgid "Don't show links for images"
-msgstr ""
+msgstr "Не показывать ссылки к картинкам"
 
 #: src/template/js/plugins.js:2
 msgid "remap jQuery to $"
-msgstr ""
+msgstr "используем $ вместо jQuery"
 
 #: src/template/js/plugins.js:19
 msgid "usage"
-msgstr ""
+msgstr "как пользоваться"
 
 #: src/template/js/plugins.js:22
-msgid "store logs to an array for"
-msgstr ""
+msgid "store logs to an array for reference"
+msgstr "логи сохраняем в массив, на будущее"
 
 #: src/template/js/plugins.js:31
 msgid "catch all document.write() calls"
-msgstr ""
+msgstr "перехватываем все вызовы document.write()"
 
 #: src/template/js/script.js:1
 msgid "Author:"
-msgstr ""
+msgstr "Автор:"
