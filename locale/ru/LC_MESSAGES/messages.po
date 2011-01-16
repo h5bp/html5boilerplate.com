@@ -139,7 +139,7 @@ msgid ""
 "too thin."
 msgstr ""
 "Убрано правило <code>-webkit-font-smoothing: antialiased;</code> поскольку "
-"оно делает моношринные шрифты слишком тонкими."
+"оно делает моноширинные шрифты слишком тонкими."
 
 #: src/index.html:70
 msgid ""
