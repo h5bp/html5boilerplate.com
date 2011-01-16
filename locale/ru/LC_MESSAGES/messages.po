@@ -85,7 +85,7 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
-"Boilerplate &mdash; это не фреймворк. Мы также на навязываем какой-либо "
+"Boilerplate &mdash; это не фреймворк. Мы также не навязываем какой-либо "
 "конкретный тип разработки. Это просто набор штуковин, помогающий быстро и "
 "безболезненно начать делать ваш сайт."
 
@@ -949,7 +949,7 @@ msgstr ""
 
 #: src/template/index.html:74
 msgid "yui profiler and profileviewer - remove for production"
-msgstr "профайлер yui - уберите беред релизом"
+msgstr "профайлер yui - уберите перед релизом"
 
 #: src/template/index.html:77
 msgid "end profiling code"
