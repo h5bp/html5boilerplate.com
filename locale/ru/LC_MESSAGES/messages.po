@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-14 13:16-0800\n"
+"POT-Creation-Date: 2011-01-16 02:08-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr "Архив Комментариев"
 msgid "from before October 26th 2010"
 msgstr "опубликованных до 26 октября 2010 года"
 
-#: src/commentarchive.html:38 src/index.html:198
+#: src/commentarchive.html:38 src/index.html:199
 msgid "Comments"
 msgstr "Комментарии"
 
@@ -52,11 +52,11 @@ msgstr "Пуленепробиваемый шаблон для разработ�
 msgid "Now offered in:"
 msgstr "Переводы:"
 
-#: src/index.html:42
+#: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "Пуленепробиваемый шаблон для разработки HTML5 сайтов."
 
-#: src/index.html:43
+#: src/index.html:44
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
@@ -64,7 +64,7 @@ msgstr ""
 "HTML5 Boilerplate &mdash; это HTML/CSS/JS шаблон для всех маньяков, пишущих "
 "быстрые, неглючные и ориентированные на будущее сайты."
 
-#: src/index.html:44
+#: src/index.html:45
 msgid ""
 "After more than two years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "
@@ -79,7 +79,7 @@ msgstr ""
 "поможет настроить правила кеширования, сжатия (gzip!) и и подготовит ваш "
 "сайт к работе с HTML5 видео и @font-face."
 
-#: src/index.html:45
+#: src/index.html:46
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -89,51 +89,51 @@ msgstr ""
 "конкретный тип разработки. Это просто набор штуковин, помогающий быстро и "
 "безболезненно начать делать ваш сайт."
 
-#: src/index.html:49
+#: src/index.html:50
 msgid "Want to dive in?"
 msgstr "Хочется попробовать?"
 
-#: src/index.html:50
+#: src/index.html:51
 msgid "Download Boilerplate {{ version }}"
 msgstr "Скачайте Boilerplate {{ version }}"
 
-#: src/index.html:53
+#: src/index.html:54
 msgid "Keep the hints and links"
 msgstr "С подсказками и ссылками"
 
-#: src/index.html:54
+#: src/index.html:55
 msgid "or"
 msgstr "или"
 
-#: src/index.html:55
+#: src/index.html:56
 msgid "No comments, just the bizniss."
 msgstr "Без комментариев, только код."
 
-#: src/index.html:60
+#: src/index.html:61
 msgid "Read the docs"
 msgstr "Документация"
 
-#: src/index.html:61
+#: src/index.html:62
 msgid "Contribute on Github "
 msgstr "Код на GitHub"
 
-#: src/index.html:62
+#: src/index.html:63
 msgid "Comment here"
 msgstr "Комментарии"
 
-#: src/index.html:64
+#: src/index.html:65
 msgid "Follow on twitter"
 msgstr "Твиттер"
 
-#: src/index.html:65
+#: src/index.html:66
 msgid "Join The Mailing List"
 msgstr "Список рассылки"
 
-#: src/index.html:67
+#: src/index.html:68
 msgid "What&rsquo;s New in 0.9.5"
 msgstr "Что нового в 0.9.5"
 
-#: src/index.html:69
+#: src/index.html:70
 msgid ""
 "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
@@ -141,7 +141,7 @@ msgstr ""
 "Убрано правило <code>-webkit-font-smoothing: antialiased;</code> поскольку "
 "оно делает моноширинные шрифты слишком тонкими."
 
-#: src/index.html:70
+#: src/index.html:71
 msgid ""
 "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
@@ -149,7 +149,7 @@ msgstr ""
 "Условные классы для IE были перемещены из <code>&lt;body&gt;</code> в "
 "<code>&lt;html&gt;</code>."
 
-#: src/index.html:71
+#: src/index.html:72
 msgid ""
 "Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
 "caps and looks odd on Linux machines."
@@ -157,11 +157,11 @@ msgstr ""
 "Убрано правило <code>text-rendering: optimizeLegibility</code> поскольку оно "
 "ломает капители (small-caps) и странно выглядит в Linux."
 
-#: src/index.html:72
+#: src/index.html:73
 msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
 msgstr "Добавлен вызов минифицированного <code>dd_belatedpng</code> в IE6."
 
-#: src/index.html:73
+#: src/index.html:74
 msgid ""
 "Revised viewport declaration to allow user scaling and clear Webkit console "
 "errors."
@@ -169,15 +169,15 @@ msgstr ""
 "Исправлено объявление viewport для того, чтобы пользователи могли сами "
 "изменять масштаб и чтобы ошибки в консоли Webkit были более понятными."
 
-#: src/index.html:74
+#: src/index.html:75
 msgid "Updated Modernizr to 1.6."
 msgstr "Modernizr обновлен до версии 1.6"
 
-#: src/index.html:75
+#: src/index.html:76
 msgid "Added <code>web.config</code> file for Microsoft IIS."
 msgstr "Добавлен файл <code>web.config</code> для Microsoft IIS."
 
-#: src/index.html:76
+#: src/index.html:77
 msgid ""
 "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
@@ -185,7 +185,7 @@ msgstr ""
 "Бета-версия <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Build-script/\">скрипта для сборки</a>."
 
-#: src/index.html:77
+#: src/index.html:78
 msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
@@ -193,51 +193,51 @@ msgstr ""
 "Новый <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "createproject.sh\">баш-скрипт</a> для создания проекта."
 
-#: src/index.html:78
-msgid ".... and over 100 other fixes and improvements.</a>"
+#: src/index.html:79
+msgid ".... and over 100 other fixes and improvements."
 msgstr "... и более 100 других исправлений и улучшений."
 
-#: src/index.html:81
+#: src/index.html:82
 msgid "Why it is awesome"
 msgstr "Почему это круто"
 
-#: src/index.html:83
+#: src/index.html:84
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
 msgstr "Кросс-браузерность (ага, даже IE6)."
 
-#: src/index.html:84
+#: src/index.html:85
 msgid "HTML5 ready. Use the new tags with certainty."
 msgstr "Настоящий HTML5. Можно сразу использовать новые теги."
 
-#: src/index.html:85
+#: src/index.html:86
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr "Правила сжатия и кеширования для супер производительности."
 
-#: src/index.html:86
+#: src/index.html:87
 msgid "Best practice site configuration defaults"
 msgstr "Оптимальные параметры для настройки сайта."
 
-#: src/index.html:87
+#: src/index.html:88
 msgid "Mobile browser optimizations"
 msgstr "Поддержка мобильных браузеров."
 
-#: src/index.html:88
+#: src/index.html:89
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
 "Использование фич в зависимости от возможностей браузера &mdash; мы это учли."
 
-#: src/index.html:89
+#: src/index.html:90
 msgid "IE specific classes for maximum cross-browser control"
 msgstr "Специальные классы для Internet Explorer."
 
-#: src/index.html:90
+#: src/index.html:91
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr ""
 "Классы .no-js и .js, чтобы можно было по-разному стилизовать страницу в "
 "зависимости от того, включен ли JavaScript."
 
-#: src/index.html:91
+#: src/index.html:92
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
@@ -245,68 +245,68 @@ msgstr ""
 "Хочется юнит-тестов, но лениво их писать? Мы уже написали подробнейшие юнит-"
 "тесты для проекта."
 
-#: src/index.html:94
+#: src/index.html:95
 msgid "Why it is awesome-er"
 msgstr "Почему это ещё круче"
 
-#: src/index.html:96
+#: src/index.html:97
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
 msgstr "Профайлинг JavaScript в IE6 и IE7? У матросов нет вопросов."
 
-#: src/index.html:97
+#: src/index.html:98
 msgid "Console.log nerfing so you won't break anyone by mistake."
 msgstr ""
 "Заглушка для console.log, чтобы ни у кого ничего случайно не поломалось."
 
-#: src/index.html:98
+#: src/index.html:99
 msgid "Never go wrong with your doctype or markup!"
 msgstr ""
 "Вы никогда больше не будете использовать неправильную разметку или doctype."
 
-#: src/index.html:99
+#: src/index.html:100
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "Оптимальные стили для печати."
 
-#: src/index.html:100
+#: src/index.html:101
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "Код для iOS, Android и Opera Mobile, а также шаблон для CSS."
 
-#: src/index.html:101
+#: src/index.html:102
 msgid "IE6 pngfix baked in."
 msgstr "Встроенный IE6 pngfix."
 
-#: src/index.html:102
+#: src/index.html:103
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
 "Классы .clearfix и .visuallyhiden для правильной и доступной стилизации."
 
-#: src/index.html:103
+#: src/index.html:104
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
 "Конфиг .htaccess для правильного использования HTML5 и более быстрой "
 "загрузки страниц."
 
-#: src/index.html:104
+#: src/index.html:105
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "jQuery скачиваемый с CDN (и локальная копия, на всякий случай)."
 
-#: src/index.html:105
+#: src/index.html:106
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
 "Думаете слишком много всего? HTML5 Boilerplate можно настроить на ваш вкус."
 
-#: src/index.html:108
+#: src/index.html:109
 msgid "Walk through it with me, now"
 msgstr "Ну а теперь всё по порядку"
 
-#: src/index.html:110
+#: src/index.html:111
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Всё тоже самое, только в 40-минутном видео!"
 
-#: src/index.html:112
+#: src/index.html:113
 msgid ""
 "Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
@@ -316,11 +316,11 @@ msgstr ""
 "www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 трюков, "
 "которые нужно использовать</a>."
 
-#: src/index.html:115
+#: src/index.html:116
 msgid "Make it even better!"
 msgstr "Можно сделать ещё лучше!"
 
-#: src/index.html:117
+#: src/index.html:118
 msgid ""
 "Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
 "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
@@ -331,7 +331,7 @@ msgstr ""
 "<a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
 "Polyfills\">некоторыми костылями</a> принесет будущее в каждый браузер."
 
-#: src/index.html:118
+#: src/index.html:119
 msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
@@ -339,7 +339,7 @@ msgstr ""
 "С помощью нашего билд-скрипта и expires настроенных на год поможет сделать "
 "сайт супер быстрым."
 
-#: src/index.html:119
+#: src/index.html:120
 msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
@@ -347,7 +347,7 @@ msgstr ""
 "Для помощи с CSS3 посмотрите в сторону <a href\"http://css3please.com"
 "\">CSS3please.com</a>"
 
-#: src/index.html:120
+#: src/index.html:121
 msgid ""
 " \n"
 "            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
@@ -361,7 +361,7 @@ msgstr ""
 "костыли</a> \n"
 "            "
 
-#: src/index.html:123
+#: src/index.html:124
 msgid ""
 "Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
 "\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
@@ -373,13 +373,13 @@ msgstr ""
 "elements\">Dive Into HTML5: semantic elements</a> \n"
 "            "
 
-#: src/index.html:125
+#: src/index.html:126
 msgid ""
 "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
 "`&lt;head&gt;`</a>"
 msgstr "<a href=\"http://gist.github.com/581868\">Трюки с мета-тегами</a>."
 
-#: src/index.html:126
+#: src/index.html:127
 msgid ""
 "If you're a photo gallery site you might want this for ie6 to not show that "
 "stupid thing on &lt;img&gt; tags: \n"
@@ -395,7 +395,7 @@ msgstr ""
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
 
-#: src/index.html:130
+#: src/index.html:131
 msgid ""
 "Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
 "tips\">CSS Spriting tips</a> or you could use <a href=\"http://www."
@@ -407,7 +407,7 @@ msgstr ""
 "hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
 "a> если вы уже сидите на <a href=\"http://sass-lang.com\">Sass</a>."
 
-#: src/index.html:131
+#: src/index.html:132
 msgid ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
 "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
@@ -416,7 +416,7 @@ msgstr ""
 "closed#issue/115/comment/439219\">Заставьте пользователей включить "
 "JavaScript</a>"
 
-#: src/index.html:132
+#: src/index.html:133
 msgid ""
 "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
 "\">Color considerations for printing</a>"
@@ -424,7 +424,7 @@ msgstr ""
 "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
 "\">Рекоммендации по цветовой гамме для печати</a>"
 
-#: src/index.html:133
+#: src/index.html:134
 msgid ""
 "Use Google's recommendations for SEO: <a href=\"http://"
 "googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
@@ -436,7 +436,7 @@ msgstr ""
 "\">the Google SEO Starter Guide</a> \n"
 "            "
 
-#: src/index.html:135
+#: src/index.html:136
 msgid ""
 "Dig into the new <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-"
 "relations\">link relations</a> \n"
@@ -446,7 +446,7 @@ msgstr ""
 "\">новые значения для аттрибута rel</a> \n"
 "            "
 
-#: src/index.html:137
+#: src/index.html:138
 msgid ""
 "Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
 "and web dont's</a> \n"
@@ -456,7 +456,7 @@ msgstr ""
 "webdosanddonts.com/\">что делать нужно, а что нет</a>\n"
 "            "
 
-#: src/index.html:139
+#: src/index.html:140
 msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
@@ -464,7 +464,7 @@ msgstr ""
 "Чтобы iPhone не обрабатывал вашу иконку, значение rel должно быть <code>"
 "\"apple-touch-icon-precomposed\"</code>"
 
-#: src/index.html:140
+#: src/index.html:141
 msgid ""
 "<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
 "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
@@ -475,7 +475,7 @@ msgstr ""
 "\">Показывайте ссылки на страницы после самого текста при печати через IE6 и "
 "IE7</a>"
 
-#: src/index.html:141
+#: src/index.html:142
 msgid ""
 "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
@@ -485,7 +485,7 @@ msgstr ""
 "stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch"
 "\">вещей, которые нужно заранее подгрузить</a>."
 
-#: src/index.html:142
+#: src/index.html:143
 msgid ""
 "Using border-radius with background color in Webkit? Try <a href=\"http://"
 "tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
@@ -495,7 +495,7 @@ msgstr ""
 "sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-background-"
 "clip</a> предотвратит наложение бэкграунда на границу."
 
-#: src/index.html:143
+#: src/index.html:144
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
@@ -503,7 +503,7 @@ msgstr ""
 "<a href=\"http://css-tricks.com/efficiently-rendering-css/\">Оптимальный "
 "CSS</a> для наилучшей производительности в браузере."
 
-#: src/index.html:144
+#: src/index.html:145
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
@@ -513,7 +513,7 @@ msgstr ""
 "based-unobtrusive-comprehensive-dom-ready-execution/\">в зависимости от "
 "разметки</a>."
 
-#: src/index.html:145
+#: src/index.html:146
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
@@ -521,7 +521,7 @@ msgstr ""
 "Доступные <a href=\"http://paulirish.com/2009/browser-specific-css-hacks/"
 "\">CSS хаки</a>."
 
-#: src/index.html:146
+#: src/index.html:147
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</"
@@ -532,7 +532,7 @@ msgstr ""
 "com/standards/\">стиль кодирования фронт-енд приложений.</a> \n"
 "            "
 
-#: src/index.html:148
+#: src/index.html:149
 msgid ""
 "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
 "<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
@@ -545,7 +545,7 @@ msgstr ""
 "googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html"
 "\">видимости</a> в результатах поисковиков."
 
-#: src/index.html:149
+#: src/index.html:150
 msgid ""
 "You can use the <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
@@ -554,7 +554,7 @@ msgstr ""
 "Вы можете использовать <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body</a>, как обертку вместо div#container."
 
-#: src/index.html:150
+#: src/index.html:151
 msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
@@ -562,35 +562,35 @@ msgstr ""
 "Больше информации о том, <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/Make-it-better/\">как сделать ваш сайт лучше.</a> "
 
-#: src/index.html:156
+#: src/index.html:157
 msgid "Brought to you by"
 msgstr "С любовью от"
 
-#: src/index.html:157
+#: src/index.html:158
 msgid "Google Chrome, jQuery"
 msgstr "Google Chrome, jQuery"
 
-#: src/index.html:158
+#: src/index.html:159
 msgid "Open Web Vigilante"
 msgstr "Смотритель Сети"
 
-#: src/index.html:170
+#: src/index.html:171
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "Но ничего бы не было без помощи всех этих супергероев:"
 
-#: src/index.html:199
+#: src/index.html:200
 msgid ""
 "Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
 "html\">archive</a>"
 msgstr ""
 "Комментарии к Boilerplate v0.9.1 <a href=\"commentarchive.html\">в архиве</a>"
 
-#: src/index.html:201 standard input:304
+#: src/index.html:202 standard input:305
 msgid "Show comments"
 msgstr "Комментарии"
 
-#: src/index.html:313
+#: src/index.html:314
 msgid "http://html5boilerplate.com/v095"
 msgstr "http://html5boilerplate.com/v095"
 
