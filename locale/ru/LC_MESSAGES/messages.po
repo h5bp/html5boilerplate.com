@@ -1106,7 +1106,7 @@ msgstr "бикубическое изменение размеров для IMG 
 
 #: src/template/css/style.css:190
 msgid "Non-semantic helper classes"
-msgstr "Не-семантически классы-помошники"
+msgstr "Не-семантические классы-хелперы"
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
@@ -1118,7 +1118,7 @@ msgstr "Прячем как от скринридеров, так и от бра
 
 #: src/template/css/style.css:200
 msgid "Hide only visually, but have it available for screenreaders"
-msgstr "Прямем визуально, но не от скринридеров"
+msgstr "Прячем визуально, но не от скринридеров"
 
 #: src/template/css/style.css:206
 msgid "Hide visually and from screenreaders, but maintain layout"
@@ -1174,7 +1174,7 @@ msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you"
 msgstr ""
-"Разкомментируйте, если не хотите, чтобы iOS и WinMobile сами оптимизировали "
+"Раcкомментируйте, если не хотите, чтобы iOS и WinMobile сами оптимизировали "
 "текст для своих экранов"
 
 #: src/template/css/style.css:267
