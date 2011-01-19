@@ -219,6 +219,8 @@ h2 + p { font-size: 14px; }
 #body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }  
 #body li:first-child:after { border-bottom: 0; }
 
+#html5logo { display: inline-block; margin-top: 1em; }
+
 a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 #footer { position: relative; text-align: center; padding: 1em 0; }
