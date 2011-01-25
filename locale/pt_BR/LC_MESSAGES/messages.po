@@ -2,6 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the HTML5Boilerplate package.
 # Ricardo Tomasi <ricardo.tomasi@grifotecnologia.com.br>, 2010.
+# Revised by: Sean Caetano Martin <seancaetanomartin@gmail.com>, 2011
 #
 msgid ""
 msgstr ""
@@ -42,7 +43,7 @@ msgstr "Comentários"
 #: src/commentarchive.html:58
 #: src/index.html:311
 msgid "Please enable JavaScript to view the <a href=\"http://disqus.com/?ref_noscript=boilerplate\">comments powered by Disqus.</a>"
-msgstr "Por favor ative o JavaScript para visualizar os comentários do <a href=\"http://disqus.com/?ref_noscript=boilerplate\"> Disqus.</a>"
+msgstr "Por favor active o JavaScript para visualizar os comentários do <a href=\"http://disqus.com/?ref_noscript=boilerplate\"> Disqus.</a>"
 
 #: src/index.html:11
 #: standard input:34
@@ -825,11 +826,11 @@ msgstr "Classes não-semânticas para ajudar"
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
-msgstr "para image replacement"
+msgstr "para substituir imagem"
 
 #: src/template/css/style.css:196
 msgid "Hide for both screenreaders and browsers"
-msgstr "Esconder para tanto browsers como leitores de tela"
+msgstr "Esconder para tanto browsers como leitores de ecra"
 
 #: src/template/css/style.css:200
 msgid "Hide only visually, but have it available for screenreaders"
@@ -837,11 +838,11 @@ msgstr "Esconde somente visualmente, mas mantém disponível para leitores de te
 
 #: src/template/css/style.css:206
 msgid "Hide visually and from screenreaders, but maintain layout"
-msgstr "Esconder visualmente e de leitores de tela, mas mantendo o layout"
+msgstr "Esconder visualmente e de leitores de ecra, mas mantendo o layout"
 
 #: src/template/css/style.css:209
 msgid "The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements"
-msgstr "O Magnífico CLEARFIX: Atualizado para prevenir margin-collapsing em elementes descendentes"
+msgstr "O Magnífico CLEARFIX: ctualizado para prevenir margin-collapsing em elementes descendentes"
 
 #: src/template/css/style.css:215
 msgid "Fix clearfix:"
@@ -905,11 +906,11 @@ msgstr "uso"
 
 #: src/template/js/plugins.js:22
 msgid "store logs to an array for"
-msgstr "armazene os logs num array"
+msgstr "guarde os logs num array"
 
 #: src/template/js/plugins.js:31
 msgid "catch all document.write() calls"
-msgstr "capture todas as chamadas document.write()"
+msgstr "apanhe todas as chamadas document.write()"
 
 #: src/template/js/script.js:1
 msgid "Author:"
