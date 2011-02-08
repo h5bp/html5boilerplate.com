@@ -20,7 +20,7 @@ msgstr ""
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
-msgstr ""
+msgstr "No encontrado"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
