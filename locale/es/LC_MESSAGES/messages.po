@@ -161,31 +161,35 @@ msgstr ""
 
 #: src/index.html:78
 msgid "Updated Modernizr to 1.6."
-msgstr ""
+msgstr "Actualizado Modernizr a la versión 1.6."
 
 #: src/index.html:79
 msgid "Added <code>web.config</code> file for Microsoft IIS."
-msgstr ""
+msgstr "Añadido el fichero <code>web.config</code> para Microsoft IIS."
 
 #: src/index.html:80
 msgid ""
 "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
 msgstr ""
+"Versión beta del <a href=\"http://github.com/paulirish/html5-boilerplate/"
+"wiki/Build-script\">Build Script</a>."
 
 #: src/index.html:81
 msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
+"Nuevo <a href=\"http://github.com/paulirish/html5-"
+"boilerplate/wiki/createproject.sh\">bash script</a> para crear el scaffolding del proyecto."
 
 #: src/index.html:82
 msgid ".... and over 100 other fixes and improvements."
-msgstr ""
+msgstr "... y más de 100 mejoras y parches."
 
 #: src/index.html:84
 msgid "Why it is awesome"
-msgstr ""
+msgstr "¿Por qué es tan impresionante?"
 
 #: src/index.html:86
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
