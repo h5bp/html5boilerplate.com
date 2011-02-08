@@ -63,6 +63,8 @@ msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
+"HTML5 Boilerplate es un excelente punto de partida para construir sitios HTML/CSS/JS "
+"rápidos, robustos y de futuro."
 
 #: src/index.html:45
 msgid ""
