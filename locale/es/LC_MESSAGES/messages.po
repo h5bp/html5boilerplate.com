@@ -193,46 +193,49 @@ msgstr "¿Por qué es tan impresionante?"
 
 #: src/index.html:86
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Compatibilidad entre navegadores (lo conseguimos, IE)"
 
 #: src/index.html:87
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "Preparado para HTML5. Usa las nuevas etiquetas con total seguridad."
 
 #: src/index.html:88
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Recomendaciones sobre caché y compresión para alcanzar el nivel A de rendimiento"
 
 #: src/index.html:89
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Configuración por defecto basada en buenas prácticas"
 
 #: src/index.html:90
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Optimizaciones para navegadores móviles"
 
 #: src/index.html:91
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
+"Mejora progresiva con degradación gradual &hellip; sí, lo conseguimos!"
 
 #: src/index.html:92
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "Clases específicas para IE, para tener máximo control sobre los distintos navegadores."
 
 #: src/index.html:93
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
+msgstr "Prácticas clases .no.js y .js para dar estilos basados en la capacidad del navegador"
 
 #: src/index.html:94
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
+"¿Quiéres escribir unit tests pero no tienes tiempo? Una completa e interconectada test suite "
+"te está esperando."
 
 #: src/index.html:97
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "¿Por qué es todavía más impresionante?"
 
 #: src/index.html:99
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
