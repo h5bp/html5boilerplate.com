@@ -75,6 +75,12 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
+"Tras más de dos años de desarrollo, te ofrecemos una herramienta basada en "
+"las mejores prácticas: normalización entre navegadores, optimizaciones de "
+"rendimiento e incluso características opcionales como cross-domain Ajax y "
+"Flash. Se proporciona un modelo de fichero .htaccess que configura las reglas "
+"de caché y prepara tu sitio para servir video HTML5, usar @font-face y praparar "
+"gzip."
 
 #: src/index.html:46
 msgid ""
