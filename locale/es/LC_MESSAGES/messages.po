@@ -43,14 +43,16 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
+"Por favor activa JavaScript para ver los <a href=\"http://disqus.com/?"
+"ref_noscript=boilerplate\">comentarios ofrecidos por Disqus.</a>"
 
 #: src/index.html:11
 msgid "A rock-solid default template for HTML5 awesome."
-msgstr ""
+msgstr "Una plantilla por defecto sólida como una roca para HTML5"
 
 #: src/index.html:32
 msgid "Now offered in:"
-msgstr ""
+msgstr "Ahora ofrecido en:"
 
 #: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
