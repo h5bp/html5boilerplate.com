@@ -204,7 +204,7 @@ msgstr "¿Por qué es tan impresionante?"
 
 #: src/index.html:86
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Compatibilidad entre navegadores (lo conseguimos, IE)"
+msgstr "Compatibilidad entre navegadores (lo conseguimos, IE6)"
 
 #: src/index.html:87
 msgid "HTML5 ready. Use the new tags with certainty."
