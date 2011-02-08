@@ -5,7 +5,7 @@
 # Ángel Sanz <mizo0mizo@gmail.com>, 2011.
 # Raúl Fraile <raulfraile@gmail.com>, 2011.
 # Miro Keller <veosotano@gmail.com>, 2011
-#
+# Xavi Linares <jackjackbach@gmail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: html5boilerplate-site\n"
