@@ -24,7 +24,7 @@ msgstr "No encontrado"
 
 #: src/commentarchive.html:11 src/index.html:11
 msgid "HTML5 Boilerplate"
-msgstr ""
+msgstr "HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
@@ -32,11 +32,11 @@ msgstr ""
 
 #: src/commentarchive.html:34
 msgid "from before October 26th 2010"
-msgstr ""
+msgstr "desde antes del 26 de octubre de 2010"
 
 #: src/commentarchive.html:38 src/index.html:201
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"
 
 #: src/commentarchive.html:58
 msgid ""
@@ -83,11 +83,11 @@ msgstr ""
 
 #: src/index.html:50
 msgid "Want to dive in?"
-msgstr ""
+msgstr "¿Quiéres saber más?"
 
 #: src/index.html:51
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Descargar Boilerplate {{ version }}"
 
 #: src/index.html:54
 msgid "Keep the hints and links"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: src/index.html:55
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: src/index.html:56
 msgid "No comments, just the bizniss."
@@ -103,19 +103,19 @@ msgstr ""
 
 #: src/index.html:61
 msgid "Read the docs"
-msgstr ""
+msgstr "Leer la documentación"
 
 #: src/index.html:62
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Contribuir en Github"
 
 #: src/index.html:63
 msgid "Comment here"
-msgstr ""
+msgstr "Enviar un comentario"
 
 #: src/index.html:65
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Seguir en twitter"
 
 #: src/index.html:66
 msgid "Join The Mailing List"
