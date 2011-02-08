@@ -119,29 +119,35 @@ msgstr "Seguir en twitter"
 
 #: src/index.html:66
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Unirse a la lista de correo"
 
 #: src/index.html:71
 msgid "What&rsquo;s New in 0.9.5"
-msgstr ""
+msgstr "Novedades de la versión 0.9.5"
 
 #: src/index.html:73
 msgid ""
 "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
 msgstr ""
+"Eliminado <code>-webkit-font-smoothing: antialiased;</code> hace que la fuente"
+"monospace se vea demasiado delgada."
 
 #: src/index.html:74
 msgid ""
 "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
 msgstr ""
+"Las clases condicionales de IE conditional classes se han movido de la etiqueta "
+"<code>&lt;body&gt;</code> a la etiqueta <code>&lt;html&gt;</code>."
 
 #: src/index.html:75
 msgid ""
 "Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
 "caps and looks odd on Linux machines."
 msgstr ""
+"Descartado <code>text-rendering: optimizeLegibility</code> ya que rompe las "
+"versales y se visualiza de manera extraña en máquinas Linux."
 
 #: src/index.html:76
 msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
