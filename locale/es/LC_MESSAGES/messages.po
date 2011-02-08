@@ -88,6 +88,9 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
+"Boilerplate no es un framework, ni tampoco sigue ninguna filosofía de "
+"desarrollo, son solo algunos trucos para que puedas arrancar tu proyecto "
+"de una manera rápida y con buenos cimientos."
 
 #: src/index.html:50
 msgid "Want to dive in?"
