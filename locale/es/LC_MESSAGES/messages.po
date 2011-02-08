@@ -1,16 +1,17 @@
 # Spanish translation for html5boilerplate-site
 # Copyright (C) 2011 html5boilerplate's COPYRIGHT HOLDER
 # This file is distributed under the same license as the html5boilerplate package.
-# Guillermo Pascual <akira.space@gmail.com>, 2011.
 # Ángel Sanz <mizo0mizo@gmail.com>, 2011.
 # Raúl Fraile <raulfraile@gmail.com>, 2011.
 # Miro Keller <veosotano@gmail.com>, 2011
 # Xavi Linares <jackjackbach@gmail.com>, 2011
+# Guillermo Pascual <akira.space@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: html5boilerplate-site\n"
 "POT-Creation-Date: 2011-02-08 17:41+0000\n"
-"PO-Revision-Date: 2011-02-08 17:41+0000\n"
+"PO-Revision-Date: 2011-02-08 21:16+0100\n"
 "Last-Translator: Guillermo Pascual <akira.space@gmail.com>\n"
 "Language-Team: Spanish <html5boilerplateES@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -63,8 +64,8 @@ msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
-"HTML5 Boilerplate es un excelente punto de partida para construir sitios HTML/CSS/JS "
-"rápidos, robustos y de futuro."
+"HTML5 Boilerplate es un excelente punto de partida para construir sitios "
+"HTML/CSS/JS rápidos, robustos y de futuro."
 
 #: src/index.html:45
 msgid ""
@@ -78,9 +79,9 @@ msgstr ""
 "Tras más de dos años de desarrollo, te ofrecemos una herramienta basada en "
 "las mejores prácticas: normalización entre navegadores, optimizaciones de "
 "rendimiento e incluso características opcionales como cross-domain Ajax y "
-"Flash. Se proporciona un modelo de fichero .htaccess que configura las reglas "
-"de caché y prepara tu sitio para servir video HTML5, usar @font-face y praparar "
-"gzip."
+"Flash. Se proporciona un modelo de fichero .htaccess que configura las "
+"reglas de caché y prepara tu sitio para servir video HTML5, usar @font-face "
+"y praparar gzip."
 
 #: src/index.html:46
 msgid ""
@@ -89,8 +90,8 @@ msgid ""
 "quickly and right-footed."
 msgstr ""
 "Boilerplate no es un framework, ni tampoco sigue ninguna filosofía de "
-"desarrollo, son solo algunos trucos para que puedas arrancar tu proyecto "
-"de una manera rápida y con buenos cimientos."
+"desarrollo, son solo algunos trucos para que puedas arrancar tu proyecto de "
+"una manera rápida y con buenos cimientos."
 
 #: src/index.html:50
 msgid "Want to dive in?"
@@ -141,16 +142,16 @@ msgid ""
 "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
 msgstr ""
-"Eliminado <code>-webkit-font-smoothing: antialiased;</code> hace que la fuente"
-"monospace se vea demasiado delgada."
+"Eliminado <code>-webkit-font-smoothing: antialiased;</code> hace que la "
+"fuentemonospace se vea demasiado delgada."
 
 #: src/index.html:74
 msgid ""
 "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
 msgstr ""
-"Las clases condicionales de IE conditional classes se han movido de la etiqueta "
-"<code>&lt;body&gt;</code> a la etiqueta <code>&lt;html&gt;</code>."
+"Las clases condicionales de IE conditional classes se han movido de la "
+"etiqueta <code>&lt;body&gt;</code> a la etiqueta <code>&lt;html&gt;</code>."
 
 #: src/index.html:75
 msgid ""
@@ -191,8 +192,8 @@ msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
-"Nuevo <a href=\"http://github.com/paulirish/html5-"
-"boilerplate/wiki/createproject.sh\">bash script</a> para crear el scaffolding del proyecto."
+"Nuevo <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+"createproject.sh\">bash script</a> para crear el scaffolding del proyecto."
 
 #: src/index.html:82
 msgid ".... and over 100 other fixes and improvements."
@@ -212,7 +213,9 @@ msgstr "Preparado para HTML5. Usa las nuevas etiquetas con total seguridad."
 
 #: src/index.html:88
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr "Recomendaciones sobre caché y compresión para alcanzar el nivel A de rendimiento"
+msgstr ""
+"Recomendaciones sobre caché y compresión para alcanzar el nivel A de "
+"rendimiento"
 
 #: src/index.html:89
 msgid "Best practice site configuration defaults"
@@ -225,24 +228,27 @@ msgstr "Optimizaciones para navegadores móviles"
 #: src/index.html:91
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr ""
-"Mejora progresiva con degradación gradual &hellip; sí, lo conseguimos!"
+msgstr "Mejora progresiva con degradación gradual &hellip; sí, lo conseguimos!"
 
 #: src/index.html:92
 msgid "IE specific classes for maximum cross-browser control"
-msgstr "Clases específicas para IE, para tener máximo control sobre los distintos navegadores."
+msgstr ""
+"Clases específicas para IE, para tener máximo control sobre los distintos "
+"navegadores."
 
 #: src/index.html:93
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Prácticas clases .no.js y .js para dar estilos basados en la capacidad del navegador"
+msgstr ""
+"Prácticas clases .no.js y .js para dar estilos basados en la capacidad del "
+"navegador"
 
 #: src/index.html:94
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
-"¿Quiéres escribir unit tests pero no tienes tiempo? Una completa e interconectada test suite "
-"te está esperando."
+"¿Quiéres escribir unit tests pero no tienes tiempo? Una completa e "
+"interconectada test suite te está esperando."
 
 #: src/index.html:97
 msgid "Why it is awesome-er"
@@ -308,7 +314,7 @@ msgstr ""
 
 #: src/index.html:118
 msgid "Make it even better!"
-msgstr ""
+msgstr "Hacerlo aún mejor!"
 
 #: src/index.html:120
 msgid ""
@@ -504,7 +510,7 @@ msgstr ""
 
 #: src/index.html:204 standard input:307
 msgid "Show comments"
-msgstr ""
+msgstr "Mostrar comentarios"
 
 #: src/index.html:316
 msgid "http://html5boilerplate.com/v095"
