@@ -99,7 +99,7 @@ msgstr "o"
 
 #: src/index.html:56
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Sin comentarios, solo el código"
 
 #: src/index.html:61
 msgid "Read the docs"
@@ -929,7 +929,7 @@ msgstr ""
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
-msgstr ""
+msgstr "para la sustitución de la imagen"
 
 #: src/template/css/style.css:196
 msgid "Hide for both screenreaders and browsers"
@@ -955,11 +955,11 @@ msgstr ""
 
 #: src/template/css/style.css:223
 msgid "Primary Styles"
-msgstr ""
+msgstr "Estilos principales"
 
 #: src/template/css/style.css:224
 msgid "Author: "
-msgstr ""
+msgstr "Autor: "
 
 #: src/template/css/style.css:242
 msgid "Media queries for responsive design"
@@ -983,7 +983,7 @@ msgstr ""
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
-msgstr ""
+msgstr "Tenga en cuenta que:"
 
 #: src/template/css/style.css:261
 msgid ""
@@ -993,7 +993,7 @@ msgstr ""
 
 #: src/template/css/style.css:267
 msgid "print styles"
-msgstr ""
+msgstr "estilos de impresión"
 
 #: src/template/css/style.css:268
 msgid "inlined to avoid required HTTP connection"
@@ -1009,7 +1009,7 @@ msgstr ""
 
 #: src/template/js/plugins.js:19
 msgid "usage"
-msgstr ""
+msgstr "uso"
 
 #: src/template/js/plugins.js:22
 msgid "store logs to an array for reference"
@@ -1021,4 +1021,4 @@ msgstr ""
 
 #: src/template/js/script.js:1
 msgid "Author:"
-msgstr ""
+msgstr "Autor:"
