@@ -102,7 +102,7 @@ msgstr "Descargar Boilerplate {{ version }}"
 
 #: src/index.html:54
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "Manteniendo comentarios y enlaces"
 
 #: src/index.html:55
 msgid "or"
@@ -114,23 +114,23 @@ msgstr "Sin comentarios, solo el código"
 
 #: src/index.html:61
 msgid "Read the docs"
-msgstr "Leer la documentación"
+msgstr "Lée la documentación"
 
 #: src/index.html:62
 msgid "Contribute on Github "
-msgstr "Contribuir en Github"
+msgstr "Contribuye en Github"
 
 #: src/index.html:63
 msgid "Comment here"
-msgstr "Enviar un comentario"
+msgstr "Envíanos un comentario"
 
 #: src/index.html:65
 msgid "Follow on twitter"
-msgstr "Seguir en twitter"
+msgstr "Síguenos en twitter"
 
 #: src/index.html:66
 msgid "Join The Mailing List"
-msgstr "Unirse a la lista de correo"
+msgstr "Únete a la lista de correo"
 
 #: src/index.html:71
 msgid "What&rsquo;s New in 0.9.5"
