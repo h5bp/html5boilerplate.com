@@ -1007,6 +1007,7 @@ msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you"
 msgstr ""
+"Descomentalo si no quieres que iOS y WinMobile optimice el texto"
 
 #: src/template/css/style.css:267
 msgid "print styles"
@@ -1014,15 +1015,15 @@ msgstr "estilos de impresión"
 
 #: src/template/css/style.css:268
 msgid "inlined to avoid required HTTP connection"
-msgstr ""
+msgstr "inline para evitar la conexión HTTP"
 
 #: src/template/css/style.css:275
 msgid "Don't show links for images"
-msgstr ""
+msgstr "No mostrar enlaces para las imágenes"
 
 #: src/template/js/plugins.js:2
 msgid "remap jQuery to $"
-msgstr ""
+msgstr "reasignar jQuery a $"
 
 #: src/template/js/plugins.js:19
 msgid "usage"
@@ -1030,11 +1031,11 @@ msgstr "uso"
 
 #: src/template/js/plugins.js:22
 msgid "store logs to an array for reference"
-msgstr ""
+msgstr "guardar logs en un array por referencia"
 
 #: src/template/js/plugins.js:31
 msgid "catch all document.write() calls"
-msgstr ""
+msgstr "capturar todas las llamadas a document.write()"
 
 #: src/template/js/script.js:1
 msgid "Author:"
