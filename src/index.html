@@ -1,14 +1,14 @@
 <!doctype html>  
-<!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
 
-  <title>{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
+  <title  dir="{{ LANGUAGE_DIRECTION }}">{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
@@ -22,7 +22,7 @@
   <script src="//html5boilerplate.com/js/libs/modernizr-1.6.min.js"></script> 
 </head>
 <body>
-  <div id="container"> 
+  <div id="container"  dir="{{ LANGUAGE_DIRECTION }}"> 
     <b class="border-a"></b>
     <b class="border-b"></b>
     <b class="border-c"></b>
