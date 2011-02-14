@@ -111,6 +111,71 @@ msgstr "הצטרפו לרשימת התפוצה"
 msgid "What&rsquo;s New in 0.9.5"
 msgstr "מה חדש בגרסה 0.9.5"
 
+#: src/index.html:70
+msgid ""
+"Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
+"too thin."
+msgstr ""
+"Убрано правило <code>-webkit-font-smoothing: antialiased;</code> поскольку "
+"оно делает моноширинные шрифты слишком тонкими."
+
+#: src/index.html:71
+msgid ""
+"IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
+"the <code>&lt;html&gt;</code> tag."
+msgstr ""
+"Условные классы для IE были перемещены из <code>&lt;body&gt;</code> в "
+"<code>&lt;html&gt;</code>."
+
+#: src/index.html:72
+msgid ""
+"Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
+"caps and looks odd on Linux machines."
+msgstr ""
+"Убрано правило <code>text-rendering: optimizeLegibility</code> поскольку оно "
+"ломает капители (small-caps) и странно выглядит в Linux."
+
+#: src/index.html:73
+msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
+msgstr "Добавлен вызов минифицированного <code>dd_belatedpng</code> в IE6."
+
+#: src/index.html:74
+msgid ""
+"Revised viewport declaration to allow user scaling and clear Webkit console "
+"errors."
+msgstr ""
+"Исправлено объявление viewport для того, чтобы пользователи могли сами "
+"изменять масштаб и чтобы ошибки в консоли Webkit были более понятными."
+
+#: src/index.html:75
+msgid "Updated Modernizr to 1.6."
+msgstr "Modernizr обновлен до версии 1.6"
+
+#: src/index.html:76
+msgid "Added <code>web.config</code> file for Microsoft IIS."
+msgstr "Добавлен файл <code>web.config</code> для Microsoft IIS."
+
+#: src/index.html:77
+msgid ""
+"Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
+"wiki/Build-script\">Build Script</a>."
+msgstr ""
+"Бета-версия <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+"Build-script/\">скрипта для сборки</a>."
+
+#: src/index.html:78
+msgid ""
+"New project scaffolding <a href=\"http://github.com/paulirish/html5-"
+"boilerplate/wiki/createproject.sh\">bash script</a>."
+msgstr ""
+"Новый <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+"createproject.sh\">баш-скрипт</a> для создания проекта."
+
+#: src/index.html:79
+msgid ".... and over 100 other fixes and improvements."
+msgstr "... и более 100 других исправлений и улучшений."
+
+
 #: src/index.html:73
 msgid "Why it is awesome"
 msgstr "למה זה מגניב"
@@ -445,71 +510,6 @@ msgstr "פונטי רשת"
 #: src/template/htaccess.txt:65
 msgid "assorted types"
 msgstr "מגוון סוגים"
-
-#: src/index.html:70
-msgid ""
-"Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
-"too thin."
-msgstr ""
-"Убрано правило <code>-webkit-font-smoothing: antialiased;</code> поскольку "
-"оно делает моноширинные шрифты слишком тонкими."
-
-#: src/index.html:71
-msgid ""
-"IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
-"the <code>&lt;html&gt;</code> tag."
-msgstr ""
-"Условные классы для IE были перемещены из <code>&lt;body&gt;</code> в "
-"<code>&lt;html&gt;</code>."
-
-#: src/index.html:72
-msgid ""
-"Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
-"caps and looks odd on Linux machines."
-msgstr ""
-"Убрано правило <code>text-rendering: optimizeLegibility</code> поскольку оно "
-"ломает капители (small-caps) и странно выглядит в Linux."
-
-#: src/index.html:73
-msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
-msgstr "Добавлен вызов минифицированного <code>dd_belatedpng</code> в IE6."
-
-#: src/index.html:74
-msgid ""
-"Revised viewport declaration to allow user scaling and clear Webkit console "
-"errors."
-msgstr ""
-"Исправлено объявление viewport для того, чтобы пользователи могли сами "
-"изменять масштаб и чтобы ошибки в консоли Webkit были более понятными."
-
-#: src/index.html:75
-msgid "Updated Modernizr to 1.6."
-msgstr "Modernizr обновлен до версии 1.6"
-
-#: src/index.html:76
-msgid "Added <code>web.config</code> file for Microsoft IIS."
-msgstr "Добавлен файл <code>web.config</code> для Microsoft IIS."
-
-#: src/index.html:77
-msgid ""
-"Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
-"wiki/Build-script\">Build Script</a>."
-msgstr ""
-"Бета-версия <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
-"Build-script/\">скрипта для сборки</a>."
-
-#: src/index.html:78
-msgid ""
-"New project scaffolding <a href=\"http://github.com/paulirish/html5-"
-"boilerplate/wiki/createproject.sh\">bash script</a>."
-msgstr ""
-"Новый <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
-"createproject.sh\">баш-скрипт</a> для создания проекта."
-
-#: src/index.html:79
-msgid ".... and over 100 other fixes and improvements."
-msgstr "... и более 100 других исправлений и улучшений."
-
 
 #: src/template/htaccess.txt:75
 msgid ""
