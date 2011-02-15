@@ -160,14 +160,14 @@ msgid ""
 "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
 msgstr ""
-"שחרור גרסת בטא של <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script">Build Script</a>."
+"שחרור גרסת בטא של <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Build-script\">Build Script</a>."
 
 #: src/index.html:78
 msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
-"פרוייקט חדש מתהווה <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh">bash script</a>."
+"פרוייקט חדש מתהווה <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash script</a>."
 
 
 #: src/index.html:79
@@ -532,7 +532,7 @@ msgstr ""
 "# מסויימים css-מתיר ייבוא של קבצים נוספים מתוך קבצי ג'אווה-סקריפט ו\n"
 "#\n"
 "# אפשר לכתוב script.combined.js לדוגמה בתוך 
-\n"
+"\n"
 "#\n"
 "#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
 "#   <!--#include file=\"jquery.idletimer.js\" -->\n"
