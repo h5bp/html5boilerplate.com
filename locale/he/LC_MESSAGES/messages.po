@@ -167,7 +167,7 @@ msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
-"פרוייקט חדש מתהווה <a href="http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash script</a>."
+"פרוייקט חדש מתהווה <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash script</a>."
 ""
 
 #: src/index.html:79
