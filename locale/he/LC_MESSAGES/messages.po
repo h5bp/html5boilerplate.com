@@ -156,23 +156,19 @@ msgid ""
 "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
 msgstr ""
-שחרור גרסת בטא של <a"
-href=\"http://github.com/paulirish/html5-boilerplate/wiki/Build-script\">Build
-Script</a>"
+"שחרור גרסת בטא של <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script">Build Script</a>."
 
 #: src/index.html:78
 msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
-"פרוייקט חדש נוצר <a
-href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash
-script</a>."
+"פרוייקט חדש מתהווה <a href="http://github.com/paulirish/html5-"
+"boilerplate/wiki/createproject.sh">bash script</a>."
 
 #: src/index.html:79
 msgid ".... and over 100 other fixes and improvements."
-msgstr "....
-ויותר ממאה תיקונים ושיפורים."
+msgstr "... ויותר ממאה תיקונים ושיפורים."
 
 
 #: src/index.html:73
