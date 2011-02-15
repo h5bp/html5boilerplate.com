@@ -112,27 +112,21 @@ msgid "What&rsquo;s New in 0.9.5"
 msgstr "מה חדש בגרסה 0.9.5"
 
 #: src/index.html:70
-msgid ""
-"Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
+msgid "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
-msgstr ""
-"<code>-webkit-font-smoothing: antialiased;</code> הוסר. הוא גורם למונוספייס להיראות "
+msgstr "<code>-webkit-font-smoothing: antialiased;</code> הוסר. הוא גורם למונוספייס להיראות "
 "דק מדי."
 
 #: src/index.html:71
-msgid ""
-"IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
+msgid "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
-msgstr ""
-"המחלקות המותנות של אינטרנט אקספלורר הועברו מה-<code>&lt;body&gt;</code> ל-"
+msgstr "המחלקות המותנות של אינטרנט אקספלורר הועברו מה-<code>&lt;body&gt;</code> ל-"
 "<code>&lt;html&gt;</code>."
 
 #: src/index.html:72
-msgid ""
-"Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
+msgid "Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
 "caps and looks odd on Linux machines."
-msgstr ""
-"<code>text-rendering: optimizeLegibility</code> הוסר מאחר והוא שובר small"
+msgstr "<code>text-rendering: optimizeLegibility</code> הוסר מאחר והוא שובר small"
 "-caps וזה נראה מוזר בלינוקס"
 
 #: src/index.html:73
@@ -140,11 +134,9 @@ msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
 msgstr "ב-IE6 נוסף הסקריפט <code>dd_belatedpng</code> בגרסה ממוזערת."
 
 #: src/index.html:74
-msgid ""
-"Revised viewport declaration to allow user scaling and clear Webkit console "
+msgid "Revised viewport declaration to allow user scaling and clear Webkit console "
 "errors."
-msgstr ""
-"הגדרת viewport משופרת כדי לאפשר שינוי גודל של חלונות ולנקות הודעות שגיאה של "
+msgstr "הגדרת viewport משופרת כדי לאפשר שינוי גודל של חלונות ולנקות הודעות שגיאה של "
 "וובקיט."
 
 #: src/index.html:75
@@ -156,19 +148,14 @@ msgid "Added <code>web.config</code> file for Microsoft IIS."
 msgstr "נוסף קובץ <code>web.config</code> לשרתי IIS של מייקרוסופט."
 
 #: src/index.html:77
-msgid ""
-"Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
+msgid "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
-msgstr ""
-"שחרור גרסת בטא של <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Build-script\">Build Script</a>."
+msgstr "שחרור גרסת בטא של <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Build-script\">Build Script</a>."
 
 #: src/index.html:78
-msgid ""
-"New project scaffolding <a href=\"http://github.com/paulirish/html5-"
+msgid "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
-msgstr ""
-"פרוייקט חדש מתהווה <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash script</a>."
-""
+msgstr "פרוייקט חדש מתהווה <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh\">bash script</a>."
 
 #: src/index.html:79
 msgid ".... and over 100 other fixes and improvements."
