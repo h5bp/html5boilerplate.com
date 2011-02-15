@@ -116,40 +116,44 @@ msgid ""
 "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
 msgstr ""
-"<code dir=\"ltr\">-webkit-font-smoothing: antialiased;</code> הוסר. הוא גורם למונוספייס להיראות דק מדי. "
+"<code>-webkit-font-smoothing: antialiased;</code> הוסר. הוא גורם למונוספייס להיראות "
+"דק מדי."
 
 #: src/index.html:71
 msgid ""
 "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
 msgstr ""
-""
+"המחלקות המותנות של אינטרנט אקספלורר הועברו מה-<code>&lt;body&gt;</code> ל-"
+"<code>&lt;html&gt;</code>."
 
 #: src/index.html:72
 msgid ""
 "Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
 "caps and looks odd on Linux machines."
 msgstr ""
-"<code dir=\"ltr\">text-rendering: optimizeLegibility</code> הוסר מאחר והוא שובר small-caps וזה נראה מוזר בלינוקס. "
+"<code>text-rendering: optimizeLegibility</code> הוסר מאחר והוא שובר small"
+"-caps וזה נראה מוזר בלינוקס"
 
 #: src/index.html:73
 msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
-msgstr "ב-IE6 נוספה קריאה ל-<code dir=\"ltr\">dd_belatedpng</code> בגרסה ממוזערת."
+msgstr "ב-IE6 נוסף הסקריפט <code>dd_belatedpng</code> בגרסה ממוזערת."
 
 #: src/index.html:74
 msgid ""
 "Revised viewport declaration to allow user scaling and clear Webkit console "
 "errors."
 msgstr ""
-"הגדרת viewport משופרת כדי לאפשר שינוי גודל של חלונות ולנקות הודעות שגיאה של וובקיט. "
+"הגדרת viewport משופרת כדי לאפשר שינוי גודל של חלונות ולנקות הודעות שגיאה של "
+"וובקיט."
 
 #: src/index.html:75
 msgid "Updated Modernizr to 1.6."
-msgstr "מודרניזר עודכן לגרסה 1.6."
+msgstr "מודרנייזר עודכן לגרסה 1.6."
 
 #: src/index.html:76
 msgid "Added <code>web.config</code> file for Microsoft IIS."
-msgstr "נוסף קובץ <code dir=\"ltr\">web.config</code> לשרתי IIS של מייקרוסופט."
+msgstr "נוסף קובץ <code>web.config</code> לשרתי IIS של מייקרוסופט."
 
 #: src/index.html:77
 msgid ""
