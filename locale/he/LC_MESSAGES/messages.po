@@ -60,7 +60,7 @@ msgid "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template 
 msgstr "HTML5 בויילרפלייט הוא תבנית הבסיס המקצועית של HTML/CSS/JS, שתתן לכם אתר מהיר, חזק ובעל תאימות עתידית."
 
 #: src/index.html:36
-msgid "After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on."
+msgid "After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache <bdo>.htaccess</bdo> config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use <bdo>@font-face</bdo>, and get your gzip zipple on."
 msgstr "אחרי יותר משנתיים של פיתוח ושיפורים, אתם מקבלים את המיטב של שיטות העבודה המומלצות: נורמליזציה בכל הדפדפנים, אופטימזציית ביצועים, ואפילו תכונות אופציונליות כמו אג'קס ופלאש בין דומיינים שונים. קובץ <bdo>.htaccess</bdo> התחלתי מסדר את כללי זכרון המטמון ומכין את האתר שלכם לשימוש בתגיות הוידאו של HTML5, שימוש ב-<bdo>@font-face</bdo>, וב-gzip."
 
 #: src/index.html:37
@@ -531,8 +531,7 @@ msgstr ""
 "\n"
 "# מסויימים css-מתיר ייבוא של קבצים נוספים מתוך קבצי ג'אווה-סקריפט ו\n"
 "#\n"
-"# אפשר לכתוב script.combined.js לדוגמה בתוך 
-"\n"
+"# אפשר לכתוב script.combined.js לדוגמה בתוך "
 "#\n"
 "#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
 "#   <!--#include file=\"jquery.idletimer.js\" -->\n"
