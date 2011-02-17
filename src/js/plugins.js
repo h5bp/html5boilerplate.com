@@ -771,6 +771,7 @@ if (!window.SyntaxHighlighter) {
                 this.div = b = this.create("DIV");
                 this.lines = this.create("DIV");
                 this.lines.className = "lines";
+                this.lines.setAttribute('dir', 'ltr');
                 className = "syntaxhighlighter";
                 b.id = this.id;
                 if (this.getParam("collapse")) {

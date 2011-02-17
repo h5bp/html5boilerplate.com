@@ -1,14 +1,14 @@
 <!doctype html>  
-<!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" dir="{{ LANGUAGE_DIRECTION }}" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
 
-  <title>{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
+  <title  dir="{{ LANGUAGE_DIRECTION }}">{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
@@ -22,7 +22,7 @@
   <script src="//html5boilerplate.com/js/libs/modernizr-1.6.min.js"></script> 
 </head>
 <body>
-  <div id="container"> 
+  <div id="container"  dir="{{ LANGUAGE_DIRECTION }}"> 
     <b class="border-a"></b>
     <b class="border-b"></b>
     <b class="border-c"></b>
@@ -38,11 +38,12 @@
            <a href="http://nl.html5boilerplate.com" lang="nl">Nederlands</a>
            <a href="http://sr.html5boilerplate.com" lang="sr">Srpski</a>
            <a href="http://ru.html5boilerplate.com" lang="ru">По-русски</a>
+           <a href="http://he.html5boilerplate.com" lang="he">עברית</a> 
          </p>        
          <h1>HTML5  <i>&#x2605;</i> Boilerplate</h1> 
          <h2>{% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</h2>  
          <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
-         <p>{% blocktrans %}After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
+         <p>{% blocktrans %}After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache <bdo>.htaccess</bdo> config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use <bdo>@font-face</bdo>, and get your gzip zipple on.{% endblocktrans %}</p>
          <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
     </div>
 
