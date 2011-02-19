@@ -1,0 +1,3 @@
+[submodule "docs/wiki-upstream"]
+	path = docs/wiki-upstream
+	url = git://github.com/paulirish/html5-boilerplate.wiki.git
