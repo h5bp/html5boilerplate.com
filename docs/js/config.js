@@ -6,7 +6,7 @@
 */
 define({
   // path to the wiki folder, by defaults it is wiki-upstream and points to a git submodule
-  baseUrl: '../wiki-upstream/',
+  baseUrl: './wiki-upstream/',
 
   //default file
   baseFile: 'Home.md',

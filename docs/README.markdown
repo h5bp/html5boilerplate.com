@@ -1,4 +1,4 @@
-## Experimental branch for HTML5Boilerplate.com documentation
+# Experimental branch for the html5-boilerplate documentation
 
 ## Goals
 
@@ -37,23 +37,25 @@ You can see a first rough version here: [http://mklabs.github.com/html5boilerpla
 	
 * add link back to the homepage.
 	* *Done. Not sure of the proper location and the proper style you'll want to apply on it. Basically, I made it appear upper-cased in the top right corner of the screen.*
+	
+We might need to rename files beginning by a dot like .htaccess.md, to avoid potential 403 errors
 
 ## Try it yourself
 
 ### To init a new fresh repo and setup the wiki content from github
 
-    git clone git://github.com/MkLabs/html5boilerplate-site.git
+    git clone git://github.com/nimbupani/html5boilerplate-site.git
     cd html5boilerplate-site
-    git checkout -b wiki origin/gh-pages
+    git checkout -b docs origin/docs
     git submodule update --init
 
-This branch includes a submodule that points to the official wiki repository with read-only access.
+This branch includes a submodule that points to the official wiki repository with read-only access which is located at docs/wiki-upstream/.
     
 Assuming you have a local server pointing to the root of html5boilerplate-site clone, head over to [http://localhost/docs/](http://localhost/docs/), you should see the boilerplate documentation displayed in a boilerplate fashion ;)
   
 ### To update the wiki with remote changes
 
-    cd wiki-upstream
+    cd docs/wiki-upstream
     git remote -v
     
 At this point, it should point to the official wiki repository with read-only access:
@@ -61,9 +63,7 @@ At this point, it should point to the official wiki repository with read-only ac
     origin	git://github.com/paulirish/html5-boilerplate.wiki.git (fetch)
     origin	git://github.com/paulirish/html5-boilerplate.wiki.git (push)
     
-The submodule repositories added by “git submodule update” are “headless”. This means that they aren’t on a current branch. To fix this, we simply need to switch to a branch. In this example, that would be the master branch. We switch with the following command: “git checkout master“.
-
-    git checkout master
+The submodule repositories added by “git submodule update” are “headless”. This means that they aren’t on a current branch. To fix this, you simply need to switch to a branch. In this example, that would be the master branch (git checkout master).
     
 To bring any new changes back in
 
@@ -71,4 +71,4 @@ To bring any new changes back in
     
 And done !
 
-At this point, if any new files were created and you would like to see there in the page menu pane, it requires the modification of files variable in config.js file. Otherwise, internal links to another page should work (new pages just don't show up in the menu section). This is a drawback of using local datasource (really just xhr to get markdown files), with remote github api calls, we could get the list of all blobs.
+At this point, if any new files were created and you would like to see there in the page menu pane, it requires the modification of files variable in config.js file. This is a drawback of using local datasource (really just xhr to get markdown files), with remote github api calls, we could get the list of all blobs.
