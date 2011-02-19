@@ -172,7 +172,7 @@
             updateTitle: function() {
               var file = this.file.replace(/.md/, '').replace(/-/g, ' '),
               star = '<span>&#x2605;</span>',
-              link = '<a href="{url}" target="_blank">Edit this page</a>'
+              link = '<a href="{url}">Edit this page</a>'
                 .replace(/{url}/, config.wikiUrl + this.file.replace(/\.md/, '/_edit'));
                 
               this.header.find('h2')
