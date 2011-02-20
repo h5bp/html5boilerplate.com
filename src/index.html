@@ -112,22 +112,22 @@
       <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
 
       <h4>index.html</h4>
-      <pre><code class="brush:html">{% include "template/index.html" %}</code></pre>
+      <pre class="brush:html"><code>{% include "template/index.html" %}</code></pre>
 
       <h4>style.css</h4>
-      <pre><code class="brush:css">{% include "template/css/style.css" %}</code></pre>
+      <pre class="brush:css"><code>{% include "template/css/style.css" %}</code></pre>
 
       <h4>script.js</h4>
-      <pre><code class="brush:js">{% include "template/js/script.js" %}</code></pre>
+      <pre class="brush:js"><code>{% include "template/js/script.js" %}</code></pre>
 
       <h4>plugins.js</h4>
-      <pre><code class="brush:js">{% include "template/js/plugins.js" %}</code></pre>
+      <pre class="brush:js"><code>{% include "template/js/plugins.js" %}</code></pre>
 
       <h4>crossdomain.xml</h4>
-      <pre><code class="brush:xml">{% include "template/crossdomain.xml" %}</code></pre>
+      <pre class="brush:xml"><code>{% include "template/crossdomain.xml" %}</code></pre>
 
       <h4>robots.txt</h4>
-      <pre><code class="brush:xml">{% include "template/robots.txt" %}</code></pre>
+      <pre class="brush:xml"><code>{% include "template/robots.txt" %}</code></pre>
 
       <h4>.htaccess</h4>
       <pre><code class="brush:apache">{% include "template/htaccess.txt" %}</code></pre>
@@ -237,8 +237,7 @@
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.defaults['tab-size'] = 4;
 
-    var codes = $('code[class]')
-    codes.each(function(i, el) {
+    $('pre[class]').each(function(i, el) {
       SyntaxHighlighter.highlight(undefined, el)
     })
 
