@@ -1394,3 +1394,39 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
 	// CommonS
 	typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
 })();
+
+$(function(){
+	var parameters = {}, params = '';
+	var choices = {
+	  'ie': [ 'no-cond', 'oldie', 'condie' ],
+	  'mobile': ['nohand', 'hand'],
+	  'js': ['no-js', 'no-jq', 'jq'],
+	  'shiv': [ 'shiv', 'no-compat', 'modernizr'],
+	  'config': [ 'htaccess', 'webconfig', 'nginx', 'noserver'],
+	  'analytics' : ['analytics', 'noanalytics']
+	}	
+		
+	$("#builder > div > a").click(function(){
+		$(this).parent().find("a").removeClass("selected");
+		var choice = $(this).attr('id');		
+    if(choice) {
+		    $(this).addClass("selected");         
+		    var df = /^default\-([a-z]+)/g.exec(choice);
+		    if(df) {
+		      parameters[df[1]] = '';
+		    } else {
+          $.each(choices, function(key, value) {
+                if(value.indexOf(choice) > -1) {
+                    parameters[key] = choice;
+                }        
+          });		        		      
+		    }		    
+      }		  
+		  return false;
+	});
+	
+	$('#builder-download').click(function() {
+    $.each(parameters, function(key, value) { if(value) { params += value + '&'; } });
+		$(this).attr("href", this.href + params.substr(0, params.length-1)); 
+	});	
+});

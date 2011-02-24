@@ -55,8 +55,46 @@
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.5">{% blocktrans %}Boilerplate documented</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
         <i>{% blocktrans %}or{% endblocktrans %}</i>
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.5stripped">{% blocktrans %}Boilerplate "stripped"</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
+        <i>{% blocktrans %}or{% endblocktrans %}</i>        
+        <span><a id="builder-custom" href="#builder">{% blocktrans %}Boilerplate custom</a> <small>{% blocktrans %}100% hipster.{% endblocktrans %}</small></span>        
       </p>
-
+  		<div id="builder" class="clearfix">
+  			<div id="cond">
+  			  <h4>Conditional IE classes</h4>  			  
+  				<a id="no-cond" href="#">Nope</a>
+  				<a id="oldie" href="#">Old IE class</a>
+  				<a id="default-ie"class="selected" href="#">All IE classes</a>
+  			</div>
+  			<div id="mobile" class="clearfix">
+  			  <h4>Mobile</h4>
+  				<a id="default-mobile" class="selected" href="#">Nope</a>
+  				<a id="hand" href="#">Handheld stylesheet</a>
+  			</div>			
+  			<div id="javascript" class="clearfix">
+  			  <h4>Javascript</h4>
+    			<a id="no-js" href="#">Nope</a>
+    			<a id="no-jq" href="#">No jQuery</a>
+    			<a id="default-js" class="selected" href="#">jQuery minified</a>
+  			</div>			
+  			<div id="shivs" class="clearfix">
+  			  <h4>Polyfill</h4>
+    			<a id="no-compat" href="#">Nope</a>
+    			<a id="default-js" class="selected" href="#">Modernizr</a>
+    			<a id="shiv" href="#">html5shiv</a>
+  			</div>				
+  			<div id="configs" class="clearfix">
+  			  <h4>Server Config</h4>
+    			<a id="default-config" class="selected" href="#">Nope</a>
+    			<a id="htaccess" href="#">.htaccess</a>	
+    			<a id="webconfig" href="#">web.config</a>
+    			<a id="nginx" href="#">nginx.conf</a>  
+  			</div>	
+  			<div id="analytics" class="clearfix">
+  			  <h4>Google Analytics</h4>
+    			<a id="analytics" class="analytics" href="#">Analytics Snippet</a>
+    			<a id="default-analytics" class="analytics" href="#">Nope</a>
+  			</div><hr><a href="http://initializr.com/generate?boilerplate&amp;" id="builder-download">Download!</a>
+      </div>      
 
       <p class="social"><i>
         <a href="http://github.com/paulirish/html5-boilerplate/wiki">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
@@ -67,23 +105,7 @@
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
       
-      <img id=html5logo src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
-    <!-- removing because.. not exactly new anymore 
-       <h3>{% blocktrans %}What&rsquo;s New in 0.9.5{% endblocktrans %}</h3>
-       <ul>
-        <li>{% blocktrans %}Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace too thin.{% endblocktrans %}</li>
-         <li>{% blocktrans %}IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to the <code>&lt;html&gt;</code> tag.{% endblocktrans %}</li>
-         <li>{% blocktrans %}Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-caps and looks odd on Linux machines.{% endblocktrans %}</li> 
-         <li>{% blocktrans %}Added a IE6 call for the minified <code>dd_belatedpng</code>.{% endblocktrans %}</li>
-         <li>{% blocktrans %}Revised viewport declaration to allow user scaling and clear Webkit console errors.{% endblocktrans %}</li>
-         <li>{% blocktrans %}Updated Modernizr to 1.6.{% endblocktrans %}</li>
-         <li>{% blocktrans %}Added <code>web.config</code> file for Microsoft IIS.{% endblocktrans %}</li>
-         <li>{% blocktrans %}Beta release of the <a href="http://github.com/paulirish/html5-boilerplate/wiki/Build-script">Build Script</a>.{% endblocktrans %}</li>
-         <li>{% blocktrans %}New project scaffolding <a href="http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh">bash script</a>.{% endblocktrans %}</li>
-         <li><a href="http://github.com/paulirish/html5-boilerplate/blob/v0.9.5/README.markdown">{% blocktrans %}.... and over 100 other fixes and improvements.{% endblocktrans %}</a></li>
-       </ul>
-       
-     -->
+      <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
      
       <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
       <ul>
@@ -235,7 +257,7 @@
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
-  <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
 
   <script>
     SyntaxHighlighter.config.tagName = 'code';
