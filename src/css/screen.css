@@ -243,7 +243,8 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #builder a.selected { 	background-color: #222; }
 #builder div > a { display: inline-block; padding: 0.32em 0.9375em; font-size: 0.8em; }
 #builder h4 { margin-bottom: 0.75em; }
-#builder > hr { margin-top: 2em; border: 0; clear: both; }
+#builder > p { margin-top: 2em; border: 0; clear: both; }
+#builder > p > a { color: inherit; }
 
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
