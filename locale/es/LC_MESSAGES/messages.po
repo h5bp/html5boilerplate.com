@@ -1,23 +1,23 @@
 # Spanish translation for html5boilerplate-site
 # Copyright (C) 2011 html5boilerplate's COPYRIGHT HOLDER
 # This file is distributed under the same license as the html5boilerplate package.
-# Ángel Sanz <mizo0mizo@gmail.com>, 2011.
 # Raúl Fraile <raulfraile@gmail.com>, 2011.
 # Miro Keller <veosotano@gmail.com>, 2011
 # Xavi Linares <jackjackbach@gmail.com>, 2011
 # Guillermo Pascual <akira.space@gmail.com>, 2011.
+# Ángel Sanz <mizo0mizo@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: html5boilerplate-site\n"
 "POT-Creation-Date: 2011-02-08 17:41+0000\n"
-"PO-Revision-Date: 2011-02-08 21:16+0100\n"
-"Last-Translator: Guillermo Pascual <akira.space@gmail.com>\n"
-"Language-Team: Spanish <html5boilerplateES@gmail.com>\n"
+"PO-Revision-Date: 2011-02-25 22:02+0100\n"
+"Last-Translator: Ángel Sanz <mizo0mizo@gmail.com>\n"
+"Language-Team: Español <html5boilerplate-siteES@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: 2\n"
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
@@ -44,7 +44,7 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
-"Por favor activa JavaScript para ver los <a href=\"http://disqus.com/?"
+"Por favor, activa JavaScript para ver los <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comentarios ofrecidos por Disqus.</a>"
 
 #: src/index.html:11
@@ -103,7 +103,7 @@ msgstr "Descargar Boilerplate {{ version }}"
 
 #: src/index.html:54
 msgid "Keep the hints and links"
-msgstr "Manteniendo comentarios y enlaces"
+msgstr "Con comentarios y enlaces"
 
 #: src/index.html:55
 msgid "or"
@@ -115,7 +115,7 @@ msgstr "Sin comentarios, solo el código"
 
 #: src/index.html:61
 msgid "Read the docs"
-msgstr "Lée la documentación"
+msgstr "Lee la documentación"
 
 #: src/index.html:62
 msgid "Contribute on Github "
@@ -201,7 +201,7 @@ msgstr "... y más de 100 mejoras y parches."
 
 #: src/index.html:84
 msgid "Why it is awesome"
-msgstr "¿Por qué es tan impresionante?"
+msgstr "¿Por qué es tan increíble?"
 
 #: src/index.html:86
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
@@ -252,7 +252,7 @@ msgstr ""
 
 #: src/index.html:97
 msgid "Why it is awesome-er"
-msgstr "¿Por qué es todavía más impresionante?"
+msgstr "¿Por qué es aún más impresionante?"
 
 #: src/index.html:99
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
@@ -1006,8 +1006,7 @@ msgstr "Tenga en cuenta que:"
 msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you"
-msgstr ""
-"Descomentalo si no quieres que iOS y WinMobile optimice el texto"
+msgstr "Descomentalo si no quieres que iOS y WinMobile optimice el texto"
 
 #: src/template/css/style.css:267
 msgid "print styles"
