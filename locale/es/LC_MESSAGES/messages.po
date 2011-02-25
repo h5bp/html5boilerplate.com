@@ -11,13 +11,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: html5boilerplate-site\n"
 "POT-Creation-Date: 2011-02-08 17:41+0000\n"
-"PO-Revision-Date: 2011-02-25 22:02+0100\n"
+"PO-Revision-Date: 2011-02-25 23:41+0100\n"
 "Last-Translator: Ángel Sanz <mizo0mizo@gmail.com>\n"
-"Language-Team: Español <html5boilerplate-siteES@gmail.com>\n"
+"Language-Team: Spanish <html5boilerplateES@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: 2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
@@ -299,11 +299,11 @@ msgstr ""
 
 #: src/index.html:111
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Venga, veamos el código"
 
 #: src/index.html:113
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr ""
+msgstr "En 40 minutos se puede alcanzar un buen nivel fácilmente."
 
 #: src/index.html:115
 msgid ""
@@ -311,10 +311,12 @@ msgid ""
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
+"O mírate este artículo sobre<a href=\"http://www.1stwebdesigner.com/"
+"development/snippets-html5-boilerplate/\">20 snippets que debes utilizar."
 
 #: src/index.html:118
 msgid "Make it even better!"
-msgstr "Hacerlo aún mejor!"
+msgstr "¡Aún hay más!"
 
 #: src/index.html:120
 msgid ""
@@ -484,6 +486,8 @@ msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
+"Aún<a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Make-it-"
+"better/\">más funcionalidades.</a> "
 
 #: src/index.html:159
 msgid "Brought to you by"
@@ -539,7 +543,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
-msgstr ""
+msgstr "Archivo de configuración de Apache"
 
 #: src/template/htaccess.txt:4
 msgid "Techniques in here adapted from all over, including:"
@@ -570,6 +574,8 @@ msgid ""
 "Cache control is set only if mod_headers is enabled, so that's unncessary to "
 "declare"
 msgstr ""
+"El control de caché se activa sólo si mod_headers está activado, así que "
+"ésto no hay que declararlo"
 
 #: src/template/htaccess.txt:29
 msgid "Disabled. Uncomment to serve cross-domain ajax requests"
@@ -1000,7 +1006,7 @@ msgstr ""
 
 #: src/template/css/style.css:257
 msgid "Consider this:"
-msgstr "Tenga en cuenta que:"
+msgstr "Tener en cuenta:"
 
 #: src/template/css/style.css:261
 msgid ""
