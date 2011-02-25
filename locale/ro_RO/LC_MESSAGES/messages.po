@@ -72,7 +72,6 @@ msgid ""
 "starter apache .htaccess config file hooks you the eff up with caching rules "
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
-msgstr ""
 msgstr "După mai mult de doi ani de dezvoltare iterativă, îţi oferim cele "
 "mai bune practici încorporate: normalizare peste browsere, optimizări ale "
 "performanţei, chiar şi funcţionalităţi opţionale cum ar fi AJAX şi Flash peste domenii; "
@@ -85,7 +84,6 @@ msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
-msgstr ""
 msgstr "Boilerplate nu este un framework şi nici nu prescrie vreo filosofie de dezvoltare, "
 "conţine doar o serie de trucuri pentru a te ajuta să-ţi începi proiectul de la 0, "
 "într-un mod corect şi rapid."
@@ -226,7 +224,7 @@ msgstr "Optimizări pentru browserele telefoanelor mobile"
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
-"Îmbunãtăţire progresivă, degradare graţioasă &hellip; da da avem aşa ceva""
+"Îmbunãtăţire progresivă, degradare graţioasă &hellip; da da avem aşa ceva"
 
 #: src/index.html:90
 msgid "IE specific classes for maximum cross-browser control"
@@ -252,7 +250,6 @@ msgstr "JavaScript Profiling&hellip; în IE6 şi IE7? Sigur, nicio problemă."
 
 #: src/index.html:98
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
 msgstr "Folosirea lui 'console.log', astfel încât să nu producă din greşeală probleme."
 
 #: src/index.html:99
@@ -279,7 +276,6 @@ msgstr "clasele '.clearfix','.visuallyhidden' pentru a costumiza lucrurile într
 #: src/index.html:104
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ""
 msgstr "fisierul '.htaccess' pentru a permite utilizarea corectă a funcţionalităţiilor HTML5 şi încărcare mai repedă a paginii"
 
 #: src/index.html:105
@@ -346,7 +342,7 @@ msgstr ""
 "            <a href=\"http://css3pie.com/\">css3pie.com</a> şi toate celelalte "
 "<a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
 "browser-Polyfills\">polyfill-uri HTML5</a> \n"
-" 
+"            "
 
 #: src/index.html:124
 msgid ""
@@ -375,8 +371,8 @@ msgid ""
 "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
-msgstr "Dacă te ocupi de o galerie foto online probabil vei dori să elimini enervanta bară
-de instrumente care apare deasupra imaginilor în IE6, lucru realizat cu ajutorul meta tag-ului următor: \n"
+msgstr "Dacă te ocupi de o galerie foto online probabil vei dori să elimini enervanta bară"
+"de instrumente care apare deasupra imaginilor în IE6, lucru realizat cu ajutorul meta tag-ului următor: \n"
 "\n"
 "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
@@ -565,7 +561,7 @@ msgid ""
 "Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
 "html\">archive</a>"
 msgstr "Comentariile pentru Boilerplate v0.9.1 pot fi găsite în <a href=\"commentarchive."
-"html\">arhivã</a>""
+"html\">arhivã</a>"
 
 #: src/index.html:202 standard input:305
 msgid "Show comments"
@@ -874,7 +870,7 @@ msgstr "Plasează 'favicon.ico' şi 'apple-touch-icon.png' în rădăcina domeni
 
 #: src/template/index.html:28
 msgid "CSS : implied media=\"all\""
-msgstr "CSS: implică media=\"all\"""
+msgstr "CSS: implică media=\"all\""
 
 #: src/template/index.html:31
 msgid ""
