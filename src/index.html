@@ -58,44 +58,47 @@
         <i>{% blocktrans %}or{% endblocktrans %}</i>        
         <span><a id="builder-custom" href="#builder">{% blocktrans %}Boilerplate custom</a> <small>{% blocktrans %}100% hipster.{% endblocktrans %}</small></span>        
       </p>
-  		<div id="builder" class="clearfix">
-  			<div id="cond">
-  			  <h4>Conditional IE classes</h4>  			  
-  				<a id="no-cond" href="#">Nope</a>
-  				<a id="oldie" href="#">Old IE class</a>
-  				<a id="default-ie"class="selected" href="#">All IE classes</a>
-  			</div>
-  			<div id="mobile" class="clearfix">
-  			  <h4>Mobile</h4>
-  				<a id="default-mobile" class="selected" href="#">Nope</a>
-  				<a id="hand" href="#">Handheld stylesheet</a>
-  			</div>			
-  			<div id="javascript" class="clearfix">
-  			  <h4>Javascript</h4>
-    			<a id="no-js" href="#">Nope</a>
-    			<a id="no-jq" href="#">No jQuery</a>
-    			<a id="default-js" class="selected" href="#">jQuery minified</a>
-  			</div>			
-  			<div id="shivs" class="clearfix">
-  			  <h4>Polyfill</h4>
-    			<a id="no-compat" href="#">Nope</a>
-    			<a id="default-js" class="selected" href="#">Modernizr</a>
-    			<a id="shiv" href="#">html5shiv</a>
-  			</div>				
-  			<div id="configs" class="clearfix">
-  			  <h4>Server Config</h4>
-    			<a id="default-config" class="selected" href="#">Nope</a>
-    			<a id="htaccess" href="#">.htaccess</a>	
-    			<a id="webconfig" href="#">web.config</a>
-    			<a id="nginx" href="#">nginx.conf</a>  
-  			</div>	
-  			<div id="analytics" class="clearfix">
-  			  <h4>Google Analytics</h4>
-    			<a id="analytics" class="analytics" href="#">Analytics Snippet</a>
-    			<a id="default-analytics" class="analytics" href="#">Nope</a>
-  			</div>
-			    <p><a href="http://initializr.com/generate?boilerplate&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!</p>
-      </div>      
+      <div class="focus">
+    		<div id="builder" class="clearfix">
+    		  <p>Click on your favourite option for each feature! Default options are highlighted.</p>
+    			<div id="cond">
+    			  <h4>Conditional classes</h4>  			  
+    				<a id="no-cond" href="#">Nope</a>
+    				<a id="oldie" href="#">Old IE class</a>
+    				<a id="default-ie"class="selected" href="#">All IE classes</a>
+    			</div>
+    			<div id="mobile" class="clearfix">
+    			  <h4>Mobile</h4>
+    				<a id="default-mobile" class="selected" href="#">Nope</a>
+    				<a id="hand" href="#">Handheld stylesheet</a>
+    			</div>			
+    			<div id="javascript" class="clearfix">
+    			  <h4>Javascript</h4>
+      			<a id="no-js" href="#">Nope</a>
+      			<a id="no-jq" href="#">No jQuery</a>
+      			<a id="default-js" class="selected" href="#">jQuery minified</a>
+    			</div>			
+    			<div id="shivs" class="clearfix">
+    			  <h4>Polyfill</h4>
+      			<a id="no-compat" href="#">Nope</a>
+      			<a id="default-js" class="selected" href="#">Modernizr</a>
+      			<a id="shiv" href="#">html5shiv</a>
+    			</div>				
+    			<div id="config" class="clearfix">
+    			  <h4>Server Config</h4>
+      			<a id="default-config" class="selected" href="#">Nope</a>
+      			<a id="htaccess" href="#">.htaccess</a>	
+      			<a id="webconfig" href="#">web.config</a>
+      			<a id="nginx" href="#">nginx.conf</a>  
+    			</div>	
+    			<div id="analytics" class="clearfix">
+    			  <h4>Google Analytics</h4>
+      			<a id="analytics" href="#">Analytics Snippet</a>
+      			<a id="default-analytics" class="selected" href="#">Nope</a>
+    			</div>
+  			    <p><a href="http://initializr.com/generate?boilerplate&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!</p>
+        </div>        
+      </div>    
 
       <p class="social"><i>
         <a href="http://github.com/paulirish/html5-boilerplate/wiki">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
