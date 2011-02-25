@@ -849,7 +849,7 @@ msgid "make buttons play nice in IE:"
 msgstr ""
 
 #: src/template/css/style.css:183
-msgid "bicubic resizing for non-native sized IMG:"
+msgid "bicubic resampling for non-native sized IMG:"
 msgstr ""
 
 #: src/template/css/style.css:190
