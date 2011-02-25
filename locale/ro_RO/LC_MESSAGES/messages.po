@@ -61,7 +61,7 @@ msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
-"HTML5 Boilerplate este un şablon de bază, profesional pentru HTML/CSS/JS, ""
+"HTML5 Boilerplate este un şablon de bază, profesional pentru HTML/CSS/JS, "
 "un şablon pentru un site rapid, robust şi rezistent în timp."
 
 #: src/index.html:45
