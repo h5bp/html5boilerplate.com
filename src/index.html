@@ -239,6 +239,11 @@
   <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js"></script>
 
   <script>
+  
+    if (!/^en/.test(navigator.language)){
+      document.body.className += ' notenglish';
+    }
+  
     SyntaxHighlighter.config.tagName = 'code';
     SyntaxHighlighter.defaults['wrap-lines'] = true; // maybe change this
     SyntaxHighlighter.defaults['auto-links'] = false;
