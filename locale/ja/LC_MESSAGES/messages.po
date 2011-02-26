@@ -46,7 +46,7 @@ msgstr "<a href=\"http://disqus.com/?"
 
 #: src/index.html:11 standard input:34
 msgid "A rock-solid default template for HTML5 awesome."
-msgstr ""
+msgstr "A rock-solid default template for HTML5 awesome."
 
 #: src/index.html:32
 msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
