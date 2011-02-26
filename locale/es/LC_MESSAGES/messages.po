@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: html5boilerplate-site\n"
 "POT-Creation-Date: 2011-02-08 17:41+0000\n"
-"PO-Revision-Date: 2011-02-25 23:41+0100\n"
+"PO-Revision-Date: 2011-02-26 02:41+0100\n"
 "Last-Translator: Ángel Sanz <mizo0mizo@gmail.com>\n"
 "Language-Team: Spanish <html5boilerplateES@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -354,6 +354,10 @@ msgid ""
 "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
 "            "
 msgstr ""
+"Aprende los elementos HTML5 mejor: <a href=\"http://html5doctor.com/glossary/"
+"\"> HTML5 Doctor Glossary </ a> y <a href = \"# http://diveintohtml5.org/"
+"semantics.html nuevos elementos \"> Introducción a HTML 5: elementos "
+"semánticos </ a>"
 
 #: src/index.html:128
 msgid ""
@@ -384,6 +388,9 @@ msgid ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
 "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
 msgstr ""
+"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+"closed#issue/115/comment/439219\">Dile a tus usuarios que activen el "
+"JavaScript</a>"
 
 #: src/index.html:135
 msgid ""
@@ -495,7 +502,7 @@ msgstr ""
 
 #: src/index.html:160
 msgid "Google Chrome, jQuery"
-msgstr ""
+msgstr "Google Chrome, jQuery"
 
 #: src/index.html:161
 msgid "Open Web Vigilante"
@@ -524,10 +531,11 @@ msgstr ""
 msgid ""
 "Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 msgstr ""
+"Lee esto: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html"
 
 #: src/template/crossdomain.xml:8
 msgid "Most restrictive policy:"
-msgstr ""
+msgstr "La política más restrictiva:"
 
 #: src/template/crossdomain.xml:13
 msgid "Least restrictive policy:"
@@ -592,7 +600,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:49
 msgid "video"
-msgstr ""
+msgstr "vídeo"
 
 #: src/template/htaccess.txt:54
 msgid "Proper svg serving. Required for svg webfonts on iPad"
@@ -600,7 +608,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:59 standard input:168
 msgid "webfonts"
-msgstr ""
+msgstr "webfonts"
 
 #: src/template/htaccess.txt:65
 msgid "assorted types"
@@ -631,15 +639,15 @@ msgstr ""
 
 #: src/template/htaccess.txt:91
 msgid "Disabled by default."
-msgstr ""
+msgstr "Desactivado por defecto."
 
 #: src/template/htaccess.txt:102
 msgid "gzip compression."
-msgstr ""
+msgstr "compresión gzip"
 
 #: src/template/htaccess.txt:110
 msgid "webfonts and svg:"
-msgstr ""
+msgstr "webfonts y svg:"
 
 #: src/template/htaccess.txt:118
 msgid ""
@@ -673,27 +681,27 @@ msgstr ""
 
 #: src/template/htaccess.txt:143
 msgid "your document html "
-msgstr ""
+msgstr "tu archivo html"
 
 #: src/template/htaccess.txt:146
 msgid "data"
-msgstr ""
+msgstr "información"
 
 #: src/template/htaccess.txt:152
 msgid "rss feed"
-msgstr ""
+msgstr "feed rss"
 
 #: src/template/htaccess.txt:155
 msgid "favicon (cannot be renamed)"
-msgstr ""
+msgstr "favicon (no se puede renombrar)"
 
 #: src/template/htaccess.txt:158
 msgid "media: images, video, audio"
-msgstr ""
+msgstr "media: images, video, audio"
 
 #: src/template/htaccess.txt:175
 msgid "css and javascript"
-msgstr ""
+msgstr "css y javascript"
 
 #: src/template/htaccess.txt:184
 msgid ""
@@ -735,7 +743,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:221
 msgid "custom 404 page"
-msgstr ""
+msgstr "página 404 personalizada"
 
 #: src/template/htaccess.txt:226
 msgid "use utf-8 encoding for anything served text/plain or text/html"
@@ -747,7 +755,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:233
 msgid "We don't need to tell everyone we're apache."
-msgstr ""
+msgstr "No necesitamos decirle a todo el mundo que estamos bajo un apache."
 
 #: src/template/index.html:12
 msgid ""
@@ -757,7 +765,7 @@ msgstr ""
 
 #: src/template/index.html:20
 msgid "Mobile viewport optimized:"
-msgstr ""
+msgstr "Visualización para móviles optimizada:"
 
 #: src/template/index.html:23
 msgid ""
@@ -779,10 +787,12 @@ msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements & feature detects"
 msgstr ""
+"Incluye todos los JavaScript en la parte inferior, a excepción de Modernizr, "
+"este gestiona los elementos HTML5 por capacidad"
 
 #: src/template/index.html:56
 msgid "Javascript at the bottom for fast page loading"
-msgstr ""
+msgstr "Javascript al final del código para cargar más rápido las páginas"
 
 #: src/template/index.html:58
 msgid "Grab Google CDN's jQuery. fall back to local if necessary"
@@ -825,25 +835,26 @@ msgstr ""
 
 #: src/template/css/style.css:7
 msgid "much inspiration was taken from these projects:"
-msgstr ""
+msgstr "Bastante inspiración fue adquirida de estos proyectos:"
 
 #: src/template/css/style.css:14
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
+"html5doctor.com Reset CSS (Eric Meyer's Reset Reloaded + HTML5 baseline)"
 
 #: src/template/css/style.css:15
 msgid "v1.4 2009-07-27 | Authors:"
-msgstr ""
+msgstr "v1.4 2009-07-27 | Autores:"
 
 #: src/template/css/style.css:62
 msgid "tables still need cellspacing=\"0\" in the markup"
-msgstr ""
+msgstr "las tablas todavía necesitan cellspacing = \"0\" en el marcado"
 
 #: src/template/css/style.css:69
 msgid "END RESET CSS"
-msgstr ""
+msgstr "FIN RESET CSS"
 
 #: src/template/css/style.css:72
 msgid "fonts.css from the YUI Library:"
@@ -874,7 +885,7 @@ msgstr ""
 
 #: src/template/css/style.css:80
 msgid "hack retained to preserve specificity"
-msgstr ""
+msgstr "Hack bloqueado para respetar la especificación "
 
 #: src/template/css/style.css:84
 msgid "normalize monospace sizing"
@@ -900,7 +911,7 @@ msgstr ""
 
 #: src/template/css/style.css:106
 msgid "always force a scrollbar in non-IE"
-msgstr ""
+msgstr "siempre forzar en los no-IE a incluir una barra de desplazamiento"
 
 #: src/template/css/style.css:110
 msgid "Accessible focus treatment:"
@@ -916,7 +927,7 @@ msgstr ""
 
 #: src/template/css/style.css:152
 msgid "hand cursor on clickable input elements"
-msgstr ""
+msgstr "Ratón sobre los inputs clikeables "
 
 #: src/template/css/style.css:155
 msgid "webkit browsers add a 2px margin outside the chrome of form elements"
@@ -928,15 +939,15 @@ msgstr ""
 
 #: src/template/css/style.css:170
 msgid "These selection declarations have to be separate."
-msgstr ""
+msgstr "Estos selectores tienen que estar separados."
 
 #: src/template/css/style.css:171
 msgid "No text-shadow:"
-msgstr ""
+msgstr "No text-shadow:"
 
 #: src/template/css/style.css:172
 msgid "Also: hot pink."
-msgstr ""
+msgstr "También: fucsia."
 
 #: src/template/css/style.css:179
 msgid "make buttons play nice in IE:"
@@ -948,7 +959,7 @@ msgstr ""
 
 #: src/template/css/style.css:190
 msgid "Non-semantic helper classes"
-msgstr ""
+msgstr "Clases helper no semánticas"
 
 #: src/template/css/style.css:193
 msgid "for image replacement"
@@ -974,7 +985,7 @@ msgstr ""
 
 #: src/template/css/style.css:215
 msgid "Fix clearfix:"
-msgstr ""
+msgstr "Solucionar clearfix:"
 
 #: src/template/css/style.css:223
 msgid "Primary Styles"
