@@ -155,7 +155,6 @@ html[lang="en-us"] p.lang a[lang="en-us"],
 html[lang="de-de"] p.lang a[lang="de-de"],
 html[lang="pt-br"] p.lang a[lang="pt-br"],
 html[lang="fr-fr"] p.lang a[lang="fr-fr"],
-html[lang="ro-ro"] p.lang a[lang="ro-ro"],
 html[lang="it"]    p.lang a[lang="it"],
 html[lang="nl"]    p.lang a[lang="nl"],
 html[lang="sr"]    p.lang a[lang="sr"],
@@ -189,8 +188,7 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #header h2 { font-size: 1.5em; margin-bottom: 1.5em; }
 h2 + p { font-size: 14px; } 
 
-#header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px dotted #1e2322; padding-right: 1%; opacity: 0.4; transition: all 0.2;}
-#header p.lang:hover, .notenglish #header p.lang { opacity: 1; font-size: 17px; }
+#header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px dotted #1e2322; padding-right: 1%;}
 #container[dir="rtl"] #header p.lang { padding-left: 1%; text-align: left; padding-right: 0; }
 
 /* BUTTONS */                                               
@@ -285,6 +283,81 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
   #body li { width: 300px ; }
 }
 
+/** Wiki **/
+.wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
+.wikiconvertor #header h2{font-size:1.5em;margin-bottom:1.5em;font-weight:bolder;text-transform:none;}
+.wikiconvertor #header h2 a{font-size:0.6em;color #E16734;}
+.wikiconvertor #header h2 span{margin:0 1em;}
+.wikiconvertor #header h2 a,#header h2 a:active,a:visited{color:#E16734;}
+.wikiconvertor #body h1,.wikiconvertor #body h2,.wikiconvertor #body h3,.wikiconvertor #body h4,.wikiconvertor #body h5,.wikiconvertor #body h6,.wikiconvertor .insolent,#footer em{text-align:center;font-family:"InsolentRegular",Arial,sans-serif;text-shadow:1px 1px 0px black,2px 2px 0px #476871,3px 3px 0px #476871,4px 4px 0px #476871,5px 5px 0px #476871,6px 6px 0px #476871,7px 7px 0px #476871;}
+.wikiconvertor .wikistyle h1{font-size:2.5em !important;}
+.wikiconvertor .wikistyle h2{font-size:2em !important;}
+.wikiconvertor .wikistyle h3{font-size:1.8em!important;}
+.wikiconvertor .wikistyle h4{font-size:1.5em !important;}
+.wikiconvertor .wikistyle h5{font-size:1.3em !important;}
+.wikiconvertor .wikistyle h6{font-size:1.1em !important;}
+.wikiconvertor #body{margin:1em auto 0.5em;width:78%;line-height:1.4;padding:0;text-align:left;}
+.wikiconvertor #body li{width:auto;}
+.wikiconvertor #body li:after{border-bottom:none;}
+.wikiconvertor .wikiconvertor-pages{float:left;width:15em;font-size:0.8em;margin:0 2em 0 -2em;}
+.wikiconvertor .wikiconvertor-pages li{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;}
+.wikiconvertor .wikiconvertor-pages .wikiconvertor-pages-active{margin-left:-1em !important;color:#E16734;}
+.wikiconvertor .wikiconvertor-content{padding-left:12em;font-size:0.9em;}
+.wikiconvertor #body .wikiconvertor-pages li a{color:#E3D7BF;}
+.wikiconvertor #body .wikiconvertor-pages li a:hover{color:#E16734;}
+.wikiconvertor em{font-size:1em !important;text-shadow:none;font-family:sans-serif;}
+.wikiconvertor #body p{font-size:1em;}
+.wikiconvertor ul li p,.wikiconvertor ol li p{display:inline;}
+.wikiconvertor .wikiconvertor-error{text-align:center;}
+.wikiconvertor span.frown{transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);display:inline-block;font-size:10em;margin-top:0.4em;}
+.wikiconvertor #footer{clear:both;}
+.wikiconvertor #footer .focus{font-size:1.5em !important;margin-right:1em;}
+.wikiconvertor #footer p:last-child{font-size:0.6em !important;margin-top:2em;position:absolute;right:1em;}
+.wikiconvertor #footer{position:inherit;}
 
+/** wikistyle,credits to github guys. **/
+.wikistyle h1,.wikistyle h2,.wikistyle h3,.wikistyle h4,.wikistyle h5,.wikistyle h6{border:0 !important;}
+.wikistyle h1{font-size:170% !important;border-top:4px solid #aaa !important;padding-top:.5em !important;margin-top:1.5em !important;}
+.wikistyle h1:first-child{margin-top:0 !important;padding-top:.25em !important;border-top:none !important;}
+.wikistyle h2{font-size:150% !important;margin-top:1.5em !important;padding-top:.5em !important;}
+.wikistyle h3{margin-top:1em !important;}
+.wikistyle p{margin:1em 0 !important;line-height:1.5em !important;}
+.wikistyle a.absent{color:#a00;}
+.wikistyle ul,#wiki-form .content-body ul{margin:1em 0 1em 2em !important;}
+.wikistyle ol,#wiki-form .content-body ol{margin:1em 0 1em 2em !important;}
+.wikistyle ul li,#wiki-form .content-body ul li,.wikistyle ol li,#wiki-form .content-body ol li{margin-top:.5em;margin-bottom:.5em;}
+.wikistyle ul ul,.wikistyle ul ol,.wikistyle ol ol,.wikistyle ol ul,#wiki-form .content-body ul ul,#wiki-form .content-body ul ol,#wiki-form .content-body ol ol,#wiki-form .content-body ol ul{margin-top:0 !important;margin-bottom:0 !important;}
+.wikistyle blockquote{margin:1em 0 !important;border-left:5px solid #ddd !important;padding-left:.6em !important;color:#555 !important;}
+.wikistyle dt{font-weight:bold !important;margin-left:1em !important;}
+.wikistyle dd{margin-left:2em !important;margin-bottom:1em !important;}
+.wikistyle table{margin:1em 0 !important;}
+.wikistyle table th{border-bottom:1px solid #bbb !important;padding:.2em 1em !important;}
+.wikistyle table td{border-bottom:1px solid #ddd !important;padding:.2em 1em !important;}
+.wikistyle pre{margin:1em 0;font-size:12px;background-color:#eee;border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.wikistyle pre::-webkit-scrollbar{height:8px;width:8px;}
+.wikistyle pre::-webkit-scrollbar-track-piece{margin-bottom:10px;background-color:#e5e5e5;border-bottom-left-radius:4px 4px;border-bottom-right-radius:4px 4px;border-top-left-radius:4px 4px;border-top-right-radius:4px 4px;}
+.wikistyle pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
+.wikistyle pre::-webkit-scrollbar-thumb:horizontal{width:25px;background-color:#ccc;-webkit-border-radius:4px;}
+.wikistyle a code,.wikistyle a:link code,.wikistyle a:visited code{color:#4183c4 !important;}
+.wikistyle img{max-width:100%;}
+.wikistyle pre.console{margin:1em 0 !important;font-size:12px !important;background-color:black !important;padding:.5em !important;line-height:1.5em !important;color:white !important;}
+.wikistyle pre.console code{padding:0 !important;font-size:12px !important;background-color:black !important;border:none !important;color:white !important;}
+.wikistyle pre.console span{color:#888 !important;}
+.wikistyle pre.console span.command{color:yellow !important;}
+.wikistyle .frame{margin:0;display:inline-block;}
+.wikistyle .frame img{display:block;}
+.wikistyle .frame>span{display:block;border:1px solid #aaa;padding:4px;}
+.wikistyle .frame span span{display:block;font-size:10pt;margin:0;padding:4px 0 2px 0;text-align:center;line-height:10pt;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
+.wikistyle .float-left{float:left;padding:.5em 1em .25em 0;}
+.wikistyle .float-right{float:right;padding:.5em 0 .25em 1em;}
+.wikistyle .align-left{display:block;text-align:left;}
+.wikistyle .align-center{display:block;text-align:center;}
+.wikistyle .align-right{display:block;text-align:right;}
 
-
+/* special care of mobile device. Make the wole slightly smaller and do not display left nav. */
+@media screen and (max-device-width:480px){
+  .wikiconvertor #body{width:95%;}
+  .wikiconvertor .wikiconvertor-pages{display:none;}
+  .wikiconvertor #header{font-size:0.5em;}
+  .wikiconvertor .wikiconvertor-content{padding-left:0;font-size:0.9em;}
+}

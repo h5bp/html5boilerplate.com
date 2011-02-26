@@ -22,8 +22,8 @@ import re, os, sys
 from optparse import OptionParser
 from subprocess import PIPE, Popen
 from gettext import translation
-from itertools import dropwhile
-import codecs
+from itertools import dropwhile, izip_longest
+import codecs, warnings
 from shutil import copyfile
 
 class LocalizerGettextException( BaseException ):
@@ -191,9 +191,10 @@ class Localizer( object ):
 
     def templatize( self, file, type, locale, l10n=None ):
         with codecs.open( file, 'rU', 'utf-8' ) as f:
-            src     = f.read()
-            newsrc  = []
-            blocks  = re.split( r'{% blocktrans (?:with "((?:\\"|[^"])*)" as (\w+) )?%}|<blocktrans>|<!-- blocktrans -->|/\* blocktrans \*/', src )
+            src       = f.read()
+            newsrc    = []
+            src_incs  = re.sub( r'{% include "([^"]*)" %}', replace_with_file, src )
+            blocks    = re.split( r'{% blocktrans (?:with "((?:\\"|[^"])*)" as (\w+) )?%}|<blocktrans>|<!-- blocktrans -->|/\* blocktrans \*/', src_incs )
 
             ( value, key ) = ( None, None )
             while len( blocks ) > 0:
@@ -236,29 +237,49 @@ def _popen(cmd, stdin=None):
     p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=os.name != 'nt', universal_newlines=True)
     return p.communicate(stdin)
 
+parser = OptionParser()
+parser.add_option(  "-d", "--domain", dest="domain", default='messages', metavar='DOMAIN',
+                    help="The localization's 'domain' (used to create the message file's name)" )
+parser.add_option(  "-m", "--make-messages", dest="makemessages", default=False, action="store_true",
+                    help="Generate message files in target languages" )
+parser.add_option(  "-b", "--build", dest="build", default=False, action="store_true",
+                    help="Build localizations in target languages" )
+parser.add_option(  "-l", "--locale", dest="localebase", default="./locale", metavar="DIR",
+                    help="The directory where the .po/.mo files ought be located" )
+parser.add_option(  "-o", "--output", dest="outputbase", default="./build", metavar="DIR",
+                    help="The directory into which translated files ought be rendered." )
+parser.add_option(  "-i", "--input", dest="inputbase", default="./src", metavar="DIR", 
+                    help="The directory from which to read the translation templates." )
+parser.add_option(  "-e", "--extensions", dest="extensions", default=".html,.js,.css,.txt,.xml,.markdown", metavar=".EXT1,.EXT2,.EXT3,...",
+                    help="File extensions which ought to be parsed for translatable strings (Defaults to `.html,.js,.css,.txt,.xml,.markdown`)" )
+parser.add_option(  "--languages", dest="languages", default="en_US,de_DE", metavar="LANG1,LANG2,LANG3,...",
+                    help="A comma seperated list of the languages in which translations should be made. (Defaults to `en_US,de_DE`)" )
+
+(options, args) = parser.parse_args()
+options.languages = options.languages.split( ',' )
+options.extensions = options.extensions.split( ',' )
+
+html_entities = {
+    "&": "&amp;",
+    '"': "&quot;",
+    "'": "&apos;",
+    ">": "&gt;",
+    "<": "&lt;",
+}
+
+html_escape = lambda text: "".join( html_entities.get( c, c ) for c in text )
+
+def replace_with_file(match, safe=False):
+    filepath = os.path.join( options.inputbase, match.group(1) )
+    try:
+        with codecs.open( filepath, 'rU', 'utf-8' ) as f:
+            text = f.read()
+            return text if safe else html_escape(text)
+    except IOError:
+        warnings.warn( 'Include "%s" not found' % filepath )
+        return u''
+
 def main():
-    parser = OptionParser()
-    parser.add_option(  "-d", "--domain", dest="domain", default='messages', metavar='DOMAIN',
-                        help="The localization's 'domain' (used to create the message file's name)" )
-    parser.add_option(  "-m", "--make-messages", dest="makemessages", default=False, action="store_true",
-                        help="Generate message files in target languages" )
-    parser.add_option(  "-b", "--build", dest="build", default=False, action="store_true",
-                        help="Build localizations in target languages" )
-    parser.add_option(  "-l", "--locale", dest="localebase", default="./locale", metavar="DIR",
-                        help="The directory where the .po/.mo files ought be located" )
-    parser.add_option(  "-o", "--output", dest="outputbase", default="./build", metavar="DIR",
-                        help="The directory into which translated files ought be rendered." )
-    parser.add_option(  "-i", "--input", dest="inputbase", default="./src", metavar="DIR", 
-                        help="The directory from which to read the translation templates." )
-    parser.add_option(  "-e", "--extensions", dest="extensions", default=".html,.js,.css,.txt,.xml,.markdown", metavar=".EXT1,.EXT2,.EXT3,...",
-                        help="File extensions which ought to be parsed for translatable strings (Defaults to `.html,.js,.css,.txt,.xml,.markdown`)" )
-    parser.add_option(  "--languages", dest="languages", default="en_US,de_DE", metavar="LANG1,LANG2,LANG3,...",
-                        help="A comma seperated list of the languages in which translations should be made. (Defaults to `en_US,de_DE`)" )
-
-    (options, args) = parser.parse_args()
-    options.languages = options.languages.split( ',' )
-    options.extensions = options.extensions.split( ',' )
-
     l10n = Localizer(   domain=options.domain, outputbase=options.outputbase, 
                         inputbase=options.inputbase, localebase=options.localebase,
                         languages=options.languages, extensions=options.extensions )
