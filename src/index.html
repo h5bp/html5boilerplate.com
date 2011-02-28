@@ -37,6 +37,7 @@
            <a href="http://it.html5boilerplate.com" lang="it">Italiano</a>
            <a href="http://nl.html5boilerplate.com" lang="nl">Nederlands</a>
            <a href="http://sr.html5boilerplate.com" lang="sr">Srpski</a>
+           <a href="http://ro.html5boilerplate.com" lang="ro-ro">Română</a>
            <a href="http://ru.html5boilerplate.com" lang="ru">По-русски</a>
            <a href="http://he.html5boilerplate.com" lang="he">עברית</a> 
          </p>        
@@ -67,8 +68,8 @@
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
       
-      <img id=html5logo src="images/HTML5_Logo.svg" width="100">
-      
+      <img id=html5logo src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
+    <!-- removing because.. not exactly new anymore 
        <h3>{% blocktrans %}What&rsquo;s New in 0.9.5{% endblocktrans %}</h3>
        <ul>
         <li>{% blocktrans %}Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace too thin.{% endblocktrans %}</li>
@@ -82,6 +83,9 @@
          <li>{% blocktrans %}New project scaffolding <a href="http://github.com/paulirish/html5-boilerplate/wiki/createproject.sh">bash script</a>.{% endblocktrans %}</li>
          <li><a href="http://github.com/paulirish/html5-boilerplate/blob/v0.9.5/README.markdown">{% blocktrans %}.... and over 100 other fixes and improvements.{% endblocktrans %}</a></li>
        </ul>
+       
+     -->
+     
       <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
       <ul>
         <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
@@ -111,8 +115,33 @@
 
       <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
 
+      <h4>index.html</h4>
+      <pre class="brush:html">{% include "template/index.html" %}</pre>
+
+      <h4>style.css</h4>
+      <pre class="brush:css">{% include "template/css/style.css" %}</pre>
+
+      <h4>script.js</h4>
+      <pre class="brush:js">{% include "template/js/script.js" %}</pre>
+
+      <h4>plugins.js</h4>
+      <pre class="brush:js">{% include "template/js/plugins.js" %}</pre>
+
+      <h4>crossdomain.xml</h4>
+      <pre class="brush:xml">{% include "template/crossdomain.xml" %}</pre>
+
+      <h4>robots.txt</h4>
+      <pre class="brush:xml">{% include "template/robots.txt" %}</pre>
+
+      <h4>.htaccess</h4>
+      <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>
+
       <h3 id="lowdown">{% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</h3>
-      <embed src="http://blip.tv/play/gcMVgffAOgI%2Em4v" type="application/x-shockwave-flash" width="480" height="330" allowscriptaccess="always" allowfullscreen="true"/>
+      <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
+      
+      <h3>{% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</h3>
+      <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+      
       <p>{% blocktrans %}Or read through this good explanation of <a href="http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/">20 snippets you should be using</a>.{% endblocktrans %}</p>
 
       <div class="recos">
@@ -209,75 +238,21 @@
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
   <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js"></script>
 
-  <script  >
-
-
-
-    var local = [
-     './template/index.html',
-     './template/css/style.css',
-     './template/js/script.js',
-     './template/js/plugins.js',
-     './template/crossdomain.xml',
-     './template/robots.txt?.xml',
-     './template/htaccess.txt?.xml'
-    ];
-
-
-    function mycallback(data,status,xhr,filename){
-          //console.log(arguments);
-
-      data = data.replace(/</g,'&lt;');
-
-
-      var fileext = filename.replace('htaccess.txt?.xml','htaccess.apache').split('.').slice(-1)[0];
-      var elem = $('<textarea>').addClass('brush:'+fileext).html(data).css('visibility','hidden');
-      var point = $('#thesource').nextAll('textarea, .syntaxhighlighter').andSelf().last();
-
-      elem.insertAfter(point);
-      $('<h4>').text(filename.replace('?.xml','').replace('htaccess.txt','.htaccess')).insertAfter(point);
-
-      var x = SyntaxHighlighter.highlight(undefined, elem[0]);
-
-
-      if (mycallback.countdown === undefined) mycallback.countdown = local.length;
-
-      mycallback.countdown--;
-
-      if (mycallback.countdown === 0){ 
-
-        // not sure why the movile viewport block doesnt get commented but.. it doesnt
-        var viewport = $('code.plain:contains(Mobile Viewport Fix)').closest('div.line');
-        viewport.nextAll().slice(0,5).add(viewport).find('.plain').toggleClass('plain comments');
-
-        $('code.comments').each(function(){
-          $(this).html(  linkify( this.innerHTML ) );
-        })
-      }
-
-
-
+  <script>
+  
+    if (!/^en/.test(navigator.language)){
+      document.body.className += ' notenglish';
     }
-
-    $.each(local,function(k,path){
-      $.ajax({
-        method: 'GET',
-        dataType : 'text',
-        cache : false,
-        success : function(data,status,xhr){
-          mycallback(data,status,xhr,
-                    path.split('/').slice(-1)[0])
-        },
-        url : path
-      })
-    });
-
-
-    SyntaxHighlighter.config.tagName = 'textarea';
+  
+    SyntaxHighlighter.config.tagName = 'code';
     SyntaxHighlighter.defaults['wrap-lines'] = true; // maybe change this
     SyntaxHighlighter.defaults['auto-links'] = false;
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.defaults['tab-size'] = 4;
+
+    $('pre[class]').each(function(i, el) {
+      SyntaxHighlighter.highlight(undefined, el)
+    })
 
     // smooth scrolling to in-page anchors.
     $.fn.smoothScrollTo = function(){

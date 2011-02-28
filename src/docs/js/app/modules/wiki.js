@@ -67,7 +67,6 @@
           },
 
           popHandler = function(file) {
-
             this.fetchData(file.replace(/^#/, '').split(/#/)[0] || service.base);
           },
           
@@ -189,10 +188,9 @@
                 .append(link);
             },
 
-
             render: function(response) {              
               var md = convertor.makeHtml(escapeWikiAnchors.call(this, response));
-              
+                            
               this.main.html(md.replace(/<h1>[\w|\s|<|>|(|)|\/]+<\/h1>/, ''));
 
               this.updateTitle();

@@ -7,7 +7,7 @@
 define({
   // file extension of wiki files, usually md
   ext: '.md',
-  
+
   // path to the wiki folder, by defaults it is wiki-upstream and points to a git submodule
   baseUrl: './wiki-upstream/',
 

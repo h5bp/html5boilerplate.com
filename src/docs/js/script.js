@@ -35,8 +35,7 @@
 
               // Allow the hightlight of code snippets using SyntaxHighligter
               .highlight();
-              
-              
+                            
         });
     });
     
