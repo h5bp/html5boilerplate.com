@@ -61,18 +61,20 @@
             external = /\/\//.test(href);
 
             if(!external) {
-              this.fetchData(href + (/\.md/.test(href) ? "" : ".md"));
+              this.fetchData(href.replace(/^#/, ''));
               return false; 
             }
           },
 
           popHandler = function(file) {
-            this.fetchData(file);
+
+            this.fetchData(file.replace(/^#/, '').split(/#/)[0] || service.base);
           },
           
           resolveFile = function() {
-            var s = this.element.attr('data-file') || global.location.href.split('#')[1] || service.base; 
-            return s;
+            return this.element.attr('data-file') || 
+              global.location.hash.replace(/^#/, '').split('#')[0] || 
+              service.base; 
           },
 
           getFileHash = function(file) {
@@ -84,8 +86,9 @@
             holder = $('<ul />').appendTo(pane),
             tmp = "";
 
-            $.each(files, function(i, file){
-              tmp += pageItemTmpl.replace(/\${url}/, '#' + file).replace(/\${text}/, file.replace(/.md/, ''));
+            $.each(files, function(i, file) {
+              file = file.replace(/.md/, '');
+              tmp += pageItemTmpl.replace(/\${url}/, '#' + file).replace(/\${text}/, file);
             });
 
             holder.append(tmp);
@@ -95,7 +98,7 @@
           
           escapeWikiAnchors = function(text) {
             text = text.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, function(wholeMatch, m1, m2) {
-              return "["+m1+"](" + m2 + ")";
+              return "["+m1+"]("+ (!(/\/\//).test(m2) ? '#' : '') + m2 + ")";
             });
             
             text = text.replace(/\[\[([^\]]+)\]\]/g, function(wholeMatch, m1) {
@@ -119,6 +122,7 @@
               this.footer = this.element.find(this.options.footer);
               this.file = resolveFile.apply(this);
               this.pages = createPagePanes.apply(this);
+              this.scroller = $('html,body');
               
               service.init({wiki: this.options.wikiPath});
 
@@ -152,18 +156,23 @@
             },
 
             fetchData: function(file, ignoreAnchor) {
-              var pos = inArray(file.replace('#', ''), files);
+              var pos = inArray(file.split(/[#|★]/)[0].split(/\s/).join('-') + '.md', files),
+              hash = resolveFile.apply(this),
+              requestFile = (this.file = pos !== -1 ? files[pos].replace(/\.md/, '') : "");
 
-              file = (this.file = pos !== -1 ? files[pos] : "");
-
-              if(file === "") {
+              if(requestFile === "") {
                 $.publish('wiki-file-error', [file]);
                 return this.error();
               }
               
+              // If location.hash is an empty string, user must be at root of /docs/, 're-route' to default file.
+              if(!global.location.hash) {
+                return this.updateAnchor(file);
+              }
+              
               // Well, if the anchor is the originaly one (most likely a refresh), popState won't happen
-              if(file === global.location.hash.replace('#', '')) {
-                service.get(file.replace(/#/, ''), $.proxy(this.render, this)); 
+              if(file === hash) {
+                service.get(requestFile.replace(/#/, ''), $.proxy(this.render, this)); 
               } else {
                 this.updateAnchor(file);                
               }
@@ -173,24 +182,62 @@
               var file = this.file.replace(/.md/, '').replace(/-/g, ' '),
               star = '<span>&#x2605;</span>',
               link = '<a href="{url}">Edit this page</a>'
-                .replace(/{url}/, config.wikiUrl + this.file.replace(/\.md/, '/_edit'));
+                .replace(/{url}/, config.wikiUrl + this.file + '/_edit');
                 
               this.header.find('h2')
                 .html([file, star].join(' '))
                 .append(link);
             },
 
-            render: function(response){
-              var md = convertor.makeHtml(escapeWikiAnchors.call(this, response)),
-              html = $(md),
-              title = html.eq(0).is('h1') ? html.eq(0).html() : "";
+
+            render: function(response) {              
+              var md = convertor.makeHtml(escapeWikiAnchors.call(this, response));
               
               this.main.html(md.replace(/<h1>[\w|\s|<|>|(|)|\/]+<\/h1>/, ''));
 
               this.updateTitle();
 
+              this.headings();
+              
               // Notify the apps that a new file is available
               $.publish('wiki-new-file', [this.file]);
+            },
+            
+            headings: function(text) {
+              // # or ...
+              var t = text || global.location.hash.replace(/^#/, '').split(/[#|★]/)[1],
+              hdr = this.main.find(':header'), h;
+
+              // First thing first deal with headings and add proper data-wiki-hdr attribute
+              hdr.each($.proxy(this.addHdrAttr, this));
+              
+              if(!t || !hdr.length) {
+                return;
+              }
+              
+              h = hdr.filter('[data-wiki-hdr^="'+t+'"]');
+              
+              if(!h.length) {
+                return;
+              }
+
+              this.scroller.animate({scrollTop: h.offset().top}, 0);
+            },
+            
+            addHdrAttr: function(i, header) {
+              var t = $(header),
+              text = t.text(),
+              attr = text
+                // First lower case all
+                .toLowerCase()
+                
+                // Then replace any special character
+                .replace(/[^a-z|A-Z|\d|\s|-]/g, '')
+                
+                // Finally, replace all blank space by - delimiter                
+                .replace(/\s/g, '-');
+
+              t.attr('data-wiki-hdr', attr);
             },
 
             updateAnchor: function(file){
