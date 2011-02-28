@@ -14,11 +14,16 @@
     ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight'],
     
     function(wiki, messaging, history, highlight) {
-
+        
         $(function() {
           var container = $('#container');
           
           container
+              // Needed prior main module initialization
+              // This misconception leads to unexpected behaviour on Opera 11 
+              // (haschange binding needed prior hash rewrite)
+              .history()
+          
               // Our main module
               .wikiConvertor({
                   wikiPath: container.data('wiki') || '',
@@ -27,10 +32,7 @@
               
               // Add messaging support, user feedback and so on
               .messaging()
-              
-              // Add history and back button support
-              .history()
-              
+
               // Allow the hightlight of code snippets using SyntaxHighligter
               .highlight();
               
