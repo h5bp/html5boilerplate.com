@@ -238,8 +238,8 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 /* INITIALIZR */
 .focus { background: hsla(160, 8%, 54%, 0.2); } 
-#builder { display: none; }
-#builder:target { display: block; width: 50%; min-width: 480px; padding-bottom: 2em; }
+#builder { display: none; width: 50%; min-width: 480px; padding-bottom: 2em; }
+#builder:target { display: block; }
 #builder > div { width: 50%; float: left; }
 #builder > div:nth-of-type(odd) { clear: left; }
 #builder h4 { line-height: 2; margin-top: 0.5em; }

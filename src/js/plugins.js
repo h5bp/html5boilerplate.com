@@ -1,3 +1,27 @@
+$(function(){
+	var parameters = {}, params = '', builder = $('#builder');
+	$('#builder-custom').toggle(function() {
+	  builder.css({ opacity: 0 }).show().animate({ opacity: 1}, 1000);s
+    return false;
+	}, function() { builder.animate({ opacity: 0 }, 1000, function() { builder.hide('slow'); }); return false; });
+	
+	$("#builder > div > a").click(function(){
+	  var that = $(this); 
+	  var option = that.parent();
+		option.find("a").removeClass("selected");
+		var choice = that[0].id;
+    if(choice) {
+		    that.addClass("selected");
+		    parameters[option[0].id] = /^default\-/g.exec(choice) ? '' : choice;
+      }		  
+      return false;
+	});
+	
+	$('#builder-download').click(function() {
+    $.each(parameters, function(key, value) { if(value) { params += value + '&'; } });
+		this.href =  this.href + params.substr(0, params.length-1); 
+	});	
+});
 if (!window.SyntaxHighlighter) {
     var SyntaxHighlighter = function () {
         var a = {
@@ -1394,23 +1418,3 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
 	// CommonS
 	typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
 })();
-
-$(function(){
-	var parameters = {}, params = '';		
-	$("#builder > div > a").click(function(){
-	  var that = $(this); 
-	  var option = that.parent();
-		option.find("a").removeClass("selected");
-		var choice = that[0].id;
-    if(choice) {
-		    that.addClass("selected");
-		    parameters[option[0].id] = /^default\-/g.exec(choice) ? '' : choice;
-      }		  
-		  return false;
-	});
-	
-	$('#builder-download').click(function() {
-    $.each(parameters, function(key, value) { if(value) { params += value + '&'; } });
-		this.href =  this.href + params.substr(0, params.length-1); 
-	});	
-});
