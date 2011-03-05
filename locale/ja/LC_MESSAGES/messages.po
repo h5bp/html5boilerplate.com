@@ -290,7 +290,7 @@ msgid ""
 "            "
 msgstr ""
 "<a href=\"http://html5doctor.com/glossary/\">HTML5 Doctor Glossary</a>と<a href=\"http://diveintohtml5.org/"
-"semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a>でHTML5の要素について深い理解を"
+"semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a>でHTML5の要素についてさらに詳しく知る"
 
 #: src/index.html:117
 msgid ""
@@ -308,9 +308,9 @@ msgid ""
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
 "            "
 msgstr ""
-" <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
+"<p><code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
 "\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n \n"
-"フォトギャラリーサイトを作っているなら、IE6で &lt;img&gt;に出現する、あのツールバーを消してしまおう"
+"フォトギャラリーサイトを作っているなら、IE6で &lt;img&gt;に出現するあのツールバーを消してしまおう"
 
 #: src/index.html:122
 msgid ""
@@ -428,7 +428,7 @@ msgstr ""
 "<a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">ブラウザ別CSSハック</a>を知っておこう"
 
-#: src/index.html:138
+
 msgid ""
 "Get your team hooked using the same <a href=\"http://molecularvoices."
 "molecular.com/standards/\">front-end coding standards and best practices.</"
@@ -523,6 +523,7 @@ msgid ""
 "    and don’t understand all of the points described here, you probably\n"
 "    have a nasty security vulnerability. ~ simon willison\n"
 msgstr ""
+"\n"
 "crossdomain.xmlをallow-access-from domain=“*としていて、かつ\n"
 "ここで説明されている点がよく理解できていない場合は、\n"
 "セキュリティの脆弱性にさらされている可能性が高い by simon willson"
@@ -666,7 +667,6 @@ msgstr ""
 "# 加えて、古いプロキシがキャッシュできないことがあることも考慮しておくこと。\n"
 "# "
 
-
 #: src/template/htaccess.txt:128
 msgid ""
 "\n"
@@ -679,7 +679,6 @@ msgstr ""
 "# ファイルネームをバージョン管理しない場合、CSSとJSについては、 "
 "# \"access plus 1 week\" のような設定をすること\n"
 "# "
-
 
 #: src/template/htaccess.txt:137
 msgid "Perhaps better to whitelist expires rules? Perhaps."
