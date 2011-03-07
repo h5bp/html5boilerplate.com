@@ -54,7 +54,7 @@ msgstr "Ahora ofrecido en:"
 
 #: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
-msgstr "A rock-solid default for HTML5 awesome"
+msgstr "Una plantilla solida como una roca para HTML5, alucinante."
 
 #: src/index.html:44
 msgid ""
@@ -676,7 +676,7 @@ msgstr "video"
 
 #: src/template/htaccess.txt:54
 msgid "Proper svg serving. Required for svg webfonts on iPad"
-msgstr "Siviendo svg correctamente. Obligatorio para tipografias svg en iPad"
+msgstr "Sirviendo svg correctamente. Obligatorio para tipografias svg en iPad"
 
 #: src/template/htaccess.txt:59 standard input:168
 msgid "webfonts"
@@ -709,6 +709,7 @@ msgstr ""
 "#\n"
 "# y ambos serían incluidos en un único fichero\n"
 "# "
+
 #: src/template/htaccess.txt:86
 msgid ""
 "\n"
