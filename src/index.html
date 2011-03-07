@@ -227,10 +227,14 @@
       <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>
 
       <h3 id="lowdown">{% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</h3>
-      <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
+      <noscript>
+        <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
+      </noscript>
       
       <h3>{% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</h3>
-      <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+      <noscript>
+        <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+      </noscript>
       
       <p>{% blocktrans %}Or read through this good explanation of <a href="http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/">20 snippets you should be using</a>.{% endblocktrans %}</p>
 
@@ -343,10 +347,6 @@
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.defaults['tab-size'] = 4;
 
-    $('pre[class]').each(function(i, el) {
-      SyntaxHighlighter.highlight(undefined, el)
-    })
-
     // smooth scrolling to in-page anchors.
     $.fn.smoothScrollTo = function(){
       return this.live('click', function (e) {
@@ -359,36 +359,58 @@
       });
     };
 
-    var dsqlength = jQuery('ul#dsq-comments').length + 1;
-
-    jQuery('a[href=#disqus_thread]').smoothScrollTo();
-
+   
+    var dsqlength, dsqshow;
+    
     // !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
     if (~location.hash.replace('#','').indexOf('comment')){
+      dsqshow = true;
       jQuery('#disqus_thread').show();
     }
 
-    jQuery('a[href=#dsq-content]').toggle(
-      function () {
-        jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
-        jQuery('#disqus_thread').show();
-      },
-      function () {
-        jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
-        jQuery('#disqus_thread').hide();
-      }
-    );
+    $(document).ready(function(){
+
+      dsqlength = jQuery('ul#dsq-comments').length + 1;
+      
+      $('pre[class]').each(function(i, el) {
+        SyntaxHighlighter.highlight(undefined, el)
+      })
+    
+      jQuery('a[href=#disqus_thread]').smoothScrollTo();
+
+      jQuery('a[href=#dsq-content]').toggle(
+        function () {
+          jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
+          jQuery('#disqus_thread').show();
+        },
+        function () {
+          jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
+          jQuery('#disqus_thread').hide();
+        }
+      );
+      
+      // lazy inject the videos
+      setTimeout(function(){
+        $('#lowdown').nextAll('h3:first').andSelf().each(function(){
+          var html = $.trim( $(this).next().text() );
+          $(html).insertAfter(this);
+        });
+      }, 3000);
+    
+    })
   </script>
 
   <script type="text/javascript">
       var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
       var disqus_category_id = 517513;
       var disqus_url = '{% blocktrans %}http://html5boilerplate.com/v095{% endblocktrans %}';
-      (function() {
+      
+      // load comments after 5 sec, unless the hash is set.
+      setTimeout(function() {
        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
        dsq.src = 'http://boilerplate.disqus.com/embed.js';
        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
+      }, dsqshow ? 10 : 5000);
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
    
