@@ -50,7 +50,7 @@
           eventify = function() {
             var self = this;
 
-            this.element.delegate('a', 'click', $.proxy(clickHandler, this));
+            this.wiki.delegate('a', 'click', $.proxy(clickHandler, this));
             $.subscribe('wiki-history-change', $.proxy(popHandler, this));
             $.subscribe('wiki-file-error', $.proxy(this.error, this));
             $.subscribe('wiki-new-file', $.proxy(this.updateMenu, this));
@@ -109,15 +109,17 @@
 
           return {
             options: {
+              wiki: "#body",
               main: '#main',
               header: '#header',
               footer: '#footer'
             },
             init: function(options, elem){
               var self = this, o = this.options;
-
-              this.main = this.element.find(this.options.main).addClass('wikistyle');
+              
               this.header = this.element.find(this.options.header);
+              this.wiki = this.element.find(this.options.wiki);
+              this.main = this.element.find(this.options.main).addClass('wikistyle');
               this.footer = this.element.find(this.options.footer);
               this.file = resolveFile.apply(this);
               this.pages = createPagePanes.apply(this);
