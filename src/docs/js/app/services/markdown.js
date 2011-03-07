@@ -46,32 +46,33 @@ define(['config', 'libs/pubsub'], function(config) {
             fn.apply(this, arguments);
         }
     },
-    
+
     error = function() {
-      $.publish('wiki-file-error', arguments);
+        $.publish('wiki-file-error', arguments);
     };
 
     return {
+        ext: config.ext,
         baseUrl: config.baseUrl,
         base: config.baseFile,
         init: function(options) {
-          options = options || {};
-          this.baseUrl = options.wiki ? options.wiki : config.baseUrl;
+            options = options || {};
+            this.baseUrl = options.wiki ? options.wiki: config.baseUrl;
         },
         request: cache(function(file, cb) {
             $.publish('wiki-request-file', [file]);
             return $.ajax({
-                url: file,
+                url: file + this.ext,
                 dataType: 'text',
                 error: $.proxy(error, this),
                 success: $.proxy(function() {
                     $.publish('wiki-request-file-success', arguments);
                     cb.apply(this, arguments);
-                },
-                this)
+                }, this)
             });
         }),
-        get: cache(function(file, cb) {
+
+        get: function(file, cb) {
             if ($.isFunction(file)) {
                 cb = file;
                 file = this.base;
@@ -80,6 +81,6 @@ define(['config', 'libs/pubsub'], function(config) {
             file = file === "" ? this.base: file;
 
             return this.request(this.baseUrl + file, cb);
-        })
+        }
     }
 });

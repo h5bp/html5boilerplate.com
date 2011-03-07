@@ -5,12 +5,15 @@
 * 
 */
 define({
+  // file extension of wiki files, usually md
+  ext: '.md',
+
   // path to the wiki folder, by defaults it is wiki-upstream and points to a git submodule
   baseUrl: './wiki-upstream/',
 
   //default file
-  baseFile: 'Home.md',
-  
+  baseFile: 'Home',
+    
   // path to the wiki folder, by defaults it is wiki-upstream and points to a git submodule
   wikiUrl: '//github.com/paulirish/html5-boilerplate/wiki/',
 
@@ -18,7 +21,7 @@ define({
   // In the perspective of a datasource that uses the github api (on real repos onlt, repos wikis are not part of the api yet),
   // we wouldn't need this anymore
   files: [
-    "htaccess.md",
+    ".htaccess.md",
     "960.gs.md",
     "ARIA-in-Boilerplate.md",
     "Articles-on-using-boilerplate.md",
