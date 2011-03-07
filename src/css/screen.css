@@ -141,9 +141,10 @@ h1, h2, h3, h4, h5 { font-weight: normal; text-transform: uppercase; }
 @font-face {	font-family: 'AharoniCLMBold';	src: url('../assets/aharoniclm-bold-webfont.eot');	src: local('☺'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf') format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); 	font-weight: normal;	font-style: normal; }
 
 
-h1, em, #body h3, #disqus_thread h3, h4 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
+h1, em, #body h3, #disqus_thread h3, h4,
+.wikiconvertor h2 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
 
-html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] #body h3, html[lang='en'] #disqus_thread h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] #body h3, html[lang='en-us'] #disqus_thread h3, html[lang='en-us'] h4 { font-family: "MolotRegular", Arial, sans-serif; } 
+html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] #body h3, html[lang='en'] #disqus_thread h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] #body h3, html[lang='en-us'] #disqus_thread h3, html[lang='en-us'] h4, .wikiconvertor h2 { font-family: "MolotRegular", Arial, sans-serif; } 
 
 html[lang='he'] em, html[lang='he'] #body h3, html[lang='he'] #disqus_thread h3 { font-family: 'AharoniCLMBold', Arial, sans-serif; }
 #container[dir="rtl"] h4, #container[dir="rtl"] code{ direction:ltr; }

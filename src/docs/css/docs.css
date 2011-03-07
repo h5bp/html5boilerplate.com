@@ -3,17 +3,15 @@
 #body li:before { font-size: 80%; }
 
 .wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
-.wikiconvertor #body, .wikiconvertor #header h2{margin:1em auto 0.5em;width:78%;}
+.wikiconvertor #body, .wikiconvertor #header h2 {margin:1em auto 0.5em;width:78%;}
 
-.wikiconvertor #header h2{font-size:1.5em;margin-bottom:1.5em;font-weight:bolder;text-transform:none;
-  box-shadow: 1px 1px 0px black, 2px 2px 0px hsl(193, 23%, 36%), 3px 3px 0px hsl(193, 23%, 36%), 4px 4px 0px hsl(193, 23%, 36%), 5px 5px 0px hsl(193, 23%, 36%), 6px 6px 0px hsl(193, 23%, 36%), 7px 7px 0px hsl(193, 23%, 36%);
-  padding: 5px;
-}
+.wikiconvertor #header h2 { font-size:3em; margin-bottom:1.5em; }
 
-.wikiconvertor #header h2 a{font-size:0.6em;color #E16734;float:right; display: inline-block;}
+.wikiconvertor #header h2 a{font-size:0.4em;color #E16734;float:right; display: inline-block;}
 .wikiconvertor #header h2 span{margin:0 1em;}
 .wikiconvertor #header h2 a,#header h2 a:active,a:visited{color:#E16734;}
-.wikiconvertor #body h1,.wikiconvertor #body h2,.wikiconvertor #body h3,.wikiconvertor #body h4,.wikiconvertor #body h5,.wikiconvertor #body h6,.wikiconvertor .insolent,#footer em{text-align:center;font-family:"InsolentRegular",Arial,sans-serif;text-shadow:1px 1px 0px black,2px 2px 0px #476871,3px 3px 0px #476871,4px 4px 0px #476871,5px 5px 0px #476871,6px 6px 0px #476871,7px 7px 0px #476871;}
+.wikiconvertor h2 code, .wikiconvertor h3 code, .wikiconvertor h4 code { background: transparent; }
+
 .wikiconvertor .wikistyle h1{font-size:2.5em !important;}
 .wikiconvertor .wikistyle h2{font-size:2em !important;}
 .wikiconvertor .wikistyle h3{font-size:1.8em!important;}
@@ -52,7 +50,7 @@
 .wikistyle ul,#wiki-form .content-body ul{margin:1em 0 1em 2em !important;}
 .wikistyle ol,#wiki-form .content-body ol{margin:1em 0 1em 2em !important;}
 .wikistyle ul li,#wiki-form .content-body ul li,.wikistyle ol li,#wiki-form .content-body ol li{margin-top:.5em;margin-bottom:.5em;}
-.wikistyle ul ul,.wikistyle ul ol,.wikistyle ol ol,.wikistyle ol ul,#wiki-form .content-body ul ul,#wiki-form .content-body ul ol,#wiki-form .content-body ol ol,#wiki-form .content-body ol ul{margin-top:0 !important;margin-bottom:0 !important;}
+.wikistyle ul ul,.wikistyle ul ol,.wikistyle ol ol,.wikistyle ol ul,#wiki-form .content-body ul ul,#wiki-form .content-body ul ol,#wiki-form .content-body ol ol,#wiki-form .content-body ol ul{ margin: 0 !important; }
 .wikistyle blockquote{margin:1em 0 !important;border-left:5px solid #ddd !important;padding-left:.6em !important;color:#555 !important;}
 .wikistyle dt{font-weight:bold !important;margin-left:1em !important;}
 .wikistyle dd{margin-left:2em !important;margin-bottom:1em !important;}
