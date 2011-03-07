@@ -1209,7 +1209,7 @@ msgstr "コメントを表示する"
 
 #: src/index.html:1003
 msgid "http://html5boilerplate.com/v095"
-msgstr "http://html5boilerplate.com/v095"
+msgstr "http://ja.html5boilerplate.com/"
 
 #: src/template/htaccess.txt:11
 msgid ""

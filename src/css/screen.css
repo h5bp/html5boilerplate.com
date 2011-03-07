@@ -159,7 +159,8 @@ html[lang="ro-ro"] p.lang a[lang="ro-ro"],
 html[lang="it"]    p.lang a[lang="it"],
 html[lang="nl"]    p.lang a[lang="nl"],
 html[lang="sr"]    p.lang a[lang="sr"],
-html[lang="he"] p.lang a[lang="he"] {
+html[lang="he"] p.lang a[lang="he"],
+html[lang="ja"] p.lang a[lang="ja"] {
   display : none;
 }
 
@@ -189,8 +190,8 @@ b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-orig
 #header h2 { font-size: 1.5em; margin-bottom: 1.5em; }
 h2 + p { font-size: 14px; } 
 
-#header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px dotted #1e2322; padding-right: 1%; opacity: 0.4; transition: all 0.2;}
-#header p.lang:hover, .notenglish #header p.lang { opacity: 1; font-size: 17px; }
+#header p.lang { font-size: 0.8em; text-align: center; border-top: 2px dotted #1e2322; }
+.notenglish #header p.lang { font-size: 1.2em; }
 #container[dir="rtl"] #header p.lang { padding-left: 1%; text-align: left; padding-right: 0; }
 
 /* BUTTONS */                                               
