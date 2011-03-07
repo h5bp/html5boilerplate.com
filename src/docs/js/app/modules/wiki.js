@@ -208,6 +208,7 @@
 
               // First thing first deal with headings and add proper data-wiki-hdr attribute
               hdr.each($.proxy(this.addHdrAttr, this));
+              hdr.each($.proxy(this.addPermalinks, this));
               
               if(!t || !hdr.length) {
                 return;
@@ -222,6 +223,13 @@
               this.scroller.animate({scrollTop: h.offset().top}, 0);
             },
             
+            addPermalinks: function(i, header) {
+              var t = $(header),
+              hdr  = t.attr('data-wiki-hdr');
+            
+              $('<span class="octothorpe"><a href="#' + this.file + '★' + hdr + '">#</a></span>').appendTo(t);
+            },
+                        
             addHdrAttr: function(i, header) {
               var t = $(header),
               text = t.text(),
