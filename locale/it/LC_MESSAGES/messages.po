@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-06 18:26-0800\n"
+"POT-Creation-Date: 2011-03-06 18:55-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Giulia Alfonsi <electric.g@gmail.com>\n"
 "Language-Team: \n"
+"Language: Italiano\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: Italiano\n"
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
@@ -67,7 +67,6 @@ msgstr ""
 "per un sito veloce, robusto e garantito per il futuro."
 
 #: src/index.html:48
-#, fuzzy
 msgid ""
 "After more than two years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "

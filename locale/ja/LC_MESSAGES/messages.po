@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-06 18:27-0800\n"
+"POT-Creation-Date: 2011-03-06 18:55-0800\n"
 "PO-Revision-Date: 2011-02-25 00:06-0900\n"
 "Last-Translator: Yuya Saito <cssradar@gmail.com>\n"
 "Language-Team: Japanese <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: src/404.html:2 standard input:17
 msgid "Not found"
@@ -67,7 +67,6 @@ msgstr ""
 "ショナルな連中のための基本HTML/CSS/JSテンプレート"
 
 #: src/index.html:48
-#, fuzzy
 msgid ""
 "After more than two years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "
