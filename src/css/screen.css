@@ -216,6 +216,8 @@ h2 + p { font-size: 14px; }
 
 .no-svg #html5logo { display:none; }
 
+code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-border-radius: 3px; padding: 0 2px; }
+
 #body ul { font-size: 0.9em; text-align: left; }  
 #body em { margin-right: 0.2em; }
 #body em, #body h3, #disqus_thread h3 { font-size: 2em; line-height: 1.2; }
