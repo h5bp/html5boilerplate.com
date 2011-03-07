@@ -1,0 +1,11 @@
+
+
+
+# due to the script loading and the XHRing i'd rather not cache anything in /docs
+
+<IfModule mod_expires.c>
+
+  ExpiresActive on
+  ExpiresDefault  "access plus 0 seconds"
+
+</IfModule>
