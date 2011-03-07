@@ -1,25 +1,6 @@
-/* {% blocktrans %}Author:{% endblocktrans %}
+/* Author: 
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
