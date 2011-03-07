@@ -206,7 +206,7 @@ msgstr "¿Por qué es tan increíble?"
 
 #: src/index.html:86
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Compatibilidad entre navegadores (lo conseguimos, IE6)"
+msgstr "Compatibilidad entre navegadores (incluyendo IE6)"
 
 #: src/index.html:87
 msgid "HTML5 ready. Use the new tags with certainty."
@@ -240,7 +240,7 @@ msgstr ""
 #: src/index.html:93
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr ""
-"Prácticas clases .no.js y .js para dar estilos basados en la capacidad del "
+"Prácticas clases .no-js y .js para dar estilos basados en la capacidad del "
 "navegador"
 
 #: src/index.html:94
@@ -257,15 +257,15 @@ msgstr "¿Por qué es aún más impresionante?"
 
 #: src/index.html:99
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Medir el rendimiento de Javascript&hellip; en IE6 e IE7? Claro, no hay problema."
 
 #: src/index.html:100
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
+msgstr "Ocultado de console.log para que no falle en ningún lado por error."
 
 #: src/index.html:101
 msgid "Never go wrong with your doctype or markup!"
-msgstr "Nunca fallaras con tu doctype o la escritura de marcas!"
+msgstr "Nunca fallaras con tu doctype o el marcado!"
 
 #: src/index.html:102
 msgid "An optimal print stylesheet, performance optimized."
@@ -273,17 +273,17 @@ msgstr "Perfeca hoja de estilo para impresión, optimizada para la velocidad"
 
 #: src/index.html:103
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr "Lenguaje de marcas y estructura CSS adaptables a iOS, Android, Opera Mobile."
+msgstr "Marcado y estructura CSS adaptables a iOS, Android, Opera Mobile."
 
 #: src/index.html:104
 msgid "IE6 pngfix baked in."
-msgstr "Ajuste pngfix para IE6 construido en el interno."
+msgstr "Ajuste pngfix para IE6 incluído."
 
 #: src/index.html:105
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
-"Clases .clearfix, .visuallyhidden para diseñar con sabiduria y accesibilidad"
+"Clases .clearfix, .visuallyhidden para diseñar con sabiduría y accesibilidad"
 
 #: src/index.html:106
 msgid ""
@@ -300,7 +300,7 @@ msgstr "Alojamiento CDN de jQuery con sistema de anticaidas locales."
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
-"Piesnsas que no es para tanto? El HTML5 Boilerplate se borra con un botón. :)"
+"Piensas que no es para tanto? En HTML5 Boilerplate puedes borrar lo que no te guste. :)"
 
 #: src/index.html:111
 msgid "Walk through it with me, now"
@@ -340,7 +340,7 @@ msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
 msgstr ""
-"Usa el script construido, pon la caducidad a un año y entrega un "
+"Usa el script de construcción (build), pon la caducidad a un año y entrega un "
 "sitio super rápido"
 
 #: src/index.html:122
@@ -348,7 +348,7 @@ msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
 msgstr ""
-"Has pensado que <a href=\"http://css3please.com\">CSS3please.com</a> te puede "
+"Ten en cuenta <a href=\"http://css3please.com\">CSS3please.com</a>, te puede "
 "ayudar a escribir CSS3"
 
 #: src/index.html:123
@@ -361,7 +361,7 @@ msgid ""
 msgstr ""
 " \n"
 "            <a href=\"http://css3pie.com/\">css3pie.com</a> y todos los "
-"demas <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
+"demás <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
 
