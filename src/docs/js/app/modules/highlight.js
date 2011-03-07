@@ -46,7 +46,7 @@ function(base) {
             $.each(codes, function(i, code) {
                 var t = $(code),
                 html = t.html(),
-                elem = $('<textarea>').addClass('brush:' + self.resolveLang(html))
+                elem = $('<textarea>').addClass('brush:' + t.data('language'))
                 .html(html)
                 .css('visibility', 'hidden')
                 .insertBefore(t.closest('pre'));

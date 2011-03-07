@@ -38,6 +38,10 @@
 .wikiconvertor #footer p:last-child{font-size:1em !important;margin-top:2em;position:absolute;right:1em;}
 .wikiconvertor #footer{position:inherit;}
 
+/** special care of syntax highlight **/
+.wikiconvertor .syntaxhighlighter { overflow: auto; }
+.wikiconvertor .syntaxhighlighter .lines { width: auto !important; }
+
 /** wikistyle,credits to github guys. **/
 .wikistyle h1,.wikistyle h2,.wikistyle h3,.wikistyle h4,.wikistyle h5,.wikistyle h6{border:0 !important;}
 .wikistyle h1{font-size:170% !important;border-top:4px solid #aaa !important;padding-top:.5em !important;margin-top:1.5em !important;}

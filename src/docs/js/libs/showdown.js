@@ -874,6 +874,21 @@ define(function() {
 
   	// attacklab: sentinel workarounds for lack of \A and \Z, safari\khtml bug
   	text += "~0";
+  	
+  	// h5b: wiki-specific syntax, needed prior classic code block
+    text = text.replace(/```(\w+)([^`]+)```/g, function(whole, language, code){
+        var codeblock = code;
+  	    
+        codeblock = _EncodeCode(codeblock);
+		codeblock = _Detab(codeblock);
+		codeblock = codeblock.replace(/^\n+/g,""); // trim leading newlines
+		codeblock = codeblock.replace(/\n+$/g,""); // trim trailing whitespace
+
+		codeblock = "<pre><code data-language=" + language + ">" + codeblock + "\n</code></pre>";
+
+		return hashBlock(codeblock);
+  	});
+
 
   	text = text.replace(/(?:\n\n|^)((?:(?:[ ]{4}|\t).*\n+)+)(\n*[ ]{0,3}[^ \t\n]|(?=~0))/g,
   		function(wholeMatch,m1,m2) {

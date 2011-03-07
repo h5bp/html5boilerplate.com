@@ -190,7 +190,7 @@
                 .append(link);
             },
 
-            render: function(response) {              
+            render: function(response) {      
               var md = convertor.makeHtml(escapeWikiAnchors.call(this, response));
                             
               this.main.html(md.replace(/<h1>[\w|\s|<|>|(|)|\/]+<\/h1>/, ''));

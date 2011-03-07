@@ -10467,3 +10467,7 @@ SyntaxHighlighter.brushes.Xml.aliases = ["xml", "xhtml", "xslt", "html", "xhtml"
 	// CommonS
 	typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
 })();
+
+SyntaxHighlighter.brushes.Plain = function(){};
+SyntaxHighlighter.brushes.Plain.prototype = new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.Plain.aliases = ['plain', 'text', 'nginx', 'undefined'];
