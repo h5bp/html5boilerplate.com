@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/index.html:11
 msgid "A rock-solid default template for HTML5 awesome."
-msgstr "Una plantilla solida como una roca para el fantástico HTML5"
+msgstr "Una plantilla solida como una roca para el fantástico HTML5."
 
 #: src/index.html:32
 msgid "Now offered in:"
@@ -57,7 +57,7 @@ msgstr "Ahora ofrecido en:"
 
 #: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
-msgstr "Una base solida como una roca para HTML5"
+msgstr "Una base solida como una roca para HTML5."
 
 #: src/index.html:44
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 "rendimiento e incluso características opcionales como cross-domain Ajax y "
 "Flash. Se proporciona un modelo de fichero .htaccess que configura las "
 "reglas de caché y prepara tu sitio para servir video HTML5, usar @font-face "
-"y proparar gzip."
+"y transmitir usando gzip."
 
 #: src/index.html:46
 msgid ""
@@ -95,7 +95,7 @@ msgstr ""
 
 #: src/index.html:50
 msgid "Want to dive in?"
-msgstr "¿Quiéres saber más?"
+msgstr "¿Quieres saber más?"
 
 #: src/index.html:51
 msgid "Download Boilerplate {{ version }}"
@@ -143,7 +143,7 @@ msgid ""
 "too thin."
 msgstr ""
 "Eliminado <code>-webkit-font-smoothing: antialiased;</code> hace que la "
-"fuentemonospace se vea demasiado delgada."
+"fuente monospace se vea demasiado delgada."
 
 #: src/index.html:74
 msgid ""
