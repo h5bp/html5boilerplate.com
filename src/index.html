@@ -69,7 +69,7 @@
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
       
-      <img id=html5logo src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
+     
      <div id="rc10" class="update"> 
        <h3>HTML5 Boilerplate 1.0 Release Candidate</h3>
        <p><strong>March 7th, 2011 - </strong> We're very happy to bring you the latest and greatest work that the h5bp community has been working on. Pending no dire issues, this will be the real 1.0 release. That'll arrive soon, along with beautiful documentation, more videos, and a much prettier list of changes and updates than what's below. :)
@@ -324,6 +324,9 @@
       <a href="#dsq-content">{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}</a> 
     </div>
   </div>
+  
+  <img id=html5logo src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
+   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
   <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js"></script>
@@ -360,7 +363,8 @@
 
     jQuery('a[href=#disqus_thread]').smoothScrollTo();
 
-    if (location.hash.replace('#','')){
+    // !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
+    if (~location.hash.replace('#','').indexOf('comment')){
       jQuery('#disqus_thread').show();
     }
 
