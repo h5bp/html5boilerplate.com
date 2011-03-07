@@ -37,7 +37,7 @@
 .wikiconvertor span.frown{transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);display:inline-block;font-size:10em;margin-top:0.4em;}
 .wikiconvertor #footer{clear:both;}
 .wikiconvertor #footer .focus{font-size:1.5em !important;margin-right:1em;}
-.wikiconvertor #footer p:last-child{font-size:0.6em !important;margin-top:2em;position:absolute;right:1em;}
+.wikiconvertor #footer p:last-child{font-size:1em !important;margin-top:2em;position:absolute;right:1em;}
 .wikiconvertor #footer{position:inherit;}
 
 /** wikistyle,credits to github guys. **/
