@@ -242,7 +242,8 @@ code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-bor
 
 #html5logo { display: inline-block; margin-top: 1em; }
 #rc10 { display: none; }
-#rc10:target { display: block; }
+#rc10:target { display: block; } 
+#rc10 li { border-color: #313A38; }
 a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 #footer { position: relative; text-align: center; padding: 1em 0; }
