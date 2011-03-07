@@ -215,6 +215,8 @@ h2 + p { font-size: 14px; }
 
 .no-svg #html5logo { display:none; }
 
+.update { background-color: hsla(193, 23%, 36%, 0.5); width: 45em; margin: 0 auto; padding: .5em 0; border-radius: 4px; margin-top: .7em; }
+
 code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-border-radius: 3px; padding: 0 2px; }
 
 #body ul { font-size: 0.9em; text-align: left; }  
