@@ -71,7 +71,7 @@ msgid ""
 " and preps your site to serve HTML5 video, use @font-face, and get your gzip"
 " zipple on."
 msgstr ""
-"2年以上に渡る開発の中から生み出されたベストの中のベストプラクティスがここにはあるクロスブラウザのノーマライズ、パフォーマンス最適化、AjaxとFlashのcrossdomainのおまけ付き。Apache用.htaccess設定ファイルはキャッシュのルールがすでに書かれている上、HTML5ビデオ"
+"2年以上に渡る開発の中から生み出されたベストの中のベストプラクティスがここにはある。クロスブラウザのノーマライズ、パフォーマンス最適化、AjaxとFlashのcrossdomainのおまけ付き。Apache用.htaccess設定ファイルはキャッシュのルールがすでに書かれている上、HTML5ビデオ"
 "、@font-faceの準備も万端。gzipすらzipするのを待っている。"
 
 #: src/index.html:37
