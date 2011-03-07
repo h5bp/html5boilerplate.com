@@ -285,8 +285,14 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 /** Wiki **/
 .wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
-.wikiconvertor #header h2{font-size:1.5em;margin-bottom:1.5em;font-weight:bolder;text-transform:none;}
-.wikiconvertor #header h2 a{font-size:0.6em;color #E16734;}
+.wikiconvertor #body, .wikiconvertor #header h2{margin:1em auto 0.5em;width:78%;}
+
+.wikiconvertor #header h2{font-size:1.5em;margin-bottom:1.5em;font-weight:bolder;text-transform:none;
+  box-shadow: 1px 1px 0px black, 2px 2px 0px hsl(193, 23%, 36%), 3px 3px 0px hsl(193, 23%, 36%), 4px 4px 0px hsl(193, 23%, 36%), 5px 5px 0px hsl(193, 23%, 36%), 6px 6px 0px hsl(193, 23%, 36%), 7px 7px 0px hsl(193, 23%, 36%);
+  padding: 5px;
+}
+
+.wikiconvertor #header h2 a{font-size:0.6em;color #E16734;float:right; display: inline-block;}
 .wikiconvertor #header h2 span{margin:0 1em;}
 .wikiconvertor #header h2 a,#header h2 a:active,a:visited{color:#E16734;}
 .wikiconvertor #body h1,.wikiconvertor #body h2,.wikiconvertor #body h3,.wikiconvertor #body h4,.wikiconvertor #body h5,.wikiconvertor #body h6,.wikiconvertor .insolent,#footer em{text-align:center;font-family:"InsolentRegular",Arial,sans-serif;text-shadow:1px 1px 0px black,2px 2px 0px #476871,3px 3px 0px #476871,4px 4px 0px #476871,5px 5px 0px #476871,6px 6px 0px #476871,7px 7px 0px #476871;}
@@ -296,14 +302,15 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 .wikiconvertor .wikistyle h4{font-size:1.5em !important;}
 .wikiconvertor .wikistyle h5{font-size:1.3em !important;}
 .wikiconvertor .wikistyle h6{font-size:1.1em !important;}
-.wikiconvertor #body{margin:1em auto 0.5em;width:78%;line-height:1.4;padding:0;text-align:left;}
+.wikiconvertor #body{line-height:1.4;padding:0;text-align:left;}
+
 .wikiconvertor #body li{width:auto;}
 .wikiconvertor #body li:after{border-bottom:none;}
 .wikiconvertor .wikiconvertor-pages{float:left;width:15em;font-size:0.8em;margin:0 2em 0 -2em;}
 .wikiconvertor .wikiconvertor-pages li{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;}
 .wikiconvertor .wikiconvertor-pages .wikiconvertor-pages-active{margin-left:-1em !important;color:#E16734;}
 .wikiconvertor .wikiconvertor-content{padding-left:12em;font-size:0.9em;}
-.wikiconvertor #body .wikiconvertor-pages li a{color:#E3D7BF;}
+.wikiconvertor #body .wikiconvertor-pages li a{color:#E3D7BF;padding: 5px 0;}
 .wikiconvertor #body .wikiconvertor-pages li a:hover{color:#E16734;}
 .wikiconvertor em{font-size:1em !important;text-shadow:none;font-family:sans-serif;}
 .wikiconvertor #body p{font-size:1em;}

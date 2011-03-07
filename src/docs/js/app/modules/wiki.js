@@ -87,7 +87,7 @@
 
             $.each(files, function(i, file) {
               file = file.replace(/.md/, '');
-              tmp += pageItemTmpl.replace(/\${url}/, '#' + file).replace(/\${text}/, file);
+              tmp += pageItemTmpl.replace(/\${url}/, '#' + file).replace(/\${text}/, file.replace(/-/g,' '));
             });
 
             holder.append(tmp);
@@ -179,7 +179,7 @@
 
             updateTitle: function() {
               var file = this.file.replace(/.md/, '').replace(/-/g, ' '),
-              star = '<span>&#x2605;</span>',
+              star = '<!--<span>&#x2605;</span>-->',
               link = '<a href="{url}">Edit this page</a>'
                 .replace(/{url}/, config.wikiUrl + this.file + '/_edit');
                 
