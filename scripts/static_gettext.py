@@ -22,7 +22,7 @@ import re, os, sys
 from optparse import OptionParser
 from subprocess import PIPE, Popen
 from gettext import translation
-from itertools import dropwhile, izip_longest
+from itertools import dropwhile
 import codecs, warnings
 from shutil import copyfile
 
