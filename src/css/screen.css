@@ -226,13 +226,11 @@ h2 + p { font-size: 14px; }
 #body p, p.lang { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; font-size: 0.9em; }                 
 #body p.social, p.lang { padding-bottom: 0; }
 #body embed { margin-bottom: 0.5em; }
-#body li { line-height: 2; width: 42em; }
+#body li { line-height: 1.5; width: 42em; padding: 0.25em 1em; border-bottom: 2px dotted #1e2322; }
+#body li:last-child { border-bottom: 0; }
 #container[dir="rtl"] #body li { text-align: right; }
 #body li:before { content: "★"; padding-right: 0.5em; }
 #container[dir="rtl"] #body li:before { padding-left: 0.5em; }
-#body li:after {  border-bottom: 2px dotted #1e2322; position: absolute; width: 100%; content: ""; left: 0; }            
-
-#body li:first-child:after { border-bottom: 0; }
 
 #html5logo { display: inline-block; margin-top: 1em; }
 #rc10 { display: none; }
