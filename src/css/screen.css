@@ -125,21 +125,21 @@ button {  width: auto; overflow: visible; }
   clip: rect(1px, 1px, 1px, 1px); }
   
 .clearfix:before, .clearfix:after {
-  content: "\0020"; display: block; height: 0; visibility: hidden;	
+  content: "\0020"; display: block; height: 0; overflow: hidden;	
 } 
 
 .clearfix:after { clear: both; }
-
 .clearfix { zoom: 1; }         
  
 h1, h2, h3, h4, h5 { font-weight: normal; text-transform: uppercase; }
-
-@font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
-@font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
+       
+@font-face {
+	font-family: 'MolotRegular'; src: url('../assets/Molot.eot'); src: url('../assets/Molot.eot?iefix') format('eot'), url('../assets/Molot.woff') format('woff'), url('../assets/Molot.ttf')  format('truetype'), url('../assets/Molot.svg#webfontD7S5Wv86') format('svg'); }
 
 /* Hebrew */
-@font-face {	font-family: 'AharoniCLMBold';	src: url('../assets/aharoniclm-bold-webfont.eot');	src: local('☺'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf') format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); 	font-weight: normal;	font-style: normal; }
-
+@font-face {
+	font-family: 'AharoniCLMBold'; src: url('../assets/aharoniclm-bold-webfont.eot'); src: url('../assets/aharoniclm-bold-webfont.eot?iefix') format('eot'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf')  format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); } 
+	
 
 h1, em, #body h3, #disqus_thread h3, h4,
 .wikiconvertor h2 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
