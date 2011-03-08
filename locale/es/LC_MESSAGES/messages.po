@@ -60,7 +60,8 @@ msgstr "Una plantilla solida como una roca para HTML5, alucinante."
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
-msgstr "HTML5 Boilerplate es la plantilla base HTML/CSS/JS profesional perfecta para" un sitio rápido, robusto y duradero."
+msgstr "HTML5 Boilerplate es la plantilla base HTML/CSS/JS profesional "
+"perfecta para un sitio rápido, robusto y duradero."
 
 #: src/index.html:45
 msgid ""
@@ -75,7 +76,7 @@ msgstr "Tras más de dos años de desarollo constante, obtén la mejor de las me
 "opciones opcionales como multi-dominio Ajax y Flash. Un fichero inicial de "
 "configuración apache .htaccess que te evita el esfuerzo de modificar las normas y "
 "preferencias de tu sitio web para servir video HTML5, utilizar @font-face e incluso "
-"obtener tus gzip comprimidos."
+"servir tus gzip comprimidos."
 
 
 #: src/index.html:46
@@ -83,7 +84,7 @@ msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
-msgstr "Boilerplate no es un framework, ni prescribe una filosofía concreta "
+msgstr "Boilerplate no es un framework, ni difunde una filosofía concreta "
 "de desarrollo, simplemente muestra algunos trucos para hacer que tu proyecto "
 "despegue rápidamente con buen pié."
 
