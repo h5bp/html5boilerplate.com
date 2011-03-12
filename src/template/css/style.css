@@ -1,10 +1,10 @@
 /**
  * HTML5 ✰ Boilerplate
  *
- * style.css contains a reset, font normalization and some base styles.
+ * {% blocktrans %}style.css contains a reset, font normalization and some base styles.{% endblocktrans %}
  *
- * Credit is left where credit is due.
- * Much inspiration was taken from these projects:
+ * {% blocktrans %}Credit is left where credit is due.{% endblocktrans %}
+ * {% blocktrans %}Much inspiration was taken from these projects:{% endblocktrans %}
  * - yui.yahooapis.com/2.8.1/build/base/base.css
  * - camendesign.com/design/
  * - praegnanz.de/weblog/htmlcssjs-kickstart
@@ -12,8 +12,8 @@
 
 
 /**
- * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
- * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * {% blocktrans %}html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline){% endblocktrans %}
+ * {% blocktrans %}v1.6.1 2010-09-17 | Authors:{% endblocktrans %} Eric Meyer & Richard Clark
  * html5doctor.com/html-5-reset-stylesheet/
  */
 
@@ -60,31 +60,31 @@ input, select { vertical-align: middle; }
 
 
 /**
- * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ * {% blocktrans %}Font normalization inspired by YUI Library's fonts.css:{% endblocktrans %} developer.yahoo.com/yui/
  */
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+body { font:13px/1.231 sans-serif; *font-size:small; } /* {% blocktrans %}Hack retained to preserve specificity{% endblocktrans %} */
 select, input, textarea, button { font:99% sans-serif; }
 
-/* Normalize monospace sizing:
+/* {% blocktrans %}Normalize monospace sizing:{% endblocktrans %}
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 /**
- * Minimal base styles.
+ * {% blocktrans %}Minimal base styles.{% endblocktrans %}
  */
 
-/* Always force a scrollbar in non-IE */
+/* {% blocktrans %}Always force a scrollbar in non-IE{% endblocktrans %} */
 html { overflow-y: scroll; }
 
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* {% blocktrans %}Accessible focus treatment:{% endblocktrans %} people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
 ul, ol { margin-left: 2em; }
 ol { list-style-type: decimal; }
 
-/* Remove margins for navigation lists */
+/* {% blocktrans %}Remove margins for navigation lists{% endblocktrans %} */
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 
 small { font-size: 85%; }
@@ -92,7 +92,7 @@ strong, th { font-weight: bold; }
 
 td { vertical-align: top; }
 
-/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+/* {% blocktrans %}Set sub, sup without affecting line-height:{% endblocktrans %} gist.github.com/413930 */
 sub, sup { font-size: 75%; line-height: 0; position: relative; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
@@ -107,19 +107,19 @@ textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-tex
 
 .ie6 legend, .ie7 legend { margin-left: -7px; } 
 
-/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+/* {% blocktrans %}Align checkboxes, radios, text inputs with their label by: Thierry Koblentz{% endblocktrans %} tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
 .ie6 input { vertical-align: text-bottom; }
 
-/* Hand cursor on clickable input elements */
+/* {% blocktrans %}Hand cursor on clickable input elements{% endblocktrans %} */
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
 
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
+/* {% blocktrans %}Webkit browsers add a 2px margin outside the chrome of form elements{% endblocktrans %} */
 button, input, select, textarea { margin: 0; }
 
-/* Colors for form validity */
+/* {% blocktrans %}Colors for form validity{% endblocktrans %} */
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid {
    border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
@@ -127,35 +127,35 @@ input:invalid, textarea:invalid {
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
-/* These selection declarations have to be separate
-   No text-shadow: twitter.com/miketaylr/status/12228805301
-   Also: hot pink! */
+/* {% blocktrans %}These selection declarations have to be separate{% endblocktrans %}
+   {% blocktrans %}No text-shadow:{% endblocktrans %} twitter.com/miketaylr/status/12228805301
+   {% blocktrans %}Also: hot pink!{% endblocktrans %} */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
 
-/* Make buttons play nice in IE:
+/* {% blocktrans %}Make buttons play nice in IE:{% endblocktrans %}
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
 
-/* Bicubic resizing for non-native sized IMG:
+/* {% blocktrans %}Bicubic resizing for non-native sized IMG:{% endblocktrans %}
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 /**
- * You might tweak these..
+ * {% blocktrans %}You might tweak these..{% endblocktrans %}
  */
 
 body, select, input, textarea {
-  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  /* {% blocktrans %}#444 looks better than black:{% endblocktrans %} twitter.com/H_FJ/statuses/11800719859 */
   color: #444;
-  /* Set your base font here, to apply evenly */
+  /* {% blocktrans %}Set your base font here, to apply evenly{% endblocktrans %} */
   /* font-family: Georgia, serif;  */
 }
 
-/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+/* {% blocktrans %}Headers (h1, h2, etc) have no default font-size or margin; define those yourself{% endblocktrans %} */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 a, a:active, a:visited { color: #607890; }
@@ -163,9 +163,9 @@ a:hover { color: #036; }
 
 
 /**
- * Primary styles
+ * {% blocktrans %}Primary styles{% endblocktrans %}
  *
- * Author: 
+ * {% blocktrans %}Author:{% endblocktrans %}
  */
 
 
@@ -184,73 +184,73 @@ a:hover { color: #036; }
 
 
 /**
- * Non-semantic helper classes: please define your styles before this section.
+ * {% blocktrans %}Non-semantic helper classes: please define your styles before this section.{% endblocktrans %}
  */
 
-/* For image replacement */
+/* {% blocktrans %}For image replacement{% endblocktrans %} */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
-/* Hide for both screenreaders and browsers:
+/* {% blocktrans %}Hide for both screenreaders and browsers:{% endblocktrans %}
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display: none; visibility: hidden; }
 
-/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+/* {% blocktrans %}Hide only visually, but have it available for screenreaders: by Jon Neal.{% endblocktrans %}
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* {% blocktrans %}Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard:{% endblocktrans %} drupal.org/node/897638 */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
-/* Hide visually and from screenreaders, but maintain layout */
+/* {% blocktrans %}Hide visually and from screenreaders, but maintain layout{% endblocktrans %} */
 .invisible { visibility: hidden; }
 
-/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+/* {% blocktrans %}The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.{% endblocktrans %}
    j.mp/bestclearfix */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
-/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+/* {% blocktrans %}Fix clearfix:{% endblocktrans %} blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
 .clearfix { zoom: 1; }
 
 
 
 /**
- * Media queries for responsive design.
+ * {% blocktrans %}Media queries for responsive design.{% endblocktrans %}
  *
- * These follow after primary styles so they will successfully override.
+ * {% blocktrans %}These follow after primary styles so they will successfully override.{% endblocktrans %}
  */
 
 @media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
+  /* {% blocktrans %}Style adjustments for portrait mode goes here{% endblocktrans %} */
 
 }
 
 @media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
+  /* {% blocktrans %}Style adjustments for landscape mode goes here{% endblocktrans %} */
 
 }
 
-/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/* {% blocktrans %}Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome){% endblocktrans %}
+   {% blocktrans %}consider this:{% endblocktrans %} www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
 
 
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
+  /* {% blocktrans %}Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you:{% endblocktrans %} j.mp/textsizeadjust */
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
 
 /**
- * Print styles.
+ * {% blocktrans %}Print styles.{% endblocktrans %}
  *
- * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * {% blocktrans %}Inlined to avoid required HTTP connection:{% endblocktrans %} www.phpied.com/delay-loading-your-print-css/
  */
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  -ms-filter: none !important; } /* {% blocktrans %}Black prints faster:{% endblocktrans %} sanbeiji.com/archives/953 */
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* {% blocktrans %}Don't show links for images, or javascript/internal links{% endblocktrans %} */
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
   tr, img { page-break-inside: avoid; }

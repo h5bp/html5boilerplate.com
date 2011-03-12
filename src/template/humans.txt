@@ -1,17 +1,17 @@
-/* the humans responsible & colophon */
+/* {% blocktrans %}the humans responsible & colophon{% endblocktrans %} */
 /* humanstxt.org */
 
 
-/* TEAM */
+/* {% blocktrans %}TEAM{% endblocktrans %} */
   <your title>: <your name>
   Site: 
   Twitter: 
   Location: 
 
-/* THANKS */
+/* {% blocktrans %}THANKS{% endblocktrans %} */
   Names (& URL): 
 
-/* SITE */
+/* {% blocktrans %}SITE{% endblocktrans %} */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
   Software:
