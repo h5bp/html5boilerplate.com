@@ -42,8 +42,8 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
-"<a href=\"http://disqus.com/?ref_noscript=boilerplate\">Disqusのコメントは</"
-"a>JavaScriptを有効にすると閲覧できます"
+"<a href=\"http://disqus.com/?ref_noscript=boilerplate\">Disqusのコメントは</a>"
+"JavaScriptを有効にすると閲覧できます。"
 
 #: src/index.html:11
 msgid "A rock-solid default template for HTML5 awesome."
@@ -51,12 +51,11 @@ msgstr "A rock-solid default template for HTML5 awesome."
 
 #: src/index.html:32
 msgid "Now offered in:"
-msgstr ""
+msgstr "Now offered in:"
 
 #: src/index.html:46
-#, fuzzy
 msgid "A rock-solid default for HTML5 awesome."
-msgstr "A rock-solid default template for HTML5 awesome."
+msgstr "A rock-solid default for HTML5 awesome."
 
 #: src/index.html:47
 msgid ""
@@ -139,58 +138,65 @@ msgid ""
 "Removed <code>-webkit-font-smoothing: antialiased;</code> it makes monospace "
 "too thin."
 msgstr ""
+"monospaceフォントが細くなりすぎるので、"
+"<code>-webkit-font-smoothing: antialiased;</code>を削除。"
 
 #: src/index.html:77
 msgid ""
 "IE conditional classes have moved from the <code>&lt;body&gt;</code> tag to "
 "the <code>&lt;html&gt;</code> tag."
 msgstr ""
+"IEコンディショナルクラスは<code>&lt;body&gt;</code>から"
+" <code>&lt;html&gt;</code>に移動。"
 
 #: src/index.html:78
 msgid ""
 "Dropped <code>text-rendering: optimizeLegibility</code> as it breaks small-"
 "caps and looks odd on Linux machines."
 msgstr ""
+"スモールキャプに問題が出て、Linuxで見た目がおかしくなるため、"
+"<code>text-rendering: optimizeLegibility</code>を削除。"
 
 #: src/index.html:79
 msgid "Added a IE6 call for the minified <code>dd_belatedpng</code>."
 msgstr ""
+"IE6の透過PNG用<code>dd_belatedpng</code>の圧縮版を追加。"
 
 #: src/index.html:80
 msgid ""
 "Revised viewport declaration to allow user scaling and clear Webkit console "
 "errors."
 msgstr ""
+"ビューポートの宣言を改訂。ユーザによるフォントサイズの調整を可能にし、Webkitの"
+"コンソールエラーを回避。"
 
 #: src/index.html:81
 msgid "Updated Modernizr to 1.6."
-msgstr ""
+msgstr "Modernizrを1.6にアップデート"
 
 #: src/index.html:82
 msgid "Added <code>web.config</code> file for Microsoft IIS."
-msgstr ""
+msgstr "Microsoft IIS用<code>web.config</code>を追加"
 
 #: src/index.html:83
-#, fuzzy
 msgid ""
 "Beta release of the <a href=\"http://github.com/paulirish/html5-boilerplate/"
 "wiki/Build-script\">Build Script</a>."
 msgstr ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Make-it-better/"
-"\">もっともっと便利に使いやすく</a>するためには"
+"<a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Build-script\">"
+"ビルドスクリプト</a>のベータ版をリリース。"
 
 #: src/index.html:84
-#, fuzzy
 msgid ""
 "New project scaffolding <a href=\"http://github.com/paulirish/html5-"
 "boilerplate/wiki/createproject.sh\">bash script</a>."
 msgstr ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Make-it-better/"
-"\">もっともっと便利に使いやすく</a>するためには"
+"新規プロジェクトスキャッフォールドの<a href=\"http://github.com/paulirish/html5-"
+"boilerplate/wiki/createproject.sh\">bashスクリプト</a>"
 
 #: src/index.html:85
 msgid ".... and over 100 other fixes and improvements."
-msgstr ""
+msgstr ".... そして100以上の修正と改善。"
 
 #: src/index.html:90
 msgid "Why it is awesome"
@@ -233,7 +239,7 @@ msgstr "便利な .no-jsと.jsクラスをつかって機能に合わせたス�
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
-msgstr "ユニットテストをしたいけど、面倒？ 準備済みのテスト環境が待ってます"
+msgstr "ユニットテストをしたいけど、面倒？ 準備済みのテスト環境が待ってます。"
 
 #: src/index.html:103
 msgid "Why it is awesome-er"
@@ -257,8 +263,7 @@ msgstr "パフォーマンス最適化されたプリントスタイルシート
 
 #: src/index.html:109
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
-"iOS、アンドロイド、オペラモバイルに対応できるマークアップとCSSのスケルトン"
+msgstr "iOS、アンドロイド、オペラモバイルに対応できるマークアップとCSSのスケルトン"
 
 #: src/index.html:110
 msgid "IE6 pngfix baked in."
@@ -267,7 +272,8 @@ msgstr "IE6のPNGバグ修正つき"
 #: src/index.html:111
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
-msgstr ".clearfixや.visuallyhiddenクラスで賢くアクセシブルなスタイルを"
+msgstr ""
+".clearfixや.visuallyhiddenクラスで賢くアクセシブルなスタイルを"
 
 #: src/index.html:112
 msgid ""
@@ -283,7 +289,7 @@ msgstr "CDNでホストされたjQueryとローカルにもフェールセーフ
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
-"機能がたくさんありすぎる？ HTML5 Boilerplateはデリートキーと仲良し。 :)"
+"機能がたくさんありすぎる？ HTML5 Boilerplateはデリートキーと仲良し。:)"
 
 #: src/index.html:117
 msgid "Walk through it with me, now"
@@ -306,24 +312,22 @@ msgid "Mobile viewport optimized:"
 msgstr "モバイルビューポート最適化:"
 
 #: src/index.html:142
-#, fuzzy
 msgid ""
 "Place favicon.ico &amp; apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr "favicon.icoとapple-touch-icon.pngはドメインのルートに置くこと"
 
 #: src/index.html:147
-#, fuzzy
 msgid "CSS : implied media=&quot;all&quot;"
 msgstr "CSS : media=\"all\" と解釈される"
 
 #: src/index.html:150 src/template/index.html:31
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
-msgstr "より機能の少ないモバイルデバイス用に必要の場合はコメントをトル"
+msgstr ""
+"より機能の少ないモバイルデバイス用に必要の場合はコメントをトル"
 
 #: src/index.html:153
-#, fuzzy
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements &amp; feature detects"
@@ -336,7 +340,6 @@ msgid "Javascript at the bottom for fast page loading"
 msgstr "JavaScriptはページロード速度アップのため、ファイル下部に記述"
 
 #: src/index.html:177
-#, fuzzy
 msgid "Grab Google CDN&apos;s jQuery. fall back to local if necessary"
 msgstr "Google CDNのjQueryを利用、サーバダウン用にローカルファイルを読む"
 
@@ -349,9 +352,8 @@ msgid "end concatenated and minified scripts"
 msgstr "結合し圧縮したスクリプト終わり"
 
 #: src/index.html:190
-#, fuzzy
 msgid "fix any &lt;img&gt; or .png_bg background-images"
-msgstr "<img>と.png_bgクラスを与えた背景画像の修正"
+msgstr " &lt;img&gt;と.png_bgクラスを与えた背景画像の修正"
 
 #: src/index.html:193 src/template/index.html:74
 msgid "yui profiler and profileviewer - remove for production"
@@ -362,7 +364,6 @@ msgid "end profiling code"
 msgstr "プロファイルコード終わり"
 
 #: src/index.html:199
-#, fuzzy
 msgid ""
 "asynchronous google analytics: mathiasbynens.be/notes/async-analytics-"
 "snippet \n"
@@ -387,21 +388,19 @@ msgid "much inspiration was taken from these projects:"
 msgstr "インスピレーションは以下のプロジェクトから得た:"
 
 #: src/index.html:229
-#, fuzzy
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer&apos;s Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
-"html5doctor.comのリセットCSS (Eric MeyerのリセットCSS + HTML5 のベース)"
+"html5doctor.comのリセットCSS (Eric MeyerのリセットCSS + HTML5のベース)"
 
 #: src/index.html:230 src/template/css/style.css:15
 msgid "v1.4 2009-07-27 | Authors:"
 msgstr "v1.4 2009-07-27 | 制作者:"
 
 #: src/index.html:277
-#, fuzzy
 msgid "tables still need cellspacing=&quot;0&quot; in the markup"
-msgstr "tableはcellspacing=\"0\"とマークアップ内で記述する必要あり"
+msgstr "tableはcellspacing=&quot;0&quot;とマークアップ内で記述する必要あり"
 
 #: src/index.html:284 src/template/css/style.css:69
 msgid "END RESET CSS"
@@ -435,8 +434,7 @@ msgid ""
 "table font-size is reset in the HTML5 reset above so there is no need to "
 "repeat"
 msgstr ""
-"Table内のフォントサイズは上記のHTML5リセットにて行われているため、繰り返さな"
-"い"
+"Table内のフォントサイズは上記のHTML5リセットにて行われているため、繰り返さない"
 
 #: src/index.html:295 src/template/css/style.css:80
 msgid "hack retained to preserve specificity"
@@ -459,7 +457,6 @@ msgid "set your base font here, to apply evenly"
 msgstr "ベースフォントの設定"
 
 #: src/index.html:317
-#, fuzzy
 msgid ""
 "Headers (h1,h2,etc) have no default font-size or margin,\n"
 "   you&apos;ll want to define those yourself."
@@ -580,7 +577,6 @@ msgid "Consider this:"
 msgstr "右記も考慮する:"
 
 #: src/index.html:476
-#, fuzzy
 msgid ""
 "Uncomment if you don&apos;t want iOS and WinMobile to mobile-optimize the "
 "text for you"
@@ -597,7 +593,6 @@ msgid "inlined to avoid required HTTP connection"
 msgstr "余計なHTTP接続を避けるためインラインで記述"
 
 #: src/index.html:490
-#, fuzzy
 msgid "Don&apos;t show links for images"
 msgstr "画像用のリンクは隠す"
 
@@ -614,13 +609,12 @@ msgid "usage"
 msgstr "使い方"
 
 #: src/index.html:552 src/template/js/plugins.js:22
-#, fuzzy
 msgid "store logs to an array for reference"
 msgstr "ログを配列に保存"
 
 #: src/index.html:561 src/template/js/plugins.js:31
 msgid "catch all document.write() calls"
-msgstr "document.write()の呼び出しを"
+msgstr "document.write()の呼び出しをキャッチする"
 
 #: src/index.html:579 src/template/crossdomain.xml:6
 msgid ""
@@ -664,7 +658,6 @@ msgstr ""
 "様々なケースでIE7モードに変更してしまうIE8にて最新のバージョンを強制する"
 
 #: src/index.html:622
-#, fuzzy
 msgid ""
 "Use ChromeFrame if it&apos;s installed for a better experience for the poor "
 "IE folk"
@@ -673,7 +666,6 @@ msgstr ""
 "する様にする"
 
 #: src/index.html:631
-#, fuzzy
 msgid ""
 "\n"
 "# Because X-UA-Compatible isn&apos;t sent to non-IE (to save header bytes),\n"
@@ -686,7 +678,6 @@ msgstr ""
 "# "
 
 #: src/index.html:636
-#, fuzzy
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that&apos;s "
 "unncessary to declare"
@@ -699,7 +690,6 @@ msgid "Disabled. Uncomment to serve cross-domain ajax requests"
 msgstr "無効化中。クロスドメインでのajaxリクエストが必要であればコメントをトル"
 
 #: src/index.html:648
-#, fuzzy
 msgid ""
 "\n"
 "# allow access from all domains for webfonts\n"
@@ -731,7 +721,6 @@ msgid "assorted types"
 msgstr "他、様々なファイルタイプ"
 
 #: src/index.html:686
-#, fuzzy
 msgid ""
 "\n"
 "# allow concatenation from within specific js and css files\n"
@@ -749,8 +738,8 @@ msgstr ""
 "#\n"
 "# 例 script.combined.js というファイル内に\n"
 "#\n"
-"#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
-"#   <!--#include file=\"jquery.idletimer.js\" -->\n"
+"#   &lt;!--#include file=&quot;jquery-1.4.2.js&quot; --&gt;\n"
+"#   &lt;!--#include file=&quot;jquery.idletimer.js&quot; --&gt;\n"
 "#\n"
 "# とすることで、1つのファイルとしてそれぞれのJSファイルを呼び出せる\n"
 "# "
@@ -781,7 +770,6 @@ msgid "webfonts and svg:"
 msgstr "ウェブフォントとsvg"
 
 #: src/index.html:729
-#, fuzzy
 msgid ""
 "\n"
 "# these are pretty far-future expires headers\n"
@@ -797,14 +785,13 @@ msgstr ""
 "# この設定はキャッシュを無効化する以下のようなクエリパラメータ　\n"
 "# を利用していることを前提としています。 \n"
 "#\n"
-"#   <script src=\"application.js?20100608\">\n"
+"#    &lt;script src=&quot;application.js?20100608&quot;&gt;\n"
 "#\n"
 "# 加えて、古いプロキシがキャッシュできないことがあることも考慮しておくこ"
 "と。\n"
 "# "
 
 #: src/index.html:739
-#, fuzzy
 msgid ""
 "\n"
 "# if you don&apos;t use filenames to version, lower the css and js to "
@@ -813,8 +800,8 @@ msgid ""
 "# "
 msgstr ""
 "\n"
-"# ファイルネームをバージョン管理しない場合、CSSとJSについては、 # \"access "
-"plus 1 week\" のような設定をすること\n"
+"# ファイルネームをバージョン管理しない場合、CSSとJSについては、"
+"# &quot;access plus 1 week&quot;のような設定をすること\n"
 "# "
 
 #: src/index.html:748 src/template/htaccess.txt:137
@@ -852,7 +839,6 @@ msgid "css and javascript"
 msgstr "CSSとJavaScript"
 
 #: src/index.html:795
-#, fuzzy
 msgid ""
 "\n"
 "# Since we&apos;re sending far-future expires, we don&apos;t need ETags for\n"
@@ -896,7 +882,7 @@ msgstr "例"
 msgid ""
 "will have Apache block users from browsing folders without a default document"
 msgstr ""
-"Apacheにてデフォルトドキュメントのないフォルダを閲覧するのをブロックする。"
+"Apacheにてデフォルトドキュメントのないフォルダを閲覧するのをブロックする"
 
 #: src/index.html:832 src/template/htaccess.txt:221
 msgid "custom 404 page"
@@ -911,7 +897,6 @@ msgid "force utf-8 for a number of file formats"
 msgstr "uft-8を多くのファイルフォーマットで強制する"
 
 #: src/index.html:844
-#, fuzzy
 msgid "We don&apos;t need to tell everyone we&apos;re apache."
 msgstr "Apacheを利用している事を公表する必要はない"
 
@@ -921,7 +906,7 @@ msgstr "40分ちょうどで内幕を知ろう！"
 
 #: src/index.html:854
 msgid "Dig deeper in 60 minutes"
-msgstr ""
+msgstr "Dig deeper in 60 minutes"
 
 #: src/index.html:857
 msgid ""
@@ -965,7 +950,6 @@ msgstr ""
 "利なので是非、活用しよう"
 
 #: src/index.html:865
-#, fuzzy
 msgid ""
 " \n"
 "            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
@@ -973,10 +957,10 @@ msgid ""
 "browser-Polyfills\">HTML5 polyfills</a> \n"
 "            "
 msgstr ""
-"\n"
+" \n"
 "<a href=\"http://css3pie.com/\">css3pie.com</a>や<a href=\"http://github.com/"
-"Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a>"
-"を活用"
+"Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> を活用 \n"
+"           "
 
 #: src/index.html:868
 msgid ""
@@ -1013,7 +997,6 @@ msgstr ""
 "ルバーを消してしまおう"
 
 #: src/index.html:875
-#, fuzzy
 msgid ""
 "Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
 "tips\">CSS Spriting tips</a> or you could use <a href=\"http://www."
@@ -1102,7 +1085,6 @@ msgstr ""
 "事前に取得する</a>."
 
 #: src/index.html:887
-#, fuzzy
 msgid ""
 "Using border-radius with background color in Webkit? Try <a href=\"http://"
 "tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
@@ -1127,7 +1109,7 @@ msgid ""
 "markup</a>."
 msgstr ""
 "<a href=\"http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-"
-"dom-ready-execution/\">マークアップを元に</a>ページ専用JSを呼び出す"
+"dom-ready-execution/\">マークアップを元に</a>ページ専用JSを呼び出す。"
 
 #: src/index.html:890
 msgid ""
@@ -1135,17 +1117,16 @@ msgid ""
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
 "<a href=\"http://paulirish.com/2009/browser-specific-css-hacks/\">ブラウザ別"
-"CSSハック</a>を知っておこう"
+"CSSハック</a>を知っておこう。"
 
 #: src/index.html:891
-#, fuzzy
 msgid ""
 "Get your team hooked using the same <a href=\"http://na.isobar.com/standards/"
 "\">front-end coding standards and best practices.</a> \n"
 "            "
 msgstr ""
 "チーム全員で<a href=\"http://molecularvoices.molecular.com/standards/\">フロ"
-"ントエンドのコーディングスタンダードとベストプラクティス</a>を共有しよう \n"
+"ントエンドのコーディングスタンダードとベストプラクティス</a>を共有しよう。\n"
 "            "
 
 #: src/index.html:893
@@ -1158,7 +1139,7 @@ msgstr ""
 "<a href=\"http://microformats.org/wiki/Main_Page\">マイクロフォーマット</a>"
 "(<a href=\"http://microformats.org/wiki/microdata\">microdata</a>)を使って"
 "サーチエンジンでの<a href=\"http://googlewebmastercentral.blogspot."
-"com/2009/05/introducing-rich-snippets.html\">見え方</a>を最適化しよう"
+"com/2009/05/introducing-rich-snippets.html\">見え方</a>を最適化しよう。"
 
 #: src/index.html:894
 msgid ""
@@ -1175,7 +1156,7 @@ msgid ""
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Make-it-better/"
-"\">もっともっと便利に使いやすく</a>するためには"
+"\">もっともっと便利に使いやすく</a>するために。"
 
 #: src/index.html:901
 msgid "Brought to you by"
