@@ -1,0 +1,89 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Instigator: Paul Irish
+  Site: http://paulirish.com
+  Twitter: paul_irish
+  Location: Plaid shirt
+  
+  Troublemaker: Divya Manian
+  Site: http://nimbu.in
+  Twitter: nimbuin
+  Location: Where sun shines
+  
+  Doer: Shi Chuan
+  Site: http://blog.highub.com
+  Twitter: shichuan
+  Location: Uniquely Singapore
+  
+
+/* THANKS */
+  Names (& URL):
+  Mike West https://github.com/mikewest
+
+  Mickael Daniel https://github.com/mklabs
+
+  Anton Kovalyov https://github.com/antonkovalyov
+
+  Yuya Saito https://github.com/studiomohawk
+
+  https://github.com/laviperchik
+
+  https://github.com/nlogax
+
+  https://github.com/alrra
+
+  Milos Gavrilovic https://github.com/GaVrA
+
+  https://github.com/jorge-vitrubio
+
+  Niels Bom https://github.com/nielsbom
+
+  Mathias Bynens https://github.com/mathiasbynens
+
+  Shi Chuan https://github.com/shichuan
+
+  https://github.com/skill83
+
+  Adeel Ejaz https://github.com/adeelejaz
+
+  https://github.com/Zee-Julien
+
+  Ricardo Tomasi https://github.com/ricardobeat
+
+  https://github.com/lenzcom
+
+  Sean Caetano Martin https://github.com/xonecas
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
+  Source: https://github.com/nimbupani/html5boilerplate-site
+  
+
+                                    
+                               -o/-                       
+                               +oo//-                     
+                              :ooo+//:                    
+                             -ooooo///-                   
+                             /oooooo//:                   
+                            :ooooooo+//-                  
+                           -+oooooooo///-                 
+           -://////////////+oooooooooo++////////////::    
+            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-   
+                     -:+ooooooooooooooooo+:://////:--     
+                       /ooooooooooooooooo+//////:-        
+                      -ooooooooooooooooooo////-           
+                      /ooooooooo+oooooooooo//:            
+                     :ooooooo+/::/+oooooooo+//-           
+                    -oooooo/::///////+oooooo///-          
+                    /ooo+::://////:---:/+oooo//:          
+                   -o+/::///////:-      -:/+o+//-         
+                   :-:///////:-            -:/://         
+                     -////:-                 --//:        
+                       --                       -:        

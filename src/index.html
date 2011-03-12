@@ -2,18 +2,14 @@
 <!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  
   <title  dir="{{ LANGUAGE_DIRECTION }}">{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-
-  <link rel="shortcut icon" href="favicon.png" >
-  <link rel="apple-touch-icon" href="//html5boilerplate.com/apple-touch-icon.png"> 
 
   <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" >
   <link type="text/css" rel="stylesheet" media="screen" href="http://html5boilerplate.com/css/shCore.css" >
@@ -78,6 +74,7 @@
     			  <h4>Javascript</h4>
       			<a id="no-js" href="#">Nope</a>
       			<a id="no-jq" href="#">No jQuery</a>
+      			<a id="jqdev" href="#">jQuery</a>      			
       			<a id="default-js" class="selected" href="#">jQuery minified</a>
     			</div>			
     			<div id="shivs" class="clearfix">
@@ -214,9 +211,9 @@
     <div id="footer">
       <p>
         <em class="focus">{% blocktrans %}Brought to you by{% endblocktrans %}</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/images/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/images/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera, Open Web Vigilante{% endblocktrans %}</i></a>
-        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="//html5boilerplate.com/images/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>        
+        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/img/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/img/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera, Open Web Vigilante{% endblocktrans %}</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="//html5boilerplate.com/img/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>        
       </p> 
       <ul>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
@@ -262,7 +259,7 @@
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js?linkify"></script>
+  <script type="text/javascript" src="/js/plugins.js?linkify"></script>
 
   <script>
   
@@ -340,17 +337,13 @@
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   
+  
   <script>
-   var _gaq = [['_setAccount', 'UA-17904194-1'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
+    var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>  
 
 </body>
 </html>
