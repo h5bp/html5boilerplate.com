@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-13 02:52+0800\n"
+"POT-Creation-Date: 2011-03-13 03:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "from before October 26th 2010"
 msgstr ""
 
-#: src\commentarchive.html:38 src\index.html:1216
+#: src\commentarchive.html:38 src\index.html:1256
 msgid "Comments"
 msgstr ""
 
@@ -214,11 +214,9 @@ msgstr ""
 
 #: src\index.html:218
 msgid ""
-"Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame"
-msgstr ""
-
-#: src\index.html:219 src emplate\index.html:11
-msgid "Remove this if you use the .htaccess"
+"Always force latest IE rendering engine (even in intranet) &amp; Chrome "
+"Frame\n"
+"       Remove this if you use the .htaccess"
 msgstr ""
 
 #: src\index.html:226 src emplate\index.html:18
@@ -572,95 +570,93 @@ msgstr ""
 msgid "Webfont access"
 msgstr ""
 
-#: src\index.html:699 src emplate\htaccess.txt:63
-msgid "allow access from all domains for webfonts"
+#: src\index.html:699
+msgid ""
+"\n"
+"# allow access from all domains for webfonts\n"
+"# alternatively you could only whitelist\n"
+"# your subdomains like &quot;sub.domain.com&quot;\n"
+"# "
 msgstr ""
 
-#: src\index.html:700 src emplate\htaccess.txt:64
-msgid "alternatively you could only whitelist"
-msgstr ""
-
-#: src\index.html:701
-msgid "your subdomains like &quot;sub.domain.com&quot;"
-msgstr ""
-
-#: src\index.html:712 src emplate\htaccess.txt:76
+#: src\index.html:714 src emplate\htaccess.txt:78
 msgid "Proper MIME type for all files"
 msgstr ""
 
-#: src\index.html:723 src emplate\htaccess.txt:87
+#: src\index.html:725 src emplate\htaccess.txt:89
 msgid "Proper svg serving. Required for svg webfonts on iPad"
 msgstr ""
 
-#: src\index.html:728 standard input:855 src emplate\htaccess.txt:92 input:219
+#: src\index.html:730 standard input:867 src emplate\htaccess.txt:94 input:231
 msgid "webfonts"
 msgstr ""
 
-#: src\index.html:734 src emplate\htaccess.txt:98
+#: src\index.html:736 src emplate\htaccess.txt:100
 msgid "assorted types"
 msgstr ""
 
-#: src\index.html:746 src emplate\htaccess.txt:110
+#: src\index.html:748 src emplate\htaccess.txt:112
 msgid "Allow concatenation from within specific js and css files"
 msgstr ""
 
-#: src\index.html:749 src emplate\htaccess.txt:113
-msgid "e.g. Inside of script.combined.js you could have"
+#: src\index.html:751
+msgid ""
+"\n"
+"# allow concatenation from within specific js and css files\n"
+"#\n"
+"# e.g. Inside of script.combined.js you could have\n"
+"#\n"
+"#   &lt;!--#include file=&quot;jquery-1.4.2.js&quot; --&gt;\n"
+"#   &lt;!--#include file=&quot;jquery.idletimer.js&quot; --&gt;\n"
+"#\n"
+"# and they would be included into this single file\n"
+"# "
 msgstr ""
 
-#: src\index.html:752 src emplate\htaccess.txt:116
-msgid "and they would be included into this single file"
-msgstr ""
-
-#: src\index.html:754 src emplate\htaccess.txt:118
-msgid "this is not in use in the boilerplate as it stands. you may"
-msgstr ""
-
-#: src\index.html:755 src emplate\htaccess.txt:119
-msgid "choose to name your files in this way for this advantage"
-msgstr ""
-
-#: src\index.html:756 src emplate\htaccess.txt:120
-msgid "or concatenate and minify them manually."
-msgstr ""
-
-#: src\index.html:757 src emplate\htaccess.txt:121
-msgid "Disabled by default."
+#: src\index.html:762 src emplate\htaccess.txt:126
+msgid ""
+"\n"
+"# this is not in use in the boilerplate as it stands. you may\n"
+"# choose to name your files in this way for this advantage\n"
+"# or concatenate and minify them manually.\n"
+"# "
 msgstr ""
 
 #: src\index.html:767 src emplate\htaccess.txt:131
+msgid "Disabled by default."
+msgstr ""
+
+#: src\index.html:777 src emplate\htaccess.txt:141
 msgid "gzip compression"
 msgstr ""
 
-#: src\index.html:773 src emplate\htaccess.txt:137
+#: src\index.html:783 src emplate\htaccess.txt:147
 msgid "force deflate for mangled headers"
 msgstr ""
 
-#: src\index.html:790 src emplate\htaccess.txt:154
+#: src\index.html:800 src emplate\htaccess.txt:164
 msgid "Legacy versions of Apache"
 msgstr ""
 
-#: src\index.html:796 src emplate\htaccess.txt:160
+#: src\index.html:806 src emplate\htaccess.txt:170
 msgid "webfonts and svg:"
 msgstr ""
 
-#: src\index.html:805 src emplate\htaccess.txt:169
+#: src\index.html:815 src emplate\htaccess.txt:179
 msgid "Expires headers (for better cache control)"
 msgstr ""
 
-#: src\index.html:808 src emplate\htaccess.txt:172
-msgid "these are pretty far-future expires headers"
+#: src\index.html:818
+msgid ""
+"\n"
+"# these are pretty far-future expires headers\n"
+"# they assume you control versioning with cachebusting query params like\n"
+"#   &lt;script src=&quot;application.js?20100608&quot;&gt;\n"
+"# additionally, consider that outdated proxies may miscache\n"
+"# "
 msgstr ""
 
-#: src\index.html:809 src emplate\htaccess.txt:173
-msgid "they assume you control versioning with cachebusting query params like"
-msgstr ""
-
-#: src\index.html:811 src emplate\htaccess.txt:175
-msgid "additionally, consider that outdated proxies may miscache"
-msgstr ""
-
-#: src\index.html:814
+#: src\index.html:826
 msgid ""
 "\n"
 "# if you don&apos;t use filenames to version, lower the css and js to "
@@ -669,48 +665,48 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:822 src emplate\htaccess.txt:186
+#: src\index.html:834 src emplate\htaccess.txt:198
 msgid "Perhaps better to whitelist expires rules? Perhaps."
 msgstr ""
 
-#: src\index.html:825 src emplate\htaccess.txt:189
+#: src\index.html:837 src emplate\htaccess.txt:201
 msgid ""
 "cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
 msgstr ""
 
-#: src\index.html:828 src emplate\htaccess.txt:192
+#: src\index.html:840 src emplate\htaccess.txt:204
 msgid "your document html"
 msgstr ""
 
-#: src\index.html:831 src emplate\htaccess.txt:195
+#: src\index.html:843 src emplate\htaccess.txt:207
 msgid "data"
 msgstr ""
 
-#: src\index.html:836 src emplate\htaccess.txt:200
+#: src\index.html:848 src emplate\htaccess.txt:212
 msgid "rss feed"
 msgstr ""
 
-#: src\index.html:839 src emplate\htaccess.txt:203
+#: src\index.html:851 src emplate\htaccess.txt:215
 msgid "favicon (cannot be renamed)"
 msgstr ""
 
-#: src\index.html:842 src emplate\htaccess.txt:206
+#: src\index.html:854 src emplate\htaccess.txt:218
 msgid "media: images, video, audio"
 msgstr ""
 
-#: src\index.html:852 src emplate\htaccess.txt:216
+#: src\index.html:864 src emplate\htaccess.txt:228
 msgid "htc files  (css3pie)"
 msgstr ""
 
-#: src\index.html:862 src emplate\htaccess.txt:226
+#: src\index.html:874 src emplate\htaccess.txt:238
 msgid "css and javascript"
 msgstr ""
 
-#: src\index.html:876 src emplate\htaccess.txt:240
+#: src\index.html:888 src emplate\htaccess.txt:252
 msgid "ETag removal"
 msgstr ""
 
-#: src\index.html:879
+#: src\index.html:891
 msgid ""
 "\n"
 "# Since we&apos;re sending far-future expires, we don&apos;t need ETags for\n"
@@ -718,355 +714,291 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:889 src emplate\htaccess.txt:253
+#: src\index.html:901 src emplate\htaccess.txt:265
 msgid "Stop screen flicker in IE on CSS rollovers"
 msgstr ""
 
-#: src\index.html:892 src emplate\htaccess.txt:256
+#: src\index.html:904 src emplate\htaccess.txt:268
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers - in"
 msgstr ""
 
-#: src\index.html:893
+#: src\index.html:905
 msgid ""
 "combination with the &quot;ExpiresByType&quot; rules for images (see above). "
 "If"
 msgstr ""
 
-#: src\index.html:894 src emplate\htaccess.txt:258
+#: src\index.html:906 src emplate\htaccess.txt:270
 msgid "needed, un-comment the following rules."
 msgstr ""
 
-#: src\index.html:904 src emplate\htaccess.txt:268
+#: src\index.html:916 src emplate\htaccess.txt:280
 msgid "Cookie setting from iframes"
 msgstr ""
 
-#: src\index.html:907 src emplate\htaccess.txt:271
+#: src\index.html:919 src emplate\htaccess.txt:283
 msgid "Allow cookies to be set from iframes (for IE only)"
 msgstr ""
 
-#: src\index.html:908 src emplate\htaccess.txt:272
+#: src\index.html:920 src emplate\htaccess.txt:284
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
 
-#: src\index.html:919 src emplate\htaccess.txt:283
+#: src\index.html:931 src emplate\htaccess.txt:295
 msgid "Start rewrite engine"
 msgstr ""
 
-#: src\index.html:922 src emplate\htaccess.txt:286
+#: src\index.html:934 src emplate\htaccess.txt:298
 msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
 msgstr ""
 
-#: src\index.html:931
+#: src\index.html:943
 msgid "Suppress or force the &quot;www.&quot; at the beginning of URLs"
 msgstr ""
 
-#: src\index.html:934 src emplate\htaccess.txt:298
+#: src\index.html:946
 msgid ""
-"The same content should never be available under two different URLs - "
-"especially not with and"
+"\n"
+"# The same content should never be available under two different URLs - "
+"especially not with and\n"
+"# without &quot;www.&quot; at the beginning, since this can cause SEO "
+"problems (duplicate content).\n"
+"# That&apos;s why you should choose one of the alternatives and redirect the "
+"other one.\n"
+"# "
 msgstr ""
 
-#: src\index.html:935
-msgid ""
-"without &quot;www.&quot; at the beginning, since this can cause SEO problems "
-"(duplicate content)."
-msgstr ""
-
-#: src\index.html:936
-msgid ""
-"That&apos;s why you should choose one of the alternatives and redirect the "
-"other one."
-msgstr ""
-
-#: src\index.html:938
+#: src\index.html:952
 msgid ""
 "By default option 1 (no &quot;www.&quot;) is activated. Remember: Shorter "
 "URLs are sexier."
 msgstr ""
 
-#: src\index.html:941 src emplate\htaccess.txt:305
-msgid "If you rather want to use option 2, just comment out all option 1 lines"
-msgstr ""
-
-#: src\index.html:942 src emplate\htaccess.txt:306
-msgid "and uncomment option 2."
-msgstr ""
-
-#: src\index.html:943 src emplate\htaccess.txt:307
-msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
-msgstr ""
-
-#: src\index.html:947 standard input:987 src emplate\htaccess.txt:311
-#: input:351
-msgid "Option 1:"
-msgstr ""
-
-#: src\index.html:958 standard input:998 src emplate\htaccess.txt:322
-#: input:362
-msgid "Option 2:"
-msgstr ""
-
-#: src\index.html:959
+#: src\index.html:955 src emplate\htaccess.txt:319
 msgid ""
-"To rewrite &quot;domain.com -&gt; www.domain.com&quot; uncomment the "
-"following lines."
+"\n"
+"# If you rather want to use option 2, just comment out all option 1 lines\n"
+"# and uncomment option 2.\n"
+"# IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!\n"
+"# "
 msgstr ""
 
-#: src\index.html:960 src emplate\htaccess.txt:324
-msgid "Be aware that the following rule might not be a good idea if you"
+#: src\index.html:963
+msgid ""
+"\n"
+"# Option 1:\n"
+"# Rewrite &quot;www.domain.com -&gt; domain.com&quot; \n"
+"# "
 msgstr ""
 
-#: src\index.html:961
-msgid "use &quot;real&quot; subdomains for certain parts of your website."
+#: src\index.html:976
+msgid ""
+"\n"
+"# Option 2:\n"
+"# To rewrite &quot;domain.com -&gt; www.domain.com&quot; uncomment the "
+"following lines.\n"
+"# Be aware that the following rule might not be a good idea if you\n"
+"# use &quot;real&quot; subdomains for certain parts of your website.\n"
+"# "
 msgstr ""
 
-#: src\index.html:973 src emplate\htaccess.txt:337
+#: src\index.html:993 src emplate\htaccess.txt:357
 msgid "Add/remove trailing slash to (non-file) URLs"
 msgstr ""
 
-#: src\index.html:976 src emplate\htaccess.txt:340
-msgid "Google treats URLs with and without trailing slashes separately."
-msgstr ""
-
-#: src\index.html:977
+#: src\index.html:996
 msgid ""
-"Forcing a trailing slash is usually preferred, but all that&apos;s really"
+"\n"
+"# Google treats URLs with and without trailing slashes separately.\n"
+"# Forcing a trailing slash is usually preferred, but all that&apos;s really\n"
+"# important is that one correctly redirects to the other.\n"
+"# "
 msgstr ""
 
-#: src\index.html:978 src emplate\htaccess.txt:342
-msgid "important is that one correctly redirects to the other."
-msgstr ""
-
-#: src\index.html:980 src emplate\htaccess.txt:344
+#: src\index.html:1002 src emplate\htaccess.txt:366
 msgid "By default option 1 (force trailing slash) is activated."
 msgstr ""
 
-#: src\index.html:983 src emplate\htaccess.txt:347
+#: src\index.html:1005 src emplate\htaccess.txt:369
 msgid "Trailing Slash Problem"
 msgstr ""
 
-#: src\index.html:988
-msgid "Rewrite &quot;domain.com/foo -&gt; domain.com/foo/&quot;"
+#: src\index.html:1009
+msgid ""
+"\n"
+"# Option 1:\n"
+"# Rewrite &quot;domain.com/foo -&gt; domain.com/foo/&quot;\n"
+"# "
 msgstr ""
 
-#: src\index.html:999
-msgid "Rewrite &quot;domain.com/foo/ -&gt; domain.com/foo&quot;"
+#: src\index.html:1022
+msgid ""
+"\n"
+"# Option 2:\n"
+"# Rewrite &quot;domain.com/foo/ -&gt; domain.com/foo&quot;\n"
+"# "
 msgstr ""
 
-#: src\index.html:1008 src emplate\htaccess.txt:372
+#: src\index.html:1034 src emplate\htaccess.txt:398
 msgid "Built-in filename-based cache busting"
 msgstr ""
 
-#: src\index.html:1011
+#: src\index.html:1037
 msgid ""
-"If you&apos;re not using the build script to manage your filename version "
-"revving,"
+"\n"
+"# If you&apos;re not using the build script to manage your filename version "
+"revving,\n"
+"# you might want to consider enabling this, which will route requests for\n"
+"# /css/all.20110203.css to /res/all.css\n"
+"# "
 msgstr ""
 
-#: src\index.html:1012 src emplate\htaccess.txt:376
-msgid "you might want to consider enabling this, which will route requests for"
-msgstr ""
-
-#: src\index.html:1013 src emplate\htaccess.txt:377
-msgid "/css/all.20110203.css to /res/all.css"
-msgstr ""
-
-#: src\index.html:1015 src emplate\htaccess.txt:379
+#: src\index.html:1043 src emplate\htaccess.txt:407
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231,"
 msgstr ""
 
-#: src\index.html:1016 src emplate\htaccess.txt:380
+#: src\index.html:1044 src emplate\htaccess.txt:408
 msgid "read:"
 msgstr ""
 
-#: src\index.html:1018 src emplate\htaccess.txt:382
+#: src\index.html:1046 src emplate\htaccess.txt:410
 msgid "Uncomment to enable."
 msgstr ""
 
-#: src\index.html:1028 src emplate\htaccess.txt:392
+#: src\index.html:1056 src emplate\htaccess.txt:420
 msgid "Prevent SSL cert warnings"
 msgstr ""
 
-#: src\index.html:1031 src emplate\htaccess.txt:395
+#: src\index.html:1059 src emplate\htaccess.txt:423
 msgid ""
-"Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent "
+"\n"
+"# Rewrite secure requests properly to prevent SSL cert warnings, e.g. "
+"prevent \n"
+"# https://www.domain.com when your cert only allows https://secure.domain."
+"com\n"
+"# Uncomment the following lines to use this feature.\n"
+"# "
 msgstr ""
 
-#: src\index.html:1032 src emplate\htaccess.txt:396
-msgid ""
-"https://www.domain.com when your cert only allows https://secure.domain.com"
-msgstr ""
-
-#: src\index.html:1033 src emplate\htaccess.txt:397
-msgid "Uncomment the following lines to use this feature."
-msgstr ""
-
-#: src\index.html:1043 src emplate\htaccess.txt:407
+#: src\index.html:1073 src emplate\htaccess.txt:437
 msgid "Prevent 404 errors for non-existing redirected folders"
 msgstr ""
 
-#: src\index.html:1046 src emplate\htaccess.txt:410
+#: src\index.html:1076 src emplate\htaccess.txt:440
 msgid ""
-"without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
-"same name does not exist"
+"\n"
+"# without -MultiViews, Apache will give a 404 for a rewrite if a folder of "
+"the same name does not exist\n"
+"# e.g. /blog/hello : webmasterworld.com/apache/3808792.htm\n"
+"# "
 msgstr ""
 
-#: src\index.html:1047 src emplate\htaccess.txt:411
-msgid "e.g. /blog/hello : webmasterworld.com/apache/3808792.htm"
-msgstr ""
-
-#: src\index.html:1054 src emplate\htaccess.txt:418
+#: src\index.html:1086 src emplate\htaccess.txt:450
 msgid "custom 404 page"
 msgstr ""
 
-#: src\index.html:1057 src emplate\htaccess.txt:421
+#: src\index.html:1089 src emplate\htaccess.txt:453
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
 msgstr ""
 
-#: src\index.html:1063 src emplate\htaccess.txt:427
+#: src\index.html:1095 src emplate\htaccess.txt:459
 msgid "UTF-8 encoding"
 msgstr ""
 
-#: src\index.html:1066 src emplate\htaccess.txt:430
+#: src\index.html:1098 src emplate\htaccess.txt:462
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
 
-#: src\index.html:1069 src emplate\htaccess.txt:433
+#: src\index.html:1101 src emplate\htaccess.txt:465
 msgid "force utf-8 for a number of file formats"
 msgstr ""
 
-#: src\index.html:1075 src emplate\htaccess.txt:439
+#: src\index.html:1107 src emplate\htaccess.txt:471
 msgid "A little more security"
 msgstr ""
 
-#: src\index.html:1079
+#: src\index.html:1111
 msgid ""
-"Do we want to advertise the exact version number of Apache we&apos;re "
-"running?"
+"\n"
+"# Do we want to advertise the exact version number of Apache we&apos;re "
+"running?\n"
+"# Probably not.\n"
+"# This can only be enabled if used in httpd.conf - It will not work in ."
+"htaccess\n"
+"# "
 msgstr ""
 
-#: src\index.html:1080 src emplate\htaccess.txt:444
-msgid "Probably not."
-msgstr ""
-
-#: src\index.html:1081 src emplate\htaccess.txt:445
+#: src\index.html:1119
 msgid ""
-"This can only be enabled if used in httpd.conf - It will not work in ."
-"htaccess"
+"\n"
+"# &quot;-Indexes&quot; will have Apache block users from browsing folders "
+"without a default document\n"
+"# Usually you should leave this activated, because you shouldn&apos;t allow "
+"everybody to surf through\n"
+"# every folder on your server (which includes rather private places like CMS "
+"system folders).\n"
+"# "
 msgstr ""
 
-#: src\index.html:1085
+#: src\index.html:1127
 msgid ""
-"&quot;-Indexes&quot; will have Apache block users from browsing folders "
-"without a default document"
+"\n"
+"# Block access to &quot;hidden&quot; directories whose names begin with a "
+"period. This\n"
+"# includes directories used by version control systems such as Subversion or "
+"Git.\n"
+"# "
 msgstr ""
 
-#: src\index.html:1086
+#: src\index.html:1136
 msgid ""
-"Usually you should leave this activated, because you shouldn&apos;t allow "
-"everybody to surf through"
+"\n"
+"# If your server is not already configured as such, the following directive\n"
+"# should be uncommented in order to set PHP&apos;s register_globals option "
+"to OFF.\n"
+"# This closes a major security hole that is abused by most XSS (cross-site\n"
+"# scripting) attacks. For more information: http://php.net/register_globals\n"
+"#\n"
+"# IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :\n"
+"#\n"
+"# Your server does not allow PHP directives to be set via .htaccess. In "
+"that\n"
+"# case you must make this change in your php.ini file instead. If you are\n"
+"# using a commercial web host, contact the administrators for assistance in\n"
+"# doing this. Not all servers allow local php.ini files, and they should\n"
+"# include all PHP configurations (not just this one), or you will "
+"effectively\n"
+"# reset everything to PHP defaults. Consult www.php.net for more detailed\n"
+"# information about setting PHP directives.\n"
+"# "
 msgstr ""
 
-#: src\index.html:1087 src emplate\htaccess.txt:451
-msgid ""
-"every folder on your server (which includes rather private places like CMS "
-"system folders)."
-msgstr ""
-
-#: src\index.html:1091
-msgid ""
-"Block access to &quot;hidden&quot; directories whose names begin with a "
-"period. This"
-msgstr ""
-
-#: src\index.html:1092 src emplate\htaccess.txt:456
-msgid ""
-"includes directories used by version control systems such as Subversion or "
-"Git."
-msgstr ""
-
-#: src\index.html:1098 src emplate\htaccess.txt:462
-msgid ""
-"If your server is not already configured as such, the following directive"
-msgstr ""
-
-#: src\index.html:1099
-msgid ""
-"should be uncommented in order to set PHP&apos;s register_globals option to "
-"OFF."
-msgstr ""
-
-#: src\index.html:1100 src emplate\htaccess.txt:464
-msgid ""
-"This closes a major security hole that is abused by most XSS (cross-site"
-msgstr ""
-
-#: src\index.html:1101 src emplate\htaccess.txt:465
-msgid ""
-"scripting) attacks. For more information: http://php.net/register_globals"
-msgstr ""
-
-#: src\index.html:1103 src emplate\htaccess.txt:467
-msgid "IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :"
-msgstr ""
-
-#: src\index.html:1105 src emplate\htaccess.txt:469
-msgid ""
-"Your server does not allow PHP directives to be set via .htaccess. In that"
-msgstr ""
-
-#: src\index.html:1106 src emplate\htaccess.txt:470
-msgid "case you must make this change in your php.ini file instead. If you are"
-msgstr ""
-
-#: src\index.html:1107 src emplate\htaccess.txt:471
-msgid ""
-"using a commercial web host, contact the administrators for assistance in"
-msgstr ""
-
-#: src\index.html:1108 src emplate\htaccess.txt:472
-msgid "doing this. Not all servers allow local php.ini files, and they should"
-msgstr ""
-
-#: src\index.html:1109 src emplate\htaccess.txt:473
-msgid ""
-"include all PHP configurations (not just this one), or you will effectively"
-msgstr ""
-
-#: src\index.html:1110 src emplate\htaccess.txt:474
-msgid "reset everything to PHP defaults. Consult www.php.net for more detailed"
-msgstr ""
-
-#: src\index.html:1111 src emplate\htaccess.txt:475
-msgid "information about setting PHP directives."
-msgstr ""
-
-#: src\index.html:1120
+#: src\index.html:1160
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr ""
 
-#: src\index.html:1125
+#: src\index.html:1165
 msgid "Dig deeper in 60 minutes"
 msgstr ""
 
-#: src\index.html:1130
+#: src\index.html:1170
 msgid ""
 "Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
 "com/development/snippets-html5-boilerplate/\">20 snippets you should be "
 "using</a>."
 msgstr ""
 
-#: src\index.html:1133
+#: src\index.html:1173
 msgid "Make it even better!"
 msgstr ""
 
-#: src\index.html:1135
+#: src\index.html:1175
 msgid ""
 "Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
 "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
@@ -1074,19 +1006,19 @@ msgid ""
 "the future to all browsers."
 msgstr ""
 
-#: src\index.html:1136
+#: src\index.html:1176
 msgid ""
 "Use the build script, crank up your expires to 1year, and deliver a "
 "superfast site."
 msgstr ""
 
-#: src\index.html:1137
+#: src\index.html:1177
 msgid ""
 "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
 "writing CSS3"
 msgstr ""
 
-#: src\index.html:1138
+#: src\index.html:1178
 msgid ""
 " \n"
 "            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
@@ -1095,7 +1027,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: src\index.html:1141
+#: src\index.html:1181
 msgid ""
 "Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
 "\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
@@ -1103,13 +1035,13 @@ msgid ""
 "            "
 msgstr ""
 
-#: src\index.html:1143
+#: src\index.html:1183
 msgid ""
 "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
 "`&lt;head&gt;`</a>"
 msgstr ""
 
-#: src\index.html:1144
+#: src\index.html:1184
 msgid ""
 "If you're a photo gallery site you might want this for ie6 to not show that "
 "stupid thing on &lt;img&gt; tags: \n"
@@ -1119,7 +1051,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: src\index.html:1148
+#: src\index.html:1188
 msgid ""
 "Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
 "tips\">CSS Spriting tips</a> or you could use <a href=\"http://www."
@@ -1127,19 +1059,19 @@ msgid ""
 "a> if you are using <a href=\"http://sass-lang.com\">Sass</a>."
 msgstr ""
 
-#: src\index.html:1149
+#: src\index.html:1189
 msgid ""
 "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
 "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
 msgstr ""
 
-#: src\index.html:1150
+#: src\index.html:1190
 msgid ""
 "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
 "\">Color considerations for printing</a>"
 msgstr ""
 
-#: src\index.html:1151
+#: src\index.html:1191
 msgid ""
 "Use Google's recommendations for SEO: <a href=\"http://"
 "googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
@@ -1147,74 +1079,74 @@ msgid ""
 "            "
 msgstr ""
 
-#: src\index.html:1153
+#: src\index.html:1193
 msgid ""
 "Dig into the new <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-"
 "relations\">link relations</a> \n"
 "            "
 msgstr ""
 
-#: src\index.html:1155
+#: src\index.html:1195
 msgid ""
 "Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
 "and web dont's</a> \n"
 "            "
 msgstr ""
 
-#: src\index.html:1157
+#: src\index.html:1197
 msgid ""
 "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
 "touch-icon-precomposed\"</code>"
 msgstr ""
 
-#: src\index.html:1158
+#: src\index.html:1198
 msgid ""
 "<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
 "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
 "\">Simulate link printing in IE with JS</a>"
 msgstr ""
 
-#: src\index.html:1159
+#: src\index.html:1199
 msgid ""
 "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
 "blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
 "pre-fetch</a>."
 msgstr ""
 
-#: src\index.html:1160
+#: src\index.html:1200
 msgid ""
 "Using border-radius with background color in Webkit? Try <a href=\"http://"
 "tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
 "background-clip</a> to fix the bleed."
 msgstr ""
 
-#: src\index.html:1161
+#: src\index.html:1201
 msgid ""
 "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
 "CSS</a> for optimum browser performance."
 msgstr ""
 
-#: src\index.html:1162
+#: src\index.html:1202
 msgid ""
 "Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
 "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
 "markup</a>."
 msgstr ""
 
-#: src\index.html:1163
+#: src\index.html:1203
 msgid ""
 "Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
 "hacks/\">browser CSS hacks</a>."
 msgstr ""
 
-#: src\index.html:1164
+#: src\index.html:1204
 msgid ""
 "Get your team hooked using the same <a href=\"http://na.isobar.com/standards/"
 "\">front-end coding standards and best practices.</a> \n"
 "            "
 msgstr ""
 
-#: src\index.html:1166
+#: src\index.html:1206
 msgid ""
 "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
 "<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
@@ -1222,47 +1154,47 @@ msgid ""
 "com/2009/05/introducing-rich-snippets.html\">visibility</a>."
 msgstr ""
 
-#: src\index.html:1167
+#: src\index.html:1207
 msgid ""
 "You can use the <a href=\"http://camendesign.com/code/"
 "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
 "not use a div#container."
 msgstr ""
 
-#: src\index.html:1168
+#: src\index.html:1208
 msgid ""
 "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
 "Make-it-better/\">more ways to make it better.</a> "
 msgstr ""
 
-#: src\index.html:1174
+#: src\index.html:1214
 msgid "Brought to you by"
 msgstr ""
 
-#: src\index.html:1175
+#: src\index.html:1215
 msgid "Google Chrome, jQuery"
 msgstr ""
 
-#: src\index.html:1176
+#: src\index.html:1216
 msgid "Open Web Vigilante"
 msgstr ""
 
-#: src\index.html:1188
+#: src\index.html:1228
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr ""
 
-#: src\index.html:1217
+#: src\index.html:1257
 msgid ""
 "Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
 "html\">archive</a>"
 msgstr ""
 
-#: src\index.html:1219 standard input:1277
+#: src\index.html:1259 standard input:1317
 msgid "Show comments"
 msgstr ""
 
-#: src\index.html:1296
+#: src\index.html:1336
 msgid "http://html5boilerplate.com/v095"
 msgstr ""
 
@@ -1286,11 +1218,40 @@ msgid ""
 "declare"
 msgstr ""
 
-#: src emplate\htaccess.txt:65
-msgid "your subdomains like \"sub.domain.com\""
+#: src emplate\htaccess.txt:63
+msgid ""
+"\n"
+"# allow access from all domains for webfonts\n"
+"# alternatively you could only whitelist\n"
+"# your subdomains like \"sub.domain.com\"\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:178
+#: src emplate\htaccess.txt:115
+msgid ""
+"\n"
+"# allow concatenation from within specific js and css files\n"
+"#\n"
+"# e.g. Inside of script.combined.js you could have\n"
+"#\n"
+"#   <!--#include file=\"jquery-1.4.2.js\" -->\n"
+"#   <!--#include file=\"jquery.idletimer.js\" -->\n"
+"#\n"
+"# and they would be included into this single file\n"
+"# "
+msgstr ""
+
+#: src emplate\htaccess.txt:182
+msgid ""
+"\n"
+"# these are pretty far-future expires headers\n"
+"# they assume you control versioning with cachebusting query params like\n"
+"#   <script src=\"application.js?20100608\">\n"
+"# additionally, consider that outdated proxies may miscache\n"
+"# "
+msgstr ""
+
+#: src emplate\htaccess.txt:190
 msgid ""
 "\n"
 "# if you don't use filenames to version, lower the css and js to something "
@@ -1299,7 +1260,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:243
+#: src emplate\htaccess.txt:255
 msgid ""
 "\n"
 "# Since we're sending far-future expires, we don't need ETags for\n"
@@ -1307,83 +1268,139 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:257
+#: src emplate\htaccess.txt:269
 msgid "combination with the \"ExpiresByType\" rules for images (see above). If"
 msgstr ""
 
-#: src emplate\htaccess.txt:295
+#: src emplate\htaccess.txt:307
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
 msgstr ""
 
-#: src emplate\htaccess.txt:299
+#: src emplate\htaccess.txt:310
 msgid ""
-"without \"www.\" at the beginning, since this can cause SEO problems "
-"(duplicate content)."
+"\n"
+"# The same content should never be available under two different URLs - "
+"especially not with and\n"
+"# without \"www.\" at the beginning, since this can cause SEO problems "
+"(duplicate content).\n"
+"# That's why you should choose one of the alternatives and redirect the "
+"other one.\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:300
-msgid ""
-"That's why you should choose one of the alternatives and redirect the other "
-"one."
-msgstr ""
-
-#: src emplate\htaccess.txt:302
+#: src emplate\htaccess.txt:316
 msgid ""
 "By default option 1 (no \"www.\") is activated. Remember: Shorter URLs are "
 "sexier."
 msgstr ""
 
-#: src emplate\htaccess.txt:323
+#: src emplate\htaccess.txt:327
 msgid ""
-"To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
+"\n"
+"# Option 1:\n"
+"# Rewrite \"www.domain.com -> domain.com\" \n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:325
-msgid "use \"real\" subdomains for certain parts of your website."
-msgstr ""
-
-#: src emplate\htaccess.txt:341
-msgid "Forcing a trailing slash is usually preferred, but all that's really"
-msgstr ""
-
-#: src emplate\htaccess.txt:352
-msgid "Rewrite \"domain.com/foo -> domain.com/foo/\""
-msgstr ""
-
-#: src emplate\htaccess.txt:363
-msgid "Rewrite \"domain.com/foo/ -> domain.com/foo\""
-msgstr ""
-
-#: src emplate\htaccess.txt:375
+#: src emplate\htaccess.txt:340
 msgid ""
-"If you're not using the build script to manage your filename version revving,"
+"\n"
+"# Option 2:\n"
+"# To rewrite \"domain.com -> www.domain.com\" uncomment the following "
+"lines.\n"
+"# Be aware that the following rule might not be a good idea if you\n"
+"# use \"real\" subdomains for certain parts of your website.\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:443
+#: src emplate\htaccess.txt:360
 msgid ""
-"Do we want to advertise the exact version number of Apache we're running?"
+"\n"
+"# Google treats URLs with and without trailing slashes separately.\n"
+"# Forcing a trailing slash is usually preferred, but all that's really\n"
+"# important is that one correctly redirects to the other.\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:449
+#: src emplate\htaccess.txt:373
 msgid ""
-"\"-Indexes\" will have Apache block users from browsing folders without a "
-"default document"
+"\n"
+"# Option 1:\n"
+"# Rewrite \"domain.com/foo -> domain.com/foo/\"\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:450
+#: src emplate\htaccess.txt:386
 msgid ""
-"Usually you should leave this activated, because you shouldn't allow "
-"everybody to surf through"
+"\n"
+"# Option 2:\n"
+"# Rewrite \"domain.com/foo/ -> domain.com/foo\"\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:455
+#: src emplate\htaccess.txt:401
 msgid ""
-"Block access to \"hidden\" directories whose names begin with a period. This"
+"\n"
+"# If you're not using the build script to manage your filename version "
+"revving,\n"
+"# you might want to consider enabling this, which will route requests for\n"
+"# /css/all.20110203.css to /res/all.css\n"
+"# "
 msgstr ""
 
-#: src emplate\htaccess.txt:463
+#: src emplate\htaccess.txt:475
 msgid ""
-"should be uncommented in order to set PHP's register_globals option to OFF."
+"\n"
+"# Do we want to advertise the exact version number of Apache we're running?\n"
+"# Probably not.\n"
+"# This can only be enabled if used in httpd.conf - It will not work in ."
+"htaccess\n"
+"# "
+msgstr ""
+
+#: src emplate\htaccess.txt:483
+msgid ""
+"\n"
+"# \"-Indexes\" will have Apache block users from browsing folders without a "
+"default document\n"
+"# Usually you should leave this activated, because you shouldn't allow "
+"everybody to surf through\n"
+"# every folder on your server (which includes rather private places like CMS "
+"system folders).\n"
+"# "
+msgstr ""
+
+#: src emplate\htaccess.txt:491
+msgid ""
+"\n"
+"# Block access to \"hidden\" directories whose names begin with a period. "
+"This\n"
+"# includes directories used by version control systems such as Subversion or "
+"Git.\n"
+"# "
+msgstr ""
+
+#: src emplate\htaccess.txt:500
+msgid ""
+"\n"
+"# If your server is not already configured as such, the following directive\n"
+"# should be uncommented in order to set PHP's register_globals option to "
+"OFF.\n"
+"# This closes a major security hole that is abused by most XSS (cross-site\n"
+"# scripting) attacks. For more information: http://php.net/register_globals\n"
+"#\n"
+"# IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :\n"
+"#\n"
+"# Your server does not allow PHP directives to be set via .htaccess. In "
+"that\n"
+"# case you must make this change in your php.ini file instead. If you are\n"
+"# using a commercial web host, contact the administrators for assistance in\n"
+"# doing this. Not all servers allow local php.ini files, and they should\n"
+"# include all PHP configurations (not just this one), or you will "
+"effectively\n"
+"# reset everything to PHP defaults. Consult www.php.net for more detailed\n"
+"# information about setting PHP directives.\n"
+"# "
 msgstr ""
 
 #: src emplate\humans.txt:1
@@ -1392,7 +1409,8 @@ msgstr ""
 
 #: src emplate\index.html:10
 msgid ""
-"Always force latest IE rendering engine (even in intranet) & Chrome Frame"
+"Always force latest IE rendering engine (even in intranet) & Chrome Frame\n"
+"       Remove this if you use the .htaccess"
 msgstr ""
 
 #: src emplate\index.html:21
