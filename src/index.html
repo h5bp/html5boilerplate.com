@@ -262,8 +262,7 @@
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js?linkify"></script>
 
   <script>
   
@@ -277,10 +276,6 @@
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.defaults['tab-size'] = 4;
 
-    $('pre[class]').each(function(i, el) {
-      SyntaxHighlighter.highlight(undefined, el)
-    })
-
     // smooth scrolling to in-page anchors.
     $.fn.smoothScrollTo = function(){
       return this.live('click', function (e) {
@@ -293,24 +288,45 @@
       });
     };
 
-    var dsqlength = jQuery('ul#dsq-comments').length + 1;
-
-    jQuery('a[href=#disqus_thread]').smoothScrollTo();
-
-    if (location.hash.replace('#','')){
+   
+    var dsqlength, dsqshow;
+    
+    // !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
+    if (~location.hash.replace('#','').indexOf('comment')){
+      dsqshow = true;
       jQuery('#disqus_thread').show();
     }
 
-    jQuery('a[href=#dsq-content]').toggle(
-      function () {
-        jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
-        jQuery('#disqus_thread').show();
-      },
-      function () {
-        jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
-        jQuery('#disqus_thread').hide();
-      }
-    );
+    $(document).ready(function(){
+
+      dsqlength = jQuery('ul#dsq-comments').length + 1;
+      
+      $('pre[class]').each(function(i, el) {
+        SyntaxHighlighter.highlight(undefined, el)
+      })
+    
+      jQuery('a[href=#disqus_thread]').smoothScrollTo();
+
+      jQuery('a[href=#dsq-content]').toggle(
+        function () {
+          jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
+          jQuery('#disqus_thread').show();
+        },
+        function () {
+          jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
+          jQuery('#disqus_thread').hide();
+        }
+      );
+      
+      // lazy inject the videos
+      setTimeout(function(){
+        $('#lowdown').nextAll('h3:first').andSelf().each(function(){
+          var html = $.trim( $(this).next().text() );
+          $(html).insertAfter(this);
+        });
+      }, 3000);
+    
+    })
   </script>
 
   <script type="text/javascript">
