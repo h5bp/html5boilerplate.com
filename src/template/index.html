@@ -1,15 +1,13 @@
-<!doctype html>  
-
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
-  <!-- {% blocktrans %}Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+  <!-- {% blocktrans %}Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess{% endblocktrans %} -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -25,14 +23,14 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <!-- {% blocktrans %}CSS : implied media="all"{% endblocktrans %} -->
+  <!-- {% blocktrans %}CSS: implied media="all"{% endblocktrans %} -->
   <link rel="stylesheet" href="css/style.css?v=2">
 
-  <!-- {% blocktrans %}Uncomment if you are specifically targeting less enabled mobile browsers{% endblocktrans %}                                                                        
+  <!-- {% blocktrans %}Uncomment if you are specifically targeting less enabled mobile browsers{% endblocktrans %}
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
- 
+
   <!-- {% blocktrans %}All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects{% endblocktrans %} -->
-  <script src="js/libs/modernizr-1.6.min.js"></script>
+  <script src="js/libs/modernizr-1.7.min.js"></script>
 
 </head>
 
@@ -42,53 +40,41 @@
     <header>
 
     </header>
-    
-    <div id="main">
+    <div id="main" role="main">
 
     </div>
-    
     <footer>
 
     </footer>
   </div> <!--! end of #container -->
 
 
-  <!-- {% blocktrans %}Javascript at the bottom for fast page loading{% endblocktrans %} -->
+  <!-- {% blocktrans %}JavaScript at the bottom for fast page loading{% endblocktrans %} -->
 
-  <!-- {% blocktrans %}Grab Google CDN's jQuery. fall back to local if necessary{% endblocktrans %} -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-  
-  
-  <!-- {% blocktrans %}scripts concatenated and minified via ant build script{% endblocktrans %} -->
+  <!-- {% blocktrans %}Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary{% endblocktrans %} -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+
+
+  <!-- {% blocktrans %}scripts concatenated and minified via ant build script{% endblocktrans %}-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <!-- {% blocktrans %}end concatenated and minified scripts{% endblocktrans %} -->
-  
-  
+  <!-- {% blocktrans %}end scripts{% endblocktrans %}-->
+
+
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); //{% blocktrans %}fix any <img> or .png_bg background-images{% endblocktrans %} </script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // {% blocktrans %}Fix any <img> or .png_bg bg-images. Also, please read{% endblocktrans %} goo.gl/mZiyb </script>
   <![endif]-->
 
-  <!-- {% blocktrans %}yui profiler and profileviewer - remove for production{% endblocktrans %} -->
-  <script src="js/profiling/yahoo-profiling.min.js"></script>
-  <script src="js/profiling/config.js"></script>
-  <!-- {% blocktrans %}end profiling code{% endblocktrans %} -->
 
-
-  <!-- {% blocktrans %}asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID{% endblocktrans %} -->
+  <!-- mathiasbynens.be/notes/async-analytics-snippet {% blocktrans %}Change UA-XXXXX-X to be your site's ID{% endblocktrans %} -->
   <script>
-   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
-  
+
 </body>
 </html>
