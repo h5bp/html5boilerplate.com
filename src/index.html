@@ -2,20 +2,17 @@
 <!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  
   <title  dir="{{ LANGUAGE_DIRECTION }}">{% blocktrans %}HTML5 Boilerplate{% endblocktrans %} - {% blocktrans %}A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-  <link rel="shortcut icon" href="favicon.png" >
-  <link rel="apple-touch-icon" href="//html5boilerplate.com/apple-touch-icon.png"> 
 
-  <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css?rc10" >
+  <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" >
   <link type="text/css" rel="stylesheet" media="screen" href="http://html5boilerplate.com/css/shCore.css" >
 
   <!-- JavaScript at the bottom -->
@@ -56,9 +53,52 @@
       <p class="dwn">
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v1.0rc">{% blocktrans %}Boilerplate documented</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
         <i>{% blocktrans %}or{% endblocktrans %}</i>
-        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v1.0rcstripped">{% blocktrans %}Boilerplate "stripped"</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
+        <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v0.9.5stripped">{% blocktrans %}Boilerplate "stripped"</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
+        <i>{% blocktrans %}or{% endblocktrans %}</i>        
+        <span><a id="builder-custom" href="#builder">{% blocktrans %}Boilerplate custom</a> <small>{% blocktrans %}100% hipster.{% endblocktrans %}</small></span>        
       </p>
-
+      <div class="focus">
+    		<div id="builder" class="clearfix">
+    		  <p>Click on your favourite option for each feature! Default options are highlighted.</p>
+    			<div id="cond">
+    			  <h4>Conditional classes</h4>  			  
+    				<a id="no-cond" href="#">Nope</a>
+    				<a id="oldie" href="#">Old IE class</a>
+    				<a id="default-ie"class="selected" href="#">All IE classes</a>
+    			</div>
+    			<div id="mobile" class="clearfix">
+    			  <h4>Mobile</h4>
+    				<a id="default-mobile" class="selected" href="#">Nope</a>
+    				<a id="hand" href="#">Handheld stylesheet</a>
+    			</div>			
+    			<div id="javascript" class="clearfix">
+    			  <h4>Javascript</h4>
+      			<a id="no-js" href="#">Nope</a>
+      			<a id="no-jq" href="#">No jQuery</a>
+      			<a id="jqdev" href="#">jQuery</a>      			
+      			<a id="default-js" class="selected" href="#">jQuery minified</a>
+    			</div>			
+    			<div id="shivs" class="clearfix">
+    			  <h4>Polyfill</h4>
+      			<a id="no-compat" href="#">Nope</a>
+      			<a id="default-js" class="selected" href="#">Modernizr</a>
+      			<a id="shiv" href="#">html5shiv</a>
+    			</div>				
+    			<div id="config" class="clearfix">
+    			  <h4>Server Config</h4>
+      			<a id="default-config" class="selected" href="#">Nope</a>
+      			<a id="htaccess" href="#">.htaccess</a>	
+      			<a id="webconfig" href="#">web.config</a>
+      			<a id="nginx" href="#">nginx.conf</a>  
+    			</div>	
+    			<div id="analytics" class="clearfix">
+    			  <h4>Google Analytics</h4>
+      			<a id="analytics" href="#">Analytics Snippet</a>
+      			<a id="default-analytics" class="selected" href="#">Nope</a>
+    			</div>
+  			    <p><a href="http://initializr.com/generate?boilerplate&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!</p>
+        </div>        
+      </div>    
 
       <p class="social"><i>
         <a href="./docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
@@ -68,27 +108,20 @@
       <i><a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
-      
+      <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
      
-     <div id="rc10" class="update"> 
-       <h3>HTML5 Boilerplate 1.0 Release Candidate</h3>
-       <p><strong>March 7th, 2011 - </strong> We're very happy to bring you the latest and greatest work that the h5bp community has been working on. Pending no dire issues, this will be the real 1.0 release. That'll arrive soon, along with beautiful documentation, more videos, and a much prettier list of changes and updates than what's below. :)
-       </p>
-       
-       <h3>Changelog</h3>
-       <h4>BUILD SCRIPT </h4>
-       <ul>
-         <li>Files linked via <code>@import</code> will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
-         <li>Environments are definable.</li>
-         <li>Expires headers are upgraded by the build script</li>
-         <li>Configurable project.properties</li>
-         <li>Add multiple stylesheets to the project by defining them in projects.properties (they will all be concatenated into 1 file with any default stylesheets defined in default.properties file being added at the end).</li>
-         <li>Exclude config files from build process</li>
-         <li>Less verbose HTML comment for build script</li>
-         <li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django).</li>
-         <li>All spacy not tabby</li>
-         <li>Updated htmlcompressor to a newer version </li>   
-       </ul>
+      <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
+      <ul>
+        <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
+        <li>{% blocktrans %}HTML5 ready. Use the new tags with certainty.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Optimal caching and compression rules for grade-A performance{% endblocktrans %}</li>
+        <li>{% blocktrans %}Best practice site configuration defaults{% endblocktrans %}</li>
+        <li>{% blocktrans %}Mobile browser optimizations{% endblocktrans %}</li>
+        <li>{% blocktrans %}Progressive enhancement graceful degradation &hellip; yeah yeah we got that{% endblocktrans %}</li>
+        <li>{% blocktrans %}IE specific classes for maximum cross-browser control{% endblocktrans %}</li>
+        <li>{% blocktrans %}Handy .no-js and .js classes to style based on capability{% endblocktrans %}</li>
+        <li>{% blocktrans %}Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.{% endblocktrans %}</li>
+      </ul>
 
 
        <h4>INDEX.HTML</h4>
@@ -281,11 +314,11 @@
     <div id="footer">
       <p>
         <em class="focus">{% blocktrans %}Brought to you by{% endblocktrans %}</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/images/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/images/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Open Web Vigilante{% endblocktrans %}</i></a>
+        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/img/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/img/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera, Open Web Vigilante{% endblocktrans %}</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="//html5boilerplate.com/img/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>        
       </p> 
       <ul>
-        <li><a href="http://www.blog.highub.com/">Shi Chuan</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://www.mintusability.com">Mikko Tikkanen</a></li>
@@ -328,11 +361,9 @@
       <a href="#dsq-content">{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}</a> 
     </div>
   </div>
-  
-  <img id=html5logo src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
-   
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script type="text/javascript" src="//html5boilerplate.com/js/plugins.js?linkify"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  <script type="text/javascript" src="/js/plugins.js"></script>
 
   <script>
   
@@ -412,17 +443,13 @@
       }, dsqshow ? 10 : 5000);
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   
+  
   <script>
-   var _gaq = [['_setAccount', 'UA-17904194-1'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
+    var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>  
 
 </body>
 </html>
