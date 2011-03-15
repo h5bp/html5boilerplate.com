@@ -35,6 +35,7 @@ $(function(){
 		this.href =  downloadurl + params.substr(0, params.length-1); 
 	});	
 });
+
 if (!window.SyntaxHighlighter) {
     var SyntaxHighlighter = function () {
         var a = {
