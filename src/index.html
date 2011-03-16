@@ -13,7 +13,7 @@
 
 
   <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" >
-  <link type="text/css" rel="stylesheet" media="screen" href="http://html5boilerplate.com/css/shCore.css" >
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/shCore.css" >
 
   <!-- JavaScript at the bottom -->
   <script src="//html5boilerplate.com/js/libs/modernizr-1.7.min.js"></script> 
@@ -48,7 +48,7 @@
 
     <div id="body">
       <h3>{% blocktrans %}Want to dive in?{% endblocktrans %}</h3>
-      <p class="bptext">{% blocktrans with "1.0RC" as version %}Download Boilerplate {{ version }}{% endblocktrans %} <small><a href="#rc10">Updated Mar 7th</a></small></p>
+      <p class="bptext">{% blocktrans with "1.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small><a href="#rc10">Updated Mar 21st</a></small></p>
 
       <p class="dwn">
         <span><a href="http://github.com/paulirish/html5-boilerplate/zipball/v1.0rc">{% blocktrans %}Boilerplate documented</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
@@ -108,21 +108,23 @@
       <i><a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
-      <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" width="100">
      
       <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
       <ul>
         <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
+        <li>{% blocktrans %}Never go wrong with your doctype or markup!{% endblocktrans %}</li>          
         <li>{% blocktrans %}HTML5 ready. Use the new tags with certainty.{% endblocktrans %}</li>
-        <li>{% blocktrans %}Optimal caching and compression rules for grade-A performance{% endblocktrans %}</li>
         <li>{% blocktrans %}Best practice site configuration defaults{% endblocktrans %}</li>
-        <li>{% blocktrans %}Mobile browser optimizations{% endblocktrans %}</li>
         <li>{% blocktrans %}Progressive enhancement graceful degradation &hellip; yeah yeah we got that{% endblocktrans %}</li>
-        <li>{% blocktrans %}IE specific classes for maximum cross-browser control{% endblocktrans %}</li>
         <li>{% blocktrans %}Handy .no-js and .js classes to style based on capability{% endblocktrans %}</li>
-        <li>{% blocktrans %}Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Console.log nerfing so you won't break anyone by mistake.{% endblocktrans %}</li>
+        <li>{% blocktrans %}An optimal print stylesheet, performance optimized.{% endblocktrans %}</li>
+        <li>{% blocktrans %}iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.{% endblocktrans %}</li>
+        <li>{% blocktrans %}.clearfix, .visuallyhidden classes to style things wisely and accessibly.{% endblocktrans %}</li>
+        <li>{% blocktrans %}.htaccess file that allows proper use of HTML5 features and faster page load{% endblocktrans %}</li>
+        <li>{% blocktrans %}CDN hosted jQuery with local fallback failsafe.{% endblocktrans %}</li>
+        <li>{% blocktrans %}Think there's too much? The HTML5 Boilerplate is delete-key friendly. :){% endblocktrans %}</li>
       </ul>
-
 
        <h4>INDEX.HTML</h4>
        <ul>
@@ -136,7 +138,6 @@
          <li>Fixed modernizr path issue. </li>
          <li>Implement async load for <code>DD_belated</code></li>
        </ul>
-
 
 
        <h4>STYLE.CSS</h4>
@@ -206,117 +207,68 @@
          <li>Removed YUI profiling. you probably weren't using it anyway.</li>
          <li>Removed qunit's unit tests. no need to ship with them, really.</li>
          <li>Add ignores for most common editors so that swap files don't show up as untracked files.</li>
-      </ul>   
-     </div>
-
-     <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
-     <ul>
-       <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
-       <li>{% blocktrans %}HTML5 ready. Use the new tags with certainty.{% endblocktrans %}</li>
-       <li>{% blocktrans %}Optimal caching and compression rules for grade-A performance{% endblocktrans %}</li>
-       <li>{% blocktrans %}Best practice site configuration defaults{% endblocktrans %}</li>
-       <li>{% blocktrans %}Mobile browser optimizations{% endblocktrans %}</li>
-       <li>{% blocktrans %}Progressive enhancement graceful degradation &hellip; yeah yeah we got that{% endblocktrans %}</li>
-       <li>{% blocktrans %}IE specific classes for maximum cross-browser control{% endblocktrans %}</li>
-       <li>{% blocktrans %}Handy .no-js and .js classes to style based on capability{% endblocktrans %}</li>
-       <li>{% blocktrans %}Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.{% endblocktrans %}</li>
-     </ul>
-
-     <h3>{% blocktrans %}Why it is awesome-er{% endblocktrans %}</h3>
-     <ul>
-       <li>{% blocktrans %}Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.{% endblocktrans %}</li>
-       <li>{% blocktrans %}Console.log nerfing so you won't break anyone by mistake.{% endblocktrans %}</li>
-       <li>{% blocktrans %}Never go wrong with your doctype or markup!{% endblocktrans %}</li>
-       <li>{% blocktrans %}An optimal print stylesheet, performance optimized.{% endblocktrans %}</li>
-       <li>{% blocktrans %}iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.{% endblocktrans %}</li>
-       <li>{% blocktrans %}IE6 pngfix baked in.{% endblocktrans %}</li>
-       <li>{% blocktrans %}.clearfix, .visuallyhidden classes to style things wisely and accessibly.{% endblocktrans %}</li>
-       <li>{% blocktrans %}.htaccess file that allows proper use of HTML5 features and faster page load{% endblocktrans %}</li>
-       <li>{% blocktrans %}CDN hosted jQuery with local fallback failsafe.{% endblocktrans %}</li>
-       <li>{% blocktrans %}Think there's too much? The HTML5 Boilerplate is delete-key friendly. :){% endblocktrans %}</li>
-     </ul>
-
-      <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
-
-      <h4>index.html</h4>
-      <pre class="brush:html">{% include "template/index.html" %}</pre>
-
-      <h4>style.css</h4>
-      <pre class="brush:css">{% include "template/css/style.css" %}</pre>
-
-      <h4>plugins.js</h4>
-      <pre class="brush:js">{% include "template/js/plugins.js" %}</pre>
-
-      <h4>script.js</h4>
-      <pre class="brush:js">{% include "template/js/script.js" %}</pre>
-
-      <h4>robots.txt</h4>
-      <pre class="brush:xml">{% include "template/robots.txt" %}</pre>
-
-      <h4>humans.txt</h4>
-      <pre class="brush:xml">{% include "template/humans.txt" %}</pre>
-
-      <h4>.htaccess</h4>
-      <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>
-
-      <h3 id="lowdown">{% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</h3>
-      <noscript>
-        <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
-      </noscript>
+      </ul>
       
-      <h3>{% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</h3>
-      <noscript>
-        <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
-      </noscript>
-      
-      <p>{% blocktrans %}Or read through this good explanation of <a href="http://www.1stwebdesigner.com/development/snippets-html5-boilerplate/">20 snippets you should be using</a>.{% endblocktrans %}</p>
+      <div class="source">
+        <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
 
-      <div class="recos">
-        <h3>{% blocktrans %}Make it even better!{% endblocktrans %}</h3>
-          <ul> 
-            <li>{% blocktrans %}Use a script loader like <a href="http://github.com/SlexAxton/yepnope.js">yepnope.js</a> in combo with your  <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> to bring the future to all browsers.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Use the build script, crank up your expires to 1year, and deliver a superfast site.{% endblocktrans %}</li>
-            <li>{% blocktrans %}Consider <a href="http://css3please.com">CSS3please.com</a> to assist in writing CSS3{% endblocktrans %}</li> 
-            <li>{% blocktrans %} 
-            <a href="http://css3pie.com/">css3pie.com</a> and all the other <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}Learn HTML5 elements better: <a href="http://html5doctor.com/glossary/">HTML5 Doctor Glossary</a> and <a href="http://diveintohtml5.org/semantics.html#new-elements">Dive Into HTML5 : semantic elements</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}<a href="http://gist.github.com/581868">More `meta` tag tracks for your `&lt;head&gt;`</a>{% endblocktrans %}</li> 
-            <li>{% blocktrans %}If you're a photo gallery site you might want this for ie6 to not show that stupid thing on &lt;img&gt; tags: 
+        <h4><a href="#" title="click to see the code of index.html">index.html</a></h4>
+        <pre id="block-1" class="brush:html">{% include "template/index.html" %}</pre>
 
-            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="imagetoolbar" content="no" /&gt;&lt;![endif]--&gt;</code></p> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}Read some <a href="http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips">CSS Spriting tips</a> or you could use <a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">Lemonade</a> if you are using <a href="http://sass-lang.com">Sass</a>.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}<a href="http://github.com/paulirish/html5-boilerplate/issues/closed#issue/115/comment/439219">Tell your users to Enable JavaScript</a>{% endblocktrans %}</li> 
-            <li>{% blocktrans %}<a href="http://www.merttol.com/articles/css/too-light-for-print.html">Color considerations for printing</a>{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Use Google's recommendations for SEO: <a href="http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html">the Google SEO Starter Guide</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}Dig into the new <a href="http://blog.whatwg.org/the-road-to-html-5-link-relations">link relations</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}Consider some opinionated <a href="http://webdosanddonts.com/">web do's and web dont's</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}To remove gloss from iPhone home screen rel value should be <code>"apple-touch-icon-precomposed"</code>{% endblocktrans %}</li> 
-            <li>{% blocktrans %}<a href="http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx">Simulate link printing in IE with JS</a>{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Use <code>rel="prefetch"</code> for <a href="http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch">documents to pre-fetch</a>.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Using border-radius with background color in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser CSS hacks</a>.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}Get your team hooked using the same <a href="http://na.isobar.com/standards/">front-end coding standards and best practices.</a> 
-            {% endblocktrans %}</li> 
-            <li>{% blocktrans %}Use <a href="http://microformats.org/wiki/Main_Page">Microformats</a> (via <a href="http://microformats.org/wiki/microdata">microdata</a>) for optimum search results <a href="http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html">visibility</a>.{% endblocktrans %}</li> 
-            <li>{% blocktrans %}You can use the <a href="http://camendesign.com/code/developpeurs_sans_frontieres">body element as a wrapper</a>, so you need not use a div#container.{% endblocktrans %}</li>
-            <li>{% blocktrans %}Read on for <a href="http://github.com/paulirish/html5-boilerplate/wiki/Make-it-better/">more ways to make it better.</a> {% endblocktrans %}</li>
+        <h4><a href="#" title="click to see the code of style.css">style.css</a></h4>
+        <pre id="block-2" class="brush:css">{% include "template/css/style.css" %}</pre>
+
+        <h4><a href="#" title="click to see the code of plugins.js">plugins.js</a></h4>
+        <pre id="block-3" class="brush:js">{% include "template/js/plugins.js" %}</pre>
+
+        <h4><a href="#" title="click to see the code of script.js">script.js</a></h4>
+        <pre id="block-4" class="brush:js">{% include "template/js/script.js" %}</pre>
+
+        <h4><a href="#"  title="click to see the code of robots.txt">robots.txt</a></h4>
+        <pre class="brush:xml">{% include "template/robots.txt" %}</pre>
+
+        <h4><a href="#"  title="click to see the code of humans.txt">humans.txt</a></h4>
+        <pre class="brush:xml">{% include "template/humans.txt" %}</pre>
+
+        <h4><a href="#" title="click to see the code of .htaccess">.htaccess</a></h4>
+        <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>        
+      </div>
+      <div class="videos">
+        <h3>Videos</h3>
+        <ul>
+          <li><a class="active" href="#video-lowdown"> {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a></li>
+          <li><a href="#video-digdeeper"> {% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</a></li>
+          <li><a href="#video-buildtool"> {% blocktrans %}Learn more on the build tool{% endblocktrans %}</a></li>
+          <li><a href="#video-getstarted"> {% blocktrans %}Ready to get started?{% endblocktrans %}</a></li>          
         </ul>
+        <div id="video-lowdown" class="video video-active">
+          <noscript>
+            <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
+          </noscript>          
+        </div>
+        <div id="video-digdeeper" class="video">
+          <noscript>
+            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+          </noscript>          
+        </div> 
+        <div id="video-buildtool" class="video">
+          <noscript>
+            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+          </noscript>          
+        </div> 
+        <div id="video-getstarted" class="video">
+          <noscript>
+            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+          </noscript>          
+        </div>               
       </div>
     </div>
     <div id="footer">
       <p>
         <em class="focus">{% blocktrans %}Brought to you by{% endblocktrans %}</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/img/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/img/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera, Open Web Vigilante{% endblocktrans %}</i></a>
-        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="//html5boilerplate.com/img/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>        
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera{% endblocktrans %}</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>        
       </p> 
       <ul>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
@@ -352,11 +304,13 @@
         <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
         <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
       </ul>
-    </div> 
+    </div>
+    
+  <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" height="60">
+       
     <div class="disqus-wrapper">
       <div id="disqus_thread">
         <h3>{% blocktrans %}Comments{% endblocktrans %}</h3>
-        <p>{% blocktrans %}Comments for Boilerplate v0.9.1 can be found in the <a href="commentarchive.html">archive</a>{% endblocktrans %}</p>
       </div>
       <a href="#dsq-content">{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}</a> 
     </div>
@@ -404,8 +358,30 @@
       
       $('pre[class]').each(function(i, el) {
         SyntaxHighlighter.highlight(undefined, el)
-      })
-    
+      });
+      
+      $('.source h4 a').toggle(
+        function(e) {
+          $(this).addClass('active');
+          $(this).parent().next().show('slow');
+          e.preventDefault();
+        },
+        function(e) {
+          $(this).removeClass('active');
+          $(this).parent().next().hide('slow');
+          e.preventDefault();
+        }        
+      );
+     
+      var videolinks = $('.videos a[href^="#video-"]');
+      videolinks.bind('click', function(e) {
+        videolinks.removeClass('active');
+        $(this).addClass('active');
+        $('.videos .video-active').removeClass('video-active');
+        $(/#(.*)/g.exec(this.href)[0]).addClass('video-active');
+        e.preventDefault();
+      });
+      
       jQuery('a[href=#disqus_thread]').smoothScrollTo();
 
       jQuery('a[href=#dsq-content]').toggle(
@@ -421,9 +397,9 @@
       
       // lazy inject the videos
       setTimeout(function(){
-        $('#lowdown').nextAll('h3:first').andSelf().each(function(){
-          var html = $.trim( $(this).next().text() );
-          $(html).insertAfter(this);
+        $('.videos .video').each(function(){
+          var html = $.trim( $(this).children().text() );
+          $(html).appendTo(this);
         });
       }, 3000);
     

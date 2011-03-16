@@ -62,7 +62,7 @@
 .syntaxhighlighter
 {
 	width: 100% !important; /* 99% fixes IE8 horizontal scrollbar */
-	margin: 1em 0 1em 0 !important;                                        
+	margin: 0 !important;                                        
 	position: relative !important;
 }
 
