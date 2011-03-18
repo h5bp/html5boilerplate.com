@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the html5boilerplate package.
 # Raúl Fraile <raulfraile@gmail.com>, 2011.
 # Miro Keller <veosotano@gmail.com>, 2011
-# Xavi Linares <jackjackbach@gmail.com>, 2011
 # Guillermo Pascual <akira.space@gmail.com>, 2011.
 # Ángel Sanz <mizo0mizo@gmail.com>, 2011.
 #
