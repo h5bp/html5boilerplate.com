@@ -239,7 +239,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 /* New Changelog */
 #body .new { max-width: 54em; margin: 0 auto 1em auto; }
-#body .new p { text-align: left; border-bottom: none; margin-bottom: 1em; font-size: 15px; line-height: 1.4; }
+#body .new p { text-align: left; border-bottom: none; margin-bottom: 1em; font-size: 18px; line-height: 1.6; }
 #body .new ul + p { margin-top: 1em; }
 #body .notice { overflow: hidden; clear: both; margin-bottom: 2em; }
 #body .notice img { float: left; margin: 9px 1.5em 1em 9px; border: 1px solid #000; outline: 9px solid #476871; }
