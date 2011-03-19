@@ -246,7 +246,7 @@ parser.add_option(  "-b", "--build", dest="build", default=False, action="store_
                     help="Build localizations in target languages" )
 parser.add_option(  "-l", "--locale", dest="localebase", default="./locale", metavar="DIR",
                     help="The directory where the .po/.mo files ought be located" )
-parser.add_option(  "-o", "--output", dest="outputbase", default="./build", metavar="DIR",
+parser.add_option(  "-o", "--output", dest="outputbase", default="./built", metavar="DIR",
                     help="The directory into which translated files ought be rendered." )
 parser.add_option(  "-i", "--input", dest="inputbase", default="./src", metavar="DIR", 
                     help="The directory from which to read the translation templates." )

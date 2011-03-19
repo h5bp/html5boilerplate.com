@@ -1,5 +1,6 @@
 .DS_Store 
 .svn
 build/
+built/
 publish/
 *.mo
