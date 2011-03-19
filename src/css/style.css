@@ -146,6 +146,7 @@ h1 i { font-family: arial, helvetica, sans-serif; font-style: normal; }
 h1 b { font-weight: normal; }
 h4, #body h4 em { font-size: 25px; margin: 25px 0 10px;}
 h4 em { font-style: normal; }
+h5 { margin: 10px 0;}
 
 h1 { font-size: 6em; line-height: 1.5; text-align: center; cursor: default; }
 h1:hover { color: #e16734; }

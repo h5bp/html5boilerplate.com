@@ -151,11 +151,14 @@
 			<li>If Google Analytics is not your thing, you can choose to not have it</li>
 			</ul>			
 		</div>
+		
+		<hr>
+		
 		<p>Now, aside from docs, the build script, and the initializr, we've got a bunch of enhancements in the base boilerplate:</p>
 		<h4>Build Script</h4>
 		<ul>
 			<li>Files linked via @import will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
-			<li>Environments are definable..</li>
+			<li>Environments are definable.</li>
 			<li>htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
 			<li>Massive rewrite so you can define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
 			<li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>		
@@ -196,26 +199,27 @@
 		<h5>.htaccess</h5>
 		<ul>
 			<li>.htaccess is far more documented now. Take a read through it!</li>
-			<li>.htaccess now caches .htc files</li>
-			<li>HTML Manifest files now use <code>.appcache</code> extension instead of <code>.manifest</code>, as per http://html5.org/r/5812.</li>
+			<li><a href="https://github.com/paulirish/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee">Changed mimetype of .ico files to "image/x-icon"</a>.</li>
+			<li>HTML Manifest files now use <code>.appcache</code> extension instead of <code>.manifest</code>, as per <a href="http://html5.org/r/5812">http://html5.org/r/5812</a>.</li>
+			<li>Force deflate for accept-encoding headers mangled by turtle tappers, courtesy of <a href="http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/">Yahoo!'s research</a></li>
 			<li>We nerfed some of the directives in case you're on server without <code>mod_headers</code>. (Which is totally crazy, man)</li>
 			<li>Block access to .git and .svn folders.</li>
 			<li>Eradicating Chrome's console warning on WOFF font downloads.</li>
 			<li>More optimizations available if you set the .htaccess details up in your httpd.conf</li>
-			<li><a href="https://github.com/paulirish/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee">Changed mimetype of .ico files to "image/x-icon"</a>.</li>
+			<li>.htaccess now caches .htc files</li>
+      
 			<li>Moved all server configurations (except apache's .htaccess) over to <a href ="https://github.com/paulirish/html5-boilerplate-server-configs">the new html5-boilerplate-server-configs repo</a>. Head over there if you are not using Apache. </li>
-			<li>Force deflate for mangled accept-encoding headers, courtesy of <a href="http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/">Yahoo!'s research</a></li>
+			
 			<li>Updated <code>.htaccess</code> and <code>mime.types</code> for ogg formats.</li>
 			<li>Fixed regression where EOT fonts had been excluded from DEFLATE compression</li>
 			<li>Apache version independence: Use <code>mod_filter</code> for compression, with fallback to AddOutputFilterByType directive for legacy versions</li>
 			<li>Added plugin/extension mime types for Safari, Chrome, Firefox</li>
     </ul>
-    <h5>.htaccess</h5>
+    <h5>nginx</h5>
     <ul>
-			<li>nginx.conf</li>
 			<li>Cleaned up cache expires directives.</li>
 			<li>Now includes SVG and font formats for gzipping.</li>
-			<li>Nginx config expires bug fixed.</li>
+			<li>expires header bug fixed.</li>
     </ul>
     <h5>IIS</h5>
     <ul>
