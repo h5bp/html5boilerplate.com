@@ -112,48 +112,46 @@
 	<div class="new">
 		<h3>HTML5 Boilerplate is 1.0!</h3>
 		<p>Along with HTML5 Boilerplate's rock solid commitment to cross-browser consistency, H5BP brings you <strong>delicious documentation, a site optimizing build script, and a custom boilerplate builder. </strong> In addition to this, we now support <<<these web servers>>> with optimized server configurations and we've reduced the overall size of the published boilerplate by 75%. </p>
-
-		<p><img> We have rather comprehensive documentation, contributed by the community and designed/implented by Mickael Daniel. You can add to it yourselves if you like. Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea.</p>
-
-		<p><img>The Boilerplate builder is ready for prime time. You know all those site optimization tricks that Steve Souders tells you is a good idea? You're four keystrokes away from nailing a 100% on them. </p>
-
-		<p>Now you can:</p>
-		<ul>
-		  <li>inline your @imports</li>
-		  <li>concatenate and minify your scripts</li>
-		  <li>concatenate and minify your css</li>
-		  <li>minify your HTML</li>
-		  <li>compress your images, saving 15-50% of page weight</li>
-		  <li>build according to what environment you want: production, test or development</li>
-		  <li>filenames are revved so you don't hit cache conflicts</li>
-		</ul> 
-
-		<p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs.</p>
-
-		<p><img>Oh hell yes.  You asked for it, now you have it: an Online builder! You might have spotted Initializr by Jonathan Verecchia. We've integrated it into the project, so now you have complete control to choose only what you want.</p>
-		<ul>
-		<li>Choose what kind of conditional classes you want: none, oldIE or all IE versions</li>
-		<li>Do you want handheld styles? Now you can choose! </li>
-		<li>If you would like jQuery minified version, you can have it or not have javascript or jQuery all together.</li>
-		<li>Love html5shiv? Now you can use that instead of modernizr</li>
-		<li>Config files for IIS, Nginix or none available to choose from </li>
-		<li>If Google Analytics is not your thing, you can choose to not have it</li>
-		</ul>
-
+	 	<div class="notice">
+		 	<img src="img/docs.png">
+			<h4>Docs!</h4>
+			<p> We have rather comprehensive documentation, contributed by the community and designed/implemented by Mickael Daniel. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea.</p>
+			</ul>					
+	 	</div>
+		<div class="notice">
+			<p>The Boilerplate builder is ready for prime time. You know all those site optimization tricks that Steve Souders tells you is a good idea? You're four keystrokes away from nailing a 100% on them. Now you can:</p>
+			<ul>
+			  <li>inline your @imports</li>
+			  <li>concatenate and minify your scripts</li>
+			  <li>concatenate and minify your css</li>
+			  <li>minify your HTML</li>
+			  <li>compress your images, saving 15-50% of page weight</li>
+			  <li>build according to what environment you want: production, test or development</li>
+			  <li>filenames are revved so you don't hit cache conflicts</li>			
+			</ul>
+		<p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs.</p>			
+		</div>
+		<div class="notice">
+			<img src="img/initializr.png">			
+			<h4>Boilerplate Initializr</h4>
+			<p>Oh hell yes.  You asked for it, now you have it: an Online builder! You might have spotted Initializr by Jonathan Verecchia. We've integrated it into the project, so now you have complete control to choose only what you want.</p>
+			<ul>
+			<li>Choose what kind of conditional classes you want: none, oldIE or all IE versions</li>
+			<li>Do you want handheld styles? Now you can choose! </li>
+			<li>If you would like jQuery minified version, you can have it or not have javascript or jQuery all together.</li>
+			<li>Love html5shiv? Now you can use that instead of modernizr</li>
+			<li>Config files for IIS, Nginix or none available to choose from </li>
+			<li>If Google Analytics is not your thing, you can choose to not have it</li>
+			</ul>			
+		</div>
 		<p>Now, aside from docs, the build script, and the initializr, we've got a bunch of enhancements in the base boilerplate:</p>
-
-
-		<p>In the <strong>Build Script</strong>:</p>
+		<h4>Build Script</h4>
 		<ul>
 			<li>Files linked via @import will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
 			<li>Environments are definable..htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
 			<li>Define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
 			<li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>		
 		</ul>
-
-		<h4>BUG FIXES</h4>
-		<p>Updated jQuery to 1.5.1, Modernizr to 1.7, htmlcompressor to omg, and..</p>
-
 
 		<h4>INDEX.HTML</h4>
 		<ul>
