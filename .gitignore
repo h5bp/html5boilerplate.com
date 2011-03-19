@@ -7,3 +7,6 @@ publish/
 # build script local files
 build/buildinfo.properties
 build/config/buildinfo.properties
+
+# copied for legacy reasons
+src/css/screen.css
