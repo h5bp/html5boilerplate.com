@@ -565,6 +565,13 @@
     
     <target name="-html" depends="-load-build-info" description="(PRIVATE) Very basic clean up of the HTML">
         <echo message="Clean up the html..."/>
+        
+        
+        <replace token="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/css/shCore.css&quot; &gt;" value="">
+             <fileset dir="./${dir.publish}" includes="${page-files}"/>
+        </replace>
+        
+        
         <!-- style.css replacement handled as a replacetoken above -->
         <replaceregexp match="&lt;!-- scripts concatenated [\d\w\s\W]*?!-- end ((scripts)|(concatenated and minified scripts))--&gt;" replace="&lt;script src='${dir.js}/scripts-${build.number}.min.js\'&gt;&lt;/script&gt;" flags="m">
             <fileset dir="./${dir.publish}" includes="${page-files}"/>
@@ -639,18 +646,18 @@
         <concat destfile="./${dir.publish}/${dir.css}/style-${build.number}.css">
             <filelist dir="./${dir.publish}/${dir.css}" files="${stylesheet-files}"/>
         </concat>
-        <!--
-        <apply executable="php" parallel="false">
+        
+        <apply executable="java" parallel="false">
             <fileset dir="./${dir.publish}/${dir.css}/" includes="style-${build.number}.css"/>
-            <arg line="-f"/>
-            <arg path="./${dir.build.tools}/${tool.csscompressor}"/>
+            <arg line="-jar"/>
+            <arg path="./${dir.build.tools}/${tool.yuicompressor}"/>
             <srcfile/>
-            <redirector>
-                <outputmapper type="glob" from="style-${build.number}.css" to="./${dir.publish}/${dir.css}/style-${build.number}.min.css"/>
-            </redirector>
+            <arg line="-o"/>
+            <mapper type="glob" from="style-${build.number}.css" to="../${dir.publish}/${dir.css}/style-${build.number}.min.css"/>
+            <targetfile/>
         </apply>
-    -->
-        <replace token="style.css" value="style-${build.number}.css" dir="${dir.publish}" includes="${page-files}"/>
+        
+        <replace token="style.css" value="style-${build.number}.min.css" dir="${dir.publish}" includes="${page-files}"/>
     </target>
     
     
