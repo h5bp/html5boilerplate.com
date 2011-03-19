@@ -20,6 +20,9 @@ messages: force
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}"
 
 build: force
+	@echo "Cool. Let's translate this bitch."
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
+	@echo "All done tranlating. New files are in ./built/"
+  
 
 force: ;
