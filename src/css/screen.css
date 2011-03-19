@@ -141,7 +141,7 @@ html[lang="ja"] p.lang a[lang="ja"] {
 }
 
 h1 i { font-family: arial, helvetica, sans-serif; font-style: normal; } 
-
+h1 b { font-weight: normal; }
 h4, #body h4 em { font-size: 25px; margin: 25px 0 10px;}
 h4 em { font-style: normal; }
 
@@ -242,7 +242,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .new > h3 + small { font-size: 60%; margin: 0 0 2em; display: block; }
 #body .new p { text-align: left; border-bottom: none; margin-bottom: 1em; font-size: 18px; line-height: 1.6; }
 #body .new ul + p { margin-top: 1em; }
-#body .notice { overflow: hidden; clear: both; margin-bottom: 2em; }
+#body .notice { clear: both; margin-bottom: 2em; }
 #body .notice img { float: left; margin: 9px 1.5em 1em 9px; border: 1px solid #000; outline: 9px solid #476871; }
 #body .notice h4 { text-align: left; margin-bottom: 1em; margin-top: 0.5em; }
 #body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; }
@@ -283,18 +283,12 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
    color: #e3d7bf;
  }
  
-.source h4 a.active:after {
-   content: " [ hide code ]";
- }
+.source h4 a.active:after { content: " [ hide code ]"; }
  
 .source h4 a:hover,
-.source h4 a.active {
-  background-color: #2B3F45;
-}
+.source h4 a.active { background-color: #2B3F45; }
 
-.source h4 a:hover:after {
-  opacity: 1;
-}
+.source h4 a:hover:after { opacity: 1; }
 /* VIDEOS */
 .videos { margin-bottom: 2em; }
 #body .videos ul { margin: 1em; text-align: center; border: 2px dotted #1e2322; padding: 0.5em 0; border-width: 2px 0; }
@@ -374,14 +368,20 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
   h2, h3{ page-break-after: avoid; }
 }
 
-
-@media screen and (max-device-width: 480px) {
-  h1 { font-size: 5em; }           
-  #body { font-size: 1em; }  
-  #body em, #body h3 { font-size: 1.5em; }
-  #body li { width: 300px ; }
+@media screen and (max-width: 980px) {
+  #body .notice img { display: block; float: none; margin: 9px auto 1em auto; border: 1px solid #000; outline: 9px solid #476871; }
+  #body ul { margin-left: 0; }
+  #body .notice h4 { text-align: center; margin-bottom: 1em; margin-top: 1.5em; }
+  #body .notice li { margin: 0; }
+  #body li { margin-left: 0; margin-right: 0; min-width: 0; max-width: 100%; width: 100%; padding: 0.25em 0; }
+  #header p, #body p.dwn + p i, #body h3, #disqus_thread, #footer, #builder, #body .new { width: 90%; max-width: 100%; }
 }
 
-
-
-
+@media screen and (max-device-width: 480px) {
+  h1 { font-size: 5em; line-height: 1; margin-bottom: 0.25em; }
+  h1 b { font-size: 0.5em; line-height: 2; display: block; }           
+  #body { font-size: 1em; }  
+  #body .new img { width: 80%; }
+  #body em, #body h3 { font-size: 1.5em; }
+  #body h4 { line-height: 1.2; }
+}
