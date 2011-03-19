@@ -108,107 +108,113 @@
       <i><a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
       <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
       </p>
+    
+	<div class="new">
+		<h3>HTML5 Boilerplate is 1.0!</h3>
+		<p>Along with HTML5 Boilerplate's rock solid commitment to cross-browser consistency, H5BP brings you <strong>delicious documentation, a site optimizing build script, and a custom boilerplate builder. </strong> In addition to this, we now support <<<these web servers>>> with optimized server configurations and we've reduced the overall size of the published boilerplate by 75%. </p>
+
+		<p><img> We have rather comprehensive documentation, contributed by the community and designed/implented by Mickael Daniel. You can add to it yourselves if you like. Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea.</p>
+
+		<p><img>The Boilerplate builder is ready for prime time. You know all those site optimization tricks that Steve Souders tells you is a good idea? You're four keystrokes away from nailing a 100% on them. </p>
+
+		<p>Now you can:</p>
+		<ul>
+		  <li>inline your @imports</li>
+		  <li>concatenate and minify your scripts</li>
+		  <li>concatenate and minify your css</li>
+		  <li>minify your HTML</li>
+		  <li>compress your images, saving 15-50% of page weight</li>
+		  <li>build according to what environment you want: production, test or development</li>
+		  <li>filenames are revved so you don't hit cache conflicts</li>
+		</ul> 
+
+		<p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs.</p>
+
+		<p><img>Oh hell yes.  You asked for it, now you have it: an Online builder! You might have spotted Initializr by Jonathan Verecchia. We've integrated it into the project, so now you have complete control to choose only what you want.</p>
+		<ul>
+		<li>Choose what kind of conditional classes you want: none, oldIE or all IE versions</li>
+		<li>Do you want handheld styles? Now you can choose! </li>
+		<li>If you would like jQuery minified version, you can have it or not have javascript or jQuery all together.</li>
+		<li>Love html5shiv? Now you can use that instead of modernizr</li>
+		<li>Config files for IIS, Nginix or none available to choose from </li>
+		<li>If Google Analytics is not your thing, you can choose to not have it</li>
+		</ul>
+
+		<p>Now, aside from docs, the build script, and the initializr, we've got a bunch of enhancements in the base boilerplate:</p>
+
+
+		<p>In the <strong>Build Script</strong>:</p>
+		<ul>
+			<li>Files linked via @import will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
+			<li>Environments are definable..htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
+			<li>Define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
+			<li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>		
+		</ul>
+
+		<h4>BUG FIXES</h4>
+		<p>Updated jQuery to 1.5.1, Modernizr to 1.7, htmlcompressor to omg, and..</p>
+
+
+		<h4>INDEX.HTML</h4>
+		<ul>
+			<li>We use a <a href="http://paulirish.com/2010/the-protocol-relative-url/">protocol-relative url</a> for the jQuery include, to prevent the mixed content warning.</li>
+			<li>The order of <code>&lt;meta></code> tags, <code>&lt;title></code>, and charset has been <a href="https://github.com/paulirish/html5-boilerplate/wiki/The-markup ">documented more extensively now</a>. TL;DR: You are <a href="https://github.com/paulirish/html5-boilerplate/commit/4b67ea5cabb8c2b75faf2e255344cdffdf190464">safe to use the boilerplate's order of tags</a>.</li>
+			<li>We've shortened up the Google Analytics snippet.</li>
+			<li>Added an ARIA <code>role</code> attribute to <code>div#main</code>. This assumes your main content goes within that container.</li>
+			<li>IE9 doesn't get it's own conditional class! Yay!</li>		
+		</ul>
+
+		<h4>STYLE.CSS</h4>
+		<ul>
+			<li>Added <code>.focusable</code> helper class that extends <code>.visuallyhidden</code> to allow the element to be focusable when navigated to via the keyboard.</li>
+			<li>Anchor links are no longer reset. Basically our reset is the effectively merged with Eric Meyer's recent CSS reset update and also the HTML5 Doctor reset.</li>
+			<li>An unordered list within a nav element will no longer have a margin.</li>
+			<li>All helper classes are now after primary styles to ensure correct overrides and not be burdened with resets. </li>
+			<li><code>.visuallyhidden</code> is no longer camelCase, as to be consistent with other classname formats.</li>
+			<li>Updated the specificity of <code>.visuallyhidden</code> rule to make sure it overrides all other declarations. </li>
+			<li>Removed reset on image elements within table cells as they look ugly alongside multiline texts. Browsers default to baseline alignment for images which works better than top alignment.</li>
+			<li>Increased margin-left on ol, to allow for 2-digit list numbers.</li>
+			<li>Added a print reset on IE's proprietary filters.</li>
+			<li>Print styles no longer prints hash links or javascript links.</li>
+			<li>Updated sub/sup css to make them not be impacted by line-height, so now you can do sub/superscripts without worrying.</li>		
+		</ul>
+
+		<h4>CONFIGS</h4>
+		<ul>
+			<li>.htaccess is far more documented now. Take a read through it!</li>
+			<li>.htaccess now caches .htc files</li>
+			<li>HTML Manifest files now use <code>.appcache</code> extension instead of <code>.manifest</code>, as per http://html5.org/r/5812.</li>
+			<li>We nerfed some of the directives in case you're on server without <code>mod_headers</code>. (Which is totally crazy, man)</li>
+			<li>Block access to .git and .svn folders.</li>
+			<li>Eradicating Chrome's console warning on WOFF font downloads.</li>
+			<li>More optimizations available if you set the .htaccess details up in your httpd.conf</li>
+			<li><a href="https://github.com/paulirish/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee">Changed mimetype of .ico files to "image/x-icon"</a>.</li>
+			<li>Moved all server configurations (except apache's .htaccess) over to <a href ="https://github.com/paulirish/html5-boilerplate-server-configs">the new html5-boilerplate-server-configs repo</a>. Head over there if you are not using Apache. </li>
+			<li>Force deflate for mangled accept-encoding headers, courtesy of <a href="http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/">Yahoo!'s research</a></li>
+			<li>Updated <code>.htaccess</code> and <code>mime.types</code> for ogg formats.</li>
+			<li>Fixed regression where EOT fonts had been excluded from DEFLATE compression</li>
+			<li>Apache version independence: Use <code>mod_filter</code> for compression, with fallback to AddOutputFilterByType directive for legacy versions</li>
+			<li>Added plugin/extension mime types for Safari, Chrome, Firefox</li>
+
+			<li>nginx.conf</li>
+			<li>Cleaned up cache expires directives.</li>
+			<li>Now includes SVG and font formats for gzipping.</li>
+			<li>Nginx config expires bug fixed.</li>
+
+			<li>Added Flash video mime types to IIS server</li>
+
+			<li>Initial commit of a lighttpd config file intended to be equivalent in functionality to the apache and nginx config files</li>		
+		</ul>
+
+
+		<h4>OTHERS</h4>
+		<ul>
+			<li>Added humans.txt.  see http://humanstxt.org for more info</li>
+			<li>Removed YUI profiling. you probably weren't using it anyway.</li>
+			<li>Removed qunit's unit tests. There is no need to ship with them, really.</li>		
+		</ul>
+	</div>
      
-      <h3>{% blocktrans %}Why it is awesome{% endblocktrans %}</h3>
-      <ul>
-        <li>{% blocktrans %}Cross-browser compatible (IE6, yeah we got that.){% endblocktrans %}</li>
-        <li>{% blocktrans %}Never go wrong with your doctype or markup!{% endblocktrans %}</li>          
-        <li>{% blocktrans %}HTML5 ready. Use the new tags with certainty.{% endblocktrans %}</li>
-        <li>{% blocktrans %}Best practice site configuration defaults{% endblocktrans %}</li>
-        <li>{% blocktrans %}Progressive enhancement graceful degradation &hellip; yeah yeah we got that{% endblocktrans %}</li>
-        <li>{% blocktrans %}Handy .no-js and .js classes to style based on capability{% endblocktrans %}</li>
-        <li>{% blocktrans %}Console.log nerfing so you won't break anyone by mistake.{% endblocktrans %}</li>
-        <li>{% blocktrans %}An optimal print stylesheet, performance optimized.{% endblocktrans %}</li>
-        <li>{% blocktrans %}iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.{% endblocktrans %}</li>
-        <li>{% blocktrans %}.clearfix, .visuallyhidden classes to style things wisely and accessibly.{% endblocktrans %}</li>
-        <li>{% blocktrans %}.htaccess file that allows proper use of HTML5 features and faster page load{% endblocktrans %}</li>
-        <li>{% blocktrans %}CDN hosted jQuery with local fallback failsafe.{% endblocktrans %}</li>
-        <li>{% blocktrans %}Think there's too much? The HTML5 Boilerplate is delete-key friendly. :){% endblocktrans %}</li>
-      </ul>
-
-       <h4>INDEX.HTML</h4>
-       <ul>
-         <li>Comment about the protocol-relative URL in use.</li>
-         <li>Standardize comment syntax and grammar.</li>
-         <li>The order of <code>&lt;meta&gt;</code> tags, <code>&lt;title&gt;</code>, and charset has been <a href="https://github.com/paulirish/html5-boilerplate/wiki/The-markup">documented more extensively now</a> you are safe to use the boilerplate's order.</li>
-         <li>Scrunch up the analytics snippet some more. It doesn&rsquo;t need to be so readable IMO</li>
-         <li>Going back to non-$.getScript'd <code>DD_belatedPNG</code>, due to some messy race conditions. </li>
-         <li>Added role to <code>div#main</code> for elemental ARIA. </li>
-         <li>Clean up new async <code>DD_belated</code> call.</li>
-         <li>Fixed modernizr path issue. </li>
-         <li>Implement async load for <code>DD_belated</code></li>
-       </ul>
-
-
-       <h4>STYLE.CSS</h4>
-       <ul>
-         <li>Add .focusable helper class that extends <code>.visuallyhidden</code> to allow the element to be focusable when navigated to via the keyboard.</li>
-         <li>Removed <code>outline: 0</code> inline with Eric Meyer's new reset.</li>
-         <li>Removed the resetting of anchor links.</li>
-         <li>Applying <code>list-style-image:none</code> to <code>nav ul</code> in all browsers (necessary for IE7-). </li>
-         <li>Moved helper classes after primary styles to make sure they override author styles. </li>
-         <li>Updated reset to latest updates to Eric Meyer's reset css. </li>
-         <li>Removed camelcase from the classname <code>visuallyhidden</code> to be consistent with other classname formats.</li>
-         <li>Updated visuallyHidden rule to make sure it overrides all other declarations. Thanks Jonathan Neal.</li>
-         <li>Removed reset on the image in a table cell as it looks terrible with multiple lines. Browser defaults to baseline alignment for images which works better than top alignment.</li>
-         <li>Increased <code>margin-left</code> on ol, to allow for 2-digit list numbers. Thanks MichaelvanLaar.</li>
-         <li>Added a reset on filters for print styles. </li>
-         <li>Updated sub/sup css to make them not be impacted by line-height.</li>
-         <li>Cleaning up print link styles - Do not print hash-links, do not print href-values for javascript links.</li>
-         <li>Black color prints faster.</li>
-         <li>Added input type=image based on Ivannikolic's suggestion</li>
-         <li>Removed IE9 conditional on html file. </li>
-       </ul>
-
-
-
-       <h4>WEB SERVER CONFIGS</h4>
-       <ul>
-         <li>Caching of <code>.htc</code> files. </li>
-         <li>Use the <code>.appcache</code> extension instead of .manifest, as per http://html5.org/r/5812.</li>
-         <li>Header directive appeared without <code>IfModule mod_headers.c</code> causing Internal Server Error when mod_headers was not available.</li>
-         <li>Htaccess: block access to <code>.git</code> and <code>.svn</code> folders.</li>
-         <li>Eradicating chrome console warning on WOFF font downloads. </li>
-         <li>ServerTokens Prod added to <code>htaccess</code>. thx alrra.</li>
-         <li>Changing mimetype of .ico files to "image/x-icon".</li>
-         <li>Moved all server configurations (except apache's .htaccess) over to a <a href="https://github.com/paulirish/html5-boilerplate-server-configs">new repo</a></li>           
-         <li>Force deflate for mangled accept-encoding headers</li>
-         <li>.htaccess: some additional features and more structure for easier readability</li>
-         <li>Added Flash video mime types to IIS server</li>
-         <li>Clean up cache expires directives in nginx.conf</li>
-         <li>Ensure that <code>.htaccess</code> works even if mod_headers is not installed</li>
-         <li>Changed <code>nginx.conf</code> to include SVG and font formats for gzipping</li>
-         <li>Nginx already gzips <code>text/html</code>. we can avoid a warning. </li>
-         <li>Nginx config expires bugfix. </li>
-         <li>Added <code>plugin/extension</code> mime types for safari, chrome, firefox</li>
-         <li>Updated <code>.htaccess</code> and <code>mime.types</code> for ogg formats.</li>
-         <li>Added nginx <code>mime.types</code> config file with the MIME types additions made in <code>.htaccess</code> file.</li>
-         <li>Initial commit of a lighttpd config file intended to be equivalent in functionality to the apache and nginx config files</li>
-         <li>Fixed the filter module to reflect only html, txt, css, js, json, xml, htc</li>
-         <li>Fixed regression where EOT fonts had been excluded from DEFLATE compression</li>
-         <li>Removed <code>rss/atom</code> &amp; MS formats not necessary for generic use</li>
-         <li>Updated <code>.htaccess</code> regex for filter_module thanks to unwiredbrain</li>
-         <li>Add note and link regarding best practices for Apache config</li>
-         <li>Use mod_filter for compression, with fallback to <code>AddOutputFilterByType</code> directive for legacy versions</li>
-         <li>Append instead of setting Cache-Control:public header so it doesn't get clobbered by <code>ExpiresByType</code></li>
-       </ul>
-
-
-       <h4>LIBRARIES</h4>
-       <ul>
-         <li>Updated <code>modernizr-1.6.min.js</code> to <code>modernizr-1.7.min.js</code></li>
-         <li>Update to jQuery 1.5.1 now that ajax.googleapis.com finally hosts it as well.</li>
-       </ul>
-
-       <h4>OTHERS</h4>
-       <ul>
-         <li>Added <code><a href="http://humanstxt.org">humans.txt</a></code>.</li>
-         <li>note: you can add page handlers for 500, 403 errors easily. </li>
-         <li>Removed YUI profiling. you probably weren't using it anyway.</li>
-         <li>Removed qunit's unit tests. no need to ship with them, really.</li>
-         <li>Add ignores for most common editors so that swap files don't show up as untracked files.</li>
-      </ul>
-      
       <div class="source">
         <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
 
