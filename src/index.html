@@ -155,12 +155,13 @@
 		<h4>Build Script</h4>
 		<ul>
 			<li>Files linked via @import will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
-			<li>Environments are definable..htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
-			<li>Define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
+			<li>Environments are definable..</li>
+			<li>htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
+			<li>Massive rewrite so you can define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
 			<li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>		
 		</ul>
 
-		<h4>INDEX.HTML</h4>
+		<h4>index.html</h4>
 		<ul>
 			<li>We use a <a href="http://paulirish.com/2010/the-protocol-relative-url/">protocol-relative url</a> for the jQuery include, to prevent the mixed content warning.</li>
 			<li>The order of <code>&lt;meta></code> tags, <code>&lt;title></code>, and charset has been <a href="https://github.com/paulirish/html5-boilerplate/wiki/The-markup ">documented more extensively now</a>. TL;DR: You are <a href="https://github.com/paulirish/html5-boilerplate/commit/4b67ea5cabb8c2b75faf2e255344cdffdf190464">safe to use the boilerplate's order of tags</a>.</li>
@@ -169,7 +170,7 @@
 			<li>IE9 doesn't get it's own conditional class! Yay!</li>		
 		</ul>
 
-		<h4>STYLE.CSS</h4>
+		<h4>style.css</h4>
 		<ul>
 			<li>Added <code>.focusable</code> helper class that extends <code>.visuallyhidden</code> to allow the element to be focusable when navigated to via the keyboard.</li>
 			<li>Anchor links are no longer reset. Basically our reset is the effectively merged with Eric Meyer's recent CSS reset update and also the HTML5 Doctor reset.</li>
@@ -184,7 +185,15 @@
 			<li>Updated sub/sup css to make them not be impacted by line-height, so now you can do sub/superscripts without worrying.</li>		
 		</ul>
 
-		<h4>CONFIGS</h4>
+		<h4>Project</h4>
+		<ul>
+			<li>Added a <a href="http://humanstxt.org">humans.txt</a> so you can clarify authorship and tools used</li>
+			<li>Removed YUI profiling. You probably weren't using it anyway.</li>
+			<li>Removed QUnit's unit tests. There is no need to ship with them, really.</li>		
+		</ul>
+		
+		<h4>Webserver Configs</h4>
+		<h5>.htaccess</h5>
 		<ul>
 			<li>.htaccess is far more documented now. Take a read through it!</li>
 			<li>.htaccess now caches .htc files</li>
@@ -200,24 +209,27 @@
 			<li>Fixed regression where EOT fonts had been excluded from DEFLATE compression</li>
 			<li>Apache version independence: Use <code>mod_filter</code> for compression, with fallback to AddOutputFilterByType directive for legacy versions</li>
 			<li>Added plugin/extension mime types for Safari, Chrome, Firefox</li>
-
+    </ul>
+    <h5>.htaccess</h5>
+    <ul>
 			<li>nginx.conf</li>
 			<li>Cleaned up cache expires directives.</li>
 			<li>Now includes SVG and font formats for gzipping.</li>
 			<li>Nginx config expires bug fixed.</li>
-
+    </ul>
+    <h5>IIS</h5>
+    <ul>
 			<li>Added Flash video mime types to IIS server</li>
+			<li>Fixed some mimetype weirdness that was preventing proper caching</li>
+    </ul>
+    
+    <ul>
+			<li>Also Google App Engine, Lighttpd, and NodeJS <a href="https://github.com/paulirish/html5-boilerplate-server-configs">configurations were added</a></li>
+    </ul>
 
-			<li>Initial commit of a lighttpd config file intended to be equivalent in functionality to the apache and nginx config files</li>		
-		</ul>
+    <p>Basically a lot of great updates were made. <a href="https://github.com/paulirish/html5-boilerplate/compare/v0.9.5...master">Here are all 220 commits since last release.</a>. You may ask though, <a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">do I need to upgrade existing sites</a>? Short answer: nah, you're good.</p>
 
 
-		<h4>OTHERS</h4>
-		<ul>
-			<li>Added humans.txt.  see http://humanstxt.org for more info</li>
-			<li>Removed YUI profiling. you probably weren't using it anyway.</li>
-			<li>Removed qunit's unit tests. There is no need to ship with them, really.</li>		
-		</ul>
 	</div>
      
       <div class="source">
