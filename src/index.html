@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html public "✰">
 <!--[if lt IE 7 ]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
@@ -42,7 +42,7 @@
          <h1>HTML5  <i>&#x2605;</i> Boilerplate</h1> 
          <h2>{% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</h2>  
          <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
-         <p>{% blocktrans %}After more than two years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
+         <p>{% blocktrans %}After more than three years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
          <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
     </div>
 
@@ -79,7 +79,7 @@
       			<a id="default-js" class="selected" href="#">jQuery minified</a>
     			</div>			
     			<div id="shivs" class="clearfix">
-    			  <h4>Polyfill</h4>
+    			  <h4>HTML5 Enabler</h4>
       			<a id="no-compat" href="#">Nope</a>
       			<a id="default-js" class="selected" href="#">Modernizr</a>
       			<a id="shiv" href="#">html5shiv</a>
@@ -104,18 +104,22 @@
         <a href="./docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
         <a href="http://github.com/paulirish/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>        
         <a href="#disqus_thread">{% blocktrans %}Comment here{% endblocktrans %}</a>        
-      </i>
-      <i><a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
-      <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a></i>
+      
+        <a href="http://twitter.com/boiler_plate">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
+      
+        <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a>
+
+       </i>
       </p>
     
 	<div class="new">
 		<h3>HTML5 Boilerplate is 1.0!</h3>
+		<small>Monday, March 21, 2011</small>
 		<p>Along with HTML5 Boilerplate's rock solid commitment to cross-browser consistency, H5BP brings you <strong>delicious documentation, a site optimizing build script, and a custom boilerplate builder. </strong> In addition to this, we now support lighttpd, Google App Engine, and NodeJS with optimized server configurations <small>(along with Apache, Nginx, and IIS)</small> and we've reduced the overall size of the published boilerplate by 75%. </p>
 	 	<div class="notice">
 		 	<img src="img/docs.png">
 			<h4>Docs!</h4>
-			<p> We have rather comprehensive documentation, contributed by the community and designed/implemented by Mickael Daniel. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea.</p>
+			<p> We now have rather <a href="/docs/">comprehensive documentation</a>, contributed by the community and designed/implemented by Mickael Daniel. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea. Some pages you'll enjoy the read through: <a href="/docs/#the-markup">The Markup</a>, <a href="/docs/#the-style">The Style</a>, <a href="/docs/#Make-it-better">Make It Better</a>, and <a href="/docs/#Get-Started!">Getting Started</a>. We also now have <a href="#videos">several videos to walk you through this stuff</a>.</p>
 			</ul>					
 	 	</div>
 		<div class="notice">
@@ -238,7 +242,7 @@
         <h4><a href="#" title="click to see the code of .htaccess">.htaccess</a></h4>
         <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>        
       </div>
-      <div class="videos">
+      <div class="videos" id="videos">
         <h3>Videos</h3>
         <ul>
           <li><a class="active" href="#video-lowdown"> {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a></li>
