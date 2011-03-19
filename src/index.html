@@ -120,7 +120,7 @@
 		 	<img src="img/docs.png">
 			<h4>Docs!</h4>
 			
-			<p> We now have rather <a href="/docs/">comprehensive documentation</a>, contributed by the community and designed/implemented by <a href="http://github.com/mklabs"Mickael Daniel</a>. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea. Some pages you'll enjoy the read through: <a href="/docs/#the-markup">The Markup</a>, <a href="/docs/#the-style">The Style</a>, <a href="/docs/#Make-it-better">Make It Better</a>, and <a href="/docs/#Get-Started!">Getting Started</a>. We also now have <a href="#videos">several videos to walk you through this stuff</a>.</p>
+			<p> We now have rather <a href="/docs/">comprehensive documentation</a>, contributed by the community and designed/implemented by <a href="http://github.com/mklabs">Mickael Daniel</a>. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea. Some pages you'll enjoy the read through: <a href="/docs/#the-markup">The Markup</a>, <a href="/docs/#the-style">The Style</a>, <a href="/docs/#Make-it-better">Make It Better</a>, and <a href="/docs/#Get-Started!">Getting Started</a>. We also now have <a href="#videos">several videos to walk you through this stuff</a>.</p>
 
 			</ul>					
 	 	</div>
@@ -252,24 +252,19 @@
           <li><a href="#video-buildtool"> {% blocktrans %}Learn more on the build tool{% endblocktrans %}</a></li>
           <li><a href="#video-getstarted"> {% blocktrans %}Ready to get started?{% endblocktrans %}</a></li>          
         </ul>
-        <div id="video-lowdown" class="video video-active">
+        <div id="video-digdeeper" class="video active">
           <noscript>
-            <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
-          </noscript>          
-        </div>
-        <div id="video-digdeeper" class="video">
-          <noscript>
-            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            <iframe title="YouTube video player" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
           </noscript>          
         </div> 
         <div id="video-buildtool" class="video">
           <noscript>
-            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            <iframe title="YouTube video player" width="200" height="150" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
           </noscript>          
         </div> 
         <div id="video-getstarted" class="video">
           <noscript>
-            <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            <iframe title="YouTube video player" width="200" height="150" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
           </noscript>          
         </div>               
       </div>
@@ -392,15 +387,6 @@
           e.preventDefault();
         }        
       );
-     
-      var videolinks = $('.videos a[href^="#video-"]');
-      videolinks.bind('click', function(e) {
-        videolinks.removeClass('active');
-        $(this).addClass('active');
-        $('.videos .video-active').removeClass('video-active');
-        $(/#(.*)/g.exec(this.href)[0]).addClass('video-active');
-        e.preventDefault();
-      });
       
       jQuery('a[href=#disqus_thread]').smoothScrollTo();
 
