@@ -293,14 +293,12 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 /* VIDEOS */
 .videos { margin-bottom: 2em; }
-#body .videos ul { margin: 1em; text-align: center; border: 2px dotted #1e2322; padding: 0.5em 0; border-width: 2px 0; }
-#body .videos li { border: 0; display: inline; width: auto; min-width: auto; max-width: auto; padding-left: 0; font-size: 0.8em; list-style: none; }
-#body .videos li:first-child:before { content: ""; padding-left: 0; }
-#body .videos li a.active { color: inherit; }
-#body .videos .video { display: inline-block; margin: 0 1em 1em 0; position: relative; width: 200px; height: 150px; }
-#body .videos .video iframe { width: 200px; height: 150px; position: absolute; -webkit-transition: all 0.1s ease-out; -o-transition: all 0.1s ease-out;  -moz-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
-#body .videos .video:hover { z-index: 9; }
-#body .videos .video:hover iframe { width: 400px; height: 300px; top: -50px; left: -50px; z-index: 10; }
+#body .videos .video { display: inline-block; vertical-align: top; margin: 1em; position: relative; width: 200px; height: 150px; font-size: 0.8em; }
+#body .videos .video a { display: block; }
+#body .videos .video img { -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; -moz-transition: all 1s ease-out; transition: width 1s ease-out; box-shadow: 0 0 1em #000; }
+#body .videos .video:hover { z-index: 1; }
+#body .videos .video:hover img { -webkit-transform: scale(1.2); -o-transform: scale(1.2); -moz-transform: scale(1.2); transform: scale(1.2); }
+
 
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
