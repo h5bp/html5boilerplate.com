@@ -106,9 +106,6 @@ body, select, input, textarea { color:#444; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; text-transform: uppercase; }
 
-a, a:active, a:visited { color:#607890; }
-a:hover { color:#036; }
-
 /* PRIMARY STYLES */
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 @font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
@@ -153,8 +150,9 @@ h1:hover { color: #e16734; }
 
 body { background: #232927; color: #e3d7bf; text-align: center; font: 300 12px/18px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; }
 
-a, a:hover, a:focus, a:visited  { color: #e16734; text-decoration: none;}
-#body ul a, a:hover, a:focus, #body p a, .disqus-wrapper a, p.lang a, #builder a.selected { color: #e16734; }
+a, a:hover, a:focus, a:visited  { text-decoration: none; }
+a, .disqus-wrapper a, #builder a.selected { color: #e16734; }
+a:hover, a:focus, #footer a:hover, #footer a:focus { color: #82A6B0; }
 
 b.border-a,
 b.border-b,
@@ -326,7 +324,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
 #footer p+p, #footer li, #body li, #footer p:first-child i, #disqus_thread { text-transform: none; }
 #footer li { display: inline; margin: 0 1em 0 0; } 
-#footer a { white-space: nowrap; color: #E3D7BF; }                                                      
+#footer a { white-space: nowrap; color: inherit; }                                                      
 
 /* IN-LINE STAR BULLETS */
 #footer li:after, .social a:after, .lang a:after { content: " ★"; padding-left: 1em; color: #e3d7bf; }                           
