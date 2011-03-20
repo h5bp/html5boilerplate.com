@@ -21,18 +21,26 @@ $.fn.smoothScrollTo = function(){
 };
 
 
-var dsqlength, dsqshow;
+var dsqshow, loadcomments = function() {
+  if(!dsqshow){
+    dsqshow = true;
+    loaddisqus();
+  }  
+  jQuery('#disqus_thread').show();    
+}, loaddisqus = function() {
+    var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
+    var disqus_category_id = 517513;
+    var disqus_url = '{% blocktrans %}http://html5boilerplate.com/{% endblocktrans %}';
 
-// !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
-if (~location.hash.replace('#','').indexOf('comment')){
-  dsqshow = true;
-  jQuery('#disqus_thread').show();
-}
+    setTimeout(function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = 'http://boilerplate.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }, 10);  
+};
 
-$(document).ready(function(){
 
-  dsqlength = jQuery('ul#dsq-comments').length + 1;
-  
+$(document).ready(function(){      
   $('pre[class]').each(function(i, el) {
     SyntaxHighlighter.highlight(undefined, el)
   });
@@ -66,7 +74,7 @@ $(document).ready(function(){
   jQuery('a[href=#dsq-content]').toggle(
     function () {
       jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
-      jQuery('#disqus_thread').show();
+      loadcomments();
     },
     function () {
       jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
@@ -74,6 +82,12 @@ $(document).ready(function(){
     }
   );
   
+  // !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
+  if (~location.hash.replace('#','').indexOf('comment')){
+    loadcomments();
+    jQuery('a[href=#dsq-content]').click();
+  }
+    
   // lazy inject the videos
   setTimeout(function(){
     $('.videos .video').each(function(){
@@ -83,19 +97,6 @@ $(document).ready(function(){
   }, 3000);
 
 }); // end of doc ready()
-
-
-// disqus
-  var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
-  var disqus_category_id = 517513;
-  var disqus_url = '{% blocktrans %}http://html5boilerplate.com/{% endblocktrans %}';
-  
-  // load comments after 5 sec, unless the hash is set.
-  setTimeout(function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://boilerplate.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  }, dsqshow ? 10 : 5000);
 
 
 // google analytics
