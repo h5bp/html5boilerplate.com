@@ -100,6 +100,12 @@ $(document).ready(function(){
     });
   }, 3000);
 
+  $('#intro').prevAll('a').first().click(function(){
+    $('#header').toggleClass('showintro');
+    return false;
+  });
+
+
 }); // end of doc ready()
 
 

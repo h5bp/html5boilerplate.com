@@ -40,14 +40,49 @@
            <a href="http://ja.html5boilerplate.com" lang="ja">日本語</a>            
          </p>        
          <h1>HTML5  <i>&#x2605;</i> Boilerplate</h1> 
-         <h2>{% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</h2>  
-         <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
-         <p>{% blocktrans %}After more than three years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
-         <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
+         <h2>{% blocktrans %}A rock-solid default for HTML5 awesome.{% endblocktrans %}</h2>
+         
+         <a href="#intro" class=introtoggle>I'm new here: plz explain why it's so awesome, first.</a>
+           
+         <div id="intro" > 
+           <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
+           <p>{% blocktrans %}After more than three years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
+           <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
+       
+       
+           <h3>Why it is awesome</h3> 
+           <ul> 
+             <li>Cross-browser compatible (IE6, yeah we got that.)</li> 
+             <li>HTML5 ready. Use the new tags with certainty.</li> 
+             <li>Optimal caching and compression rules for grade-A performance</li> 
+             <li>Best practice site configuration defaults</li> 
+             <li>Mobile browser optimizations</li> 
+             <li>Progressive enhancement graceful degradation &hellip; yeah yeah we got that</li> 
+             <li>IE specific classes for maximum cross-browser control</li> 
+             <li>Handy .no-js and .js classes to style based on capability</li> 
+             <li>Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.</li> 
+           </ul> 
+           
+           <h3>Why it is awesome-er</h3> 
+           <ul> 
+             <li>Javascript profiling&hellip;in IE6 and IE7? Sure, no problem.</li> 
+             <li>Console.log nerfing so you won't break anyone by mistake.</li> 
+             <li>Never go wrong with your doctype or markup!</li> 
+             <li>An optimal print stylesheet, performance optimized.</li> 
+             <li>iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.</li> 
+             <li>IE6 pngfix baked in.</li> 
+             <li>.clearfix, .visuallyhidden classes to style things wisely and accessibly.</li> 
+             <li>.htaccess file that allows proper use of HTML5 features and faster page load</li> 
+             <li>CDN hosted jQuery with local fallback failsafe.</li> 
+             <li>Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)</li> 
+           </ul>
+            
+            <h3>{% blocktrans %}Want to dive in?{% endblocktrans %}</h3>
+         </div>
     </div>
 
     <div id="body">
-      <h3>{% blocktrans %}Want to dive in?{% endblocktrans %}</h3>
+
       <p class="bptext">{% blocktrans with "1.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small><a href="#rc10">Updated Mar 21st</a></small></p>
 
       <p class="dwn">
@@ -192,10 +227,9 @@
 		<p>Now, aside from docs, the build script, and the initializr, we've got a bunch of enhancements in the base boilerplate:</p>
 		<h4>Build Script</h4>
 		<ul>
-			<li>Files linked via @import will be inlined into the files they are imported to using Corey Hart's CSS Compressor.</li>
+			<li>Massive rewrite so you can define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
 			<li>Environments are definable.</li>
 			<li>htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
-			<li>Massive rewrite so you can define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
 			<li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>		
 		</ul>
 
