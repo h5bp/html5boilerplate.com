@@ -220,6 +220,9 @@ code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-bor
 #body li:last-child { border-bottom: 0; }
 #container[dir="rtl"] #body li { text-align: right; }
 #body li:before { content: "★"; padding-right: 0.5em; }
+#body .new li:before {  font-size: 59%; vertical-align: text-bottom; color: #CAB486;  }
+#body .new li { text-indent: -15px; }
+#body .new .notice li { padding-left: ;}
 #container[dir="rtl"] #body li:before { padding-left: 0.5em; }
 
 #html5logo { display: inline-block; margin-top: 1em; }
@@ -248,7 +251,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .notice { clear: both; margin-bottom: 2em; }
 #body .notice img { float: left; margin: 9px 1.5em 1em 9px; border: 1px solid #000; outline: 9px solid #476871; }
 #body .notice h4 { text-align: left; margin-bottom: 1em; margin-top: 0.5em; }
-#body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; }
+#body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; padding-left: 35px; }
 #body .notice ul { margin-left: 0; }
 
 /* BUILD GRAPHICS */
