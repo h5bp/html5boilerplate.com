@@ -50,7 +50,7 @@ $(document).ready(function(){
     }        
   );
  
- /*
+ 
   var videolinks = $('.videos a[href^="#video-"]');
   videolinks.bind('click', function(e) {
     videolinks.removeClass('active');
@@ -58,8 +58,7 @@ $(document).ready(function(){
     $('.videos .video-active').removeClass('video-active');
     $(/#(.*)/g.exec(this.href)[0]).addClass('video-active');
     e.preventDefault();
-  });
-  */
+  });  
   
   jQuery('a[href=#disqus_thread]').smoothScrollTo();
 

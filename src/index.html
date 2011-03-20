@@ -263,31 +263,42 @@
       </div>
       <div class="videos" id="videos">
         <h3>Videos</h3>
-        <div id="video-lowdown" class="video">
-          <a class="active" href="#video-lowdown">
-            <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-            {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}
-          </a>          
+          <ul>
+            <li><a class="active" href="#video-lowdown">
+              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
+              {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a>
+            </li>
+            <li><a href="#video-digdeeper"> 
+              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
+              {% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</a></li>
+            <li><a href="#video-buildtool"> 
+              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
+              {% blocktrans %}Learn more on the build tool{% endblocktrans %}</a></li>
+            <li><a href="#video-getstarted"> 
+              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
+              {% blocktrans %}Ready to get started?{% endblocktrans %}</a></li>          
+          </ul>
+          <div id="video-lowdown" class="video video-active">
+            <noscript>
+              <embed src="http://blip.tv/play/gcMVgffAOgA%2Em4v" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed> 
+            </noscript>          
+          </div>
+          <div id="video-digdeeper" class="video">
+            <noscript>
+              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            </noscript>          
+          </div> 
+          <div id="video-buildtool" class="video">
+            <noscript>
+              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            </noscript>          
+          </div> 
+          <div id="video-getstarted" class="video">
+            <noscript>
+              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            </noscript>          
+          </div>               
         </div>
-        <div id="video-digdeeper" class="video active">
-          <a href="#video-digdeeper"> 
-            <img src="/img/video-thumb.png" alt="Video on Boilerplate">
-            {% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}
-          </a>          
-        </div> 
-        <div id="video-buildtool" class="video">
-          <a href="#video-buildtool"> 
-            <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-            {% blocktrans %}Learn more on the build tool{% endblocktrans %}
-          </a>
-        </div> 
-        <div id="video-getstarted" class="video">
-          <a href="#video-getstarted">
-            <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-            {% blocktrans %}Ready to get started?{% endblocktrans %}
-          </a>          
-        </div>               
-      </div>
     </div>
     <div id="footer">
       <p>
