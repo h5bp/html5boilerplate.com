@@ -181,9 +181,9 @@ h2 + p { font-size: 14px; }
 -webkit-transition: all 0.3s ease-out;  
         transition: all 0.3s ease-out;  
 }
-.showintro #intro { max-height: 850px; opacity: 1;}
-#header li { font-size: 15px;}
-
+#intro h3 { margin-top: 1em; }
+.showintro #intro { max-height: 100%; opacity: 1; }
+#header li { font-size: 15px; }
 .introtoggle:before { content: "▶"; font-size: 9px; padding: 7px;}
 .showintro .introtoggle:before { content: "▼";}
 
