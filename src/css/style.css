@@ -334,6 +334,9 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 
 
+html[lang="en-us"] .recos ul { display:none;}
+html[lang="en-us"] .recos h3 + a { display:block !important;}
+
 #footer { position: relative; text-align: center; padding: 1em 0; }
 #footer p { font-size: 1.2em; line-height: 3; } 
 #footer em { font-style: normal; }
