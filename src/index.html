@@ -145,15 +145,21 @@
 		  <h4>Boilerplate Build Script</h4>
 			<p>The Boilerplate <a href="http://html5boilerplate.com/docs/#Build-script">build script</a> is ready for prime time. You know all those site optimization tricks that Steve Souders tells you is a good idea? You're four keystrokes away from nailing a 100% on them. Now you can:</p>
 			<ul>
-			  <li>inline your @imports</li>
-			  <li>concatenate and minify your scripts</li>
-			  <li>concatenate and minify your css</li>
-			  <li>minify your HTML</li>
-			  <li>compress your images, saving 15-50% of page weight</li>
+        <li>Combines and minifies javascript (via yui compressor)</li>
+        <li>Combines and minifies CSS</li>
+        <li>Optimizes JPGs and PNGs (with jpegtran & optipng), saving 15-50% of page weight</li>
+        <li>Removes development only code (any remaining console.log files, profiling, test suite)</li>
+        <li>Basic to aggressive html minification (via htmlcompressor)</li>
+        <li>Revises the file names of your assets so that you can use heavy caching (1 year expires) without cache conflicts.</li>
+        <li>Upgrades the .htaccess to use heavier caching</li>
+        <li>Updates your HTML to reference these new hyper-optimized CSS + JS files</li>
+        <li>Updates your HTML to use the minified jQuery instead of the development version</li>
+        <li>Remove unneeded references from HTML (like a root folder favicon)</li>
 			  <li>build according to what environment you want: production, test or development</li>
-			  <li>filenames are revved so you don't hit cache conflicts</li>			
 			</ul>
-  		<p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs.</p>			
+			
+  		<p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs. <small>(Okay, maybe not "guarantee", but your mom will be really proud of you. :)</small></p>			
+  		
   		<div class="buildgraphics">
     		<img src="http://paulirish.com/i/2d50.png" height="160">
     		<iframe title="YouTube video player" width="263" height="160" src="http://www.youtube.com/embed/E6x_-xKl-Fg" frameborder="0" allowfullscreen></iframe>
@@ -256,7 +262,7 @@
 			<li>Also Google App Engine, Lighttpd, and NodeJS <a href="https://github.com/paulirish/html5-boilerplate-server-configs">configurations were added</a></li>
     </ul>
 
-    <p>Basically a lot of great updates were made for 1.0. <a href="https://github.com/paulirish/html5-boilerplate/compare/v0.9.5...v1.0">Here are all 220 commits since last release.</a>. You may ask though, <a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">do I need to upgrade existing sites</a>? Short answer: nah, you're good.</p>
+    <p>Basically a lot of great updates were made for 1.0. <a href="https://github.com/paulirish/html5-boilerplate/compare/v0.9.5...v1.0">Here are all 220 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">102 contributors</a>. You may ask though, <a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">do I need to upgrade existing sites</a>? Short answer: nah, you're good.</p>
 
 
 	</div>
