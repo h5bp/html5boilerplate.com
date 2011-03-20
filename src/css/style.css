@@ -251,6 +251,10 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; }
 #body .notice ul { margin-left: 0; }
 
+/* BUILD GRAPHICS */
+#body .notice .buildgraphics img,
+#body .buildgraphics iframe { display: inline-block; float: none; margin: 1em 1em 1em 0;  outline: 2px solid #476871; vertical-align: top; }
+#body .notice .buildgraphics img:last-of-type { margin-right: 0; }
 /* SOURCE */
 .js .source .syntaxhighlighter { display: none; }
 #body .source h4 {
