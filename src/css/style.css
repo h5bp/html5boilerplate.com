@@ -58,7 +58,7 @@ nav ul, nav li { margin: 0; }
 
 small { font-size:85%; }
 strong, th { font-weight: bold; }
-
+i { font-style: italic;}
 td { vertical-align:top; } 
 
 sub, sup { font-size: 75%; line-height: 0; position: relative; }
