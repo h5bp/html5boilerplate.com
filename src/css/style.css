@@ -144,9 +144,9 @@ html[lang="ja"] p.lang a[lang="ja"] {
 
 h1 i { font-family: arial, helvetica, sans-serif; font-style: normal; } 
 h1 b { font-weight: normal; }
-h4, #body h4 em { font-size: 25px; margin: 25px 0 10px;}
+h4, #body h4 em { font-size: 25px; margin: 25px 0 10px; }
 h4 em { font-style: normal; }
-h5 { margin: 10px 0;}
+h5 { margin: 1em 0; }
 
 h1 { font-size: 6em; line-height: 1.5; text-align: center; cursor: default; }
 h1:hover { color: #e16734; }
@@ -205,7 +205,7 @@ h2 + p { font-size: 14px; }
 
 code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-border-radius: 3px; padding: 0 2px; }
 
-#body ul { font-size: 0.9em; text-align: left; }  
+#body ul { font-size: 0.9em; text-align: left; margin-left: 0;}  
 #body em { margin-right: 0.2em; }
 #body em, #body h3, #disqus_thread h3 { font-size: 2em; line-height: 1.2; }
 #body h3, #disqus_thread h3 { margin: 1em auto 0.5em auto; }  
@@ -302,7 +302,9 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .videos li a:hover img { -webkit-transform: scale(1.2); -o-transform: scale(1.2); -moz-transform: scale(1.2); }
 .videos .video { display: none; opacity: 0; position: relative; }
 .videos .video-active { display: block; opacity: 1; width: 640px; height: 390px; margin: 0 auto; }
-.videos .video-active iframe { position: absolute; top: 0; left: 0; }
+.videos .video-active iframe,
+.videos .video-active embed { position: absolute; top: 0; left: 0; width: 100% !important; }
+
 
 
 #footer { position: relative; text-align: center; padding: 1em 0; }

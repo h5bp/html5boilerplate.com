@@ -50,13 +50,14 @@ $(document).ready(function(){
     }        
   );
  
- 
+  $('.videos .video iframe, .videos .video embed').attr('width', '0').attr('height', '0'); 
   var videolinks = $('.videos a[href^="#video-"]');
   videolinks.bind('click', function(e) {
     videolinks.removeClass('active');
     $(this).addClass('active');
+    var activevideo = $(/#(.*)/g.exec(this.href)[0]);
     $('.videos .video-active').removeClass('video-active');
-    $(/#(.*)/g.exec(this.href)[0]).addClass('video-active');
+    activevideo.addClass('video-active');
     e.preventDefault();
   });  
   
