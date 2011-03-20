@@ -109,4 +109,31 @@ var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 s.parentNode.insertBefore(g,s)}(document,'script'));
 
-
+$(function(){
+	var parameters = {}, builder = $('#builder'), downloadelm = $('#builder-download'), downloadurl = downloadelm.attr('href');
+	$('#builder-custom').toggle(function(e) {
+	  builder.css({ opacity: 0 }).show().animate({ opacity: 1}, 1000);
+    e.preventDefault();
+	}, function(e) { builder.animate({ opacity: 0 }, 1000, function() { builder.hide('slow'); }); e.preventDefault(); });
+	
+	$("#builder > div > a").click(function(e){
+	  var that = $(this); 
+	  var option = that.parent();
+		option.find("a").removeClass("selected");
+		var choice = that[0].id;
+    if(choice) {
+		    that.addClass("selected");
+		    parameters[option[0].id] = /^default\-/g.exec(choice) ? '' : choice;
+      }		  
+      e.preventDefault();
+	});
+	
+	downloadelm.click(function() { 
+	  var params = '';
+	  var trackparams = '';
+    $.each(parameters, function(key, value) { if(value) { params += value + '&'; } });
+		if (params != '') {trackparams = '&'+params;}
+		_gaq.push(['_trackPageview', '/build/'+trackparams.substr(0, trackparams.length-1)]);
+		this.href =  downloadurl + params.substr(0, params.length-1);
+	});	
+});
