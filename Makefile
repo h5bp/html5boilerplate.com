@@ -22,7 +22,7 @@ messages: force
 build: force
 	@echo "Cool. Let's translate this."
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
-	@echo "All done tranlating. New files are in ./built/"
+	@echo "All done translating. New files are in ./built/"
   
 
 force: ;
