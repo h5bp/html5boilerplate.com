@@ -40,9 +40,13 @@ var dsqshow, loadcomments = function() {
 };
 
 
-$(document).ready(function(){      
+$(document).ready(function(){   
+     
   $('pre[class]').each(function(i, el) {
-    SyntaxHighlighter.highlight(undefined, el)
+    SyntaxHighlighter.highlight(undefined, el);
+  });
+  $('div.source code.comments').each(function(){
+    $(this).html(  linkify( this.innerHTML ) );
   });
   
   $('.source h4 a').toggle(
