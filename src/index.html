@@ -183,7 +183,9 @@
         <li>Combines and minifies javascript (via yui compressor)</li>
         <li>Combines and minifies CSS</li>
         <li>Optimizes JPGs and PNGs (with jpegtran & optipng), saving 15-50% of page weight</li>
+        
         <li>Removes development only code (any remaining console.log files, profiling, test suite)</li>
+        </ul><ul class="bs2ndhalf">
         <li>Basic to aggressive html minification (via htmlcompressor)</li>
         <li>Revises the file names of your assets so that you can use heavy caching (1 year expires) without cache conflicts.</li>
         <li>Upgrades the .htaccess to use heavier caching</li>
@@ -199,7 +201,7 @@
     		<img src="./img/chart.png" height="300">
     		
     		<noscript>
-          <iframe title="YouTube video player" width="363" height="300" src="http://www.youtube.com/embed/E6x_-xKl-Fg" frameborder="0" allowfullscreen></iframe>
+          <iframe title="YouTube video player" width="363" height="300" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen></iframe>
         </noscript>
         
     		<img src="./img/server-logos.png" height="300">		  
@@ -300,6 +302,13 @@
 			<li>Also Google App Engine, Lighttpd, and NodeJS <a href="https://github.com/paulirish/html5-boilerplate-server-configs">configurations were added</a></li>
     </ul>
 
+		<figure class="gstease">
+  		<noscript>
+        <iframe title="YouTube video player" width="300" height="238" src="http://www.youtube.com/embed/p2TqxQ3H-Ig" frameborder="0" allowfullscreen></iframe>
+      </noscript>
+      <figcaption>Getting Started with HTML5 Boilerplate <br> feat. Divya Manian <strong>new!</strong></figcaption>
+    </figure>
+    
     <p>Basically a lot of great updates were made for 1.0. <a href="https://github.com/paulirish/html5-boilerplate/compare/v0.9.5...v1.0">Here are all 220 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">102 contributors</a>. You may ask though, <a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">do I need to upgrade existing sites</a>? Short answer: nah, you're good.</p>
 
 
@@ -332,40 +341,44 @@
       <div class="videos" id="videos">
         <h3>Videos</h3>
           <ul>
+             <li><a class="active" href="#video-getstarted"> 
+               <img src="/img/gettingstarted-thumb.jpg" alt="Video on Boilerplate">            
+               {% blocktrans %}Ready to get started?{% endblocktrans %}</a> <strong>new!</strong></li>
+            <li><a href="#video-buildtool"> 
+              <img src="/img/buildscript-thumb.jpg" alt="Video on Boilerplate">            
+              {% blocktrans %}Intro to the Build Script{% endblocktrans %} <strong>new!</strong></a></li>
             <li><a href="#video-lowdown">
               <img src="/img/video-lowdown-thumb.jpg" alt="Video on Boilerplate">            
               {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a>
             </li>
-            <li><a class="active" href="#video-digdeeper"> 
+            <li><a href="#video-digdeeper"> 
               <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
               {% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</a></li>
-            <li><a href="#video-buildtool"> 
-              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-              {% blocktrans %}Learn more on the build tool{% endblocktrans %}</a></li>
-            <li><a href="#video-getstarted"> 
-              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-              {% blocktrans %}Ready to get started?{% endblocktrans %}</a></li>          
+        
           </ul>
+          <div id="video-getstarted" class="video video-active">
+            <noscript>
+              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/p2TqxQ3H-Ig" frameborder="0" allowfullscreen></iframe>
+            </noscript>          
+          </div>
+          <div id="video-buildtool" class="video">
+            <noscript>
+              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen></iframe>
+            </noscript>          
+          </div>
+          
           <div id="video-lowdown" class="video">
             <noscript>
               <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/oDlsOyPKUTM" frameborder="0" allowfullscreen></iframe>
             </noscript>          
           </div>
-          <div id="video-digdeeper" class="video video-active">
+          <div id="video-digdeeper" class="video ">
             <noscript>
               <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
             </noscript>          
           </div> 
-          <div id="video-buildtool" class="video">
-            <noscript>
-              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
-            </noscript>          
-          </div> 
-          <div id="video-getstarted" class="video">
-            <noscript>
-              <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
-            </noscript>          
-          </div>               
+
+     
         </div>
         
         

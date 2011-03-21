@@ -262,17 +262,20 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .new p { text-align: left; border-bottom: none; margin-bottom: 1em; font-size: 18px; line-height: 1.6; }
 #body .new ul + p { margin-top: 1em; }
 #body .notice { clear: both; margin-bottom: 2em; }
-#body .notice img, #body .notice figure { 
+#body .notice img, #body .notice figure, .gstease { 
   float: left; margin: 9px 1.5em 1em 9px; border: 1px solid #000; outline: 9px solid #476871; 
 }
 #body .notice figure img { float: none; margin: 0; border: 0; outline: 0; width: 400px; }
-#body .notice figure { width: 400px; }
-#body .notice figure figcaption { font-size: 0.7em; }
+#body .notice figure, .gstease { width: 400px; }
+#body .notice figure figcaption, .gstease figcaption { font-size: 0.7em; }
 
+.gstease { float: none !important; margin:25px auto; width: 300px;}
 
 #body .notice h4 { text-align: left; margin-bottom: 1em; margin-top: 0.5em; }
 #body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; padding-left: 35px; }
 #body .notice ul { margin-left: 0; }
+
+#body .notice .bs2ndhalf li { margin: 0; }
 
 /* BUILD GRAPHICS */
 #body .notice .buildgraphics img,
@@ -322,7 +325,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 .videos { margin-bottom: 2em; }
 #body .videos ul { margin: 1em; height: 151px; text-align: center; border: 2px dotted #1e2322; padding: 0.5em 0; border-width: 2px 0; }
 #body .videos li { border: 0; display: inline-block; width: auto; min-width: 0; max-width: auto; padding-left: 0; font-size: 0.8em; list-style: none;vertical-align: top; }
-#body .videos li img { display: block; box-shadow: 0 0 1em #000; margin-bottom: 0.5em; -webkit-transition: -webkit-transform 0.2s ease-out; -o-transition: -o-transform 0.2s ease-out; -moz-transition: -moz-transform 0.2s ease-out; transition: transform 0.2s ease-out; }
+#body .videos li img { display: block; box-shadow: 0 0 1em #000; margin-bottom: 0.5em; -webkit-transition: -webkit-transform 0.2s ease-out; -o-transition: -o-transform 0.2s ease-out; -moz-transition: -moz-transform 0.2s ease-out; transition: transform 0.2s ease-out; width: 212px; height: 120px;}
 #body .videos li:before { content: ""; padding-left: 0; }
 #body .videos li a.active { color: inherit; }
 #body .videos li a.active img { box-shadow: 0 0 1em #E3D7BF; }
