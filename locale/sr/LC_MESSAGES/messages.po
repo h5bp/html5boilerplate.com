@@ -11,32 +11,28 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Milos Gavrilovic <gavra@arvag.net>\n"
 "Language-Team: \n"
+"Language: Serbian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: Serbian\n"
 
-#: src\404.html:2 standard input:17
-msgid "Not found"
-msgstr "Stranica nije pronađena"
-
-#: src\commentarchive.html:11 src\index.html:11
+#: src/commentarchive.html:11 src/index.html:10
 msgid "HTML5 Boilerplate"
 msgstr "HTML5 Boilerplate"
 
-#: src\commentarchive.html:33
+#: src/commentarchive.html:33
 msgid "Comment Archive"
 msgstr "Arhiva komentara"
 
-#: src\commentarchive.html:34
+#: src/commentarchive.html:34
 msgid "from before October 26th 2010"
 msgstr "pre 26. oktobra 2010"
 
-#: src\commentarchive.html:38 src\index.html:1256
+#: src/commentarchive.html:38 src/index.html:1416
 msgid "Comments"
 msgstr "Komentari"
 
-#: src\commentarchive.html:58
+#: src/commentarchive.html:58
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
@@ -44,20 +40,20 @@ msgstr ""
 "Molimo vas da omogućite rad sa JavaScript-om kako bi mogli da vidite <a href="
 "\"http://disqus.com/?ref_noscript=boilerplate\"> komentare."
 
-#: src\index.html:11
+#: src/index.html:10
 msgid "A rock-solid default template for HTML5 awesome."
 msgstr "A rock-solid default for HTML5 awesome."
 
-#: src\index.html:32
+#: src/index.html:29
 msgid "Now offered in:"
 msgstr ""
 
-#: src\index.html:46
+#: src/index.html:43
 #, fuzzy
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "A rock-solid default for HTML5 awesome."
 
-#: src\index.html:47
+#: src/index.html:48
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
@@ -65,10 +61,11 @@ msgstr ""
 "HTML5 Boilerplate je profesionalni HTML/CSS/JS šablon za brzo i robustno "
 "razvijanje web sajta."
 
-#: src\index.html:48
+#: src/index.html:49
+#, fuzzy
 msgid ""
-"After more than two years in iterative development, you get the best of the "
-"best practices baked in: cross-browser normalization, performance "
+"After more than three years in iterative development, you get the best of "
+"the best practices baked in: cross-browser normalization, performance "
 "optimizations, even optional features like cross-domain Ajax and Flash. A "
 "starter apache .htaccess config file hooks you the eff up with caching rules "
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
@@ -81,7 +78,7 @@ msgstr ""
 "pravila za keširanje i priprema vaš sajt za HTML5 video, omogućava podršku "
 "za @font-face, gzip i drugo."
 
-#: src\index.html:49
+#: src/index.html:50
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -91,152 +88,56 @@ msgstr ""
 "jednostavno rečeno Boilerplate je samo skup određenih \"trikova\" koji vam "
 "omogućavaju da pokrenete vaš projekat brzo i da stanete na pravu nogu."
 
-#: src\index.html:53
+#: src/index.html:80
 msgid "Want to dive in?"
 msgstr "Želite da zaronite u HTML5 Boilerplate?"
 
-#: src\index.html:54
+#: src/index.html:86
 msgid "Download Boilerplate {{ version }}"
 msgstr "Download-uj Boilerplate {{ version }}"
 
-#: src\index.html:57
+#: src/index.html:89
 msgid "Keep the hints and links"
 msgstr "Zadrži komentare i linkove"
 
-#: src\index.html:58
+#: src/index.html:90 standard input:92
 msgid "or"
 msgstr "ili"
 
-#: src\index.html:59
+#: src/index.html:91
 msgid "No comments, just the bizniss."
 msgstr "Bez komentara i linkova."
 
-#: src\index.html:64
+#: src/index.html:93
+#, perl-format
+msgid "100% hipster."
+msgstr ""
+
+#: src/index.html:139
 msgid "Read the docs"
 msgstr "Pročitaj dokumenta"
 
-#: src\index.html:65
+#: src/index.html:140
 msgid "Contribute on Github "
 msgstr "Doprinesi razvoju na Github "
 
-#: src\index.html:66
+#: src/index.html:141
 msgid "Comment here"
 msgstr "Pošalji komentar"
 
-#: src\index.html:68
+#: src/index.html:143
 msgid "Follow on twitter"
 msgstr "Prati na twitter-u"
 
-#: src\index.html:69
+#: src/index.html:145
 msgid "Join The Mailing List"
 msgstr "Priključi se Mailing listi"
 
-#: src\index.html:179
-msgid "Why it is awesome"
-msgstr "Zašto je odličan"
-
-#: src\index.html:181
-msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Cross-browser kompatibilan (IE6, da, imamo i to)."
-
-#: src\index.html:182
-msgid "HTML5 ready. Use the new tags with certainty."
-msgstr "Spreman za HTML5. Koristi nove tagove sa sigurnošću."
-
-#: src\index.html:183
-msgid "Optimal caching and compression rules for grade-A performance"
-msgstr "Optimalna pravila za keširanje i kompresiju za odličnu performansu."
-
-#: src\index.html:184
-msgid "Best practice site configuration defaults"
-msgstr "Najbolje prakse za podrazumevana podešavanja sajta."
-
-#: src\index.html:185
-msgid "Mobile browser optimizations"
-msgstr "Optimizacija za pretraživače web-a na mobilnim uređajima."
-
-#: src\index.html:186
-msgid ""
-"Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr ""
-"Progresivno nadograđivanje i graciozno degradiranje... Da, da, imamo i to."
-
-#: src\index.html:187
-msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
-"Specijalne klase za IE koje omogućavaju maksimalnu cross-browser kontrolu."
-
-#: src\index.html:188
-msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
-".no-js i .js klase omogućavaju stilove bazirane na sposobnostima "
-"pretraživača."
-
-#: src\index.html:189
-msgid ""
-"Want to write unit tests but lazy? A full, hooked up test suite is waiting "
-"for you."
-msgstr ""
-"Želite da napišete unit testove, ali ste lenji? Okruženje za testiranje te "
-"čeka."
-
-#: src\index.html:192
-msgid "Why it is awesome-er"
-msgstr "Zašto je još \"odličniji\""
-
-#: src\index.html:194
-msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr "Javascript profajliranje&hellip; u IE6 i IE7? Naravno, nema problema."
-
-#: src\index.html:195
-msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log neće greškom pokvariti bilo šta."
-
-#: src\index.html:196
-msgid "Never go wrong with your doctype or markup!"
-msgstr "Nikada više nemoj pogrešiti sa doctype ili markup-om!"
-
-#: src\index.html:197
-msgid "An optimal print stylesheet, performance optimized."
-msgstr "Optimalan stylesheet za štampanje, optimizovan za performansu."
-
-#: src\index.html:198
-msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr "iOS, Android, Opera Mobile-prilagodljiv markup i CSS skelet."
-
-#: src\index.html:199
-msgid "IE6 pngfix baked in."
-msgstr "IE6 ispravka za transparentne png slike je već tu."
-
-#: src\index.html:200
-msgid ""
-".clearfix, .visuallyhidden classes to style things wisely and accessibly."
-msgstr ""
-".clearfix, .visuallyhidden klase da stilizujete elemente mudro i pristupačno."
-
-#: src\index.html:201
-msgid ""
-".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ""
-".htaccess fajl koji omogućava ispravno korišćenje HTML5 funkcionalnosti i "
-"brže otvaranje stranica."
-
-#: src\index.html:202
-msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr "CDN hostovan jQuery sa lokalnim fallback failsafe-om."
-
-#: src\index.html:203
-msgid ""
-"Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
-msgstr ""
-"Mislite da je sve ovo previše? HTML5 Boilerplate je prijateljski nastrojen "
-"prema delete tasteru. :)"
-
-#: src\index.html:206
+#: src/index.html:318
 msgid "Walk through it with me, now"
 msgstr "Prošetaj samnom kroz njega, sada"
 
-#: src\index.html:218
+#: src/index.html:330
 #, fuzzy
 msgid ""
 "Always force latest IE rendering engine (even in intranet) &amp; Chrome "
@@ -246,11 +147,11 @@ msgstr ""
 "Uvek prinudi najnoviji IE rendering engine i Chrome Frame \n"
 "       Obriši ovo ako koristiš .htaccess"
 
-#: src\index.html:226 src emplate\index.html:18
+#: src/index.html:338 src/template/index.html:18
 msgid "Mobile viewport optimized:"
 msgstr "Mobilni viewport optimizovan:"
 
-#: src\index.html:229
+#: src/index.html:341
 #, fuzzy
 msgid ""
 "Place favicon.ico &amp; apple-touch-icon.png in the root of your domain and "
@@ -259,19 +160,19 @@ msgstr ""
 "Postavite favicon.ico i apple-touch-icon.png u koren vašeg domena\n"
 "      i obrišite ove reference"
 
-#: src\index.html:234
+#: src/index.html:346
 #, fuzzy
 msgid "CSS: implied media=&quot;all&quot;"
 msgstr "CSS : podrazumeva se media=\"all\""
 
-#: src\index.html:237 src emplate\index.html:29
+#: src/index.html:349 src/template/index.html:29
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
 msgstr ""
 "Odkomentariši ako želiš da imaš stilove koji gađaju specijalno mobilne\n"
 "      pretraživače"
 
-#: src\index.html:240
+#: src/index.html:352
 #, fuzzy
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
@@ -280,12 +181,12 @@ msgstr ""
 "Svi JavaScript fajlovi idu na dno, osim Modernizer skripte koja omogućava\n"
 "      HTML5 elemente i detekciju sposobnosti pretraživača"
 
-#: src\index.html:260 src emplate\index.html:52
+#: src/index.html:372 src/template/index.html:52
 #, fuzzy
 msgid "JavaScript at the bottom for fast page loading"
 msgstr "Javascript je na dnu zbog bržeg otvaranja stranice"
 
-#: src\index.html:262
+#: src/index.html:374
 #, fuzzy
 msgid ""
 "Grab Google CDN&apos;s jQuery, with a protocol relative URL; fall back to "
@@ -293,41 +194,41 @@ msgid ""
 msgstr ""
 "Dohvati Google CDN za jQuery, fall back na lokalnu kopiju ako je neophodno"
 
-#: src\index.html:267 src emplate\index.html:59
+#: src/index.html:379 src/template/index.html:59
 msgid "scripts concatenated and minified via ant build script"
 msgstr "skripte concatenated i minified uz pomoć build skripte"
 
-#: src\index.html:270 src emplate\index.html:62
+#: src/index.html:382 src/template/index.html:62
 #, fuzzy
 msgid "end scripts"
 msgstr "css i javascript"
 
-#: src\index.html:275
+#: src/index.html:387
 #, fuzzy
 msgid "Fix any &lt;img&gt; or .png_bg bg-images. Also, please read"
 msgstr ""
 "popravi background-image za bilo koji <img> element ili element sa .png_bg "
 "klasom"
 
-#: src\index.html:279
+#: src/index.html:391
 msgid "Change UA-XXXXX-X to be your site&apos;s ID"
 msgstr ""
 
-#: src\index.html:294 src emplate\css\style.css:4
+#: src/index.html:406 src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
 msgstr "style.css sadrži reset, font normalizaciju i neke osnovne stilove."
 
-#: src\index.html:296 src emplate\css\style.css:6
+#: src/index.html:408 src/template/css/style.css:6
 #, fuzzy
 msgid "Credit is left where credit is due."
 msgstr "Zasluge je ostavljene gde je potrebno."
 
-#: src\index.html:297 src emplate\css\style.css:7
+#: src/index.html:409 src/template/css/style.css:7
 #, fuzzy
 msgid "Much inspiration was taken from these projects:"
 msgstr "mnogo inspiracije je preuzeto sa sledećih projekata:"
 
-#: src\index.html:305
+#: src/index.html:417
 #, fuzzy
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer&apos;s Reset Reloaded + HTML5 "
@@ -335,107 +236,107 @@ msgid ""
 msgstr ""
 "html5doctor.com reset stilovi (Eric Meyer's Reset Reloaded + HTML5 baseline)"
 
-#: src\index.html:306 src emplate\css\style.css:16
+#: src/index.html:418 src/template/css/style.css:16
 #, fuzzy
 msgid "v1.6.1 2010-09-17 | Authors:"
 msgstr "v1.4 2009-07-27 | Autori:"
 
-#: src\index.html:353
+#: src/index.html:465
 msgid "Font normalization inspired by YUI Library&apos;s fonts.css:"
 msgstr ""
 
-#: src\index.html:356 src emplate\css\style.css:66
+#: src/index.html:468 src/template/css/style.css:66
 #, fuzzy
 msgid "Hack retained to preserve specificity"
 msgstr "podešavanje da se zadrži specifičnost"
 
-#: src\index.html:359 src emplate\css\style.css:69
+#: src/index.html:471 src/template/css/style.css:69
 #, fuzzy
 msgid "Normalize monospace sizing:"
 msgstr "normalizuj monospace veličine"
 
-#: src\index.html:365 src emplate\css\style.css:75
+#: src/index.html:477 src/template/css/style.css:75
 #, fuzzy
 msgid "Minimal base styles."
 msgstr "minimalni bazni stilovi "
 
-#: src\index.html:368 src emplate\css\style.css:78
+#: src/index.html:480 src/template/css/style.css:78
 #, fuzzy
 msgid "Always force a scrollbar in non-IE"
 msgstr "uvek prinudi scrollbar u pretraživačima koji nisu IE"
 
-#: src\index.html:371 src emplate\css\style.css:81
+#: src/index.html:483 src/template/css/style.css:81
 msgid "Accessible focus treatment:"
 msgstr "Accessible focus treatment:"
 
-#: src\index.html:377 src emplate\css\style.css:87
+#: src/index.html:489 src/template/css/style.css:87
 msgid "Remove margins for navigation lists"
 msgstr "Izbaci margine za navigacionu listu"
 
-#: src\index.html:385 src emplate\css\style.css:95
+#: src/index.html:497 src/template/css/style.css:95
 msgid "Set sub, sup without affecting line-height:"
 msgstr ""
 
-#: src\index.html:400 src emplate\css\style.css:110
+#: src/index.html:512 src/template/css/style.css:110
 #, fuzzy
 msgid ""
 "Align checkboxes, radios, text inputs with their label by: Thierry Koblentz"
 msgstr ""
 "poravnaj checkbox-ove, radio dugmad i text input polja sa njihovim labelama."
 
-#: src\index.html:406 src emplate\css\style.css:116
+#: src/index.html:518 src/template/css/style.css:116
 #, fuzzy
 msgid "Hand cursor on clickable input elements"
 msgstr "kursor u obliku šake na input elementima koji mogu da se kliknu"
 
-#: src\index.html:409 src emplate\css\style.css:119
+#: src/index.html:521 src/template/css/style.css:119
 #, fuzzy
 msgid "Webkit browsers add a 2px margin outside the chrome of form elements"
 msgstr "webkit pretraživači dodaju 2px marginu izvan form elemenata"
 
-#: src\index.html:412 src emplate\css\style.css:122
+#: src/index.html:524 src/template/css/style.css:122
 #, fuzzy
 msgid "Colors for form validity"
 msgstr "boje za validnost formulara"
 
-#: src\index.html:420 src emplate\css\style.css:130
+#: src/index.html:532 src/template/css/style.css:130
 #, fuzzy
 msgid "These selection declarations have to be separate"
 msgstr "Ove selekcione deklaracije treba da budu odvojene."
 
-#: src\index.html:421 src emplate\css\style.css:131
+#: src/index.html:533 src/template/css/style.css:131
 msgid "No text-shadow:"
 msgstr "Bez text-shadow:"
 
-#: src\index.html:422 src emplate\css\style.css:132
+#: src/index.html:534 src/template/css/style.css:132
 #, fuzzy
 msgid "Also: hot pink!"
 msgstr "Takođe: topla roza."
 
-#: src\index.html:429 src emplate\css\style.css:139
+#: src/index.html:541 src/template/css/style.css:139
 #, fuzzy
 msgid "Make buttons play nice in IE:"
 msgstr "namesti da se button elementi lepo prikazuju u IE:"
 
-#: src\index.html:433 src emplate\css\style.css:143
+#: src/index.html:545 src/template/css/style.css:143
 #, fuzzy
 msgid "Bicubic resizing for non-native sized IMG:"
 msgstr "bicubic promena veličine za ne standardne veličine slika:"
 
-#: src\index.html:438 src emplate\css\style.css:148
+#: src/index.html:550 src/template/css/style.css:148
 msgid "You might tweak these.."
 msgstr ""
 
-#: src\index.html:442 src emplate\css\style.css:152
+#: src/index.html:554 src/template/css/style.css:152
 msgid "#444 looks better than black:"
 msgstr "#444 izgleda mnogo oblje nego crna:"
 
-#: src\index.html:444 src emplate\css\style.css:154
+#: src/index.html:556 src/template/css/style.css:154
 #, fuzzy
 msgid "Set your base font here, to apply evenly"
 msgstr "podesi svoj bazni font ovde, da se primeni podjednako"
 
-#: src\index.html:448 src emplate\css\style.css:158
+#: src/index.html:560 src/template/css/style.css:158
 #, fuzzy
 msgid ""
 "Headers (h1, h2, etc) have no default font-size or margin; define those "
@@ -444,48 +345,48 @@ msgstr ""
 "Header elementi(h1,h2, itd) nemaju default-ni font-size ili margine,\n"
 "   moraćete sami da ih definišete."
 
-#: src\index.html:456 src emplate\css\style.css:166
+#: src/index.html:568 src/template/css/style.css:166
 #, fuzzy
 msgid "Primary styles"
 msgstr "Primarni stilovi"
 
-#: src\index.html:458 standard input:573 src emplate\css\style.css:168
-#: emplate\js\script.js:1
+#: src/index.html:570 standard input:685 src/template/css/style.css:168
+#: src/template/js/script.js:1
 msgid "Author:"
 msgstr "Autor:"
 
-#: src\index.html:477 src emplate\css\style.css:187
+#: src/index.html:589 src/template/css/style.css:187
 msgid ""
 "Non-semantic helper classes: please define your styles before this section."
 msgstr ""
 
-#: src\index.html:480 src emplate\css\style.css:190
+#: src/index.html:592 src/template/css/style.css:190
 #, fuzzy
 msgid "For image replacement"
 msgstr "za tehniku \"zamena slika\""
 
-#: src\index.html:483 src emplate\css\style.css:193
+#: src/index.html:595 src/template/css/style.css:193
 #, fuzzy
 msgid "Hide for both screenreaders and browsers:"
 msgstr "Sakrij i za screenreader-e i za pretraživače"
 
-#: src\index.html:487 src emplate\css\style.css:197
+#: src/index.html:599 src/template/css/style.css:197
 #, fuzzy
 msgid ""
 "Hide only visually, but have it available for screenreaders: by Jon Neal."
 msgstr "Sakrij samo vizuelno, ali ostavi ga omogućenim za screenreader-e"
 
-#: src\index.html:490 src emplate\css\style.css:200
+#: src/index.html:602 src/template/css/style.css:200
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard:"
 msgstr ""
 
-#: src\index.html:494 src emplate\css\style.css:204
+#: src/index.html:606 src/template/css/style.css:204
 msgid "Hide visually and from screenreaders, but maintain layout"
 msgstr "Sakrij vizuelno i od screenreader-a, ali zadrži layout"
 
-#: src\index.html:497 src emplate\css\style.css:207
+#: src/index.html:609 src/template/css/style.css:207
 #, fuzzy
 msgid ""
 "The Magnificent Clearfix: Updated to prevent margin-collapsing on child "
@@ -494,135 +395,135 @@ msgstr ""
 "Čudestni CLEARFIX: Ažuriran da onemogućava margin-collapsing na deca "
 "elementima"
 
-#: src\index.html:501 src emplate\css\style.css:211
+#: src/index.html:613 src/template/css/style.css:211
 msgid "Fix clearfix:"
 msgstr "Popravi clearfix:"
 
-#: src\index.html:507 src emplate\css\style.css:217
+#: src/index.html:619 src/template/css/style.css:217
 #, fuzzy
 msgid "Media queries for responsive design."
 msgstr "Media for responsive design"
 
-#: src\index.html:509 src emplate\css\style.css:219
+#: src/index.html:621 src/template/css/style.css:219
 msgid "These follow after primary styles so they will successfully override."
 msgstr ""
 "Sledeća pravila idu nakon primarnih stilova tako da uspešno prepišu primarne "
 "stilove."
 
-#: src\index.html:513 src emplate\css\style.css:223
+#: src/index.html:625 src/template/css/style.css:223
 msgid "Style adjustments for portrait mode goes here"
 msgstr "Podešavanja stilova za portretni režim idu ovde"
 
-#: src\index.html:518 src emplate\css\style.css:228
+#: src/index.html:630 src/template/css/style.css:228
 msgid "Style adjustments for landscape mode goes here"
 msgstr "Podešavanja stilova za pejsažni režim idu ovde"
 
-#: src\index.html:522 src emplate\css\style.css:232
+#: src/index.html:634 src/template/css/style.css:232
 #, fuzzy
 msgid "Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)"
 msgstr ""
 "Grade-A mobilni pretraživači (Opera Mobile, iPhone Safari, Android Chrome)"
 
-#: src\index.html:523 src emplate\css\style.css:233
+#: src/index.html:635 src/template/css/style.css:233
 #, fuzzy
 msgid "consider this:"
 msgstr "Razmotri ovo:"
 
-#: src\index.html:527
+#: src/index.html:639
 #, fuzzy
 msgid ""
 "Uncomment if you don&apos;t want iOS and WinMobile to mobile-optimize the "
 "text for you:"
 msgstr "Odkomentariši ako ne želiš iOS i WinMobile da optimizuju text za tebe"
 
-#: src\index.html:533 src emplate\css\style.css:243
+#: src/index.html:645 src/template/css/style.css:243
 #, fuzzy
 msgid "Print styles."
 msgstr "stilovi za štampu"
 
-#: src\index.html:535 src emplate\css\style.css:245
+#: src/index.html:647 src/template/css/style.css:245
 #, fuzzy
 msgid "Inlined to avoid required HTTP connection:"
 msgstr "inline da bi se izbegala HTTP konekcija"
 
-#: src\index.html:539 src emplate\css\style.css:249
+#: src/index.html:651 src/template/css/style.css:249
 msgid "Black prints faster:"
 msgstr ""
 
-#: src\index.html:543
+#: src/index.html:655
 #, fuzzy
 msgid "Don&apos;t show links for images, or javascript/internal links"
 msgstr "Nemoj da pokazuješ linkove za slike"
 
-#: src\index.html:556
+#: src/index.html:668
 msgid "usage: log(&apos;inside coolFunc&apos;, this, arguments);"
 msgstr ""
 
-#: src\index.html:559 src emplate\js\plugins.js:5
+#: src/index.html:671 src/template/js/plugins.js:5
 #, fuzzy
 msgid "store logs to an array for reference"
 msgstr "sačuvaj log-ove u niz za"
 
-#: src\index.html:564 src emplate\js\plugins.js:10
+#: src/index.html:676 src/template/js/plugins.js:10
 msgid "make it safe to use console.log always"
 msgstr ""
 
-#: src\index.html:568 src emplate\js\plugins.js:14
+#: src/index.html:680 src/template/js/plugins.js:14
 msgid ""
 "place any jQuery/helper plugins in here, instead of separate, slower script "
 "files."
 msgstr ""
 
-#: src\index.html:591
+#: src/index.html:703
 msgid "the humans responsible &amp; colophon"
 msgstr ""
 
-#: src\index.html:595 src emplate\humans.txt:5
+#: src/index.html:707 src/template/humans.txt:5
 msgid "TEAM"
 msgstr ""
 
-#: src\index.html:601 src emplate\humans.txt:11
+#: src/index.html:713 src/template/humans.txt:11
 msgid "THANKS"
 msgstr ""
 
-#: src\index.html:604 src emplate\humans.txt:14
+#: src/index.html:716 src/template/humans.txt:14
 msgid "SITE"
 msgstr ""
 
-#: src\index.html:637 src emplate\htaccess.txt:1
+#: src/index.html:749 src/template/htaccess.txt:1
 msgid "Apache configuration file"
 msgstr "Konfiguracioni fajl za Apache"
 
-#: src\index.html:640 src emplate\htaccess.txt:4
+#: src/index.html:752 src/template/htaccess.txt:4
 msgid ""
 "Note .htaccess files are an overhead, this logic should be in your Apache "
 "config if possible"
 msgstr ""
 
-#: src\index.html:643 src emplate\htaccess.txt:7
+#: src/index.html:755 src/template/htaccess.txt:7
 msgid "Techniques in here adapted from all over, including:"
 msgstr "Tehnike koje se koriste ovde su preuzete sa svih strana, uključujući:"
 
-#: src\index.html:646 src emplate\htaccess.txt:10
+#: src/index.html:758 src/template/htaccess.txt:10
 msgid "Sample .htaccess file of CMS MODx:"
 msgstr ""
 
-#: src\index.html:650 src emplate\htaccess.txt:14
+#: src/index.html:762 src/template/htaccess.txt:14
 msgid "If you run a webserver other than apache, consider:"
 msgstr ""
 
-#: src\index.html:657 src emplate\htaccess.txt:21
+#: src/index.html:769 src/template/htaccess.txt:21
 msgid "Better website experience for IE users"
 msgstr ""
 
-#: src\index.html:660 src emplate\htaccess.txt:24
+#: src/index.html:772 src/template/htaccess.txt:24
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
 "Zahtevaj poslednju IE verziju, u raznim slučajevima može da se vrati na IE7"
 
-#: src\index.html:662
+#: src/index.html:774
 #, fuzzy
 msgid ""
 "Use ChromeFrame if it&apos;s installed for a better experience for the poor "
@@ -630,7 +531,7 @@ msgid ""
 msgstr ""
 "Koristi ChromeFrame ako je instaliran za bolje iskustvo za jadne IE korisnike"
 
-#: src\index.html:672
+#: src/index.html:784
 #, fuzzy
 msgid ""
 "\n"
@@ -643,7 +544,7 @@ msgstr ""
 "# We need to inform proxies that content changes based on UA\n"
 "# "
 
-#: src\index.html:677
+#: src/index.html:789
 #, fuzzy
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that&apos;s "
@@ -652,21 +553,21 @@ msgstr ""
 "Kontrola keširanja je podešena samo u slučaju kada je mod_headers upaljen,\n"
 "# tako da je to nepotrebno da se podešava"
 
-#: src\index.html:682 src emplate\htaccess.txt:46
+#: src/index.html:794 src/template/htaccess.txt:46
 msgid "Cross-domain AJAX requests"
 msgstr ""
 
-#: src\index.html:685 src emplate\htaccess.txt:49
+#: src/index.html:797 src/template/htaccess.txt:49
 #, fuzzy
 msgid "Serve cross-domain ajax requests, disabled."
 msgstr "Isključeno. Odkomentariši da služite cross-domain ajax zahteve"
 
-#: src\index.html:696 src emplate\htaccess.txt:60
+#: src/index.html:808 src/template/htaccess.txt:60
 #, fuzzy
 msgid "Webfont access"
 msgstr "web fontovi"
 
-#: src\index.html:699
+#: src/index.html:811
 #, fuzzy
 msgid ""
 "\n"
@@ -681,27 +582,28 @@ msgstr ""
 "# vaših poddomena, npr \"sub.domain.com\"\n"
 "# "
 
-#: src\index.html:714 src emplate\htaccess.txt:78
+#: src/index.html:826 src/template/htaccess.txt:78
 msgid "Proper MIME type for all files"
 msgstr ""
 
-#: src\index.html:725 src emplate\htaccess.txt:89
+#: src/index.html:837 src/template/htaccess.txt:89
 msgid "Proper svg serving. Required for svg webfonts on iPad"
 msgstr "Ispravno svg služenje. Potrebno za svq web fontove na iPad-u"
 
-#: src\index.html:730 standard input:867 src emplate\htaccess.txt:94 input:231
+#: src/index.html:842 standard input:979 src/template/htaccess.txt:94
+#: input:231
 msgid "webfonts"
 msgstr "web fontovi"
 
-#: src\index.html:736 src emplate\htaccess.txt:100
+#: src/index.html:848 src/template/htaccess.txt:100
 msgid "assorted types"
 msgstr "odabrane vrste"
 
-#: src\index.html:748 src emplate\htaccess.txt:112
+#: src/index.html:860 src/template/htaccess.txt:112
 msgid "Allow concatenation from within specific js and css files"
 msgstr ""
 
-#: src\index.html:751
+#: src/index.html:863
 #, fuzzy
 msgid ""
 "\n"
@@ -726,7 +628,7 @@ msgstr ""
 "# and they would be included into this single file\n"
 "# "
 
-#: src\index.html:762 src emplate\htaccess.txt:126
+#: src/index.html:874 src/template/htaccess.txt:126
 msgid ""
 "\n"
 "# this is not in use in the boilerplate as it stands. you may\n"
@@ -740,32 +642,32 @@ msgstr ""
 "# or concatenate and minify them manually.\n"
 "# "
 
-#: src\index.html:767 src emplate\htaccess.txt:131
+#: src/index.html:879 src/template/htaccess.txt:131
 msgid "Disabled by default."
 msgstr "Isključeno u podrazumevanim podešavanjima."
 
-#: src\index.html:777 src emplate\htaccess.txt:141
+#: src/index.html:889 src/template/htaccess.txt:141
 #, fuzzy
 msgid "gzip compression"
 msgstr "gzip kompresija."
 
-#: src\index.html:783 src emplate\htaccess.txt:147
+#: src/index.html:895 src/template/htaccess.txt:147
 msgid "force deflate for mangled headers"
 msgstr ""
 
-#: src\index.html:800 src emplate\htaccess.txt:164
+#: src/index.html:912 src/template/htaccess.txt:164
 msgid "Legacy versions of Apache"
 msgstr ""
 
-#: src\index.html:806 src emplate\htaccess.txt:170
+#: src/index.html:918 src/template/htaccess.txt:170
 msgid "webfonts and svg:"
 msgstr "web fontovi i svg:"
 
-#: src\index.html:815 src emplate\htaccess.txt:179
+#: src/index.html:927 src/template/htaccess.txt:179
 msgid "Expires headers (for better cache control)"
 msgstr ""
 
-#: src\index.html:818
+#: src/index.html:930
 #, fuzzy
 msgid ""
 "\n"
@@ -785,7 +687,7 @@ msgstr ""
 "# dodatno, imaj u vidu da zastareli proksiji mogu da pogreše u keširanju\n"
 "# "
 
-#: src\index.html:826
+#: src/index.html:938
 #, fuzzy
 msgid ""
 "\n"
@@ -800,51 +702,51 @@ msgstr ""
 "# \"access plus 1 week\" ili tako nešto\n"
 "# "
 
-#: src\index.html:834 src emplate\htaccess.txt:198
+#: src/index.html:946 src/template/htaccess.txt:198
 msgid "Perhaps better to whitelist expires rules? Perhaps."
 msgstr "Možda je bolje da whitelist-ujete expire pravila? Možda."
 
-#: src\index.html:837 src emplate\htaccess.txt:201
+#: src/index.html:949 src/template/htaccess.txt:201
 #, fuzzy
 msgid ""
 "cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
 msgstr ""
 "cache.manifest zahteva re-request u FF 3.6 (hvala Remy ~Introducing HTML5)"
 
-#: src\index.html:840 src emplate\htaccess.txt:204
+#: src/index.html:952 src/template/htaccess.txt:204
 #, fuzzy
 msgid "your document html"
 msgstr "vaš html dokument"
 
-#: src\index.html:843 src emplate\htaccess.txt:207
+#: src/index.html:955 src/template/htaccess.txt:207
 msgid "data"
 msgstr "podaci"
 
-#: src\index.html:848 src emplate\htaccess.txt:212
+#: src/index.html:960 src/template/htaccess.txt:212
 msgid "rss feed"
 msgstr "rss feed"
 
-#: src\index.html:851 src emplate\htaccess.txt:215
+#: src/index.html:963 src/template/htaccess.txt:215
 msgid "favicon (cannot be renamed)"
 msgstr "favicon (ne može biti preimenovan)"
 
-#: src\index.html:854 src emplate\htaccess.txt:218
+#: src/index.html:966 src/template/htaccess.txt:218
 msgid "media: images, video, audio"
 msgstr "media: slike, video, audio"
 
-#: src\index.html:864 src emplate\htaccess.txt:228
+#: src/index.html:976 src/template/htaccess.txt:228
 msgid "htc files  (css3pie)"
 msgstr ""
 
-#: src\index.html:874 src emplate\htaccess.txt:238
+#: src/index.html:986 src/template/htaccess.txt:238
 msgid "css and javascript"
 msgstr "css i javascript"
 
-#: src\index.html:888 src emplate\htaccess.txt:252
+#: src/index.html:1000 src/template/htaccess.txt:252
 msgid "ETag removal"
 msgstr ""
 
-#: src\index.html:891
+#: src/index.html:1003
 #, fuzzy
 msgid ""
 "\n"
@@ -857,55 +759,55 @@ msgstr ""
 "# statični sadržaj.\n"
 "# "
 
-#: src\index.html:901 src emplate\htaccess.txt:265
+#: src/index.html:1013 src/template/htaccess.txt:265
 msgid "Stop screen flicker in IE on CSS rollovers"
 msgstr ""
 
-#: src\index.html:904 src emplate\htaccess.txt:268
+#: src/index.html:1016 src/template/htaccess.txt:268
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers - in"
 msgstr ""
 
-#: src\index.html:905
+#: src/index.html:1017
 msgid ""
 "combination with the &quot;ExpiresByType&quot; rules for images (see above). "
 "If"
 msgstr ""
 
-#: src\index.html:906 src emplate\htaccess.txt:270
+#: src/index.html:1018 src/template/htaccess.txt:270
 msgid "needed, un-comment the following rules."
 msgstr ""
 
-#: src\index.html:916 src emplate\htaccess.txt:280
+#: src/index.html:1028 src/template/htaccess.txt:280
 msgid "Cookie setting from iframes"
 msgstr ""
 
-#: src\index.html:919 src emplate\htaccess.txt:283
+#: src/index.html:1031 src/template/htaccess.txt:283
 msgid "Allow cookies to be set from iframes (for IE only)"
 msgstr "Dozvoli da se kolačići postavljaju iz iframe-ova (samo za IE)"
 
-#: src\index.html:920 src emplate\htaccess.txt:284
+#: src/index.html:1032 src/template/htaccess.txt:284
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
 "Ako je potrebno, odkomentariši i napiši putanju ili regex u Location "
 "direktivu"
 
-#: src\index.html:931 src emplate\htaccess.txt:295
+#: src/index.html:1043 src/template/htaccess.txt:295
 msgid "Start rewrite engine"
 msgstr ""
 
-#: src\index.html:934 src emplate\htaccess.txt:298
+#: src/index.html:1046 src/template/htaccess.txt:298
 msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
 msgstr ""
 
-#: src\index.html:943
+#: src/index.html:1055
 msgid "Suppress or force the &quot;www.&quot; at the beginning of URLs"
 msgstr ""
 
-#: src\index.html:946
+#: src/index.html:1058
 msgid ""
 "\n"
 "# The same content should never be available under two different URLs - "
@@ -917,13 +819,13 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:952
+#: src/index.html:1064
 msgid ""
 "By default option 1 (no &quot;www.&quot;) is activated. Remember: Shorter "
 "URLs are sexier."
 msgstr ""
 
-#: src\index.html:955 src emplate\htaccess.txt:319
+#: src/index.html:1067 src/template/htaccess.txt:319
 msgid ""
 "\n"
 "# If you rather want to use option 2, just comment out all option 1 lines\n"
@@ -932,7 +834,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:963
+#: src/index.html:1075
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -940,7 +842,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:976
+#: src/index.html:1088
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -951,11 +853,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:993 src emplate\htaccess.txt:357
+#: src/index.html:1105 src/template/htaccess.txt:357
 msgid "Add/remove trailing slash to (non-file) URLs"
 msgstr ""
 
-#: src\index.html:996
+#: src/index.html:1108
 msgid ""
 "\n"
 "# Google treats URLs with and without trailing slashes separately.\n"
@@ -964,15 +866,15 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1002 src emplate\htaccess.txt:366
+#: src/index.html:1114 src/template/htaccess.txt:366
 msgid "By default option 1 (force trailing slash) is activated."
 msgstr ""
 
-#: src\index.html:1005 src emplate\htaccess.txt:369
+#: src/index.html:1117 src/template/htaccess.txt:369
 msgid "Trailing Slash Problem"
 msgstr ""
 
-#: src\index.html:1009
+#: src/index.html:1121
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -980,7 +882,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1022
+#: src/index.html:1134
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -988,11 +890,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1034 src emplate\htaccess.txt:398
+#: src/index.html:1146 src/template/htaccess.txt:398
 msgid "Built-in filename-based cache busting"
 msgstr ""
 
-#: src\index.html:1037
+#: src/index.html:1149
 msgid ""
 "\n"
 "# If you&apos;re not using the build script to manage your filename version "
@@ -1002,24 +904,24 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1043 src emplate\htaccess.txt:407
+#: src/index.html:1155 src/template/htaccess.txt:407
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231,"
 msgstr ""
 
-#: src\index.html:1044 src emplate\htaccess.txt:408
+#: src/index.html:1156 src/template/htaccess.txt:408
 msgid "read:"
 msgstr ""
 
-#: src\index.html:1046 src emplate\htaccess.txt:410
+#: src/index.html:1158 src/template/htaccess.txt:410
 msgid "Uncomment to enable."
 msgstr ""
 
-#: src\index.html:1056 src emplate\htaccess.txt:420
+#: src/index.html:1168 src/template/htaccess.txt:420
 msgid "Prevent SSL cert warnings"
 msgstr ""
 
-#: src\index.html:1059 src emplate\htaccess.txt:423
+#: src/index.html:1171 src/template/htaccess.txt:423
 msgid ""
 "\n"
 "# Rewrite secure requests properly to prevent SSL cert warnings, e.g. "
@@ -1030,11 +932,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1073 src emplate\htaccess.txt:437
+#: src/index.html:1185 src/template/htaccess.txt:437
 msgid "Prevent 404 errors for non-existing redirected folders"
 msgstr ""
 
-#: src\index.html:1076 src emplate\htaccess.txt:440
+#: src/index.html:1188 src/template/htaccess.txt:440
 #, fuzzy
 msgid ""
 "\n"
@@ -1046,33 +948,33 @@ msgstr ""
 "bez -MultiViews, Apache će da da 404 grešku za rewrite ako je folder istog "
 "imena ne postoji"
 
-#: src\index.html:1086 src emplate\htaccess.txt:450
+#: src/index.html:1198 src/template/htaccess.txt:450
 msgid "custom 404 page"
 msgstr "404 stranica"
 
-#: src\index.html:1089 src emplate\htaccess.txt:453
+#: src/index.html:1201 src/template/htaccess.txt:453
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
 msgstr ""
 
-#: src\index.html:1095 src emplate\htaccess.txt:459
+#: src/index.html:1207 src/template/htaccess.txt:459
 msgid "UTF-8 encoding"
 msgstr ""
 
-#: src\index.html:1098 src emplate\htaccess.txt:462
+#: src/index.html:1210 src/template/htaccess.txt:462
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
 "koristi utf-8 encoding za sve što se služi preko text/plain ili text/html"
 
-#: src\index.html:1101 src emplate\htaccess.txt:465
+#: src/index.html:1213 src/template/htaccess.txt:465
 msgid "force utf-8 for a number of file formats"
 msgstr "Prinudi utf-8 za dobar broj fajl formata"
 
-#: src\index.html:1107 src emplate\htaccess.txt:471
+#: src/index.html:1219 src/template/htaccess.txt:471
 msgid "A little more security"
 msgstr ""
 
-#: src\index.html:1111
+#: src/index.html:1223
 msgid ""
 "\n"
 "# Do we want to advertise the exact version number of Apache we&apos;re "
@@ -1083,7 +985,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1119
+#: src/index.html:1231
 msgid ""
 "\n"
 "# &quot;-Indexes&quot; will have Apache block users from browsing folders "
@@ -1095,7 +997,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1127
+#: src/index.html:1239
 msgid ""
 "\n"
 "# Block access to &quot;hidden&quot; directories whose names begin with a "
@@ -1105,7 +1007,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1136
+#: src/index.html:1248
 msgid ""
 "\n"
 "# If your server is not already configured as such, the following directive\n"
@@ -1128,310 +1030,61 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1160
+#: src/index.html:1277
+msgid "Ready to get started?"
+msgstr ""
+
+#: src/index.html:1280
+msgid "Intro to the Build Script"
+msgstr ""
+
+#: src/index.html:1283
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Saznaj sve što treba da znaš o ovom projektu za tačno 40 minuta!"
 
-#: src\index.html:1165
+#: src/index.html:1287
 msgid "Dig deeper in 60 minutes"
 msgstr ""
 
-#: src\index.html:1170
-msgid ""
-"Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
-"com/development/snippets-html5-boilerplate/\">20 snippets you should be "
-"using</a>."
-msgstr ""
-"Ili pročitaj kroz ovu dobru dokumentaciju: <a href=\"http://"
-"www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 snippet-"
-"a koje treba da koristite</a>."
-
-#: src\index.html:1173
-msgid "Make it even better!"
-msgstr "Načini ga još boljim!"
-
-#: src\index.html:1175
-msgid ""
-"Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
-"\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
-"Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
-"the future to all browsers."
-msgstr ""
-"Koristi skript loader kao što je <a href=\"http://github.com/SlexAxton/"
-"yepnope.js\">yepnope.js</a> u kombinaciji sa tvojim <a href=\"http://github."
-"com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 "
-"polifilima</a> da doneseš budućnost u sve pretraživače."
-
-#: src\index.html:1176
-msgid ""
-"Use the build script, crank up your expires to 1year, and deliver a "
-"superfast site."
-msgstr ""
-"Koristi build skriptu, povećaj svoje expire hedere na godinu dana, and "
-"dostavi super brzi sajt."
-
-#: src\index.html:1177
-msgid ""
-"Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
-"writing CSS3"
-msgstr ""
-"Razmotri <a href=\"http://css3please.com\">CSS3please.com</a> da ti pomogne "
-"u pisanju CSS3"
-
-#: src\index.html:1178
-msgid ""
-" \n"
-"            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
-"other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
-"browser-Polyfills\">HTML5 polyfills</a> \n"
-"            "
-msgstr ""
-" \n"
-"            <a href=\"http://css3pie.com/\">css3pie.com</a> i svi ostali <a "
-"href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
-"Polyfills\">HTML5 polifili</a> \n"
-"            "
-
-#: src\index.html:1181
-msgid ""
-"Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
-"\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
-"semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
-"            "
-msgstr ""
-"Nauči HTML5 elemente još bolje: <a href=\"http://html5doctor.com/glossary/"
-"\">HTML5 Doctor Glossary</a> i <a href=\"http://diveintohtml5.org/semantics."
-"html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
-"            "
-
-#: src\index.html:1183
-msgid ""
-"<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
-"`&lt;head&gt;`</a>"
-msgstr ""
-
-#: src\index.html:1184
-msgid ""
-"If you're a photo gallery site you might want this for ie6 to not show that "
-"stupid thing on &lt;img&gt; tags: \n"
-"\n"
-"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
-"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
-"            "
-msgstr ""
-"Ako imate sajt sa galerijom slika možete da koristite ovo kako IE6 ne "
-"biprikazivao glupu stvar na <img> elementima: \n"
-"\n"
-"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
-"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
-"            "
-
-#: src\index.html:1188
-#, fuzzy
-msgid ""
-"Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
-"tips\">CSS Spriting tips</a> or you could use <a href=\"http://www."
-"hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
-"a> if you are using <a href=\"http://sass-lang.com\">Sass</a>."
-msgstr ""
-"Pročitajte nekoliko <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-"
-"spriting-tips\">CSS Spriting saveta</a> ili možete koristiti <a href="
-"\"http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html"
-"\">Lemonade</a> ako koristite <a href=\"http://sass-lang.com\">Sass</a>.</p>"
-
-#: src\index.html:1189
-msgid ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
-"closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
-msgstr ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
-"closed#issue/115/comment/439219\">Recite vašim korisnicima da upale "
-"JavaScript</a>"
-
-#: src\index.html:1190
-msgid ""
-"<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
-"\">Color considerations for printing</a>"
-msgstr ""
-"<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
-"\">Razmatranja o bojama za štampu</a>"
-
-#: src\index.html:1191
-msgid ""
-"Use Google's recommendations for SEO: <a href=\"http://"
-"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
-"\">the Google SEO Starter Guide</a> \n"
-"            "
-msgstr ""
-"Koristi Google preporuke za SEO: <a href=\"http://googlewebmastercentral."
-"blogspot.com/2008/11/googles-seo-starter-guide.html\">the Google SEO Starter "
-"Guide</a> \n"
-"            "
-
-#: src\index.html:1193
-msgid ""
-"Dig into the new <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-"
-"relations\">link relations</a> \n"
-"            "
-msgstr ""
-
-#: src\index.html:1195
-msgid ""
-"Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
-"and web dont's</a> \n"
-"            "
-msgstr ""
-"Razmotrite neka subjektivna  mišljenja na <a href=\"http://webdosanddonts."
-"com/\">web do's and web dont's</a> web sajtu \n"
-"            "
-
-#: src\index.html:1197
-msgid ""
-"To remove gloss from iPhone home screen rel value should be <code>\"apple-"
-"touch-icon-precomposed\"</code>"
-msgstr ""
-"Da otkloniš gloss sa iPhone home screen-a rel vrednost bi trebala da bude "
-"<code>\"apple-touch-icon-precomposed\"</code>"
-
-#: src\index.html:1198
-msgid ""
-"<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
-"Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
-"\">Simulate link printing in IE with JS</a>"
-msgstr ""
-"<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
-"Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
-"\">Simuliraj link štampanje u IE sa JS</a>"
-
-#: src\index.html:1199
-msgid ""
-"Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
-"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
-"pre-fetch</a>."
-msgstr ""
-"Koristite <code>rel=\"prefetch\"</code> kako bi se <a href=\"http://www."
-"stevesouders.com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch"
-"\">dokumenta uspešno pre-fetch-ovala</a>."
-
-#: src\index.html:1200
-#, fuzzy
-msgid ""
-"Using border-radius with background color in Webkit? Try <a href=\"http://"
-"tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
-"background-clip</a> to fix the bleed."
-msgstr ""
-"Koristite border-radius sa border-om u Webkit? Pogledajte <a href=\"http://"
-"tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
-"background-clip</a> da vam popravi krvarenje."
-
-#: src\index.html:1201
-msgid ""
-"Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
-"CSS</a> for optimum browser performance."
-msgstr ""
-"Pišite <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efikasan "
-"CSS</a> za optimalane performanse pretraživača."
-
-#: src\index.html:1202
-msgid ""
-"Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
-"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
-"markup</a>."
-msgstr ""
-"Startuj vaš page-specific javascript <a href=\"http://paulirish.com/2009/"
-"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">baziran na "
-"vašem markup-u</a>."
-
-#: src\index.html:1203
-msgid ""
-"Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
-"hacks/\">browser CSS hacks</a>."
-msgstr ""
-"Saznaj koje <a href=\"http://paulirish.com/2009/browser-specific-css-hacks/"
-"\">CSS hack-ove</a> možeš koristiti u određenim browserima."
-
-#: src\index.html:1204
-#, fuzzy
-msgid ""
-"Get your team hooked using the same <a href=\"http://na.isobar.com/standards/"
-"\">front-end coding standards and best practices.</a> \n"
-"            "
-msgstr ""
-"Naterajte vaš tim da koristi <a href=\"http://molecularvoices.molecular.com/"
-"standards/\">front-end coding standarde i najbolje prakse.</a> \n"
-"            "
-
-#: src\index.html:1206
-msgid ""
-"Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
-"<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
-"optimum search results <a href=\"http://googlewebmastercentral.blogspot."
-"com/2009/05/introducing-rich-snippets.html\">visibility</a>."
-msgstr ""
-"Koristi <a href=\"http://microformats.org/wiki/Main_Page\">Mikroformate</a> "
-"(via <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) za "
-"optimalnu <a href=\"http://googlewebmastercentral.blogspot.com/2009/05/"
-"introducing-rich-snippets.html\">vidljivost</a> rezultata pretrage."
-
-#: src\index.html:1207
-msgid ""
-"You can use the <a href=\"http://camendesign.com/code/"
-"developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
-"not use a div#container."
-msgstr ""
-"Možete koristiti <a href=\"http://camendesign.com/code/"
-"developpeurs_sans_frontieres\">body element kao wrapper</a>, tako da vam ne "
-"treba div#container."
-
-#: src\index.html:1208
-msgid ""
-"Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
-"Make-it-better/\">more ways to make it better.</a> "
-msgstr ""
-"Pročitajte <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/Make-"
-"it-better/\">za još načina da ga poboljšate.</a> "
-
-#: src\index.html:1214
+#: src/index.html:1362 src/docs/index.html:49
 msgid "Brought to you by"
 msgstr "Omogućili vam"
 
-#: src\index.html:1215
+#: src/index.html:1363 src/docs/index.html:50
 msgid "Google Chrome, jQuery"
 msgstr "Google Chrome, jQuery"
 
-#: src\index.html:1216
-msgid "Open Web Vigilante"
+#: src/index.html:1364 src/docs/index.html:51
+msgid "Web Opener @ Opera"
+msgstr ""
+
+#: src/index.html:1365 src/docs/index.html:52
+#, fuzzy
+msgid "Open Web Developer"
 msgstr "Open Web Vigilante"
 
-#: src\index.html:1228
+#: src/index.html:1386 src/docs/index.html:66
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "Ovaj projekat ne bi bilo moguće izvesti bez napora ovih super heroja:"
 
-#: src\index.html:1257
-msgid ""
-"Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
-"html\">archive</a>"
-msgstr ""
-"Komentare za Boilerplate v0.9.1 možete videti u <a href=\"commentarchive.html"
-"\">arhivi</a>"
-
-#: src\index.html:1259 standard input:1317
+#: src/index.html:1418 src/js/script.js:84
 msgid "Show comments"
 msgstr "Prikaži komentare"
 
-#: src\index.html:1336
-msgid "http://html5boilerplate.com/v095"
+#: src/js/script.js:33
+#, fuzzy
+msgid "http://html5boilerplate.com/"
 msgstr "http://sr.html5boilerplate.com"
 
-#: src emplate\htaccess.txt:26
+#: src/template/htaccess.txt:26
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
 "Koristi ChromeFrame ako je instaliran za bolje iskustvo za jadne IE korisnike"
 
-#: src emplate\htaccess.txt:36
+#: src/template/htaccess.txt:36
 msgid ""
 "\n"
 "# Because X-UA-Compatible isn't sent to non-IE (to save header bytes),\n"
@@ -1443,7 +1096,7 @@ msgstr ""
 "# We need to inform proxies that content changes based on UA\n"
 "# "
 
-#: src emplate\htaccess.txt:41
+#: src/template/htaccess.txt:41
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that's unncessary to "
 "declare"
@@ -1451,7 +1104,7 @@ msgstr ""
 "Kontrola keširanja je podešena samo u slučaju kada je mod_headers upaljen,\n"
 "# tako da je to nepotrebno da se podešava"
 
-#: src emplate\htaccess.txt:63
+#: src/template/htaccess.txt:63
 msgid ""
 "\n"
 "# allow access from all domains for webfonts\n"
@@ -1465,7 +1118,7 @@ msgstr ""
 "# vaših poddomena, npr \"sub.domain.com\"\n"
 "# "
 
-#: src emplate\htaccess.txt:115
+#: src/template/htaccess.txt:115
 msgid ""
 "\n"
 "# allow concatenation from within specific js and css files\n"
@@ -1489,7 +1142,7 @@ msgstr ""
 "# and they would be included into this single file\n"
 "# "
 
-#: src emplate\htaccess.txt:182
+#: src/template/htaccess.txt:182
 #, fuzzy
 msgid ""
 "\n"
@@ -1509,7 +1162,7 @@ msgstr ""
 "# dodatno, imaj u vidu da zastareli proksiji mogu da pogreše u keširanju\n"
 "# "
 
-#: src emplate\htaccess.txt:190
+#: src/template/htaccess.txt:190
 msgid ""
 "\n"
 "# if you don't use filenames to version, lower the css and js to something "
@@ -1523,7 +1176,7 @@ msgstr ""
 "# \"access plus 1 week\" ili tako nešto\n"
 "# "
 
-#: src emplate\htaccess.txt:255
+#: src/template/htaccess.txt:255
 msgid ""
 "\n"
 "# Since we're sending far-future expires, we don't need ETags for\n"
@@ -1535,15 +1188,15 @@ msgstr ""
 "# statični sadržaj.\n"
 "# "
 
-#: src emplate\htaccess.txt:269
+#: src/template/htaccess.txt:269
 msgid "combination with the \"ExpiresByType\" rules for images (see above). If"
 msgstr ""
 
-#: src emplate\htaccess.txt:307
+#: src/template/htaccess.txt:307
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
 msgstr ""
 
-#: src emplate\htaccess.txt:310
+#: src/template/htaccess.txt:310
 msgid ""
 "\n"
 "# The same content should never be available under two different URLs - "
@@ -1555,13 +1208,13 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:316
+#: src/template/htaccess.txt:316
 msgid ""
 "By default option 1 (no \"www.\") is activated. Remember: Shorter URLs are "
 "sexier."
 msgstr ""
 
-#: src emplate\htaccess.txt:327
+#: src/template/htaccess.txt:327
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -1569,7 +1222,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:340
+#: src/template/htaccess.txt:340
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -1580,7 +1233,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:360
+#: src/template/htaccess.txt:360
 msgid ""
 "\n"
 "# Google treats URLs with and without trailing slashes separately.\n"
@@ -1589,7 +1242,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:373
+#: src/template/htaccess.txt:373
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -1597,7 +1250,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:386
+#: src/template/htaccess.txt:386
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -1605,7 +1258,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:401
+#: src/template/htaccess.txt:401
 msgid ""
 "\n"
 "# If you're not using the build script to manage your filename version "
@@ -1615,7 +1268,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:475
+#: src/template/htaccess.txt:475
 msgid ""
 "\n"
 "# Do we want to advertise the exact version number of Apache we're running?\n"
@@ -1625,7 +1278,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:483
+#: src/template/htaccess.txt:483
 msgid ""
 "\n"
 "# \"-Indexes\" will have Apache block users from browsing folders without a "
@@ -1637,7 +1290,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:491
+#: src/template/htaccess.txt:491
 msgid ""
 "\n"
 "# Block access to \"hidden\" directories whose names begin with a period. "
@@ -1647,7 +1300,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:500
+#: src/template/htaccess.txt:500
 msgid ""
 "\n"
 "# If your server is not already configured as such, the following directive\n"
@@ -1670,11 +1323,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\humans.txt:1
+#: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
 msgstr ""
 
-#: src emplate\index.html:10
+#: src/template/index.html:10
 #, fuzzy
 msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame\n"
@@ -1683,7 +1336,7 @@ msgstr ""
 "Uvek prinudi najnoviji IE rendering engine i Chrome Frame \n"
 "       Obriši ovo ako koristiš .htaccess"
 
-#: src emplate\index.html:21
+#: src/template/index.html:21
 msgid ""
 "Place favicon.ico & apple-touch-icon.png in the root of your domain and "
 "delete these references"
@@ -1691,12 +1344,12 @@ msgstr ""
 "Postavite favicon.ico i apple-touch-icon.png u koren vašeg domena\n"
 "      i obrišite ove reference"
 
-#: src emplate\index.html:26
+#: src/template/index.html:26
 #, fuzzy
 msgid "CSS: implied media=\"all\""
 msgstr "CSS : podrazumeva se media=\"all\""
 
-#: src emplate\index.html:32
+#: src/template/index.html:32
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements & feature detects"
@@ -1704,7 +1357,7 @@ msgstr ""
 "Svi JavaScript fajlovi idu na dno, osim Modernizer skripte koja omogućava\n"
 "      HTML5 elemente i detekciju sposobnosti pretraživača"
 
-#: src emplate\index.html:54
+#: src/template/index.html:54
 #, fuzzy
 msgid ""
 "Grab Google CDN's jQuery, with a protocol relative URL; fall back to local "
@@ -1712,43 +1365,357 @@ msgid ""
 msgstr ""
 "Dohvati Google CDN za jQuery, fall back na lokalnu kopiju ako je neophodno"
 
-#: src emplate\index.html:67
+#: src/template/index.html:67
 #, fuzzy
 msgid "Fix any <img> or .png_bg bg-images. Also, please read"
 msgstr ""
 "popravi background-image za bilo koji <img> element ili element sa .png_bg "
 "klasom"
 
-#: src emplate\index.html:71
+#: src/template/index.html:71
 msgid "Change UA-XXXXX-X to be your site's ID"
 msgstr ""
 
-#: src emplate\css\style.css:15
+#: src/template/css/style.css:15
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
 "html5doctor.com reset stilovi (Eric Meyer's Reset Reloaded + HTML5 baseline)"
 
-#: src emplate\css\style.css:63
+#: src/template/css/style.css:63
 msgid "Font normalization inspired by YUI Library's fonts.css:"
 msgstr ""
 
-#: src emplate\css\style.css:237
+#: src/template/css/style.css:237
 #, fuzzy
 msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you:"
 msgstr "Odkomentariši ako ne želiš iOS i WinMobile da optimizuju text za tebe"
 
-#: src emplate\css\style.css:253
+#: src/template/css/style.css:253
 #, fuzzy
 msgid "Don't show links for images, or javascript/internal links"
 msgstr "Nemoj da pokazuješ linkove za slike"
 
-#: src emplate\js\plugins.js:2
+#: src/template/js/plugins.js:2
 msgid "usage: log('inside coolFunc', this, arguments);"
 msgstr ""
+
+#~ msgid "Not found"
+#~ msgstr "Stranica nije pronađena"
+
+#~ msgid "Why it is awesome"
+#~ msgstr "Zašto je odličan"
+
+#~ msgid "Cross-browser compatible (IE6, yeah we got that.)"
+#~ msgstr "Cross-browser kompatibilan (IE6, da, imamo i to)."
+
+#~ msgid "HTML5 ready. Use the new tags with certainty."
+#~ msgstr "Spreman za HTML5. Koristi nove tagove sa sigurnošću."
+
+#~ msgid "Optimal caching and compression rules for grade-A performance"
+#~ msgstr "Optimalna pravila za keširanje i kompresiju za odličnu performansu."
+
+#~ msgid "Best practice site configuration defaults"
+#~ msgstr "Najbolje prakse za podrazumevana podešavanja sajta."
+
+#~ msgid "Mobile browser optimizations"
+#~ msgstr "Optimizacija za pretraživače web-a na mobilnim uređajima."
+
+#~ msgid ""
+#~ "Progressive enhancement graceful degradation &hellip; yeah yeah we got "
+#~ "that"
+#~ msgstr ""
+#~ "Progresivno nadograđivanje i graciozno degradiranje... Da, da, imamo i to."
+
+#~ msgid "IE specific classes for maximum cross-browser control"
+#~ msgstr ""
+#~ "Specijalne klase za IE koje omogućavaju maksimalnu cross-browser kontrolu."
+
+#~ msgid "Handy .no-js and .js classes to style based on capability"
+#~ msgstr ""
+#~ ".no-js i .js klase omogućavaju stilove bazirane na sposobnostima "
+#~ "pretraživača."
+
+#~ msgid ""
+#~ "Want to write unit tests but lazy? A full, hooked up test suite is "
+#~ "waiting for you."
+#~ msgstr ""
+#~ "Želite da napišete unit testove, ali ste lenji? Okruženje za testiranje "
+#~ "te čeka."
+
+#~ msgid "Why it is awesome-er"
+#~ msgstr "Zašto je još \"odličniji\""
+
+#~ msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
+#~ msgstr ""
+#~ "Javascript profajliranje&hellip; u IE6 i IE7? Naravno, nema problema."
+
+#~ msgid "Console.log nerfing so you won't break anyone by mistake."
+#~ msgstr "Console.log neće greškom pokvariti bilo šta."
+
+#~ msgid "Never go wrong with your doctype or markup!"
+#~ msgstr "Nikada više nemoj pogrešiti sa doctype ili markup-om!"
+
+#~ msgid "An optimal print stylesheet, performance optimized."
+#~ msgstr "Optimalan stylesheet za štampanje, optimizovan za performansu."
+
+#~ msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
+#~ msgstr "iOS, Android, Opera Mobile-prilagodljiv markup i CSS skelet."
+
+#~ msgid "IE6 pngfix baked in."
+#~ msgstr "IE6 ispravka za transparentne png slike je već tu."
+
+#~ msgid ""
+#~ ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
+#~ msgstr ""
+#~ ".clearfix, .visuallyhidden klase da stilizujete elemente mudro i "
+#~ "pristupačno."
+
+#~ msgid ""
+#~ ".htaccess file that allows proper use of HTML5 features and faster page "
+#~ "load"
+#~ msgstr ""
+#~ ".htaccess fajl koji omogućava ispravno korišćenje HTML5 funkcionalnosti i "
+#~ "brže otvaranje stranica."
+
+#~ msgid "CDN hosted jQuery with local fallback failsafe."
+#~ msgstr "CDN hostovan jQuery sa lokalnim fallback failsafe-om."
+
+#~ msgid ""
+#~ "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
+#~ msgstr ""
+#~ "Mislite da je sve ovo previše? HTML5 Boilerplate je prijateljski "
+#~ "nastrojen prema delete tasteru. :)"
+
+#~ msgid ""
+#~ "Or read through this good explanation of <a href=\"http://"
+#~ "www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 "
+#~ "snippets you should be using</a>."
+#~ msgstr ""
+#~ "Ili pročitaj kroz ovu dobru dokumentaciju: <a href=\"http://"
+#~ "www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 "
+#~ "snippet-a koje treba da koristite</a>."
+
+#~ msgid "Make it even better!"
+#~ msgstr "Načini ga još boljim!"
+
+#~ msgid ""
+#~ "Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
+#~ "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/"
+#~ "Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</"
+#~ "a> to bring the future to all browsers."
+#~ msgstr ""
+#~ "Koristi skript loader kao što je <a href=\"http://github.com/SlexAxton/"
+#~ "yepnope.js\">yepnope.js</a> u kombinaciji sa tvojim <a href=\"http://"
+#~ "github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 "
+#~ "polifilima</a> da doneseš budućnost u sve pretraživače."
+
+#~ msgid ""
+#~ "Use the build script, crank up your expires to 1year, and deliver a "
+#~ "superfast site."
+#~ msgstr ""
+#~ "Koristi build skriptu, povećaj svoje expire hedere na godinu dana, and "
+#~ "dostavi super brzi sajt."
+
+#~ msgid ""
+#~ "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist "
+#~ "in writing CSS3"
+#~ msgstr ""
+#~ "Razmotri <a href=\"http://css3please.com\">CSS3please.com</a> da ti "
+#~ "pomogne u pisanju CSS3"
+
+#~ msgid ""
+#~ " \n"
+#~ "            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
+#~ "other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
+#~ "browser-Polyfills\">HTML5 polyfills</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ " \n"
+#~ "            <a href=\"http://css3pie.com/\">css3pie.com</a> i svi ostali "
+#~ "<a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
+#~ "Polyfills\">HTML5 polifili</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
+#~ "\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
+#~ "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Nauči HTML5 elemente još bolje: <a href=\"http://html5doctor.com/glossary/"
+#~ "\">HTML5 Doctor Glossary</a> i <a href=\"http://diveintohtml5.org/"
+#~ "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "If you're a photo gallery site you might want this for ie6 to not show "
+#~ "that stupid thing on &lt;img&gt; tags: \n"
+#~ "\n"
+#~ "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="
+#~ "\"imagetoolbar\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Ako imate sajt sa galerijom slika možete da koristite ovo kako IE6 ne "
+#~ "biprikazivao glupu stvar na <img> elementima: \n"
+#~ "\n"
+#~ "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="
+#~ "\"imagetoolbar\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+#~ "            "
+
+#, fuzzy
+#~ msgid ""
+#~ "Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-"
+#~ "spriting-tips\">CSS Spriting tips</a> or you could use <a href=\"http://"
+#~ "www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html"
+#~ "\">Lemonade</a> if you are using <a href=\"http://sass-lang.com\">Sass</"
+#~ "a>."
+#~ msgstr ""
+#~ "Pročitajte nekoliko <a href=\"http://blog.mozilla.com/webdev/2009/03/27/"
+#~ "css-spriting-tips\">CSS Spriting saveta</a> ili možete koristiti <a href="
+#~ "\"http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass."
+#~ "html\">Lemonade</a> ako koristite <a href=\"http://sass-lang.com\">Sass</"
+#~ "a>.</p>"
+
+#~ msgid ""
+#~ "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+#~ "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
+#~ msgstr ""
+#~ "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+#~ "closed#issue/115/comment/439219\">Recite vašim korisnicima da upale "
+#~ "JavaScript</a>"
+
+#~ msgid ""
+#~ "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
+#~ "\">Color considerations for printing</a>"
+#~ msgstr ""
+#~ "<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
+#~ "\">Razmatranja o bojama za štampu</a>"
+
+#~ msgid ""
+#~ "Use Google's recommendations for SEO: <a href=\"http://"
+#~ "googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+#~ "\">the Google SEO Starter Guide</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Koristi Google preporuke za SEO: <a href=\"http://googlewebmastercentral."
+#~ "blogspot.com/2008/11/googles-seo-starter-guide.html\">the Google SEO "
+#~ "Starter Guide</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
+#~ "and web dont's</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Razmotrite neka subjektivna  mišljenja na <a href=\"http://webdosanddonts."
+#~ "com/\">web do's and web dont's</a> web sajtu \n"
+#~ "            "
+
+#~ msgid ""
+#~ "To remove gloss from iPhone home screen rel value should be <code>\"apple-"
+#~ "touch-icon-precomposed\"</code>"
+#~ msgstr ""
+#~ "Da otkloniš gloss sa iPhone home screen-a rel vrednost bi trebala da bude "
+#~ "<code>\"apple-touch-icon-precomposed\"</code>"
+
+#~ msgid ""
+#~ "<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
+#~ "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
+#~ "\">Simulate link printing in IE with JS</a>"
+#~ msgstr ""
+#~ "<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
+#~ "Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
+#~ "\">Simuliraj link štampanje u IE sa JS</a>"
+
+#~ msgid ""
+#~ "Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders."
+#~ "com/blog/2010/02/15/browser-performance-wishlist/#link_prefetch"
+#~ "\">documents to pre-fetch</a>."
+#~ msgstr ""
+#~ "Koristite <code>rel=\"prefetch\"</code> kako bi se <a href=\"http://www."
+#~ "stevesouders.com/blog/2010/02/15/browser-performance-wishlist/"
+#~ "#link_prefetch\">dokumenta uspešno pre-fetch-ovala</a>."
+
+#, fuzzy
+#~ msgid ""
+#~ "Using border-radius with background color in Webkit? Try <a href=\"http://"
+#~ "tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
+#~ "background-clip</a> to fix the bleed."
+#~ msgstr ""
+#~ "Koristite border-radius sa border-om u Webkit? Pogledajte <a href="
+#~ "\"http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-"
+#~ "webkit-background-clip</a> da vam popravi krvarenje."
+
+#~ msgid ""
+#~ "Write <a href=\"http://css-tricks.com/efficiently-rendering-css/"
+#~ "\">efficient CSS</a> for optimum browser performance."
+#~ msgstr ""
+#~ "Pišite <a href=\"http://css-tricks.com/efficiently-rendering-css/"
+#~ "\">efikasan CSS</a> za optimalane performanse pretraživača."
+
+#~ msgid ""
+#~ "Kick off your page-specific javascript <a href=\"http://paulirish."
+#~ "com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/"
+#~ "\">based on your markup</a>."
+#~ msgstr ""
+#~ "Startuj vaš page-specific javascript <a href=\"http://paulirish.com/2009/"
+#~ "markup-based-unobtrusive-comprehensive-dom-ready-execution/\">baziran na "
+#~ "vašem markup-u</a>."
+
+#~ msgid ""
+#~ "Know your available <a href=\"http://paulirish.com/2009/browser-specific-"
+#~ "css-hacks/\">browser CSS hacks</a>."
+#~ msgstr ""
+#~ "Saznaj koje <a href=\"http://paulirish.com/2009/browser-specific-css-"
+#~ "hacks/\">CSS hack-ove</a> možeš koristiti u određenim browserima."
+
+#, fuzzy
+#~ msgid ""
+#~ "Get your team hooked using the same <a href=\"http://na.isobar.com/"
+#~ "standards/\">front-end coding standards and best practices.</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Naterajte vaš tim da koristi <a href=\"http://molecularvoices.molecular."
+#~ "com/standards/\">front-end coding standarde i najbolje prakse.</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> "
+#~ "(via <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) "
+#~ "for optimum search results <a href=\"http://googlewebmastercentral."
+#~ "blogspot.com/2009/05/introducing-rich-snippets.html\">visibility</a>."
+#~ msgstr ""
+#~ "Koristi <a href=\"http://microformats.org/wiki/Main_Page\">Mikroformate</"
+#~ "a> (via <a href=\"http://microformats.org/wiki/microdata\">microdata</a>) "
+#~ "za optimalnu <a href=\"http://googlewebmastercentral.blogspot.com/2009/05/"
+#~ "introducing-rich-snippets.html\">vidljivost</a> rezultata pretrage."
+
+#~ msgid ""
+#~ "You can use the <a href=\"http://camendesign.com/code/"
+#~ "developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
+#~ "not use a div#container."
+#~ msgstr ""
+#~ "Možete koristiti <a href=\"http://camendesign.com/code/"
+#~ "developpeurs_sans_frontieres\">body element kao wrapper</a>, tako da vam "
+#~ "ne treba div#container."
+
+#~ msgid ""
+#~ "Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+#~ "Make-it-better/\">more ways to make it better.</a> "
+#~ msgstr ""
+#~ "Pročitajte <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
+#~ "Make-it-better/\">za još načina da ga poboljšate.</a> "
+
+#~ msgid ""
+#~ "Comments for Boilerplate v0.9.1 can be found in the <a href="
+#~ "\"commentarchive.html\">archive</a>"
+#~ msgstr ""
+#~ "Komentare za Boilerplate v0.9.1 možete videti u <a href=\"commentarchive."
+#~ "html\">arhivi</a>"
 
 #~ msgid "What&rsquo;s New in 0.9.5"
 #~ msgstr "Šta je novo u 0.9.5"

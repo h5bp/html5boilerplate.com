@@ -12,32 +12,28 @@ msgstr ""
 "PO-Revision-Date: 2010-11-11 13:00+0200\n"
 "Last-Translator: Julien Cabanès <jc@aaz.fr>\n"
 "Language-Team: French <jc@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
-#: src\404.html:2 standard input:17
-msgid "Not found"
-msgstr "Non trouvé"
-
-#: src\commentarchive.html:11 src\index.html:11
+#: src/commentarchive.html:11 src/index.html:10
 msgid "HTML5 Boilerplate"
 msgstr "HTML5 Boilerplate"
 
-#: src\commentarchive.html:33
+#: src/commentarchive.html:33
 msgid "Comment Archive"
 msgstr "Archives des Commentaires"
 
-#: src\commentarchive.html:34
+#: src/commentarchive.html:34
 msgid "from before October 26th 2010"
 msgstr "depuis le 26 Octobre 2010"
 
-#: src\commentarchive.html:38 src\index.html:1256
+#: src/commentarchive.html:38 src/index.html:1416
 msgid "Comments"
 msgstr "Commentaires"
 
-#: src\commentarchive.html:58
+#: src/commentarchive.html:58
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
@@ -45,19 +41,19 @@ msgstr ""
 "Veuillez activer JavaScript pour visualiser les <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">commentaires via Disqus.</a>"
 
-#: src\index.html:11
+#: src/index.html:10
 msgid "A rock-solid default template for HTML5 awesome."
 msgstr ""
 
-#: src\index.html:32
+#: src/index.html:29
 msgid "Now offered in:"
 msgstr ""
 
-#: src\index.html:46
+#: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
 msgstr ""
 
-#: src\index.html:47
+#: src/index.html:48
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
@@ -65,10 +61,11 @@ msgstr ""
 "HTML5 Boilerplate est un template HTML/CSS/JS de tueurs pour développer des "
 "sites rapides, robustes et éprouvés pour le futur."
 
-#: src\index.html:48
+#: src/index.html:49
+#, fuzzy
 msgid ""
-"After more than two years in iterative development, you get the best of the "
-"best practices baked in: cross-browser normalization, performance "
+"After more than three years in iterative development, you get the best of "
+"the best practices baked in: cross-browser normalization, performance "
 "optimizations, even optional features like cross-domain Ajax and Flash. A "
 "starter apache .htaccess config file hooks you the eff up with caching rules "
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
@@ -82,7 +79,7 @@ msgstr ""
 "en cache et prépare votre site à servir des vidéos HTML5, utiliser @font-"
 "face, et active le gzip automatique."
 
-#: src\index.html:49
+#: src/index.html:50
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -92,487 +89,388 @@ msgstr ""
 "de développement, il contient juste de bonnes astuces pour que votre projet  "
 "démarre rapidement et du bon pied."
 
-#: src\index.html:53
+#: src/index.html:80
 msgid "Want to dive in?"
 msgstr "Prêt à plonger?"
 
-#: src\index.html:54
+#: src/index.html:86
 msgid "Download Boilerplate {{ version }}"
 msgstr "Télécharger Boilerplate {{ version }}"
 
-#: src\index.html:57
+#: src/index.html:89
 msgid "Keep the hints and links"
 msgstr "Garder les astuces et les liens"
 
-#: src\index.html:58
+#: src/index.html:90 standard input:92
 msgid "or"
 msgstr "ou"
 
-#: src\index.html:59
+#: src/index.html:91
 msgid "No comments, just the bizniss."
 msgstr "Pas de blabla, juste le truc"
 
-#: src\index.html:64
+#: src/index.html:93
+#, perl-format
+msgid "100% hipster."
+msgstr ""
+
+#: src/index.html:139
 msgid "Read the docs"
 msgstr "Lire la doc"
 
-#: src\index.html:65
+#: src/index.html:140
 msgid "Contribute on Github "
 msgstr "Contribuer sur Github"
 
-#: src\index.html:66
+#: src/index.html:141
 msgid "Comment here"
 msgstr "Vos commentaires ici"
 
-#: src\index.html:68
+#: src/index.html:143
 msgid "Follow on twitter"
 msgstr "Suivre sur twitter"
 
-#: src\index.html:69
+#: src/index.html:145
 msgid "Join The Mailing List"
 msgstr "Rejoindre la Mailing List"
 
-#: src\index.html:179
-msgid "Why it is awesome"
-msgstr "Pourquoi ça déchire"
-
-#: src\index.html:181
-msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Compatibilité Cross-Browser (IE6, ouaih on a ça.)"
-
-#: src\index.html:182
-msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
-"Prêt pour le HTML5. Utilisez les nouvelles balises l'esprit tranquille "
-
-#: src\index.html:183
-msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
-"Mise en cache optimale et règles de compression pour les meilleures "
-"performances possibles"
-
-#: src\index.html:184
-msgid "Best practice site configuration defaults"
-msgstr "Configuration "
-
-#: src\index.html:185
-msgid "Mobile browser optimizations"
-msgstr "Optimisations pour les navigateurs mobiles"
-
-#: src\index.html:186
-msgid ""
-"Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr ""
-"Perfectionnement progressif et dégradation gracieuse &hellip; ouaih ouaih on "
-"a ça"
-
-#: src\index.html:187
-msgid "IE specific classes for maximum cross-browser control"
-msgstr "Classes spécifiques à IE pour une gestion optimale des"
-
-#: src\index.html:188
-msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Classes .no-js et .js très pratiques pour styler selon les capacités"
-
-#: src\index.html:189
-msgid ""
-"Want to write unit tests but lazy? A full, hooked up test suite is waiting "
-"for you."
-msgstr ""
-"Vous voulez faire des tests unitaires mais vous êtes du genre fainéants?  "
-"Une panoplie complète d'outils est déjà là et n'attend que vous."
-
-#: src\index.html:192
-msgid "Why it is awesome-er"
-msgstr "Pour ça déchire encore plus"
-
-#: src\index.html:194
-msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
-"Profiling JavaScript&hellip;pour IE6 et IE7? Bien sûr, pas de problème."
-
-#: src\index.html:195
-msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log pour les navigateurs qui n'en possédent pas."
-
-#: src\index.html:196
-msgid "Never go wrong with your doctype or markup!"
-msgstr ""
-
-#: src\index.html:197
-msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
-"Une feuille de style optimale pour l'impression aux performances optimisées."
-
-#: src\index.html:198
-msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr "Balisage et squelette CSS adaptable pour iOS, Android et Opera Mobile."
-
-#: src\index.html:199
-msgid "IE6 pngfix baked in."
-msgstr "IE6 pngfix pré-intégré"
-
-#: src\index.html:200
-msgid ""
-".clearfix, .visuallyhidden classes to style things wisely and accessibly."
-msgstr ""
-"Classes .clearfix, .visuallhidden pour styler proprement et de manière "
-"accessible."
-
-#: src\index.html:201
-msgid ""
-".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ""
-"Fichier .htaccess qui permet une autorisation propre des fonctionnalités "
-"HTML5  et un chargement plus rapide des pages"
-
-#: src\index.html:202
-msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr "jQuery hébergé sur un CDN ou récupéré en local au cas où."
-
-#: src\index.html:203
-msgid ""
-"Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
-msgstr ""
-"Vous pensez qu'il y en a trop? Boilerplate est un ami de la touche DELETE. :)"
-
-#: src\index.html:206
+#: src/index.html:318
 msgid "Walk through it with me, now"
 msgstr "Promenez-vous dedans avec moi, maintenant"
 
-#: src\index.html:218
+#: src/index.html:330
 msgid ""
 "Always force latest IE rendering engine (even in intranet) &amp; Chrome "
 "Frame\n"
 "       Remove this if you use the .htaccess"
 msgstr ""
 
-#: src\index.html:226 src emplate\index.html:18
+#: src/index.html:338 src/template/index.html:18
 msgid "Mobile viewport optimized:"
 msgstr ""
 
-#: src\index.html:229
+#: src/index.html:341
 msgid ""
 "Place favicon.ico &amp; apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr ""
 
-#: src\index.html:234
+#: src/index.html:346
 msgid "CSS: implied media=&quot;all&quot;"
 msgstr ""
 
-#: src\index.html:237 src emplate\index.html:29
+#: src/index.html:349 src/template/index.html:29
 msgid ""
 "Uncomment if you are specifically targeting less enabled mobile browsers"
 msgstr ""
 
-#: src\index.html:240
+#: src/index.html:352
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements &amp; feature detects"
 msgstr ""
 
-#: src\index.html:260 src emplate\index.html:52
+#: src/index.html:372 src/template/index.html:52
 msgid "JavaScript at the bottom for fast page loading"
 msgstr ""
 
-#: src\index.html:262
+#: src/index.html:374
 msgid ""
 "Grab Google CDN&apos;s jQuery, with a protocol relative URL; fall back to "
 "local if necessary"
 msgstr ""
 
-#: src\index.html:267 src emplate\index.html:59
+#: src/index.html:379 src/template/index.html:59
 msgid "scripts concatenated and minified via ant build script"
 msgstr ""
 
-#: src\index.html:270 src emplate\index.html:62
+#: src/index.html:382 src/template/index.html:62
 msgid "end scripts"
 msgstr ""
 
-#: src\index.html:275
+#: src/index.html:387
 msgid "Fix any &lt;img&gt; or .png_bg bg-images. Also, please read"
 msgstr ""
 
-#: src\index.html:279
+#: src/index.html:391
 msgid "Change UA-XXXXX-X to be your site&apos;s ID"
 msgstr ""
 
-#: src\index.html:294 src emplate\css\style.css:4
+#: src/index.html:406 src/template/css/style.css:4
 msgid "style.css contains a reset, font normalization and some base styles."
 msgstr ""
 
-#: src\index.html:296 src emplate\css\style.css:6
+#: src/index.html:408 src/template/css/style.css:6
 msgid "Credit is left where credit is due."
 msgstr ""
 
-#: src\index.html:297 src emplate\css\style.css:7
+#: src/index.html:409 src/template/css/style.css:7
 msgid "Much inspiration was taken from these projects:"
 msgstr ""
 
-#: src\index.html:305
+#: src/index.html:417
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer&apos;s Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
 
-#: src\index.html:306 src emplate\css\style.css:16
+#: src/index.html:418 src/template/css/style.css:16
 msgid "v1.6.1 2010-09-17 | Authors:"
 msgstr ""
 
-#: src\index.html:353
+#: src/index.html:465
 msgid "Font normalization inspired by YUI Library&apos;s fonts.css:"
 msgstr ""
 
-#: src\index.html:356 src emplate\css\style.css:66
+#: src/index.html:468 src/template/css/style.css:66
 msgid "Hack retained to preserve specificity"
 msgstr ""
 
-#: src\index.html:359 src emplate\css\style.css:69
+#: src/index.html:471 src/template/css/style.css:69
 msgid "Normalize monospace sizing:"
 msgstr ""
 
-#: src\index.html:365 src emplate\css\style.css:75
+#: src/index.html:477 src/template/css/style.css:75
 msgid "Minimal base styles."
 msgstr ""
 
-#: src\index.html:368 src emplate\css\style.css:78
+#: src/index.html:480 src/template/css/style.css:78
 msgid "Always force a scrollbar in non-IE"
 msgstr ""
 
-#: src\index.html:371 src emplate\css\style.css:81
+#: src/index.html:483 src/template/css/style.css:81
 msgid "Accessible focus treatment:"
 msgstr ""
 
-#: src\index.html:377 src emplate\css\style.css:87
+#: src/index.html:489 src/template/css/style.css:87
 msgid "Remove margins for navigation lists"
 msgstr ""
 
-#: src\index.html:385 src emplate\css\style.css:95
+#: src/index.html:497 src/template/css/style.css:95
 msgid "Set sub, sup without affecting line-height:"
 msgstr ""
 
-#: src\index.html:400 src emplate\css\style.css:110
+#: src/index.html:512 src/template/css/style.css:110
 msgid ""
 "Align checkboxes, radios, text inputs with their label by: Thierry Koblentz"
 msgstr ""
 
-#: src\index.html:406 src emplate\css\style.css:116
+#: src/index.html:518 src/template/css/style.css:116
 msgid "Hand cursor on clickable input elements"
 msgstr ""
 
-#: src\index.html:409 src emplate\css\style.css:119
+#: src/index.html:521 src/template/css/style.css:119
 msgid "Webkit browsers add a 2px margin outside the chrome of form elements"
 msgstr ""
 
-#: src\index.html:412 src emplate\css\style.css:122
+#: src/index.html:524 src/template/css/style.css:122
 msgid "Colors for form validity"
 msgstr ""
 
-#: src\index.html:420 src emplate\css\style.css:130
+#: src/index.html:532 src/template/css/style.css:130
 msgid "These selection declarations have to be separate"
 msgstr ""
 
-#: src\index.html:421 src emplate\css\style.css:131
+#: src/index.html:533 src/template/css/style.css:131
 msgid "No text-shadow:"
 msgstr ""
 
-#: src\index.html:422 src emplate\css\style.css:132
+#: src/index.html:534 src/template/css/style.css:132
 msgid "Also: hot pink!"
 msgstr ""
 
-#: src\index.html:429 src emplate\css\style.css:139
+#: src/index.html:541 src/template/css/style.css:139
 msgid "Make buttons play nice in IE:"
 msgstr ""
 
-#: src\index.html:433 src emplate\css\style.css:143
+#: src/index.html:545 src/template/css/style.css:143
 msgid "Bicubic resizing for non-native sized IMG:"
 msgstr ""
 
-#: src\index.html:438 src emplate\css\style.css:148
+#: src/index.html:550 src/template/css/style.css:148
 msgid "You might tweak these.."
 msgstr ""
 
-#: src\index.html:442 src emplate\css\style.css:152
+#: src/index.html:554 src/template/css/style.css:152
 msgid "#444 looks better than black:"
 msgstr ""
 
-#: src\index.html:444 src emplate\css\style.css:154
+#: src/index.html:556 src/template/css/style.css:154
 msgid "Set your base font here, to apply evenly"
 msgstr ""
 
-#: src\index.html:448 src emplate\css\style.css:158
+#: src/index.html:560 src/template/css/style.css:158
 msgid ""
 "Headers (h1, h2, etc) have no default font-size or margin; define those "
 "yourself"
 msgstr ""
 
-#: src\index.html:456 src emplate\css\style.css:166
+#: src/index.html:568 src/template/css/style.css:166
 msgid "Primary styles"
 msgstr ""
 
-#: src\index.html:458 standard input:573 src emplate\css\style.css:168
-#: emplate\js\script.js:1
+#: src/index.html:570 standard input:685 src/template/css/style.css:168
+#: src/template/js/script.js:1
 msgid "Author:"
 msgstr ""
 
-#: src\index.html:477 src emplate\css\style.css:187
+#: src/index.html:589 src/template/css/style.css:187
 msgid ""
 "Non-semantic helper classes: please define your styles before this section."
 msgstr ""
 
-#: src\index.html:480 src emplate\css\style.css:190
+#: src/index.html:592 src/template/css/style.css:190
 msgid "For image replacement"
 msgstr ""
 
-#: src\index.html:483 src emplate\css\style.css:193
+#: src/index.html:595 src/template/css/style.css:193
 msgid "Hide for both screenreaders and browsers:"
 msgstr ""
 
-#: src\index.html:487 src emplate\css\style.css:197
+#: src/index.html:599 src/template/css/style.css:197
 msgid ""
 "Hide only visually, but have it available for screenreaders: by Jon Neal."
 msgstr ""
 
-#: src\index.html:490 src emplate\css\style.css:200
+#: src/index.html:602 src/template/css/style.css:200
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard:"
 msgstr ""
 
-#: src\index.html:494 src emplate\css\style.css:204
+#: src/index.html:606 src/template/css/style.css:204
 msgid "Hide visually and from screenreaders, but maintain layout"
 msgstr ""
 
-#: src\index.html:497 src emplate\css\style.css:207
+#: src/index.html:609 src/template/css/style.css:207
 msgid ""
 "The Magnificent Clearfix: Updated to prevent margin-collapsing on child "
 "elements."
 msgstr ""
 
-#: src\index.html:501 src emplate\css\style.css:211
+#: src/index.html:613 src/template/css/style.css:211
 msgid "Fix clearfix:"
 msgstr ""
 
-#: src\index.html:507 src emplate\css\style.css:217
+#: src/index.html:619 src/template/css/style.css:217
 msgid "Media queries for responsive design."
 msgstr ""
 
-#: src\index.html:509 src emplate\css\style.css:219
+#: src/index.html:621 src/template/css/style.css:219
 msgid "These follow after primary styles so they will successfully override."
 msgstr ""
 
-#: src\index.html:513 src emplate\css\style.css:223
+#: src/index.html:625 src/template/css/style.css:223
 msgid "Style adjustments for portrait mode goes here"
 msgstr ""
 
-#: src\index.html:518 src emplate\css\style.css:228
+#: src/index.html:630 src/template/css/style.css:228
 msgid "Style adjustments for landscape mode goes here"
 msgstr ""
 
-#: src\index.html:522 src emplate\css\style.css:232
+#: src/index.html:634 src/template/css/style.css:232
 msgid "Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)"
 msgstr ""
 
-#: src\index.html:523 src emplate\css\style.css:233
+#: src/index.html:635 src/template/css/style.css:233
 msgid "consider this:"
 msgstr ""
 
-#: src\index.html:527
+#: src/index.html:639
 msgid ""
 "Uncomment if you don&apos;t want iOS and WinMobile to mobile-optimize the "
 "text for you:"
 msgstr ""
 
-#: src\index.html:533 src emplate\css\style.css:243
+#: src/index.html:645 src/template/css/style.css:243
 msgid "Print styles."
 msgstr ""
 
-#: src\index.html:535 src emplate\css\style.css:245
+#: src/index.html:647 src/template/css/style.css:245
 msgid "Inlined to avoid required HTTP connection:"
 msgstr ""
 
-#: src\index.html:539 src emplate\css\style.css:249
+#: src/index.html:651 src/template/css/style.css:249
 msgid "Black prints faster:"
 msgstr ""
 
-#: src\index.html:543
+#: src/index.html:655
 msgid "Don&apos;t show links for images, or javascript/internal links"
 msgstr ""
 
-#: src\index.html:556
+#: src/index.html:668
 msgid "usage: log(&apos;inside coolFunc&apos;, this, arguments);"
 msgstr ""
 
-#: src\index.html:559 src emplate\js\plugins.js:5
+#: src/index.html:671 src/template/js/plugins.js:5
 msgid "store logs to an array for reference"
 msgstr ""
 
-#: src\index.html:564 src emplate\js\plugins.js:10
+#: src/index.html:676 src/template/js/plugins.js:10
 msgid "make it safe to use console.log always"
 msgstr ""
 
-#: src\index.html:568 src emplate\js\plugins.js:14
+#: src/index.html:680 src/template/js/plugins.js:14
 msgid ""
 "place any jQuery/helper plugins in here, instead of separate, slower script "
 "files."
 msgstr ""
 
-#: src\index.html:591
+#: src/index.html:703
 msgid "the humans responsible &amp; colophon"
 msgstr ""
 
-#: src\index.html:595 src emplate\humans.txt:5
+#: src/index.html:707 src/template/humans.txt:5
 msgid "TEAM"
 msgstr ""
 
-#: src\index.html:601 src emplate\humans.txt:11
+#: src/index.html:713 src/template/humans.txt:11
 msgid "THANKS"
 msgstr ""
 
-#: src\index.html:604 src emplate\humans.txt:14
+#: src/index.html:716 src/template/humans.txt:14
 msgid "SITE"
 msgstr ""
 
-#: src\index.html:637 src emplate\htaccess.txt:1
+#: src/index.html:749 src/template/htaccess.txt:1
 msgid "Apache configuration file"
 msgstr ""
 
-#: src\index.html:640 src emplate\htaccess.txt:4
+#: src/index.html:752 src/template/htaccess.txt:4
 msgid ""
 "Note .htaccess files are an overhead, this logic should be in your Apache "
 "config if possible"
 msgstr ""
 
-#: src\index.html:643 src emplate\htaccess.txt:7
+#: src/index.html:755 src/template/htaccess.txt:7
 msgid "Techniques in here adapted from all over, including:"
 msgstr ""
 
-#: src\index.html:646 src emplate\htaccess.txt:10
+#: src/index.html:758 src/template/htaccess.txt:10
 msgid "Sample .htaccess file of CMS MODx:"
 msgstr ""
 
-#: src\index.html:650 src emplate\htaccess.txt:14
+#: src/index.html:762 src/template/htaccess.txt:14
 msgid "If you run a webserver other than apache, consider:"
 msgstr ""
 
-#: src\index.html:657 src emplate\htaccess.txt:21
+#: src/index.html:769 src/template/htaccess.txt:21
 msgid "Better website experience for IE users"
 msgstr ""
 
-#: src\index.html:660 src emplate\htaccess.txt:24
+#: src/index.html:772 src/template/htaccess.txt:24
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
 
-#: src\index.html:662
+#: src/index.html:774
 msgid ""
 "Use ChromeFrame if it&apos;s installed for a better experience for the poor "
 "IE folk"
 msgstr ""
 
-#: src\index.html:672
+#: src/index.html:784
 msgid ""
 "\n"
 "# Because X-UA-Compatible isn&apos;t sent to non-IE (to save header bytes),\n"
@@ -580,25 +478,25 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:677
+#: src/index.html:789
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that&apos;s "
 "unncessary to declare"
 msgstr ""
 
-#: src\index.html:682 src emplate\htaccess.txt:46
+#: src/index.html:794 src/template/htaccess.txt:46
 msgid "Cross-domain AJAX requests"
 msgstr ""
 
-#: src\index.html:685 src emplate\htaccess.txt:49
+#: src/index.html:797 src/template/htaccess.txt:49
 msgid "Serve cross-domain ajax requests, disabled."
 msgstr ""
 
-#: src\index.html:696 src emplate\htaccess.txt:60
+#: src/index.html:808 src/template/htaccess.txt:60
 msgid "Webfont access"
 msgstr ""
 
-#: src\index.html:699
+#: src/index.html:811
 msgid ""
 "\n"
 "# allow access from all domains for webfonts\n"
@@ -607,27 +505,28 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:714 src emplate\htaccess.txt:78
+#: src/index.html:826 src/template/htaccess.txt:78
 msgid "Proper MIME type for all files"
 msgstr ""
 
-#: src\index.html:725 src emplate\htaccess.txt:89
+#: src/index.html:837 src/template/htaccess.txt:89
 msgid "Proper svg serving. Required for svg webfonts on iPad"
 msgstr ""
 
-#: src\index.html:730 standard input:867 src emplate\htaccess.txt:94 input:231
+#: src/index.html:842 standard input:979 src/template/htaccess.txt:94
+#: input:231
 msgid "webfonts"
 msgstr ""
 
-#: src\index.html:736 src emplate\htaccess.txt:100
+#: src/index.html:848 src/template/htaccess.txt:100
 msgid "assorted types"
 msgstr ""
 
-#: src\index.html:748 src emplate\htaccess.txt:112
+#: src/index.html:860 src/template/htaccess.txt:112
 msgid "Allow concatenation from within specific js and css files"
 msgstr ""
 
-#: src\index.html:751
+#: src/index.html:863
 msgid ""
 "\n"
 "# allow concatenation from within specific js and css files\n"
@@ -641,7 +540,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:762 src emplate\htaccess.txt:126
+#: src/index.html:874 src/template/htaccess.txt:126
 msgid ""
 "\n"
 "# this is not in use in the boilerplate as it stands. you may\n"
@@ -650,31 +549,31 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:767 src emplate\htaccess.txt:131
+#: src/index.html:879 src/template/htaccess.txt:131
 msgid "Disabled by default."
 msgstr ""
 
-#: src\index.html:777 src emplate\htaccess.txt:141
+#: src/index.html:889 src/template/htaccess.txt:141
 msgid "gzip compression"
 msgstr ""
 
-#: src\index.html:783 src emplate\htaccess.txt:147
+#: src/index.html:895 src/template/htaccess.txt:147
 msgid "force deflate for mangled headers"
 msgstr ""
 
-#: src\index.html:800 src emplate\htaccess.txt:164
+#: src/index.html:912 src/template/htaccess.txt:164
 msgid "Legacy versions of Apache"
 msgstr ""
 
-#: src\index.html:806 src emplate\htaccess.txt:170
+#: src/index.html:918 src/template/htaccess.txt:170
 msgid "webfonts and svg:"
 msgstr ""
 
-#: src\index.html:815 src emplate\htaccess.txt:179
+#: src/index.html:927 src/template/htaccess.txt:179
 msgid "Expires headers (for better cache control)"
 msgstr ""
 
-#: src\index.html:818
+#: src/index.html:930
 msgid ""
 "\n"
 "# these are pretty far-future expires headers\n"
@@ -684,7 +583,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:826
+#: src/index.html:938
 msgid ""
 "\n"
 "# if you don&apos;t use filenames to version, lower the css and js to "
@@ -693,48 +592,48 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:834 src emplate\htaccess.txt:198
+#: src/index.html:946 src/template/htaccess.txt:198
 msgid "Perhaps better to whitelist expires rules? Perhaps."
 msgstr ""
 
-#: src\index.html:837 src emplate\htaccess.txt:201
+#: src/index.html:949 src/template/htaccess.txt:201
 msgid ""
 "cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
 msgstr ""
 
-#: src\index.html:840 src emplate\htaccess.txt:204
+#: src/index.html:952 src/template/htaccess.txt:204
 msgid "your document html"
 msgstr ""
 
-#: src\index.html:843 src emplate\htaccess.txt:207
+#: src/index.html:955 src/template/htaccess.txt:207
 msgid "data"
 msgstr ""
 
-#: src\index.html:848 src emplate\htaccess.txt:212
+#: src/index.html:960 src/template/htaccess.txt:212
 msgid "rss feed"
 msgstr ""
 
-#: src\index.html:851 src emplate\htaccess.txt:215
+#: src/index.html:963 src/template/htaccess.txt:215
 msgid "favicon (cannot be renamed)"
 msgstr ""
 
-#: src\index.html:854 src emplate\htaccess.txt:218
+#: src/index.html:966 src/template/htaccess.txt:218
 msgid "media: images, video, audio"
 msgstr ""
 
-#: src\index.html:864 src emplate\htaccess.txt:228
+#: src/index.html:976 src/template/htaccess.txt:228
 msgid "htc files  (css3pie)"
 msgstr ""
 
-#: src\index.html:874 src emplate\htaccess.txt:238
+#: src/index.html:986 src/template/htaccess.txt:238
 msgid "css and javascript"
 msgstr ""
 
-#: src\index.html:888 src emplate\htaccess.txt:252
+#: src/index.html:1000 src/template/htaccess.txt:252
 msgid "ETag removal"
 msgstr ""
 
-#: src\index.html:891
+#: src/index.html:1003
 msgid ""
 "\n"
 "# Since we&apos;re sending far-future expires, we don&apos;t need ETags for\n"
@@ -742,53 +641,53 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:901 src emplate\htaccess.txt:265
+#: src/index.html:1013 src/template/htaccess.txt:265
 msgid "Stop screen flicker in IE on CSS rollovers"
 msgstr ""
 
-#: src\index.html:904 src emplate\htaccess.txt:268
+#: src/index.html:1016 src/template/htaccess.txt:268
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers - in"
 msgstr ""
 
-#: src\index.html:905
+#: src/index.html:1017
 msgid ""
 "combination with the &quot;ExpiresByType&quot; rules for images (see above). "
 "If"
 msgstr ""
 
-#: src\index.html:906 src emplate\htaccess.txt:270
+#: src/index.html:1018 src/template/htaccess.txt:270
 msgid "needed, un-comment the following rules."
 msgstr ""
 
-#: src\index.html:916 src emplate\htaccess.txt:280
+#: src/index.html:1028 src/template/htaccess.txt:280
 msgid "Cookie setting from iframes"
 msgstr ""
 
-#: src\index.html:919 src emplate\htaccess.txt:283
+#: src/index.html:1031 src/template/htaccess.txt:283
 msgid "Allow cookies to be set from iframes (for IE only)"
 msgstr ""
 
-#: src\index.html:920 src emplate\htaccess.txt:284
+#: src/index.html:1032 src/template/htaccess.txt:284
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
 
-#: src\index.html:931 src emplate\htaccess.txt:295
+#: src/index.html:1043 src/template/htaccess.txt:295
 msgid "Start rewrite engine"
 msgstr ""
 
-#: src\index.html:934 src emplate\htaccess.txt:298
+#: src/index.html:1046 src/template/htaccess.txt:298
 msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
 msgstr ""
 
-#: src\index.html:943
+#: src/index.html:1055
 msgid "Suppress or force the &quot;www.&quot; at the beginning of URLs"
 msgstr ""
 
-#: src\index.html:946
+#: src/index.html:1058
 msgid ""
 "\n"
 "# The same content should never be available under two different URLs - "
@@ -800,13 +699,13 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:952
+#: src/index.html:1064
 msgid ""
 "By default option 1 (no &quot;www.&quot;) is activated. Remember: Shorter "
 "URLs are sexier."
 msgstr ""
 
-#: src\index.html:955 src emplate\htaccess.txt:319
+#: src/index.html:1067 src/template/htaccess.txt:319
 msgid ""
 "\n"
 "# If you rather want to use option 2, just comment out all option 1 lines\n"
@@ -815,7 +714,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:963
+#: src/index.html:1075
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -823,7 +722,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:976
+#: src/index.html:1088
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -834,11 +733,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:993 src emplate\htaccess.txt:357
+#: src/index.html:1105 src/template/htaccess.txt:357
 msgid "Add/remove trailing slash to (non-file) URLs"
 msgstr ""
 
-#: src\index.html:996
+#: src/index.html:1108
 msgid ""
 "\n"
 "# Google treats URLs with and without trailing slashes separately.\n"
@@ -847,15 +746,15 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1002 src emplate\htaccess.txt:366
+#: src/index.html:1114 src/template/htaccess.txt:366
 msgid "By default option 1 (force trailing slash) is activated."
 msgstr ""
 
-#: src\index.html:1005 src emplate\htaccess.txt:369
+#: src/index.html:1117 src/template/htaccess.txt:369
 msgid "Trailing Slash Problem"
 msgstr ""
 
-#: src\index.html:1009
+#: src/index.html:1121
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -863,7 +762,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1022
+#: src/index.html:1134
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -871,11 +770,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1034 src emplate\htaccess.txt:398
+#: src/index.html:1146 src/template/htaccess.txt:398
 msgid "Built-in filename-based cache busting"
 msgstr ""
 
-#: src\index.html:1037
+#: src/index.html:1149
 msgid ""
 "\n"
 "# If you&apos;re not using the build script to manage your filename version "
@@ -885,24 +784,24 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1043 src emplate\htaccess.txt:407
+#: src/index.html:1155 src/template/htaccess.txt:407
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231,"
 msgstr ""
 
-#: src\index.html:1044 src emplate\htaccess.txt:408
+#: src/index.html:1156 src/template/htaccess.txt:408
 msgid "read:"
 msgstr ""
 
-#: src\index.html:1046 src emplate\htaccess.txt:410
+#: src/index.html:1158 src/template/htaccess.txt:410
 msgid "Uncomment to enable."
 msgstr ""
 
-#: src\index.html:1056 src emplate\htaccess.txt:420
+#: src/index.html:1168 src/template/htaccess.txt:420
 msgid "Prevent SSL cert warnings"
 msgstr ""
 
-#: src\index.html:1059 src emplate\htaccess.txt:423
+#: src/index.html:1171 src/template/htaccess.txt:423
 msgid ""
 "\n"
 "# Rewrite secure requests properly to prevent SSL cert warnings, e.g. "
@@ -913,11 +812,11 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1073 src emplate\htaccess.txt:437
+#: src/index.html:1185 src/template/htaccess.txt:437
 msgid "Prevent 404 errors for non-existing redirected folders"
 msgstr ""
 
-#: src\index.html:1076 src emplate\htaccess.txt:440
+#: src/index.html:1188 src/template/htaccess.txt:440
 msgid ""
 "\n"
 "# without -MultiViews, Apache will give a 404 for a rewrite if a folder of "
@@ -926,32 +825,32 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1086 src emplate\htaccess.txt:450
+#: src/index.html:1198 src/template/htaccess.txt:450
 msgid "custom 404 page"
 msgstr ""
 
-#: src\index.html:1089 src emplate\htaccess.txt:453
+#: src/index.html:1201 src/template/htaccess.txt:453
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
 msgstr ""
 
-#: src\index.html:1095 src emplate\htaccess.txt:459
+#: src/index.html:1207 src/template/htaccess.txt:459
 msgid "UTF-8 encoding"
 msgstr ""
 
-#: src\index.html:1098 src emplate\htaccess.txt:462
+#: src/index.html:1210 src/template/htaccess.txt:462
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
 
-#: src\index.html:1101 src emplate\htaccess.txt:465
+#: src/index.html:1213 src/template/htaccess.txt:465
 msgid "force utf-8 for a number of file formats"
 msgstr ""
 
-#: src\index.html:1107 src emplate\htaccess.txt:471
+#: src/index.html:1219 src/template/htaccess.txt:471
 msgid "A little more security"
 msgstr ""
 
-#: src\index.html:1111
+#: src/index.html:1223
 msgid ""
 "\n"
 "# Do we want to advertise the exact version number of Apache we&apos;re "
@@ -962,7 +861,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1119
+#: src/index.html:1231
 msgid ""
 "\n"
 "# &quot;-Indexes&quot; will have Apache block users from browsing folders "
@@ -974,7 +873,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1127
+#: src/index.html:1239
 msgid ""
 "\n"
 "# Block access to &quot;hidden&quot; directories whose names begin with a "
@@ -984,7 +883,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1136
+#: src/index.html:1248
 msgid ""
 "\n"
 "# If your server is not already configured as such, the following directive\n"
@@ -1007,273 +906,59 @@ msgid ""
 "# "
 msgstr ""
 
-#: src\index.html:1160
+#: src/index.html:1277
+msgid "Ready to get started?"
+msgstr ""
+
+#: src/index.html:1280
+msgid "Intro to the Build Script"
+msgstr ""
+
+#: src/index.html:1283
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Faites-un tour du propriétaire en 40 minutes!"
 
-#: src\index.html:1165
+#: src/index.html:1287
 msgid "Dig deeper in 60 minutes"
 msgstr ""
 
-#: src\index.html:1170
-msgid ""
-"Or read through this good explanation of <a href=\"http://www.1stwebdesigner."
-"com/development/snippets-html5-boilerplate/\">20 snippets you should be "
-"using</a>."
-msgstr ""
-"Ou lisez cette bonne explication sur <a href=\"http://www.1stwebdesigner.com/"
-"development/snippets-html5-boilerplate/\">les 20 snippets que vous devriez "
-"utiliser</a>."
-
-#: src\index.html:1173
-msgid "Make it even better!"
-msgstr "Faites encore mieux!"
-
-#: src\index.html:1175
-msgid ""
-"Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
-"\">yepnope.js</a> in combo with your  <a href=\"http://github.com/Modernizr/"
-"Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> to bring "
-"the future to all browsers."
-msgstr ""
-"Utilisez un script loader comme <a href=\"http://github.com/SlexAxton/"
-"yepnope.js\">yepnope.js</a> en supplément de <a href=\"http://github.com/"
-"Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</a> "
-"pour apporter le futur à tous les navigateurs."
-
-#: src\index.html:1176
-msgid ""
-"Use the build script, crank up your expires to 1year, and deliver a "
-"superfast site."
-msgstr ""
-"Utilisez le script de fabrication (build), réglez l'expiration à 1year et "
-"delivrez des sites ultra-rapides"
-
-#: src\index.html:1177
-msgid ""
-"Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist in "
-"writing CSS3"
-msgstr ""
-"N'oubliez pas <a href=\"http://css3please.com\">CSS3please.com</a> pour vous "
-"aider à écrire du CSS3"
-
-#: src\index.html:1178
-msgid ""
-" \n"
-"            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
-"other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
-"browser-Polyfills\">HTML5 polyfills</a> \n"
-"            "
-msgstr ""
-" \n"
-"            <a href=\"http://css3pie.com/\">css3pie.com</a> et autres <a "
-"href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
-"Polyfills\">HTML5 polyfills</a> \n"
-"            "
-
-#: src\index.html:1181
-msgid ""
-"Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
-"\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
-"semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
-"            "
-msgstr ""
-"Faites le meilleur usage des éléments HTML5 : <a href=\"http://html5doctor."
-"com/glossary/\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5."
-"org/semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
-"            "
-
-#: src\index.html:1183
-msgid ""
-"<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
-"`&lt;head&gt;`</a>"
-msgstr ""
-"<a href=\"http://gist.github.com/581868\">Plus de balises `meta` pour votre "
-"`&lt;head&gt;`</a>"
-
-#: src\index.html:1184
-msgid ""
-"If you're a photo gallery site you might want this for ie6 to not show that "
-"stupid thing on &lt;img&gt; tags: \n"
-"\n"
-"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
-"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
-"            "
-msgstr ""
-"Si votre site est une galerie de photo, vous êtes peut-être intéressé par ça "
-"afin que IE6 n'affiche pas ce stupide truc sur les balises &lt;img&gt; : \n"
-" \n"
-"            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv=\"imagetoolbar"
-"\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
-"            "
-
-#: src\index.html:1188
-#, fuzzy
-msgid ""
-"Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
-"tips\">CSS Spriting tips</a> or you could use <a href=\"http://www."
-"hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html\">Lemonade</"
-"a> if you are using <a href=\"http://sass-lang.com\">Sass</a>."
-msgstr ""
-"Lisez <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips"
-"\">quelques astuces sur les sprites CSS</a> ou vous pouvez aussi considérer "
-"<a href=\"http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-"
-"Compass.html\">Lemonade</a> si vous utiliser <a href=\"http://sass-lang.com"
-"\">Sass</a>.</p>"
-
-#: src\index.html:1189
-msgid ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
-"closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
-msgstr ""
-"<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
-"closed#issue/115/comment/439219\">Dites à vos visiteurs d'Activer "
-"JavaScript</a>"
-
-#: src\index.html:1190
-msgid ""
-"<a href=\"http://www.merttol.com/articles/css/too-light-for-print.html"
-"\">Color considerations for printing</a>"
-msgstr ""
-
-#: src\index.html:1191
-msgid ""
-"Use Google's recommendations for SEO: <a href=\"http://"
-"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
-"\">the Google SEO Starter Guide</a> \n"
-"            "
-msgstr ""
-"Utilisez les recommendations Google pour la SEO: <a href=\"http://"
-"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
-"\">the Google SEO Starter Guide</a> \n"
-"            "
-
-#: src\index.html:1193
-msgid ""
-"Dig into the new <a href=\"http://blog.whatwg.org/the-road-to-html-5-link-"
-"relations\">link relations</a> \n"
-"            "
-msgstr ""
-
-#: src\index.html:1195
-msgid ""
-"Consider some opinionated <a href=\"http://webdosanddonts.com/\">web do's "
-"and web dont's</a> \n"
-"            "
-msgstr ""
-
-#: src\index.html:1197
-msgid ""
-"To remove gloss from iPhone home screen rel value should be <code>\"apple-"
-"touch-icon-precomposed\"</code>"
-msgstr ""
-
-#: src\index.html:1198
-msgid ""
-"<a href=\"http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-"
-"Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx"
-"\">Simulate link printing in IE with JS</a>"
-msgstr ""
-
-#: src\index.html:1199
-msgid ""
-"Use <code>rel=\"prefetch\"</code> for <a href=\"http://www.stevesouders.com/"
-"blog/2010/02/15/browser-performance-wishlist/#link_prefetch\">documents to "
-"pre-fetch</a>."
-msgstr ""
-
-#: src\index.html:1200
-msgid ""
-"Using border-radius with background color in Webkit? Try <a href=\"http://"
-"tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed\">-webkit-"
-"background-clip</a> to fix the bleed."
-msgstr ""
-
-#: src\index.html:1201
-msgid ""
-"Write <a href=\"http://css-tricks.com/efficiently-rendering-css/\">efficient "
-"CSS</a> for optimum browser performance."
-msgstr ""
-
-#: src\index.html:1202
-msgid ""
-"Kick off your page-specific javascript <a href=\"http://paulirish.com/2009/"
-"markup-based-unobtrusive-comprehensive-dom-ready-execution/\">based on your "
-"markup</a>."
-msgstr ""
-
-#: src\index.html:1203
-msgid ""
-"Know your available <a href=\"http://paulirish.com/2009/browser-specific-css-"
-"hacks/\">browser CSS hacks</a>."
-msgstr ""
-
-#: src\index.html:1204
-msgid ""
-"Get your team hooked using the same <a href=\"http://na.isobar.com/standards/"
-"\">front-end coding standards and best practices.</a> \n"
-"            "
-msgstr ""
-
-#: src\index.html:1206
-msgid ""
-"Use <a href=\"http://microformats.org/wiki/Main_Page\">Microformats</a> (via "
-"<a href=\"http://microformats.org/wiki/microdata\">microdata</a>) for "
-"optimum search results <a href=\"http://googlewebmastercentral.blogspot."
-"com/2009/05/introducing-rich-snippets.html\">visibility</a>."
-msgstr ""
-
-#: src\index.html:1207
-msgid ""
-"You can use the <a href=\"http://camendesign.com/code/"
-"developpeurs_sans_frontieres\">body element as a wrapper</a>, so you need "
-"not use a div#container."
-msgstr ""
-
-#: src\index.html:1208
-msgid ""
-"Read on for <a href=\"http://github.com/paulirish/html5-boilerplate/wiki/"
-"Make-it-better/\">more ways to make it better.</a> "
-msgstr ""
-
-#: src\index.html:1214
+#: src/index.html:1362 src/docs/index.html:49
 msgid "Brought to you by"
 msgstr ""
 
-#: src\index.html:1215
+#: src/index.html:1363 src/docs/index.html:50
 msgid "Google Chrome, jQuery"
 msgstr ""
 
-#: src\index.html:1216
-msgid "Open Web Vigilante"
+#: src/index.html:1364 src/docs/index.html:51
+msgid "Web Opener @ Opera"
 msgstr ""
 
-#: src\index.html:1228
+#: src/index.html:1365 src/docs/index.html:52
+msgid "Open Web Developer"
+msgstr ""
+
+#: src/index.html:1386 src/docs/index.html:66
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr ""
 
-#: src\index.html:1257
-msgid ""
-"Comments for Boilerplate v0.9.1 can be found in the <a href=\"commentarchive."
-"html\">archive</a>"
-msgstr ""
-
-#: src\index.html:1259 standard input:1317
+#: src/index.html:1418 src/js/script.js:84
 msgid "Show comments"
 msgstr ""
 
-#: src\index.html:1336
-msgid "http://html5boilerplate.com/v095"
+#: src/js/script.js:33
+#, fuzzy
+msgid "http://html5boilerplate.com/"
 msgstr "http://fr.html5boilerplate.com"
 
-#: src emplate\htaccess.txt:26
+#: src/template/htaccess.txt:26
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
 
-#: src emplate\htaccess.txt:36
+#: src/template/htaccess.txt:36
 msgid ""
 "\n"
 "# Because X-UA-Compatible isn't sent to non-IE (to save header bytes),\n"
@@ -1281,13 +966,13 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:41
+#: src/template/htaccess.txt:41
 msgid ""
 "Cache control is set only if mod_headers is enabled, so that's unncessary to "
 "declare"
 msgstr ""
 
-#: src emplate\htaccess.txt:63
+#: src/template/htaccess.txt:63
 msgid ""
 "\n"
 "# allow access from all domains for webfonts\n"
@@ -1296,7 +981,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:115
+#: src/template/htaccess.txt:115
 msgid ""
 "\n"
 "# allow concatenation from within specific js and css files\n"
@@ -1310,7 +995,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:182
+#: src/template/htaccess.txt:182
 msgid ""
 "\n"
 "# these are pretty far-future expires headers\n"
@@ -1320,7 +1005,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:190
+#: src/template/htaccess.txt:190
 msgid ""
 "\n"
 "# if you don't use filenames to version, lower the css and js to something "
@@ -1329,7 +1014,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:255
+#: src/template/htaccess.txt:255
 msgid ""
 "\n"
 "# Since we're sending far-future expires, we don't need ETags for\n"
@@ -1337,15 +1022,15 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:269
+#: src/template/htaccess.txt:269
 msgid "combination with the \"ExpiresByType\" rules for images (see above). If"
 msgstr ""
 
-#: src emplate\htaccess.txt:307
+#: src/template/htaccess.txt:307
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
 msgstr ""
 
-#: src emplate\htaccess.txt:310
+#: src/template/htaccess.txt:310
 msgid ""
 "\n"
 "# The same content should never be available under two different URLs - "
@@ -1357,13 +1042,13 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:316
+#: src/template/htaccess.txt:316
 msgid ""
 "By default option 1 (no \"www.\") is activated. Remember: Shorter URLs are "
 "sexier."
 msgstr ""
 
-#: src emplate\htaccess.txt:327
+#: src/template/htaccess.txt:327
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -1371,7 +1056,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:340
+#: src/template/htaccess.txt:340
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -1382,7 +1067,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:360
+#: src/template/htaccess.txt:360
 msgid ""
 "\n"
 "# Google treats URLs with and without trailing slashes separately.\n"
@@ -1391,7 +1076,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:373
+#: src/template/htaccess.txt:373
 msgid ""
 "\n"
 "# Option 1:\n"
@@ -1399,7 +1084,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:386
+#: src/template/htaccess.txt:386
 msgid ""
 "\n"
 "# Option 2:\n"
@@ -1407,7 +1092,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:401
+#: src/template/htaccess.txt:401
 msgid ""
 "\n"
 "# If you're not using the build script to manage your filename version "
@@ -1417,7 +1102,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:475
+#: src/template/htaccess.txt:475
 msgid ""
 "\n"
 "# Do we want to advertise the exact version number of Apache we're running?\n"
@@ -1427,7 +1112,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:483
+#: src/template/htaccess.txt:483
 msgid ""
 "\n"
 "# \"-Indexes\" will have Apache block users from browsing folders without a "
@@ -1439,7 +1124,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:491
+#: src/template/htaccess.txt:491
 msgid ""
 "\n"
 "# Block access to \"hidden\" directories whose names begin with a period. "
@@ -1449,7 +1134,7 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\htaccess.txt:500
+#: src/template/htaccess.txt:500
 msgid ""
 "\n"
 "# If your server is not already configured as such, the following directive\n"
@@ -1472,69 +1157,276 @@ msgid ""
 "# "
 msgstr ""
 
-#: src emplate\humans.txt:1
+#: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
 msgstr ""
 
-#: src emplate\index.html:10
+#: src/template/index.html:10
 msgid ""
 "Always force latest IE rendering engine (even in intranet) & Chrome Frame\n"
 "       Remove this if you use the .htaccess"
 msgstr ""
 
-#: src emplate\index.html:21
+#: src/template/index.html:21
 msgid ""
 "Place favicon.ico & apple-touch-icon.png in the root of your domain and "
 "delete these references"
 msgstr ""
 
-#: src emplate\index.html:26
+#: src/template/index.html:26
 msgid "CSS: implied media=\"all\""
 msgstr ""
 
-#: src emplate\index.html:32
+#: src/template/index.html:32
 msgid ""
 "All JavaScript at the bottom, except for Modernizr which enables HTML5 "
 "elements & feature detects"
 msgstr ""
 
-#: src emplate\index.html:54
+#: src/template/index.html:54
 msgid ""
 "Grab Google CDN's jQuery, with a protocol relative URL; fall back to local "
 "if necessary"
 msgstr ""
 
-#: src emplate\index.html:67
+#: src/template/index.html:67
 msgid "Fix any <img> or .png_bg bg-images. Also, please read"
 msgstr ""
 
-#: src emplate\index.html:71
+#: src/template/index.html:71
 msgid "Change UA-XXXXX-X to be your site's ID"
 msgstr ""
 
-#: src emplate\css\style.css:15
+#: src/template/css/style.css:15
 msgid ""
 "html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 "
 "baseline)"
 msgstr ""
 
-#: src emplate\css\style.css:63
+#: src/template/css/style.css:63
 msgid "Font normalization inspired by YUI Library's fonts.css:"
 msgstr ""
 
-#: src emplate\css\style.css:237
+#: src/template/css/style.css:237
 msgid ""
 "Uncomment if you don't want iOS and WinMobile to mobile-optimize the text "
 "for you:"
 msgstr ""
 
-#: src emplate\css\style.css:253
+#: src/template/css/style.css:253
 msgid "Don't show links for images, or javascript/internal links"
 msgstr ""
 
-#: src emplate\js\plugins.js:2
+#: src/template/js/plugins.js:2
 msgid "usage: log('inside coolFunc', this, arguments);"
 msgstr ""
+
+#~ msgid "Not found"
+#~ msgstr "Non trouvé"
+
+#~ msgid "Why it is awesome"
+#~ msgstr "Pourquoi ça déchire"
+
+#~ msgid "Cross-browser compatible (IE6, yeah we got that.)"
+#~ msgstr "Compatibilité Cross-Browser (IE6, ouaih on a ça.)"
+
+#~ msgid "HTML5 ready. Use the new tags with certainty."
+#~ msgstr ""
+#~ "Prêt pour le HTML5. Utilisez les nouvelles balises l'esprit tranquille "
+
+#~ msgid "Optimal caching and compression rules for grade-A performance"
+#~ msgstr ""
+#~ "Mise en cache optimale et règles de compression pour les meilleures "
+#~ "performances possibles"
+
+#~ msgid "Best practice site configuration defaults"
+#~ msgstr "Configuration "
+
+#~ msgid "Mobile browser optimizations"
+#~ msgstr "Optimisations pour les navigateurs mobiles"
+
+#~ msgid ""
+#~ "Progressive enhancement graceful degradation &hellip; yeah yeah we got "
+#~ "that"
+#~ msgstr ""
+#~ "Perfectionnement progressif et dégradation gracieuse &hellip; ouaih ouaih "
+#~ "on a ça"
+
+#~ msgid "IE specific classes for maximum cross-browser control"
+#~ msgstr "Classes spécifiques à IE pour une gestion optimale des"
+
+#~ msgid "Handy .no-js and .js classes to style based on capability"
+#~ msgstr ""
+#~ "Classes .no-js et .js très pratiques pour styler selon les capacités"
+
+#~ msgid ""
+#~ "Want to write unit tests but lazy? A full, hooked up test suite is "
+#~ "waiting for you."
+#~ msgstr ""
+#~ "Vous voulez faire des tests unitaires mais vous êtes du genre fainéants?  "
+#~ "Une panoplie complète d'outils est déjà là et n'attend que vous."
+
+#~ msgid "Why it is awesome-er"
+#~ msgstr "Pour ça déchire encore plus"
+
+#~ msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
+#~ msgstr ""
+#~ "Profiling JavaScript&hellip;pour IE6 et IE7? Bien sûr, pas de problème."
+
+#~ msgid "Console.log nerfing so you won't break anyone by mistake."
+#~ msgstr "Console.log pour les navigateurs qui n'en possédent pas."
+
+#~ msgid "An optimal print stylesheet, performance optimized."
+#~ msgstr ""
+#~ "Une feuille de style optimale pour l'impression aux performances "
+#~ "optimisées."
+
+#~ msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
+#~ msgstr ""
+#~ "Balisage et squelette CSS adaptable pour iOS, Android et Opera Mobile."
+
+#~ msgid "IE6 pngfix baked in."
+#~ msgstr "IE6 pngfix pré-intégré"
+
+#~ msgid ""
+#~ ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
+#~ msgstr ""
+#~ "Classes .clearfix, .visuallhidden pour styler proprement et de manière "
+#~ "accessible."
+
+#~ msgid ""
+#~ ".htaccess file that allows proper use of HTML5 features and faster page "
+#~ "load"
+#~ msgstr ""
+#~ "Fichier .htaccess qui permet une autorisation propre des fonctionnalités "
+#~ "HTML5  et un chargement plus rapide des pages"
+
+#~ msgid "CDN hosted jQuery with local fallback failsafe."
+#~ msgstr "jQuery hébergé sur un CDN ou récupéré en local au cas où."
+
+#~ msgid ""
+#~ "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
+#~ msgstr ""
+#~ "Vous pensez qu'il y en a trop? Boilerplate est un ami de la touche "
+#~ "DELETE. :)"
+
+#~ msgid ""
+#~ "Or read through this good explanation of <a href=\"http://"
+#~ "www.1stwebdesigner.com/development/snippets-html5-boilerplate/\">20 "
+#~ "snippets you should be using</a>."
+#~ msgstr ""
+#~ "Ou lisez cette bonne explication sur <a href=\"http://www.1stwebdesigner."
+#~ "com/development/snippets-html5-boilerplate/\">les 20 snippets que vous "
+#~ "devriez utiliser</a>."
+
+#~ msgid "Make it even better!"
+#~ msgstr "Faites encore mieux!"
+
+#~ msgid ""
+#~ "Use a script loader like <a href=\"http://github.com/SlexAxton/yepnope.js"
+#~ "\">yepnope.js</a> in combo with your  <a href=\"http://github.com/"
+#~ "Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</"
+#~ "a> to bring the future to all browsers."
+#~ msgstr ""
+#~ "Utilisez un script loader comme <a href=\"http://github.com/SlexAxton/"
+#~ "yepnope.js\">yepnope.js</a> en supplément de <a href=\"http://github.com/"
+#~ "Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills\">HTML5 polyfills</"
+#~ "a> pour apporter le futur à tous les navigateurs."
+
+#~ msgid ""
+#~ "Use the build script, crank up your expires to 1year, and deliver a "
+#~ "superfast site."
+#~ msgstr ""
+#~ "Utilisez le script de fabrication (build), réglez l'expiration à 1year et "
+#~ "delivrez des sites ultra-rapides"
+
+#~ msgid ""
+#~ "Consider <a href=\"http://css3please.com\">CSS3please.com</a> to assist "
+#~ "in writing CSS3"
+#~ msgstr ""
+#~ "N'oubliez pas <a href=\"http://css3please.com\">CSS3please.com</a> pour "
+#~ "vous aider à écrire du CSS3"
+
+#~ msgid ""
+#~ " \n"
+#~ "            <a href=\"http://css3pie.com/\">css3pie.com</a> and all the "
+#~ "other <a href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-"
+#~ "browser-Polyfills\">HTML5 polyfills</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ " \n"
+#~ "            <a href=\"http://css3pie.com/\">css3pie.com</a> et autres <a "
+#~ "href=\"http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-"
+#~ "Polyfills\">HTML5 polyfills</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "Learn HTML5 elements better: <a href=\"http://html5doctor.com/glossary/"
+#~ "\">HTML5 Doctor Glossary</a> and <a href=\"http://diveintohtml5.org/"
+#~ "semantics.html#new-elements\">Dive Into HTML5 : semantic elements</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Faites le meilleur usage des éléments HTML5 : <a href=\"http://"
+#~ "html5doctor.com/glossary/\">HTML5 Doctor Glossary</a> and <a href="
+#~ "\"http://diveintohtml5.org/semantics.html#new-elements\">Dive Into "
+#~ "HTML5 : semantic elements</a> \n"
+#~ "            "
+
+#~ msgid ""
+#~ "<a href=\"http://gist.github.com/581868\">More `meta` tag tracks for your "
+#~ "`&lt;head&gt;`</a>"
+#~ msgstr ""
+#~ "<a href=\"http://gist.github.com/581868\">Plus de balises `meta` pour "
+#~ "votre `&lt;head&gt;`</a>"
+
+#~ msgid ""
+#~ "If you're a photo gallery site you might want this for ie6 to not show "
+#~ "that stupid thing on &lt;img&gt; tags: \n"
+#~ "\n"
+#~ "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="
+#~ "\"imagetoolbar\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Si votre site est une galerie de photo, vous êtes peut-être intéressé par "
+#~ "ça afin que IE6 n'affiche pas ce stupide truc sur les balises &lt;"
+#~ "img&gt; : \n"
+#~ " \n"
+#~ "            <p>  <code>&lt;!--[if IE]&gt;&lt;meta http-equiv="
+#~ "\"imagetoolbar\" content=\"no\" /&gt;&lt;![endif]--&gt;</code></p> \n"
+#~ "            "
+
+#, fuzzy
+#~ msgid ""
+#~ "Read some <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-"
+#~ "spriting-tips\">CSS Spriting tips</a> or you could use <a href=\"http://"
+#~ "www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html"
+#~ "\">Lemonade</a> if you are using <a href=\"http://sass-lang.com\">Sass</"
+#~ "a>."
+#~ msgstr ""
+#~ "Lisez <a href=\"http://blog.mozilla.com/webdev/2009/03/27/css-spriting-"
+#~ "tips\">quelques astuces sur les sprites CSS</a> ou vous pouvez aussi "
+#~ "considérer <a href=\"http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-"
+#~ "for-Sass-Compass.html\">Lemonade</a> si vous utiliser <a href=\"http://"
+#~ "sass-lang.com\">Sass</a>.</p>"
+
+#~ msgid ""
+#~ "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+#~ "closed#issue/115/comment/439219\">Tell your users to Enable JavaScript</a>"
+#~ msgstr ""
+#~ "<a href=\"http://github.com/paulirish/html5-boilerplate/issues/"
+#~ "closed#issue/115/comment/439219\">Dites à vos visiteurs d'Activer "
+#~ "JavaScript</a>"
+
+#~ msgid ""
+#~ "Use Google's recommendations for SEO: <a href=\"http://"
+#~ "googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+#~ "\">the Google SEO Starter Guide</a> \n"
+#~ "            "
+#~ msgstr ""
+#~ "Utilisez les recommendations Google pour la SEO: <a href=\"http://"
+#~ "googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+#~ "\">the Google SEO Starter Guide</a> \n"
+#~ "            "
 
 #~ msgid "What&rsquo;s New in 0.9.5"
 #~ msgstr "Quoi de neuf dans la 0.9.5"
