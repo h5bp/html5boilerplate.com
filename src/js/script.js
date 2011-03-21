@@ -95,7 +95,7 @@ $(document).ready(function(){
   // lazy inject the videos
   setTimeout(function(){
     $('noscript').each(function(){
-      var html = $.trim( $(this).text() );
+      var html = $.trim( $(this).text() ) || $.trim( $(this).attr('data-html') )
       $(html).insertBefore(this);
     });
   }, 3000);
