@@ -270,6 +270,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #body .notice figure figcaption, .gstease figcaption { font-size: 0.7em; }
 
 .gstease { float: none !important; margin:25px auto; width: 300px;}
+figcation i { padding: 0; }
 
 #body .notice h4 { text-align: left; margin-bottom: 1em; margin-top: 0.5em; }
 #body .notice li { margin: 0 0 0 420px; width: auto; max-width: 100%; padding-left: 35px; }
