@@ -62,7 +62,6 @@ $(document).ready(function(){
     }        
   );
  
-  $('.videos .video iframe, .videos .video embed').attr('width', '0').attr('height', '0'); 
   var videolinks = $('.videos a[href^="#video-"]');
   videolinks.bind('click', function(e) {
     videolinks.removeClass('active');
