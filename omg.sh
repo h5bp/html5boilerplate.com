@@ -5,5 +5,5 @@ cp src/css/style.css src/css/screen.css
 
 make build
 cd build
-ant minify
+ant 
 cd ..
