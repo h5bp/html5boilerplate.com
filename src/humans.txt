@@ -33,7 +33,7 @@
 
   https://github.com/nlogax
 
-  https://github.com/alrra
+  Cătălin Mariș https://github.com/alrra
 
   Milos Gavrilovic https://github.com/GaVrA
 
