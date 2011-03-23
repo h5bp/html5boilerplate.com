@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-13 03:37+0800\n"
-"PO-Revision-Date: 2011-02-25 00:06-0900\n"
+"PO-Revision-Date: 2011-03-24 00:26-0900\n"
 "Last-Translator: Yuya Saito <cssradar@gmail.com>\n"
 "Language-Team: Japanese <LL@li.org>\n"
 "Language: \n"
@@ -38,8 +38,8 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
-"<a href=\"http://disqus.com/?ref_noscript=boilerplate\">Disqusのコメントは</"
-"a>JavaScriptを有効にすると閲覧できます。"
+"<a href=\"http://disqus.com/?ref_noscript=boilerplate\">Disqusのコメントは</a>"
+"JavaScriptを有効にすると閲覧できます。"
 
 #: src/index.html:10
 msgid "A rock-solid default template for HTML5 awesome."
@@ -710,17 +710,18 @@ msgstr "IEでCSSのマウスオーバ時にスクリーンがフリッカする�
 #: src/index.html:1016 src/template/htaccess.txt:268
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers - in"
-msgstr ""
+msgstr "画像用の&quot;ExpiresByType&quot;ルール(上記参照)とともに、"
 
 #: src/index.html:1017
 msgid ""
 "combination with the &quot;ExpiresByType&quot; rules for images (see above). "
 "If"
 msgstr ""
+"以下の命令はIEにおけるCSSのマウスオーバ時のスクリーンフリッカを止める。"
 
 #: src/index.html:1018 src/template/htaccess.txt:270
 msgid "needed, un-comment the following rules."
-msgstr ""
+msgstr "必要であれば、以下のルールのコメントをトル"
 
 #: src/index.html:1028 src/template/htaccess.txt:280
 msgid "Cookie setting from iframes"
@@ -1211,7 +1212,7 @@ msgstr ""
 
 #: src/template/htaccess.txt:307
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
-msgstr ""
+msgstr "URLの最初の&quot;www.&quot;を削除あるいは、強制する"
 
 #: src/template/htaccess.txt:310
 msgid ""
@@ -1406,7 +1407,6 @@ msgstr ""
 "# 事実上PHPのデフォルト設定にリセットすることになる。PHPの命令について詳しくは、\n"
 "# www.php.netを参照してください。\n"
 "# "
-
 
 #: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
