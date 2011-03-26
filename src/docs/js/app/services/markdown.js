@@ -62,7 +62,7 @@ define(['config', 'libs/pubsub'], function(config) {
         request: cache(function(file, cb) {
             $.publish('wiki-request-file', [file]);
             return $.ajax({
-                url: file + this.ext,
+                url: file + this.ext + '?' + (+new Date), //cachebust neccessary
                 dataType: 'text',
                 error: $.proxy(error, this),
                 success: $.proxy(function() {

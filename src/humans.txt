@@ -4,17 +4,17 @@
 
 /* TEAM */
   Instigator: Paul Irish
-  Site: http://paulirish.com
+  Site: http://paulirish.com/
   Twitter: paul_irish
   Location: Plaid shirt
   
   Troublemaker: Divya Manian
-  Site: http://nimbu.in
+  Site: http://nimbu.in/
   Twitter: nimbuin
   Location: Where sun shines
   
   Doer: Shi Chuan
-  Site: http://blog.highub.com
+  Site: http://blog.highub.com/
   Twitter: shichuan
   Location: Uniquely Singapore
   
@@ -33,7 +33,7 @@
 
   https://github.com/nlogax
 
-  https://github.com/alrra
+  Cătălin Mariș https://github.com/alrra
 
   Milos Gavrilovic https://github.com/GaVrA
 
@@ -41,7 +41,7 @@
 
   Niels Bom https://github.com/nielsbom
 
-  Mathias Bynens https://github.com/mathiasbynens
+  Mathias Bynens http://mathiasbynens.be/
 
   Shi Chuan https://github.com/shichuan
 
