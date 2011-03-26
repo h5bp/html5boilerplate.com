@@ -157,7 +157,7 @@ h4, #main h4 em { font-size: 25px; margin: 25px 0 10px;}
 h4 em { font-style: normal; }
 
 h1 { font-size: 6em; line-height: 1.5; text-align: center; cursor: default; }
-h1 b { clear: both; display: block; }
+h1 b { clear: both; }
 h1:hover { color: #e16734; }
 
 body { background: #232927; text-align: center; font: 300 12px/18px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; }
