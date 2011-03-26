@@ -1,3 +1,9 @@
+
+<FilesMatch "\.htaccess\.md">
+  Allow from all
+</FilesMatch>
+
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
