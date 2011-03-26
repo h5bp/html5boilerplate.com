@@ -1,4 +1,9 @@
-hideURLbar();
+
+
+	
+new MBP.hideUrlBar();
+
+alert('hi');
 
 var local = [
  './template/index.html',
@@ -44,6 +49,7 @@ $('code.comments').each(function(){
  
  
 }
+
 $('#thesource').hide();
 if(!jQuery.browser.mobile) {
 	$('#thesource').show();
@@ -123,5 +129,3 @@ var disqus_url = 'http://html5boilerplate.com/v095';
 	dsq.src = 'http://boilerplate.disqus.com/embed.js';
 	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
-
-
