@@ -130,6 +130,3 @@ MBP.autogrow = function (element, lh) {
     element.addEventListener ? element.addEventListener('keyup', handler, false) :
                                element.attachEvent('onkeyup', handler);
 }
-
-
-

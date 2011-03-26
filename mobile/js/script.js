@@ -1,9 +1,4 @@
-
-
-	
 new MBP.hideUrlBar();
-
-
 
 var local = [
  './template/index.html',
