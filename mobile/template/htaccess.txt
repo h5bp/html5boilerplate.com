@@ -18,11 +18,10 @@ AddType application/octet-stream 	   		sisx
 AddType application/vnd.symbian.install 	sis
 
 # indicates to proxies and transcoders that your site should not be modified for mobile
-<IfModule mod_expires.c>
-  <IfModule mod_headers.c>
+<IfModule mod_headers.c>
 	Header append Cache-Control "no-transform"
-  </IfModule>
 </IfModule>
+
 
 # mobile redirect script
 RewriteEngine On

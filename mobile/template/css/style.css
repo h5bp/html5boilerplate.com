@@ -17,7 +17,7 @@
 /* Mobile phones will adjust text size when the screen orientation changes unless you include a special CSS parameter */
 body {
     -webkit-text-size-adjust: none;
-	-ms-text-size-adjust: none;
+	      -ms-text-size-adjust: none;
 }
 
 /* 
@@ -54,17 +54,17 @@ textarea.contenteditable {-webkit-appearance: none;}
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
 /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 321px) and (max-device-width: 569px) {
 /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px) and (max-device-width: 320px) {
 /* Styles */
 }
 

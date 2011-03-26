@@ -3,7 +3,7 @@ new MBP.hideUrlBar();
 var local = [
  './template/index.html',
  './template/css/style.css',
- './template/js/jmobile-lite.js',
+ './template/js/mylibs/helper.js',
  './template/sitemap.xml',
  './template/default.appcache?.xml',
  './template/htaccess.txt?.xml'
