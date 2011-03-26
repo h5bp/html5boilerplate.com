@@ -56,6 +56,7 @@ if(!jQuery.browser.mobile) {
 }
 
 $('#thesource').click(function() {
+  $(this).html('Walk Through It');
 	$.each(local,function(k,path){
 		$.ajax({
 		method: 'GET',
@@ -123,7 +124,7 @@ jQuery('a[href=#dsq-content]').toggle(
  
 var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
 var disqus_category_id = 517513;
-var disqus_url = 'http://html5boilerplate.com/v095';
+var disqus_url = 'http://mobile.html5boilerplate.com/';
 (function() {
 	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 	dsq.src = 'http://boilerplate.disqus.com/embed.js';
