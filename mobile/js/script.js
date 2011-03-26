@@ -3,7 +3,7 @@
 	
 new MBP.hideUrlBar();
 
-alert('hi');
+
 
 var local = [
  './template/index.html',
