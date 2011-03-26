@@ -123,9 +123,9 @@ jQuery('a[href=#dsq-content]').toggle(
  
 var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
 var disqus_category_id = 517513;
-var disqus_url = 'http://html5boilerplate.com/v095';
+var disqus_url = 'http://html5boilerplate.com/v1';
 (function() {
 	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	dsq.src = 'http://boilerplate.disqus.com/embed.js';
+	dsq.src = 'http://mh5bp.disqus.com/embed.js';
 	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
