@@ -203,8 +203,7 @@ msgid "Boilerplate custom"
 msgstr ""
 
 #: src/index.html:93
-#, perl-format
-msgid "100% hipster."
+msgid "100&percnt; hipster."
 msgstr ""
 
 #: src/index.html:93 standard input:1251 input:1254
@@ -372,12 +371,11 @@ msgid "Boilerplate Build Script"
 msgstr ""
 
 #: src/index.html:181
-#, perl-format
 msgid ""
 "The Boilerplate <a href=\"http://html5boilerplate.com/docs/#Build-script"
 "\">build script</a> is ready for prime time. You know all those site "
 "optimization tricks that Steve Souders tells you is a good idea? You're four "
-"keystrokes away from nailing a 100% on them. Now you can:"
+"keystrokes away from nailing a 100&percnt; on them. Now you can:"
 msgstr ""
 
 #: src/index.html:183
@@ -389,10 +387,9 @@ msgid "Combines and minifies CSS"
 msgstr ""
 
 #: src/index.html:185
-#, perl-format
 msgid ""
-"Optimizes JPGs and PNGs (with jpegtran & optipng), saving 15-50% of page "
-"weight"
+"Optimizes JPGs and PNGs (with jpegtran & optipng), saving 15-50&percnt; of "
+"page weight"
 msgstr ""
 
 #: src/index.html:187
