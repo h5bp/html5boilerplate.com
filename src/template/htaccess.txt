@@ -33,10 +33,9 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-# {% blocktrans %}
-# Because X-UA-Compatible isn't sent to non-IE (to save header bytes),
-# We need to inform proxies that content changes based on UA
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Because X-UA-Compatible isn't sent to non-IE (to save header bytes), we need to inform proxies that content changes based on UA{% endblocktrans %}
+# 
   Header append Vary User-Agent
 # {% blocktrans %}Cache control is set only if mod_headers is enabled, so that's unncessary to declare{% endblocktrans %}
 </IfModule>
@@ -60,11 +59,11 @@
 # {% blocktrans %}Webfont access{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# allow access from all domains for webfonts
-# alternatively you could only whitelist
-# your subdomains like "sub.domain.com"
-# {% endblocktrans %}
+# 
+# {% blocktrans %}allow access from all domains for webfonts{% endblocktrans %}
+# {% blocktrans %}alternatively you could only whitelist{% endblocktrans %}
+# {% blocktrans %}your subdomains like "sub.domain.com"{% endblocktrans %}
+# 
 
 <FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
   <IfModule mod_headers.c>
@@ -78,10 +77,10 @@
 # {% blocktrans %}Proper MIME type for all files{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# audio
+# {% blocktrans %}audio{% endblocktrans %}
 AddType audio/ogg                      oga ogg
 
-# video
+# {% blocktrans %}video{% endblocktrans %}
 AddType video/ogg                      ogv
 AddType video/mp4                      mp4
 AddType video/webm                     webm
@@ -112,22 +111,20 @@ AddType application/octet-stream       safariextz
 # {% blocktrans %}Allow concatenation from within specific js and css files{% endblocktrans %}  
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# allow concatenation from within specific js and css files
+# 
+# {% blocktrans %}allow concatenation from within specific js and css files{% endblocktrans %}
 #
-# e.g. Inside of script.combined.js you could have
+# {% blocktrans %}e.g. Inside of script.combined.js you could have{% endblocktrans %}
 #
 #   <!--#include file="jquery-1.4.2.js" -->
 #   <!--#include file="jquery.idletimer.js" -->
 #
-# and they would be included into this single file
-# {% endblocktrans %}
+# {% blocktrans %}and they would be included into this single file{% endblocktrans %}
+# 
 #
-# {% blocktrans %}
-# this is not in use in the boilerplate as it stands. you may
-# choose to name your files in this way for this advantage
-# or concatenate and minify them manually.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}This is not in use in the boilerplate as it stands. You may choose to name your files in this way for this advantage or concatenate and minify them manually.{% endblocktrans %}
+# 
 # {% blocktrans %}Disabled by default.{% endblocktrans %}
 
 # <FilesMatch "\.combined\.(js|css)$">
@@ -144,7 +141,8 @@ AddType application/octet-stream       safariextz
 <IfModule mod_deflate.c>
 
 
-# {% blocktrans %}force deflate for mangled headers{% endblocktrans %} developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+# {% blocktrans %}force deflate for mangled headers{% endblocktrans %} 
+# developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
 <IfModule mod_setenvif.c>
   <IfModule mod_headers.c>
     SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s,?\s(gzip|deflate)?|X{4,13}|~{4,13}|-{4,13})$ HAVE_Accept-Encoding
@@ -179,18 +177,17 @@ AddType application/octet-stream       safariextz
 # {% blocktrans %}Expires headers (for better cache control){% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# these are pretty far-future expires headers
-# they assume you control versioning with cachebusting query params like
+# 
+# {% blocktrans %}these are pretty far-future expires headers{% endblocktrans %}
+# {% blocktrans %}they assume you control versioning with cachebusting query params like:{% endblocktrans %}
 #   <script src="application.js?20100608">
-# additionally, consider that outdated proxies may miscache
-# {% endblocktrans %}
+# {% blocktrans %}additionally, consider that outdated proxies may miscache{% endblocktrans %}
+# 
 #   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
-# {% blocktrans %}
-# if you don't use filenames to version, lower the css and js to something like
-# "access plus 1 week" or so
-# {% endblocktrans %}
+# 
+# {% blocktrans %}if you don`t use filenames to version, lower the css and js to something like "access plus 1 week" {% endblocktrans %}
+# 
 
 <IfModule mod_expires.c>
   ExpiresActive on
@@ -200,6 +197,8 @@ AddType application/octet-stream       safariextz
 
 # {% blocktrans %}cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5){% endblocktrans %}
   ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+
 
 # {% blocktrans %}your document html{% endblocktrans %}
   ExpiresByType text/html                 "access plus 0 seconds"
@@ -252,10 +251,8 @@ AddType application/octet-stream       safariextz
 # {% blocktrans %}ETag removal{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Since we're sending far-future expires, we don't need ETags for
-# static content.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Since we`re sending far-future expires, we don't need ETags for static content.{% endblocktrans %}
 # developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
@@ -265,9 +262,8 @@ FileETag None
 # {% blocktrans %}Stop screen flicker in IE on CSS rollovers{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}The following directives stop screen flicker in IE on CSS rollovers - in{% endblocktrans %}
-# {% blocktrans %}combination with the "ExpiresByType" rules for images (see above). If{% endblocktrans %}
-# {% blocktrans %}needed, un-comment the following rules.{% endblocktrans %}
+# {% blocktrans %}The following directives stop screen flicker in IE on CSS rollovers in combination with the "ExpiresByType" rules for images (see above){% endblocktrans %}
+# {% blocktrans %}If needed, un-comment the following rules.{% endblocktrans %}
 
 # BrowserMatch "MSIE" brokenvary=1
 # BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
@@ -307,27 +303,26 @@ FileETag None
 # {% blocktrans %}Suppress or force the "www." at the beginning of URLs{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# The same content should never be available under two different URLs - especially not with and
-# without "www." at the beginning, since this can cause SEO problems (duplicate content).
-# That's why you should choose one of the alternatives and redirect the other one.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}The same content should never be available under two different URLs, especially not with and without "www." at the beginning, since this can cause SEO problems (duplicate content).{% endblocktrans %}
+# {% blocktrans %}That's why you should choose one of the alternatives and redirect the other one.{% endblocktrans %}
+# 
 
-# {% blocktrans %}By default option 1 (no "www.") is activated. Remember: Shorter URLs are sexier.{% endblocktrans %}
+# {% blocktrans %}By default option 1 (no "www.") is activated.{% endblocktrans %}
+# {% blocktrans %}Remember: Shorter URLs are sexier.{% endblocktrans %}
 # no-www.org/faq.php?q=class_b
 
-# {% blocktrans %}
-# If you rather want to use option 2, just comment out all option 1 lines
-# and uncomment option 2.
-# IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!
-# {% endblocktrans %}
+# 
+# {% blocktrans %}If you rather want to use option 2, just comment out all option 1 lines and uncomment option 2.{% endblocktrans %}
+# {% blocktrans %}IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!{% endblocktrans %}
+# 
 
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Option 1:
-# Rewrite "www.domain.com -> domain.com" 
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Option 1:{% endblocktrans %}
+# {% blocktrans %}Rewrite{% endblocktrans %} "www.domain.com -> domain.com"
+# 
 
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTPS} !=on
@@ -337,12 +332,11 @@ FileETag None
 
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Option 2:
-# To rewrite "domain.com -> www.domain.com" uncomment the following lines.
-# Be aware that the following rule might not be a good idea if you
-# use "real" subdomains for certain parts of your website.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Option 2:{% endblocktrans %}
+# {% blocktrans %}To rewrite "domain.com -> www.domain.com" uncomment the following lines.{% endblocktrans %}
+# {% blocktrans %}Be aware that the following rule might not be a good idea if you use "real" subdomains for certain parts of your website.{% endblocktrans %}
+# 
 
 # <IfModule mod_rewrite.c>
 #   RewriteCond %{HTTPS} !=on
@@ -357,11 +351,10 @@ FileETag None
 # {% blocktrans %}Add/remove trailing slash to (non-file) URLs{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Google treats URLs with and without trailing slashes separately.
-# Forcing a trailing slash is usually preferred, but all that's really
-# important is that one correctly redirects to the other.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Google treats URLs with and without trailing slashes separately.{% endblocktrans %}
+# {% blocktrans %}Forcing a trailing slash is usually preferred, but all that's really important is that one correctly redirects to the other.{% endblocktrans %}
+# 
 
 # {% blocktrans %}By default option 1 (force trailing slash) is activated.{% endblocktrans %}
 # http://googlewebmastercentral.blogspot.com/2010/04/to-slash-or-not-to-slash.html
@@ -370,10 +363,10 @@ FileETag None
 
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Option 1:
-# Rewrite "domain.com/foo -> domain.com/foo/"
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Option 1:{% endblocktrans %}
+# {% blocktrans %}Rewrite{% endblocktrans %} "domain.com/foo -> domain.com/foo/"
+# 
 
 <IfModule mod_rewrite.c>
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -383,10 +376,10 @@ FileETag None
 
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Option 2:
-# Rewrite "domain.com/foo/ -> domain.com/foo"
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Option 2:{% endblocktrans %}
+# {% blocktrans %}Rewrite{% endblocktrans %} "domain.com/foo/ -> domain.com/foo"
+# 
 
 #<IfModule mod_rewrite.c>
 #  RewriteRule ^(.*)/$ /$1 [R=301,L]
@@ -398,14 +391,12 @@ FileETag None
 # {% blocktrans %}Built-in filename-based cache busting{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# If you're not using the build script to manage your filename version revving,
-# you might want to consider enabling this, which will route requests for
-# /css/all.20110203.css to /res/all.css
-# {% endblocktrans %}
+# 
+# {% blocktrans %}If you're not using the build script to manage your filename version revving, you might want to consider enabling this, which will route requests for /css/all.20110203.css to /res/all.css{% endblocktrans %}
+# 
 
-# {% blocktrans %}To understand why this is important and a better idea than all.css?v1231,{% endblocktrans %}
-# {% blocktrans %}read:{% endblocktrans %} github.com/paulirish/html5-boilerplate/wiki/Version-Control-with-Cachebusting
+# {% blocktrans %}To understand why this is important and a better idea than all.css?v1231, read:{% endblocktrans %}
+# github.com/paulirish/html5-boilerplate/wiki/Version-Control-with-Cachebusting
 
 # {% blocktrans %}Uncomment to enable.{% endblocktrans %}
 # <IfModule mod_rewrite.c>
@@ -420,11 +411,11 @@ FileETag None
 # {% blocktrans %}Prevent SSL cert warnings{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent 
-# https://www.domain.com when your cert only allows https://secure.domain.com
-# Uncomment the following lines to use this feature.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Rewrite secure requests properly to prevent SSL cert warnings{% endblocktrans %}
+# {% blocktrans %}e.g. prevent https://www.domain.com when your cert only allows https://secure.domain.com {% endblocktrans %}
+# {% blocktrans %}Uncomment the following lines to use this feature.{% endblocktrans %}
+# 
 
 # <IfModule mod_rewrite.c>
 #   RewriteCond %{SERVER_PORT} !^443
@@ -437,10 +428,9 @@ FileETag None
 # {% blocktrans %}Prevent 404 errors for non-existing redirected folders{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}
-# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the same name does not exist
-# e.g. /blog/hello : webmasterworld.com/apache/3808792.htm
-# {% endblocktrans %}
+# 
+# {% blocktrans %}without -MultiViews, Apache will give a 404 for a rewrite if a folder of the same name does not exist e.g.{% endblocktrans %} /blog/hello : webmasterworld.com/apache/3808792.htm
+# 
 
 Options -MultiViews 
 
@@ -472,47 +462,37 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 # ----------------------------------------------------------------------
 
 
-# {% blocktrans %}
-# Do we want to advertise the exact version number of Apache we're running?
-# Probably not.
-# This can only be enabled if used in httpd.conf - It will not work in .htaccess
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Do we want to advertise the exact version number of Apache we're running? Probably not.{% endblocktrans %}
+# {% blocktrans %}This can only be enabled if used in httpd.conf - It will not work in .htaccess{% endblocktrans %}
+# 
 # ServerTokens Prod
 
 
-# {% blocktrans %}
-# "-Indexes" will have Apache block users from browsing folders without a default document
-# Usually you should leave this activated, because you shouldn't allow everybody to surf through
-# every folder on your server (which includes rather private places like CMS system folders).
-# {% endblocktrans %}
+# 
+# {% blocktrans %}"-Indexes" will have Apache block users from browsing folders without a default document{% endblocktrans %}
+# {% blocktrans %}Usually you should leave this activated, because you shouldn't allow everybody to surf through every folder on your server (which includes rather private places like CMS system folders).{% endblocktrans %}
+# 
 # Options -Indexes
 
 
-# {% blocktrans %}
-# Block access to "hidden" directories whose names begin with a period. This
-# includes directories used by version control systems such as Subversion or Git.
-# {% endblocktrans %}
+# 
+# {% blocktrans %}Block access to "hidden" directories whose names begin with a period. {% endblocktrans %}
+# {% blocktrans %}This includes directories used by version control systems such as Subversion or Git.{% endblocktrans %}
+# 
 <IfModule mod_rewrite.c>
   RewriteRule "(^|/)\." - [F]
 </IfModule>
 
 
-# {% blocktrans %}
-# If your server is not already configured as such, the following directive
-# should be uncommented in order to set PHP's register_globals option to OFF.
-# This closes a major security hole that is abused by most XSS (cross-site
-# scripting) attacks. For more information: http://php.net/register_globals
+# 
+# {% blocktrans %}If your server is not already configured as such, the following directive should be uncommented in order to set PHP's register_globals option to OFF. This closes a major security hole that is abused by most XSS (cross-site scripting) attacks. For more information:{% endblocktrans %} http://php.net/register_globals
 #
-# IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :
+# {% blocktrans %}IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :{% endblocktrans %}
 #
-# Your server does not allow PHP directives to be set via .htaccess. In that
-# case you must make this change in your php.ini file instead. If you are
-# using a commercial web host, contact the administrators for assistance in
-# doing this. Not all servers allow local php.ini files, and they should
-# include all PHP configurations (not just this one), or you will effectively
-# reset everything to PHP defaults. Consult www.php.net for more detailed
-# information about setting PHP directives.
-# {% endblocktrans %}
+# {% blocktrans %}Your server does not allow PHP directives to be set via .htaccess. In that case you must make this change in your php.ini file instead.If you are using a commercial web host, contact the administrators for assistance in doing this.Not all servers allow local php.ini files, and they should include all PHP configurations (not just this one), or you will effectively reset everything to PHP defaults.{% endblocktrans %}
+# {% blocktrans %}Consult www.php.net for more detailed information about setting PHP directives.{% endblocktrans %}
+# 
 
 # php_flag register_globals Off
 
