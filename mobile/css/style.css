@@ -261,6 +261,7 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   header h1, footer em.focus, #main h1, #main h2, #main h3, #main h4 { text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
   #frame {display:none;}  
   #main h4 { line-height: 1.2; }  
+  footer p:first-child a { width: 13em; margin: 0 auto; clear: both; display: block; }
 }
 
 @media only screen and (min-width : 321px) and (max-device-width: 569px) {
