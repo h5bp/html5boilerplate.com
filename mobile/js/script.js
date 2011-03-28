@@ -55,7 +55,6 @@ function mycallback(data,status,xhr,filename){
 
 if(!jQuery.browser.mobile) {
   $('#source').show();
-  $('#frame').html('<img src="images/devices.png" /><div><img src="images/logos.png" /></div>');
   $('#ppt').html('<iframe src="https://docs.google.com/present/embed?id=dkx3qtm_20f3cvs8gc" frameborder="0" width="410" height="342"></iframe> <iframe src="https://docs.google.com/present/embed?id=dkx3qtm_22dxsrgcf4" frameborder="0" width="410" height="342"></iframe>');
 }
 

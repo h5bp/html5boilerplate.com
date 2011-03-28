@@ -66,32 +66,13 @@ hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 
 
 input, select { vertical-align:middle; }
 
-/* END RESET CSS */
-
-
-/* fonts.css from the YUI Library: developer.yahoo.com/yui/
-   Refer to developer.yahoo.com/yui/3/cssfonts/ for font sizing percentages
-
-  There are three custom edits:
-   * remove arial, helvetica from explicit font stack
-   * we normalize monospace styles ourselves
-   * table font-size is reset in the HTML5 reset above so there is no need to repeat
-*/
-body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { font:13px/1.231 sans-serif; *font-size:small; } 
 
 select, input, textarea, button { font:99% sans-serif; }
 
-/* normalize monospace sizing 
- * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
- */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
-/*
- * Base
- */
-
-/* Mobile phones will adjust text size when the screen orientation changes unless you include a special CSS parameter */
 body {
     -webkit-text-size-adjust: none;
 }
@@ -101,33 +82,17 @@ body {
 	cursor: hand;
 	text-decoration:underline;
 }
-/* 
- * Helper classes 
- */
- 
-/* prevent callout */
-.nocallout {-webkit-touch-callout: none;}
 
-/* Text overflow with ellipsis */
+.nocallout {-webkit-touch-callout: none;}
 .ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* A hack for HTML5 contenteditable attribute on mobile */
 textarea.contenteditable {-webkit-appearance: none;}
-
-/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if they have been set as display: none */
 .hidden {position: absolute; left: -100%;}
 
-
-
-
-
-/* Primary Styles
-   Author:
-*/
 
 @font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
 @font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
@@ -135,8 +100,6 @@ textarea.contenteditable {-webkit-appearance: none;}
 h1, em, #main h3, #disqus_thread h3, h4 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
 
 html[lang='en'] h1, html[lang='en'] em, html[lang='en'] #main h3, html[lang='en'] #disqus_thread h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] #main h3, html[lang='en-us'] #disqus_thread h3, html[lang='en-us'] h4 { font-family: "MolotRegular", Arial, sans-serif; } 
-
-
 
 /* we do not need to link to ourselves. only our friends. <3 */
  
@@ -198,8 +161,7 @@ header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px d
 .social a, p.lang a { font-size: 0.9em; padding: 0 0 0 1em; white-space: nowrap; line-height: 2em; text-transform: uppercase; }
 .social a:hover, p.lang a:hover { color: #e3d7bf; text-shadow: #476871 1px 1px 0px; }
 
-#frame {background:#333f3b; width:600px; margin:1em auto 0 auto; padding:10px;}
-#frame div{background:#fff;}
+#frame { display: none; background:#333f3b; margin:1em auto 0 auto; padding:10px;}
 
 #main ul { font-size: 0.9em; text-align: left; }  
 #main em { margin-right: 0.2em; }
@@ -283,21 +245,14 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
 
-/*
- * Media queries for responsive design
- */
-
-
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
-/* Styles */
   h1 { font-size: 2em; margin:0.5em 0; }
   header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
   header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, footer { width: 96%; }  
   header p { font-size:12px; }   
   #main, .disqus-wrapper { font-size: 0.8em; }  
   #main em, #main h3, .disqus-wrapper h3{ font-size: 1.5em; }
-  #main ul { font-size: 1.2em; } 
+  #main ul { font-size: 1.2em; margin-left: 0; }  
   #main li { text-align:center; }
   footer p { font-size: 12px; line-height: 1.2em; padding-top:0;  } 
   h1 {text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871; }
@@ -310,37 +265,17 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   
 }
 
-/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 980px) {  
+  #header p, #main p.dwn + p i, #main h3, #disqus_thread, #footer, #builder, #body .new { width: 90%; max-width: 100%; }
+  #main li { margin-left: 0; margin-right: 0; min-width: 0; max-width: 100%; width: 100%; padding: 0.25em 0;  }    
+}
+
 @media only screen and (min-width : 321px) and (max-device-width: 569px) {
-/* Styles */
-footer p:first-child a {display:block; height:60px; margin:0 auto;}
+  footer p:first-child a {display:block; height:60px; margin:0 auto;}
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) and (max-device-width: 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/* iPhone 4 and high pixel ratio devices ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+@media only screen and (min-width : 768px) {
+  #frame { display: inline-block; }
 }
 
 @media print {
