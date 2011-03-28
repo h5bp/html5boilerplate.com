@@ -275,7 +275,7 @@ footer a { white-space: nowrap; }
 footer li:after, .social a:after, .lang a:after { content: " ★"; padding-left: 1em; color: #e3d7bf; }
 footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after, html[lang="sr"] p.lang a[lang="nl"]:after { content: ""; }  
 
-#disqus_thread { display: none; padding-top: 0; } 
+#disqus_thread { display: none; padding-top: 0; font-size:12px; text-align:left;} 
 #disqus_thread h3 { margin-top: 0.5em; }
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { font-size: 1.2em; } 
