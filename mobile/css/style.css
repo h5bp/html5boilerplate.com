@@ -254,13 +254,14 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   h1 { font-size: 2em; margin: 0.5em 0; }
   header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
   header p { font-size:12px; }   
-  #main, .disqus-wrapper, footer { font-size: 0.8em; }  
+  #main, .disqus-wrapper { font-size: 0.8em; }  
   #main em, #main h3, .disqus-wrapper h3 { font-size: 1.5em; }
   #main ul { margin-left: 0; }  
   header h1, footer em.focus, #main h1, #main h2, #main h3, #main h4 { text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
   #frame {display:none;}  
   #main h4 { line-height: 1.2; }  
   
+ 
 }
 
 @media only screen and (min-width : 321px) and (max-device-width: 569px) {
