@@ -218,7 +218,7 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
  
 #source h4 a.active:after { content: " [ hide code ]"; } 
 #source h4 a:hover,
-#source h4 a.active { background-color: #2B3F45; }
+#source h4 a.active { background-color: #2B3F45; cursor: pointer;}
 #source h4 a:hover:after { opacity: 1; }
 
 footer { position: relative; text-align: center; padding: 1em 0;}
