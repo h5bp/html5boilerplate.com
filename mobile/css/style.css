@@ -221,10 +221,9 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 #source h4 a:hover:after { opacity: 1; }
 
 footer { position: relative; text-align: center; padding: 1em 0;}
-footer p { font-size: 1.2em; line-height: 3; } 
 footer em { font-style: normal; }
 footer .focus { font-size: 1.5em; margin-right: 1em; }  
-footer p:first-child { margin: 1em 0;}
+footer p { margin: 1em 0;}
 footer p:first-child em { vertical-align: top; line-height: 2; }  
 footer p:first-child a img { float: left; margin: 0 0.5em 0.5em 0;}
 footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
@@ -245,29 +244,23 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
-  h1 { font-size: 2em; margin:0.5em 0; }
-  header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
-  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, footer { width: 96%; }  
-  header p { font-size:12px; }   
-  #main, .disqus-wrapper { font-size: 0.8em; }  
-  #main em, #main h3, .disqus-wrapper h3{ font-size: 1.5em; }
-  #main ul { font-size: 1.2em; margin-left: 0; }  
-  #main li { text-align:center; }
-  footer p { font-size: 12px; line-height: 1.2em; padding-top:0;  } 
-  h1 {text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871; }
-  h2 {text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
-  #main h3, #disqus_thread h3, footer em{text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871;}
-  em, h4   {text-shadow: 1px 1px 0px black;}
-  .dwn span small { font-size: 1.0em; line-height: 1.2em; }
-  footer p:first-child { margin: 0 0 1em 0;}
-  #frame {display:none;}
-  
+@media screen and (max-width: 980px) {  
+  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, footer { width: 90%; max-width: 100%; margin: 0 auto; }
+  #main li { margin-left: auto; margin-right: auto; min-width: 0; max-width: 96%; width: 96%; padding: 0.25em 0;  }    
 }
 
-@media screen and (max-width: 980px) {  
-  #header p, #main p.dwn + p i, #main h3, #disqus_thread, #footer, #builder, #body .new { width: 90%; max-width: 100%; }
-  #main li { margin-left: 0; margin-right: 0; min-width: 0; max-width: 100%; width: 100%; padding: 0.25em 0;  }    
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
+  h1 { font-size: 2em; margin: 0.5em 0; }
+  header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
+  header p { font-size:12px; }   
+  #main, .disqus-wrapper, footer { font-size: 0.8em; }  
+  #main em, #main h3, .disqus-wrapper h3 { font-size: 1.5em; }
+  #main ul { margin-left: 0; }  
+  header h1, footer em.focus, #main h1, #main h2, #main h3, #main h4 { text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
+  #frame {display:none;}  
+  #main h4 { line-height: 1.2; }  
+  
 }
 
 @media only screen and (min-width : 321px) and (max-device-width: 569px) {
