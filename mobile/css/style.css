@@ -306,6 +306,7 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   em, h4   {text-shadow: 1px 1px 0px black;}
   .dwn span small { font-size: 1.0em; line-height: 1.2em; }
   footer p:first-child { margin: 0 0 1em 0;}
+  #frame {display:none;}
   
 }
 
