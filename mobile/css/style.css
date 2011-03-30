@@ -213,11 +213,12 @@ a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
  line-height: 2;
  text-transform: uppercase; 
  color: #e3d7bf;
+ cursor: pointer;
 }
  
 #source h4 a.active:after { content: " [ hide code ]"; } 
 #source h4 a:hover,
-#source h4 a.active { background-color: #2B3F45; }
+#source h4 a.active { background-color: #2B3F45; cursor: pointer;}
 #source h4 a:hover:after { opacity: 1; }
 
 footer { position: relative; text-align: center; padding: 1em 0;}
@@ -244,24 +245,22 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
 
-@media screen and (max-width: 980px) {  
-  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, footer { width: 90%; max-width: 100%; margin: 0 auto; }
-  #main li { margin-left: auto; margin-right: auto; min-width: 0; max-width: 96%; width: 96%; padding: 0.25em 0;  }    
-}
+
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
   h1 { font-size: 2em; margin: 0.5em 0; }
   header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
   header p { font-size:12px; }   
-  #main, .disqus-wrapper { font-size: 0.8em; }  
+  #main, .disqus-wrapper, footer { font-size: 0.8em; }  
   #main em, #main h3, .disqus-wrapper h3 { font-size: 1.5em; }
   #main ul { margin-left: 0; }  
   header h1, footer em.focus, #main h1, #main h2, #main h3, #main h4 { text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
   #frame {display:none;}  
   #main h4 { line-height: 1.2; }  
-  
- 
+
+  footer p:first-child a { width: 13em; margin: 0 auto; clear: both; display: block; }
+
 }
 
 @media only screen and (min-width : 321px) and (max-device-width: 569px) {
