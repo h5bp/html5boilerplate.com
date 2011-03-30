@@ -43,45 +43,23 @@ footer, header, hgroup, menu, nav, section {
 }
 
 nav ul { list-style:none; }
-
 blockquote, q { quotes:none; }
-
 blockquote:before, blockquote:after,
 q:before, q:after { content:''; content:none; }
 
 a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
-
 ins { background-color:#ff9; color:#000; text-decoration:none; }
-
 mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
-
 del { text-decoration: line-through; }
-
 abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
 
 /* tables still need cellspacing="0" in the markup */
 table { border-collapse:collapse; border-spacing:0; }
-
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
-
 input, select { vertical-align:middle; }
-
 body { font:13px/1.231 sans-serif; *font-size:small; } 
-
 select, input, textarea, button { font:99% sans-serif; }
-
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-
-body {
-    -webkit-text-size-adjust: none;
-}
-
-#thesource  span{
-	cursor: pointer;
-	cursor: hand;
-	text-decoration:underline;
-}
 
 .nocallout {-webkit-touch-callout: none;}
 .ellipsis {
@@ -174,12 +152,18 @@ header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px d
 #main p, p.lang { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; font-size: 0.9em; }                 
 #main p.social, p.lang { padding-bottom: 0; }
 #main embed { margin-bottom: 0.5em; }
-#main li { line-height: 2; width: 42em; }
+#main li { line-height: 2; width: 43em; }
 #main li:before { content: "★"; padding-right: 0.5em; }
 #main li {border-bottom: 2px dotted #1e2322;}  
 #main li:last-child { border-bottom: 0; }
 
 a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
+
+#thesource  span{
+	cursor: pointer;
+	cursor: hand;
+	text-decoration:underline;
+}
 
 #source {display:none;}
 #source h4 {
@@ -226,8 +210,8 @@ footer em { font-style: normal; }
 footer .focus { font-size: 1.5em; margin-right: 1em; }  
 footer p { margin: 1em 0;}
 footer p:first-child em { vertical-align: top; line-height: 2; }  
-footer p:first-child a img { float: left; margin: 0 0.5em 0.5em 0;}
-footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; }              
+footer p:first-child a { display: inline-block; width: 13em; text-align: left; line-height: 1.5; font-size: 1.2em; } 
+footer p:first-child a img { float: left; margin: 0 0.5em 0.5em 0;}             
 footer p:first-child i { display: block; font-style: normal; font-size: 0.8em; }
 footer p+p, #footer li, #main li, #footer p:first-child i, #disqus_thread { text-transform: none; }
 footer li { display: inline; margin: 0 1em 0 0; } 
@@ -245,26 +229,25 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
 #disqus_thread h4 { font-family: inherit; text-shadow: none; font-size: 1em; }
 
 
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
+@media only screen and (min-width : 320px) and (max-width : 569px) {
+  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, #footer { margin:0 auto; width: 95%; display: block; font-style: normal; }
+  #container {margin: 0 5px;}
   h1 { font-size: 2em; margin: 0.5em 0; }
   header h2 { font-size: 1.5em; margin-bottom: 0.5em; }
   header p { font-size:12px; }   
-  #main, .disqus-wrapper, footer { font-size: 0.8em; }  
-  #main em, #main h3, .disqus-wrapper h3 { font-size: 1.5em; }
-  #main ul { margin-left: 0; }  
+  #main, .disqus-wrapper,footer { font-size: 1em; }  
+  #main em, #main h3, .disqus-wrapper h3 { font-size: 1.5em; line-height:2em; }
+  #main ul { margin-left: 0px; }
+  #main li { line-height: 2; width: 100%; }
   header h1, footer em.focus, #main h1, #main h2, #main h3, #main h4 { text-shadow: 1px 1px 0px #476871, 2px 2px 0px #476871, 3px 3px 0px #476871; }
+  #main h4 { line-height: 1.2; }
   #frame {display:none;}  
-  #main h4 { line-height: 1.2; }  
-
-  footer p:first-child a { width: 13em; margin: 0 auto; clear: both; display: block; }
-
+  footer p:first-child a { clear:both; margin: 0 auto; display: block; height:60px;}
+  .dwn i {display:block;}
 }
 
-@media only screen and (min-width : 321px) and (max-device-width: 569px) {
-  footer p:first-child a {display:block; height:60px; margin:0 auto;}
+@media only screen and (min-width : 321px) {
+
 }
 
 @media only screen and (min-width : 768px) {
@@ -284,4 +267,3 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-
