@@ -123,7 +123,7 @@ header p.lang { font-size: 1em; width: 99%; text-align: right; border-top: 2px d
 .dwn i { vertical-align: top; font-style: normal; display:block;}
 .dwn a:visited { color: #fff; }   
 .dwn span { display: inline-block; vertical-align: middle;}
-.dwn span small { display:block; margin-top: 0.5em; font-size: 0.6em; line-height: 1em; }
+.dwn span small { display:block; margin-top: 0.5em; font-size: 1em; line-height: 1em; }
 
 .social, .lang { padding-bottom: 0; } 
 .social a, p.lang a { font-size: 0.9em; padding: 0 0 0 1em; white-space: nowrap; line-height: 2em; text-transform: uppercase; }
@@ -233,6 +233,7 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   #frame { display: inline-block; }
   #source, #ppt { display: block; }
   footer p:first-child a { display: inline-block; }
+  .dwn span small { font-size:0.6em; }
 }/*/mediaquery*/
 
 
