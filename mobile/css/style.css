@@ -224,7 +224,7 @@ footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after
   #main em, #main h3, #disqus_thread h3 { font-size: 2em; line-height: 1.2em; }
   #main ul { width: 60em;  margin:1em auto;}
   #main li { line-height: 2; width: 43em;}
-  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, #footer { margin:0 auto; width: 78%; display: block; font-style: normal; }
+  header p, #main p.dwn + p i, #main h3, #main li, #disqus_thread, #footer { width: 78%; }
   header p { font-size: 15px; }
   header h2 { font-size: 1.5em; margin-bottom: 1.5em; }
   #container { margin:0; }
