@@ -6,7 +6,7 @@
   <title>Mobile Boilerplate</title> 
   <meta name="HandheldFriendly" content="True"> 
   <meta name="MobileOptimized" content="320"/> 
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, minimum-scale=1.0, maximum-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <!-- For iPhone 4 with high-resolution Retina display: --> 
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/h/apple-touch-icon.png"> 
   <!-- For first-generation iPad: --> 
@@ -22,8 +22,7 @@
   <meta http-equiv="cleartype" content="on"> 
   <link rel="stylesheet" href="css/style.css?v=3">
   <link rel="stylesheet" href="css/shCore.css"> 
-  <script src="js/libs/modernizr.js"></script>
-  <script src="js/libs/yepnope.1.0.1-min.js"></script>
+  <script src="js/libs/modernizr-custom.js"></script>
 </head> 
  
 <body>
@@ -37,17 +36,105 @@
         <h1>Mobile <b> &#x2605; Boilerplate</b></h1>
         <h2>A best practice baseline for your mobile web app. <br /></h2> 
       </hgroup> 
-      <p>Mobile Boilerplate is your trusted template made custom for creating rich and performant mobile web apps.  You get cross-browser consistency among A-grade smartphones, and fallback support for legacy Blackberry, Symbian, and IE Mobile. Mobile Boilerplate is not a framework, but works well with projects like jQuery Mobile, Sencha Touch, Phonegap and Appcelerator.  You get an offline caching setup for free, fast button clicks, a media query polyfill, and many common mobile WebKit optimizations waiting for you. Use Mobile Boilerplate to start your mobile webapp quickly and immediately benefit from community best practices.</p> 
+      <p>
+      Mobile Boilerplate is your trusted template made custom for creating rich and performant mobile web apps.  
+      You get cross-browser consistency among A-grade smartphones, and fallback support for legacy Blackberry, Symbian, and IE Mobile. 
+      You get an offline caching setup for free, fast button clicks, a media query polyfill, 
+      and many common mobile WebKit optimizations waiting for you. 
+      Use Mobile Boilerplate to start your mobile webapp quickly and immediately benefit from community best practices.
+      </p>
+      <section>
+        <h2>v1.1 Release Statement</h2> 
+        <div id="mbpupdate">        
+          <p>
+            Since the launch of Mobile Boilerplate v1.0, we have received lots of attention, response and feedback. Compare to H5BP, MBP had a shorter 
+    iterative time, which is largely due to the fact that mobile development as a whole has a shorter history, a lot common practices are not 
+    separate from the best practices, and there is still room for better practices. In the past week or so, we have found that there has been many areas we could improve upon v1.0. Paul, Divya and I are aware of the expectations for MBP (due to the existing, much matured H5BP), we decide to have an immediate release of v1.1 to improve it's support and standard. With v1.1, we made significant enhancement to some key areas, better kick-ass stuff baked in. 
+          </p>
+          <p>
+         
+          
+          <p><strong>We thank you</strong><br />We must say that we are really grateful about all the help received from various individuals and experts, without their help and advice, 
+          MBP won't have such significant improvement in such short time. </p>
+         
+          <p>
+          Jeremy Keith<br />
+          First, I want to thank <a href="http://adactio.com/" target="_blank">Jeremy Keith</a>, a person I have always admired since I was a kid. He <a href="http://twitter.com/#!/adactio/status/52420790137794560" target="_blank">raised the problem</a> of whether MBP should include 'no-scale, min/max-scale' in meta viewport.
+          As a person from China, 'the greater good' is always the bigger concern' to me, but I know to build and promote an open/free web on the world stage, just to 
+          focus on 'protecting the interest of the majority' won't be good enough, and excuses like because <a href="http://www.touch.facebook.com" target="_blank">Facebook</a>, <a href="http://www.m.google.com" target="_blank">Google</a> and <a href="http://www.m.yahoo.com" target="_blank">Yahoo!</a> are doing so also won't be good enough for Jeremy, and it won't
+          be good enough to me or to Boilerplate either. So I set to tackle this 'accessibilty for the minority' vs 'usability for the majority' issue. This problem really made me couldn't 
+          sleep well for a night, I came out with a solution on my blog to initiate a discussion and collaboration with Jeremy. After hours of trying, we made great progress, finally settled on a way to deal with it.
+          You can read more <a href="http://adactio.com/journal/4470/" target="_blank">here</a> and 
+          <a href="http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/" target="_blank">here</a>. Although there is still <a href="https://gist.github.com/901295#gistcomment-25909" target="_blank">remaining issue</a>, but I am really happy that we end the debate in a positive and constructive way.
+          </p>
+          
+          <p>
+          Bryan Reiger<br />
+          I want to thank <a href="http://bryanrieger.com/" target="_blank">Bryan Reiger</a> on helping us to reaffirm our view to remove 'target-densitydpi=160dpi', Bryan went beyond answering 
+          our initial question and provided us great 
+          insights on his view about avoid dealing with pixel perfect CSS and many other issues to be aware of. A real thinker and a great expert in mobile, someone we should always learn from.
+          </p>
+          
+          <p>
+          Joe Marini<br />
+          <a href="http://twitter.com/#!/joemarini" target="_blank">Joe</a> from Microsoft helped us a lot in knowing about 'device-min/max-width', and helped us come to the conclusion of 
+          dropping 'device-'. I am really happy to see Microsoft starts to engage with the community more. The <a href="http://blogs.msdn.com/b/iemobile/" target="_blank">IE Mobile Blog</a> is 
+          a small step in blogsphere, but a huge step for Windows Mobile!!!  
+          </p>
+          
+          <p>
+          Scott Jehl<br />
+          <a href="http://scottjehl.com/" taget="_blank">Scott</a> from <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> helped us a lot in dealing with cross-browser media queries polyfill, he made a lot awesome JavaScript helper classes
+          to deal with <a href="https://github.com/scottjehl" taget="_blank">Media Queries issues</a>.
+          </p>
+          
+          <p>
+          Andreas Bovens<br />
+          <a href="http://dev.opera.com/author/1385211" target="_blank">Andreas Bovens</a> from Opera Mobile also helped us a lot in knowing about <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/12" target="_blank">viewport</a> and <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/17" target="_blank">media queries</a> stuff, a true gentleman provided us a lot of
+          great ideas.
+          </p>
+      
+          <p>Not just the experts, we also want to thank the individuals, daily kick-ass developers, heroes of the pre 1.0 era, Mathias Bynens, Alex Gibson helped a lot with touch icon boilerplate, Jonathan Neal helped a lot in the discussion about mobile viewport. Post launch, Jamund Ferguson, Frank Denis helped helped with many fixes, Sam Breed helped us with MBP helper class.          
+          </p>
+          
+          <p>
+          <strong>We like questions</strong><br />
+          We listen to ALL voices. We reply to each single feedback and consider all things matter. To us, no one's opinion is too small to be considered, no one's idea is too big to be challenged, internally, Paul, Divya and I love to question ourselves, we love to question each other, and so we love to hear your question no matter who ask the question, only the question matters. 
+          </p>
+          
+          <p>
+          <strong>We need your support</strong><br />
+          Mobile is still fast-changing, but we think it's never too early to think about standard, there are a lot experts came out with great stuff, proof of concept, development practices. There are a lot heated debate among the community, but few can deny that mobile is a 'work in progress'. So be prepared to and please do challenge the ideas, our ideas and others' ideas alike.
+          </p>
+          
+          <p>
+          <strong>We (want to) set you thinking</strong><br />
+          MBP is not made for copy-pasters, it's made to be improved over time, and if you have any doubt, don't hesitate to <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues" target="_blank">start a discussion</a>, <a href="https://github.com/shichuan/mobile-html5-boilerplate/pulls" target="_blank">suggest feature</a>, or to read more in our <a href="https://github.com/shichuan/mobile-html5-boilerplate/wiki" target="_blank">wiki</a>.
+          </p>
+          
+          <p>
+          Paul, Divya and I have burned many weekends to bring boilerplate to you (H5BP and now MBP). I am really proud to be in such a great team, we will do the best we can to make mobile boilerplate better over the time. 
+          </p>
+          
+          <p>
+          <i>Shi Chuan, Boilerplate Team</i>
+          </p>
+        </div>
+      </section>
     </header> 
     
     <div id="main">
+      
+      <section> 
+        
+      </section>
       <section> 
       <h3>Want to dive in?</h3> 
-      <p class="bptext">Download the v1.0</p> 
+      <p class="bptext">Download the v1.1</p>
       <p class="dwn"> 
-        <span><a href="https://github.com/shichuan/mobile-html5-boilerplate/zipball/v1.0">Boilerplate documented</a> <small>Keep the hints and links</small></span>
+        <span><a href="https://github.com/shichuan/mobile-html5-boilerplate/zipball/v1.1">Boilerplate documented</a> <small>Keep the hints and links</small></span>
         <i>or</i> 
-        <span><a href="https://github.com/shichuan/mobile-html5-boilerplate/zipball/v1.0stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
+        <span><a href="https://github.com/shichuan/mobile-html5-boilerplate/zipball/v1.1stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
       </p> 
       <p class="social">
         <i> 
@@ -72,7 +159,7 @@
           <li>Cross-platform compatible (Android, iOS, Blackberry, Symbian)</li> 
           <li>CSS class to target IE Mobile 7</li> 
           <li>Home screen icon (Android, iOS, Symbian)</li> 
-          <li>Cross browser viewport optimization for Opera Mobile, Android,iOS,IE,Nokia,Blackberry.</li> 
+          <li>Cross browser viewport optimization for Opera Mobile, Android, iOS, IE, Nokia, Blackberry.</li> 
           <li>Optimized viewport scaling (Opera Mobile, Android, iOS, Mobile IE, Blackberry)</li> 
           <li>Option to enable iOS start-screen in full screen mode</li> 
           <li>Better font rendering on IE Mobile</li> 
@@ -81,7 +168,7 @@
           <li>Mobile sitemap</li> 
           <li>Mobile MIME type support</li> 
           <li>Build tool for mobile</li> 
-          <li>Integrates well with PhoneGap and Appcelerator</li> 
+          <li>Fix iPhone reflow scale up bug</li> 
         </ul> 
       </section> 
       <section> 
@@ -129,23 +216,25 @@
         <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/images/divya-manian.png" alt="">Divya Manian <i>Open Web Vigilante</i></a> 
       </p> 
       <ul> 
-        <li><a href="http://mathiasbynens.be/">Mathias Bynens</a></li> 
-        <li><a href="http://miniapps.co.uk/">Alex Gibson</a></li> 
-        <li><a href="http://twitter.com/#!/jon_neal">Jonathan Neal</a></li> 
-        <li><a href="https://github.com/umbrae">umbrae</a></li> 
-        <li><a href="https://github.com/kisPocok">kisPocok</a></li> 
-        <li><a href="http://twitter.com/jedisct1">Frank DENIS</a></li> 
-        <li><a href="https://github.com/johnnycadelco">johnnycadelco</a></li> 
-        <li><a href="http://www.jamund.com/">Jamund Ferguson</a></li> 
-        <li><a href="https://github.com/brianblakely">Brian Blakely</a></li> 
+        <li><a href="http://mathiasbynens.be/" target="_blank">Mathias Bynens</a></li> 
+        <li><a href="http://miniapps.co.uk/" target="_blank">Alex Gibson</a></li> 
+        <li><a href="http://twitter.com/#!/jon_neal" target="_blank">Jonathan Neal</a></li> 
+        <li><a href="https://github.com/umbrae" target="_blank">umbrae</a></li> 
+        <li><a href="https://github.com/kisPocok" target="_blank">kisPocok</a></li> 
+        <li><a href="http://twitter.com/jedisct1" target="_blank">Frank DENIS</a></li> 
+        <li><a href="https://github.com/johnnycadelco" target="_blank">johnnycadelco</a></li> 
+        <li><a href="http://www.jamund.com/" target="_blank">Jamund Ferguson</a></li>
+        <li><a href="https://github.com/brianblakely" target="_blank">Brian Blakely</a></li> 
       </ul> 
       <p>It would not have been possible without the efforts of these superheroes:</p> 
       <ul> 
-        <li><a href="http://blogs.msdn.com/b/iemobile/">IE Mobile Team</a></li> 
-        <li><a href="http://www.forum.nokia.com/">Forum Nokia</a></li> 
-        <li><a href="http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/">Andy Clarke</a></li> 
-        <li><a href="http://www.quirksmode.org/">Peter-Paul Koch</a></li> 
-        <li><a href="http://googlecode.blogspot.com/2009/04/gmail-for-mobile-html5-series-using.html">Google Mobile Team</a></li> 
+        <li><a href="http://adactio.com/" target="_blank">Jeremy Keith</a></li>
+        <li><a href="http://dev.opera.com/author/1385211" target="_blank">Andreas Bovens</a></li>
+        <li><a href="http://bryanrieger.com/" target="_blank">Bryan Rieger</a></li>
+        <li><a href="http://blogs.msdn.com/b/iemobile/" target="_blank">IE Mobile Team</a></li>
+        <li><a href="http://www.forum.nokia.com/" target="_blank">Forum Nokia</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/" target="_blank">Andy Clarke</a></li> 
+        <li><a href="http://googlecode.blogspot.com/2009/04/gmail-for-mobile-html5-series-using.html" target="_blank">Google Mobile Team</a></li> 
       </ul> 
     </footer> 
     <div class="disqus-wrapper"> 
@@ -162,13 +251,13 @@
   <script src="js/plugins.min.js"></script>
   <script src="js/script.js?v=1"></script>
   <script>
-    //yepnope({
-      //test : Modernizr.mq('(min-width)'),
-      //nope : ['js/libs/respond.min.js']
-    //});
-    //console.log($(window).width());
+    MBP.scaleFix();
+    yepnope({
+      test : Modernizr.mq('(min-width)'),
+      nope : ['js/libs/respond.min.js']
+    });
   </script>
-  <script src="js/libs/respond.min.js"></script>
+  
   <script> 
     var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
