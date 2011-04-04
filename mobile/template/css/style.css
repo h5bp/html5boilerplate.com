@@ -14,10 +14,12 @@
  * Base
  */
 
-/* Mobile phones will adjust text size when the screen orientation changes unless you include a special CSS parameter */
+/* Prevent mobile zooming while remain desktop zooming.
+   github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 
+ */
 body {
-    -webkit-text-size-adjust: none;
-	      -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: none;
 }
 
 /* 
@@ -49,43 +51,22 @@ textarea.contenteditable {-webkit-appearance: none;}
 
 
 /*
- * Media queries for responsive design
+ * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
  */
 
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
-/* Styles */
-}
+/* Styles for desktop and large screen ----------- */
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-device-width: 569px) {
-/* Styles */
-}
+/*styles for 800px and up!*/
+@media only screen and (min-width: 800px) {
+  /* Styles */
+}/*/mediaquery*/
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) and (max-device-width: 320px) {
-/* Styles */
-}
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/* iPhone 4 and high pixel ratio devices ----------- */
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }

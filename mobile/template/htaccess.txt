@@ -23,8 +23,15 @@ AddType application/vnd.symbian.install 	sis
 </IfModule>
 
 
-# Mobile Redirection Script
-# Detect Mobile Browser - http://detectmobilebrowser.com/
+# Mobile Redirection Script is used to detect if user is viewing the site 
+# from mobile device. If the script detects the user is viewing from 
+# mobile phone, they will be redirected to the mobile version of the site.
+# One thing to note is that if you want to allow the user on the mobile version 
+# of your site to have the option to switch to desktop version, you may consider 
+# using other methods like JavaScript or PHP at http://detectmobilebrowser.com/
+#
+# To use the script, first, uncomment the lines below, 
+# second, change 'http://www.example.com/mobile' to the URL of your mobile site.
 
 RewriteEngine On
 RewriteBase /

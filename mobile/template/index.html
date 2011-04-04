@@ -14,7 +14,7 @@
   <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320"/>
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
   <!-- For iPhone 4 with high-resolution Retina display: -->
@@ -36,14 +36,11 @@
 	
 	<!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
   
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
-  
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css?v=1">
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="js/libs/modernizr-custom.js"></script>
 </head>
 
 <body>
@@ -53,7 +50,7 @@
 
     </header>
     <div id="main" role="main">
-
+      
     </div>
     
     <footer>
@@ -68,16 +65,23 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
   <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
   
-  <!--[if IEMobile 7 ]>
-  <script src="js/libs/css3-mediaqueries-min.js"></script>
-  <![endif]-->
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/script.js"></script>
+  <!-- scripts concatenated and minified via ant build script -->
+  <script src="js/mylibs/helper.js"></script>
   <!-- end concatenated and minified scripts-->
-
+  
+  <script>
+    // iPhone Scale Bug Fix http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+    MBP.scaleFix();
+    
+    // Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill
+    yepnope({
+      test : Modernizr.mq('(min-width)'),
+      nope : ['js/libs/respond.min.js']
+    });
+  </script>
+  
   <!-- Debugger - remove for production -->
-  <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
   
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
