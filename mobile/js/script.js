@@ -152,6 +152,26 @@ jQuery('a[href=#dsq-content]').toggle(
         jQuery('#disqus_thread').hide();
 	}
 );
+var winloc = window.location+'';
+if (!winloc.match(/thankunote/i)) {
+  jQuery('#mbpupdate').hide();
+  
+} else {
+  jQuery('a[href=#mbpupdate]').text('Hide v1.1 Thank you note');
+}
+
+jQuery('a[href=#mbpupdate]').toggle(
+	function () {
+		jQuery(this).text('Hide v1.1 Thank you note');
+        jQuery('#mbpupdate').show();
+        
+	},
+	function () {
+        jQuery(this).text('Show v1.1 Thank you note');
+        jQuery('#mbpupdate').hide();
+
+	}
+);
  
 var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
 var disqus_category_id = 517513;

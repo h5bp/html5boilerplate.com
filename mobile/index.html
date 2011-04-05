@@ -43,26 +43,45 @@
       and many common mobile WebKit optimizations waiting for you. 
       Use Mobile Boilerplate to start your mobile webapp quickly and immediately benefit from community best practices.
       </p>
+      
+    </header> 
+    
+    <div id="main">
+      
+      <section> 
+        <h3>v1.1 Changelog</h3> 
+        <ul> 
+          <li>Fine-tuned text-size-adjust to be mobile first and desktop compatible</li> 
+          <li>Added Opera device pixel ratio media queries</li> 
+          <li>Added more instructions to detectmobilebrowser UA sniff </li> 
+          <li>Changed media queries from mobile exclusive to desktop scalable</li> 
+          <li>CSS bubbling up</li> 
+          <li>Fine-tuned viewport scaling to allow better accessibility</li> 
+          <li>Cross-browser, 10x faster media queries polyfill - respond.js + modernizr + yepnope</li> 
+          <li>Fixed fastbutton issue</li> 
+          <li>Removed handheld.css</li> 
+        </ul> 
+      </section> 
+      <h3><a id="thankunote" name="thankunote" href="#mbpupdate">show v1.1 Thank you note</a></h3>
       <section>
-        <h2>v1.1 Release Statement</h2> 
+        
+         
         <div id="mbpupdate">        
           <p>
             Since the launch of Mobile Boilerplate v1.0, we have received lots of attention, response and feedback. Compare to H5BP, MBP had a shorter 
     iterative time, which is largely due to the fact that mobile development as a whole has a shorter history, a lot common practices are not 
     separate from the best practices, and there is still room for better practices. In the past week or so, we have found that there has been many areas we could improve upon v1.0. Paul, Divya and I are aware of the expectations for MBP (due to the existing, much matured H5BP), we decide to have an immediate release of v1.1 to improve it's support and standard. With v1.1, we made significant enhancement to some key areas, better kick-ass stuff baked in. 
           </p>
-          <p>
-         
           
           <p><strong>We thank you</strong><br />We must say that we are really grateful about all the help received from various individuals and experts, without their help and advice, 
           MBP won't have such significant improvement in such short time. </p>
          
           <p>
           Jeremy Keith<br />
-          First, I want to thank <a href="http://adactio.com/" target="_blank">Jeremy Keith</a>, a person I have always admired since I was a kid. He <a href="http://twitter.com/#!/adactio/status/52420790137794560" target="_blank">raised the problem</a> of whether MBP should include 'no-scale, min/max-scale' in meta viewport.
-          As a person from China, 'the greater good' is always the bigger concern' to me, but I know to build and promote an open/free web on the world stage, just to 
+          First, we want to thank <a href="http://adactio.com/" target="_blank">Jeremy Keith</a>, one of the most respected web developer in the industry. He <a href="http://twitter.com/#!/adactio/status/52420790137794560" target="_blank">raised the problem</a> of whether MBP should include 'no-scale, min/max-scale' in meta viewport.
+          Maybe because of my cultural background (just kidding), 'the greater good' is always the bigger concern', but I know to build a front-end default to promote an open/free web, just to 
           focus on 'protecting the interest of the majority' won't be good enough, and excuses like because <a href="http://www.touch.facebook.com" target="_blank">Facebook</a>, <a href="http://www.m.google.com" target="_blank">Google</a> and <a href="http://www.m.yahoo.com" target="_blank">Yahoo!</a> are doing so also won't be good enough for Jeremy, and it won't
-          be good enough to me or to Boilerplate either. So I set to tackle this 'accessibilty for the minority' vs 'usability for the majority' issue. This problem really made me couldn't 
+          be good enough to us or to Boilerplate either. So I set to tackle this 'accessibilty for the minority' vs 'usability for the majority' issue. This problem really made me couldn't 
           sleep well for a night, I came out with a solution on my blog to initiate a discussion and collaboration with Jeremy. After hours of trying, we made great progress, finally settled on a way to deal with it.
           You can read more <a href="http://adactio.com/journal/4470/" target="_blank">here</a> and 
           <a href="http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/" target="_blank">here</a>. Although there is still <a href="https://gist.github.com/901295#gistcomment-25909" target="_blank">remaining issue</a>, but I am really happy that we end the debate in a positive and constructive way.
@@ -70,7 +89,7 @@
           
           <p>
           Bryan Reiger<br />
-          I want to thank <a href="http://bryanrieger.com/" target="_blank">Bryan Reiger</a> on helping us to reaffirm our view to remove 'target-densitydpi=160dpi', Bryan went beyond answering 
+          We want to thank <a href="http://bryanrieger.com/" target="_blank">Bryan Reiger</a> on helping us to reaffirm our view to remove 'target-densitydpi=160dpi', Bryan went beyond answering 
           our initial question and provided us great 
           insights on his view about avoid dealing with pixel perfect CSS and many other issues to be aware of. A real thinker and a great expert in mobile, someone we should always learn from.
           </p>
@@ -90,26 +109,15 @@
           
           <p>
           Andreas Bovens<br />
-          <a href="http://dev.opera.com/author/1385211" target="_blank">Andreas Bovens</a> from Opera Mobile also helped us a lot in knowing about <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/12" target="_blank">viewport</a> and <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/17" target="_blank">media queries</a> stuff, a true gentleman provided us a lot of
+          <a href="http://dev.opera.com/author/1385211" target="_blank">Andreas Bovens</a> from <a href="http://www.opera.com/mobile/" target="_blank">Opera Mobile</a> also helped us a lot in knowing about <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/12" target="_blank">viewport</a> and <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/17" target="_blank">media queries</a> stuff, a true gentleman provided us a lot of
           great ideas.
           </p>
       
-          <p>Not just the experts, we also want to thank the individuals, daily kick-ass developers, heroes of the pre 1.0 era, Mathias Bynens, Alex Gibson helped a lot with touch icon boilerplate, Jonathan Neal helped a lot in the discussion about mobile viewport. Post launch, Jamund Ferguson, Frank Denis helped helped with many fixes, Sam Breed helped us with MBP helper class.          
-          </p>
-          
           <p>
-          <strong>We like questions</strong><br />
-          We listen to ALL voices. We reply to each single feedback and consider all things matter. To us, no one's opinion is too small to be considered, no one's idea is too big to be challenged, internally, Paul, Divya and I love to question ourselves, we love to question each other, and so we love to hear your question no matter who ask the question, only the question matters. 
-          </p>
-          
-          <p>
-          <strong>We need your support</strong><br />
-          Mobile is still fast-changing, but we think it's never too early to think about standard, there are a lot experts came out with great stuff, proof of concept, development practices. There are a lot heated debate among the community, but few can deny that mobile is a 'work in progress'. So be prepared to and please do challenge the ideas, our ideas and others' ideas alike.
-          </p>
-          
-          <p>
-          <strong>We (want to) set you thinking</strong><br />
-          MBP is not made for copy-pasters, it's made to be improved over time, and if you have any doubt, don't hesitate to <a href="https://github.com/shichuan/mobile-html5-boilerplate/issues" target="_blank">start a discussion</a>, <a href="https://github.com/shichuan/mobile-html5-boilerplate/pulls" target="_blank">suggest feature</a>, or to read more in our <a href="https://github.com/shichuan/mobile-html5-boilerplate/wiki" target="_blank">wiki</a>.
+          Not just the experts, we also want to thank the individuals, daily kick-ass developers, 
+          heroes of the pre 1.0 era, <a href="http://mathiasbynens.be/" target="_blank">Mathias Bynens</a> and <a href="http://miniapps.co.uk/" target="_blank">Alex Gibson</a> helped a lot with touch icon boilerplate, 
+          <a href="http://twitter.com/#!/jon_neal" target="_blank">Jonathan Neal</a> helped a lot in the discussion about mobile viewport. 
+          Post launch, we have Jamund Ferguson and Frank Denis helped helped with many fixes, Sam Breed helped us with MBP helper class.          
           </p>
           
           <p>
@@ -120,13 +128,7 @@
           <i>Shi Chuan, Boilerplate Team</i>
           </p>
         </div>
-      </section>
-    </header> 
-    
-    <div id="main">
       
-      <section> 
-        
       </section>
       <section> 
       <h3>Want to dive in?</h3> 
