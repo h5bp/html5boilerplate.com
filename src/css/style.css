@@ -387,6 +387,7 @@ html[lang="en-us"] .recos h3 + a { display:block !important;}
 .clearfix { zoom: 1; }         
  
 
+.disqus-wrapper .dsq-comment-message { text-align: left; font-size: 0.75em; }
 
 
 
