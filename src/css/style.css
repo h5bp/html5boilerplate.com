@@ -367,7 +367,6 @@ html[lang="en-us"] .recos h3 + a { display:block !important;}
 #disqus_thread h3 { margin-top: 0.5em; }
 #disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
 #disqus_thread .dsq-comment-body { text-align: left; font-size: 0.75em; }
-#disqus_thread .dsq-comment-footer { font-size: 0.75em; }
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }      
  
