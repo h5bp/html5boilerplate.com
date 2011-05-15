@@ -630,7 +630,7 @@ msgid ""
 "can be in a different directory from the final generated files (useful for "
 "other CMSes/frameworks like Django). "
 msgstr ""
-"Agregada una opción para el directorio fuente en la configuración del build,
+"Agregada una opción para el directorio fuente en la configuración del build, "
 "así los archivos fuente pueden estar en diferentes carpetas de los archivos "
 "finales generados (útil para otros CMS/frameworks como Django)."
 
@@ -845,7 +845,7 @@ msgid ""
 msgstr ""
 "Movidas todas las configuraciones de servidor (excepto el .htaccess de Apache "
 "a <a href =\"https://github.com/paulirish/html5-boilerplate-server-configs\">"
-la nueva repo html5-boilerplate-server-config</a>. Vaya allí si no está usando "
+"la nueva repo html5-boilerplate-server-config</a>. Vaya allí si no está usando "
 "Apache."
 
 #: src/index.html:284
@@ -899,7 +899,7 @@ msgid ""
 msgstr ""
 "También se agregaron <a href=\"https://github.com/paulirish/"
 "html5-boilerplate-server-configs\">configuraciones de Google App Engine, "
-Lighttpd, y NodeJS</a>"
+"Lighttpd, y NodeJS</a>"
 
 #: src/index.html:305
 msgid ""
@@ -1538,7 +1538,7 @@ msgid ""
 "this can cause SEO problems (duplicate content)."
 msgstr ""
 "El mismo contenido no debería estar disponible en dos URLs diferentes, "
-especialmente no con y sin &quot;www.&quot; al principio, ya que esto "
+"especialmente no con y sin &quot;www.&quot; al principio, ya que esto "
 "causa problemas de SEO (contenido duplicado)."
 
 #: src/index.html:1050
@@ -2184,7 +2184,7 @@ msgid ""
 "cause SEO problems (duplicate content)."
 msgstr ""
 "El mismo contenido no debería estar disponible en dos URLs diferentes, "
-especialmente no con y sin \"www.\" al principio, ya que esto "
+"especialmente no con y sin \"www.\" al principio, ya que esto "
 "causa problemas de SEO (contenido duplicado)."
 
 #: src/template/htaccess.txt:308
