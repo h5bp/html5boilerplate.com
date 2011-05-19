@@ -346,7 +346,7 @@ msgid ""
 "\">the Google SEO Starter Guide</a> \n"
 "            "
 msgstr ""
-"<a href=\"http://"googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
+"<a href=\"http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html"
 "\">GoogleのSEOスターターガイド</a>を読んでおこう" 
 
 #: src/index.html:127
