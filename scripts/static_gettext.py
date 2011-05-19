@@ -185,6 +185,7 @@ class Localizer( object ):
         mo          = self.mopath( locale )
         po          = self.popath( locale )
         cmd         = 'msgfmt --check-format -o "%s" "%s"' % ( mo, po )
+        #cmd         = 'msgfmt --check-format "%s"' % ( po )
         (msgs, errors ) = _popen( cmd )
         if errors:
             raise LocalizerGettextException( u"`msgfmt` errors: %s" % errors )
