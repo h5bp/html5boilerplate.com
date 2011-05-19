@@ -1987,3 +1987,4 @@ msgstr "利用法: log('inside coolFunc', this, arguments);"
 
 #~ msgid "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
 #~ msgstr "<a href=\"http://de.html5boilerplate.com\">Deutsch</a>"
+
