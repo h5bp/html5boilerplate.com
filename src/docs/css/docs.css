@@ -93,6 +93,10 @@
 }
 *:hover > .octothorpe { opacity: 1; }
 
+/* weirdness with codez */
+code > br:first-child {
+  display: none;
+}
 
 /* special care of mobile device. Make the wole slightly smaller and do not display left nav. */
 @media screen and (max-device-width:480px){

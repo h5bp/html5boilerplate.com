@@ -32,6 +32,7 @@ define({
     "Experimental.md",
     "FAQs.md",
     "Get-Started!.md",
+    "head-Tips.md",
     "Home.md",
     "Internationalization-tips.md",
    // "List-of-commonly-installed-fonts-in-different-devices.md",
