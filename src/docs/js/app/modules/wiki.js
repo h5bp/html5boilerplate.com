@@ -72,7 +72,7 @@
           
           resolveFile = function() {
             return this.element.attr('data-file') || 
-              global.location.hash.replace(/^#/, '').split('#')[0] || 
+              decodeURIComponent(global.location.hash.replace(/^#/, '')).split('#')[0] || 
               service.base; 
           },
 
