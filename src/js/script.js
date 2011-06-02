@@ -109,7 +109,7 @@ $(document).ready(function(){
 
 
 // google analytics
-var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
+var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview'],['_trackPageLoadTime']];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 s.parentNode.insertBefore(g,s)}(document,'script'));
