@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Marcos Coelho <marcos@coelho.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -41,25 +41,27 @@ msgstr ""
 
 #: src/index.html:10
 msgid "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
-msgstr ""
+msgstr "HTML5 Boilerplate - Um modelo padrão sólido para o incrível HTML5."
 
 #: src/index.html:29
 msgid "Now offered in:"
-msgstr ""
+msgstr "Disponível em:"
 
 #: src/index.html:43
 msgid "A rock-solid default for HTML5 awesome."
-msgstr ""
+msgstr "Um padrão sólido para o incrível HTML5"
 
 #: src/index.html:45
 msgid "I'm new here: plz explain why it's so awesome, first."
-msgstr ""
+msgstr "Eu sou novo aqui: Por favor, primeiramente me explique por que isso é tão incrível"
 
 #: src/index.html:48
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-proof site."
 msgstr ""
+"HTML5 Boilerplate constitui modelos básicos e super profissionais de HTML/CSS/JS para um "
+"um site rápido, robusto e com futuro garantido."
 
 #: src/index.html:49
 msgid ""
@@ -70,6 +72,12 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
+"Depois de mais de três anos em desenvolvimento iterativo, você obteve o melhor "
+"das melhores práticas cozinhadas em: normalizações cross-broswer, otimizações de "
+"desempenho, e até mesmo recursos opcionais como cross-domain para Ajax e Flash. Um "
+"arquivo inicial .htaccess de configuração do apache com regras de cache e preparações "
+"para o seu site oferecer vídeos HTML5, usando @font-face, comprimir com gzip "
+"e por ai em diante."
 
 #: src/index.html:50
 msgid ""
@@ -77,61 +85,67 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
+"Boilerplate não é um framework, nem desjesa prescrever uma filosofia de "
+"desenvolvimento, só tem alguns truques para você começar o seu projeto com algum fundamento "
+"rapidez e com o pé direito."
 
 #: src/index.html:53
 msgid "Why it is awesome"
-msgstr ""
+msgstr "Porque é incrível"
 
 #: src/index.html:55
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Compatibilidade cross-browser (Até mesmo com o IE6)"
 
 #: src/index.html:56
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "Pronto para HTML5. Use as novas tags com confiança."
 
 #: src/index.html:57
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Cache e compressão para melhor nível de desempenho A."
 
 #: src/index.html:58
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Melhores práticas para configurações padrão"
 
 #: src/index.html:59
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Otimização para navegadores móveis"
 
 #: src/index.html:60
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
+""
 
 #: src/index.html:61
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "Classes específicas para IE por um máximo controle cross-browser"
 
 #: src/index.html:62
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
+msgstr "Classes .no-js e .js para estilos baseados na capacidade"
 
 #: src/index.html:63
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
+"Quer escrever um teste unitário, mas está com preguiça? Um conjunto de "
+"testes completo foi construído e está esperando por você."
 
 #: src/index.html:66
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "Porque é ainda mais incrível"
 
 #: src/index.html:68
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Javascript profiling&hellip; no IE6 e IE7? Claro, sem problemas"
 
 #: src/index.html:69
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
+msgstr "Console.log moderado para evitar erros de produção."
 
 #: src/index.html:70
 msgid "Never go wrong with your doctype or markup!"
@@ -139,58 +153,61 @@ msgstr ""
 
 #: src/index.html:71
 msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
+msgstr "Um ótimo estilo de impressão, performance otimizada."
 
 #: src/index.html:72
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
+msgstr "Marcação adaptável e esquelo CSS para iOS, Android, Opera Mobile."
 
 #: src/index.html:73
 msgid "IE6 pngfix baked in."
-msgstr ""
+msgstr "IE6 pngfix incluso."
 
 #: src/index.html:74
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
+".clearfix, .visuallyhidden classes para estilizar coisas com sabedoria e acessibilidade."
 
 #: src/index.html:75
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
+"arquivo .htaccess que permite a utilização adequada dos recursos HTML5 e carregamento mais rápido da página"
 
 #: src/index.html:76
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr ""
+msgstr "jQuery hospedado em CDN com refêrencia local como opção de recurso."
 
 #: src/index.html:77
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
+"Acha muito? O HTML5 Boilerplate é amigável com a tecla delete. :)"
 
 #: src/index.html:80
 msgid "Want to dive in?"
-msgstr ""
+msgstr "Quer ir mais fundo?"
 
 #: src/index.html:86
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Baixe o Boilerplate {{ version }}"
 
 #: src/index.html:86
 msgid "Updated Mar 21st"
-msgstr ""
+msgstr "Atualizado em 21 de março"
 
 #: src/index.html:89
 msgid "Boilerplate documented"
-msgstr ""
+msgstr "Boilerplate documentado"
 
 #: src/index.html:89
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "Mantém sugestões e links"
 
 #: src/index.html:90 standard input:92
 msgid "or"
-msgstr ""
+msgstr "ou"
 
 #: src/index.html:91
 msgid "Boilerplate \"stripped\""
@@ -198,18 +215,18 @@ msgstr ""
 
 #: src/index.html:91
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Sem comentários, apenas os códigos."
 
 #: src/index.html:93
 msgid "Boilerplate custom"
-msgstr ""
+msgstr "Boilerplate personalizado"
 
 #: src/index.html:93
-msgid "100&percnt; hipster."
+msgid "100&percnt; moderno."
 msgstr ""
 
 #: src/index.html:93 standard input:1251 input:1254
-msgid "new!"
+msgid "novo!"
 msgstr ""
 
 #: src/index.html:97
@@ -217,63 +234,65 @@ msgid ""
 "Click on your favourite option for each feature! Default options are "
 "highlighted."
 msgstr ""
+"Clique na sua opção favorida para cada funcionalidade! Opções padrões ficam "
+"destacadas."
 
 #: src/index.html:99
 msgid "Conditional classes"
-msgstr ""
+msgstr "Classes condicionais"
 
 #: src/index.html:100 standard input:106 input:111 input:118
 #: src/index.html:124 input:132
 msgid "Nope"
-msgstr ""
+msgstr "Não"
 
 #: src/index.html:101
 msgid "Old IE class"
-msgstr ""
+msgstr "Classes do IE anteriores"
 
 #: src/index.html:102
 msgid "All IE classes"
-msgstr ""
+msgstr "Todas classes do IE"
 
 #: src/index.html:105
 msgid "Mobile"
-msgstr ""
+msgstr "Móvel"
 
 #: src/index.html:107
 msgid "Handheld stylesheet"
-msgstr ""
+msgstr "Folha de estilo Handheld"
 
 #: src/index.html:110
 msgid "Javascript"
-msgstr ""
+msgstr "JavaScript"
 
 #: src/index.html:112
 msgid "No jQuery"
-msgstr ""
+msgstr "Sem jQuery"
 
 #: src/index.html:113
 msgid "jQuery"
-msgstr ""
+msgstr "jQuery"
 
 #: src/index.html:114
 msgid "jQuery minified"
-msgstr ""
+msgstr "jQuery minificado"
 
 #: src/index.html:117
 msgid "HTML5 Enabler"
-msgstr ""
+msgstr "Facilitador HTML5"
 
 #: src/index.html:119
 msgid "Modernizr"
-msgstr ""
+msgstr "Modernizr"
 
 #: src/index.html:120
 msgid "html5shiv"
-msgstr ""
+msgstr "html5shiv"
 
 #: src/index.html:123
 msgid "Server Config"
-msgstr ""
+msgstr "Configuração de servidor"
 
 #: src/index.html:125
 msgid ".htaccess"
@@ -293,7 +312,7 @@ msgstr ""
 
 #: src/index.html:131
 msgid "Analytics Snippet"
-msgstr ""
+msgstr "Código para Analytics"
 
 #: src/index.html:134
 msgid ""
@@ -301,34 +320,37 @@ msgid ""
 "download\">Download!</a> Are these options not enough? Go to <a href="
 "\"http://initializr.com\">Initializr</a> for more!"
 msgstr ""
+"<a href=\"http://initializr.com/generate?boilerplate&amp;\" id=\"builder-"
+"download\">Baixar!</a> Essas opções não são suficientes? Vá ate <a href="
+"\"http://initializr.com\">Initializr</a> para encontrar mais!"
 
 #: src/index.html:139
 msgid "Read the docs"
-msgstr ""
+msgstr "Ler as documentações"
 
 #: src/index.html:140
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Contribuir no Github"
 
 #: src/index.html:141
 msgid "Comment here"
-msgstr ""
+msgstr "Comentar aqui"
 
 #: src/index.html:143
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Seguir no twitter"
 
 #: src/index.html:145
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Juntar-se à lista de e-mail"
 
 #: src/index.html:150
 msgid "HTML5 Boilerplate is 1.0!"
-msgstr ""
+msgstr "HTML5 Boilerplate é 1.0!"
 
 #: src/index.html:151
 msgid "Monday, March 21, 2011"
-msgstr ""
+msgstr "Segunda-feira, 21 de março de 2011"
 
 #: src/index.html:152
 msgid ""
@@ -348,7 +370,7 @@ msgstr ""
 
 #: src/index.html:163
 msgid "Docs!"
-msgstr ""
+msgstr "Documentações!"
 
 #: src/index.html:165
 msgid ""
