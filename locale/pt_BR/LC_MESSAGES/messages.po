@@ -17,25 +17,27 @@ msgstr ""
 
 #: src/commentarchive.html:11
 msgid "Comment archive : HTML5 Boilerplate"
-msgstr ""
+msgstr "Comentários arquivados : HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
-msgstr ""
+msgstr "Comentários arquivados"
 
 #: src/commentarchive.html:34
 msgid "from before October 26th 2010"
-msgstr ""
+msgstr "anteriores a 26 de outubro de 2010"
 
 #: src/commentarchive.html:38 src/index.html:1388
 msgid "Comments"
-msgstr ""
+msgstr "Comentários"
 
 #: src/commentarchive.html:58
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
+"Por favor, habilite o JavaCript para ver os <a href=\"http://disqus.com/?"
+"ref_noscript=boilerplate\">comentários alimentados por Disqus.</a>"
 
 #: src/index.html:10
 msgid "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
