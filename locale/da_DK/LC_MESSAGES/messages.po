@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/commentarchive.html:11
 msgid "Comment archive : HTML5 Boilerplate"
-msgstr "Kommentar Arkiv : HTML5 Boilerlate"
+msgstr "Kommentar Arkiv : HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
@@ -36,7 +36,7 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
-"De skal aktivere JavaScript i deres browser, før du kan skrive kommentarer."
+"De skal aktivere JavaScript i deres browser, før de kan se/skrive kommentarer."
 
 #: src/index.html:10
 msgid "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
@@ -82,7 +82,7 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
-"Boilerplate er ikke et framwork, som det heller ikke er ment som den rette philosophy af udvikling."
+"Boilerplate er ikke et framework, som det heller ikke er ment som den rette filosofi af udvikling."
 "Det har bare en masse tricks, som gør det meget nemmere at få dit projekt afsted, hurtigt og rigtigt."
 
 #: src/index.html:53
@@ -113,6 +113,7 @@ msgstr "Mobil browser optimering"
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
+"Progressive forbedringer og yndefuld degradering &hellip; yep det har vi"
 
 #: src/index.html:61
 msgid "IE specific classes for maximum cross-browser control"
