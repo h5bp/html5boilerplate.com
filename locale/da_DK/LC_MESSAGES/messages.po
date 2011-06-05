@@ -71,6 +71,10 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
+"Efter mere end 3 år i udvikling, for du nu det bedste af det "
+"bedste praksis: cross-browser nomalisering, performance og optimering, "
+"selv valgfrie muligheder såsom cross-domain, AJAX og Flash. En start apache .htaccess konfigurations fil, "
+"som gør det endnu nemmere med caching regler og gør din side klar til at levere HTML5 video, brug af @font-face."
 
 #: src/index.html:50
 msgid ""
@@ -78,30 +82,32 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
+"Boilerplate er ikke et framwork, som det heller ikke er ment som den rette philosophy af udvikling."
+"Det har bare en masse tricks, som gør det meget nemmere at få dit projekt afsted, hurtigt og rigtigt."
 
 #: src/index.html:53
 msgid "Why it is awesome"
-msgstr ""
+msgstr "Hvorfor der er fedt"
 
 #: src/index.html:55
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr ""
+msgstr "Cross-browser kompabilitet (IE6, ja vi dækker også den.)"
 
 #: src/index.html:56
 msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
+msgstr "HTML5 klar. Brug de nye tags med sikkerhed."
 
 #: src/index.html:57
 msgid "Optimal caching and compression rules for grade-A performance"
-msgstr ""
+msgstr "Optimal caching og kompressions regler for optimal performance"
 
 #: src/index.html:58
 msgid "Best practice site configuration defaults"
-msgstr ""
+msgstr "Best praksis side konfigurations standard"
 
 #: src/index.html:59
 msgid "Mobile browser optimizations"
-msgstr ""
+msgstr "Mobil browser optimering"
 
 #: src/index.html:60
 msgid ""
@@ -110,7 +116,7 @@ msgstr ""
 
 #: src/index.html:61
 msgid "IE specific classes for maximum cross-browser control"
-msgstr ""
+msgstr "IE specifike classes for maksimum cross-browser kontrol"
 
 #: src/index.html:62
 msgid "Handy .no-js and .js classes to style based on capability"
@@ -124,7 +130,7 @@ msgstr ""
 
 #: src/index.html:66
 msgid "Why it is awesome-er"
-msgstr ""
+msgstr "Hvorfor det er endnu federe"
 
 #: src/index.html:68
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
