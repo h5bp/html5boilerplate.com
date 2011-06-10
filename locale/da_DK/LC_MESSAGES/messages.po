@@ -121,13 +121,14 @@ msgstr "IE specifike classes for maksimum cross-browser kontrol"
 
 #: src/index.html:62
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr ""
+msgstr "Handy .no-js og .js classes til at style baseret på evnerne"
 
 #: src/index.html:63
 msgid ""
 "Want to write unit tests but lazy? A full, hooked up test suite is waiting "
 "for you."
 msgstr ""
+"Ønsker du at skrive unit tests men er doven? En fuld, hooked-up test suite venter"
 
 #: src/index.html:66
 msgid "Why it is awesome-er"
@@ -135,7 +136,7 @@ msgstr "Hvorfor det er endnu federe"
 
 #: src/index.html:68
 msgid "Javascript profiling&hellip;in IE6 and IE7? Sure, no problem."
-msgstr ""
+msgstr "Javascript profiling&hellip;i IE6 og IE7? Intet problem."
 
 #: src/index.html:69
 msgid "Console.log nerfing so you won't break anyone by mistake."
@@ -143,11 +144,11 @@ msgstr ""
 
 #: src/index.html:70
 msgid "Never go wrong with your doctype or markup!"
-msgstr ""
+msgstr "Gå aldrig gal med din doctype eller markup!"
 
 #: src/index.html:71
 msgid "An optimal print stylesheet, performance optimized."
-msgstr ""
+msgstr "Et optimalt print stylesheet, performance optimerede."
 
 #: src/index.html:72
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
