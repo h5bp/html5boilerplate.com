@@ -140,7 +140,7 @@ msgstr "Javascript profiling&hellip;i IE6 og IE7? Intet problem."
 
 #: src/index.html:69
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr ""
+msgstr "Console.log nerfing så du ikke vil smadre noget ved et uheld."
 
 #: src/index.html:70
 msgid "Never go wrong with your doctype or markup!"
@@ -152,157 +152,162 @@ msgstr "Et optimalt print stylesheet, performance optimerede."
 
 #: src/index.html:72
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
+msgstr "iOS, Android, Opera Mobil kombatilitets markup og CSS skelet."
 
 #: src/index.html:73
 msgid "IE6 pngfix baked in."
-msgstr ""
+msgstr "IE6 png-fix i pakken."
 
 #: src/index.html:74
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
+".clearfix, .visuallyhidden classes til at style ting med måde."
 
 #: src/index.html:75
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
+".htaccess fil som gør det muligt at bruge HTML5 måder og hurtigere page load"
 
 #: src/index.html:76
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr ""
+msgstr "CDN hosted jQuery med lokal fallback fejlsikring."
 
 #: src/index.html:77
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
+"Tror der er for meget? HTML5 Boilerplate er sletnings venlig. :)"
 
 #: src/index.html:80
 msgid "Want to dive in?"
-msgstr ""
+msgstr "Vil du gerne prøve det?"
 
 #: src/index.html:86
 msgid "Download Boilerplate {{ version }}"
-msgstr ""
+msgstr "Hent Boilerplate {{ version }}"
 
 #: src/index.html:86
 msgid "Updated Mar 21st"
-msgstr ""
+msgstr "Opdaterede 21 Marts"
 
 #: src/index.html:89
 msgid "Boilerplate documented"
-msgstr ""
+msgstr "Boilerplate dokumenterede"
 
 #: src/index.html:89
 msgid "Keep the hints and links"
-msgstr ""
+msgstr "Behold hints og links"
 
 #: src/index.html:90 standard input:92
 msgid "or"
-msgstr ""
+msgstr "eller"
 
 #: src/index.html:91
 msgid "Boilerplate \"stripped\""
-msgstr ""
+msgstr "Boilerplate \"stripped\""
 
 #: src/index.html:91
 msgid "No comments, just the bizniss."
-msgstr ""
+msgstr "Ingen kommentarer, kun buisness."
 
 #: src/index.html:93
 msgid "Boilerplate custom"
-msgstr ""
+msgstr "Boilerplate custom"
 
 #: src/index.html:93
 msgid "100&percnt; hipster."
-msgstr ""
+msgstr "100&percnt; hippi."
 
 #: src/index.html:93 standard input:1251 input:1254
 msgid "new!"
-msgstr ""
+msgstr "ny!"
 
 #: src/index.html:97
 msgid ""
 "Click on your favourite option for each feature! Default options are "
 "highlighted."
 msgstr ""
+"Klik på din favorit muligheder for hver enkel feature! Normale muligheder er "
+"highlighted."
 
 #: src/index.html:99
 msgid "Conditional classes"
-msgstr ""
+msgstr "Conditional classes"
 
 #: src/index.html:100 standard input:106 input:111 input:118
 #: src/index.html:124 input:132
 msgid "Nope"
-msgstr ""
+msgstr "Nej"
 
 #: src/index.html:101
 msgid "Old IE class"
-msgstr ""
+msgstr "Gamle IE class"
 
 #: src/index.html:102
 msgid "All IE classes"
-msgstr ""
+msgstr "Alle IE classes"
 
 #: src/index.html:105
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #: src/index.html:107
 msgid "Handheld stylesheet"
-msgstr ""
+msgstr "\"Håndholdt\" stylesheet"
 
 #: src/index.html:110
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: src/index.html:112
 msgid "No jQuery"
-msgstr ""
+msgstr "Ingen jQuery"
 
 #: src/index.html:113
 msgid "jQuery"
-msgstr ""
+msgstr "jQuery"
 
 #: src/index.html:114
 msgid "jQuery minified"
-msgstr ""
+msgstr "jQuery minified"
 
 #: src/index.html:117
 msgid "HTML5 Enabler"
-msgstr ""
+msgstr "HTML5 Enabler"
 
 #: src/index.html:119
 msgid "Modernizr"
-msgstr ""
+msgstr "Modernizr"
 
 #: src/index.html:120
 msgid "html5shiv"
-msgstr ""
+msgstr "html5shiv"
 
 #: src/index.html:123
 msgid "Server Config"
-msgstr ""
+msgstr "Server konfiguration"
 
 #: src/index.html:125
 msgid ".htaccess"
-msgstr ""
+msgstr ".htaccess"
 
 #: src/index.html:126
 msgid "web.config"
-msgstr ""
+msgstr "web.config"
 
 #: src/index.html:127
 msgid "nginx.conf"
-msgstr ""
+msgstr "nginx.conf"
 
 #: src/index.html:130
 msgid "Google Analytics"
-msgstr ""
+msgstr "Google Analytics"
 
 #: src/index.html:131
 msgid "Analytics Snippet"
-msgstr ""
+msgstr "Analytics Snippet"
 
 #: src/index.html:134
 msgid ""
@@ -310,34 +315,37 @@ msgid ""
 "download\">Download!</a> Are these options not enough? Go to <a href="
 "\"http://initializr.com\">Initializr</a> for more!"
 msgstr ""
+"<a href=\"http://ini"<a href=\"http://initializr.com/generate?boilerplate&amp;\" id=\"builder-"
+"download\">Hent!</a> Er de her muligheder ikke nok? Gå til <a href="
+"\"http://initializr.com\">Initializr</a> og mere!"
 
 #: src/index.html:139
 msgid "Read the docs"
-msgstr ""
+msgstr "Læs dokumentationen"
 
 #: src/index.html:140
 msgid "Contribute on Github "
-msgstr ""
+msgstr "Hjælp os på GitHub "
 
 #: src/index.html:141
 msgid "Comment here"
-msgstr ""
+msgstr "Kommenter her"
 
 #: src/index.html:143
 msgid "Follow on twitter"
-msgstr ""
+msgstr "Følg os på twitter"
 
 #: src/index.html:145
 msgid "Join The Mailing List"
-msgstr ""
+msgstr "Følg vores Mailing liste"
 
 #: src/index.html:150
 msgid "HTML5 Boilerplate is 1.0!"
-msgstr ""
+msgstr "HTML5 Boilerplate er i v. 1.0!"
 
 #: src/index.html:151
 msgid "Monday, March 21, 2011"
-msgstr ""
+msgstr "Mandag, 21 Marts, 2011"
 
 #: src/index.html:152
 msgid ""
