@@ -7,7 +7,7 @@ PYTHON ?= python
 
 .PHONY = info messages build force
 
-LANGUAGES="en_US,de_DE,it,pt_BR,fr_FR,nl,he,sr,ru,es,ro_RO,ja"
+LANGUAGES="cn_PRC,da_DK,de_DE,en_US,es,fr_FR,he,it,ja,nl,pt_BR,ro_RO,ru,sr"
 
 info:
 	@echo "Usage:"
