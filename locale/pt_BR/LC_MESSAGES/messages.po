@@ -72,9 +72,9 @@ msgid ""
 "and preps your site to serve HTML5 video, use @font-face, and get your gzip "
 "zipple on."
 msgstr ""
-"Depois de mais de três anos em desenvolvimento iterativo, você pode obter o melhor "
+"Após mais de três anos em desenvolvimento iterativo, você poderá obter o melhor "
 "das melhores práticas cozidas em: normalizações cross-broswer, otimizações de "
-"desempenho e até mesmo recursos opcionais como cross-domain para Ajax e Flash. Um "
+"desempenho e até mesmo de recursos opcionais como cross-domain para Ajax e Flash. Um "
 "arquivo inicial .htaccess de configuração do apache com regras de cache e preparações "
 "para o seu site oferecer vídeos HTML5, usando @font-face, comprimindo com gzip "
 "e por aí em diante."
@@ -85,7 +85,7 @@ msgid ""
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
-"Boilerplate não é um framework, nem desjesa prescrever uma filosofia de "
+"Boilerplate não é um framework, nem deseja prescrever uma filosofia de "
 "desenvolvimento, ele só tem alguns truques para você começar o seu projeto com algum fundamento "
 "rapidez e com o pé direito."
 
@@ -107,7 +107,7 @@ msgstr "Regras de caching e compressão para otimizar o desempenho na grade-A."
 
 #: src/index.html:58
 msgid "Best practice site configuration defaults"
-msgstr "Melhores práticas para configurações padronizadas"
+msgstr "Melhores práticas para sites em configurações padronizadas"
 
 #: src/index.html:59
 msgid "Mobile browser optimizations"
@@ -125,7 +125,7 @@ msgstr "Classes específicas para IE por um máximo controle cross-browser"
 
 #: src/index.html:62
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Classes .no-js e .js para estilos baseados na capacidade"
+msgstr "Classes .no-js e .js para criar estilos baseados na capacidade"
 
 #: src/index.html:63
 msgid ""
@@ -234,8 +234,8 @@ msgid ""
 "Click on your favourite option for each feature! Default options are "
 "highlighted."
 msgstr ""
-"Clique na sua opção favorida para cada funcionalidade! Opções padrões ficam "
-"destacadas."
+"Clique na sua opção favorita em cada funcionalidade! As opções padrões estão "
+"em destaque."
 
 #: src/index.html:99
 msgid "Conditional classes"
@@ -248,11 +248,11 @@ msgstr "Não"
 
 #: src/index.html:101
 msgid "Old IE class"
-msgstr "Classes do IE anteriores"
+msgstr "Classes anteriores do IE"
 
 #: src/index.html:102
 msgid "All IE classes"
-msgstr "Todas classes do IE"
+msgstr "Todas as classes do IE"
 
 #: src/index.html:105
 msgid "Mobile"
@@ -428,7 +428,7 @@ msgstr ""
 
 #: src/index.html:189
 msgid "Basic to aggressive html minification (via htmlcompressor)"
-msgstr "Minificação html básica a agressiva (via htmlcompressor)"
+msgstr "Minificação html básica ou agressiva (via htmlcompressor)"
 
 #: src/index.html:190
 msgid ""
@@ -444,7 +444,7 @@ msgstr "Atualiza o .htaccess para uso pesado de caching"
 
 #: src/index.html:192
 msgid "Updates your HTML to reference these new hyper-optimized CSS + JS files"
-msgstr "Atualiza seu HTML para referenciar os novos arquivos hyper-otimizados CSS e JS"
+msgstr "Atualiza seu HTML para referenciar os novos arquivos CSS e JS hyper-otimizados"
 
 #: src/index.html:193
 msgid ""
@@ -478,7 +478,7 @@ msgid ""
 "Results were from running the build script on a pre-release 1.0 version of "
 "html5boilerplate.com itself."
 msgstr ""
-"Resultados de uma execução do script de compilação em uma pre-liberação da versão 1.0 do "
+"Resultados de uma execução do script de compilação em uma pré-liberação da versão 1.0 do "
 "próprio html5boilerplate.com."
 
 #: src/index.html:201
@@ -486,7 +486,7 @@ msgid ""
 "379k before. 170k after. Results were from running the build script on a pre-"
 "release 1.0 version of html5boilerplate.com itself."
 msgstr ""
-"379k antes. 170k depois. Resultados de uma execução do script de compilação em uma pre-"
+"379k antes. 170k depois. Resultados de uma execução do script de compilação em uma pré-"
 "liberação da versão 1.0 do própio html5boilerplate.com."
 
 #: src/index.html:207
@@ -494,12 +494,12 @@ msgid ""
 "We provide default configuration for Apache, IIS, Nginx, Lighttpd, Google "
 "App Engine, and NodeJS."
 msgstr ""
-"Nos fornecemos configuração padrão para Apache, IIS, Nginx, Lighttpd, Google "
+"Nós fornecemos configuração padrão para Apache, IIS, Nginx, Lighttpd, Google "
 "App Engine e NodeJS."
 
 #: src/index.html:214
 msgid "Customize your own custom boilerplate to your delight."
-msgstr "Personalize o seu próprio boilerplate para o seu deleite."
+msgstr "Personalize o seu próprio boilerplate para o seu deleite exclusivo."
 
 #: src/index.html:217
 msgid "Boilerplate Custom"
@@ -519,7 +519,7 @@ msgid ""
 "Choose what kind of conditional classes you want: none, oldIE or all IE "
 "versions"
 msgstr ""
-"Escolha os tipos de classes condicionais que você quer: nenhuma, IE antigo ou todas "
+"Escolha os tipos de classes condicionais que você quer: nenhuma, versões antigas do IE ou todas "
 "versões do IE"
 
 #: src/index.html:221
@@ -532,7 +532,7 @@ msgid ""
 "javascript or jQuery all together."
 msgstr ""
 "Se você gosta da versão minificada do jQuery você poderá ter ou optar não por ter "
-"ou não ter qualquer tipo de JavaScript jQuery."
+"ou até mesmo não ter qualquer tipo de JavaScript jQuery."
 
 #: src/index.html:223
 msgid "Love html5shiv? Now you can use that instead of modernizr"
@@ -572,7 +572,7 @@ msgstr ""
 
 #: src/index.html:233
 msgid "Environments are definable."
-msgstr "Ambientes são definíveis."
+msgstr "Os ambientes são definíveis."
 
 #: src/index.html:234
 msgid ""
@@ -618,7 +618,7 @@ msgstr ""
 
 #: src/index.html:244
 msgid "IE9 doesn't get it's own conditional class! Yay!"
-msgstr "IE9 não tem sua própia classe condicional! Oba!"
+msgstr "IE9 não possui mais sua própia classe condicional! Oba!"
 
 #: src/index.html:249
 msgid ""
@@ -650,7 +650,7 @@ msgid ""
 "and not be burdened with resets. "
 msgstr ""
 "Todas as classes auxiliares ficam agora depois dos estilos padrões para não serem "
-"sobrepostas e não serem oneradas com reajustes. "
+"sobrepostas e não serem oneradas pelos reajustes. "
 
 #: src/index.html:253
 msgid ""
@@ -658,15 +658,15 @@ msgid ""
 "with other classname formats."
 msgstr ""
 "<code>.visuallyhidden</code> deixou de ser camelCase, para ser compatível "
-"com formado dos outros nomes de classe."
+"com formato dos outros nomes de classe."
 
 #: src/index.html:254
 msgid ""
 "Updated the specificity of <code>.visuallyhidden</code> rule to make sure it "
 "overrides all other declarations."
 msgstr ""
-"Atualizada as regras de especificação da classe <code>.visuallyhidden</code> para ter certeza "
-"que ela sobrepõe quaisquer outras declarações."
+"Atualizadas as regras para especificação da classe <code>.visuallyhidden</code> para"
+"ter certeza que ela sobrepõe quaisquer outras declarações."
 
 #: src/index.html:255
 msgid ""
@@ -688,15 +688,15 @@ msgstr "Adição de um reajuste de impressão em filtros proprietários do IE."
 
 #: src/index.html:258
 msgid "Print styles no longer prints hash links or javascript links."
-msgstr "Estilos de impressão deixam de imprimir links hash ou JavaScript."
+msgstr "Estilos de impressão deixaram de imprimir links hash ou JavaScript."
 
 #: src/index.html:259
 msgid ""
 "Updated sub/sup css to make them not be impacted by line-height, so now you "
 "can do sub/superscripts without worrying."
 msgstr ""
-"Atualizado o css de sub/sup para torná-los imprejudicáveis pelo uso de line-height, então "
-"agora você pode fazer sub/sobrescritos sem se preocupar."
+"Atualizado o css de elementos sub/sup para torná-los imprejudicáveis pelo uso "
+"de line-height, então agora você pode usar sub/sobrescritos sem se preocupar."
 
 #: src/index.html:262
 msgid "Project"
@@ -712,7 +712,7 @@ msgstr ""
 
 #: src/index.html:265
 msgid "Removed YUI profiling. You probably weren't using it anyway."
-msgstr "Removidas as ferramentas de perfilamento YUI. Provavelmente nem forma utilizadas por você."
+msgstr "Removidas as ferramentas de perfilamento YUI. Provavelmente nem foram utilizadas por você."
 
 #: src/index.html:266
 msgid "Removed QUnit's unit tests. There is no need to ship with them, really."
@@ -764,7 +764,7 @@ msgstr "Bloqueio de acesso aos diretórios .git e .svn."
 
 #: src/index.html:278
 msgid "Eradicating Chrome's console warning on WOFF font downloads."
-msgstr "Erradicação dos avisos do Chrome em downloads de font do tipo WOFF."
+msgstr "Erradicação dos avisos do Chrome em downloads de fonte do tipo WOFF."
 
 #: src/index.html:279
 msgid ""
@@ -785,52 +785,62 @@ msgid ""
 "html5-boilerplate-server-configs repo</a>. Head over there if you are not "
 "using Apache. "
 msgstr ""
+"Movidas todas as configuração de servidores (com exceção do .htaccess Apache) para "
+"<a href =\"https://github.com/paulirish/html5-boilerplate-server-configs\">o novo "
+"repositório html5-boilerplate-server-configs</a>. Vá até lá, se você não estiver "
+"usando Apache. "
 
 #: src/index.html:284
 msgid ""
 "Updated <code>.htaccess</code> and <code>mime.types</code> for ogg formats."
 msgstr ""
+"Atualizado <code>.htaccess</code> e <code>mime.types</code> para formatos ogg."
 
 #: src/index.html:285
 msgid ""
 "Fixed regression where EOT fonts had been excluded from DEFLATE compression"
 msgstr ""
+"Corrigida a regressão onde fontes EOT foram excluídas da compressão DEFLATE"
 
 #: src/index.html:286
 msgid ""
 "Apache version independence: Use <code>mod_filter</code> for compression, "
 "with fallback to AddOutputFilterByType directive for legacy versions"
 msgstr ""
+"Autonomia de versão do Apache: Usa <code>mod_filter</code> para a compressão, "
+"com opção de recurso para diretiva AddOutputFilterByType de versões legadas"
 
 #: src/index.html:287
 msgid "Added plugin/extension mime types for Safari, Chrome, Firefox"
-msgstr ""
+msgstr "Adicionado tipos mime para plugin/extensão do Safari, Chrome e Firefox"
 
 #: src/index.html:291
 msgid "Cleaned up cache expires directives."
-msgstr ""
+msgstr "Foram limpas as diretrizes de expiração do cache."
 
 #: src/index.html:292
 msgid "Now includes SVG and font formats for gzipping."
-msgstr ""
+msgstr "Agora inclui SVG e formatos de fonte para gzipping."
 
 #: src/index.html:293
 msgid "expires header bug fixed."
-msgstr ""
+msgstr "corrigido o bug da expiração de cabeçalhos"
 
 #: src/index.html:297
 msgid "Added Flash video mime types to IIS server"
-msgstr ""
+msgstr "Adicionado tipos mime do Flash video para servidor IIS"
 
 #: src/index.html:298
 msgid "Fixed some mimetype weirdness that was preventing proper caching"
-msgstr ""
+msgstr "Corrigidas algumas esquisitices mimetype que estavam inadequando o cache"
 
 #: src/index.html:302
 msgid ""
 "Also Google App Engine, Lighttpd, and NodeJS <a href=\"https://github.com/"
 "paulirish/html5-boilerplate-server-configs\">configurations were added</a>"
 msgstr ""
+"Google App Engine, Lighttpd e NodeJS também <a href=\"https://github.com/"
+"paulirish/html5-boilerplate-server-configs\">tiveram suas configurações adicionas</a>"
 
 #: src/index.html:305
 msgid ""
@@ -851,12 +861,13 @@ msgstr ""
 
 #: src/index.html:311
 msgid "Walk through it with me, now"
-msgstr ""
+msgstr "Percorra isso comigo agora"
 
 #: src/index.html:323
 msgid ""
 "Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame"
 msgstr ""
+"Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame"
 
 #: src/index.html:324 src/template/index.html:11
 msgid "Remove this if you use the .htaccess"
