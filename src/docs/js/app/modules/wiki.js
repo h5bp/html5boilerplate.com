@@ -205,7 +205,7 @@
             
             headings: function(text) {
               // # or ...
-              var t = text || global.location.hash.replace(/^#/, '').split(/[#|★]/)[1],
+              var t = text || decodeURIComponent(global.location.hash.replace(/^#/, '')).split(/[#|★]/)[1],
               hdr = this.main.find(':header'), h;
 
               // First thing first deal with headings and add proper data-wiki-hdr attribute
