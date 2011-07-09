@@ -5,7 +5,7 @@
     cd src/docs/wiki-upstream/ && git pull origin master && cd ../../..
     h5bp-docs --verbose --server --src src/docs/wiki-upstream/ --dest src/docs/ --baseurl /docs/
     
-_from a fresh repo, will most likely need a `git submodule update --init` to get the wiki files_
+_from a fresh repo, `git submodule update --init` to get the wiki files_
 
 ## docs folder structure
 
@@ -27,7 +27,9 @@ _from a fresh repo, will most likely need a `git submodule update --init` to get
     wiki-site/                      # or any other directory name, usually defined using --dest option
     
     
-Even if it's possible to run the command with src/docs as --dest options, things become messy. generated website would go along files like the wiki-upstream, layout files may be overriden. It's best to dissociate src folder, dest one and files used to generate the website (layout file as --layout, public folder and assets as --assets) + issue with .htaccess file (see note below)
+it's totally possible to run the command with src/docs as --dest options. generated website would go along files like the wiki-upstream. May be worth to dissociate src folder, dest one and files used to generate the website (layout file as --layout, public folder and assets as --assets) + issue with .htaccess file (see note below)
+
+defaults layout and assets are files within h5bp-docs repo, --layout and --assets may be used to generate the website using local files (located elsewhere). Path should be relative to the current working directory.
 
 docs files used to generate the website could also go in other folder as long as h5bp-docs knows where to locate the files.
 
