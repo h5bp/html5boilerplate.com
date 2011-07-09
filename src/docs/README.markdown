@@ -1,74 +1,95 @@
-# Experimental branch for the html5-boilerplate documentation
 
-## Goals
-
-Still based on github wiki. The idea is to locally (like it's done for now) or remotely (via github api on a given repo. Wiki's repos are not part of the REST api for now) retrieve the content of wiki markdown files and display them on a fully customizable web site. The conversion is made using the handy [Showdown](https://github.com/coreyti/showdown) library. This version uses the markup and style of the official [html5-boilerplate](http://html5boilerplate.com/) site.
-
-You can see a first rough version here: [http://mklabs.github.com/html5boilerplate-site/docs/](http://mklabs.github.com/html5boilerplate-site/docs/)
-
-## Remaining issues
-
-[https://github.com/nimbupani/html5boilerplate-site/issues#issue/29](https://github.com/nimbupani/html5boilerplate-site/issues#issue/29)
-
-* bring files over to this repo.. 'docs' branch.
-	* *To be done*
-	
-* some amount of control, configuration on the left nav. maybe use a new .md file for it?
-  * *To be done*
-  	
-* merge styles into site's style.css ? maybe?
-	* *Done: Have to do check out wiki.css file. Certainly has a bunch of unused and unnecessary selectors (that may duplicate with H5B's website).*
-	
-* path should be at /docs/
-	* *Done. Still have to figure out how to restructure the repo (in dev branchs I used, I've removed most of master branch files).*
-	
-* "edit this page" link that links to wiki edit page
-	* *Done. Technically took no much effort. Visually, is it is the best place for that link?*
-	
-* "Pretty docs brought to you by Mickaël Daniel", but of course! :)
-	* *Done. However... I made it as less little as possible ;) It might seen silly but I had wrap my head around on how and where to implement that. I really wanted to make clear that I had just worked on the pretty docs part, boilerplate itself is brought by true superheroes :p* 
-	
-* Fix [[link text | http://example.com]] links in markdown not always working..
-	* I can change them all to [text] (url) really easy if that makes sense.
-		* *Done (I guess..). Well, I made a few obvious improvements on regex escape. Though, I feel that I'll have to further work those regex, I feel like this is not as robust as it should be. Was previously done directly in showdown.js file, now done in the wiki module.*
-		
-* kill off the languages links..
-	* *Done*
-	
-* add link back to the homepage.
-	* *Done. Not sure of the proper location and the proper style you'll want to apply on it. Basically, I made it appear upper-cased in the top right corner of the screen.*
-	
-We might need to rename files beginning by a dot like .htaccess.md, to avoid potential 403 errors
-
-## Try it yourself
-
-### To init a new fresh repo and setup the wiki content from github
-
-    git clone git://github.com/nimbupani/html5boilerplate-site.git
-    cd html5boilerplate-site
-    git checkout -b docs origin/docs
-    git submodule update --init
-
-This branch includes a submodule that points to the official wiki repository with read-only access which is located at docs/wiki-upstream/.
+## updating the docs
     
-Assuming you have a local server pointing to the root of html5boilerplate-site clone, head over to [http://localhost/docs/](http://localhost/docs/), you should see the boilerplate documentation displayed in a boilerplate fashion ;)
+    # has to happen from -site folder
+    cd src/docs/wiki-upstream/ && git pull origin master && cd ../../..
+    h5bp-docs --verbose --server --src src/docs/wiki-upstream/ --dest src/docs/ --baseurl /docs/
+    
+_from a fresh repo, will most likely need a `git submodule update --init` to get the wiki files_
+
+## docs folder structure
+
+
+    layout.html                     # main layout file, a mustache template
+    |
+    public/                         # default assets folder (css, js, img, ...) copied over /{baseurl}/public/
+      |
+      +- css/                       # copied over /{baseurl}/public/css
+        |
+        +- style.css
+        |
+      +- js/                        # copied over /{baseurl}/public/js
+      |
+      +- ...                        # etc.
+    |
+    wiki-upstream/                  # src folder, usually a git clone or submodule to the project wiki
+    |
+    wiki-site/                      # or any other directory name, usually defined using --dest option
+    
+    
+Even if it's possible to run the command with src/docs as --dest options, things become messy. generated website would go along files like the wiki-upstream, layout files may be overriden. It's best to dissociate src folder, dest one and files used to generate the website (layout file as --layout, public folder and assets as --assets) + issue with .htaccess file (see note below)
+
+docs files used to generate the website could also go in other folder as long as h5bp-docs knows where to locate the files.
+
+## Configuration
+
+The order of precedence for conflicting settings is:
+
+* Command-line flags
+* a special --config flag. a path to a local config.js file.
+* Defaults (h5bp-docs/conf/config.js)
+
+This is the defaults:
+
+```javascript
+{
+  // --server, when set to true, will start a connect static server once generation is done
+  server: false,
   
-### To update the wiki with remote changes
+  // server port used if --server flag provided
+  port: 4000,
+  
+  // destination folder, place where pages are generated
+  dest: "./dest",
+  
+  // a single layout files with {{{ content }}} placeholder
+  // this is a relative path, the default one use h5bp-docs index.html
+  layout: "./index.html",
+  
+  // baseurl, allow you to prefix href to page and static assets with {{baseurl}} in the layout template
+  baseurl: '/docs/',
+  
+  // allowed extensions, all other files are ignored 
+  ext: ['md', 'markdown', 'mkd'],
+  
+  // Enable verbose output (defaults false)
+  verbose: false
+}
+```
 
-    cd docs/wiki-upstream
-    git remote -v
-    
-At this point, it should point to the official wiki repository with read-only access:
+## Notes
 
-    origin	git://github.com/paulirish/html5-boilerplate.wiki.git (fetch)
-    origin	git://github.com/paulirish/html5-boilerplate.wiki.git (push)
-    
-The submodule repositories added by “git submodule update” are “headless”. This means that they aren’t on a current branch. To fix this, you simply need to switch to a branch. In this example, that would be the master branch (git checkout master).
-    
-To bring any new changes back in
+##### dest not empty
 
-    git pull origin
-    
-And done !
+_Note: You may have the following stack trace with .htaccess file:-
 
-At this point, if any new files were created and you would like to see there in the page menu pane, it requires the modification of files variable in config.js file. This is a drawback of using local datasource (really just xhr to get markdown files), with remote github api calls, we could get the list of all blobs.
+    Writing Home Page to  /path/to/generated/website/docs/index.html
+    h5bp-docs:  .htaccess  ->  .htaccess/index.html
+
+    fs.js:221
+      return binding.open(path, stringToFlags(flags), mode);
+                     ^/path/to/generated/website/docs/index.html
+    Error: EBADF, Bad file descriptor '/path/to/generated/html5boilerplate-site/src/docs/.htaccess/index.html'
+    
+By deleting the .htaccess, h5bp-docs can create the /.htaccess/ folder and write to its index.html file. We may just warn the user and pass along the next file if for any reasong, there is conflicting files in dest folder.
+
+##### non-recursive mkdir
+
+that's something which is not supported yet and would need a little bit of rewrite, but it totally possible to generate to a folder that already exists, the last part of the --dest option, say `--dest path/to/folder`, if  path/to, or path/to/folder exists, generation will still works (basically, h5bp-docs is only able to create only one folder for the destination output).
+
+## Things to be done
+
+* may introduce a --config flag that allows to overide config settings with a config.js file local to the repo
+* recursive mkdir 
+    
+      
