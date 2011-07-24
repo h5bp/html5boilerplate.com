@@ -142,11 +142,14 @@
   
   $(function() {
     // TODO:DEBUG:REMOVE global exports
-    model = exports.model = new DocsPage({path: location.pathname });
-    view = exports.view = new DocsView({model: model, scroll: true});
-    router = exports.router = new DocsRouter();
+    model = new DocsPage({path: location.pathname });
+    view = new DocsView({model: model, scroll: true});
+    router = new DocsRouter();
     
-    Backbone.history.start({ pushState: true });
+    Backbone.history.start({ 
+      pushState: true,
+      root: '/docs/'
+    });
   });
   
   
