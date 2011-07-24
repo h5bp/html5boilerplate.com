@@ -77,12 +77,13 @@
 # {% blocktrans %}Proper MIME type for all files{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# {% blocktrans %}audio{% endblocktrans %}
+# {% blocktrans %}Audio{% endblocktrans %}
 AddType audio/ogg                      oga ogg
+AddType audio/mp4                      m4a
 
-# {% blocktrans %}video{% endblocktrans %}
+# {% blocktrans %}Video{% endblocktrans %}
 AddType video/ogg                      ogv
-AddType video/mp4                      mp4
+AddType video/mp4                      mp4 m4v
 AddType video/webm                     webm
 
 # {% blocktrans %}Proper svg serving. Required for svg webfonts on iPad{% endblocktrans %}
@@ -90,13 +91,13 @@ AddType video/webm                     webm
 AddType     image/svg+xml              svg svgz 
 AddEncoding gzip                       svgz
                                        
-# {% blocktrans %}webfonts{% endblocktrans %}                             
+# {% blocktrans %}Webfonts{% endblocktrans %}                             
 AddType application/vnd.ms-fontobject  eot
-AddType font/truetype                  ttf
+AddType application/x-font-ttf    ttf ttc
 AddType font/opentype                  otf
-AddType application/x-font-woff              woff
+AddType application/x-font-woff        woff
 
-# {% blocktrans %}assorted types{% endblocktrans %}                                      
+# {% blocktrans %}Assorted types{% endblocktrans %}                                      
 AddType image/x-icon                   ico
 AddType image/webp                     webp
 AddType text/cache-manifest            appcache manifest
@@ -104,6 +105,7 @@ AddType text/x-component               htc
 AddType application/x-chrome-extension crx
 AddType application/x-xpinstall        xpi
 AddType application/octet-stream       safariextz
+AddType text/x-vcard                   vcf
 
 
 
@@ -111,9 +113,6 @@ AddType application/octet-stream       safariextz
 # {% blocktrans %}Allow concatenation from within specific js and css files{% endblocktrans %}  
 # ----------------------------------------------------------------------
 
-# 
-# {% blocktrans %}allow concatenation from within specific js and css files{% endblocktrans %}
-#
 # {% blocktrans %}e.g. Inside of script.combined.js you could have{% endblocktrans %}
 #
 #   <!--#include file="jquery-1.4.2.js" -->
@@ -135,7 +134,7 @@ AddType application/octet-stream       safariextz
 
 
 # ----------------------------------------------------------------------
-# {% blocktrans %}gzip compression{% endblocktrans %}
+# {% blocktrans %}Gzip compression{% endblocktrans %}
 # ----------------------------------------------------------------------
 
 <IfModule mod_deflate.c>
@@ -149,13 +148,28 @@ AddType application/octet-stream       safariextz
     RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
   </IfModule>
 </IfModule>
-# html, txt, css, js, json, xml, htc:
+# HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
 <IfModule filter_module>
   FilterDeclare   COMPRESS
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type /text/(html|css|javascript|plain|x(ml|-component))/
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type /application/(javascript|json|xml|x-javascript)/
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/javascript
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-javascript
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
+   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
   FilterChain     COMPRESS
-  FilterProtocol  COMPRESS  change=yes;byteranges=no
+  FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
 </IfModule>
 
 <IfModule !mod_filter.c>
@@ -163,12 +177,9 @@ AddType application/octet-stream       safariextz
   AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
   AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript 
   AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+  AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+  AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype  
 </IfModule>
-
-# {% blocktrans %}webfonts and svg:{% endblocktrans %}
-  <FilesMatch "\.(ttf|otf|eot|svg)$" >
-    SetOutputFilter DEFLATE
-  </FilesMatch>
 </IfModule>
 
 
@@ -178,15 +189,15 @@ AddType application/octet-stream       safariextz
 # ----------------------------------------------------------------------
 
 # 
-# {% blocktrans %}these are pretty far-future expires headers{% endblocktrans %}
-# {% blocktrans %}they assume you control versioning with cachebusting query params like:{% endblocktrans %}
+# {% blocktrans %}These are pretty far-future expires headers{% endblocktrans %}
+# {% blocktrans %}They assume you control versioning with cachebusting query params like:{% endblocktrans %}
 #   <script src="application.js?20100608">
-# {% blocktrans %}additionally, consider that outdated proxies may miscache{% endblocktrans %}
+# {% blocktrans %}Additionally, consider that outdated proxies may miscache{% endblocktrans %}
 # 
 #   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
 
 # 
-# {% blocktrans %}if you don`t use filenames to version, lower the css and js to something like "access plus 1 week" {% endblocktrans %}
+# {% blocktrans %}If you don`t use filenames to version, lower the css and js to something like "access plus 1 week" {% endblocktrans %}
 # 
 
 <IfModule mod_expires.c>
@@ -200,21 +211,21 @@ AddType application/octet-stream       safariextz
 
 
 
-# {% blocktrans %}your document html{% endblocktrans %}
+# {% blocktrans %}Your document html{% endblocktrans %}
   ExpiresByType text/html                 "access plus 0 seconds"
   
-# {% blocktrans %}data{% endblocktrans %}
+# {% blocktrans %}Data{% endblocktrans %}
   ExpiresByType text/xml                  "access plus 0 seconds"
   ExpiresByType application/xml           "access plus 0 seconds"
   ExpiresByType application/json          "access plus 0 seconds"
 
-# {% blocktrans %}rss feed{% endblocktrans %}
+# {% blocktrans %}RSS feed{% endblocktrans %}
   ExpiresByType application/rss+xml       "access plus 1 hour"
 
-# {% blocktrans %}favicon (cannot be renamed){% endblocktrans %}
+# {% blocktrans %}Favicon (cannot be renamed){% endblocktrans %}
   ExpiresByType image/x-icon              "access plus 1 week" 
 
-# {% blocktrans %}media: images, video, audio{% endblocktrans %}
+# {% blocktrans %}Media: images, video, audio{% endblocktrans %}
   ExpiresByType image/gif                 "access plus 1 month"
   ExpiresByType image/png                 "access plus 1 month"
   ExpiresByType image/jpg                 "access plus 1 month"
@@ -224,20 +235,20 @@ AddType application/octet-stream       safariextz
   ExpiresByType video/mp4                 "access plus 1 month"
   ExpiresByType video/webm                "access plus 1 month"
   
-# {% blocktrans %}htc files  (css3pie){% endblocktrans %}
+# {% blocktrans %}HTC files  (css3pie){% endblocktrans %}
   ExpiresByType text/x-component          "access plus 1 month"
   
-# {% blocktrans %}webfonts{% endblocktrans %}
+# {% blocktrans %}Webfonts{% endblocktrans %}
   ExpiresByType font/truetype             "access plus 1 month"
   ExpiresByType font/opentype             "access plus 1 month"
-  ExpiresByType font/woff                 "access plus 1 month"
+  ExpiresByType application/x-font-woff   "access plus 1 month"
   ExpiresByType image/svg+xml             "access plus 1 month"
   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
     
-# {% blocktrans %}css and javascript{% endblocktrans %}
-  ExpiresByType text/css                  "access plus 2 months"
-  ExpiresByType application/javascript    "access plus 2 months"
-  ExpiresByType text/javascript           "access plus 2 months"
+# {% blocktrans %}CSS and JavaScript{% endblocktrans %}
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType text/javascript           "access plus 1 year"
   
   <IfModule mod_headers.c>
     Header append Cache-Control "public"
@@ -251,7 +262,12 @@ AddType application/octet-stream       safariextz
 # {% blocktrans %}ETag removal{% endblocktrans %}
 # ----------------------------------------------------------------------
 
-# 
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+
+ 
 # {% blocktrans %}Since we`re sending far-future expires, we don't need ETags for static content.{% endblocktrans %}
 # developer.yahoo.com/performance/rules.html#etags
 FileETag None
@@ -292,8 +308,9 @@ FileETag None
 # ----------------------------------------------------------------------
 
 # {% blocktrans %}Turning on the rewrite engine is necessary for the following rules and features.{% endblocktrans %}
-
+# {% blocktrans %}FollowSymLinks must be enabled for this to work.{% endblocktrans %}
 <IfModule mod_rewrite.c>
+  Options +FollowSymlinks
   RewriteEngine On
 </IfModule>
 
@@ -348,46 +365,6 @@ FileETag None
 
 
 # ----------------------------------------------------------------------
-# {% blocktrans %}Add/remove trailing slash to (non-file) URLs{% endblocktrans %}
-# ----------------------------------------------------------------------
-
-# 
-# {% blocktrans %}Google treats URLs with and without trailing slashes separately.{% endblocktrans %}
-# {% blocktrans %}Forcing a trailing slash is usually preferred, but all that's really important is that one correctly redirects to the other.{% endblocktrans %}
-# 
-
-# {% blocktrans %}By default option 1 (force trailing slash) is activated.{% endblocktrans %}
-# http://googlewebmastercentral.blogspot.com/2010/04/to-slash-or-not-to-slash.html
-# http://www.alistapart.com/articles/slashforward/
-# http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url {% blocktrans %}Trailing Slash Problem{% endblocktrans %}
-
-# ----------------------------------------------------------------------
-
-# 
-# {% blocktrans %}Option 1:{% endblocktrans %}
-# {% blocktrans %}Rewrite{% endblocktrans %} "domain.com/foo -> domain.com/foo/"
-# 
-
-<IfModule mod_rewrite.c>
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/|#(.*))$
-  RewriteRule ^(.*)$ /$1/ [R=301,L]
-</IfModule>
-
-# ----------------------------------------------------------------------
-
-# 
-# {% blocktrans %}Option 2:{% endblocktrans %}
-# {% blocktrans %}Rewrite{% endblocktrans %} "domain.com/foo/ -> domain.com/foo"
-# 
-
-#<IfModule mod_rewrite.c>
-#  RewriteRule ^(.*)/$ /$1 [R=301,L]
-#</IfModule>
-
-
-
-# ----------------------------------------------------------------------
 # {% blocktrans %}Built-in filename-based cache busting{% endblocktrans %}
 # ----------------------------------------------------------------------
 
@@ -437,7 +414,7 @@ Options -MultiViews
 
 
 # ----------------------------------------------------------------------
-# {% blocktrans %}custom 404 page{% endblocktrans %}
+# {% blocktrans %}Custom 404 page{% endblocktrans %}
 # ----------------------------------------------------------------------
 
 # {% blocktrans %}You can add custom pages to handle 500 or 403 pretty easily, if you like.{% endblocktrans %}
@@ -496,6 +473,43 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 
 # php_flag register_globals Off
 
+# {% blocktrans %}Rename session cookie to something else, than PHPSESSID{% endblocktrans %}
+# php_value session.name sid
 
+# {% blocktrans %}Do not show you are using php{% endblocktrans %}
+# php_flag expose_php Off
 
+# {% blocktrans %}Level of log detail - log all errors{% endblocktrans %}
+# php_value error_reporting -1
 
+# {% blocktrans %}Write errors to log file{% endblocktrans %}
+# php_flag log_errors On
+
+# {% blocktrans %}Do not display errors in browser (production - Off, development - On){% endblocktrans %}
+# php_flag display_errors Off
+
+# {% blocktrans %}Do not display startup errors (production - Off, development - On){% endblocktrans %}
+# php_flag display_startup_errors Off
+
+# {% blocktrans %}Format errors in plain text{% endblocktrans %}
+# php_flag html_errors Off
+
+# {% blocktrans %}Show multiple occurrence of error{% endblocktrans %}
+# php_flag ignore_repeated_errors Off
+
+# {% blocktrans %}Show same errors from different sources{% endblocktrans %}
+# php_flag ignore_repeated_source Off
+
+# {% blocktrans %}Size limit for error messages{% endblocktrans %}
+# php_value log_errors_max_len 1024
+
+# {% blocktrans %}Don't precede error with string (doesn't accept empty string, use whitespace if you need){% endblocktrans %}
+# php_value error_prepend_string " "
+
+# {% blocktrans %}Don't prepend to error (doesn't accept empty string, use whitespace if you need){% endblocktrans %}
+# php_value error_append_string " "
+
+# {% blocktrans %}Increase cookie security{% endblocktrans %}
+<IfModule php5_module>
+	php_value session.cookie_httponly true
+</IfModule>

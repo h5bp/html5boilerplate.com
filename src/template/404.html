@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found :(</title> 
+  <title>{% blocktrans %}Page Not Found{% endblocktrans %} :(</title> 
   <style>
 	  body { text-align: center;}
 	  h1 { font-size: 50px; text-align: center }
@@ -18,13 +18,13 @@
 </head>
 <body>
      <article>
-	  <h1>Not found <span frown>:(</span></h1>
+	  <h1>{% blocktrans %}Not found{% endblocktrans %} <span frown>:(</span></h1>
 	   <div>
-	       <p>Sorry, but the page you were trying to view does not exist.</p>
-	       <p>It looks like this was the result of either:</p>
+	       <p>{% blocktrans %}Sorry, but the page you were trying to view does not exist.{% endblocktrans %}</p>
+	       <p>{% blocktrans %}It looks like this was the result of either{% endblocktrans %}:</p>
 	       <ul>
-		   <li>a mistyped address</li>
-		   <li>an out-of-date link</li>
+		   <li>{% blocktrans %}a mistyped address{% endblocktrans %}</li>
+		   <li>{% blocktrans %}an out-of-date link{% endblocktrans %}</li>
 	       </ul>
 	   </div>
 	    

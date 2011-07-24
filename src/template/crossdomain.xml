@@ -3,14 +3,14 @@
 <cross-domain-policy>
   
   
-<!-- Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html -->
+<!-- {% blocktrans %}Read this{% endblocktrans %}: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html -->
 
-<!-- Most restrictive policy: -->
+<!-- {% blocktrans %}Most restrictive policy{% endblocktrans %}: -->
 	<site-control permitted-cross-domain-policies="none"/>
 	
 	
 	
-<!-- Least restrictive policy: -->
+<!-- {% blocktrans %}Least restrictive policy{% endblocktrans %}: -->
 <!--
 	<site-control permitted-cross-domain-policies="all"/>
 	<allow-access-from domain="*" to-ports="*" secure="false"/>
