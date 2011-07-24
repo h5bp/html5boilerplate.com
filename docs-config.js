@@ -20,7 +20,7 @@ exports = module.exports = {
   dest: "./src/docs",
   
   // a single layout files with a {{ content }} placeholder.
-  layout: "./foobar.html",
+  layout: "./src/docs/doclayout.html",
   
   // allowed extensions, all other files are ignored 
   ext: ['md', 'markdown', 'mkd'],
