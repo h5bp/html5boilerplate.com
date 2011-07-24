@@ -11,6 +11,14 @@
         success: function(res) {
           model.set({content: $(res).find('.wikiconvertor-content').html()});
           view.render();
+          
+          // notify disqus of the asycn page change
+          DISQUS.reset({
+            reload: true,
+            config: function () {  
+              this.page.identifier = this.page.url = window.location.pathname;
+            }
+          });
         }
       }));
       
@@ -31,7 +39,6 @@
     },
     
     initialize: function() {
-      console.log('created DocsView', this, arguments);
       
       _.bindAll(this, 'clickHandler', 'addHdrAttr', 'addPermalinks');
       
@@ -59,8 +66,6 @@
            this.scroller.animate({scrollTop: 0}, 500);           
          }
 
-         
-         
          router.navigate(url, true);
        }
     },
