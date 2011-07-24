@@ -9,6 +9,8 @@ _from a fresh repo, `git submodule update --init` to get the wiki files_
 
 ## docs folder structure
 
+Starting to work on `src/docs` folder structure
+
 
     layout.html                     # main layout file, a mustache template
     |
