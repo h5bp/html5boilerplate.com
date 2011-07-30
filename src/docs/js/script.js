@@ -11,9 +11,9 @@
     require(
     
     // Load in modules  
-    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight'],
+    ['app/modules/wiki', 'app/modules/messaging', 'app/modules/history', 'app/modules/highlight', 'app/modules/disqus', 'app/modules/ga'],
     
-    function(wiki, messaging, history, highlight) {
+    function(wiki, messaging, history, highlight, ga) {
         
         $(function() {
           var container = $('#container');
@@ -34,8 +34,18 @@
               .messaging()
 
               // Allow the hightlight of code snippets using SyntaxHighligter
-              .highlight();
-                            
+              .highlight()
+              
+              .disqus({
+                // we can't use # in this url, otherwise thread won't be correctly referenced
+                dsqUrl: 'http://example.com/test/hashbang/article/{id}',
+                dsqShortname: 'h5bdocstest'
+              })
+              
+              // analytics
+              .ga({
+                uid: 'UA-22315681-1'
+              });
         });
     });
     

@@ -17,10 +17,13 @@ exports = module.exports = {
   src: "./src/docs/wiki-upstream",
   
   // destination folder, place where the generated files will land
-  dest: "./src/docs",
+  dest: "./src/docs/gen",
   
   // a single layout files with a {{ content }} placeholder.
   layout: "./src/docs/doclayout.html",
+  
+  // assets folder, default is
+  assets: "./src/docs/public",
   
   // allowed extensions, all other files are ignored 
   ext: ['md', 'markdown', 'mkd'],

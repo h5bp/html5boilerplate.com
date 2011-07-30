@@ -2,6 +2,14 @@
 /** Wiki **/
 #body li:before { font-size: 80%; }
 
+/** edit page button **/
+
+.docs .right {float: right;}
+.docs .button {font-size: 0.8em;}
+
+/** disqussss */
+.docs #disqus_thread { display: block;}
+
 .wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
 .wikiconvertor #body, .wikiconvertor #header h2 {margin:1em auto 0.5em;width:78%;}
 
@@ -39,13 +47,17 @@
 .wikiconvertor #footer p:last-child{font-size:1em !important;margin-top:2em;position:absolute;right:1em;}
 .wikiconvertor #footer{position:inherit;}
 
+/** disqus **/
+#dsq-content {font-size: 12px;line-height: 1.5em;}
+
+#dsq-content {text-align:left;}
+
 /** special care of syntax highlight **/
 .wikiconvertor .syntaxhighlighter { overflow: auto; }
 .wikiconvertor .syntaxhighlighter .lines { width: auto !important; }
 
 /** wikistyle,credits to github guys. **/
 .wikistyle h1,.wikistyle h2,.wikistyle h3,.wikistyle h4,.wikistyle h5,.wikistyle h6{border:0 !important;}
-.wikistyle h1{font-size:170% !important;border-top:4px solid #aaa !important;padding-top:.5em !important;margin-top:1.5em !important;}
 .wikistyle h1:first-child, .wikistyle h2:first-child, .wikistyle h3:first-child{margin-top:0 !important;padding-top:.25em !important;border-top:none !important;}
 .wikistyle h2{font-size:150% !important;margin-top:1.5em !important;padding-top:.5em !important;}
 .wikistyle h3{margin-top:1em !important;}
@@ -60,9 +72,10 @@
 .wikistyle dt{font-weight:bold !important;margin-left:1em !important;}
 .wikistyle dd{margin-left:2em !important;margin-bottom:1em !important;}
 .wikistyle table{margin:1em 0 !important;}
+.wikistyle table{margin:1em 0 !important;}
 .wikistyle table th{border-bottom:1px solid #bbb !important;padding:.2em 1em !important;}
 .wikistyle table td{border-bottom:1px solid #ddd !important;padding:.2em 1em !important;}
-.wikistyle pre{margin:1em 0;font-size:12px;background-color:#eee;border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.wikistyle pre{margin:1em 0;font-size:12px;background-color:hsla(193, 23%, 36%, 0.5);border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 .wikistyle pre::-webkit-scrollbar{height:8px;width:8px;}
 .wikistyle pre::-webkit-scrollbar-track-piece{margin-bottom:10px;background-color:#e5e5e5;border-bottom-left-radius:4px 4px;border-bottom-right-radius:4px 4px;border-top-left-radius:4px 4px;border-top-right-radius:4px 4px;}
 .wikistyle pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
@@ -98,10 +111,54 @@ code > br:first-child {
   display: none;
 }
 
+/* prevent firt h1 from showing */
+.docs .dwn+h1 {display: none;}
+
+.pln{color:#bada55}
+.wikistyle pre code {background: none;}
+
+@media screen{
+  .str{color:#ff5e99}
+  .kwd{color:#6CA6E0}
+  .com{color:#E16734}
+  .typ{color:#E3D7BF}
+  .lit{color:##E3D7BF}
+  .pun,.opn,.clo{color:#DDEDAB}
+  .tag{color:#bada55}
+  .atn{color:#ff5e99}
+  .atv{color:#bada55}
+  .dec,.var{color:#ccc}
+  .fun{color:red}
+}
+
+@media print,projection{
+  .str{color:#060}
+  .kwd{color:#006;font-weight:bold}
+  .com{color:#600;font-style:italic}
+  .typ{color:#404;font-weight:bold}
+  .lit{color:#044}
+  .pun,.opn,.clo{color:#440}
+  .tag{color:#006;font-weight:bold}
+  .atn{color:#404}
+  .atv{color:#060}
+}
+
+ol.linenums{margin-top:0;margin-bottom:0}
+
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+
+
 /* special care of mobile device. Make the wole slightly smaller and do not display left nav. */
-@media screen and (max-device-width:480px){
-  .wikiconvertor #body{width:95%;}
-  .wikiconvertor .wikiconvertor-pages{display:none;}
-  .wikiconvertor #header{font-size:0.5em;}
-  .wikiconvertor .wikiconvertor-content{padding-left:0;font-size:0.9em;}
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #header{font-size:0.5em;}
+}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 480px) {
+  #container #header h2 {display: none;}
+  #body .wikiconvertor-pages {display: none;} /* todo: handle files list better than display: none */
+  #body .wikiconvertor-content {width: 100%; float: none;}
 }

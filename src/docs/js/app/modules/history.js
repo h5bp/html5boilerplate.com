@@ -7,35 +7,34 @@
 * could subscribe to the wiki-history-change topic).
 *
 */
-define(
 
-// Dependencies
-['app/modules/base', 'libs/pubsub'],
-
-// entry point
-function(base) {
+(function(global, location, undefined){
   
-    var module = {
-        init: function() {
-            if(!Modernizr.hashchange) {
-              return;
-            }
-            
-            $(window).bind('hashchange', $.proxy(this.popStateHandler, this));
-        },
-        
-        popStateHandler:  function popStateHandler(ev) {
-          $.publish('wiki-history-change', [window.location.hash]);
-          return false;
+  define(['app/modules/base', 'libs/pubsub'], function(base) {
+    
+    var module = $.extend({}, base, Object.create({
+      init: function() {
+        if(!Modernizr.hashchange) {
+          return;
         }
-    },
-    
-    module = $.extend({}, base, Object.create(module));
-    
+
+        $(window).bind('hashchange', $.proxy(this.popStateHandler, this));
+      },
+
+      popStateHandler:  function popStateHandler(ev) {
+        var hash = location.hash;
+        // prevent #dsq-content to trigger a page transition
+        if(hash !== "#dsq-content") {
+          $.publish('wiki-history-change', [window.location.hash]);  
+        }
+        
+        return false;
+      }
+    }));
+
     $.bridge('history', module);
-    
+
     return module;
-});
-
-
-
+  });
+  
+})(this, this.location);

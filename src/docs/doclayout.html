@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html public "✰">
 <!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
@@ -12,8 +12,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-  <link rel="stylesheet" href="{{ baseurl }}public/css/style.css" >
-  <link rel="stylesheet" href="{{ baseurl }}public/css/docs.css" >
+  <link rel="stylesheet" href="{{ baseurl }}/public/css/style.css" >
+  <link rel="stylesheet" href="{{ baseurl }}/public/css/docs.css" >
 
 </head>
 <body>
@@ -31,7 +31,7 @@
          <h2>A rock-solid default for HTML5 awesome.</h2>  
     </div>
 
-    <div id="body">
+    <div id="body" class="docs">
       <div class="wikiconvertor-pages">
         <ul>
           {{#files}}
@@ -42,41 +42,39 @@
       
       <div class="wikiconvertor-content wikistyle relative">
         <p class="dwn">
-          <span class="right">{{{ edit }}}</span>
+          <span class="right button">{{{ edit }}}</span>
         </P>
         
         {{{ content }}}
 
-        <div id="disqus_thread"></div>
+        <div id="disqus_thread">
+          
+        </div>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-                
       </div>
       
     </div>
-    <div id="footer">
+    <footer id="footer">
       <p>
         <em class="focus">Brought to you by</em>
-        <a href="http://paulirish.com">Paul Irish <i>Google Chrome, jQuery</i></a>
-        <a href="http://nimbupani.com">Divya Manian <i>Web Opener @ Opera</i></a>
-        <a href="http://www.blog.highub.com/">Shichuan <i>Open Web Developer</i></a>        
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
       </p> 
       <ul>
-    		<li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
-    		<li>Dave Kirk</li> 
-    		<li><a href="http://mths.be/"></a>Mathias Byenens</li>
-    		<li><a href="http://www.html5-css3.fr/">Jonathan Verrecchia</a></li>
-    		<li><a href="https://github.com/nlogax">nlogax</a></li>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
-    		<li><a href="http://www.vervestudios.co/">David Murdoch</a></li>
-    		<li><a href="http://www.ad7six.com/">Andy Dawson</a></li>		
-    		<li><a href="http://www.michael-van-laar.de/">Michael van Laar</a></li>
-    		<li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
       </ul> <br>
       <p>It would not have been possible without the efforts of these superheroes:</p>
       <ul>
         <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
-        <li><a href="http://mathiasbynens.be/">Mathias Bynens</a></li>   
         <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
         <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
         <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
@@ -98,10 +96,7 @@
         <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
         <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
       </ul>
-      <p>
-        Pretty docs brought to you by <a href="http://github.com/mklabs" style="color:hsl(18, 74%, 54%)">Mickael Daniel</a>
-      </p>
-    </div>
+    </footer>
 
     <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" height="60">
     
@@ -112,20 +107,42 @@
   <script>window.jQuery || document.write('<script src="{{baseurl}}/public/js/jquery.min.js"><\/script>')</script>
   
   <script src="//ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-  <script>window.JSON || document.write("<script src='{{baseurl}}/public/js/json2.js'>\x3C/script>")</script>
+  <script>window.JSON || document.write("<script src='{{baseurl}}/public/js/libs/json2.js'>\x3C/script>")</script>
 
   <script src="//ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
-  <script>window._ || document.write("<script src='{{baseurl}}/public/js/underscore.min.js'>\x3C/script>")</script>
+  <script>window._ || document.write("<script src='{{baseurl}}/public/js/libs/underscore.min.js'>\x3C/script>")</script>
+  
+  <script src="{{baseurl}}/public/js/libs/backbone.min.js"></script>
+  <script src="{{baseurl}}/public/js/script.js"></script>
+  
   <script>
-  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  var disqus_shortname = 'boilerplate'; // required: replace example with your forum shortname
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
 
-  // The following are highly recommended additional parameters. Remove the slashes in front to use.
-  var disqus_identifier = '{{{ href }}}';
-  var disqus_url = '{{{ href }}}';
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '{{ href }}';
+
+      // todo: change this with something like h5bp.com/docs{{ href }}
+      var disqus_url = exports.disqus_url= '{{ href }}';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for {{ href }}';
+
+
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+
+    })(this);
+
   </script>
-  <script src="{{baseurl}}public/js/backbone.min.js"></script>
-  <script src="{{baseurl}}public/js/script.js"></script>
   
 </body>
 </html>
