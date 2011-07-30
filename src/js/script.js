@@ -8,38 +8,6 @@ SyntaxHighlighter.defaults['auto-links'] = false;
 SyntaxHighlighter.defaults['toolbar'] = false;
 SyntaxHighlighter.defaults['tab-size'] = 4;
 
-// smooth scrolling to in-page anchors.
-$.fn.smoothScrollTo = function(){
-  return this.live('click', function (e) {
-    var elm = $(this).attr('href');
-    if(!$(elm).is(':visible')) {
-      $('a[href=#dsq-content]').trigger('click');
-    }
-    $('html,body').animate({'scrollTop': $(elm).offset().top-40+'px'}); // 40px buffer to top.
-    e.preventDefault();
-  });
-};
-
-
-var dsqshow, loadcomments = function() {
-  if(!dsqshow){
-    dsqshow = true;
-    loaddisqus();
-  }  
-  jQuery('#disqus_thread').show();    
-}, loaddisqus = function() {
-    var disqus_developer = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? undefined : 1;
-    var disqus_category_id = 517513;
-    var disqus_url = '{% blocktrans %}http://html5boilerplate.com/{% endblocktrans %}';
-
-    setTimeout(function() {
-     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-     dsq.src = 'http://boilerplate.disqus.com/embed.js';
-     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }, 10);  
-};
-
-
 $(document).ready(function(){   
      
   $('pre[class]').each(function(i, el) {
@@ -72,25 +40,7 @@ $(document).ready(function(){
     e.preventDefault();
   });  
   
-  jQuery('a[href=#disqus_thread]').smoothScrollTo();
 
-  jQuery('a[href=#dsq-content]').toggle(
-    function () {
-      jQuery(this).text('{% blocktrans %}Hide Comments{% blocktrans %}');
-      loadcomments();
-    },
-    function () {
-      jQuery(this).text('{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}');
-      jQuery('#disqus_thread').hide();
-    }
-  );
-  
-  // !~$.inArray(hash, $('.update').map(function(){ return this.id }).get()) 
-  if (~location.hash.replace('#','').indexOf('comment')){
-    loadcomments();
-    jQuery('a[href=#dsq-content]').click();
-  }
-    
   // lazy inject the videos
   setTimeout(function(){
     $('noscript').each(function(){

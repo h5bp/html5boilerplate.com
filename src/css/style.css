@@ -91,7 +91,7 @@ html[lang='he'] em, html[lang='he'] #body h3, html[lang='he'] #disqus_thread h3 
 
 
 /* we do not need to link to ourselves. only our friends. <3 */
- 
+#header p.lang, 
 html[lang="en-us"] p.lang a[lang="en-us"],
 html[lang="de-de"] p.lang a[lang="de-de"],
 html[lang="pt-br"] p.lang a[lang="pt-br"],
@@ -329,10 +329,8 @@ html[lang="en-us"] .recos h3 + a { display:block !important;}
 
 #footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after, html[lang="sr"] p.lang a[lang="nl"]:after { content: ""; }  
 
-#disqus_thread { display: none; padding-top: 0; } 
+#disqus_thread { padding-top: 0; font-size: 0.9em; } 
 #disqus_thread h3 { margin-top: 0.5em; }
-#disqus_thread h3, #disqus_thread .dsq-options { text-align: center; }
-#disqus_thread .dsq-comment-body { text-align: left; font-size: 0.75em; }
 
 
 /* =============================================================================

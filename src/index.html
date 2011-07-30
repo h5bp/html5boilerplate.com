@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
   <link rel="stylesheet" media="screen" href="css/style.css" >
-  <link rel="stylesheet" media="screen" href="/css/shCore.css" >
+  <link rel="stylesheet" media="screen" href="css/shCore.css" >
 
   <!-- JavaScript at the bottom, except for Modernizr -->
   <script src="js/libs/modernizr-2.0.min.js"></script>
@@ -135,11 +135,9 @@
 
       <p class="social"><i>
         <a href="//html5boilerplate.com/docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
-        <a href="http://github.com/paulirish/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>        
-        <a href="#disqus_thread">{% blocktrans %}Comment here{% endblocktrans %}</a>        
+        <a href="http://github.com/paulirish/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>             
       </i><i>
-        <a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>
-      
+        <a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>      
         <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a>
        </i>
       </p>
@@ -340,8 +338,10 @@
     <div class="disqus-wrapper">
       <div id="disqus_thread">
         <h3>{% blocktrans %}Comments{% endblocktrans %}</h3>
+        <p>{% blocktrans %}If you have any questions about the code, we encourage you to <a href="http://h5bp.com/docs">read HTML5 Boilerplate's extensive documentation</a>, plus you can ask questions in the comment thread at the bottom of each docs page.{% endblocktrans %}</p>
+
+        <p>{% blocktrans %}If you have ideas for changes to the project, join <a href="http://h5bp.com/group">the H5BP community on github</a> and file a ticket!{% endblocktrans %}</p>
       </div>
-      <a href="#dsq-content">{% blocktrans with "400+" as num_comments %}Show comments{% endblocktrans %}</a> 
     </div>
   </div>
   
@@ -350,8 +350,8 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
   
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="/js/plugins.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
   <!-- end scripts-->
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
