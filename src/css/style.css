@@ -117,7 +117,7 @@ h1:hover { color: #e16734; }
 body { background: #232927; color: #e3d7bf; text-align: center; font: 300 12px/18px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; }
 
 a, a:hover, a:focus, a:visited  { text-decoration: none; }
-a, .disqus-wrapper a, #builder a.selected { color: #e16734; }
+a, a:visited, .disqus-wrapper a, #builder a.selected { color: #e16734; }
 a:hover, a:focus, #footer a:hover, #footer a:focus { color: #82A6B0; }
 
 b.border-a,
@@ -205,9 +205,6 @@ code { background-color: hsla(193, 23%, 36%, 0.5); border-radius: 3px;  -moz-bor
 #container[dir="rtl"] #body li:before { padding-left: 0.5em; }
 
 #html5logo { display: inline-block; margin-top: 1em; }
-#rc10 { display: none; }
-#rc10:target { display: block; } 
-#rc10 li { border-color: #313A38; }
 a[href="#dsq-content"] { color: inherit; text-shadow: 1px 1px 0 black; }
 
 /* INITIALIZR */
