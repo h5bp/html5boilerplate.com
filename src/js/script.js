@@ -65,31 +65,33 @@ g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js
 s.parentNode.insertBefore(g,s)}(document,'script'));
 
 $(function(){
-	var parameters = {}, builder = $('#builder'), downloadelm = $('#builder-download'), downloadurl = downloadelm.attr('href');
+	var parameters = [], builder = $('#builder'), downloadelm = $('#builder-download'), downloadurl = downloadelm.attr('href');
 	$('#builder-custom').toggle(function(e) {
 	  builder.css({ opacity: 0 }).show().animate({ opacity: 1}, 1000);
     e.preventDefault();
 	}, function(e) { builder.animate({ opacity: 0 }, 1000, function() { builder.hide('slow'); }); e.preventDefault(); });
 	
-	$("#builder > div > a").click(function(e){
-	  var that = $(this); 
-	  var option = that.parent();
-		option.find("a").removeClass("selected");
-		var choice = that[0].id;
-    if(choice) {
-		    that.addClass("selected");
-		    parameters[option[0].id] = /^default\-/g.exec(choice) ? '' : choice;
-      }		  
-      e.preventDefault();
+	$('#builder input:checked').each(function() { parameters.push(this.id); });
+	
+	$("#builder input").click(function(e){
+	  var that = $(this),
+	      choice = that[0].id,
+        existsAt = parameters.indexOf(choice);
+
+    if(that.is(':checked') && (existsAt === -1)) {
+      parameters.push(choice);
+    }
+
+    if(!that.is(':checked') && (existsAt !== -1)) {
+      parameters.splice(existsAt, 1);
+    }
 	});
 	
 	downloadelm.click(function() { 
 	  var params = '';
-	  var trackparams = '';
-    $.each(parameters, function(key, value) { if(value) { params += value + '&'; } });
-		if (params != '') {trackparams = '&'+params;}
-		_gaq.push(['_trackPageview', '/build/'+trackparams.substr(0, trackparams.length-1)]);
-		this.href =  downloadurl + params.substr(0, params.length-1);
+	  params = parameters.join('&');
+		_gaq.push(['_trackPageview', '/build/&'+ params]);
+		this.href =  downloadurl + params;
 	});	
 });
 

@@ -92,44 +92,32 @@
       </p>
       <div class="focus">
         <div id="builder" class="clearfix">
-          <p>{% blocktrans %}Click on your favourite option for each feature! Default options are highlighted.{% endblocktrans %}</p>
-          <div id="cond">
-            <h4>{% blocktrans %}Conditional classes{% endblocktrans %}</h4>          
-            <a id="no-cond" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
-            <a id="oldie" href="#">{% blocktrans %}Old IE class{% endblocktrans %}</a>
-            <a id="default-ie"class="selected" href="#">{% blocktrans %}All IE classes{% endblocktrans %}</a>
+          <div id="libs" class="clearfix">
+            <h4>{% blocktrans %}Modernizr & Respond{% endblocktrans %}</h4>
+            <label><input checked type='checkbox' id='modernizr'> Modernizr</label>            
+            <label><input checked type='checkbox' id='respond'> Respond</label>                        
+          </div>      
+          <div id="jquery" class="clearfix">
+            <h4>{% blocktrans %}jQuery{% endblocktrans %}</h4>
+            <label><input checked type='checkbox' name="jquery" id='jquerymin'> Minified</label>                        
+            <label><input type='checkbox' name="jquery" id='jquerydev'> Unminified</label>            
           </div>
-          <div id="mobile" class="clearfix">
-            <h4>{% blocktrans %}Mobile{% endblocktrans %}</h4>
-            <a id="default-mobile" class="selected" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
-            <a id="hand" href="#">{% blocktrans %}Handheld stylesheet{% endblocktrans %}</a>
-          </div>      
-          <div id="javascript" class="clearfix">
-            <h4>{% blocktrans %}Javascript{% endblocktrans %}</h4>
-            <a id="no-js" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
-            <a id="no-jq" href="#">{% blocktrans %}No jQuery{% endblocktrans %}</a>
-            <a id="jqdev" href="#">{% blocktrans %}jQuery{% endblocktrans %}</a>            
-            <a id="default-js" class="selected" href="#">{% blocktrans %}jQuery minified{% endblocktrans %}</a>
-          </div>      
-          <div id="shivs" class="clearfix">
-            <h4>{% blocktrans %}HTML5 Enabler{% endblocktrans %}</h4>
-            <a id="no-compat" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
-            <a id="default-js" class="selected" href="#">{% blocktrans %}Modernizr{% endblocktrans %}</a>
-            <a id="shiv" href="#">{% blocktrans %}html5shiv{% endblocktrans %}</a>
-          </div>        
+
           <div id="config" class="clearfix">
-            <h4>{% blocktrans %}Server Config{% endblocktrans %}</h4>
-            <a id="default-config" class="selected" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
-            <a id="htaccess" href="#">{% blocktrans %}.htaccess{% endblocktrans %}</a>  
-            <a id="webconfig" href="#">{% blocktrans %}web.config{% endblocktrans %}</a>
-            <a id="nginx" href="#">{% blocktrans %}nginx.conf{% endblocktrans %}</a>  
+            <h4>{% blocktrans %}Server Config{% endblocktrans %}</h4>            
+            <label><input checked type='checkbox' id='h5bp-htaccess'> .htaccess</label>                        
+            <label><input type='checkbox' id='h5bp-nginx'> ngnix.conf</label>            
+            <label><input type='checkbox' id='h5bp-webconfig'> web.config</label>                        
           </div>  
-          <div id="analytics" class="clearfix">
-            <h4>{% blocktrans %}Google Analytics{% endblocktrans %}</h4>
-            <a id="analytics" href="#">{% blocktrans %}Analytics Snippet{% endblocktrans %}</a>
-            <a id="default-analytics" class="selected" href="#">{% blocktrans %}Nope{% endblocktrans %}</a>
+          <div id="rest">
+            <h4>Others</h4>
+            <label><input checked type='checkbox' id='h5bp-iecond'> All IE classes</label>
+            <label><input checked type='checkbox' id='h5bp-scripts'> script.js & plugin.js</label>                        
+            <label><input checked type='checkbox' id='h5bp-analytics'> Google Analytics Snippet</label>                     
+            <label><input checked type='checkbox' id='h5bp-chromeframe'> User-installable Chrome Frame for IE6</label>                                             
           </div>
-            <p>{% blocktrans %}<a href="http://initializr.com/generate?boilerplate&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!{% endblocktrans %}</p>
+
+            <p>{% blocktrans %}<a href="/builder?mode=h5bp&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!{% endblocktrans %}</p>
         </div>        
       </div>    
 
