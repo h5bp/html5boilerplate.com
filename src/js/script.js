@@ -89,8 +89,29 @@ $(function(){
 	
 	downloadelm.click(function() { 
 	  var params = '';
+	  //Replace refs to both jQueries with one
+	  var jquerymin = parameters.indexOf('jquerymin'),
+	      jquerydev = parameters.indexOf('jquerydev'),
+	      respond = parameters.indexOf('respond'),
+	      modernizr = parameters.indexOf('modernizr');
+	  if((jquerymin > -1) && (jquerydev > -1) && (parameters.indexOf('jquery') == -1)) {
+	    parameters.splice(jquerymin, 1)
+	    parameters.splice(parameters.indexOf('jquerydev'), 1);
+	    parameters.push('jquery');
+	  } else {
+	    parameters.splice(parameters.indexOf('jquery'), 1);
+	  }
+	  
+	  if((respond > -1) && (modernizr > -1) && (parameters.indexOf('modernizrrespond') == -1)) {
+	    parameters.splice(parameters.indexOf('respond'), 1)
+	    parameters.splice(parameters.indexOf('modernizr'), 1);
+	    parameters.push('modernizrrespond');
+	  }	else {
+	    parameters.splice(parameters.indexOf('modernizrrespond'), 1);
+	  }  
+	  
 	  params = parameters.join('&');
-		_gaq.push(['_trackPageview', '/build/&'+ params]);
+		_gaq.push(['_trackPageview', '/build/&print&'+ params]);
 		this.href =  downloadurl + params;
 	});	
 });

@@ -75,7 +75,7 @@
 .wikistyle table{margin:1em 0 !important;}
 .wikistyle table th{border-bottom:1px solid #bbb !important;padding:.2em 1em !important;}
 .wikistyle table td{border-bottom:1px solid #ddd !important;padding:.2em 1em !important;}
-.wikistyle pre{margin:1em 0;font-size:12px;background-color:hsla(193, 23%, 36%, 0.5);border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.wikistyle pre{margin:1em 0;font-size:12px;background-color:hsla(193, 23%, 36%, 0.5);border:1px solid #ddd;padding:5px;line-height:1.5em;color:#fff;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 .wikistyle pre::-webkit-scrollbar{height:8px;width:8px;}
 .wikistyle pre::-webkit-scrollbar-track-piece{margin-bottom:10px;background-color:#e5e5e5;border-bottom-left-radius:4px 4px;border-bottom-right-radius:4px 4px;border-top-left-radius:4px 4px;border-top-right-radius:4px 4px;}
 .wikistyle pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
