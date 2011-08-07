@@ -210,12 +210,10 @@
         <li>{% blocktrans %}console.log messages are no longer commented out. use log() instead{% endblocktrans %}</li>
 
         <li>{% blocktrans %}Much faster build process{% endblocktrans %}
-          <p>{% blocktrans %}Intermediate stages are stored in a new intermediate folder, and only
-          files that should be published are copied into the publish folder.{% endblocktrans %}</p>
-
+          
           <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
           have already been processed will not be reprocessed unless the source
-          has changed.{% endblocktrans %}</p>        
+          has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
         </li>
 
 
