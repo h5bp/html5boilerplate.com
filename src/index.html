@@ -127,7 +127,7 @@
     
   <div class="new" id="v1">
     <h3>{% blocktrans %}HTML5 Boilerplate is 2.0!{% endblocktrans %}</h3>
-    <small>{% blocktrans %}Monday, Aug 10th, 2011{% endblocktrans %}</small>
+    <small>{% blocktrans %}Wednesday, Aug 10th, 2011{% endblocktrans %}</small>
     <p>{% blocktrans %}
 
     {% endblocktrans %}</p>
@@ -156,7 +156,10 @@
     </div>
     <div class="notice">  
       <h4>FAST BUILD SCRIPT with @import INLINING</h4>
-      write something here
+      <p>Files are not deleted at the beginning of every build, and files that
+      have already been processed will not be reprocessed unless the source
+      has changed. A new "intermediate" folder is used for this.
+      <p>If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.
     </div> 
     <div class="notice">
       <h4>RESPOND.JS</h4>
@@ -168,12 +171,12 @@
       <h4>PNGFIX &amp; HANDHELD REMOVED</h4>
       <ul>
         <li>Remove handheld.css as we do not think it was useful among the diverse feature phones</li>
-        <li>We feel tools like imagealpha and pngquant are more useful than using stopgap fixes like belatedpng.</li>      
+        <li>We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a> are more useful than using stopgap fixes like belatedpng.</li>      
       </ul>      
     </div> 
     <div class="changelog">
       <h3>Changelog</h3>
-      <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 220 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">45 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
+      <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 270 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
       <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good.{% endblocktrans %}</p>
 
       <h4>{% blocktrans %}Build Script{% endblocktrans %}</h4>

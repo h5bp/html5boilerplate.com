@@ -78,9 +78,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Hebrew */
 @font-face {
-	font-family: 'AharoniCLMBold'; src: url('../assets/aharoniclm-bold-webfont.eot'); src: url('../assets/aharoniclm-bold-webfont.eot?iefix') format('eot'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf')  format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); } 
+    font-family: 'AharoniCLMBold'; src: url('../assets/aharoniclm-bold-webfont.eot'); src: url('../assets/aharoniclm-bold-webfont.eot?iefix') format('eot'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf')  format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); } 
 
-	
+    
 
 h1, em, h3, h4,
 .wikiconvertor h2 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
@@ -219,7 +219,7 @@ p.social i:last-child { padding-top: 0; }
 div > p[class] { border-bottom: 2px dotted #1e2322; padding-bottom: 0.5em; text-shadow: 1px 1px 0px black; margin: 0; font-size: 0.9em; }                 
 div > p.social, div > p.lang { padding-bottom: 0; }
 embed { margin-bottom: 0.5em; }
-div > ul > li { line-height: 1.5; padding: 10px 1em; border-bottom: 2px dotted #1e2322; }
+div > ul > li { line-height: 1.3; padding: 4px 1em; border-bottom: 2px dotted #1e2322; }
 div > ul > li:last-child { border-bottom: 0; }
 
 #container[dir="rtl"] li { text-align: right; }
@@ -242,7 +242,7 @@ div > ul > li:before { content: "★"; padding-right: 0.5em; }
 #builder p { border-bottom: 0; font-size: 1em; padding-bottom: 1em; }
 
 /* New Changelog */
-.new li:before {  font-size: 59%; vertical-align: text-bottom; color: #CAB486;  }
+.new li:before {  font-size: 59%;   vertical-align: 20%;   color: #CAB486;  }
 .new li { text-indent: -15px; }
 .new li p { text-indent: 0; }
 .new > h3 + small { font-size: 70%; margin: 0 0 2em; display: block; text-transform: uppercase; }
