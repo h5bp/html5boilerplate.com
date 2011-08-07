@@ -7,6 +7,13 @@
 .docs .right {float: right;}
 .docs .button {font-size: 0.8em;}
 
+
+
+/* random oneoff shittttt */
+
+img[src$="server-logos.png"] { float: right; } 
+
+
 /** disqussss */
 .docs #disqus_thread { display: block;}
 

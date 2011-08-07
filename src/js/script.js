@@ -20,12 +20,12 @@ $(document).ready(function(){
   $('.source h4 a').toggle(
     function(e) {
       $(this).addClass('active');
-      $(this).parent().next().show('slow');
+      $(this).parent().next().stop().show('slow');
       e.preventDefault();
     },
     function(e) {
       $(this).removeClass('active');
-      $(this).parent().next().hide('slow');
+      $(this).parent().next().stop().hide('slow');
       e.preventDefault();
     }        
   );
