@@ -8,7 +8,7 @@
 
 exports = module.exports = {
   // --server, when set to true, will start a connect static server once generation is done
-  server: true,
+  server: false,
   
   // server port used if --server flag provided
   port: 4000,
@@ -17,7 +17,7 @@ exports = module.exports = {
   src: "./src/docs/wiki-upstream",
   
   // destination folder, place where the generated files will land
-  dest: "./src/docs/gen",
+  dest: "./docs",
   
   // a single layout files with a {{ content }} placeholder.
   layout: "./src/docs/doclayout.html",
@@ -32,5 +32,5 @@ exports = module.exports = {
   baseurl: '/docs',
   
   // Enable verbose output (defaults false)
-  verbose: true
+  verbose: false
 };

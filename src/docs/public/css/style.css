@@ -89,7 +89,7 @@ html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] #bod
 html[lang='he'] em, html[lang='he'] #body h3, html[lang='he'] #disqus_thread h3 { font-family: 'AharoniCLMBold', Arial, sans-serif; }
 #container[dir="rtl"] h4, #container[dir="rtl"] code{ direction:ltr; }
 
-#body h3, #disqus_thread {  text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871; }
+#body h3 {  text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871; }
 
 /* we do not need to link to ourselves. only our friends. <3 */
  
