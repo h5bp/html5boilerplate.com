@@ -273,6 +273,8 @@ img[src$='chrome-frame.png'] { margin-top: -2em; }
   color: white;
 }
 
+.sigcommits li::before { display:none !important; }
+.sigcommits li { text-indent: 0;}
 
 /* SOURCE */
 .js .source .syntaxhighlighter { display: none; }

@@ -177,7 +177,7 @@
     <div class="changelog">
       <h3>Changelog</h3>
       <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 270 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
-      <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good.{% endblocktrans %}</p>
+      <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
 
 
       <h4>index.html</h4>
@@ -333,10 +333,25 @@
 
         <li>{% blocktrans %}Allow Blackberry to read vCards, because those people are swell.  {% endblocktrans %}      
       </ul>     
-       <h5>nginx, node.js, lighttpd, google app engine, IIS</h5>     
+       <h5>{% blocktrans %}nginx, node.js, lighttpd, google app engine, IIS</h5>     
        <ul>
-         <li>Lots of updates and fixes. View the official <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">h5bp server configs repo</a>
+         <li>{% blocktrans %}Lots of updates and fixes. View the official <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">h5bp server configs repo</a>
        </ul>
+       
+       <h4>{% blocktrans %}Significant commits{% endblocktrans %}</h4>
+       <p>{% blocktrans %}The commit messages on these commits are particularly fun and worth a read if you're into frontend research{% endblocktrans %}</p>
+       
+       <ul class="sigcommits">
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/26a391c">26a391c</a></samp> {% blocktrans %}Revert "Added native iOS inertia scrolling"                                                                {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/ddaf66a">ddaf66a</a></samp> {% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles                       {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/e5e057e">e5e057e</a></samp> {% blocktrans %}Change our conditional comments around the HTML tag to use a single .oldie class.                          {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/7f53f98">7f53f98</a></samp> {% blocktrans %}Revert "Change our conditional comments around the HTML tag to use a single .oldie class."                 {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/648026d">648026d</a></samp> {% blocktrans %}Tweaking our hot pink ::selection based on a suggestion from David Murdoch and research from Adam Diehm.   {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/0e1c7ba">0e1c7ba</a></samp> {% blocktrans %}Use minified jQuery by default.                                                                            {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/a0ac99a">a0ac99a</a></samp> {% blocktrans %}optimize build process                                                                                     {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/bb22ca6">bb22ca6</a></samp> {% blocktrans %}Remove the cache-busting query parameters from the HTML.                                                   {% endblocktrans %}
+       </ul>                                                                                                                                        
+
     </div>
   </div>
      
