@@ -123,7 +123,7 @@ h1:hover { color: #e16734; }
 body { background: #232927; color: #e3d7bf; padding-bottom: 3em; font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; }
 
 a, a:hover, a:focus, a:visited  { text-decoration: none; }
-a, a:visited, .disqus-wrapper a, #builder a.selected { color: #e16734; }
+a, a:visited, .disqus-wrapper a, #builder a.selected, a.announcements { color: #e16734; }
 a:hover, a:focus, #footer a:hover, #footer a:focus { color: #82A6B0; }
 
 #body, .disqus-wrapper { padding: 1em 0; }
