@@ -1,0 +1,281 @@
+
+<!doctype html public "✰">
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  
+  <title dir="ltr">HTML5 Boilerplate 1.0 Release announcement</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+
+  <link rel="stylesheet" media="screen" href="css/style.css" >
+  <link rel="stylesheet" media="screen" href="/css/shCore.css" >
+
+  <!-- JavaScript at the bottom, except for Modernizr -->
+  <script src="//html5boilerplate.com/js/libs/modernizr-1.7.min.js"></script> 
+</head>
+
+<body>
+  <div id="container" dir="ltr"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+
+    
+
+    <div id="body">
+
+      
+
+      
+          
+
+      
+    
+  <div class="new" id="v1">
+    <h3>HTML5 Boilerplate is 1.0!</h3>
+    <small>Monday, March 21, 2011</small>
+    <p>Along with HTML5 Boilerplate's rock solid commitment to cross-browser consistency, H5BP brings you <strong>delicious documentation, a site optimizing build script, and a custom boilerplate builder. </strong> In addition to this, we now support lighttpd, Google App Engine, and NodeJS with optimized server configurations <small>(along with Apache, Nginx, and IIS)</small> and we've reduced the overall size of the published boilerplate by <abbr title="Killing the profiling script was most of this. But we reduced HTML/CSS by 1%. ;)">50%</abbr>.</p>
+     <div class="notice clearfix">
+       
+       
+      <figure>
+        <img src="img/docs.png">
+        <figcaption>Quickly look up the <i>why</i> of everything you see.</figcaption>
+      </figure>
+
+
+       
+      <h4>Docs!</h4>
+      
+      <p> We now have rather <a href="/docs/">comprehensive documentation</a>, contributed by the community and designed/implemented by <a href="http://github.com/mklabs">Mickael Daniel</a>. You can add to it yourselves if you like. </p><p>Feel free to dig in if you're all WTF over a particular bit of code. We likely have already documented what is going on and why it's a good idea. Some pages you'll enjoy the read through: <a href="/docs/#the-markup">The Markup</a>, <a href="/docs/#the-style">The Style</a>, <a href="/docs/#Make-it-better">Make It Better</a>, and <a href="/docs/#Get-Started!">Getting Started</a>. We also now have <a href="#videos">several videos to walk you through this stuff</a>.</p>
+
+                
+     </div>
+    <div class="notice clearfix">
+      
+      
+      
+      <figure>
+        <img src="img/optim.png">  
+        <figcaption>Satisfy performance metrics tools like YSlow and PageSpeed easily.</figcaption>
+      </figure>
+      
+      
+      
+      <h4>Boilerplate Build Script</h4>
+      <p>The Boilerplate <a href="http://html5boilerplate.com/docs/#Build-script">build script</a> is ready for prime time. You know all those site optimization tricks that Steve Souders tells you is a good idea? You're four keystrokes away from nailing a 100% on them. Now you can:</p>
+      <ul>
+        <li>Combines and minifies javascript (via yui compressor)</li>
+        <li>Combines and minifies CSS</li>
+        <li>Optimizes JPGs and PNGs (with jpegtran &amp; optipng), saving 15-50% of page weight</li>
+        
+        <li>Removes development only code (any remaining console.log files, profiling, test suite)</li>
+        </ul><ul class="bs2ndhalf">
+        <li>Basic to aggressive html minification (via htmlcompressor)</li>
+        <li>Revises the file names of your assets so that you can use heavy caching (1 year expires) without cache conflicts.</li>
+        <li>Upgrades the .htaccess to use heavier caching</li>
+        <li>Updates your HTML to reference these new hyper-optimized CSS + JS files</li>
+        <li>Updates your HTML to use the minified jQuery instead of the development version</li>
+        <li>Remove unneeded references from HTML (like a root folder favicon)</li>
+        <li>build according to what environment you want: production, test or development</li>
+      </ul>
+      
+      <p>Together with the server configurations (like the .htaccess), we've seen reductions of total page weight from 120k to 30k. We <strong>guarantee A-level performance with YSlow</strong> and Google PageSpeed when using the build script along with the server configs. <small>(Okay, maybe not "guarantee", but your parents will be really proud of you. :)</small></p>      
+      
+      <div class="buildgraphics">
+        <img src="./img/chart.png" height="300" title="Results were from running the build script on a pre-release 1.0 version of html5boilerplate.com itself." alt="379k before. 170k after. Results were from running the build script on a pre-release 1.0 version of html5boilerplate.com itself.">
+        
+        <noscript data-html="&lt;iframe title=&quot;YouTube video player&quot; src=&quot;http://www.youtube.com/embed/OXpCB3U_4Ig&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+          &lt;iframe title="YouTube video player" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+        </noscript>
+        
+        <img src="./img/server-logos.png" height="300" title="We provide default configuration for Apache, IIS, Nginx, Lighttpd, Google App Engine, and NodeJS." alt="We provide default configuration for Apache, IIS, Nginx, Lighttpd, Google App Engine, and NodeJS.">      
+      </div>
+    </div>
+    <div class="notice clearfix">
+      
+      <figure>
+        <img src="img/initializr.png">    
+        <figcaption>Customize your own custom boilerplate to your delight.</figcaption>
+      </figure>
+        
+      <h4>Boilerplate Custom</h4>
+      <p>Oh hell yes.  You asked for it, now you have it: a custom builder! You might have spotted <a href="http://initializr.com/">Initializr</a> by <a href="http://twitter.com/#!/verekia">Jonathan Verrecchia</a>. We've integrated it into the project, so now you have complete control to choose only what you want.</p>
+      <ul>
+      <li>Choose what kind of conditional classes you want: none, oldIE or all IE versions</li>
+      <li>Do you want handheld styles? Now you can choose!</li>
+      <li>If you would like jQuery minified version, you can have it or not have javascript or jQuery all together.</li>
+      <li>Love html5shiv? Now you can use that instead of modernizr</li>
+      <li>Config files for IIS, Nginix or none available to choose from</li>
+      <li>If Google Analytics is not your thing, you can choose to not have it</li>
+      </ul>      
+    </div>  
+    
+    <p>Now, aside from docs, the build script, and the initializr, we've got a bunch of enhancements in the base boilerplate:</p>
+    <h4>Build Script</h4>
+    <ul>
+      <li>Massive rewrite so you can define which HTML, CSS, JS files to operate on in your configurable project.properties files. This allows you to let the build script operate on very unique folder architecture, including non-H5BP projects.</li>
+      <li>Environments are definable.</li>
+      <li>htaccess Expires headers are upgraded to 1year, as the filenames are revved</li>
+      <li>Added a source directory option in the build config, so your source files can be in a different directory from the final generated files (useful for other CMSes/frameworks like Django). </li>    
+    </ul>
+
+    <h4>index.html</h4>
+    <ul>
+      <li>We use a <a href="http://paulirish.com/2010/the-protocol-relative-url/">protocol-relative url</a> for the jQuery include, to prevent the mixed content warning.</li>
+      <li>The order of <code>&lt;meta&gt;</code> tags, <code>&lt;title&gt;</code>, and charset has been <a href="https://github.com/paulirish/html5-boilerplate/wiki/The-markup ">documented more extensively now</a>. TL;DR: You are <a href="https://github.com/paulirish/html5-boilerplate/commit/4b67ea5cabb8c2b75faf2e255344cdffdf190464">safe to use the boilerplate's order of tags</a>.</li>
+      <li>We've shortened up the Google Analytics snippet.</li>
+      <li>Added an ARIA <code>role</code> attribute to <code>div#main</code>. This assumes your main content goes within that container.</li>
+      <li>IE9 doesn't get its own conditional class! Yay!</li>    
+    </ul>
+
+    <h4>style­.css</h4>
+    <ul>
+      <li>Added <code>.focusable</code> helper class that extends <code>.visuallyhidden</code> to allow the element to be focusable when navigated to via the keyboard.</li>
+      <li>Anchor links are no longer reset. Basically our reset is the effectively merged with Eric Meyer's recent CSS reset update and also the HTML5 Doctor reset.</li>
+      <li>An unordered list within a nav element will no longer have a margin.</li>
+      <li>All helper classes are now after primary styles to ensure correct overrides and not be burdened with resets. </li>
+      <li><code>.visuallyhidden</code> is no longer camelCase, as to be consistent with other classname formats.</li>
+      <li>Updated the specificity of <code>.visuallyhidden</code> rule to make sure it overrides all other declarations. </li>
+      <li>Removed reset on image elements within table cells as they look ugly alongside multiline texts. Browsers default to baseline alignment for images which works better than top alignment.</li>
+      <li>Increased margin-left on ol, to allow for 2-digit list numbers.</li>
+      <li>Added a print reset on IE's proprietary filters.</li>
+      <li>Print styles no longer prints hash links or javascript links.</li>
+      <li>Updated sub/sup css to make them not be impacted by line-height, so now you can do sub/superscripts without worrying.</li>    
+    </ul>
+
+    <h4>Project</h4>
+    <ul>
+      <li>Added a <a href="http://humanstxt.org">humans.txt</a> so you can clarify authorship and tools used</li>
+      <li>Removed YUI profiling. You probably weren't using it anyway.</li>
+      <li>Removed QUnit's unit tests. There is no need to ship with them, really.</li>    
+    </ul>
+    
+    <h4>Webserver Configs</h4>
+    <h5>.htaccess</h5>
+    <ul>
+      <li>.htaccess is far more documented now. Take a read through it!</li>
+      <li><a href="https://github.com/paulirish/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee">Changed mimetype of .ico files to "image/x-icon"</a>.</li>
+      <li>HTML Manifest files now use <code>.appcache</code> extension instead of <code>.manifest</code>, as per <a href="http://html5.org/r/5812">http://html5.org/r/5812</a>.</li>
+      <li>Force deflate for accept-encoding headers mangled by turtle tappers, courtesy of <a href="http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/">Yahoo!'s research</a></li>
+      <li>We nerfed some of the directives in case you're on server without <code>mod_headers</code>. (Which is totally crazy, man)</li>
+      <li>Block access to .git and .svn folders.</li>
+      <li>Eradicating Chrome's console warning on WOFF font downloads.</li>
+      <li>More optimizations available if you set the .htaccess details up in your httpd.conf</li>
+      <li>.htaccess now caches .htc files</li>
+      
+      <li>Moved all server configurations (except apache's .htaccess) over to <a href="https://github.com/paulirish/html5-boilerplate-server-configs">the new html5-boilerplate-server-configs repo</a>. Head over there if you are not using Apache. </li>
+      
+      <li>Updated <code>.htaccess</code> and <code>mime.types</code> for ogg formats.</li>
+      <li>Fixed regression where EOT fonts had been excluded from DEFLATE compression</li>
+      <li>Apache version independence: Use <code>mod_filter</code> for compression, with fallback to AddOutputFilterByType directive for legacy versions</li>
+      <li>Added plugin/extension mime types for Safari, Chrome, Firefox</li>
+    </ul>
+    <h5>nginx</h5>
+    <ul>
+      <li>Cleaned up cache expires directives.</li>
+      <li>Now includes SVG and font formats for gzipping.</li>
+      <li>expires header bug fixed.</li>
+    </ul>
+    <h5>IIS</h5>
+    <ul>
+      <li>Added Flash video mime types to IIS server</li>
+      <li>Fixed some mimetype weirdness that was preventing proper caching</li>
+    </ul>
+    
+    <ul>
+      <li>Also Google App Engine, Lighttpd, and NodeJS <a href="https://github.com/paulirish/html5-boilerplate-server-configs">configurations were added</a></li>
+    </ul>
+    
+    <p>Basically a lot of great updates were made for 1.0. <a href="https://github.com/paulirish/html5-boilerplate/compare/v0.9.5...v1.0">Here are all 220 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">102 contributors</a>. You may ask though, <a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">do I need to upgrade existing sites</a>? Short answer: nah, you're good.</p>
+
+
+  </div>
+     
+      
+      
+        
+        
+        
+        
+        
+    </div>
+    <div id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+
+        <a href="http://paulirish.com"><img width="50" height="50" src="img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>        
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li>Dave Kirk</li> 
+        <li><a href="http://mathiasbynens.be/">Mathias Bynens</a></li>
+        <li><a href="http://twitter.com/verekia">Jonathan Verrecchia</a></li>
+        <li><a href="http://twitter.com/ultror">nlogax</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://www.vervestudios.co/">David Murdoch</a></li>
+        <li><a href="http://www.ad7six.com/">Andy Dawson</a></li>    
+        <li><a href="http://www.michael-van-laar.de/">Michael van Laar</a></li>
+       </ul><ul>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="http://www.mintusability.com">Mikko Tikkanen</a></li> 
+        <li><a href="http://twitter.com/niksy">Ivan Nikolić</a></li> 
+        <li><a href="http://adeelejaz.com/">Adeel Ejaz</a></li> 
+        <li><a href="http://garowetz.ca/">Stephen Gariepy</a></li>
+        
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ateş</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        </li><li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </div>
+    
+  <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
+       
+    
+  </div>
+  
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="/js/plugins.js"></script>
+  <script src="/js/script.js"></script>
+  <!-- end scripts-->
+  
+
+
+</body>
+</html>
