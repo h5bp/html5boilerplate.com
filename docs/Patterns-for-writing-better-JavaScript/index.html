@@ -1,0 +1,200 @@
+<!doctype html public "✰">
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <title>Patterns for writing better JavaScript || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="/docs/public/css/style.css" >
+  <link rel="stylesheet" href="/docs/public/css/docs.css" >
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+    <div id="header">  
+         <p class="lang">
+           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
+         </p>        
+         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
+         <h2>A rock-solid default for HTML5 awesome.</h2>  
+    </div>
+    <div id="body" class="docs">
+      <div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/960.gs/">960.gs</a></li>
+                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Articles-on-using-boilerplate/">Articles on using boilerplate</a></li>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
+                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
+                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/Experimental/">Experimental</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
+                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
+                      <li><a href="/docs/head-Tips/">head Tips</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
+                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
+                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
+                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
+                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
+                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
+                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
+                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
+                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
+                      <li><a href="/docs/rake/">rake</a></li>
+                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
+                      <li><a href="/docs/The-markup/">The markup</a></li>
+                      <li><a href="/docs/The-style/">The style</a></li>
+                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
+                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
+                      <li><a href="/docs/web.config/">web.config</a></li>
+          </ul>
+      </div>
+      
+      <div class="wikiconvertor-content wikistyle relative">
+        <p class="dwn">
+          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/Patterns-for-writing-better-JavaScript/_edit">Edit this page</a></span>
+        </P>
+        
+        <p>For serious JavaScript coders who want to code better, Stoyan Stefanov and Douglas Crockford have summarized some of the key topics and issues in their tutorials and books. Below is a preview list of items covered by them. At the bottom of the page, there are the references to their free tutorials and books.</p>
+
+<ol>
+<li>Writing Maintainable Code</li>
+<li>Minimizing Globals</li>
+<li>The Problem with Globals</li>
+<li>Side Effects When Forgetting var</li>
+<li>Access to the Global Object</li>
+<li>Single var Pattern</li>
+<li>Hoisting: A Problem with Scattered vars</li>
+<li>for Loops</li>
+<li>for-in Loops</li>
+<li>(Not) Augmenting Built-in Prototypes</li>
+<li>switch Pattern</li>
+<li>Avoiding Implied Typecasting</li>
+<li>Avoiding eval()</li>
+<li>Number Conversions with parseInt()</li>
+<li>Coding Conventions</li>
+<li>Indentation</li>
+<li>Curly Braces</li>
+<li>Opening Brace Location</li>
+<li>White Space</li>
+<li>Naming Conventions</li>
+<li>Capitalizing Constructors</li>
+<li>Separating Words</li>
+<li>Other Naming Patterns</li>
+<li>Writing Comments</li>
+<li>Avoid void</li>
+<li>Avoid with Statement</li>
+<li>Avoid continue Statement</li>
+<li>Avoid Bitwise Operators if possible</li>
+</ol>
+
+<p><strong>Reference:</strong></p>
+
+<p>Free Tutorials<br /><a href="http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-writing-high-quality-javascript/">The Essentials of Writing High Quality JavaScript</a><br /><a href="http://www.yuiblog.com/blog/2007/06/08/video-crockford-goodstuff/">JavaScript: The Good Parts</a></p>
+
+<p>Books<br /><a href="http://oreilly.com/catalog/9780596517748">JavaScript: The Good Parts</a>, <br /><a href="http://oreilly.com/catalog/9780596806767">JavaScript Patterns</a></p>
+        <div id="disqus_thread">
+          
+        </div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+    <footer id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </footer>
+    <img id="html5logo" src="//html5boilerplate.com/images/HTML5_Logo.svg" height="60">
+    
+  </div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/docs/public/js/jquery.min.js"><\/script>')</script>
+  
+  <script src="//ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script>window.JSON || document.write("<script src='/docs/public/js/libs/json2.js'>\x3C/script>")</script>
+  <script src="//ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write("<script src='/docs/public/js/libs/underscore.min.js'>\x3C/script>")</script>
+  
+  <script src="/docs/public/js/libs/backbone.min.js"></script>
+  <script src="/docs/public/js/script.js"></script>
+  
+  <script>
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '/docs/Patterns-for-writing-better-JavaScript/';
+      // todo: change this with something like h5bp.com/docs/docs/Patterns-for-writing-better-JavaScript/
+      var disqus_url = exports.disqus_url= '/docs/Patterns-for-writing-better-JavaScript/';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for /docs/Patterns-for-writing-better-JavaScript/';
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    })(this);
+  </script>
+  
+</body>
+</html>
