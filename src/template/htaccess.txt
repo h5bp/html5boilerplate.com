@@ -25,19 +25,13 @@
 # github.com/rails/rails/commit/123eb25#commitcomment-118920
 # {% blocktrans %}Use ChromeFrame if it's installed for a better experience for the poor IE folk{% endblocktrans %}
 
-<IfModule mod_setenvif.c>
-  <IfModule mod_headers.c>
-    BrowserMatch MSIE ie
-    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
-  </IfModule>
-</IfModule>
 
 <IfModule mod_headers.c>
-# 
-# {% blocktrans %}Because X-UA-Compatible isn't sent to non-IE (to save header bytes), we need to inform proxies that content changes based on UA{% endblocktrans %}
-# 
-  Header append Vary User-Agent
-# {% blocktrans %}Cache control is set only if mod_headers is enabled, so that's unncessary to declare{% endblocktrans %}
+    Header set X-UA-Compatible "IE=Edge,chrome=1"
+    # {% blocktrans %}mod_headers can't match by content-type, but we don't want to send this header on *everything*{% endblocktrans %}
+    <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|xpi|safariextz|vcf)$" >
+      Header unset X-UA-Compatible
+    </FilesMatch>
 </IfModule>
 
 
@@ -65,7 +59,7 @@
 # {% blocktrans %}your subdomains like "sub.domain.com"{% endblocktrans %}
 # 
 
-<FilesMatch "\.(ttf|otf|eot|woff|font.css)$">
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
   <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
   </IfModule>
@@ -77,6 +71,12 @@
 # {% blocktrans %}Proper MIME type for all files{% endblocktrans %}
 # ----------------------------------------------------------------------
 
+
+# {% blocktrans %}JavaScript{% endblocktrans %}
+#   {% blocktrans %}Normalize to standard type (it's sniffed in IE anyways) {% endblocktrans %}
+#   tools.ietf.org/html/rfc4329#section-7.2
+AddType application/javascript         js
+
 # {% blocktrans %}Audio{% endblocktrans %}
 AddType audio/ogg                      oga ogg
 AddType audio/mp4                      m4a
@@ -86,7 +86,8 @@ AddType video/ogg                      ogv
 AddType video/mp4                      mp4 m4v
 AddType video/webm                     webm
 
-# {% blocktrans %}Proper svg serving. Required for svg webfonts on iPad{% endblocktrans %}
+# {% blocktrans %}SVG{% endblocktrans %}
+#   {% blocktrans %}Required for svg webfonts on iPad{% endblocktrans %}
 #   twitter.com/FontSquirrel/status/14855840545
 AddType     image/svg+xml              svg svgz 
 AddEncoding gzip                       svgz
@@ -114,22 +115,25 @@ AddType text/x-vcard                   vcf
 # ----------------------------------------------------------------------
 
 # {% blocktrans %}e.g. Inside of script.combined.js you could have{% endblocktrans %}
-#
-#   <!--#include file="jquery-1.4.2.js" -->
-#   <!--#include file="jquery.idletimer.js" -->
-#
-# {% blocktrans %}and they would be included into this single file{% endblocktrans %}
-# 
-#
-# 
-# {% blocktrans %}This is not in use in the boilerplate as it stands. You may choose to name your files in this way for this advantage or concatenate and minify them manually.{% endblocktrans %}
-# 
+#   <!--#include file="libs/jquery-1.5.0.min.js" -->
+#   <!--#include file="plugins/jquery.idletimer.js" -->
+# {% blocktrans %}and they would be included into this single file.{% endblocktrans %}
+
+# {% blocktrans %}This is not in use in the boilerplate as it stands. You may{% endblocktrans %}
+# {% blocktrans %}choose to name your files in this way for this advantage or{% endblocktrans %}
+# {% blocktrans %}concatenate and minify them manually.{% endblocktrans %}
 # {% blocktrans %}Disabled by default.{% endblocktrans %}
 
-# <FilesMatch "\.combined\.(js|css)$">
-#         Options +Includes
-#         SetOutputFilter INCLUDES
-# </FilesMatch>
+#<FilesMatch "\.combined\.js$">
+#  Options +Includes
+#  AddOutputFilterByType INCLUDES application/javascript application/json
+#  SetOutputFilter INCLUDES
+#</FilesMatch>
+#<FilesMatch "\.combined\.css$">
+#  Options +Includes
+#  AddOutputFilterByType INCLUDES text/css
+#  SetOutputFilter INCLUDES
+#</FilesMatch>
 
 
 
@@ -144,30 +148,29 @@ AddType text/x-vcard                   vcf
 # developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
 <IfModule mod_setenvif.c>
   <IfModule mod_headers.c>
-    SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s,?\s(gzip|deflate)?|X{4,13}|~{4,13}|-{4,13})$ HAVE_Accept-Encoding
+    SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
     RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
   </IfModule>
 </IfModule>
+
 # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
 <IfModule filter_module>
   FilterDeclare   COMPRESS
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/javascript
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-javascript
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
-   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
+    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
   FilterChain     COMPRESS
   FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
 </IfModule>
@@ -175,10 +178,10 @@ AddType text/x-vcard                   vcf
 <IfModule !mod_filter.c>
   # {% blocktrans %}Legacy versions of Apache{% endblocktrans %}
   AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
-  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript 
+  AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
   AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
-  AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype  
+  AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
 </IfModule>
 </IfModule>
 

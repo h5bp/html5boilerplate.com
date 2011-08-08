@@ -14,7 +14,10 @@
    ========================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
 
 
 /* =============================================================================
@@ -24,29 +27,24 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 /*
  * 1. {% blocktrans %}Correct text resizing oddly in IE6/7 when body font-size is set using em units{% endblocktrans %}
 
- *    http://clagnut.com/blog/348/#c790
  * 2. {% blocktrans %}Force vertical scrollbar in non-IE{% endblocktrans %}
 
- * 3. {% blocktrans %}Remove Android and iOS tap highlight color to prevent entire container being highlighted{% endblocktrans %}
+ * 3. {% blocktrans %}Prevent iOS text size adjust on device orientation change, without disabling user zoom:{% endblocktrans %} h5bp.com/g
 
- *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
- * 4. {% blocktrans %}Prevent iOS text size adjust on device orientation change, without disabling user zoom{% endblocktrans %}
-
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
-html { font-size: 100%; overflow-y: scroll; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 /* 
+ * {% blocktrans %}Remove text-shadow in selection highlight: h5bp.com/i{% endblocktrans %}
+
  * {% blocktrans %}These selection declarations have to be separate{% endblocktrans %}
 
- * {% blocktrans %}No text-shadow:{% endblocktrans %}
- twitter.com/miketaylr/status/12228805301
- * {% blocktrans %}Also: hot pink!{% endblocktrans %}
+ * {% blocktrans %}Also: hot pink! (or customize the background color to match your design){% endblocktrans %}
 
  */
 
@@ -60,10 +58,11 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
+a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
 /* {% blocktrans %}Improve readability when focused and hovered in all browsers:{% endblocktrans %}
- people.opera.com/patrickl/experiments/keyboard/test */
+ h5bp.com/h */
 a:hover, a:active { outline: 0; }
 
 
@@ -85,7 +84,7 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
-/* {% blocktrans %}Redeclare monospace font family{% endblocktrans %}: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* {% blocktrans %}Redeclare monospace font family{% endblocktrans %}: h5bp.com/j */
 pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
 
 /* {% blocktrans %}Improve readability of pre-formatted text in all browsers{% endblocktrans %} */
@@ -96,7 +95,7 @@ q:before, q:after { content: ""; content: none; }
 
 small { font-size: 85%; }
 
-/* {% blocktrans %}Position subscript and superscript content without affecting line-height{% endblocktrans %}: gist.github.com/413930 */
+/* {% blocktrans %}Position subscript and superscript content without affecting line-height{% endblocktrans %}: h5bp.com/k */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
@@ -108,7 +107,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 
 /* =============================================================================
@@ -116,14 +115,14 @@ nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
    ========================================================================== */
 
 /*
- * 1. {% blocktrans %}Improve image quality when scaled in IE7{% endblocktrans %} http://h5bp.com/d
- * 2. {% blocktrans %}Remove the gap between images and borders on image containers{% endblocktrans %} http://h5bp.com/e 
+ * 1. {% blocktrans %}Improve image quality when scaled in IE7{% endblocktrans %} h5bp.com/d
+ * 2. {% blocktrans %}Remove the gap between images and borders on image containers{% endblocktrans %} h5bp.com/e 
  */
 
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 /*
- * {% blocktrans %}Correct overflow displayed oddly in IE9 {% endblocktrans %}
+ * {% blocktrans %}Correct overflow not hidden in IE9 {% endblocktrans %}
  */
 
 svg:not(:root) { overflow: hidden; }
@@ -143,6 +142,8 @@ figure { margin: 0; }
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
+/* {% blocktrans %}Indicate that 'label' will shift focus to the associated form element{% endblocktrans %} */
+label { cursor: pointer; }
 /* 
  * 1. {% blocktrans %}Correct color not inheriting in IE6/7/8/9{% endblocktrans %} 
  * 2. {% blocktrans %}Correct alignment displayed oddly in IE6/7{% endblocktrans %} 
@@ -186,11 +187,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] { cursor
  */
 
 input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 /* 
- * {% blocktrans %}Remove inner padding and border in FF3/4{% endblocktrans %}
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
+ * {% blocktrans %}Remove inner padding and border in FF3/4{% endblocktrans %} h5bp.com/l 
  */
 
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
@@ -212,7 +213,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    ========================================================================== */
 
 table { border-collapse: collapse; border-spacing: 0; }
-
+td { vertical-align: top; }
 
 /* =============================================================================
    {% blocktrans %}Primary styles{% endblocktrans %}
@@ -240,24 +241,22 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 /* {% blocktrans %}For image replacement{% endblocktrans %} */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
 
-/* {% blocktrans %}Hide for both screenreaders and browsers{% endblocktrans %}:
-   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* {% blocktrans %}Hide for both screenreaders and browsers{% endblocktrans %}: h5bp.com/m */
 .hidden { display: none; visibility: hidden; }
 
-/* {% blocktrans %}Hide only visually, but have it available for screenreaders: by Jon Neal.{% endblocktrans %}
-  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* {% blocktrans %}Hide only visually, but have it available for screenreaders: by Jon Neal.{% endblocktrans %}: h5bp.com/n  & h5bp.com/o */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
-/* {% blocktrans %}Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard{% endblocktrans %}: drupal.org/node/897638 */
+/* {% blocktrans %}Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard{% endblocktrans %}: h5bp.com/p */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 /* {% blocktrans %}Hide visually and from screenreaders, but maintain layout{% endblocktrans %} */
 .invisible { visibility: hidden; }
 
-/* {% blocktrans %}Contain floats{% endblocktrans %}: nicolasgallagher.com/micro-clearfix-hack/ */ 
+/* {% blocktrans %}Contain floats{% endblocktrans %}: h5bp.com/q */ 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
@@ -288,13 +287,13 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
  
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* {% blocktrans %}Black prints faster{% endblocktrans %}: sanbeiji.com/archives/953 */
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* {% blocktrans %}Black prints faster{% endblocktrans %}: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* {% blocktrans %}Don't show links for images, or javascript/internal links{% endblocktrans %} */
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
   @page { margin: 0.5cm; }
