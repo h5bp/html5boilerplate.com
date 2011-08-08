@@ -258,7 +258,21 @@ div > ul > li:before { content: "★"; padding-right: 0.5em; }
 
 .changelog li, .changelog h4, .changelog h5 { min-width: 480px; max-width: 42em; max-width: 42rem; width: auto; }
 
+
 img[src$='chrome-frame.png'] { margin-top: -2em; }
+.festal { 
+  font-family: Garamond,Georgia, serif;
+  display: block;
+  text-indent: 0;
+  border-radius: 2px;
+  padding: 1px 6px;
+  border-bottom: 1px dotted  #fe57a1;;
+}
+.festal:hover {
+  background: #fe57a1;
+  color: white;
+}
+
 
 /* SOURCE */
 .js .source .syntaxhighlighter { display: none; }

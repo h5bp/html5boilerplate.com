@@ -179,83 +179,20 @@
       <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 270 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
       <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good.{% endblocktrans %}</p>
 
-      <h4>{% blocktrans %}Build Script{% endblocktrans %}</h4>
-      <ul>
-        <li>{% blocktrans %}CSSLint, JSLint, JSHint tools are now optionally available in the build script{% endblocktrans %}</li>
-        <li>{% blocktrans %}New features in build script:{% endblocktrans %}
-          <p>{% blocktrans %}Added a files.bypass property  which when set, will not compress the listed JavaScript files, but just silently passes it on to the publish folder without any change. {% endblocktrans %}</p>
-          <p>{% blocktrans %}Added a images.bypass with a list of image files or folders within the img directory that you do not want to be optimized. {% endblocktrans %} </p>
-        </li>
-        <li>{% blocktrans %}Build script is compatible with php files now. it appears. </li>{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Test for ant version to head off problems with ant &lt; 1.8.2{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}removes concatenated css files from index.html when they are linked to with link tag. Fixes #452{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Added DOCTYPE so <a href="http://stackoverflow.com/questions/363768/disable-dtd-warning-for-ant-scripts-in-eclipse">Eclipse and other IDE&#8217;s do not complain about the lack of schema</a>.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Updated Windows optipng and jpegtran paths to include ${basedir}{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Minification affects all .css and .js files in /css and /js dirs,  not just the ones explicitly included in concatenation.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Build script: compress all images in subfolders, too.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Added gae.js dir and gae.css dir so that App Engine projects can have the correct directory names swapped in their templates.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}added a second replace token statement so that &#8220;/css/style.css&#8221; gets swapped too.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}change .png and *.jpg to */.png and */*.jpg so that optimize commands reach subdirectories.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Improved build script compatibility with Netbeans IDE. default.properties: added IDE generated files/folders to exclude from build script .gitignore: Filename case correction for Windows generated Thumb.db{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Adding properties to project.properties so that Google App Engine builds don&#8217;t have &#8220;static&#8221; prepended when swapping for minified versions.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}console.log messages are no longer commented out. use log() instead{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Much faster build process{% endblocktrans %}
-          
-          <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
-          have already been processed will not be reprocessed unless the source
-          has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
-        </li>
-
-
-        <li>{% blocktrans %}Files are revved by SHA, not incrementally at each build{% endblocktrans %}
-          <p>{% blocktrans %}Versioned files are referenced by a SHA-1 hash of the content rather
-          than a build number. This means that changing your HTML and rebuilding
-          will not cause your users to redownload the same CSS and JavaScript, and
-          a reverted change may cause users to use a copy that was previously
-          downloaded. It may be better to use only part of the hash so the HTTP
-          request is shorter.{% endblocktrans %}</p>        
-        </li>
-
-        <li>{% blocktrans %}copy files last This slightly simplifies copying because we don&#8217;t have to exclude PNG, JPEG, or HTML files from the copy stage. it comes preminified, and we don&#8217;t need to minify it again This also updates the HTML so that the script is not missing if the unminified scripts are unavailable on the server. This commit requires a change to existing HTML files :/{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}change the source htaccess rather than updating it{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}update yuicompressor to 2.4.5. fixes media query minification issue.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}update htmlcompressor to 1.1 which uses the new yuicompressor for CSS.{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}try not to re-optimize the same images every time{% endblocktrans %}</li>
-
-        <li>{% blocktrans %}Lots of bug fixes for edge cases and improved techniques..{% endblocktrans %}</li>
-        
-      </ul>
 
       <h4>index.html</h4>
       <ul>
-        <li>{% blocktrans %}Use minified jQuery by default. / jQuery updated to 1.6.2{% endblocktrans %}
+        <li>{% blocktrans %}Use minified jQuery by default (now 1.6.2){% endblocktrans %}
 
         <li>{% blocktrans %}Add respond.js as part of shift to &#8216;mobile first&#8217; approach.{% endblocktrans %}
 
-        <li>{% blocktrans %}Updated to Modernizr 2.0 Complete, Production minified.{% endblocktrans %}
+        <li>{% blocktrans %}Updated to Modernizr 2.0 Complete, Production minified (incl yepnope & respond).{% endblocktrans %}
 
-        <li>{% blocktrans %}Prompt IE 6 users to install Chrome Frame, update chromeframe install to 1.0.3.  Move chromeframe to bottom of page after the other scripts. also reference exact version for higher expires headers. Use protocol-relative url for chrome frame URL.{% endblocktrans %}
+        <li>{% blocktrans %}Prompt IE 6 users to install Chrome Frame{% endblocktrans %}
 
         <li>{% blocktrans %}Removing touch icon link tags and retaining only the comment.{% endblocktrans %}
 
-        <li>{% blocktrans %}Encourage people to send the X-UA-Compatible HTTP header instead of leaving it in the HTML, to avoid edge case issues.{% endblocktrans %}
+        <li>{% blocktrans %}Encourage people to send the <code>X-UA-Compatible</code> HTTP header instead of leaving it in the HTML, to avoid edge case issues.{% endblocktrans %}
 
         <li>{% blocktrans %}Remove the cache-busting query parameters from the HTML.{% endblocktrans %}
 
@@ -267,7 +204,7 @@
 
         <li>{% blocktrans %}Added <a href="http://mathiasbynens.be/notes/touch-icons#sizes">maximum touch-icon support</a>.{% endblocktrans %}
 
-        <li>{% blocktrans %}Add a link to optional <meta> tags that could be added to the <head> element.{% endblocktrans %}
+        <li>{% blocktrans %}Add a link to optional &lt;meta> tags that could be added to the &lt;head> element.{% endblocktrans %}
 
         <li>{% blocktrans %}Standardize <a href="http://h5bp.com/d/The-markup★quotes">the use of single and double quotes</a>.{% endblocktrans %}
 
@@ -278,7 +215,7 @@
       <ul>
         <li>{% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles.{% endblocktrans %}
 
-        <li>{% blocktrans %}Add &#8216;oldie&#8217; class to conditional <html> classnames. {% endblocktrans %}
+        <li>{% blocktrans %}Add &#8216;oldie&#8217; class to conditional &lt;html> classnames. {% endblocktrans %}
 
         <li>{% blocktrans %}Add <code>img { max-width: 100%; }</code> to print styles to prevent images from getting cut off.{% endblocktrans %}
 
@@ -286,13 +223,13 @@
 
         <li>{% blocktrans %}Add placeholder CSS MQs for mobile-first approach{% endblocktrans %}
 
-        <li>{% blocktrans %}Tweaking our hot pink ::selection. It is now #fe57a1, which is Festal (adj): pertaining to or befitting a feast, festival, holiday, or gala occasion.{% endblocktrans %}
+        <li>{% blocktrans %}Tweaking our hot pink <code>::selection</code>. It is now <code>#fe57a1</code>, which is &hellip; <dd class="festal"><b>Festal</b> <i>(adj)</i>: pertaining to or befitting a feast, festival, holiday, or gala occasion.</dd>{% endblocktrans %}
 
         <li>{% blocktrans %}Use black for links when printing{% endblocktrans %}
 
-        <li>{% blocktrans %}added vertical-align: middle to fix borders on image containers. Fixes #440{% endblocktrans %}
+        <li>{% blocktrans %}added <code>vertical-align: middle</code> to fix borders on image containers. {% endblocktrans %}
 
-        <li>{% blocktrans %}Add &lt;svg> overflow fix for IE9. Group &lt;img> and &lt;svg> rules in an &#8216;embedded content&#8217; section of CSS file. Add {cursor:pointer} to <label> element.{% endblocktrans %}
+        <li>{% blocktrans %}Add &lt;svg> overflow fix for IE9. Group &lt;img> and &lt;svg> rules in an &#8216;embedded content&#8217; section of CSS file. Add <code>{cursor:pointer}</code> to &lt;label> element.{% endblocktrans %}
 
         <li>{% blocktrans %}Switch to <code>outline:0</code> for accessible focus treatment. Avoids Opera bug when combined with transitions. Also saves bytes.{% endblocktrans %}
 
@@ -301,6 +238,63 @@
         <li>{% blocktrans %}Add <code>{resize: vertical}</code> to &lt;textarea>. Only allow vertical resizing{% endblocktrans %}
 
       </ul>
+      
+      <h4>{% blocktrans %}Build Script{% endblocktrans %}</h4>
+      <ul>
+        <li>{% blocktrans %}CSSLint, JSLint, JSHint tools are now optionally available in the build script{% endblocktrans %}</li>
+        <li>{% blocktrans %}New features in build script:{% endblocktrans %}
+          <p>{% blocktrans %}Added a files.bypass property  which when set, will not compress the listed JavaScript files, but just silently passes it on to the publish folder without any change. {% endblocktrans %}</p>
+          <p>{% blocktrans %}Added a images.bypass with a list of image files or folders within the img directory that you do not want to be optimized. {% endblocktrans %} </p>
+        </li>
+        <li>{% blocktrans %}Build script is compatible with php files now. it appears. </li>{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script compatible with Ant >= 1.8.2. Error message otherwise. {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}removes concatenated css files from index.html when they are linked to with link tag. {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Added DOCTYPE so <a href="http://stackoverflow.com/questions/363768/disable-dtd-warning-for-ant-scripts-in-eclipse">Eclipse and other IDE&#8217;s do not complain about the lack of schema</a>.{% endblocktrans %}</li>
+ 
+        <li>{% blocktrans %}Minification affects all .css and .js files in /css and /js dirs,  not just the ones explicitly included in concatenation.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script: compress all images in subfolders, too.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Added gae.js dir and gae.css dir so that App Engine projects can have the correct directory names swapped in their templates.{% endblocktrans %}</li>
+ 
+        <li>{% blocktrans %}Improved build script compatibility with Netbeans IDE.  {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Adding properties to project.properties so that Google App Engine builds don&#8217;t have &#8220;static&#8221; prepended when swapping for minified versions.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}console.log messages are no longer commented out for you. use log() instead{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Much faster build process{% endblocktrans %}
+          
+          <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
+          have already been processed will not be reprocessed unless the source
+          has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
+        </li>
+
+
+        <li>{% blocktrans %}Files are revved by SHA hash, not incrementally at each build{% endblocktrans %}
+          <p>{% blocktrans %}Versioned files are referenced by a SHA-1 hash of the content rather
+          than a build number. This means that changing your HTML and rebuilding
+          will not cause your users to redownload the same CSS and JavaScript, and
+          a reverted change may cause users to use a copy that was previously
+          downloaded. It may be better to use only part of the hash so the HTTP
+          request is shorter.{% endblocktrans %}</p>        
+        </li>
+
+        <li>{% blocktrans %}copy files last This slightly simplifies copying because we don&#8217;t have to exclude PNG, JPEG, or HTML files from the copy stage. it comes preminified, and we don&#8217;t need to minify it again This also updates the HTML so that the script is not missing if the unminified scripts are unavailable on the server. This commit requires a change to existing HTML files :/{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script no longer upgrades expires headers in the htaccess. 1yr for everyone! {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}update yuicompressor to 2.4.5. Fixes media query minification issue that shipped with 1.0{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}update htmlcompressor to 1.4.3 which uses the new yuicompressor for CSS and fixed a bunch of edgecasey php bugs users had.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Lots of bug fixes for edge cases and improved techniques..{% endblocktrans %}</li>
+        
+      </ul>
+
 
       <h4>{% blocktrans %}Project{% endblocktrans %}</h4>
       <ul>
@@ -323,28 +317,26 @@
 
         <li>{% blocktrans %}Updating TTF mimetype to fix Google Chrome warning{% endblocktrans %}
 
-        <li>{% blocktrans %}Improved support for all versions of Apache, including workaround for bug in mod_filter.{% endblocktrans %}
+        <li>{% blocktrans %}Improved support for all versions of Apache, including workaround for bug in <code>mod_filter</code>.{% endblocktrans %}
 
-        <li>{% blocktrans %}Use substring matching in gzip filter_module and re-enable gzip for some common MIME-types{% endblocktrans %}
-
-        <li>{% blocktrans %}mod_deflate trigger rules modifications{% endblocktrans %}
+        <li>{% blocktrans %}<b>Way better</b> and more robust gzip rules. {% endblocktrans %}
 
         <li>{% blocktrans %}Add gzip support for XHTML, RSS, Atom{% endblocktrans %}
 
-        <li>{% blocktrans %}Move font &amp; SVG compression from FilesMatch to FilterProvider / AddOutputFilterByType{% endblocktrans %}
-
         <li>{% blocktrans %}Added m4a (Need it for IE9) and m4v (HandBrake default) MIME types.{% endblocktrans %}
 
-        <li>{% blocktrans %}moved ETag removal configs closer{% endblocktrans %}
-
-        <li>{% blocktrans %}added Header unset ETag In some servers setting &#8220;FileETag None&#8221; alone, is not enough. Removing header and setting it to None fixes the issue.{% endblocktrans %}
+        <li>{% blocktrans %}added <code>Header unset ETag</code> In some servers setting <code>FileETag None</code> alone, is not enough. Removing header and setting it to None fixes the issue.{% endblocktrans %}
 
         <li>{% blocktrans %}Add <code>Options +FollowSymlinks</code> when <code>RewriteEngine</code> is used. Fixes #489.{% endblocktrans %}
 
         <li>{% blocktrans %}Some more security for PHP: turn off error display and turn on error logging{% endblocktrans %}
 
-        <li>{% blocktrans %}Allow Blackberry to read vCards{% endblocktrans %}      
-      </ul>          
+        <li>{% blocktrans %}Allow Blackberry to read vCards, because those people are swell.  {% endblocktrans %}      
+      </ul>     
+       <h5>nginx, node.js, lighttpd, google app engine, IIS</h5>     
+       <ul>
+         <li>Lots of updates and fixes. View the official <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">h5bp server configs repo</a>
+       </ul>
     </div>
   </div>
      
