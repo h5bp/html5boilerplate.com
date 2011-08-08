@@ -72,7 +72,7 @@
     
     headings: function headings(text) {
       // # or ...
-      var t = text || location.hash,
+      var t = text || location.hash.replace(/^#/,''),
       hdr = this.placeholder.find(':header'), h;
 
       // First thing first deal with headings and add proper data-wiki-hdr attribute
@@ -87,6 +87,10 @@
       h = hdr.filter('#' + t);
 
       if(!h.length) {
+        t = t.split(/#|★/);
+        
+        var navlinks = $('.wikiconvertor-pages a').filter('a[href^="/docs/'+ t[0] + '"]');
+        if ( navlinks.length ) location.href = navlinks[0].href + (t[1] ? '#' + t[1] : '');
         return;
       }
 
