@@ -104,11 +104,11 @@
             <label><input type='checkbox' id='h5bp-webconfig'> web.config</label>                        
           </div>  
           <div id="rest">
-            <h4>Others</h4>
-            <label><input checked type='checkbox' id='h5bp-iecond'> All IE classes</label>
-            <label><input checked type='checkbox' id='h5bp-scripts'> script.js & plugin.js</label>                        
-            <label><input checked type='checkbox' id='h5bp-analytics'> Google Analytics Snippet</label>                     
-            <label><input checked type='checkbox' id='h5bp-chromeframe'> User-installable Chrome Frame for IE6</label>                                             
+            <h4>{% blocktrans %}Others{% endblocktrans %}</h4>
+            <label><input checked type='checkbox' id='h5bp-iecond'> {% blocktrans %}All IE classes{% endblocktrans %}</label>
+            <label><input checked type='checkbox' id='h5bp-scripts'> {% blocktrans %}script.js & plugin.js{% endblocktrans %}</label>                        
+            <label><input checked type='checkbox' id='h5bp-analytics'> {% blocktrans %}Google Analytics Snippet{% endblocktrans %}</label>                     
+            <label><input checked type='checkbox' id='h5bp-chromeframe'> {% blocktrans %}User-installable Chrome Frame for IE6{% endblocktrans %}</label>                                             
           </div>
 
             <p>{% blocktrans %}<a href="http://www.initializr.com/builder?mode=h5bp&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!{% endblocktrans %}</p>
@@ -133,48 +133,48 @@
      <div class="notice">
        <h4>NORMALIZE.CSS</h4>
        <img src="./img/normalize.png" width="200px" >
-       <p>We are now using <a href="http://github.com/necolas/normalize.css/">normalize.css</a> developed by Nicolas Gallagher along with Jonathan Neal instead of the traditional CSS Reset stylesheet.</p>
-       <p>normalize.css retains useful browser defaults and includes several common fixes to improve cross-browser (desktop and mobile) styling consistency.</p>
+       <p>{% blocktrans %}We are now using <a href="http://github.com/necolas/normalize.css/">normalize.css</a> developed by Nicolas Gallagher along with Jonathan Neal instead of the traditional CSS Reset stylesheet.{% endblocktrans %}</p>
+       <p>{% blocktrans %}normalize.css retains useful browser defaults and includes several common fixes to improve cross-browser (desktop and mobile) styling consistency.{% endblocktrans %}</p>
 
-       <p>Lots of research has gone into normalize, verifying what are the default user agent styles provided by each browser. We can very specifically change only the ones we need to instead of the bulldozer approach.</p>
+       <p>{% blocktrans %}Lots of research has gone into normalize, verifying what are the default user agent styles provided by each browser. We can very specifically change only the ones we need to instead of the bulldozer approach.{% endblocktrans %}</p>
 
-       <p>Why this is great news:</p>
+       <p>{% blocktrans %}Why this is great news:{% endblocktrans %}</p>
        <ul>
-       <li>Who likes being so damn redundant and declaring: em, i { font-style: italic; }</li>
-       <li>By using normalization instead of a reset + building up default styles, we use less styles and save bytes</li>
-       <li>Less noise in your dev tools: when debugging, you don't have to trawl through every reset selector to reach the actual style that is causing the issue.</li>
-       <li>More details on the <a href="http://necolas.github.com/normalize.css/">project page</a></li>
+       <li>{% blocktrans %}Who likes being so damn redundant and declaring: em, i { font-style: italic; }{% endblocktrans %}</li>
+       <li>{% blocktrans %}By using normalization instead of a reset + building up default styles, we use less styles and save bytes{% endblocktrans %}</li>
+       <li>{% blocktrans %}Less noise in your dev tools: when debugging, you don't have to trawl through every reset selector to reach the actual style that is causing the issue.{% endblocktrans %}</li>
+       <li>{% blocktrans %}More details on the <a href="http://necolas.github.com/normalize.css/">project page</a>{% endblocktrans %}</li>
        </ul>               
      </div>
     <div class="notice">
-      <h4>PROMPT CHROME FRAME FOR IE6</h4>
+      <h4>{% blocktrans %}PROMPT CHROME FRAME FOR IE6{% endblocktrans %}</h4>
        <img src="./img/chrome-frame.png">      
       <ul>
-        <li>With the latest release of Chrome frame which does not require admin access to be installed, we felt it was a good time to prompt IE 6 users to install Chrome Frame. (Using protocol-relative url and exact version for higher expires headers)</li>      
+        <li>{% blocktrans %}With the latest release of Chrome frame which does not require admin access to be installed, we felt it was a good time to prompt IE 6 users to install Chrome Frame. (Using protocol-relative url and exact version for higher expires headers){% endblocktrans %}</li>      
       </ul>
     </div>
     <div class="notice">  
-      <h4>FAST BUILD SCRIPT with @import INLINING</h4>
-      <p>Files are not deleted at the beginning of every build, and files that
+      <h4>{% blocktrans %}FAST BUILD SCRIPT with @import INLINING{% endblocktrans %}</h4>
+      <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
       have already been processed will not be reprocessed unless the source
-      has changed. A new "intermediate" folder is used for this.
-      <p>If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.
+      has changed. A new "intermediate" folder is used for this.{% endblocktrans %}
+      <p>{% blocktrans %}If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.{% endblocktrans %}
     </div> 
     <div class="notice">
       <h4>RESPOND.JS</h4>
       <ul>
-        <li>Added respond.js as part of shift to 'mobile first' approach. Updated it to improved, comment-free version which would enable IEs to also apply styles using media queries.</li>      
+        <li>{% blocktrans %}Added respond.js as part of shift to 'mobile first' approach. Updated it to improved, comment-free version which would enable IEs to also apply styles using media queries.{% endblocktrans %}</li>      
       </ul>      
     </div>
     <div class="notice">
-      <h4>PNGFIX &amp; HANDHELD REMOVED</h4>
+      <h4>{% blocktrans %}PNGFIX &amp; HANDHELD REMOVED{% endblocktrans %}</h4>
       <ul>
-        <li>Remove handheld.css as we do not think it was useful among the diverse feature phones</li>
-        <li>We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a> are more useful than using stopgap fixes like belatedpng.</li>      
+        <li>{% blocktrans %}Remove handheld.css as we do not think it was useful among the diverse feature phones{% endblocktrans %}</li>
+        <li>{% blocktrans %}We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a> are more useful than using stopgap fixes like belatedpng.{% endblocktrans %}</li>      
       </ul>      
     </div> 
     <div class="changelog">
-      <h3>Changelog</h3>
+      <h3>{% blocktrans %}Changelog{% endblocktrans %}</h3>
       <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 270 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
       <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
 
@@ -205,7 +205,7 @@
 
         <li>{% blocktrans %}Add a link to optional &lt;meta> tags that could be added to the &lt;head> element.{% endblocktrans %}
 
-        <li>{% blocktrans %}Standardize <a href="http://h5bp.com/d/The-markup★quotes">the use of single and double quotes</a>.{% endblocktrans %}
+        <li>{% blocktrans %}Standardize{% endblocktrans %}<a href="http://h5bp.com/d/The-markup★quotes">{% blocktrans %}the use of single and double quotes</a>.{% endblocktrans %}
 
         <li>{% blocktrans %}Added Site Speed tracking for Google Analytics{% endblocktrans %}      
       </ul>
@@ -332,23 +332,23 @@
 
         <li>{% blocktrans %}Allow Blackberry to read vCards, because those people are swell.  {% endblocktrans %}      
       </ul>     
-       <h5>{% blocktrans %}nginx, node.js, lighttpd, google app engine, IIS</h5>     
+       <h5>{% blocktrans %}nginx, node.js, lighttpd, google app engine, IIS{% endblocktrans %}</h5>     
        <ul>
-         <li>{% blocktrans %}Lots of updates and fixes. View the official <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">h5bp server configs repo</a>
+         <li>{% blocktrans %}Lots of updates and fixes. View the official <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">h5bp server configs repo{% endblocktrans %}</a>
        </ul>
        
        <h4>{% blocktrans %}Significant commits{% endblocktrans %}</h4>
        <p>{% blocktrans %}The commit messages on these commits are particularly fun and worth a read if you're into frontend research{% endblocktrans %}</p>
        
        <ul class="sigcommits">
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/26a391c">26a391c</a></samp> {% blocktrans %}Revert "Added native iOS inertia scrolling"                                                                {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/ddaf66a">ddaf66a</a></samp> {% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles                       {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/e5e057e">e5e057e</a></samp> {% blocktrans %}Change our conditional comments around the HTML tag to use a single .oldie class.                          {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/7f53f98">7f53f98</a></samp> {% blocktrans %}Revert "Change our conditional comments around the HTML tag to use a single .oldie class."                 {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/648026d">648026d</a></samp> {% blocktrans %}Tweaking our hot pink ::selection based on a suggestion from David Murdoch and research from Adam Diehm.   {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/0e1c7ba">0e1c7ba</a></samp> {% blocktrans %}Use minified jQuery by default.                                                                            {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/a0ac99a">a0ac99a</a></samp> {% blocktrans %}optimize build process                                                                                     {% endblocktrans %}
-         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/bb22ca6">bb22ca6</a></samp> {% blocktrans %}Remove the cache-busting query parameters from the HTML.                                                   {% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/26a391c">26a391c</a></samp> {% blocktrans %}Revert "Added native iOS inertia scrolling"{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/ddaf66a">ddaf66a</a></samp> {% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/e5e057e">e5e057e</a></samp> {% blocktrans %}Change our conditional comments around the HTML tag to use a single .oldie class.{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/7f53f98">7f53f98</a></samp> {% blocktrans %}Revert "Change our conditional comments around the HTML tag to use a single .oldie class."{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/648026d">648026d</a></samp> {% blocktrans %}Tweaking our hot pink ::selection based on a suggestion from David Murdoch and research from Adam Diehm.{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/0e1c7ba">0e1c7ba</a></samp> {% blocktrans %}Use minified jQuery by default.{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/a0ac99a">a0ac99a</a></samp> {% blocktrans %}optimize build process{% endblocktrans %}
+         <li><samp><a href="https://github.com/paulirish/html5-boilerplate/commit/bb22ca6">bb22ca6</a></samp> {% blocktrans %}Remove the cache-busting query parameters from the HTML.{% endblocktrans %}
        </ul>                                                                                                                                        
 
     </div>

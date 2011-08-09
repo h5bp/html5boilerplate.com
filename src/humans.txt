@@ -17,9 +17,22 @@
   Site: http://blog.highub.com/
   Twitter: shichuan
   Location: Uniquely Singapore
-  
+
+  Mathias Bynens
+  Site: http://mathiasbynens.be/
+  Twitter: mathias
+  Location: Belgium
+
+  Nicolas Gallagher 
+  Site: http://nicolasgallagher.com/
+  Twitter: necolas
+  Location: London, UK
+
+
 
 /* THANKS */
+  Names (& URL):
+
   Names (& URL):
   Mike West https://github.com/mikewest
 
@@ -33,15 +46,13 @@
 
   https://github.com/nlogax
 
-  Cătălin Mariș https://github.com/alrra
+  Catalin Maris https://github.com/alrra
 
   Milos Gavrilovic https://github.com/GaVrA
 
   https://github.com/jorge-vitrubio
 
   Niels Bom https://github.com/nielsbom
-
-  Mathias Bynens http://mathiasbynens.be/
 
   Shi Chuan https://github.com/shichuan
 
