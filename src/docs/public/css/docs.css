@@ -18,9 +18,8 @@ img[src$="server-logos.png"] { float: right; }
 .docs #disqus_thread { display: block;}
 
 .wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
-.wikiconvertor #body, .wikiconvertor #header h2 {margin:1em auto 0.5em;width:78%;}
+.wikiconvertor #body, .wikiconvertor #header h2 {margin:0 auto 0;width:78%;}
 
-.wikiconvertor #header h2 { font-size:3em; margin-bottom:1.5em; }
 
 .wikiconvertor #header h2 a{font-size:0.4em;color #E16734;float:right; display: inline-block;}
 .wikiconvertor #header h2 span{margin:0 1em;}
