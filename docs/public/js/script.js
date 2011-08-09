@@ -2,6 +2,43 @@
   
   var view, router, model;
   
+  // modernizr history test
+  var historyAble = !!(window.history && history.pushState);
+  
+  (function() {
+    // previous link support: https://github.com/mklabs/h5bp-docs/pull/5
+    // doing it here to trigger this on non pushState able browsers too
+    // we now prevent non pushState browsers from running the Backbone app
+    // cause it may become tricky to deal with multiple location and so on 
+    // (/docs/ vs /docs/The-style/)
+    
+    var text = location.hash.replace(/^#/,'');
+    
+    // if no hash in url, does nothing
+    if(!text) return;
+    
+    var links = $('.wikiconvertor-pages a');
+    
+    var navlink = links.filter('a[href^="/docs/'+ text + '"]');
+    
+    //console.log('navlink', text, navlink.length);
+    
+    // custom selector may be handy?
+    // iterate through links and try to get a case unsensitive test with hash value
+    var navlink = links.map(function() {
+      return !!this.href.match(new RegExp(text, 'i')) ? $(this).attr('href') : undefined;
+    });
+    
+    // if navlink has elements, redirect to the first one
+    if(navlink.length) location.href = navlink[0]; 
+    
+  })();
+  
+  // no backbone for non push state :(
+  if(!historyAble) return;
+  
+  
+  
   var DocsPage = Backbone.Model.extend({
     
     sync: function(options) {
@@ -13,7 +50,7 @@
           view.render();
           
           // notify disqus of the asycn page change
-          DISQUS.reset({
+          window.DISQUS && DISQUS.reset({
             reload: true,
             config: function () {  
               this.page.identifier = this.page.url = window.location.pathname;
@@ -35,7 +72,7 @@
     el: '#body',
     
     events: {
-      'click a': 'clickHandler'
+      'click .wikiconvertor-pages a': 'clickHandler'
     },
     
     initialize: function() {
@@ -72,7 +109,7 @@
     
     headings: function headings(text) {
       // # or ...
-      var t = text || location.hash,
+      var t = text || location.hash.replace(/^#/,''),
       hdr = this.placeholder.find(':header'), h;
 
       // First thing first deal with headings and add proper data-wiki-hdr attribute
@@ -87,6 +124,10 @@
       h = hdr.filter('#' + t);
 
       if(!h.length) {
+        // t = t.split(/#|â˜…/);
+        // 
+        // var navlinks = $('.wikiconvertor-pages a').filter('a[href^="/docs/'+ t[0] + '"]');
+        // if ( navlinks.length ) location.href = navlinks[0].href + (t[1] ? '#' + t[1] : '');
         return;
       }
 
@@ -130,7 +171,7 @@
     },
     
     changePage: function changePage(path) {
-      if(path === model.get('path')) {
+      if(!path || path === model.get('path')) {
         return;
       }
       
