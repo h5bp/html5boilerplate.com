@@ -164,7 +164,7 @@
     <div class="notice">
       <h4>RESPOND.JS</h4>
       <ul>
-        <li>{% blocktrans %}Added <a href="https://github.com/scottjehl/Respond#readme">respond.js</a> as part of shift to 'mobile first' approach. You can now use media queries anywhere and get full IE6-8 support.{% endblocktrans %}</li>      
+        <li>{% blocktrans %}Added <a href="https://github.com/scottjehl/Respond#readme">respond.js</a> as part of a shift to a responsive approach. You can now use media queries anywhere and get full IE6-8 support.{% endblocktrans %}</li>      
       </ul>      
     </div>
     <div class="notice">
@@ -208,7 +208,10 @@
 
         <li>{% blocktrans %}Standardize{% endblocktrans %}<a href="http://h5bp.com/d/The-markup★quotes">{% blocktrans %}the use of single and double quotes</a>.{% endblocktrans %}
 
-        <li>{% blocktrans %}Added Site Speed tracking for Google Analytics{% endblocktrans %}      
+        <li>{% blocktrans %}Added Site Speed tracking for Google Analytics{% endblocktrans %} 
+        
+        <li>{% blocktrans %}Google Analytics now retrieved with <code>Modernizr.load()</code> for byte brevity and optimal speed{% endblocktrans %} 
+             
       </ul>
 
       <h4>style&shy;.css</h4>
@@ -251,6 +254,7 @@
         <li>{% blocktrans %}Build script compatible with Ant >= 1.8.2. Error message otherwise. {% endblocktrans %}</li>
 
         <li>{% blocktrans %}removes concatenated css files from index.html when they are linked to with link tag. {% endblocktrans %}</li>
+        <li>{% blocktrans %}Concatenated script is added with a <code>@defer</code> attribute </li>{% endblocktrans %}</li>
 
         <li>{% blocktrans %}Added DOCTYPE so <a href="http://stackoverflow.com/questions/363768/disable-dtd-warning-for-ant-scripts-in-eclipse">Eclipse and other IDE&#8217;s do not complain about the lack of schema</a>.{% endblocktrans %}</li>
  
