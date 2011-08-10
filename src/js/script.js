@@ -93,11 +93,11 @@ $(function(){
       if(choice == 'h5bp-iecond') {
         parameters.push('simplehtmltag');
       }       
-    } else if(!that.is(':checked') && (choice == 'respond' || choice == 'modernizr')) {
-        var modernizrrespond = parameters.indexOf('modernizrrespond');
-        if(modernizrrespond > -1) {
-          parameters.push(choice == 'respond'? 'modernizr': 'respond');
-          parameters.splice(modernizrrespond, 1);          
+    } else if(!that.is(':checked') && (choice == 'jquerydev' || choice == 'jquerymin')) {
+        var jquery = parameters.indexOf('jquery');
+        if(jquery > -1) {
+          parameters.push(choice == 'jquerymin'? 'jquerydev': 'jquerymin');
+          parameters.splice(jquery, 1);          
         }              
     }
 	});
@@ -107,8 +107,7 @@ $(function(){
 	  //Replace refs to both jQueries with one
 	  var jquerymin = parameters.indexOf('jquerymin'),
 	      jquerydev = parameters.indexOf('jquerydev'),
-	      respond = parameters.indexOf('respond'),
-	      modernizr = parameters.indexOf('modernizr'), jquery, modernizrrespond;
+        jquery;
 	  if((jquerymin > -1) && (jquerydev > -1) && (parameters.indexOf('jquery') == -1)) {
 	    parameters.splice(jquerymin, 1);
 	    jquerydev = parameters.indexOf('jquerydev');
@@ -116,30 +115,11 @@ $(function(){
 	      parameters.splice(jquerydev, 1);	      
 	    }
 	    parameters.push('jquery');
-	  } else {
-	    jquery = parameters.indexOf('jquery');
-	    if(jquery > -1) {
-	      parameters.splice(jquery, 1);	      
-	    }
 	  }
-	  
-	  if((respond > -1) && (modernizr > -1) && (parameters.indexOf('modernizrrespond') == -1)) {
-	    respond = parameters.indexOf('respond'),
-	    modernizr = parameters.indexOf('modernizr');
-	    if(respond > -1) {
-	      parameters.splice(respond, 1)	      
-	    }
-
-      if(modernizr > -1) {
-	      parameters.splice(modernizr, 1);        
-      }
-
-	    parameters.push('modernizrrespond');
-	  }	
+	  	
 	  params = parameters.join('&');
 		_gaq.push(['_trackPageview', '/build/&print&'+ params]);
 		this.href =  downloadurl + params;
-
 	});	
 });
 

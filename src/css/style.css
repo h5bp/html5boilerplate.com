@@ -227,9 +227,7 @@ div > ul > li:before { content: "★"; padding-right: 0.5em; }
 .focus #builder-download:before { border-color: transparent hsl(163, 6%, 23%); }
 
 #builder { width: 50%; min-width: 480px; padding: 24px 0; text-align: left; display: none; }
-#builder > div { width: 31%; float: left; min-height: 10em; }
-#builder #rest { clear: both; width: 22em; margin: 0 auto 2em auto; float: none; text-align: left; } 
-#builder #libs { width: 36%; }
+#builder > div { width: 33%; float: left; min-height: 10em; }
 #builder h4 { font-family: sans-serif; text-shadow: none; margin-top: 0.5em; text-align: center; color: #222; min-height: 3.025em; min-width: 0; max-width: 100%; width: auto; }
 #builder label {display: block; margin: 0 auto 0.5em auto; width: 10em; }
 #builder #rest label { width: 100%; }
