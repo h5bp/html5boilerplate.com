@@ -85,7 +85,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 h1, em, h3, h4,
 .wikiconvertor h2 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871, 4px 4px 0px #476871, 5px 5px 0px #476871, 6px 6px 0px #476871, 7px 7px 0px #476871; }   
 
-html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] h3, html[lang='en-us'] h4, .wikiconvertor h2 { font-family: "MolotRegular", Arial, sans-serif; } 
+html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] h3, html[lang='en-us'] h4, .wikiconvertor h2 { font-family: "MolotRegular", Arial, sans-serif; font-weight: normal; } 
 
 html[lang='he'] em, html[lang='he'] h3 { font-family: 'AharoniCLMBold', Arial, sans-serif; }
 #container[dir="rtl"] h4, #container[dir="rtl"] code { direction:ltr; }
