@@ -126,6 +126,9 @@
 
     {% endblocktrans %}</p>
      <div class="notice">
+       
+       <p>We have a plethora of new, exciting changes.. the highlights are below, followed by a more comprehensive changelog.</p>
+       
        <h4>NORMALIZE.CSS</h4>
        <img src="./img/normalize.png" width="200px" >
        <p>{% blocktrans %}We are now using <a href="http://github.com/necolas/normalize.css/">normalize.css</a> developed by Nicolas Gallagher along with Jonathan Neal instead of the traditional CSS Reset stylesheet.{% endblocktrans %}</p>
@@ -135,43 +138,46 @@
 
        <p>{% blocktrans %}Why this is great news:{% endblocktrans %}</p>
        <ul>
-       <li>{% blocktrans %}Who likes being so damn redundant and declaring: em, i { font-style: italic; }{% endblocktrans %}</li>
+       <li>{% blocktrans %}Who likes being so damn redundant and declaring: <code style="font-size:90%">em, i { font-style: italic; }</code>{% endblocktrans %}</li>
        <li>{% blocktrans %}By using normalization instead of a reset + building up default styles, we use less styles and save bytes{% endblocktrans %}</li>
        <li>{% blocktrans %}Less noise in your dev tools: when debugging, you don't have to trawl through every reset selector to reach the actual style that is causing the issue.{% endblocktrans %}</li>
        <li>{% blocktrans %}More details on the <a href="http://necolas.github.com/normalize.css/">project page</a>{% endblocktrans %}</li>
        </ul>               
      </div>
-    <div class="notice">
-      <h4>{% blocktrans %}PROMPT CHROME FRAME FOR IE6{% endblocktrans %}</h4>
-       <img src="./img/chrome-frame.png">      
-      <ul>
-        <li>{% blocktrans %}With the latest release of Chrome frame which does not require admin access to be installed, we felt it was a good time to prompt IE 6 users to install Chrome Frame. (Using protocol-relative url and exact version for higher expires headers){% endblocktrans %}</li>      
-      </ul>
-    </div>
+ 
     <div class="notice">  
-      <h4>{% blocktrans %}FAST BUILD SCRIPT with @import INLINING{% endblocktrans %}</h4>
-      <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
-      have already been processed will not be reprocessed unless the source
-      has changed. A new "intermediate" folder is used for this.{% endblocktrans %}
+      <h4>{% blocktrans %}BUILD SCRIPT++: Faster, @import inlining, appcache generation{% endblocktrans %}</h4>
+      <p>{% blocktrans %}If 15 seconds was too long to wait before, you'll be happy with the changes. Via a new "intermediate" folder, we cut down build time by 80% or more.{% endblocktrans %}
       <p>{% blocktrans %}If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.{% endblocktrans %}
+      <p>Making an app that works offline is a badge of honor. Now with a flick of a config switch, the H5BP build script can autogenerate your cache manifest file with all the right info and wire it up. It'll also keep the manifest revved as you deploy new changes.
     </div> 
+    
+    <div class="notice">
+       <h4>{% blocktrans %}PROMPT CHROME FRAME FOR IE6{% endblocktrans %}</h4>
+        <img src="./img/chrome-frame.png">      
+       <ul>
+         <li>{% blocktrans %}With the latest release of Chrome frame which does not require admin access to be installed, we felt it was a good time to prompt IE 6 users to install Chrome Frame.{% endblocktrans %}</li>      
+       </ul>
+     </div>
+    
+     
     <div class="notice">
       <h4>RESPOND.JS</h4>
       <ul>
-        <li>{% blocktrans %}Added respond.js as part of shift to 'mobile first' approach. Updated it to improved, comment-free version which would enable IEs to also apply styles using media queries.{% endblocktrans %}</li>      
+        <li>{% blocktrans %}Added <a href="https://github.com/scottjehl/Respond#readme">respond.js</a> as part of shift to 'mobile first' approach. You can now use media queries anywhere and get full IE6-8 support.{% endblocktrans %}</li>      
       </ul>      
     </div>
     <div class="notice">
       <h4>{% blocktrans %}PNGFIX &amp; HANDHELD REMOVED{% endblocktrans %}</h4>
       <ul>
-        <li>{% blocktrans %}Remove handheld.css as we do not think it was useful among the diverse feature phones{% endblocktrans %}</li>
-        <li>{% blocktrans %}We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a> are more useful than using stopgap fixes like belatedpng.{% endblocktrans %}</li>      
+        <li>{% blocktrans %}We removed handheld.css as we do not think it was useful among the diverse feature phones{% endblocktrans %}</li>
+        <li>{% blocktrans %}We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a>, and techniques like <a href="http://html5boilerplate.com/docs/Notes-on-using-png/">using 8-bit PNGs</a> are more useful than using stopgap fixes like belatedpng.{% endblocktrans %}</li>      
       </ul>      
     </div> 
     <div class="changelog">
       <h3>{% blocktrans %}Changelog{% endblocktrans %}</h3>
       <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 270 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
-      <p><a href="http://html5boilerplate.com/docs/#FAQs★do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
+      <p><a href="http://html5boilerplate.com/docs/FAQs/#do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
 
 
       <h4>index.html</h4>
