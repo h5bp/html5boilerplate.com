@@ -54,7 +54,6 @@
 
   Niels Bom https://github.com/nielsbom
 
-  Shi Chuan https://github.com/shichuan
 
   https://github.com/skill83
 
