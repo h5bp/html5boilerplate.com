@@ -117,13 +117,7 @@
 
 <h1>Security</h1>
 
-<pre><code><span class="typ">ServerSignature</span><span class="pln"> </span><span class="typ">Off</span><span class="pln"><br /></span><span class="typ">ServerTokens</span><span class="pln"> </span><span class="typ">Prod</span><span class="pln"><br /></span></code></pre>
-
-<p>To turn off server signature could prevent people from knowing we are using Apache Server, or at least which version.</p>
-
-<pre><code><span class="pln">php_flag expose_php </span><span class="typ">Off</span><span class="pln"><br /></span></code></pre>
-
-<p>This rule doesn't work in .htaccess because of performance reasons, it only works in php.ini: <br /><code><span class="pln">expose_php </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Off</span></code></p>
+<p>Do not turn off your ServerSignature (i.e., the <code><span class="typ">Server</span><span class="pun">:</span></code> HTTP header).  Serious attackers can use other kinds of fingerprinting methods to figure out the actual server and components running behind a port.  Instead, as a site owner, you should keep track of what's listening on ports on hosts that you control.  Run a periodic scanner to make sure nothing suspicious is running on a host you control, and use the ServerSignature to determine if this is the web server and version that you expect.</p>
 
 <h1>Performance</h1>
 

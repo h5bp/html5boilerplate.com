@@ -90,11 +90,11 @@
 
 <h3>IE <code><span class="pln">html</span></code> tag classes</h3>
 
-<p>A series of ‘if’ statements detecting the IE browser version and applying the relevant class to the html tag. The benefit of this is it allows CSS fixes for specific IE version without hacks such as:</p>
+<p>A series of ‘if’ statements detecting the IE browser version and applying the relevant class to the html tag. The benefit of this is it allows CSS fixes for specific IE version without needing to use hacks such as:</p>
 
 <pre><code><span class="pun">.</span><span class="pln">this_element </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">float</span><span class="pun">:</span><span class="pln">right</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">*</span><span class="pln">margin</span><span class="pun">-</span><span class="pln">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"><br /></span></code></pre>
 
-<p>Hacks like these are commonly used to overcome bugs in the IE6 rendering engine. If you're using Modernizr, you can replace these hacks like so:</p>
+<p>Hacks like these are commonly used to overcome bugs in the IE6/7 rendering engines. But if you are using conditional classnames on the <code><span class="pln">html</span></code> element, you could write your CSS like this:</p>
 
 <pre><code><span class="pun">.</span><span class="pln">this_element </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">float</span><span class="pun">:</span><span class="pln">right</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"><br /></span><span class="pun">.</span><span class="pln">ie6 </span><span class="pun">.</span><span class="pln">this_element </span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"><br /></span></code></pre>
 
@@ -107,9 +107,8 @@
 <li>It doesn't validate as HTML4 but does validate as HTML5. Deal with it.</li>
 <li>It plays nicely with a technique to kick off your page-specific Javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.</li>
 <li>It uses the same element as Modernizr (and Dojo). That feels nice.</li>
+<li>It can improve the clarity of code in multi-developer teams.</li>
 </ul>
-
-<p>If the extra comments around that last tag look weird to you, blame Dreamweaver, which chokes on normal !IE conditional comments.</p>
 
 <h3>The <code><span class="tag">&lt;html&gt;</span></code>,<code><span class="tag">&lt;head&gt;</span></code> and <code><span class="tag">&lt;body&gt;</span></code> tags</h3>
 
@@ -143,7 +142,7 @@
 
 <p>The next key line that’s worth looking at is the Viewport meta tag:</p>
 
-<pre><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span><span class="pln"><br /></span></code></pre>
+<pre><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width,initial-scale=1"</span><span class="tag">&gt;</span><span class="pln"><br /></span></code></pre>
 
 <p>As the comments above it (see the commented and online versions of the boilerplate) explain, there are a few different options that you can use with this meta tag. You can find out more in <a href="http://j.mp/mobileviewport">the Apple developer docs</a>.</p>
 
@@ -157,7 +156,7 @@
 
 <p>If you put the icon files in the root of the domain, you can delete these lines. Unless you want this to show up for Android. Android 2.2 needs the hardcoded reference to the touch-icon. If you want to support Android 2.1 too, you’ll even have to use <code><span class="pln">rel</span><span class="pun">=</span><span class="str">"apple-touch-icon-precomposed"</span></code>. Read <a href="http://www.ravelrumba.com/blog/android-apple-touch-icon/">more about this on Rob’s blog</a>.</p>
 
-<p>The 'shortcut icon' reference can safely be removed from the HTML if it’s in the root, unless you want it to work in Seamonkey. Mathias Bynens <a href="http://mathiasbynens.be/notes/rel-shortcut-icon">wrote some more about <code><span class="pln">rel</span><span class="pun">=</span><span class="str">"shortcut icon"</span></code></a>, if you’re interested.</p>
+<p>The <code><span class="pln">shortcut icon</span></code> reference can safely be removed from the HTML if it’s in the root, unless you want it to work in Seamonkey. Mathias Bynens <a href="http://mathiasbynens.be/notes/rel-shortcut-icon">wrote some more about <code><span class="pln">rel</span><span class="pun">=</span><span class="str">"shortcut icon"</span></code></a>, if you’re interested.</p>
 
 <h3>CSS Media and Caching</h3>
 

@@ -88,6 +88,8 @@
 <li>Runs your JavaScript through a code quality tool (optional)</li>
 </ul>
 
+<p><img src="http://html5boilerplate.com/img/chart.png"></p>
+
 <h2>How to Use</h2>
 
 <h3>If you're on Mac or Linux...</h3>
@@ -97,7 +99,7 @@
 <h3>If you're on Windows...</h3>
 
 <ul>
-<li>Get the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JRE</a> (or JDK)</li>
+<li>Get the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JDK</a> (JRE isn't enough)</li>
 <li>Get <a href="http://code.google.com/p/winant/">WinAnt</a> and point the installer to <code><span class="typ">Program</span><span class="pln"> </span><span class="typ">Files</span><span class="pun">/</span><span class="typ">Java</span><span class="pun">/</span><span class="pln">jre6</span><span class="pun">/</span><span class="pln">bin</span><span class="pun">/</span></code></li>
 <li>Then open up a command line interface by doing Start Menu > Run > <code><span class="pln">cmd</span><span class="pun">.</span><span class="pln">exe</span></code>. <br />
 <ul><li>And of course, navigate to your project folder.</li></ul></li>
@@ -154,6 +156,12 @@
 
 <p>Check out Jay George's wordpress screencast videos: <a href='http://www.jaygeorge.co.uk/1-html5-buildscript-wordpress-1/'>http://www.jaygeorge.co.uk/1-html5-buildscript-wordpress-1/</a></p>
 
+<p>Using the build script on a Wordpress theme introduces a significant problem: Wordpress themes are installed to a website's <code><span class="str">/wp-content/</span><span class="pln">themes</span><span class="pun">/&lt;</span><span class="pln">theme</span><span class="pun">-</span><span class="pln">name</span><span class="pun">&gt;</span></code> directory while the build script's output references the minified/concatenated files in a relative URI as <code><span class="pln">js</span><span class="pun">/</span><span class="pln">scripts</span><span class="pun">-</span><span class="pln">xxxx</span><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js</span></code>. Therefore, output of the build script will reference files in the wrong location.</p>
+
+<p>To make the build script output files that reference the correct url <code><span class="str">/wp-content/</span><span class="pln">themes</span><span class="pun">/&lt;</span><span class="pln">theme</span><span class="pun">-</span><span class="pln">name</span><span class="pun">&gt;</span><span class="str">/js/</span><span class="pln">scripts</span><span class="pun">-</span><span class="pln">xxxx</span><span class="pun">.</span><span class="pln">js</span></code>, the build.xml file must be modified. Edit the 2 regular expressions near lines 599 (for js) and 699 (for css) to include the Wordpress PHP that dynamically references the theme's folder: (the line to add is indented)</p>
+
+<pre><code><span class="tag">&lt;replaceregexp</span><span class="pln"> </span><span class="atn">match</span><span class="pun">=</span><span class="atv">"&amp;lt;!-- scripts concatenated [\d\w\s\W]*?!-- <br />end ((scripts)|(concatenated and minified scripts))--&amp;gt;"</span><span class="pln"> <br /></span><span class="atn">replace</span><span class="pun">=</span><span class="atv">"&amp;lt;script src='<br />&nbsp; &nbsp; &amp;lt;?php bloginfo('template_url'); ?&amp;gt;/<br />${dir.js}/scripts-${build.number}.min.js\'&amp;gt;&amp;lt;/script&amp;gt;"</span><span class="pln"> </span><span class="atn">flags</span><span class="pun">=</span><span class="atv">"m"</span><span class="tag">&gt;</span><span class="pln"><br /></span></code></pre>
+
 <h3>Basic Tasks</h3>
 
 <p>Almost every project that uses the build script will need to add/delete or move files and folders from the build script. In the simplest cases this can be achieved by editing the <code><span class="pln">project</span><span class="pun">.</span><span class="pln">properties</span></code> file included in <code><span class="pln">build</span><span class="pun">/</span><span class="pln">config</span><span class="pun">/</span></code></p>
@@ -207,6 +215,33 @@
 <p>to this:</p>
 
 <pre><code><span class="pln">&nbsp; &nbsp; </span><span class="com">&lt;!-- JAVASCRIPT --&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;target</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"-js.main.concat"</span><span class="pln"> </span><span class="atn">depends</span><span class="pun">=</span><span class="atv">"-load-build-info"</span><span class="pln"> </span><span class="atn">description</span><span class="pun">=</span><span class="atv">"(PRIVATE) Concatenates the JS files in dir.js"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;echo</span><span class="pln"> </span><span class="atn">message</span><span class="pun">=</span><span class="atv">"Concatenating Main JS scripts..."</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;concat</span><span class="pln"> </span><span class="atn">destfile</span><span class="pun">=</span><span class="atv">"./${dir.publish}/${dir.js}/scripts-${build.number}.js"</span><span class="tag">&gt;</span><span class="pln"><br /></span><span class="com">&lt;!--Add one entry for every file--&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;fileset</span><span class="pln"> </span><span class="atn">file</span><span class="pun">=</span><span class="atv">"./${dir.publish}/${dir.js}/plugins.js"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;fileset</span><span class="pln"> </span><span class="atn">file</span><span class="pun">=</span><span class="atv">"./${dir.publish}/${dir.js}/script.js"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;/concat&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;/target&gt;</span><span class="pln"><br /></span></code></pre>
+
+<h2>(new) Inlining @imports</h2>
+
+<h3>Splitting style.css</h3>
+
+<p>Running the ant command <code><span class="pln">ant css</span><span class="pun">-</span><span class="pln">split</span></code> from the build directory will split the monolithic style.css file that you're familiar with into multiple css files.  It then renames itself to style.css.orig and creates a new style.css that @imports the newly split files.  </p>
+
+<p>This is done via special marker comments (ex: <code><span class="pun">==|==</span><span class="pln"> filename </span><span class="pun">====</span></code>), so if you're merging from a personal version of style.css, make sure to include these markers.</p>
+
+<p>If everything went correctly you should see no difference in the behavior of your pages.  The browser should follow the @import directives and load all your CSS.</p>
+
+<h3>Importing Rules</h3>
+
+<p>Browser rules for @imports are very strict.  They must follow any <code><span class="lit">@charset</span></code> rules and come before anything else. Any @imports that follow other blocks in the .css file will be ignored by the browser.  The build script isn't this strict, but if you want to maintain browser compatibility you should adhere to these rules.</p>
+
+<p><a href="http://www.w3.org/TR/css3-cascade/#import">w3.org @import rules</a></p>
+
+<h3>Building with Imports</h3>
+
+<p>Now whenever the build script is creating a publish directory for you it will attempt to bring in any @import directives it finds to create a single concatenated and minified css file.  This makes it easier for you to add and remove blocks of functionality from your .css during development, while keeping the benefits of a single http GET when deployed.</p>
+
+<ul>
+<li>If you are adding your own @imports you should make the path relative to the .css you are adding the @import to.  </li>
+<li>@import URLs that start with http: or https: won't be inlined, because it is assumed that these are meant to change independent of the file importing them.  </li>
+<li>@import URLs that start with http: or https: need to come before any @imports that will be inlined, otherwise they will break (see the strict rules above).</li>
+<li>You can specify media types after an @import (ex: <code><span class="lit">@import</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'print.styles.css'</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">;</span></code>).  The build script will wrap these in an <code><span class="lit">@media</span><span class="pln"> </span><span class="pun">[</span><span class="pln">type</span><span class="pun">]{[</span><span class="pln">file contents</span><span class="pun">]}</span></code> block.</li>
+</ul>
 
 <h2>Some notes</h2>
 
@@ -285,6 +320,8 @@
 <h2>Ports</h2>
 
 <p>There is an effort underway to port things to <a href="/docs/rake/">rake</a>. Woo!</p>
+
+<p><img src="http://html5boilerplate.com/img/optim.png"></p>
         <div id="disqus_thread">
           
         </div>
