@@ -245,9 +245,9 @@ td { vertical-align: top; }
 .ir br { display: none; }
 
 /* {% blocktrans %}Hide for both screenreaders and browsers{% endblocktrans %}: h5bp.com/m */
-.hidden { display: none; visibility: hidden; }
+.hidden { display: none !important; visibility: hidden; }
 
-/* {% blocktrans %}Hide only visually, but have it available for screenreaders: by Jon Neal.{% endblocktrans %}: h5bp.com/n  & h5bp.com/o */
+/* {% blocktrans %} Hide only visually, but have it available for screenreaders:{% endblocktrans %} h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 /* {% blocktrans %}Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard{% endblocktrans %}: h5bp.com/p */
@@ -264,9 +264,16 @@ td { vertical-align: top; }
 
 
 /* =============================================================================
-   {% blocktrans %}PLACEHOLDER Media Queries for Responsive Design.{% endblocktrans %}
-   {% blocktrans %}These override the primary ('mobile first') styles{% endblocktrans %}
-   {% blocktrans %}Modify as content requires.{% endblocktrans %}
+
+
+   
+   
+   
+
+   {% blocktrans %}Use Media Queries for Responsive Design.{% endblocktrans %}
+   {% blocktrans %}Pixel widths given as samples.{% endblocktrans %}
+   {% blocktrans %}Edit the widths to suit where your design breaks, rather than {% endblocktrans %}
+   {% blocktrans %}for device pixels, see 'Using a mobile-first approach'{% endblocktrans %}: h5bp.com/w
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
