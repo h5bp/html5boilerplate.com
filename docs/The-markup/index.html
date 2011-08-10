@@ -51,6 +51,7 @@
                       <li><a href="/docs/Mobile-References/">Mobile References</a></li>
                       <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
                       <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
                       <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
                       <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
                       <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
@@ -146,31 +147,37 @@
 
 <p>As the comments above it (see the commented and online versions of the boilerplate) explain, there are a few different options that you can use with this meta tag. You can find out more in <a href="http://j.mp/mobileviewport">the Apple developer docs</a>.</p>
 
-<h3>The two icons</h3>
+<h3>Favicons and Touch Icons</h3>
 
-<p>The next few lines reference both the favicon and apple touch icon:</p>
+<p>The shortcut icons should be put in the root directory of your site. The H5BP comes with a default set of icons that you can use as a baseline to create yours. </p>
 
-<pre><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"shortcut icon"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon.ico"</span><span class="tag">&gt;</span><span class="pln"><br /></span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon.png"</span><span class="tag">&gt;</span><span class="pln"><br /></span></code></pre>
-
-<p>Both of these are used by multiple browsers and devices. The favicon.ico file is used on tabs, in title bars and bookmark menus of all the major browsers. The Apple Touch icon is used on all Apple’s iOS devices and (ironically) some Android devices.</p>
-
-<p>If you put the icon files in the root of the domain, you can delete these lines. Unless you want this to show up for Android. Android 2.2 needs the hardcoded reference to the touch-icon. If you want to support Android 2.1 too, you’ll even have to use <code><span class="pln">rel</span><span class="pun">=</span><span class="str">"apple-touch-icon-precomposed"</span></code>. Read <a href="http://www.ravelrumba.com/blog/android-apple-touch-icon/">more about this on Rob’s blog</a>.</p>
-
-<p>The <code><span class="pln">shortcut icon</span></code> reference can safely be removed from the HTML if it’s in the root, unless you want it to work in Seamonkey. Mathias Bynens <a href="http://mathiasbynens.be/notes/rel-shortcut-icon">wrote some more about <code><span class="pln">rel</span><span class="pun">=</span><span class="str">"shortcut icon"</span></code></a>, if you’re interested.</p>
+<p>If your site is in a sub-directory, make sure you add the <code><span class="pln">link</span></code> tags too so that the favicons can render as we noted in an <a href="https://github.com/paulirish/html5-boilerplate/wiki/The-markup/5ab89f343a95483b068b22d8bbabaaffa3ad30fd">earlier version of this document</a>. </p>
 
 <h3>CSS Media and Caching</h3>
 
-<p>The CSS link is fairly straight-forward though it is worth mentioning that <code><span class="pln">media</span><span class="pun">=</span><span class="str">"all"</span></code> is implied simply by not including it. The interesting part of this link is the use of a query string <code><span class="pun">?</span><span class="pln">v</span><span class="pun">=</span><span class="lit">1</span></code> on the end of the CSS URL. This forces the browser to refresh its cache of the CSS file each time this number is incremented, because, as far as the browser can tell, a different file is being served.</p>
+<p>The CSS link is fairly straight-forward though it is worth mentioning that <code><span class="pln">media</span><span class="pun">=</span><span class="str">"all"</span></code> is implied simply by not including it. </p>
 
-<p>This trick is particularly useful for sites where regular updates to the CSS are commonplace. You’ll ensure that users are always seeing the latest version of the CSS if you increment the version number when you upload the new version of your stylesheet.  </p>
+<h3>Modernizr, Yepnope, Respond</h3>
 
-<p>Read more about this technique: <a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></p>
-
-<h3>Modernizr, Javascript and HTML classes</h3>
-
-<p>Modernizr is a Javascript library which hooks into the class attribute of the opening <code><span class="pln">html</span></code> tag (Line 2 in both versions of the Boilerplate), generates some useful classes, and sets up all browsers to properly render HTML5 elements.</p>
+<p><a href="http://modernizr.com">Modernizr</a> is a Javascript library which hooks into the class attribute of the opening <code><span class="pln">html</span></code> tag (Line 2 in both versions of the Boilerplate), generates class names using feature detection, and sets up all browsers to properly render HTML5 elements.</p>
 
 <p>(Wondering why the <a href="https://code.google.com/p/html5shiv/">HTML5 Shiv</a> project, which uses JavaScript to fix the issues IE and others have with rendering HTML5, hasn’t been included in the boilerplate? The HTML5 Shiv is actually incorporated into Modernizr.)</p>
+
+<p>H5BP 2.0 uses a custom build of Modernizr which also includes Yepnope script loading framework and Respond, a media query polyfill. </p>
+
+<h4>Respond</h4>
+
+<p><a href="https://github.com/scottjehl/Respond">Respond</a> is a media query polyfill that allows IE6, 7, 8 and other browsers that do not support media queries to render @media rules you specify in your CSS using JavaScript. </p>
+
+<p>If you provided a basic style first and provided detailed styling rules based on the device widths to target mobile and desktop browsers, it would mean desktop browsers that do not support media queries would not get those styles (basically IE6, 7, and 8). But with Respond, all of these browsers can render the styles you specify in media queries which means you can continue to do <em>Mobile First</em> designs that work in all desktop browsers. </p>
+
+<h4>Yepnope</h4>
+
+<p><a href="http://yepnopejs.com/">yepnope</a> is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need. </p>
+
+<p>In H5BP 2.0, Yepnope is also used to load Google Analytics snippet asynchronously.</p>
+
+<p>If you do not wish to use this custom build of modernizr, make sure you also change the Google analytics snippet to not be loaded via the Yepnope resource loader (See section on Google Analytics below). </p>
 
 <h3><code><span class="kwd">no</span><span class="pun">-</span><span class="pln">js</span></code></h3>
 
@@ -204,7 +211,11 @@
 
 <p>Finally, we get the latest version of the Google Analytics tracking code. This latest version includes a few new handy tricks from an analytics perspective, and also loads faster than the previous version. Google recommends that this script be placed at the top of the page. Factors to consider: if you place this script at the top of the page, you’ll be able to count users who don’t fully load the page, and you’ll incur the max number of simultaneous connections of the browser.</p>
 
-<p>HTML5 Boilerplate is using an optimized version of the new Google Analytics async snippet so <code><span class="pln">ga</span><span class="pun">.</span><span class="pln">js</span></code> isn’t blocking. For more information, go to <a href="http://mathiasbynens.be/notes/async-analytics-snippet"><a href='http://mathiasbynens.be/notes/async-analytics-snippet'>http://mathiasbynens.be/notes/async-analytics-snippet</a></a> and <a href="http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html"><a href='http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html'>http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html</a></a>.</p>
+<p>H5BP 2.0 uses Yepnope to load the analytics script asynchronously. As mentioned earlier, if you intend to use<br />without Modernizr's custom build, look up <a href="http://mathiasbynens.be/notes/async-analytics-snippet"><a href='http://mathiasbynens.be/notes/async-analytics-snippet'>http://mathiasbynens.be/notes/async-analytics-snippet</a></a> and <a href="http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html"><a href='http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html'>http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html</a></a>. </p>
+
+<h3>Google Chrome Frame</h3>
+
+<p>We finally have a Chrome Frame that <a href="http://blog.chromium.org/2011/06/introducing-non-admin-chrome-frame.html">you do not need administrative rights to install</a>. Because of this, we have included the prompt to install Chrome Frame by default for IE6 users. If you intend to support IE6, you should remove <a href="https://github.com/paulirish/html5-boilerplate/blob/93f0e38c510fdba16cbb68abe4dcfefa1f7034eb/index.html#L72-77">this snippet</a>. </p>
 
 <h3>Thanks!</h3>
 
