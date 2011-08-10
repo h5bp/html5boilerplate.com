@@ -77,10 +77,12 @@
 
 <ul>
 <li>Combines and minifies javascript (via yui compressor)</li>
+<li>Inlines stylesheets specified using <code><span class="lit">@import</span></code> in your CSS</li>
 <li>Combines and minifies CSS</li>
 <li>Optimizes JPGs and PNGs (with jpegtran &amp; optipng)</li>
 <li>Removes development only code (any remaining console.log files, profiling, test suite)</li>
 <li>Basic to aggressive html minification (via htmlcompressor)</li>
+<li>Autogenerates a cache manifest file (and links from the <code><span class="pln">html</span></code> tag) when you enable a property in the project config file.</li>
 <li>Revises the file names of your assets so that you can use heavy caching (1 year expires).</li>
 <li>Upgrades the .htaccess to use heavier caching</li>
 <li>Updates your HTML to reference these new hyper-optimized CSS + JS files</li>
@@ -130,6 +132,8 @@
 <p>You can now add multiple stylesheets to the project (defined in the <code><span class="pln">project</span><span class="pun">.</span><span class="pln">properties</span></code> file) and they will be concatenated into 1 file, with any default stylesheets defined in the <code><span class="kwd">default</span><span class="pun">.</span><span class="pln">properties</span></code> file being added at the end.</p>
 
 <p>Adding new 'pages' (html, php, etc) is handled in the same way and the script should iterate through any files listed here and update the css / javascript references as per the original script</p>
+
+<p>All script files that are added within these two lines: <code><span class="com">&lt;!-- scripts concatenated and minified via ant build script--&gt;</span></code> and <code><span class="com">&lt;!-- end scripts--&gt;</span></code> will be concatenated and minimized. If you do not wish a script file to be concatenated and minimized, you should link to it outside of those two lines. </p>
 
 <p>We have also added the ability to define 'environments' for the build process. The original targets still exist, and run the same functions, however each target now has a prod, test and dev environment too. </p>
 

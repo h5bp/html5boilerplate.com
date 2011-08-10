@@ -93,9 +93,13 @@
 
 <h3>2. merge not replace your existing rules</h3>
 
-<p>for example, if you use CodeIgniter, you may have existing URL rewrite rules like: <br /><code><br />RewriteCond %{REQUEST_FILENAME} !-f<br />RewriteCond %{REQUEST_FILENAME} !-d<br />RewriteRule ^(.*)$ index.php/$1<br /></code></p>
+<p>for example, if you use CodeIgniter, you may have existing URL rewrite rules like: </p>
 
-<p>merge the above with H5BP rules below:<br /><code><br />RewriteCond %{REQUEST_FILENAME} !-f<br />RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/|#(.*))$<br />RewriteRule ^(.*)$ $1/ [R=301,L]<br /></code></p>
+<p><code><br />RewriteCond %{REQUEST_FILENAME} !-f<br />RewriteCond %{REQUEST_FILENAME} !-d<br />RewriteRule ^(.*)$ index.php/$1<br /></code></p>
+
+<p>merge the above with H5BP rules below:</p>
+
+<p><code><br />RewriteCond %{REQUEST_FILENAME} !-f<br />RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/|#(.*))$<br />RewriteRule ^(.*)$ $1/ [R=301,L]<br /></code></p>
 
 <h3>3. be careful of the order</h3>
 
