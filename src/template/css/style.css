@@ -151,9 +151,6 @@ label { cursor: pointer; }
 
 legend { border: 0; *margin-left: -7px; padding: 0; }
 
-/* {% blocktrans %}Indicate that 'label' will shift focus to the associated form element{% endblocktrans %} */
-label { cursor: pointer; }
-
 /*
  * 1. {% blocktrans %}Correct font-size not inheriting in all browsers{% endblocktrans %}
  * 2. {% blocktrans %}Remove margins in FF3/4 S5 Chrome{% endblocktrans %}

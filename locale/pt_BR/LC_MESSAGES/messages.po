@@ -1034,7 +1034,7 @@ msgstr ""
 msgid "Forms"
 msgstr ""
 
-#: src/index.html:591 standard input:600
+#: src/index.html:591
 msgid ""
 "Indicate that &apos;label&apos; will shift focus to the associated form "
 "element"
@@ -1048,95 +1048,95 @@ msgstr ""
 msgid "Correct alignment displayed oddly in IE6/7"
 msgstr ""
 
-#: src/index.html:604 src/template/css/style.css:158
+#: src/index.html:601 src/template/css/style.css:155
 msgid "Correct font-size not inheriting in all browsers"
 msgstr ""
 
-#: src/index.html:605 src/template/css/style.css:159
+#: src/index.html:602 src/template/css/style.css:156
 msgid "Remove margins in FF3/4 S5 Chrome"
 msgstr ""
 
-#: src/index.html:606 src/template/css/style.css:160
+#: src/index.html:603 src/template/css/style.css:157
 msgid "Define consistent vertical alignment display in all browsers"
 msgstr ""
 
-#: src/index.html:612 src/template/css/style.css:166
+#: src/index.html:609 src/template/css/style.css:163
 msgid ""
 "Define line-height as normal to match FF3/4 (set using !important in the UA "
 "stylesheet)"
 msgstr ""
 
-#: src/index.html:613 src/template/css/style.css:167
+#: src/index.html:610 src/template/css/style.css:164
 msgid "Correct inner spacing displayed oddly in IE6/7"
 msgstr ""
 
-#: src/index.html:619
+#: src/index.html:616
 msgid ""
 "Reintroduce inner spacing in &apos;table&apos; to avoid overlap and "
 "whitespace issues in IE6/7"
 msgstr ""
 
-#: src/index.html:625 src/template/css/style.css:179
+#: src/index.html:622 src/template/css/style.css:176
 msgid "Display hand cursor for clickable form elements"
 msgstr ""
 
-#: src/index.html:626 src/template/css/style.css:180
+#: src/index.html:623 src/template/css/style.css:177
 msgid "Allow styling of clickable form elements in iOS"
 msgstr ""
 
-#: src/index.html:632 src/template/css/style.css:186
+#: src/index.html:629 src/template/css/style.css:183
 msgid "Consistent box sizing and appearance"
 msgstr ""
 
-#: src/index.html:640 src/template/css/style.css:194
+#: src/index.html:637 src/template/css/style.css:191
 msgid "Remove inner padding and border in FF3/4"
 msgstr ""
 
-#: src/index.html:646 src/template/css/style.css:200
+#: src/index.html:643 src/template/css/style.css:197
 msgid "Remove default vertical scrollbar in IE6/7/8/9"
 msgstr ""
 
-#: src/index.html:647 src/template/css/style.css:201
+#: src/index.html:644 src/template/css/style.css:198
 msgid "Allow only vertical resizing"
 msgstr ""
 
-#: src/index.html:652 src/template/css/style.css:206
+#: src/index.html:649 src/template/css/style.css:203
 msgid "Colors for form validity"
 msgstr ""
 
-#: src/index.html:658 src/template/css/style.css:212
+#: src/index.html:655 src/template/css/style.css:209
 msgid "Tables"
 msgstr ""
 
-#: src/index.html:665 src/template/css/style.css:219
+#: src/index.html:662 src/template/css/style.css:216
 msgid "Primary styles"
 msgstr ""
 
-#: src/index.html:666 src/template/css/style.css:220
+#: src/index.html:663 src/template/css/style.css:217
 msgid "Author"
 msgstr ""
 
-#: src/index.html:685 src/template/css/style.css:239
+#: src/index.html:682 src/template/css/style.css:236
 msgid "Non-semantic helper classes"
 msgstr ""
 
-#: src/index.html:686 src/template/css/style.css:240
+#: src/index.html:683 src/template/css/style.css:237
 msgid "Please define your styles before this section."
 msgstr ""
 
-#: src/index.html:689 src/template/css/style.css:243
+#: src/index.html:686 src/template/css/style.css:240
 msgid "For image replacement"
 msgstr ""
 
-#: src/index.html:693 src/template/css/style.css:247
+#: src/index.html:690 src/template/css/style.css:244
 msgid "Hide for both screenreaders and browsers"
 msgstr ""
 
-#: src/index.html:696 src/template/css/style.css:250
+#: src/index.html:693 src/template/css/style.css:247
 msgid " Hide only visually, but have it available for screenreaders:"
 msgstr ""
 
-#: src/index.html:699 src/template/css/style.css:253
+#: src/index.html:696 src/template/css/style.css:250
 #, fuzzy
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
@@ -1146,521 +1146,521 @@ msgstr ""
 "visuallyhidden</code> para permitir que elementos sejam focalisáveis quando "
 "navegados por teclado."
 
-#: src/index.html:702 src/template/css/style.css:256
+#: src/index.html:699 src/template/css/style.css:253
 msgid "Hide visually and from screenreaders, but maintain layout"
 msgstr ""
 
-#: src/index.html:705 src/template/css/style.css:259
+#: src/index.html:702 src/template/css/style.css:256
 msgid "Contain floats"
 msgstr ""
 
-#: src/index.html:719 src/template/css/style.css:273
+#: src/index.html:716 src/template/css/style.css:270
 msgid "Use Media Queries for Responsive Design."
 msgstr ""
 
-#: src/index.html:720 src/template/css/style.css:274
+#: src/index.html:717 src/template/css/style.css:271
 msgid "Pixel widths given as samples."
 msgstr ""
 
-#: src/index.html:721 src/template/css/style.css:275
+#: src/index.html:718 src/template/css/style.css:272
 msgid "Edit the widths to suit where your design breaks, rather than "
 msgstr ""
 
-#: src/index.html:722
+#: src/index.html:719
 msgid "for device pixels, see &apos;Using a mobile-first approach&apos;"
 msgstr ""
 
-#: src/index.html:726 src/template/css/style.css:280
+#: src/index.html:723 src/template/css/style.css:277
 msgid "Style adjustments for viewports 480px and over go here"
 msgstr ""
 
-#: src/index.html:731 src/template/css/style.css:285
+#: src/index.html:728 src/template/css/style.css:282
 msgid "Style adjustments for viewports 768px and over go here"
 msgstr ""
 
-#: src/index.html:738 src/template/css/style.css:292
+#: src/index.html:735 src/template/css/style.css:289
 msgid "Print styles."
 msgstr ""
 
-#: src/index.html:739 src/template/css/style.css:293
+#: src/index.html:736 src/template/css/style.css:290
 msgid "Inlined to avoid required HTTP connection"
 msgstr ""
 
-#: src/index.html:743 src/template/css/style.css:297
+#: src/index.html:740 src/template/css/style.css:294
 msgid "Black prints faster"
 msgstr ""
 
-#: src/index.html:747
+#: src/index.html:744
 msgid "Don&apos;t show links for images, or javascript/internal links"
 msgstr ""
 
-#: src/index.html:760
+#: src/index.html:757
 msgid "usage: log(&apos;inside coolFunc&apos;, this, arguments);"
 msgstr ""
 
-#: src/index.html:763 src/template/js/plugins.js:5
+#: src/index.html:760 src/template/js/plugins.js:5
 msgid "store logs to an array for reference"
 msgstr ""
 
-#: src/index.html:771 src/template/js/plugins.js:13
+#: src/index.html:768 src/template/js/plugins.js:13
 msgid "make it safe to use console.log always"
 msgstr ""
 
-#: src/index.html:775 src/template/js/plugins.js:17
+#: src/index.html:772 src/template/js/plugins.js:17
 msgid ""
 "place any jQuery/helper plugins in here, instead of separate, slower script "
 "files."
 msgstr ""
 
-#: src/index.html:780 src/template/js/script.js:1
+#: src/index.html:777 src/template/js/script.js:1
 msgid "Author:"
 msgstr ""
 
-#: src/index.html:798
+#: src/index.html:795
 msgid "the humans responsible &amp; colophon"
 msgstr ""
 
-#: src/index.html:802 src/template/humans.txt:5
+#: src/index.html:799 src/template/humans.txt:5
 msgid "TEAM"
 msgstr ""
 
-#: src/index.html:808 src/template/humans.txt:11
+#: src/index.html:805 src/template/humans.txt:11
 msgid "THANKS"
 msgstr ""
 
-#: src/index.html:811 src/template/humans.txt:14
+#: src/index.html:808 src/template/humans.txt:14
 msgid "SITE"
 msgstr ""
 
-#: src/index.html:844 src/template/htaccess.txt:1
+#: src/index.html:841 src/template/htaccess.txt:1
 msgid "Apache configuration file"
 msgstr ""
 
-#: src/index.html:847 src/template/htaccess.txt:4
+#: src/index.html:844 src/template/htaccess.txt:4
 msgid ""
 "Note .htaccess files are an overhead, this logic should be in your Apache "
 "config if possible"
 msgstr ""
 
-#: src/index.html:850 src/template/htaccess.txt:7
+#: src/index.html:847 src/template/htaccess.txt:7
 msgid "Techniques in here adapted from all over, including:"
 msgstr ""
 
-#: src/index.html:853 src/template/htaccess.txt:10
+#: src/index.html:850 src/template/htaccess.txt:10
 msgid "Sample .htaccess file of CMS MODx:"
 msgstr ""
 
-#: src/index.html:857 src/template/htaccess.txt:14
+#: src/index.html:854 src/template/htaccess.txt:14
 msgid "If you run a webserver other than apache, consider:"
 msgstr ""
 
-#: src/index.html:864 src/template/htaccess.txt:21
+#: src/index.html:861 src/template/htaccess.txt:21
 msgid "Better website experience for IE users"
 msgstr ""
 
-#: src/index.html:867 src/template/htaccess.txt:24
+#: src/index.html:864 src/template/htaccess.txt:24
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
 
-#: src/index.html:869
+#: src/index.html:866
 msgid ""
 "Use ChromeFrame if it&apos;s installed for a better experience for the poor "
 "IE folk"
 msgstr ""
 
-#: src/index.html:874
+#: src/index.html:871
 msgid ""
 "mod_headers can&apos;t match by content-type, but we don&apos;t want to send "
 "this header on *everything*"
 msgstr ""
 
-#: src/index.html:882 src/template/htaccess.txt:39
+#: src/index.html:879 src/template/htaccess.txt:39
 msgid "Cross-domain AJAX requests"
 msgstr ""
 
-#: src/index.html:885 src/template/htaccess.txt:42
+#: src/index.html:882 src/template/htaccess.txt:42
 msgid "Serve cross-domain ajax requests, disabled."
 msgstr ""
 
-#: src/index.html:896 src/template/htaccess.txt:53
+#: src/index.html:893 src/template/htaccess.txt:53
 msgid "Webfont access"
 msgstr ""
 
-#: src/index.html:900 src/template/htaccess.txt:57
+#: src/index.html:897 src/template/htaccess.txt:57
 msgid "allow access from all domains for webfonts"
 msgstr ""
 
-#: src/index.html:901 src/template/htaccess.txt:58
+#: src/index.html:898 src/template/htaccess.txt:58
 msgid "alternatively you could only whitelist"
 msgstr ""
 
-#: src/index.html:902
+#: src/index.html:899
 msgid "your subdomains like &quot;sub.domain.com&quot;"
 msgstr ""
 
-#: src/index.html:914 src/template/htaccess.txt:71
+#: src/index.html:911 src/template/htaccess.txt:71
 msgid "Proper MIME type for all files"
 msgstr ""
 
-#: src/index.html:918 src/template/htaccess.txt:75
+#: src/index.html:915 src/template/htaccess.txt:75
 #, fuzzy
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/index.html:919
+#: src/index.html:916
 msgid "Normalize to standard type (it&apos;s sniffed in IE anyways) "
 msgstr ""
 
-#: src/index.html:923 src/template/htaccess.txt:80
+#: src/index.html:920 src/template/htaccess.txt:80
 msgid "Audio"
 msgstr ""
 
-#: src/index.html:927 src/template/htaccess.txt:84
+#: src/index.html:924 src/template/htaccess.txt:84
 #, fuzzy
 msgid "Video"
 msgstr "Vídeos"
 
-#: src/index.html:932 src/template/htaccess.txt:89
+#: src/index.html:929 src/template/htaccess.txt:89
 msgid "SVG"
 msgstr ""
 
-#: src/index.html:933 src/template/htaccess.txt:90
+#: src/index.html:930 src/template/htaccess.txt:90
 msgid "Required for svg webfonts on iPad"
 msgstr ""
 
-#: src/index.html:938 standard input:1087 src/template/htaccess.txt:95
+#: src/index.html:935 standard input:1084 src/template/htaccess.txt:95
 #: input:244
 msgid "Webfonts"
 msgstr ""
 
-#: src/index.html:944 src/template/htaccess.txt:101
+#: src/index.html:941 src/template/htaccess.txt:101
 msgid "Assorted types"
 msgstr ""
 
-#: src/index.html:957 src/template/htaccess.txt:114
+#: src/index.html:954 src/template/htaccess.txt:114
 msgid "Allow concatenation from within specific js and css files"
 msgstr ""
 
-#: src/index.html:960 src/template/htaccess.txt:117
+#: src/index.html:957 src/template/htaccess.txt:117
 msgid "e.g. Inside of script.combined.js you could have"
 msgstr ""
 
-#: src/index.html:963 src/template/htaccess.txt:120
+#: src/index.html:960 src/template/htaccess.txt:120
 msgid "and they would be included into this single file."
 msgstr ""
 
-#: src/index.html:965 src/template/htaccess.txt:122
+#: src/index.html:962 src/template/htaccess.txt:122
 msgid "This is not in use in the boilerplate as it stands. You may"
 msgstr ""
 
-#: src/index.html:966 src/template/htaccess.txt:123
+#: src/index.html:963 src/template/htaccess.txt:123
 msgid "choose to name your files in this way for this advantage or"
 msgstr ""
 
-#: src/index.html:967 src/template/htaccess.txt:124
+#: src/index.html:964 src/template/htaccess.txt:124
 msgid "concatenate and minify them manually."
 msgstr ""
 
-#: src/index.html:968 src/template/htaccess.txt:125
+#: src/index.html:965 src/template/htaccess.txt:125
 msgid "Disabled by default."
 msgstr ""
 
-#: src/index.html:984 src/template/htaccess.txt:141
+#: src/index.html:981 src/template/htaccess.txt:141
 msgid "Gzip compression"
 msgstr ""
 
-#: src/index.html:990 src/template/htaccess.txt:147
+#: src/index.html:987 src/template/htaccess.txt:147
 msgid "force deflate for mangled headers"
 msgstr ""
 
-#: src/index.html:1022 src/template/htaccess.txt:179
+#: src/index.html:1019 src/template/htaccess.txt:179
 msgid "Legacy versions of Apache"
 msgstr ""
 
-#: src/index.html:1034 src/template/htaccess.txt:191
+#: src/index.html:1031 src/template/htaccess.txt:191
 msgid "Expires headers (for better cache control)"
 msgstr ""
 
-#: src/index.html:1038 src/template/htaccess.txt:195
+#: src/index.html:1035 src/template/htaccess.txt:195
 msgid "These are pretty far-future expires headers"
 msgstr ""
 
-#: src/index.html:1039 src/template/htaccess.txt:196
+#: src/index.html:1036 src/template/htaccess.txt:196
 msgid "They assume you control versioning with cachebusting query params like:"
 msgstr ""
 
-#: src/index.html:1041 src/template/htaccess.txt:198
+#: src/index.html:1038 src/template/htaccess.txt:198
 msgid "Additionally, consider that outdated proxies may miscache"
 msgstr ""
 
-#: src/index.html:1046
+#: src/index.html:1043
 msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like &quot;access plus 1 week&quot; "
 msgstr ""
 
-#: src/index.html:1052 src/template/htaccess.txt:209
+#: src/index.html:1049 src/template/htaccess.txt:209
 msgid "Perhaps better to whitelist expires rules? Perhaps."
 msgstr ""
 
-#: src/index.html:1055 src/template/htaccess.txt:212
+#: src/index.html:1052 src/template/htaccess.txt:212
 msgid ""
 "cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
 msgstr ""
 
-#: src/index.html:1060 src/template/htaccess.txt:217
+#: src/index.html:1057 src/template/htaccess.txt:217
 msgid "Your document html"
 msgstr ""
 
-#: src/index.html:1063 src/template/htaccess.txt:220
+#: src/index.html:1060 src/template/htaccess.txt:220
 msgid "Data"
 msgstr ""
 
-#: src/index.html:1068 src/template/htaccess.txt:225
+#: src/index.html:1065 src/template/htaccess.txt:225
 msgid "RSS feed"
 msgstr ""
 
-#: src/index.html:1071 src/template/htaccess.txt:228
+#: src/index.html:1068 src/template/htaccess.txt:228
 msgid "Favicon (cannot be renamed)"
 msgstr ""
 
-#: src/index.html:1074 src/template/htaccess.txt:231
+#: src/index.html:1071 src/template/htaccess.txt:231
 msgid "Media: images, video, audio"
 msgstr ""
 
-#: src/index.html:1084 src/template/htaccess.txt:241
+#: src/index.html:1081 src/template/htaccess.txt:241
 msgid "HTC files  (css3pie)"
 msgstr ""
 
-#: src/index.html:1094 src/template/htaccess.txt:251
+#: src/index.html:1091 src/template/htaccess.txt:251
 #, fuzzy
 msgid "CSS and JavaScript"
 msgstr "JavaScript"
 
-#: src/index.html:1108 src/template/htaccess.txt:265
+#: src/index.html:1105 src/template/htaccess.txt:265
 msgid "ETag removal"
 msgstr ""
 
-#: src/index.html:1117
+#: src/index.html:1114
 msgid ""
 "Since we`re sending far-future expires, we don&apos;t need ETags for static "
 "content."
 msgstr ""
 
-#: src/index.html:1124 src/template/htaccess.txt:281
+#: src/index.html:1121 src/template/htaccess.txt:281
 msgid "Stop screen flicker in IE on CSS rollovers"
 msgstr ""
 
-#: src/index.html:1127
+#: src/index.html:1124
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers in "
 "combination with the &quot;ExpiresByType&quot; rules for images (see above)"
 msgstr ""
 
-#: src/index.html:1128 src/template/htaccess.txt:285
+#: src/index.html:1125 src/template/htaccess.txt:285
 msgid "If needed, un-comment the following rules."
 msgstr ""
 
-#: src/index.html:1138 src/template/htaccess.txt:295
+#: src/index.html:1135 src/template/htaccess.txt:295
 msgid "Cookie setting from iframes"
 msgstr ""
 
-#: src/index.html:1141 src/template/htaccess.txt:298
+#: src/index.html:1138 src/template/htaccess.txt:298
 msgid "Allow cookies to be set from iframes (for IE only)"
 msgstr ""
 
-#: src/index.html:1142 src/template/htaccess.txt:299
+#: src/index.html:1139 src/template/htaccess.txt:299
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
 
-#: src/index.html:1153 src/template/htaccess.txt:310
+#: src/index.html:1150 src/template/htaccess.txt:310
 msgid "Start rewrite engine"
 msgstr ""
 
-#: src/index.html:1156 src/template/htaccess.txt:313
+#: src/index.html:1153 src/template/htaccess.txt:313
 msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
 msgstr ""
 
-#: src/index.html:1157 src/template/htaccess.txt:314
+#: src/index.html:1154 src/template/htaccess.txt:314
 msgid "FollowSymLinks must be enabled for this to work."
 msgstr ""
 
-#: src/index.html:1166
+#: src/index.html:1163
 msgid "Suppress or force the &quot;www.&quot; at the beginning of URLs"
 msgstr ""
 
-#: src/index.html:1170
+#: src/index.html:1167
 msgid ""
 "The same content should never be available under two different URLs, "
 "especially not with and without &quot;www.&quot; at the beginning, since "
 "this can cause SEO problems (duplicate content)."
 msgstr ""
 
-#: src/index.html:1171
+#: src/index.html:1168
 msgid ""
 "That&apos;s why you should choose one of the alternatives and redirect the "
 "other one."
 msgstr ""
 
-#: src/index.html:1174
+#: src/index.html:1171
 msgid "By default option 1 (no &quot;www.&quot;) is activated."
 msgstr ""
 
-#: src/index.html:1175 src/template/htaccess.txt:332
+#: src/index.html:1172 src/template/htaccess.txt:332
 msgid "Remember: Shorter URLs are sexier."
 msgstr ""
 
-#: src/index.html:1179 src/template/htaccess.txt:336
+#: src/index.html:1176 src/template/htaccess.txt:336
 msgid ""
 "If you rather want to use option 2, just comment out all option 1 lines and "
 "uncomment option 2."
 msgstr ""
 
-#: src/index.html:1180 src/template/htaccess.txt:337
+#: src/index.html:1177 src/template/htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
 msgstr ""
 
-#: src/index.html:1186 src/template/htaccess.txt:343
+#: src/index.html:1183 src/template/htaccess.txt:343
 msgid "Option 1:"
 msgstr ""
 
-#: src/index.html:1187 src/template/htaccess.txt:344
+#: src/index.html:1184 src/template/htaccess.txt:344
 msgid "Rewrite"
 msgstr ""
 
-#: src/index.html:1199 src/template/htaccess.txt:356
+#: src/index.html:1196 src/template/htaccess.txt:356
 msgid "Option 2:"
 msgstr ""
 
-#: src/index.html:1200
+#: src/index.html:1197
 msgid ""
 "To rewrite &quot;domain.com -&gt; www.domain.com&quot; uncomment the "
 "following lines."
 msgstr ""
 
-#: src/index.html:1201
+#: src/index.html:1198
 msgid ""
 "Be aware that the following rule might not be a good idea if you use &quot;"
 "real&quot; subdomains for certain parts of your website."
 msgstr ""
 
-#: src/index.html:1214 src/template/htaccess.txt:371
+#: src/index.html:1211 src/template/htaccess.txt:371
 msgid "Built-in filename-based cache busting"
 msgstr ""
 
-#: src/index.html:1218
+#: src/index.html:1215
 msgid ""
 "If you&apos;re not using the build script to manage your filename version "
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
 
-#: src/index.html:1221 src/template/htaccess.txt:378
+#: src/index.html:1218 src/template/htaccess.txt:378
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
 msgstr ""
 
-#: src/index.html:1224 src/template/htaccess.txt:381
+#: src/index.html:1221 src/template/htaccess.txt:381
 msgid "Uncomment to enable."
 msgstr ""
 
-#: src/index.html:1234 src/template/htaccess.txt:391
+#: src/index.html:1231 src/template/htaccess.txt:391
 msgid "Prevent SSL cert warnings"
 msgstr ""
 
-#: src/index.html:1238 src/template/htaccess.txt:395
+#: src/index.html:1235 src/template/htaccess.txt:395
 msgid "Rewrite secure requests properly to prevent SSL cert warnings"
 msgstr ""
 
-#: src/index.html:1239 src/template/htaccess.txt:396
+#: src/index.html:1236 src/template/htaccess.txt:396
 msgid ""
 "e.g. prevent https://www.domain.com when your cert only allows https://"
 "secure.domain.com "
 msgstr ""
 
-#: src/index.html:1240 src/template/htaccess.txt:397
+#: src/index.html:1237 src/template/htaccess.txt:397
 msgid "Uncomment the following lines to use this feature."
 msgstr ""
 
-#: src/index.html:1251 src/template/htaccess.txt:408
+#: src/index.html:1248 src/template/htaccess.txt:408
 msgid "Prevent 404 errors for non-existing redirected folders"
 msgstr ""
 
-#: src/index.html:1255 src/template/htaccess.txt:412
+#: src/index.html:1252 src/template/htaccess.txt:412
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist e.g."
 msgstr ""
 
-#: src/index.html:1263 src/template/htaccess.txt:420
+#: src/index.html:1260 src/template/htaccess.txt:420
 msgid "Custom 404 page"
 msgstr ""
 
-#: src/index.html:1266 src/template/htaccess.txt:423
+#: src/index.html:1263 src/template/htaccess.txt:423
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
 msgstr ""
 
-#: src/index.html:1272 src/template/htaccess.txt:429
+#: src/index.html:1269 src/template/htaccess.txt:429
 msgid "UTF-8 encoding"
 msgstr ""
 
-#: src/index.html:1275 src/template/htaccess.txt:432
+#: src/index.html:1272 src/template/htaccess.txt:432
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
 
-#: src/index.html:1278 src/template/htaccess.txt:435
+#: src/index.html:1275 src/template/htaccess.txt:435
 msgid "force utf-8 for a number of file formats"
 msgstr ""
 
-#: src/index.html:1284 src/template/htaccess.txt:441
+#: src/index.html:1281 src/template/htaccess.txt:441
 msgid "A little more security"
 msgstr ""
 
-#: src/index.html:1289
+#: src/index.html:1286
 msgid ""
 "Do we want to advertise the exact version number of Apache we&apos;re "
 "running? Probably not."
 msgstr ""
 
-#: src/index.html:1290 src/template/htaccess.txt:447
+#: src/index.html:1287 src/template/htaccess.txt:447
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
 msgstr ""
 
-#: src/index.html:1296
+#: src/index.html:1293
 msgid ""
 "&quot;-Indexes&quot; will have Apache block users from browsing folders "
 "without a default document"
 msgstr ""
 
-#: src/index.html:1297
+#: src/index.html:1294
 msgid ""
 "Usually you should leave this activated, because you shouldn&apos;t allow "
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
 
-#: src/index.html:1303
+#: src/index.html:1300
 msgid ""
 "Block access to &quot;hidden&quot; directories whose names begin with a "
 "period. "
 msgstr ""
 
-#: src/index.html:1304 src/template/htaccess.txt:461
+#: src/index.html:1301 src/template/htaccess.txt:461
 msgid ""
 "This includes directories used by version control systems such as Subversion "
 "or Git."
 msgstr ""
 
-#: src/index.html:1312
+#: src/index.html:1309
 msgid ""
 "If your server is not already configured as such, the following directive "
 "should be uncommented in order to set PHP&apos;s register_globals option to "
@@ -1668,11 +1668,11 @@ msgid ""
 "site scripting) attacks. For more information:"
 msgstr ""
 
-#: src/index.html:1314 src/template/htaccess.txt:471
+#: src/index.html:1311 src/template/htaccess.txt:471
 msgid "IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :"
 msgstr ""
 
-#: src/index.html:1316 src/template/htaccess.txt:473
+#: src/index.html:1313 src/template/htaccess.txt:473
 msgid ""
 "Your server does not allow PHP directives to be set via .htaccess. In that "
 "case you must make this change in your php.ini file instead.If you are using "
@@ -1682,148 +1682,148 @@ msgid ""
 "everything to PHP defaults."
 msgstr ""
 
-#: src/index.html:1317 src/template/htaccess.txt:474
+#: src/index.html:1314 src/template/htaccess.txt:474
 msgid ""
 "Consult www.php.net for more detailed information about setting PHP "
 "directives."
 msgstr ""
 
-#: src/index.html:1322 src/template/htaccess.txt:479
+#: src/index.html:1319 src/template/htaccess.txt:479
 msgid "Rename session cookie to something else, than PHPSESSID"
 msgstr ""
 
-#: src/index.html:1325 src/template/htaccess.txt:482
+#: src/index.html:1322 src/template/htaccess.txt:482
 msgid "Do not show you are using PHP"
 msgstr ""
 
-#: src/index.html:1326
+#: src/index.html:1323
 msgid "Note: Move this line to php.ini since it won&apos;t work in .htaccess"
 msgstr ""
 
-#: src/index.html:1329 src/template/htaccess.txt:486
+#: src/index.html:1326 src/template/htaccess.txt:486
 msgid "Level of log detail - log all errors"
 msgstr ""
 
-#: src/index.html:1332 src/template/htaccess.txt:489
+#: src/index.html:1329 src/template/htaccess.txt:489
 msgid "Write errors to log file"
 msgstr ""
 
-#: src/index.html:1335 src/template/htaccess.txt:492
+#: src/index.html:1332 src/template/htaccess.txt:492
 msgid "Do not display errors in browser (production - Off, development - On)"
 msgstr ""
 
-#: src/index.html:1338 src/template/htaccess.txt:495
+#: src/index.html:1335 src/template/htaccess.txt:495
 msgid "Do not display startup errors (production - Off, development - On)"
 msgstr ""
 
-#: src/index.html:1341 src/template/htaccess.txt:498
+#: src/index.html:1338 src/template/htaccess.txt:498
 msgid "Format errors in plain text"
 msgstr ""
 
-#: src/index.html:1344 src/template/htaccess.txt:501
+#: src/index.html:1341 src/template/htaccess.txt:501
 msgid "Show multiple occurrence of error"
 msgstr ""
 
-#: src/index.html:1347 src/template/htaccess.txt:504
+#: src/index.html:1344 src/template/htaccess.txt:504
 msgid "Show same errors from different sources"
 msgstr ""
 
-#: src/index.html:1350 src/template/htaccess.txt:507
+#: src/index.html:1347 src/template/htaccess.txt:507
 msgid "Size limit for error messages"
 msgstr ""
 
-#: src/index.html:1353
+#: src/index.html:1350
 msgid ""
 "Don&apos;t precede error with string (doesn&apos;t accept empty string, use "
 "whitespace if you need)"
 msgstr ""
 
-#: src/index.html:1356
+#: src/index.html:1353
 msgid ""
 "Don&apos;t prepend to error (doesn&apos;t accept empty string, use "
 "whitespace if you need)"
 msgstr ""
 
-#: src/index.html:1359 src/template/htaccess.txt:516
+#: src/index.html:1356 src/template/htaccess.txt:516
 msgid "Increase cookie security"
 msgstr ""
 
-#: src/index.html:1366
+#: src/index.html:1363
 msgid "Videos"
 msgstr "Vídeos"
 
-#: src/index.html:1370
+#: src/index.html:1367
 msgid "Ready to get started?"
 msgstr "Preparado para introdução?"
 
-#: src/index.html:1370 standard input:1373
+#: src/index.html:1367 standard input:1370
 msgid "new!"
 msgstr "novo!"
 
-#: src/index.html:1373
+#: src/index.html:1370
 msgid "Intro to the Build Script"
 msgstr "Introdução para o<br>Script de compilação"
 
-#: src/index.html:1376
+#: src/index.html:1373
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Obtenha os segredos em<br>40 minutos!"
 
-#: src/index.html:1380
+#: src/index.html:1377
 msgid "Dig deeper in 60 minutes"
 msgstr "Aprofundamento em 60 minutos"
 
-#: src/index.html:1408
+#: src/index.html:1405
 msgid "Make it even better!"
 msgstr "Faça algo ainda melhor"
 
-#: src/index.html:1409
+#: src/index.html:1406
 msgid "Read the docs for how to take your own boilerplate further."
 msgstr "Leia a documentação para melhorar ainda mais o seu boilerplate."
 
-#: src/index.html:1413
+#: src/index.html:1410
 msgid "Brought to you by"
 msgstr "Apresentado por"
 
-#: src/index.html:1415
+#: src/index.html:1412
 msgid "Google Chrome, jQuery"
 msgstr "Google Chrome, jQuery"
 
-#: src/index.html:1416
+#: src/index.html:1413
 msgid "Web Opener @ Opera"
 msgstr "Web Opener @ Opera"
 
-#: src/index.html:1417
+#: src/index.html:1414
 msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
-#: src/index.html:1418
+#: src/index.html:1415
 #, fuzzy
 msgid "Freelance web developer"
 msgstr "Open Web Developer"
 
-#: src/index.html:1419
+#: src/index.html:1416
 #, fuzzy
 msgid "Front-End Web Developer"
 msgstr "Open Web Developer"
 
-#: src/index.html:1436
+#: src/index.html:1433
 msgid "More Contributors"
 msgstr "Mais contribuidores"
 
-#: src/index.html:1440
+#: src/index.html:1437
 msgid "View the archived H5BP 1.0 Release announcement and changelog"
 msgstr ""
 
-#: src/index.html:1445
+#: src/index.html:1442
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "Não teria sido possível sem os esforços desses super-heróis:"
 
-#: src/index.html:1468 src/commentarchive.html:38
+#: src/index.html:1465 src/commentarchive.html:38
 msgid "Comments"
 msgstr "Comentários"
 
-#: src/index.html:1469
+#: src/index.html:1466
 msgid ""
 "If you have any questions about the code, we encourage you to <a href="
 "\"http://h5bp.com/docs\">read HTML5 Boilerplate's extensive documentation</"
@@ -1831,7 +1831,7 @@ msgid ""
 "docs page."
 msgstr ""
 
-#: src/index.html:1471
+#: src/index.html:1468
 msgid ""
 "If you have ideas for changes to the project, join <a href=\"http://h5bp.com/"
 "group\">the H5BP community on github</a> and file a ticket!"
@@ -2056,21 +2056,21 @@ msgid ""
 "  have a nasty security vulnerability."
 msgstr ""
 
-#: src/template/css/style.css:145 standard input:154
+#: src/template/css/style.css:145
 msgid "Indicate that 'label' will shift focus to the associated form element"
 msgstr ""
 
-#: src/template/css/style.css:173
+#: src/template/css/style.css:170
 msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
 msgstr ""
 
-#: src/template/css/style.css:276
+#: src/template/css/style.css:273
 msgid "for device pixels, see 'Using a mobile-first approach'"
 msgstr ""
 
-#: src/template/css/style.css:301
+#: src/template/css/style.css:298
 msgid "Don't show links for images, or javascript/internal links"
 msgstr ""
 
