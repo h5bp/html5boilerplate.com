@@ -1,4 +1,4 @@
-(function($, location, exports) {
+(function($, location, document, exports) {
   
   var view, router, model;
   
@@ -18,14 +18,10 @@
     if(!text) return;
     
     var links = $('.wikiconvertor-pages a');
-    
-    var navlink = links.filter('a[href^="/docs/'+ text + '"]');
-    
-    //console.log('navlink', text, navlink.length);
-    
+        
     // custom selector may be handy?
     // iterate through links and try to get a case unsensitive test with hash value
-    var navlink = links.map(function() {
+    var navlink = links.filter('a[href^="/docs/'+ text + '"]').map(function() {
       return !!this.href.match(new RegExp(text, 'i')) ? $(this).attr('href') : undefined;
     });
     
@@ -40,31 +36,27 @@
   
   
   var DocsPage = Backbone.Model.extend({
-    
-    sync: function(options) {
-      $.ajax($.extend(options, {
-        dataType: 'html',
-        url: this.url(),
-        success: function(res) {
-          model.set({content: $(res).find('.wikiconvertor-content').html()});
-          view.render();
-          
-          // notify disqus of the asycn page change
-          window.DISQUS && DISQUS.reset({
-            reload: true,
-            config: function () {  
-              this.page.identifier = this.page.url = window.location.pathname;
-            }
-          });
-        }
-      }));
-      
-      return this;
-    },
-    
     url: function url() {
       var path = this.get('path');
       return (/^\//.test(path) ? '' : '/') + this.get('path');
+    },
+    
+    parse: function(resp, xhr) {
+      var m = this.get('path').match(/docs\/([^\/]+)\//),
+      title = m ? m[1].replace(/-/g, ' ') : 'Home';
+      return {
+        title: title,
+        content: $(resp).find('.wikiconvertor-content').html()
+      };
+    },
+    
+    // provide a sync impl for our Page Model
+    sync: function(method, model, options) {
+      $.ajax($.extend(options, {
+        dataType: 'html',
+        url: this.url()
+      }));
+      return this;
     }
   });
   
@@ -76,14 +68,19 @@
     },
     
     initialize: function() {
-      
       _.bindAll(this, 'clickHandler', 'addHdrAttr', 'addPermalinks');
       
+      // re-render when model changes
+      this.model.bind('change:content', _.bind(this.render, this));
+      this.model.bind('change:title', _.bind(this.updateTitle, this));
+      
+      // few dom references
       this.placeholder = this.$('.wikiconvertor-content');
       this.scroller = this.options.scroll ? $('html,body') : undefined;
       this.active = this.$('.wikiconvertor-pages a[href="' + model.url() + '"]');
       this.active.closest('li').addClass('wikiconvertor-pages-active');
       
+      // build headings and permalinks
       this.headings();
     },
     
@@ -124,10 +121,6 @@
       h = hdr.filter('#' + t);
 
       if(!h.length) {
-        // t = t.split(/#|â˜…/);
-        // 
-        // var navlinks = $('.wikiconvertor-pages a').filter('a[href^="/docs/'+ t[0] + '"]');
-        // if ( navlinks.length ) location.href = navlinks[0].href + (t[1] ? '#' + t[1] : '');
         return;
       }
 
@@ -137,7 +130,6 @@
     addPermalinks: function(i, header) {
       var t = $(header),
       hdr  = t.attr('id');
-
       $('<span class="octothorpe"><a href="' + '#' + hdr + '">#</a></span>').appendTo(t);
     },
 
@@ -161,6 +153,10 @@
       $(this.placeholder).html(this.model.get('content'));
       this.headings();
       return this;
+    },
+    
+    updateTitle: function() {
+      document.title = document.title.replace(/[^|]+|/, this.model.get('title') + ' ');
     }
   });
   
@@ -177,21 +173,29 @@
       
       model
         .set({ path: path })
-        .fetch();
+        .fetch({
+          success: function() {
+            // notify disqus of the asycn page change
+            window.DISQUS && DISQUS.reset({
+              reload: true,
+              config: function () {  
+                this.page.identifier = this.page.url = location.pathname;
+              }
+            });
+          }
+        });
     }
   });
   
   $(function() {
-    // TODO:DEBUG:REMOVE global exports
     model = new DocsPage({path: location.pathname });
     view = new DocsView({model: model, scroll: true});
     router = new DocsRouter();
     
     Backbone.history.start({ 
-      pushState: true,
-      root: '/docs/'
+      pushState: true
     });
   });
   
   
-})(this.jQuery, this.location, this);
+})(this.jQuery, this.location, this.document, this);
