@@ -1,4 +1,4 @@
-(function($, location, exports) {
+(function($, location, document, exports) {
   
   var view, router, model;
   
@@ -171,6 +171,12 @@
         return;
       }
       
+
+      var title = path.match(/\/docs\/([^\/]+)\//);
+      if(title && title[1]) {
+        document.title = document.title.replace(/[^|]+|/, title[1] + ' '); 
+      }
+      
       model
         .set({ path: path })
         .fetch();
@@ -190,4 +196,4 @@
   });
   
   
-})(this.jQuery, this.location, this);
+})(this.jQuery, this.location, this.document, this);
