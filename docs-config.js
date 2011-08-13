@@ -1,5 +1,5 @@
 // ## defaults configuration file for documentation generation
-
+ 
 // from the root repo 
 //    
 //    h5bp-docs --config docs-config.js
