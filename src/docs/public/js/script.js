@@ -18,14 +18,10 @@
     if(!text) return;
     
     var links = $('.wikiconvertor-pages a');
-    
-    var navlink = links.filter('a[href^="/docs/'+ text + '"]');
-    
-    //console.log('navlink', text, navlink.length);
-    
+        
     // custom selector may be handy?
     // iterate through links and try to get a case unsensitive test with hash value
-    var navlink = links.map(function() {
+    var navlink = links.filter('a[href^="/docs/'+ text + '"]').map(function() {
       return !!this.href.match(new RegExp(text, 'i')) ? $(this).attr('href') : undefined;
     });
     
