@@ -190,8 +190,7 @@
     router = new DocsRouter();
     
     Backbone.history.start({ 
-      pushState: true,
-      root: '/docs/'
+      pushState: true
     });
   });
   
