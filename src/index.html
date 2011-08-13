@@ -88,14 +88,14 @@
         <div id="builder">     
           <div id="jquery">
             <h4>{% blocktrans %}jQuery{% endblocktrans %}</h4>
-            <label><input checked type='checkbox' name="jquery" id='jquerymin'> Minified</label>                        
-            <label><input type='checkbox' name="jquery" id='jquerydev'> Unminified</label>            
+            <label><input checked type='checkbox' name="jquery" id='jquerymin'> {% blocktrans %}Minified{% endblocktrans %}</label>                        
+            <label><input type='checkbox' name="jquery" id='jquerydev'> {% blocktrans %}Unminified{% endblocktrans %}</label>            
           </div>
 
           <div id="config">
             <h4>{% blocktrans %}Server Config{% endblocktrans %}</h4>            
             <label><input checked type='checkbox' id='h5bp-htaccess'> .htaccess</label>                        
-            <label><input type='checkbox' id='h5bp-nginx'> ngnix.conf</label>            
+            <label><input type='checkbox' id='h5bp-nginx'> nginx.conf</label>            
             <label><input type='checkbox' id='h5bp-webconfig'> web.config</label>                        
           </div>  
           <div id="rest">
@@ -122,12 +122,10 @@
   <div class="new" id="v2">
     <h3>{% blocktrans %}HTML5 Boilerplate is 2.0!{% endblocktrans %}</h3>
     <small>{% blocktrans %}Wednesday, Aug 10th, 2011{% endblocktrans %}</small>
-    <p>{% blocktrans %}
-
-    {% endblocktrans %}</p>
+    <p></p>
     <div class="notice">
-      <h4>Happy Birthday!</h4>
-      <p>H5BP is a year old! We launched on August 10th, 2010 and now we've got a plethora of new, exciting changes that comprise our 2.0 release. We've also added <a href="http://mathiasbynens.be/">Mathias Bynens</a> and <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>, two very talented frontend researchers and developers, to the core development team. The highlights of 2.0 are below, followed by a more comprehensive changelog.</p>      
+      <h4>{% blocktrans %}Happy Birthday!{% endblocktrans %}</h4>
+      <p>{% blocktrans %}H5BP is a year old! We launched on August 10th, 2010 and now we've got a plethora of new, exciting changes that comprise our 2.0 release. We've also added <a href="http://mathiasbynens.be/">Mathias Bynens</a> and <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>, two very talented frontend researchers and developers, to the core development team. The highlights of 2.0 are below, followed by a more comprehensive changelog.{% endblocktrans %}</p>      
     </div>
      <div class="notice">       
        <h4>NORMALIZE.CSS</h4>
@@ -150,7 +148,7 @@
       <h4>{% blocktrans %}BUILD SCRIPT++: Faster, @import inlining, appcache generation{% endblocktrans %}</h4>
       <p>{% blocktrans %}If 15 seconds was too long to wait before, you'll be happy with the changes. Via a new "intermediate" folder, we cut down build time by 80% or more.{% endblocktrans %}
       <p>{% blocktrans %}If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.{% endblocktrans %}
-      <p>Making an app that works offline is a badge of honor. Now with a flick of a config switch, the H5BP build script can autogenerate your cache manifest file with all the right info and wire it up. It'll also keep the manifest revved as you deploy new changes.
+      <p>{% blocktrans %}Making an app that works offline is a badge of honor. Now with a flick of a config switch, the H5BP build script can autogenerate your cache manifest file with all the right info and wire it up. It'll also keep the manifest revved as you deploy new changes.{% endblocktrans %}
     </div> 
     
     <div class="notice">
@@ -177,7 +175,7 @@
     </div> 
     <div class="changelog">
       <h3>{% blocktrans %}Changelog{% endblocktrans %}</h3>
-      <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 299 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}{% blocktrans %} {% endblocktrans %}</p>
+      <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/paulirish/html5-boilerplate/compare/v1.0...v2.0">Here are all 299 commits since last release,</a> brought to you by over <a href="https://github.com/paulirish/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}</p>
       <p><a href="http://html5boilerplate.com/docs/FAQs/#do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
 
 
@@ -403,23 +401,39 @@
           </ul>
           <div id="video-getstarted" class="video video-active">
             <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/NMEB78VX2P0" frameborder="0" allowfullscreen></iframe>'>
-              <iframe title="YouTube video player" src="http://www.youtube.com/embed/NMEB78VX2P0" frameborder="0" allowfullscreen></iframe>
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/NMEB78VX2P0?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/NMEB78VX2P0?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
             </noscript>          
           </div>
           <div id="video-buildtool" class="video">
             <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen></iframe>'>
-              <iframe title="YouTube video player" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen></iframe>
+              <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/OXpCB3U_4Ig?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/OXpCB3U_4Ig?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
             </noscript>          
           </div>
           
           <div id="video-lowdown" class="video">
             <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/oDlsOyPKUTM" frameborder="0" allowfullscreen></iframe>'>
-              <iframe title="YouTube video player" src="http://www.youtube.com/embed/oDlsOyPKUTM" frameborder="0" allowfullscreen></iframe>
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/oDlsOyPKUTM?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/oDlsOyPKUTM?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
             </noscript>          
           </div>
           <div id="video-digdeeper" class="video ">
-            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>'>
-              <iframe title="YouTube video player" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>
+            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>'>  
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/qyM37XKkmKQ?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/qyM37XKkmKQ?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
             </noscript>          
           </div> 
 
