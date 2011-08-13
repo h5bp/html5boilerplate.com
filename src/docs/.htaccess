@@ -9,3 +9,7 @@
   ExpiresDefault  "access plus 0 seconds"
 
 </IfModule>
+
+RewriteEngine On
+RewriteCond $1 !^../../../docs/
+RewriteRule ^(.*)$ /../../../docs/$1 [L]
