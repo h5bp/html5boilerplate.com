@@ -68,8 +68,6 @@
     },
     
     initialize: function() {
-      console.log('Init: ', this, arguments);
-      
       _.bindAll(this, 'clickHandler', 'addHdrAttr', 'addPermalinks');
       
       // re-render when model changes
