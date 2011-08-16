@@ -7,7 +7,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-  <title>FAQs || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <title>FAQs | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" href="/docs/public/css/style.css" >
   <link rel="stylesheet" href="/docs/public/css/docs.css" >
@@ -73,9 +73,17 @@
 
 <ul>
 <li>boilerplate ships with a default configuration for the apache <strong>web server</strong>. It's documented in <a href="/docs/.htaccess/">.htaccess</a>. Configuration files for  <a href="/docs/web.config/">web.config</a>, <a href="/docs/nginx.conf/">nginx.conf</a>, node.js, and lighthttpd are available in our <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">server-configs</a> repo.</li>
-<li><strong>Modernizr</strong> detects HTML5 and CSS3 features and adds classes to the html tag to let you style accordingly. <a href="/docs/http:/modernizr.com/docs//"><a href='http://modernizr.com/docs/'>http://modernizr.com/docs/</a></a></li>
-<li>the <code><span class="pun">?</span><span class="pln">v</span><span class="pun">=</span><span class="lit">2</span></code> thing in the asset URLs freak you out? read <a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a> (this technique was removed as of v1.1pre)</li>
+<li>A custom build of <strong>Modernizr</strong> which includes: 
+<ul><li>Modernizr itself which detects HTML5 and CSS3 features and adds classes to the html tag to let you style accordingly. <a href="/docs/http:/modernizr.com/docs//"><a href='http://modernizr.com/docs/'>http://modernizr.com/docs/</a></a></li>
+<li>Respond.js which is a polyfill that allows you to use media queries with browsers that do not support media queries such as IE6, 7, &amp; 8 <a href="/docs/https:/github.com/scottjehl/Respond/"><a href='https://github.com/scottjehl/Respond'>https://github.com/scottjehl/Respond</a></a>.</li>
+<li>Yepnope an asynchronous resource loader that you can use to load scripts, styles, and resources asynchronously and conditionally <a href="/docs/http:/yepnopejs.com/"><a href='http://yepnopejs.com'>http://yepnopejs.com</a></a>. </li></ul></li>
 </ul>
+
+<p>Note that by default we have a '//' in front of the jQuery library that is linked to Google's CDN:<br /><code><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></code> </p>
+
+<p>More information about this at <a href='http://paulirish.com/2010/the-protocol-relative-url/'>http://paulirish.com/2010/the-protocol-relative-url/</a></p>
+
+<p>This also means that if you access your file from your folders, the page will take forever to load or 404 on the jQuery as it will attempt to fetch <code><span class="pln">jquery</span><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js</span></code> from <code><span class="pln">file</span><span class="pun">:</span><span class="com">//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js</span></code>. We recommend you use a handy local server to test your pages - either dropbox or if you have python installed, run <code><span class="pln">python </span><span class="pun">-</span><span class="pln">m </span><span class="typ">SimpleHTTPServer</span></code> from your local directory or you could install and run <a href="https://rubygems.org/gems/asdf">adsf</a> for ruby. </p>
 
 <h2>Help! My code with Boilerplate is not working!</h2>
 
@@ -111,7 +119,7 @@
 <li>In the CSS, just remove all selectors that start with .ie6.</li>
 <li>There are a few style properties that start with <code><span class="pln">_</span></code> for the ie6 hack. You can kill those too, if you're feeling daring.</li>
 <li>a <code><span class="pln">list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln">none</span></code> style that only is necessary for IE6 and IE7 is in the <code><span class="pln">nav ul</span></code> styles. (<a href="https://github.com/paulirish/html5-boilerplate/issues/closed#issue/263">issue #263</a>)</li>
-<li>If you've given up on IE6 users, you should <a href="http://www.chromium.org/developers/how-tos/chrome-frame-getting-started#TOC-Detecting-Google-Chrome-Frame-and-P">prompt for chromeframe install</a> so other people get the benefit of upgraded users.</li>
+<li>As of Boilerplate 2.0 we already prompt IE6 users to install Chrome Frame for a better experience. </li>
 </ul>
 
 <h2>I get 404 errors and page not found errors, what is the cause?</h2>
@@ -151,10 +159,6 @@
 
 <p>It is a <a href="http://www.quirksmode.org/css/contents.html#t19">known issue</a> for IE8 and below. Try using either <code><span class="pun">:</span><span class="pln">active</span></code> or <a href="http://james.padolsey.com/javascript/fixing-focus-in-internet-explorer/">pseudo-focus script</a> to fix it.</p>
 
-<h2>Have you considered head.js?</h2>
-
-<p>We have been looking into it. You can keep your eyes peeled on <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/229">this issue</a> for updates.</p>
-
 <h2>What is profiling, and how do I use it, why do I want it?</h2>
 
 <p><a href="http://michaelsync.net/2007/09/10/firebug-tutorial-logging-profiling-and-commandline-part-ii">Firebug</a> and <a href="http://code.google.com/chrome/devtools/docs/profiles.html">Chrome Dev tools</a> offer profiling, but there is no easy way to profile IE6 and IE7. The YUI profiling script that is integrated can identify parts of your code that take an extra long time to run. If you're focused on providing the most responsive experience possible (you should be!) then profiling should be part of your development workflow. </p>
@@ -177,8 +181,6 @@
 
 <p>Why sure it is. The markup is a bit more friendly to validation in HTML4, but with enough tweaks you can make it validate fine in either. An important thing to point out is that the browser doesn't really care which doctype you have (just as long as you have one). It won't render a page differently just because you switch it from the html5 doctype to XHTML. So it's only for declaring your relationship with the validator.</p>
 
-<h2>Does it support hsla or rgba?</h2>
-
 <h2>Is there a Less.js version of the css?</h2>
 
 <p>Less.js is a superset of css, meaning there is no need for a special version. Here is what you do:</p>
@@ -191,13 +193,19 @@
 
 <h2>Is anything in the .htaccess conflicting with a wordpress theme, or can I just update my .htaccess with boiler plate goodness?</h2>
 
+<p>Theoretically none, but we have not investigated this. There are <a href="https://github.com/paulirish/html5-boilerplate/wiki/">Wordpress themes already available that work with H5BP</a> extensively, you can use them as a reference when you create yours. </p>
+
 <h2>Is there a way to integrate this with Zend Framework and still use the build script?</h2>
+
+<p>Not sure. We do recommend you try and report back any issues! We can take it from there on. </p>
 
 <h2>Why is the doctype used as "doctype" and not "DOCTYPE"?</h2>
 
-<h2>Why doesn’t it use HTML5 Elements instead of DIV in its index.html?</h2>
+<p>Because you can also use <a href="http://diveintohtml5.org/semantics.html">DoCTypE or DocTYPE or DOCtype or DOctYPe</a> We also like code that does not yell at you. </p>
 
 <h2>Can I integrate <a href="http://jquerymobile.com/">jQuery Mobile</a> with HTML5 Boilerplate?</h2>
+
+<p>Yes of course. We see no reason for conflict. </p>
         <div id="disqus_thread">
           
         </div>

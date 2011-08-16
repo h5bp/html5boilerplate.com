@@ -7,7 +7,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-  <title>Make it better || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <title>Make it better | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link rel="stylesheet" href="/docs/public/css/style.css" >
   <link rel="stylesheet" href="/docs/public/css/docs.css" >
@@ -107,11 +107,13 @@
 <li>Consider less visually intese colors for text selection when the <a href="http://css-tricks.com/window-inactive-styling/">window is inactive</a>.</li>
 <li>Using trailing-slash-redirects in your htaccess <a href="https://github.com/paulirish/html5-boilerplate/wiki/Proper-usage-of-trailing-slash-redirects">Proper usage of trailing slash redirects</a></li>
 <li>If you're building a web app you may want <a href="http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/">native style momentum scrolling in iOS5</a> using <code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">overflow</span><span class="pun">-</span><span class="pln">scrolling</span><span class="pun">:</span><span class="pln"> touch</span></code></li>
+<li>Screen readers currently have less-than-stellar support for HTML5 but the JS script <a href="https://github.com/yatil/accessifyhtml5.js">accessifyhtml5.js</a> can help increase accessibility by adding ARIA roles to HTML5 elements</li>
+<li>Using <code><span class="pln">text</span><span class="pun">-</span><span class="pln">decoration</span><span class="pun">:</span><span class="pln"> underline</span><span class="pun">;</span></code> for anchors cause some issues specially for languages that have dots under some letters. Use <code><span class="pln">border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid currentcolor</span><span class="pun">;</span></code> in such cases. Note: consider that <code><span class="pln">text</span><span class="pun">-</span><span class="pln">shadow</span></code> does not effect borders.</li>
 </ul>
 
 <h3>Using a mobile-first approach</h3>
 
-<p>Consider settings your base styles and mobile-friendly less-image-heavy styles first, and <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/166">use media queries to set the more intensive desktop friendly styles</a>. For IE8- consider using <a href="https://github.com/scottjehl/Respond">respond.js</a> to make sure media-queries are detected. </p>
+<p>Consider setting your base styles and mobile-friendly less-image-heavy styles first, and <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/166">use media queries to set the more intensive desktop friendly styles</a>. Our 2.0 release includes <a href="https://github.com/scottjehl/Respond">respond.js</a> within the modernizr js and enables all media-queries to work in IE6,7,8.</p>
 
 <h3>DNS-Prefetching</h3>
 
