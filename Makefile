@@ -23,6 +23,9 @@ build: force
 	@echo "Cool. Let's translate this."
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
 	@echo "All done translating. New files are in ./built/"
+	@echo ""
+	@echo "You might want to consider manual docs update..."
+	@echo "cp -R docs built/en_US/"
   
 
 force: ;
