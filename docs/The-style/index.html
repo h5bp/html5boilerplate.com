@@ -323,7 +323,11 @@
 
 <h3>.invisible</h3>
 
-<p>Add the <code><span class="pun">.</span><span class="pln">invisible</span></code> class to any element you want to hide without affecting layout</p>
+<p>Add the <code><span class="pun">.</span><span class="pln">invisible</span></code> class to any element you want to hide without affecting layout. When you use <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> none</span></code> the element would effectively be removed from the layout (width = 0, height = 0), in some cases, you want the element to simply remain invisible while occupying the width and height that it has. </p>
+
+<p>Examples would be, having a form element that is hidden until another choice is selected (or having select dropdowns disappear in IE if over flash), Containers for tabbed navigation to occupy space, even when invisible, making advertisements invisible while a video is played in a modal window and the screen behind is darkened. </p>
+
+<p>If you need the layout to not shift when you show/hide an element, this would be a class you would add/remove.   </p>
 
 <h3>clearfix</h3>
 
