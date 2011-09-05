@@ -263,7 +263,7 @@ msgstr "Ler as documentações"
 
 #: src\index.html:115
 msgid "Contribute on Github "
-msgstr "Contribuir no Github"
+msgstr "Colaborar no Github"
 
 #: src\index.html:117
 msgid "Follow on twitter"
@@ -375,14 +375,13 @@ msgid "BUILD SCRIPT++: Faster, @import inlining, appcache generation"
 msgstr "COMPILADOR DE SCRIPT++: Rápido, @import em linha, geração de appcache"
 
 #: src\index.html:149
-#, fuzzy, perl-format
 msgid ""
 "If 15 seconds was too long to wait before, you'll be happy with the changes. "
 "Via a new \"intermediate\" folder, we cut down build time by 80% or more."
 msgstr ""
 "Se 15 segundos foi tempo demais para ter esperado antes, você vai ficar "
 "feliz com as mudanças. Através de uma nova pasta \"intermediate"
-"\" (intermediária), cortamos o tempo compilação em 80&percnt; ou mais."
+"\" (intermediária), cortamos o tempo compilação em 80% ou mais."
 
 #: src\index.html:150
 msgid ""
@@ -473,7 +472,7 @@ msgstr ""
 "2.0 também recebe recebeu muitas atualizações <a href=\"https://github.com/"
 "paulirish/html5-boilerplate/compare/v1.0...v2.0\">Aqui estão todos os 299 "
 "commits desde a versão passada,</a> trazido a você por mais de <a href="
-"\"https://github.com/paulirish/html5-boilerplate#readme\">49 contribuidores</"
+"\"https://github.com/paulirish/html5-boilerplate#readme\">49 colaboradores</"
 "a>."
 
 #: src\index.html:179
@@ -623,7 +622,7 @@ msgid ""
 "code>, which is &hellip; <dd class=\"festal\"><b>Festal</b> <i>(adj)</i>: "
 "pertaining to or befitting a feast, festival, holiday, or gala occasion.</dd>"
 msgstr ""
-"Aprimorando o nosso <code>::selection</code> rosa choque. Que agora é "
+"Aprimorando a nossa <code>::selection</code> rosa choque. Que agora é "
 "<code>#fe57a1</code>, ou seja &hellip; <dd class=\"festal\"><b>Festal</b> <i>"
 "(en)</i> / Festivo <i>(adj)</i>: relativo a uma ocasição de festa, festival, "
 "feriado ou ocasião de gala.</dd>"
@@ -924,18 +923,21 @@ msgid ""
 "Improved support for all versions of Apache, including workaround for bug in "
 "<code>mod_filter</code>."
 msgstr ""
+"Melhorado o suporte para todas as versões do Apache, incluindo solução para "
+"erro no <code>mod_filter</code>."
 
 #: src\index.html:317
 msgid "<b>Way better</b> and more robust gzip rules. "
-msgstr ""
+msgstr "<b>Um jeito melhor</b> e mais robusto para regras de gzip."
 
 #: src\index.html:319
 msgid "Add gzip support for XHTML, RSS, Atom"
-msgstr ""
+msgstr "Adicionado suporte gzip para XHTML, RSS e Atom"
 
 #: src\index.html:321
 msgid "Added m4a (Need it for IE9) and m4v (HandBrake default) MIME types."
 msgstr ""
+"Adicionado MIME types de m4a (Necessário para o IE9) e m4v (padrão HandBrake)."
 
 #: src\index.html:323
 msgid ""
@@ -943,85 +945,101 @@ msgid ""
 "None</code> alone, is not enough. Removing header and setting it to None "
 "fixes the issue."
 msgstr ""
+"Adicionado <code>Header unset ETag</code> em alguns servidores ao definir "
+"<code>FileETag None</code> sozinho, não é suficiente. Remover o cabeçalho e "
+"definir como 'None' corrige o problema."
 
 #: src\index.html:325
 msgid ""
 "Add <code>Options +FollowSymlinks</code> when <code>RewriteEngine</code> is "
 "used. Fixes #489."
 msgstr ""
+"Adicionado <code>Options +FollowSymlinks</code> quando <code>RewriteEngine"
+"</code> é usado. Corrige #489."
 
 #: src\index.html:327
 msgid ""
 "Some more security for PHP: turn off error display and turn on error logging"
 msgstr ""
+"Alguma segurança a mais para PHP: Desativando a exibição de erro e ativando o "
+"log de erro."
 
 #: src\index.html:329
 msgid "Allow Blackberry to read vCards, because those people are swell.  "
-msgstr ""
+msgstr "Deixa o Blackberry ler vCards, porque algumas pessoas estão aderindo."
 
 #: src\index.html:331
 msgid "nginx, node.js, lighttpd, google app engine, IIS"
-msgstr ""
+msgstr "nginx, node.js, lighttpd, google app engine, IIS"
 
 #: src\index.html:333
-#, fuzzy
 msgid ""
 "Lots of updates and fixes. View the official <a href=\"https://github.com/"
 "paulirish/html5-boilerplate-server-configs/\">h5bp server configs repo"
 msgstr ""
-"Google App Engine, Lighttpd e NodeJS também <a href=\"https://github.com/"
-"paulirish/html5-boilerplate-server-configs\">tiveram suas configurações "
-"adicionas</a>"
+"Muitas atualizações e correções. Veja o <a href=\"https://github.com/"
+"paulirish/html5-boilerplate-server-configs\">repositório oficial de "
+"configurações de servidor h5bp"
 
 #: src\index.html:336
 msgid "Significant commits"
-msgstr ""
+msgstr "Commits mais significativos"
 
 #: src\index.html:337
 msgid ""
 "The commit messages on these commits are particularly fun and worth a read "
 "if you're into frontend research"
 msgstr ""
+"As mensagens nestes commits são particularmente divertidas e vale a pena ler "
+"principalmente se você estiver interessado em pesquisas front-end"
 
 #: src\index.html:340
 msgid "Revert \"Added native iOS inertia scrolling\""
-msgstr ""
+msgstr "Reverte \"Adicinada rolagem nativa de inércia do iOS\""
 
 #: src\index.html:341
 msgid ""
 "Major: Now using css normalization instead of css reset + building up "
 "default styles"
 msgstr ""
+"Principal: Agora usa-se normalização em vez de um redefinidor somando-se a "
+"construção de estilos padronizados"
 
 #: src\index.html:342
 msgid ""
 "Change our conditional comments around the HTML tag to use a single .oldie "
 "class."
 msgstr ""
+"Muda nossos comentários condicionais em torno da tag HTML para usar a única "
+"classe .oldie"
 
 #: src\index.html:343
 msgid ""
 "Revert \"Change our conditional comments around the HTML tag to use a "
 "single .oldie class.\""
 msgstr ""
+"Reverte \"Muda nossos comentários condicionais em torno da tag HTML para usar "
+"a única classe .oldie\""
 
 #: src\index.html:344
 msgid ""
 "Tweaking our hot pink ::selection based on a suggestion from David Murdoch "
 "and research from Adam Diehm."
 msgstr ""
+"Aprimorando nossa ::selection rosa choche baseado na sugestão de David "
+"Murdoch e pesquisas de Adam Diehm."
 
 #: src\index.html:345
 msgid "Use minified jQuery by default."
-msgstr ""
+msgstr "Utilizar jQuery minificado por padrão"
 
 #: src\index.html:346
 msgid "optimize build process"
-msgstr ""
+msgstr "Otimizar o processo de compilação"
 
 #: src\index.html:354
 msgid "Walk through it with me, now"
-msgstr "Percorra isso comigo agora"
+msgstr "Vamos percorrer isso juntos agora"
 
 #: src\index.html:366 src emplate\index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
@@ -1298,14 +1316,12 @@ msgid " Hide only visually, but have it available for screenreaders:"
 msgstr ""
 
 #: src\index.html:688 src emplate\css\style.css:250
-#, fuzzy
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard"
 msgstr ""
-"Adicionada a classe auxiliar <code>.focusable</code> que extende <code>."
-"visuallyhidden</code> para permitir que elementos sejam focalisáveis quando "
-"navegados por teclado."
+"Extende <code>.visuallyhidden</code> para permitir que elementos sejam "
+"focalisáveis quando navegados por teclado."
 
 #: src\index.html:691 src emplate\css\style.css:253
 msgid "Hide visually and from screenreaders, but maintain layout"
@@ -1466,7 +1482,6 @@ msgid "Proper MIME type for all files"
 msgstr ""
 
 #: src\index.html:907 src emplate\htaccess.txt:75
-#, fuzzy
 msgid "JavaScript"
 msgstr "JavaScript"
 
@@ -1479,9 +1494,8 @@ msgid "Audio"
 msgstr ""
 
 #: src\index.html:916 src emplate\htaccess.txt:84
-#, fuzzy
 msgid "Video"
-msgstr "Vídeos"
+msgstr "Vídeo"
 
 #: src\index.html:921 src emplate\htaccess.txt:89
 msgid "SVG"
@@ -1596,9 +1610,8 @@ msgid "HTC files  (css3pie)"
 msgstr ""
 
 #: src\index.html:1083 src emplate\htaccess.txt:251
-#, fuzzy
 msgid "CSS and JavaScript"
-msgstr "JavaScript"
+msgstr "CSS e JavaScript"
 
 #: src\index.html:1097 src emplate\htaccess.txt:265
 msgid "ETag removal"
@@ -1958,22 +1971,20 @@ msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
 #: src\index.html:1423
-#, fuzzy
 msgid "Freelance web developer"
-msgstr "Open Web Developer"
+msgstr "Freelance web developer"
 
 #: src\index.html:1424
-#, fuzzy
 msgid "Front-End Web Developer"
-msgstr "Open Web Developer"
+msgstr "Front-End Web Developer"
 
 #: src\index.html:1441
 msgid "More Contributors"
-msgstr "Mais contribuidores"
+msgstr "Mais colaboradores"
 
 #: src\index.html:1445
 msgid "View the archived H5BP 1.0 Release announcement and changelog"
-msgstr ""
+msgstr "Veja o anúncio e o changelog arquivado da versão 1.0 do H5BP"
 
 #: src\index.html:1450
 msgid ""
@@ -1987,12 +1998,18 @@ msgid ""
 "a>, plus you can ask questions in the comment thread at the bottom of each "
 "docs page."
 msgstr ""
+"Se você tiver dúvidas sobre o código, nos incentivamos você a <a href="
+"\"http://h5bp.com/docs\">ler a nossa documentação extendida</a>, mas você "
+"também poderá perguntar nos tópicos de comentário abaixo de cada página da "
+"documentação."
 
 #: src\index.html:1476
 msgid ""
 "If you have ideas for changes to the project, join <a href=\"http://h5bp.com/"
 "group\">the H5BP community on github</a> and file a ticket!"
 msgstr ""
+"Se você tiver idéias para mudar o projeto, junte-se <a href=\"http://h5bp.com/"
+"group\">a comunidade H5BP no github</a> e arquive o seu ticket!"
 
 #: src emplate.html:5
 msgid "Page Not Found"
@@ -2019,9 +2036,8 @@ msgid "an out-of-date link"
 msgstr ""
 
 #: src emplate\crossdomain.xml:6
-#, fuzzy
 msgid "Read this"
-msgstr "Ler as documentações"
+msgstr ""
 
 #: src emplate\crossdomain.xml:8
 msgid "Most restrictive policy"
