@@ -231,7 +231,7 @@ msgid ""
 "\"http://initializr.com\">Initializr</a> for more!"
 msgstr ""
 "<a href=\"http://www.initializr.com/builder?mode=h5bp&amp;\" id=\"builder-"
-"download\">Baixar!</a> Essas opções não são suficientes? Vá ate <a href="
+"download\">Baixar!</a> Essas opções não são suficientes? Vá até <a href="
 "\"http://initializr.com\">Initializr</a> para encontrar mais!"
 
 #: src/index.html:114
@@ -277,7 +277,7 @@ msgstr ""
 "<a href=\"http://nicolasgallagher.com/\">Nicolas Gallagher</a>, que são dois "
 "pesquisadores e desenvolvedores front-end talentosos, para o time de "
 "desenvolvimento interno. Os destaques da versão 2.0 estão abaixo, seguidos "
-"por um histórico de mudanças mais abrangente."
+"por um changelog mais abrangente."
 
 #: src/index.html:133
 msgid ""
@@ -294,7 +294,7 @@ msgid ""
 "normalize.css retains useful browser defaults and includes several common "
 "fixes to improve cross-browser (desktop and mobile) styling consistency."
 msgstr ""
-"normalize.css mantém padrões úteis do navegador e incluir muitas correções "
+"normalize.css mantém padrões úteis do navegador e adiciona muitas correções "
 "comuns para melhorar a consistência de estilização cross-browser (desktop e "
 "mobile)."
 
@@ -327,7 +327,7 @@ msgid ""
 "use less styles and save bytes"
 msgstr ""
 "Usando normalização em vez de um redefinidor somando-se a construção de "
-"estilos padrões, nós usamos menos estilos e economizamos alguns bytes"
+"estilos padronizados, nós usamos menos estilos e economizamos alguns bytes"
 
 #: src/index.html:142
 msgid ""
@@ -383,7 +383,7 @@ msgstr ""
 "de um interruptor de configuração, o compilador de script do H5BP pode gerar "
 "automaticamente o seu arquivo de manifesto de cache com todas a informações "
 "corretas e conecta-las. Ele também vai manter o manifesto reversionado quanto "
-"ao desenvolvimento de novas mudanças."
+"ao desenvolvimento de novas alterações."
 
 #: src/index.html:155
 msgid "PROMPT CHROME FRAME FOR IE6"
@@ -407,7 +407,7 @@ msgid ""
 msgstr ""
 "Adicionado <a href=\"https://github.com/scottjehl/Respond#readme\">respond.js"
 "</a> como parte de uma mudança para uma abordagem sensível. Agora você pode "
-"usar consultas de mídia em qualquer lugar e obter suporte integral para IE6-8."
+"usar media queries em qualquer lugar e obter suporte integral para IE6-8."
 
 #: src/index.html:170
 msgid "PNGFIX &amp; HANDHELD REMOVED"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: src/index.html:177
 msgid "Changelog"
-msgstr "Histórico de mudanças"
+msgstr "Changelog"
 
 #: src/index.html:178
 msgid ""
@@ -496,7 +496,7 @@ msgstr ""
 
 #: src/index.html:196 standard input:355
 msgid "Remove the cache-busting query parameters from the HTML."
-msgstr "Remove os parâmetros de consulta para cache-busting a partir do HTML."
+msgstr "Remove o parâmetro de query para fazer cache-busting a partir do HTML."
 
 #: src/index.html:198
 msgid ""
@@ -531,8 +531,8 @@ msgid ""
 "Add a link to optional &lt;meta> tags that could be added to the &lt;head> "
 "element."
 msgstr ""
-"Adicionado um link para opcionais &lt;meta> tags que podem ser adicionadas ao "
-"elemnto &lt;head> "
+"Adicionado um link para &lt;meta> tags opcionais que podem ser adicionadas ao "
+"elemento &lt;head> "
 
 #: src/index.html:208
 msgid "Standardize"
@@ -544,7 +544,9 @@ msgstr "a utilização de aspas simples e duplas</a>."
 
 #: src/index.html:210
 msgid "Added Site Speed tracking for Google Analytics"
-msgstr "Adicionado acompanhador de velocidade do site para Google Analytics"
+msgstr ""
+"Adicionado código de acompanhamento de velocidade do site para Google "
+"Analytics"
 
 #: src/index.html:212
 msgid ""
@@ -559,8 +561,8 @@ msgid ""
 "Major: Now using css normalization instead of css reset + building up "
 "default styles."
 msgstr ""
-"Maior: Agora usa-se normalização em vez de um redefinidor somando-se a "
-"construção de estilos padrões."
+"Agora usa-se normalização em vez de um redefinidor somando-se a "
+"construção de estilos padronizados."
 
 #: src/index.html:220
 msgid "Add &#8216;oldie&#8217; class to conditional &lt;html> classnames. "
@@ -595,8 +597,8 @@ msgid ""
 "pertaining to or befitting a feast, festival, holiday, or gala occasion.</dd>"
 msgstr ""
 "Aprimorando o nosso <code>::selection</code> rosa choque. Que agora é <code>"
-"#fe57a1</code>, ou seja &hellip; <dd class=\"festal\"><b>Festal</b> que "
-"traduzido como <b>Festivo</b> <i>(adj)</i>: relativo a uma ocasição de festa, "
+"#fe57a1</code>, ou seja &hellip; <dd class=\"festal\"><b>Festal</b> <i>(en)"
+"</i> / Festivo <i>(adj)</i>: relativo a uma ocasição de festa, "
 "festival, feriado ou ocasião de gala.</dd>"
 
 #: src/index.html:230
@@ -626,7 +628,7 @@ msgid ""
 "Switch to <code>outline:0</code> for accessible focus treatment. Avoids "
 "Opera bug when combined with transitions. Also saves bytes."
 msgstr ""
-"Muda para <code>outline:0</code> afim de um tratamento de foco acessível. "
+"Mudança para <code>outline:0</code> afim de um tratamento de foco acessível. "
 "Previnindo bug no Opera quando combinado com transitions. Também poupa bytes."
 
 #: src/index.html:238
@@ -685,7 +687,8 @@ msgstr ""
 
 #: src/index.html:251
 msgid "Build script is compatible with php files now. it appears. </li>"
-msgstr "Script de compilação é compatível com arquivos php agora. parece isso.</li>"
+msgstr ""
+"Script de compilação é compatível com arquivos php agora. Ao que parece.</li>"
 
 #: src/index.html:253
 msgid "Build script compatible with Ant >= 1.8.2. Error message otherwise. "
@@ -774,7 +777,7 @@ msgstr ""
 #: src/index.html:280
 msgid "Files are revved by SHA hash, not incrementally at each build"
 msgstr ""
-"Os arquivos são reversionados por um hash SHA, não de forma incremental a "
+"Arquivos são reversionados por um hash SHA, não mais de forma incremental a "
 "cada compilação"
 
 #: src/index.html:281
@@ -826,7 +829,7 @@ msgid ""
 "update yuicompressor to 2.4.5. Fixes media query minification issue that "
 "shipped with 1.0"
 msgstr ""
-"atualiza o yuicompressor para 2.4.5. Corrique a minificação de media queries, "
+"atualiza o yuicompressor para 2.4.5. Corrige a minificação de media queries, "
 "problema que veio com 1.0"
 
 #: src/index.html:295
@@ -835,7 +838,7 @@ msgid ""
 "fixed a bunch of edgecasey php bugs users had."
 msgstr ""
 "atualiza o htmlcompressor para 1.4.3 que usa o novo yuicompressor para CSS e "
-"corriu um monte de bugs que usuários de php tinham."
+"Foram corrigidos vários bugs que afetavam usuários de php."
 
 #: src/index.html:297
 msgid "Lots of bug fixes for edge cases and improved techniques.."
@@ -877,7 +880,7 @@ msgstr "Configurações Webserver"
 
 #: src/index.html:318
 msgid "Disable directory browsing by default"
-msgstr "Disabilita pesqisa no diretório por padrão"
+msgstr "Desabilita pesquisa em diretórios por padrão"
 
 #: src/index.html:319
 msgid ""
@@ -891,7 +894,7 @@ msgstr ""
 
 #: src/index.html:321
 msgid "Updating TTF mimetype to fix Google Chrome warning"
-msgstr "Atualizando mime type TTF para corrigir alertas no Google Chrome"
+msgstr "Atualizando mime type de TTF para de corrigir alertas no Google Chrome"
 
 #: src/index.html:323
 msgid ""
@@ -2590,8 +2593,8 @@ msgstr ""
 #~ "All helper classes are now after primary styles to ensure correct "
 #~ "overrides and not be burdened with resets. "
 #~ msgstr ""
-#~ "Todas as classes auxiliares ficam agora depois dos estilos padrões para "
-#~ "não serem sobrepostas e não serem oneradas pelos reajustes. "
+#~ "Todas as classes auxiliares ficam agora depois dos estilos padronizados "
+#~ "para não serem sobrepostas e não serem oneradas pelos reajustes. "
 
 #~ msgid ""
 #~ "<code>.visuallyhidden</code> is no longer camelCase, as to be consistent "
