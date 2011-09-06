@@ -54,8 +54,7 @@ msgstr "Um padrão sólido para o incrível HTML5"
 #: src\index.html:40
 msgid "I'm new here: plz explain why it's so awesome, first."
 msgstr ""
-"Eu sou novo aqui: Por favor, primeiramente me explique por que isso é tão "
-"incrível"
+"Sou novo aqui: Por favor, primeiro me diz o que faz isso ser tão incrível."
 
 #: src\index.html:43
 msgid ""
@@ -93,11 +92,11 @@ msgstr ""
 
 #: src\index.html:48
 msgid "Why it is awesome"
-msgstr "Porque é incrível"
+msgstr "O que o faz ser incrível"
 
 #: src\index.html:50
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
-msgstr "Compatibilidade cross-browser (Até mesmo com o IE6)"
+msgstr "Compatibilidade cross-browser (Até mesmo com o IE6)."
 
 #: src\index.html:51
 msgid "HTML5 ready. Use the new tags with certainty."
@@ -109,32 +108,33 @@ msgstr "Regras de caching e compressão para otimizar o desempenho na grade-A."
 
 #: src\index.html:53
 msgid "Best practice site configuration defaults"
-msgstr "Melhores práticas para sites em configurações padronizadas"
+msgstr "Melhores práticas para sites em configurações padronizadas."
 
 #: src\index.html:54
 msgid "Mobile browser optimizations"
-msgstr "Otimização para navegadores móveis"
+msgstr "Otimização para navegadores móveis."
 
 #: src\index.html:55
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr "Progressive enhancement e graceful degradation &hellip; sim, nos temos"
+msgstr ""
+"Progressive enhancement e graceful degradation &hellip; sim, nos temos."
 
 #: src\index.html:56
 msgid "IE specific classes for maximum cross-browser control"
-msgstr "Classes específicas para IE por um máximo controle cross-browser"
+msgstr "Classes específicas para IE, por um máximo controle cross-browser."
 
 #: src\index.html:57
 msgid "Handy .no-js and .js classes to style based on capability"
-msgstr "Classes .no-js e .js para criar estilos baseados na capacidade"
+msgstr "Classes .no-js e .js para criar estilos baseados em sua capacidade."
 
 #: src\index.html:60
 msgid "Why it is awesome-er"
-msgstr "Porque é ainda mais incrível"
+msgstr "O que o faz ser ainda mais incrível"
 
 #: src\index.html:62
 msgid "Console.log nerfing so you won't break anyone by mistake."
-msgstr "Console.log moderado para evitar erros de produção."
+msgstr "Console.log moderado para previnir erros de produção."
 
 #: src\index.html:63
 msgid "Never go wrong with your doctype or markup!"
@@ -152,19 +152,19 @@ msgstr "Esquelo CSS e marcação adaptável para iOS, Android, Opera Mobile."
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
-".clearfix, .visuallyhidden classes para estilizar coisas com sabedoria e "
+"Classes .clearfix, .visuallyhidden para estilizar coisas com sabedoria e "
 "acessibilidade."
 
 #: src\index.html:67
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
-"arquivo .htaccess que permite a utilização adequada dos recursos HTML5 e "
+"Um arquivo .htaccess que permite a utilização adequada dos recursos HTML5 e "
 "carregamento mais rápido da página"
 
 #: src\index.html:68
 msgid "CDN hosted jQuery with local fallback failsafe."
-msgstr "jQuery hospedado em CDN com refêrencia local como opção de recurso."
+msgstr "jQuery hospedado em CDN com refêrencia local como opção de fallback."
 
 #: src\index.html:69
 msgid ""
@@ -173,7 +173,7 @@ msgstr "Acha muito? O HTML5 Boilerplate é amigável com a tecla delete. :)"
 
 #: src\index.html:72
 msgid "Want to dive in?"
-msgstr "Quer ir mais fundo?"
+msgstr "Quer ir mais a fundo?"
 
 #: src\index.html:78
 msgid "Download Boilerplate {{ version }}"
@@ -201,7 +201,7 @@ msgstr "<u>Baixe</u> o Boilerplate não documentado"
 
 #: src\index.html:83
 msgid "No comments, just the bizniss."
-msgstr "Sem comentários, apenas os códigos."
+msgstr "Sem comentários, apenas os códigos"
 
 #: src\index.html:85
 msgid "<u>Customize</u> Boilerplate"
@@ -209,7 +209,7 @@ msgstr "<u>Personalize</u> o Boilerplate"
 
 #: src\index.html:85
 msgid "100&percnt; hipster."
-msgstr "100&percnt; moderno."
+msgstr "100&percnt; moderno"
 
 #: src\index.html:90
 msgid "jQuery"
@@ -233,11 +233,11 @@ msgstr "Outros"
 
 #: src\index.html:103
 msgid "All IE classes"
-msgstr "Todas as classes do IE"
+msgstr "Todas as classes para IE"
 
 #: src\index.html:104
 msgid "script.js & plugin.js"
-msgstr "script.js e plugin.js"
+msgstr "Arquivos: script.js e plugin.js"
 
 #: src\index.html:105
 msgid "Google Analytics Snippet"
@@ -294,13 +294,13 @@ msgid ""
 "frontend researchers and developers, to the core development team. The "
 "highlights of 2.0 are below, followed by a more comprehensive changelog."
 msgstr ""
-"H5BP faz um ano! Nós o lançamos em 10 de agosto de 2010 e agora nós temos "
-"uma infinidade de novidades, mudanças emocionantes que compõe nossa versão "
-"2.0 Nós também adotamos <a href=\"http://mathiasbynens.be/\">Mathias Bynens</"
-"a> e <a href=\"http://nicolasgallagher.com/\">Nicolas Gallagher</a>, que são "
-"dois pesquisadores e desenvolvedores front-end talentosos, para o time de "
-"desenvolvimento interno. Os destaques da versão 2.0 estão abaixo, seguidos "
-"por um changelog mais abrangente."
+"O H5BP fez um ano! Nós o lançamos em 10 de agosto de 2010 e agora nós temos "
+"uma infinidade de novidades, são mudanças emocionantes que compõe nossa "
+"versão 2.0. Nós também adotamos <a href=\"http://mathiasbynens.be/\">Mathias "
+"Bynens</a> e <a href=\"http://nicolasgallagher.com/\">Nicolas Gallagher</a>, "
+"que são dois pesquisadores e desenvolvedores front-end talentosos, para o "
+"time de desenvolvimento interno. Os destaques da versão 2.0 estão abaixo, "
+"seguidos por um changelog mais abrangente."
 
 #: src\index.html:133
 msgid ""
@@ -317,9 +317,9 @@ msgid ""
 "normalize.css retains useful browser defaults and includes several common "
 "fixes to improve cross-browser (desktop and mobile) styling consistency."
 msgstr ""
-"normalize.css mantém padrões úteis do navegador e adiciona muitas correções "
-"comuns para melhorar a consistência de estilização cross-browser (desktop e "
-"mobile)."
+"O arquivo normalize.css mantém padrões úteis do navegador e adiciona muitas "
+"correções comuns para melhorar a consistência de estilização cross-browser "
+"(desktop e mobile)."
 
 #: src\index.html:136
 msgid ""
@@ -327,22 +327,22 @@ msgid ""
 "user agent styles provided by each browser. We can very specifically change "
 "only the ones we need to instead of the bulldozer approach."
 msgstr ""
-"Muitas pesquisas foram canalizadas para normalize, verificando quais são os "
-"estilos padrões do agente do usuário fornecido por cada navegador. Nós "
-"podemos muito especificamente alterar apenas os que precisam em vez da "
-"tática superficial."
+"Muitas pesquisas foram canalizadas no normalize, verificando quais são os "
+"estilos padrões de user agent fornecidos por cada navegador. Então nós "
+"podemos, muito especificamente, alterar apenas o que é necessário em vez de "
+"adotar uma tática superficial."
 
 #: src\index.html:138
 msgid "Why this is great news:"
-msgstr "Porque essa é uma grande notícia:"
+msgstr "Veja o que torna essa é uma ótima notícia:"
 
 #: src\index.html:140
 msgid ""
 "Who likes being so damn redundant and declaring: <code style=\"font-size:90%"
 "\">em, i { font-style: italic; }</code>"
 msgstr ""
-"Quem gosta de ser tão redundante declarando: <code style=\"font-size:90%"
-"\">em, i { font-style: italic; }</code>"
+"Como alguém preferir ser redundante declarando: <code style=\"font-size:90%"
+"\">em, i { font-style: italic; }</code> ?"
 
 #: src\index.html:141
 msgid ""
@@ -350,7 +350,7 @@ msgid ""
 "use less styles and save bytes"
 msgstr ""
 "Usando normalização em vez de um redefinidor somando-se a construção de "
-"estilos padronizados, nós usamos menos estilos e economizamos alguns bytes"
+"estilos padronizados, nós usamos menos estilos e economizamos alguns bytes."
 
 #: src\index.html:142
 msgid ""
@@ -358,30 +358,32 @@ msgid ""
 "through every reset selector to reach the actual style that is causing the "
 "issue."
 msgstr ""
-"Menos ruído em suas ferramentas de desenvolvimento: Em depuração, você não "
-"precisa se arrastar através de cada seletor de reposição para alcançar o "
-"estilo que está causando problemas"
+"Menos ruído nas suas ferramentas de desenvolvimento: Quando fizer depuração, "
+"você não precisará se arrastar através de cada seletor de reposição para "
+"encontrar o estilo que esteja causando problemas."
 
 #: src\index.html:143
 msgid ""
 "More details on the <a href=\"http://necolas.github.com/normalize.css/"
 "\">project page</a>"
 msgstr ""
-"Mais detalhes na <a href=\"http://necolas.github.com/normalize.css/\">página "
-"do projeto</a>"
+"Veja mais detalhes na <a href=\"http://necolas.github.com/normalize.css/"
+"\">página do projeto</a>."
 
 #: src\index.html:148
 msgid "BUILD SCRIPT++: Faster, @import inlining, appcache generation"
-msgstr "COMPILADOR DE SCRIPT++: Rápido, @import em linha, geração de appcache"
+msgstr ""
+"COMPILADOR DE SCRIPT++: Mais rápido, @import em linha, geração de appcache"
 
 #: src\index.html:149
+#, perl-format
 msgid ""
 "If 15 seconds was too long to wait before, you'll be happy with the changes. "
 "Via a new \"intermediate\" folder, we cut down build time by 80% or more."
 msgstr ""
-"Se 15 segundos foi tempo demais para ter esperado antes, você vai ficar "
-"feliz com as mudanças. Através de uma nova pasta \"intermediate"
-"\" (intermediária), cortamos o tempo compilação em 80% ou mais."
+"Se 15 segundos foram muito tempo para esperar antigamente, agora você vai "
+"ficar ainda mais feliz com as mudanças. Criando a nova pasta \"intermediate"
+"\" (intermediária), cortamos o tempo de compilação em 80% ou mais."
 
 #: src\index.html:150
 msgid ""
@@ -390,8 +392,8 @@ msgid ""
 "maintainable authoring experience, and still a highly performant production "
 "version."
 msgstr ""
-"Se você usa declarações <code>@import</code> em seu CSS para atuar em vários "
-"arquivos, o compilador de script irá unificar todos eles em linha. Dessa "
+"Se você usa declarações <code>@import</code> no seu CSS para atuar em vários "
+"arquivos, o compilador de script irá unificar todos eles em uma linha. Dessa "
 "forma você terá uma melhor experiência de criação e manutenção, além de uma "
 "versão de produção de alta performance."
 
@@ -403,14 +405,14 @@ msgid ""
 "revved as you deploy new changes."
 msgstr ""
 "Fazer uma aplicação que funcione offline é um símbolo de honra. Com o "
-"disparo de um interruptor de configuração, o compilador de script do H5BP "
-"pode gerar automaticamente o seu arquivo de manifesto de cache com todas a "
+"disparo de um interruptor na configuração, o compilador de script do H5BP "
+"poderá gerar automaticamente o seu arquivo de manifesto do cache com todas a "
 "informações corretas e conecta-las. Ele também vai manter o manifesto "
-"reversionado quanto ao desenvolvimento de novas alterações."
+"reversionado quando você fizer o desenvolvimento de novas alterações."
 
 #: src\index.html:155
 msgid "PROMPT CHROME FRAME FOR IE6"
-msgstr "INDUZIR CHROME FRAME PARA IE6"
+msgstr "INDUZIR CHROME FRAME NO IE6"
 
 #: src\index.html:158
 msgid ""
@@ -419,7 +421,7 @@ msgid ""
 "Chrome Frame."
 msgstr ""
 "Com a última release do Chrome frame que não requer acesso de administrador "
-"para ser instalado, sentimos que era um bom momento para pedir usuários do "
+"para ser instalada, sentimos que era um bom momento para pedir usuários do "
 "IE 6 para instalar o Chrome Frame."
 
 #: src\index.html:166
@@ -430,20 +432,19 @@ msgid ""
 msgstr ""
 "Adicionado <a href=\"https://github.com/scottjehl/Respond#readme\">respond."
 "js</a> como parte de uma mudança para uma abordagem sensível. Agora você "
-"pode usar media queries em qualquer lugar e obter suporte integral para IE6-"
-"8."
+"pode usar media queries em qualquer lugar e tendo suporte integral para IE6-8."
 
 #: src\index.html:170
 msgid "PNGFIX &amp; HANDHELD REMOVED"
-msgstr "PNGFIX &amp; HANDHELD REMOVIDO"
+msgstr "PNGFIX e HANDHELD REMOVIDOS"
 
 #: src\index.html:172
 msgid ""
 "We removed handheld.css as we do not think it was useful among the diverse "
 "feature phones"
 msgstr ""
-"Nós removemos handheld.css já que não achamos que foi útil perante a "
-"diversidade de telefones"
+"Nós removemos o arquivo handheld.css, já que achamos que não foi útil perante "
+"a grande diversidade entre os telefones."
 
 #: src\index.html:173
 msgid ""
@@ -456,7 +457,7 @@ msgstr ""
 "\">imagealpha</a> e <a href=\"http://pornel.net/pngquant\">pngquant</a>, e "
 "técnicas como <a href=\"http://html5boilerplate.com/docs/Notes-on-using-png/"
 "\">usar PNGs de 8-bit</a> são mais úteis do que usar correções paliativas "
-"como belatedpng."
+"como o belatedpng."
 
 #: src\index.html:177
 msgid "Changelog"
@@ -469,11 +470,10 @@ msgid ""
 "release,</a> brought to you by over <a href=\"https://github.com/paulirish/"
 "html5-boilerplate#readme\">49 contributors</a>."
 msgstr ""
-"2.0 também recebe recebeu muitas atualizações <a href=\"https://github.com/"
-"paulirish/html5-boilerplate/compare/v1.0...v2.0\">Aqui estão todos os 299 "
-"commits desde a versão passada,</a> trazido a você por mais de <a href="
-"\"https://github.com/paulirish/html5-boilerplate#readme\">49 colaboradores</"
-"a>."
+"A versão 2.0 também recebeu muitas atualizações. <a href=\"https://github.com"
+"/paulirish/html5-boilerplate/compare/v1.0...v2.0\">Aqui estão todos os 299 "
+"commits desde a versão passada,</a> trazido a você por mais de <a href=\"http"
+"s://github.com/paulirish/html5-boilerplate#readme\">49 colaboradores</a>."
 
 #: src\index.html:179
 msgid ""
@@ -481,35 +481,35 @@ msgid ""
 "<small>(Though dropping in the new build script and .htaccess would be cool)"
 "</small>"
 msgstr ""
-"Você precisa atualizar sites existentes?</a> Resposta curta: não, ainda é "
-"confiável. <small>(Embora o caimento do novo script de compilação e o ."
-"htaccess possam ser considerações agradáveis)</small>"
+"Você precisa atualizar sites existentes?</a> Resposta curta: não, ainda são "
+"confiáveis. <small>(Embora o caimento do novo script de compilação e do "
+".htaccess possam ser considerações agradáveis)</small>."
 
 #: src\index.html:184
 msgid "Use minified jQuery by default (now 1.6.2)"
-msgstr "Utiliza jQuery minificado por padrão (agora 1.6.2)"
+msgstr "Utiliza jQuery minificado por padrão (agora 1.6.2)."
 
 #: src\index.html:186
 msgid "Add respond.js as part of shift to &#8216;mobile first&#8217; approach."
 msgstr ""
 "Adicionado respond.js como parte da mudança para abordagem &#8216;mobile-"
-"first&#8217;"
+"first&#8217;."
 
 #: src\index.html:188
 msgid ""
 "Updated to Modernizr 2.0 Complete, Production minified (incl yepnope & "
 "respond)."
 msgstr ""
-"Atualizado para Modernizr 2.0 completo, Produção minificada (inclui yepnope "
-"e respond)."
+"Atualização completa para o Modernizr 2.0, versão de produção minificada "
+"(incluindo yepnope e respond)."
 
 #: src\index.html:190
 msgid "Prompt IE 6 users to install Chrome Frame"
-msgstr "Induz usuários IE 6 a intalar o Chrome Frame"
+msgstr "Induz os usuários do IE 6 a instalar o Chrome Frame."
 
 #: src\index.html:192
 msgid "Removing touch icon link tags and retaining only the comment."
-msgstr "Removidos os links de touch-icon e mantendo apenas o comentário"
+msgstr "Removidos os links de touch-icons e mantido apenas o comentário."
 
 #: src\index.html:194
 msgid ""
@@ -521,27 +521,27 @@ msgstr ""
 
 #: src\index.html:196 standard input:347
 msgid "Remove the cache-busting query parameters from the HTML."
-msgstr "Remove o parâmetro de query para fazer cache-busting a partir do HTML."
+msgstr "Remove do HTML o parâmetro de query para fazer cache-busting."
 
 #: src\index.html:198
 msgid ""
 "Simplify the conditional comment containing code for IE 9+ and modern "
 "browsers"
 msgstr ""
-"Simplifica os comentários condicionais contendo códigos para IE 9+ e "
-"navegadores modernos"
+"Simplifica os comentários condicionais contendo os códigos para IE 9+ e "
+"navegadores modernos."
 
 #: src\index.html:200
 msgid "Simpler escape for <code>&lt;/script&gt;</code>"
-msgstr "Simplifica escapador do <code>&lt;/script&gt;</code>"
+msgstr "Simplifica o escapador do <code>&lt;/script&gt;</code>"
 
 #: src\index.html:202
 msgid ""
 "Encourage people to use a custom Modernizr build containing only the "
 "features they need for that particular project."
 msgstr ""
-"Estimula as pessoas a usar uma compilação personalizada do Modernizr "
-"contendo apenas funcionalidades que elas precisam para cada projeto em "
+"Estimula as pessoas a usarem uma compilação personalizada do Modernizr "
+"contendo apenas funcionalidades que elas precisem a cada projeto em "
 "particular."
 
 #: src\index.html:204
@@ -550,7 +550,7 @@ msgid ""
 "touch-icon support</a>."
 msgstr ""
 "Adicionado <a href=\"http://mathiasbynens.be/notes/touch-icons#sizes\">maior "
-"suporte para touch-icon</a>."
+"suporte para touch-icons</a>."
 
 #: src\index.html:206
 msgid ""
@@ -571,16 +571,16 @@ msgstr "a utilização de aspas simples e duplas</a>."
 #: src\index.html:210
 msgid "Added Site Speed tracking for Google Analytics"
 msgstr ""
-"Adicionado código de acompanhamento de velocidade do site para Google "
-"Analytics"
+"Adicionado o código para acompanhamento de velocidade do site para Google "
+"Analytics."
 
 #: src\index.html:212
 msgid ""
 "Google Analytics now retrieved with <code>Modernizr.load()</code> for byte "
 "brevity and optimal speed"
 msgstr ""
-"Google Analytics agora recebido com <code>Modernizr.load()</code> para "
-"abreviar bytes e otimizar a velocidade"
+"Google Analytics agora é adquirido com o <code>Modernizr.load()</code> para "
+"abreviar bytes e otimizar a velocidade."
 
 #: src\index.html:218
 msgid ""
@@ -601,7 +601,7 @@ msgid ""
 "Add <code>img { max-width: 100%; }</code> to print styles to prevent images "
 "from getting cut off."
 msgstr ""
-"Adicionado <code>img { max-width: 100%; }</code> para estilos de impressão "
+"Adicionada <code>img { max-width: 100%; }</code> aos estilos de impressão "
 "para evitar que imagens fiquem cortadas."
 
 #: src\index.html:224
@@ -610,11 +610,11 @@ msgid ""
 "hack/\">&#8216;micro&#8217; clearfix</a>"
 msgstr ""
 "Atualiza o clearfix para usar o <a href=\"http://nicolasgallagher.com/micro-"
-"clearfix-hack/\">&#8216;micro&#8217; clearfix</a>"
+"clearfix-hack/\">&#8216;micro&#8217; clearfix</a>."
 
 #: src\index.html:226
 msgid "Add placeholder CSS MQs for mobile-first approach"
-msgstr "Adiciona MQs placeholder CSS na abordagem mobile-first"
+msgstr "Adiciona placeholder de MQs no CSS para abordagem mobile-first."
 
 #: src\index.html:228
 msgid ""
@@ -622,21 +622,21 @@ msgid ""
 "code>, which is &hellip; <dd class=\"festal\"><b>Festal</b> <i>(adj)</i>: "
 "pertaining to or befitting a feast, festival, holiday, or gala occasion.</dd>"
 msgstr ""
-"Aprimorando a nossa <code>::selection</code> rosa choque. Que agora é "
+"Aprimoramento da nossa <code>::selection</code> rosa choque. Que agora é "
 "<code>#fe57a1</code>, ou seja &hellip; <dd class=\"festal\"><b>Festal</b> <i>"
 "(en)</i> / Festivo <i>(adj)</i>: relativo a uma ocasição de festa, festival, "
 "feriado ou ocasião de gala.</dd>"
 
 #: src\index.html:230
 msgid "Use black for links when printing"
-msgstr "Utiliza preto para links ao imprimir"
+msgstr "Utiliza preto para os links ao imprimir."
 
 #: src\index.html:232
 msgid ""
 "added <code>vertical-align: middle</code> to fix borders on image "
 "containers. "
 msgstr ""
-"adicionado <code>vertical-align: middle</code> para corrigir bordas em "
+"Adicionada <code>vertical-align: middle</code> para corrigir bordas em "
 "contenedores de imagens."
 
 #: src\index.html:234
@@ -675,7 +675,7 @@ msgid ""
 "resizing"
 msgstr ""
 "Adiciona <code>{resize: vertical}</code> para &lt;textarea>. Permite apenas "
-"o redimensionamento vertical"
+"o redimensionamento vertical."
 
 #: src\index.html:244
 msgid "Build Script"
@@ -686,8 +686,8 @@ msgid ""
 "CSSLint, JSLint, JSHint tools are now optionally available in the build "
 "script"
 msgstr ""
-"As ferramentas CSSLint, JSLint, JSHint agora são opcionalidade disponíveis "
-"no script de compilação"
+"As ferramentas CSSLint, JSLint, JSHint agora são opcionalidades disponíveis "
+"no script de compilação."
 
 #: src\index.html:247
 msgid "New features in build script:"
@@ -699,7 +699,7 @@ msgid ""
 "JavaScript files, but just silently passes it on to the publish folder "
 "without any change. "
 msgstr ""
-"Adicionada uma propriedade files.bypass que quando definida, não irá "
+"Adicionada uma propriedade files.bypass, que quando definida não irá "
 "comprimir os arquivos JavaScript listados, mas apenas passá-los "
 "silenciosamente para a pasta de publicação, sem quaisquer alterações."
 
@@ -709,13 +709,13 @@ msgid ""
 "directory that you do not want to be optimized. "
 msgstr ""
 "Adicionada uma propriedade images.bypass com uma lista de arquivos de "
-"imagens ou pastas dentro do diretório img que você não quer que sejam "
+"imagens ou pastas dentro do diretório img que você não queira que sejam "
 "otimizados. "
 
 #: src\index.html:251
 msgid "Build script is compatible with php files now. it appears. </li>"
 msgstr ""
-"Script de compilação é compatível com arquivos php agora. Ao que parece.</li>"
+"Script de compilação é compatível com arquivos PHP agora - ao que parece.</li>"
 
 #: src\index.html:253
 msgid "Build script compatible with Ant >= 1.8.2. Error message otherwise. "
@@ -733,7 +733,8 @@ msgstr ""
 
 #: src\index.html:256
 msgid "Concatenated script is added with a <code>@defer</code> attribute </li>"
-msgstr "Script concatenado adiconado com um atribuito <code>@defer</code></li>"
+msgstr ""
+"Script concatenado foi adiconado com atribuito <code>@defer</code>.</li>"
 
 #: src\index.html:258
 msgid ""
@@ -750,25 +751,25 @@ msgid ""
 "Minification affects all .css and .js files in /css and /js dirs,  not just "
 "the ones explicitly included in concatenation."
 msgstr ""
-"Minificação afeta todos os arquivos .css e .js nos diretórios /css e /js, "
+"A minificação afeta todos os arquivos .css e .js nos diretórios /css e /js, "
 "não apenas os explicitamente incluídos na concatenização."
 
 #: src\index.html:262
 msgid "Build script: compress all images in subfolders, too."
-msgstr "Script de compilação: comprime todas as imagens nas subpastas, também."
+msgstr "Script de compilação: Comprime todas as imagens nas subpastas, também."
 
 #: src\index.html:264
 msgid ""
 "Added gae.js dir and gae.css dir so that App Engine projects can have the "
 "correct directory names swapped in their templates."
 msgstr ""
-"Adiconados gae.js_dir e gae.css_dir para projetos App Engine poderem ter "
-"seus nomes de diretórios corretos trocados em seus modelos."
+"Adiconadas gae.js_dir e gae.css_dir para que projetos App Engine possam "
+"ter seus nomes de diretórios corretos trocados em seus templates."
 
 #: src\index.html:266
 msgid "Improved build script compatibility with Netbeans IDE.  "
 msgstr ""
-"Melhorada a compatibilidade do compilador de scripts com o IDE Netbeans"
+"Melhorada a compatibilidade do compilador de scripts com o IDE Netbeans."
 
 #: src\index.html:268
 msgid ""
@@ -776,19 +777,19 @@ msgid ""
 "don&#8217;t have &#8220;static&#8221; prepended when swapping for minified "
 "versions."
 msgstr ""
-"Adiconando propriedades para project.properties para que compilações Google "
-"App Engine que não têm &#8220;static&#8221; prefixado quando trocados para "
+"Adiconando propriedades no project.properties para as compilações Google "
+"App Engine que não têm &#8220;static&#8221; prefixada quando trocadas para "
 "veersões minificadas."
 
 #: src\index.html:270
 msgid ""
 "console.log messages are no longer commented out for you. use log() instead"
 msgstr ""
-"mensagens console.log não são mais comentadas para você, use log() agora"
+"Mensagens console.log não são mais comentadas para você, use log() agora."
 
 #: src\index.html:272
 msgid "Much faster build process"
-msgstr "Processo de compilação muito mais rápido"
+msgstr "Processo de compilação muito mais rápido:"
 
 #: src\index.html:273
 msgid ""
@@ -796,7 +797,7 @@ msgid ""
 "already been processed will not be reprocessed unless the source has "
 "changed. A new \"intermediate\" folder is used for this."
 msgstr ""
-"Arquivos não são removidos no início de cada compilação, e arquvos que já "
+"Os arquivos não são removidos no início de cada compilação, e arquvos que já "
 "tenham sido processados não serão reprocessados a menos que a fonte seja "
 "alterada. Uma nova pasta \"intermediate\" (intermediária) é utilizada para "
 "isso."
@@ -805,7 +806,7 @@ msgstr ""
 msgid "Files are revved by SHA hash, not incrementally at each build"
 msgstr ""
 "Arquivos são reversionados por um hash SHA, não mais de forma incremental a "
-"cada compilação"
+"cada nova compilação."
 
 #: src\index.html:278
 msgid ""
@@ -817,8 +818,8 @@ msgid ""
 msgstr ""
 "Arquivos versionados são referenciados por um hash SHA-1 do conteúdo, em vez "
 "de um número de compilação. Isto significa que mudando o seu HTML e "
-"recompilando não vai permitir que usuários baixem novamente o mesmo CSS e "
-"JavaScript, e uma mudança revertida pode fazer com que usuários usem uma "
+"recompilando não vai permitir que usuários baixem novamente os mesmos CSS e "
+"JavaScript, e ao reverter alterações pode-se fazer com que usuários usem uma "
 "cópia que foi previamente baixada. Pode ser melhor usar apenas uma parte do "
 "hash para as solicitações HTTP, que é mais curto."
 
@@ -831,40 +832,40 @@ msgid ""
 "unavailable on the server. This commit requires a change to existing HTML "
 "files :/"
 msgstr ""
-"Copiar arquivos por último. Isso simplifica um pouco a cópia por que nós não "
+"Copia arquivos por último. Isso simplifica um pouco as cópias, pois nós não "
 "teremos que excluir PNG, JPEG ou arquivos HTML a partir do stage de cópia. "
-"Isso vem pré-minificado e nós não precisamos minificá-los novamente. Isso "
+"Isso chega pré-minificado e nós não precisamos minificá-los novamente. Isso "
 "também atualiza o HTML para que o script não fique ausente se os script não "
-"minificados não estiverem disponíveis no servidor. Este commit requer uma "
-"alteração nos arquivos HTML existentes. :/"
+"minificados não estiverem disponíveis no servidor. Mas este commit requer "
+"alguma alteração nos arquivos HTML existentes. :/"
 
 #: src\index.html:283
 msgid ""
 "Build script no longer upgrades expires headers in the htaccess. 1yr for "
 "everyone! "
 msgstr ""
-"Script de compilação deixa de atualizar os cabeçalhos de expiração no ."
-"htaccess. 1 ano para todos! "
+"Script de compilação deixa de atualizar os cabeçalhos de expiração no "
+"arquivo .htaccess. 1 ano para todos! "
 
 #: src\index.html:285
 msgid ""
 "update yuicompressor to 2.4.5. Fixes media query minification issue that "
 "shipped with 1.0"
 msgstr ""
-"atualiza o yuicompressor para 2.4.5. Corrige a minificação de media queries, "
-"problema que veio com 1.0"
+"Atualização do yuicompressor para 2.4.5. Corrige a minificação de media "
+"queries, problema que veio com a versão 1.0."
 
 #: src\index.html:287
 msgid ""
 "update htmlcompressor to 1.4.3 which uses the new yuicompressor for CSS and "
 "fixed a bunch of edgecasey php bugs users had."
 msgstr ""
-"atualiza o htmlcompressor para 1.4.3 que usa o novo yuicompressor para CSS e "
-"Foram corrigidos vários bugs que afetavam usuários de php."
+"Atualização do htmlcompressor para 1.4.3 que usa o novo yuicompressor para "
+"CSS e foram corrigidos vários bugs que afetavam usuários de PHP."
 
 #: src\index.html:289
 msgid "Lots of bug fixes for edge cases and improved techniques.."
-msgstr "Muitos bugs corrigidos para alguns casos e técnicas melhoradas.."
+msgstr "Muitos bugs foram corrigidos para alguns casos e técnicas melhoradas."
 
 #: src\index.html:294
 msgid "Project"
@@ -874,7 +875,8 @@ msgstr "Projeto"
 msgid ""
 "gitignore additions: textmate project folder, older CVS folders,  sass_cache."
 msgstr ""
-"adições gitignore: pasta de projeto textmate, pastas CVS antigo, sass_cache."
+"Adições ao gitignore: Pasta de projeto do TextMate, pastas CVS antigo, "
+"sass_cache."
 
 #: src\index.html:298
 msgid ""
@@ -883,18 +885,18 @@ msgid ""
 "types, include different form markup styles, add form elements box-sizing "
 "test"
 msgstr ""
-"Atualiza os elementos HTML demo: reduz repetição, remove elementos em "
-"desuso, adiciona certos elementos HTML5, e uma coleção mais abrangente de "
-"input types HTML5 types, incluíndo diferentes estilos de marcação de form, "
-"adiciona testes de box-sizing para elementos de form"
+"Atualiza os elementos do HTML demo: Reduz a repetição, remove elementos em "
+"desuso, adiciona certos elementos HTML5 e uma coleção mais abrangente de "
+"input types HTML5, incluíndo diferentes estilos de marcação de form e "
+"adiciona testes de box-sizing para elementos de form."
 
 #: src\index.html:300
 msgid "Add .gitattributes to help with consistent line endings"
-msgstr "Adiciona .gitattributes para ajudar com finais de linhas consistentes"
+msgstr "Adiciona .gitattributes para ajuda com finais de linhas consistentes."
 
 #: src\index.html:302
 msgid "Changed curly quotes to straight quotes in crossdomain.xml"
-msgstr "Mudou aspas curvas para aspas direitas no crossdomain.xml"
+msgstr "Alteradas as aspas curvas para aspas direitas no crossdomain.xml."
 
 #: src\index.html:307
 msgid "Webserver Configs"
@@ -902,7 +904,7 @@ msgstr "Configurações Webserver"
 
 #: src\index.html:310
 msgid "Disable directory browsing by default"
-msgstr "Desabilita pesquisa em diretórios por padrão"
+msgstr "Desabilita pesquisa em diretórios por padrão."
 
 #: src\index.html:311
 msgid ""
@@ -910,34 +912,35 @@ msgid ""
 "paulirish/html5-boilerplate/wiki/Proper-usage-of-trailing-slash-redirects"
 "\">More</a>"
 msgstr ""
-"removido redirecionamento da barra final a direita no htaccess. <a href="
+"Remoção do redirecionamento de barra final a direita no htaccess. <a href="
 "\"https://github.com/paulirish/html5-boilerplate/wiki/Proper-usage-of-"
-"trailing-slash-redirects\">Mais informações</a>"
+"trailing-slash-redirects\">Veja mais informações</a>"
 
 #: src\index.html:313
 msgid "Updating TTF mimetype to fix Google Chrome warning"
-msgstr "Atualizando mime type de TTF para de corrigir alertas no Google Chrome"
+msgstr "Atualização do mime type de TTF para corrigir alertas no Google Chrome."
 
 #: src\index.html:315
 msgid ""
 "Improved support for all versions of Apache, including workaround for bug in "
 "<code>mod_filter</code>."
 msgstr ""
-"Melhorado o suporte para todas as versões do Apache, incluindo solução para "
+"Melhorado o suporte para todas as versões do Apache, incluindo solução de um "
 "erro no <code>mod_filter</code>."
 
 #: src\index.html:317
 msgid "<b>Way better</b> and more robust gzip rules. "
-msgstr "<b>Um jeito melhor</b> e mais robusto para regras de gzip."
+msgstr "<b>Um jeito melhor</b> e mais robusto de fazer regras de gzip."
 
 #: src\index.html:319
 msgid "Add gzip support for XHTML, RSS, Atom"
-msgstr "Adicionado suporte gzip para XHTML, RSS e Atom"
+msgstr "Adicionado suporte em gzip para XHTML, RSS e Atom."
 
 #: src\index.html:321
 msgid "Added m4a (Need it for IE9) and m4v (HandBrake default) MIME types."
 msgstr ""
-"Adicionado MIME types de m4a (Necessário para o IE9) e m4v (padrão HandBrake)."
+"Adicionado MIME types de m4a (Necessário para o IE9) e m4v (padrão "
+"HandBrake)."
 
 #: src\index.html:323
 msgid ""
@@ -945,7 +948,7 @@ msgid ""
 "None</code> alone, is not enough. Removing header and setting it to None "
 "fixes the issue."
 msgstr ""
-"Adicionado <code>Header unset ETag</code> em alguns servidores ao definir "
+"Adicionado <code>Header unset ETag</code>. Em alguns servidores só definir "
 "<code>FileETag None</code> sozinho, não é suficiente. Remover o cabeçalho e "
 "definir como 'None' corrige o problema."
 
@@ -954,15 +957,15 @@ msgid ""
 "Add <code>Options +FollowSymlinks</code> when <code>RewriteEngine</code> is "
 "used. Fixes #489."
 msgstr ""
-"Adicionado <code>Options +FollowSymlinks</code> quando <code>RewriteEngine"
-"</code> é usado. Corrige #489."
+"Adiciona <code>Options +FollowSymlinks</code> quando <code>RewriteEngine</"
+"code> é usado. Corrige #489."
 
 #: src\index.html:327
 msgid ""
 "Some more security for PHP: turn off error display and turn on error logging"
 msgstr ""
-"Alguma segurança a mais para PHP: Desativando a exibição de erro e ativando o "
-"log de erro."
+"Alguma segurança a mais para PHP: Desativando a exibição de erro e ativando "
+"o log de erro."
 
 #: src\index.html:329
 msgid "Allow Blackberry to read vCards, because those people are swell.  "
@@ -970,7 +973,7 @@ msgstr "Deixa o Blackberry ler vCards, porque algumas pessoas estão aderindo."
 
 #: src\index.html:331
 msgid "nginx, node.js, lighttpd, google app engine, IIS"
-msgstr "nginx, node.js, lighttpd, google app engine, IIS"
+msgstr "nginx, node.js, lighttpd, google app engine e IIS"
 
 #: src\index.html:333
 msgid ""
@@ -979,23 +982,23 @@ msgid ""
 msgstr ""
 "Muitas atualizações e correções. Veja o <a href=\"https://github.com/"
 "paulirish/html5-boilerplate-server-configs\">repositório oficial de "
-"configurações de servidor h5bp"
+"configurações de servidor H5BP"
 
 #: src\index.html:336
 msgid "Significant commits"
-msgstr "Commits mais significativos"
+msgstr "Commits mais significativos:"
 
 #: src\index.html:337
 msgid ""
 "The commit messages on these commits are particularly fun and worth a read "
 "if you're into frontend research"
 msgstr ""
-"As mensagens nestes commits são particularmente divertidas e vale a pena ler "
-"principalmente se você estiver interessado em pesquisas front-end"
+"As mensagens nestes commits são particularmente divertidas e valem a leitura "
+", principalmente se você estiver interessado em pesquisas de front-end."
 
 #: src\index.html:340
 msgid "Revert \"Added native iOS inertia scrolling\""
-msgstr "Reverte \"Adicinada rolagem nativa de inércia do iOS\""
+msgstr "Reverte \"Adicinada rolagem nativa de inércia do iOS\"."
 
 #: src\index.html:341
 msgid ""
@@ -1003,7 +1006,7 @@ msgid ""
 "default styles"
 msgstr ""
 "Principal: Agora usa-se normalização em vez de um redefinidor somando-se a "
-"construção de estilos padronizados"
+"construção de estilos padronizados."
 
 #: src\index.html:342
 msgid ""
@@ -1011,35 +1014,35 @@ msgid ""
 "class."
 msgstr ""
 "Muda nossos comentários condicionais em torno da tag HTML para usar a única "
-"classe .oldie"
+"classe oldie."
 
 #: src\index.html:343
 msgid ""
 "Revert \"Change our conditional comments around the HTML tag to use a "
 "single .oldie class.\""
 msgstr ""
-"Reverte \"Muda nossos comentários condicionais em torno da tag HTML para usar "
-"a única classe .oldie\""
+"Reverte \"Muda nossos comentários condicionais em torno da tag HTML para "
+"usar a única classe oldie\"."
 
 #: src\index.html:344
 msgid ""
 "Tweaking our hot pink ::selection based on a suggestion from David Murdoch "
 "and research from Adam Diehm."
 msgstr ""
-"Aprimorando nossa ::selection rosa choche baseado na sugestão de David "
+"Aprimoração da nossa ::selection rosa choche baseado na sugestão de David "
 "Murdoch e pesquisas de Adam Diehm."
 
 #: src\index.html:345
 msgid "Use minified jQuery by default."
-msgstr "Utilizar jQuery minificado por padrão"
+msgstr "Utiliza jQuery minificado por padrão."
 
 #: src\index.html:346
 msgid "optimize build process"
-msgstr "Otimizar o processo de compilação"
+msgstr "Otimiza o processo de compilação."
 
 #: src\index.html:354
 msgid "Walk through it with me, now"
-msgstr "Vamos percorrer isso juntos agora"
+msgstr "Agora vamos percorrer isso juntos"
 
 #: src\index.html:366 src emplate\index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
@@ -2008,8 +2011,8 @@ msgid ""
 "If you have ideas for changes to the project, join <a href=\"http://h5bp.com/"
 "group\">the H5BP community on github</a> and file a ticket!"
 msgstr ""
-"Se você tiver idéias para mudar o projeto, junte-se <a href=\"http://h5bp.com/"
-"group\">a comunidade H5BP no github</a> e arquive o seu ticket!"
+"Se você tiver idéias para mudar o projeto, junte-se <a href=\"http://h5bp."
+"com/group\">a comunidade H5BP no github</a> e arquive o seu ticket!"
 
 #: src emplate.html:5
 msgid "Page Not Found"
