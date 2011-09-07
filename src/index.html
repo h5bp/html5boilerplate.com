@@ -270,20 +270,12 @@
         <li>{% blocktrans %}console.log messages are no longer commented out for you. use log() instead{% endblocktrans %}</li>
 
         <li>{% blocktrans %}Much faster build process{% endblocktrans %}
-          
-          <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that
-          have already been processed will not be reprocessed unless the source
-          has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
+          <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that have already been processed will not be reprocessed unless the source has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
         </li>
 
 
         <li>{% blocktrans %}Files are revved by SHA hash, not incrementally at each build{% endblocktrans %}
-          <p>{% blocktrans %}Versioned files are referenced by a SHA-1 hash of the content rather
-          than a build number. This means that changing your HTML and rebuilding
-          will not cause your users to redownload the same CSS and JavaScript, and
-          a reverted change may cause users to use a copy that was previously
-          downloaded. It may be better to use only part of the hash so the HTTP
-          request is shorter.{% endblocktrans %}</p>        
+          <p>{% blocktrans %}Versioned files are referenced by a SHA-1 hash of the content rather than a build number. This means that changing your HTML and rebuilding will not cause your users to redownload the same CSS and JavaScript, and a reverted change may cause users to use a copy that was previously downloaded. It may be better to use only part of the hash so the HTTP request is shorter.{% endblocktrans %}</p>        
         </li>
 
         <li>{% blocktrans %}copy files last This slightly simplifies copying because we don&#8217;t have to exclude PNG, JPEG, or HTML files from the copy stage. it comes preminified, and we don&#8217;t need to minify it again This also updates the HTML so that the script is not missing if the unminified scripts are unavailable on the server. This commit requires a change to existing HTML files :/{% endblocktrans %}</li>
