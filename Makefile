@@ -17,7 +17,9 @@ info:
 	@echo ""
 
 messages: force
+	@echo "Cool. Let's start..."
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}"
+	@echo "All done. New message files are in ./locale/"
 
 build: force
 	@echo "Cool. Let's translate this."
@@ -26,6 +28,4 @@ build: force
 	@echo ""
 	@echo "You might want to consider manual docs update..."
 	@echo "cp -R docs built/en_US/"
-  
-
 force: ;

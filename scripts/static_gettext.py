@@ -56,11 +56,14 @@ class Localizer( object ):
     @staticmethod
     def gettextIsAvailable():
         requirements = { 'xgettext': False, 'msguniq': False , 'msgmerge': False }
+        extensions = os.environ.get("PATHEXT", "").split(os.pathsep)
         for path in os.environ["PATH"].split( os.pathsep ):
             for name in requirements:
-                file = os.path.join( path, name )
-                if not(requirements[name]) and os.path.exists(file) and os.access(file, os.X_OK):
-                    requirements[name] = True;
+                base = os.path.join( path, name )
+                options = [base] + [(base + ext) for ext in extensions]
+                for file in options:
+                    if not(requirements[name]) and os.path.exists(file) and os.access(file, os.X_OK):
+                        requirements[name] = True;
 
         for name in requirements:
             if not requirements[name]:
