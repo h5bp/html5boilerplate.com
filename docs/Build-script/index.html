@@ -68,7 +68,15 @@
           <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/Build-script/_edit">Edit this page</a></span>
         </P>
         
-        <h2>What it does</h2>
+        <h2>What is the Build Script?</h2>
+
+<p>In short, a tool that optimizes your code for the Web.</p>
+
+<h2>Why use it?</h2>
+
+<p>Faster page load times and happy end users :)</p>
+
+<h2>What it does</h2>
 
 <ul>
 <li>Combines and minifies javascript (via yui compressor)</li>
@@ -88,7 +96,9 @@
 
 <p><img src="http://html5boilerplate.com/img/chart.png"></p>
 
-<h2>How to Use</h2>
+<h2>Quick Start Guide</h2>
+
+<h3>Requirements</h3>
 
 <h3>If you're on Mac or Linux...</h3>
 
@@ -99,18 +109,39 @@
 <ul>
 <li>Get the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java JDK</a> (JRE isn't enough)</li>
 <li>Get <a href="http://code.google.com/p/winant/">WinAnt</a> and point the installer to <code><span class="typ">Program</span><span class="pln"> </span><span class="typ">Files</span><span class="pun">/</span><span class="typ">Java</span><span class="pun">/</span><span class="pln">jre6</span><span class="pun">/</span><span class="pln">bin</span><span class="pun">/</span></code></li>
-<li>Then open up a command line interface by doing Start Menu > Run > <code><span class="pln">cmd</span><span class="pun">.</span><span class="pln">exe</span></code>. <br />
-<ul><li>And of course, navigate to your project folder.</li></ul></li>
-<li>However, We created a friendly <code><span class="pln">runbuildscript</span><span class="pun">.</span><span class="pln">bat</span></code> file for you windows users if you'd like to avoid the command line. </li>
 </ul>
 
-<p>Navigate into the build folder:</p>
+<h3>Using the Build Script</h3>
 
-<pre><code><span class="pln">cd build<br /></span></code></pre>
+<ul>
+<li>1) Mac users, open the application "Terminal".  Windows users, open command line interface by doing Start Menu > Run > <code><span class="pln">cmd</span><span class="pun">.</span><span class="pln">exe</span></code>.  However, Windows users, we created a friendly <code><span class="pln">runbuildscript</span><span class="pun">.</span><span class="pln">bat</span></code> file for you if you'd like to avoid the command line and navigate to the build directory within your project. </li>
+</ul>
 
-<p>Build your site:</p>
+<p>For those of you new to terminal or command line, use the change directory command followed by the directory path. for example...</p>
 
-<pre><code><span class="pln">ant build<br /></span></code></pre>
+<pre><code><span class="pln">cd sites</span><span class="pun">/</span><span class="pln">your</span><span class="pun">-</span><span class="pln">site</span><span class="pun">/</span><span class="pln">build</span><span class="pun">/</span><span class="pln"><br /></span></code></pre>
+
+<blockquote>
+  <p>Note: To ensure you've navigated to the correct directory, you may want to now check the files within the current directory. Mac users can type "ls" in terminal. Windows users should type "dir" in command line. If the file list returned is what you were expecting, move to step 2. Otherwise, check the directory location in Finder or Windows Explorer and start over.</p>
+</blockquote>
+
+<ul>
+<li><p>2) Next, simply type:</p>
+
+<p>ant build</p></li>
+</ul>
+
+<p>The H5BP build script will begin to run and compress your files.  At the very end you should see "BUILD SUCCESSFUL" followed by the total time it took to build.</p>
+
+<ul>
+<li>3) Now, look in your H5BP project folder and see that there is a newly created "publish" directory within your project.  Inside, you will find your minified CSS, JS and along with duplicates of the files from your original directory. This new set of files within "publish" is your production code.  The site should look and function the same in browser as it did before, but only now faster!</li>
+</ul>
+
+<blockquote>
+  <p>Note: If your new pages do not render in browser the same as they did before your ran the build script, click here.</p>
+</blockquote>
+
+<h3>Going Further</h3>
 
 <p>There are a few different build options:</p>
 
@@ -300,6 +331,16 @@
 <p>This allows you to serve a subfolder as if its the root of your site. So now to update production you can just to do a <code><span class="pln">git pull </span><span class="pun">&amp;&amp;</span><span class="pln"> cd build </span><span class="pun">&amp;&amp;</span><span class="pln"> ant build</span></code> or what have you, whenever you want it updated.</p>
 
 <h2>Troubleshooting</h2>
+
+<p>On occasion, your site may not render in browser exactly as it did using the original code.  In this case, you may have poorly constructed JavaScript or CSS in your original directory.  Oftentimes, plugins are to blame.</p>
+
+<ul>
+<li>Debug in your browser developer tool of choice.</li>
+<li>Check your console tab within the dev tool.  This should tell you on which line you can find the error.</li>
+<li>Once you have successfully debugged the error within your original directory, go back to terminal and rerun the build script.  Refresh the site in your browser. If it looks good, you're ready for the WWW! :) </li>
+</ul>
+
+<hr />
 
 <p>If you are using Ubuntu Linux and receiving the following error when running ant:</p>
 
