@@ -143,7 +143,7 @@ a:hover, a:focus, #footer a:hover, #footer a:focus { color: #82A6B0; }
 #container[dir="rtl"] #header p { text-align: right; }
 
  
-.notenglish #header p.lang { font-size: 1.2em; }
+.notenglish #header p.lang { font-size: 1.2em; display:block; }
 .bptext { line-height: 2em; text-transform: uppercase; }
 
 h2 + p,
