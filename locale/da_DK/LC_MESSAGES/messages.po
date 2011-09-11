@@ -1232,12 +1232,49 @@ msgstr ""
 msgid "TEAM"
 msgstr ""
 
+#: src\index.html:790 src emplate\humans.txt:6
+msgid "your title"
+msgstr ""
+
+#: src\index.html:790 src emplate\humans.txt:6
+msgid "your name"
+msgstr ""
+
+#: src\index.html:791 src emplate\humans.txt:7
+msgid "Site"
+msgstr ""
+
+#: src\index.html:792 src emplate\humans.txt:8
+msgid "Twitter"
+msgstr ""
+
+#: src\index.html:793 src emplate\humans.txt:9
+msgid "Location"
+msgstr ""
+
 #: src\index.html:795 src emplate\humans.txt:11
 msgid "THANKS"
 msgstr ""
 
+#: src\index.html:796
+msgid "Names (&amp; URL)"
+msgstr ""
+
 #: src\index.html:798 src emplate\humans.txt:14
 msgid "SITE"
+msgstr ""
+
+#: src\index.html:799 src emplate\humans.txt:15
+msgid "Standards"
+msgstr ""
+
+#: src\index.html:800 src emplate\humans.txt:16
+#, fuzzy
+msgid "Components"
+msgstr "Kommentarer"
+
+#: src\index.html:801 src emplate\humans.txt:17
+msgid "Software"
 msgstr ""
 
 #: src\index.html:831 src emplate\htaccess.txt:1
@@ -2022,6 +2059,10 @@ msgstr ""
 
 #: src emplate\humans.txt:1
 msgid "the humans responsible & colophon"
+msgstr ""
+
+#: src emplate\humans.txt:12
+msgid "Names (& URL)"
 msgstr ""
 
 #: src emplate\index.html:23
