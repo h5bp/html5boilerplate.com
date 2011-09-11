@@ -3,6 +3,7 @@
 
 
 /* TEAM */
+
   Instigator: Paul Irish
   Site: http://paulirish.com/
   Twitter: paul_irish
@@ -29,45 +30,43 @@
   Location: London, UK
 
 
-
 /* THANKS */
-  Names (& URL):
+  
+  Adeel Ejaz: https://github.com/adeelejaz
 
-  Names (& URL):
-  Mike West https://github.com/mikewest
+  Anton Kovalyov: https://github.com/antonkovalyov
 
-  Mickael Daniel https://github.com/mklabs
+  Catalin Maris: https://github.com/alrra
 
-  Anton Kovalyov https://github.com/antonkovalyov
+  Daniel Lenz: https://github.com/lenzcom
 
-  Yuya Saito https://github.com/studiomohawk
+  Giovanni Brescia: https://github.com/skill83
 
-  https://github.com/laviperchik
+  Jonas Westerlund: https://github.com/nlogax
 
-  https://github.com/nlogax
+  Lavi Perchik: https://github.com/laviperchik
 
-  Catalin Maris https://github.com/alrra
+  Mickael Daniel: https://github.com/mklabs
 
-  Milos Gavrilovic https://github.com/GaVrA
+  Mike West: https://github.com/mikewest
+  
+  Milos Gavrilovic: https://github.com/GaVrA
+
+  Niels Bom: https://github.com/nielsbom
+
+  Ricardo Tomasi: https://github.com/ricardobeat
+
+  Sean Caetano Martin: https://github.com/xonecas
+
+  Yuya Saito: https://github.com/studiomohawk
 
   https://github.com/jorge-vitrubio
 
-  Niels Bom https://github.com/nielsbom
-
-
-  https://github.com/skill83
-
-  Adeel Ejaz https://github.com/adeelejaz
-
   https://github.com/Zee-Julien
 
-  Ricardo Tomasi https://github.com/ricardobeat
-
-  https://github.com/lenzcom
-
-  Sean Caetano Martin https://github.com/xonecas
 
 /* SITE */
+
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
   Source: https://github.com/nimbupani/html5boilerplate-site
