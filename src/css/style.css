@@ -92,7 +92,7 @@ html[lang='he'] em, html[lang='he'] h3 { font-family: 'AharoniCLMBold', Arial, s
 
 
 /* we do not need to link to ourselves. only our friends. <3 */
-#header p.lang, 
+html[lang="en-us"] #header p.lang, 
 html[lang="en-us"] p.lang a[lang="en-us"],
 html[lang="de-de"] p.lang a[lang="de-de"],
 html[lang="pt-br"] p.lang a[lang="pt-br"],
