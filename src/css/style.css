@@ -301,7 +301,7 @@ html .source h4 { font-family: sans-serif; }
  } 
  
 .source h4 a:after {
- content: "[ view code ]";
+ content: "[ {% blocktrans %}view code{% endblocktrans %} ]";
  opacity: 0;
  position: absolute;
  padding-left: 1em;
@@ -312,7 +312,7 @@ html .source h4 { font-family: sans-serif; }
 }
  
 
-.source h4 a.active:after { content: " [ hide code ]"; } 
+.source h4 a.active:after { content: " [ {% blocktrans %}hide code{% endblocktrans %} ]"; } 
 .source h4 a:hover,
 .source h4 a.active { background-color: #2B3F45; }
 .source h4 a:hover:after { opacity: 1; }

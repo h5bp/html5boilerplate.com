@@ -1,5 +1,6 @@
 .DS_Store 
 .svn
+nbproject
 built/
 publish/
 *.mo

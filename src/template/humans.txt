@@ -3,18 +3,18 @@
 
 
 /* {% blocktrans %}TEAM{% endblocktrans %} */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  <{% blocktrans %}your title{% endblocktrans %}>: <{% blocktrans %}your name{% endblocktrans %}>
+  {% blocktrans %}Site{% endblocktrans %}: 
+  {% blocktrans %}Twitter{% endblocktrans %}: 
+  {% blocktrans %}Location{% endblocktrans %}: 
 
 /* {% blocktrans %}THANKS{% endblocktrans %} */
-  Names (& URL): 
+  {% blocktrans %}Names (& URL){% endblocktrans %}: 
 
 /* {% blocktrans %}SITE{% endblocktrans %} */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  {% blocktrans %}Standards{% endblocktrans %}: HTML5, CSS3
+  {% blocktrans %}Components{% endblocktrans %}: Modernizr, jQuery
+  {% blocktrans %}Software{% endblocktrans %}:
   
 
                                     
