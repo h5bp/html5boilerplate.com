@@ -523,7 +523,7 @@ msgstr ""
 
 #: src\index.html:196 standard input:347
 msgid "Remove the cache-busting query parameters from the HTML."
-msgstr "Remove do HTML o parâmetro de query para fazer cache-busting."
+msgstr "Remove do HTML o parâmetro de query para fazer cache busting."
 
 #: src\index.html:198
 msgid ""
@@ -1098,7 +1098,8 @@ msgstr ""
 #: src\index.html:386 src emplate\index.html:30
 msgid "For optimal performance, use a custom Modernizr build:"
 msgstr ""
-"Para otimizar o desempenho, utilize uma compilação personalizada do Modernizr:"
+"Para otimizar o desempenho, utilize uma compilação personalizada do "
+"Modernizr:"
 
 #: src\index.html:402 src emplate\index.html:46
 msgid "end of #container"
@@ -1448,7 +1449,7 @@ msgstr "Autor"
 
 #: src\index.html:785
 msgid "the humans responsible &amp; colophon"
-msgstr "os seres humanos responsáveis e as considerações finais"
+msgstr "os seres humanos responsáveis e suas considerações"
 
 #: src\index.html:789 src emplate\humans.txt:5
 msgid "TEAM"
@@ -1471,8 +1472,8 @@ msgid ""
 "Note .htaccess files are an overhead, this logic should be in your Apache "
 "config if possible"
 msgstr ""
-"Nota: Os arquivos .htaccess fazem uma sobrecarga, sua lógica deve estar "
-"no arquivo configurações do Apache se possível."
+"Nota: Os arquivos .htaccess fazem uma sobrecarga, sua lógica deve estar no "
+"arquivo configurações do Apache se possível."
 
 #: src\index.html:837 src emplate\htaccess.txt:7
 msgid "Techniques in here adapted from all over, including:"
@@ -1503,8 +1504,8 @@ msgid ""
 "Use ChromeFrame if it&apos;s installed for a better experience for the poor "
 "IE folk"
 msgstr ""
-"Utiliza o ChromeFrame se ele estiver instalado para uma melhor esperiência "
-"dos pobres usuários folclóricos do IE"
+"Utilize o ChromeFrame se ele estiver instalado para uma melhorar a "
+"experiência dos pobres usuários folclóricos do IE"
 
 #: src\index.html:861
 msgid ""
@@ -1626,8 +1627,8 @@ msgstr "Estes são cabeçalhos de expiração muito para futuros distantes"
 #: src\index.html:1026 src emplate\htaccess.txt:196
 msgid "They assume you control versioning with cachebusting query params like:"
 msgstr ""
-"Eles assumem o controle de versionamento com parâmetros query de "
-"cachebusting, como:"
+"Eles assumem o controle de versionamento com parâmetros query de cache "
+"busting, como:"
 
 #: src\index.html:1028 src emplate\htaccess.txt:198
 msgid "Additionally, consider that outdated proxies may miscache"
@@ -1744,7 +1745,7 @@ msgstr "FollowSymLinks devem ser habilitadas para este trabalho"
 
 #: src\index.html:1153
 msgid "Suppress or force the &quot;www.&quot; at the beginning of URLs"
-msgstr "Suprimir ou forçar o &quot;www.&quot; no início das URLs"
+msgstr "Suprime ou força o &quot;www.&quot; no início das URLs"
 
 #: src\index.html:1157
 msgid ""
@@ -1752,58 +1753,69 @@ msgid ""
 "especially not with and without &quot;www.&quot; at the beginning, since "
 "this can cause SEO problems (duplicate content)."
 msgstr ""
+"O mesmo conteúdo nunca deve estar disponível sobre duas URLs diferentes, "
+"especialmente não deve ter e não ter o &quot;www.&quot; no início, uma vez "
+"que isso pode causar problemas de SEO (conteúdo duplicado)."
 
 #: src\index.html:1158
 msgid ""
 "That&apos;s why you should choose one of the alternatives and redirect the "
 "other one."
 msgstr ""
+"É por isso que você deve escolher apenas uma das alternativas e redirecionar "
+"a outra."
 
 #: src\index.html:1161
 msgid "By default option 1 (no &quot;www.&quot;) is activated."
-msgstr ""
+msgstr "Por padrão a opção 1 (sem &quot;www.&quot;) está ativada."
 
 #: src\index.html:1162 src emplate\htaccess.txt:332
 msgid "Remember: Shorter URLs are sexier."
-msgstr ""
+msgstr "Lembre-se: URLs curtas são mais sexy"
 
 #: src\index.html:1166 src emplate\htaccess.txt:336
 msgid ""
 "If you rather want to use option 2, just comment out all option 1 lines and "
 "uncomment option 2."
 msgstr ""
+"Se você preferir querer usar a opção 2, apenas comente todas as linhas da "
+"opção 1 e descomente as da opção 2."
 
 #: src\index.html:1167 src emplate\htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
-msgstr ""
+msgstr "IMPORTANTE: NUNCA USE AMBAS AS REGRAS AO MESMO TEMPO!"
 
 #: src\index.html:1173 src emplate\htaccess.txt:343
 msgid "Option 1:"
-msgstr ""
+msgstr "Opção 1:"
 
 #: src\index.html:1174 src emplate\htaccess.txt:344
 msgid "Rewrite"
-msgstr ""
+msgstr "Reescreve"
 
 #: src\index.html:1186 src emplate\htaccess.txt:356
 msgid "Option 2:"
-msgstr ""
+msgstr "Opção 2:"
 
 #: src\index.html:1187
 msgid ""
 "To rewrite &quot;domain.com -&gt; www.domain.com&quot; uncomment the "
 "following lines."
 msgstr ""
+"Para reescrever &quot;domain.com -&gt; www.domain.com&quot; descomente as "
+"seguintes linhas."
 
 #: src\index.html:1188
 msgid ""
 "Be aware that the following rule might not be a good idea if you use &quot;"
 "real&quot; subdomains for certain parts of your website."
 msgstr ""
+"Esteja ciente de que a regra a seguir pode não ser a melhor idéia se você "
+"utiliza subdomínios &quot;reais&quot; para certas partes do seu website."
 
 #: src\index.html:1201 src emplate\htaccess.txt:371
 msgid "Built-in filename-based cache busting"
-msgstr ""
+msgstr "Incorporada nomeação de arquivo baseada em cache busting"
 
 #: src\index.html:1205
 msgid ""
@@ -1811,87 +1823,107 @@ msgid ""
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
+"Se você não estiver utilizando o compilador de scripts para gerenciar sua "
+"nomeação de arquivos de versões reversionadas, você pode desejar considerar "
+"habilitar isso, o qual deverá rotear as requisições de /css/all.20110203.css "
+"para /res/all.css"
 
 #: src\index.html:1208 src emplate\htaccess.txt:378
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
 msgstr ""
+"Para entender por que isso é importante e é uma idéia melhor que all.css?"
+"v1231, leia:"
 
 #: src\index.html:1211 src emplate\htaccess.txt:381
 msgid "Uncomment to enable."
-msgstr ""
+msgstr "Descomente para habilitar."
 
 #: src\index.html:1221 src emplate\htaccess.txt:391
 msgid "Prevent SSL cert warnings"
-msgstr ""
+msgstr "Previne alertas de cert. SSL"
 
 #: src\index.html:1225 src emplate\htaccess.txt:395
 msgid "Rewrite secure requests properly to prevent SSL cert warnings"
-msgstr ""
+msgstr "Reescreve requisições seguras para previnir alertas de cert. SSL"
 
 #: src\index.html:1226 src emplate\htaccess.txt:396
 msgid ""
 "e.g. prevent https://www.domain.com when your cert only allows https://"
 "secure.domain.com "
 msgstr ""
+"ex.: previne solicitação de https://www.domain.com uma vez que o seu cert. "
+"permite apenas https://secure.domain.com"
 
 #: src\index.html:1227 src emplate\htaccess.txt:397
 msgid "Uncomment the following lines to use this feature."
-msgstr ""
+msgstr "Descomente as linhas a seguir para utilizar esta funcionalidade."
 
 #: src\index.html:1238 src emplate\htaccess.txt:408
 msgid "Prevent 404 errors for non-existing redirected folders"
-msgstr ""
+msgstr "Previne erros 404 para pastas inexistentes redirecionadas"
 
 #: src\index.html:1242 src emplate\htaccess.txt:412
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist e.g."
 msgstr ""
+"sem -MultiViews, O Apache deverar entregar um 404 para uma reescrita se a "
+"pasta de um mesmo nome não existir, ex.:"
 
 #: src\index.html:1250 src emplate\htaccess.txt:420
 msgid "Custom 404 page"
-msgstr ""
+msgstr "Página 404 personalizada"
 
 #: src\index.html:1253 src emplate\htaccess.txt:423
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
 msgstr ""
+"Você pode adicionar páginas personalizadas para lidar com 500 ou 403 com "
+"bastante facilidade, se você preferir."
 
 #: src\index.html:1259 src emplate\htaccess.txt:429
 msgid "UTF-8 encoding"
-msgstr ""
+msgstr "Codificação UTF-8"
 
 #: src\index.html:1262 src emplate\htaccess.txt:432
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
+"utilize codificação utf-8 para qualquer coisa servida como text/plain ou "
+"text/html"
 
 #: src\index.html:1265 src emplate\htaccess.txt:435
 msgid "force utf-8 for a number of file formats"
-msgstr ""
+msgstr "força utf-8 para um número de formatos de arquivo"
 
 #: src\index.html:1271 src emplate\htaccess.txt:441
 msgid "A little more security"
-msgstr ""
+msgstr "Um pouco mais de segurança"
 
 #: src\index.html:1276
 msgid ""
 "Do we want to advertise the exact version number of Apache we&apos;re "
 "running? Probably not."
 msgstr ""
+"Queremos anunciar o número da versão exata do Apache que nós estamos "
+"executando? Provavelmente não."
 
 #: src\index.html:1277 src emplate\htaccess.txt:447
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
 msgstr ""
+"Isso só pode ser habilitado se usado no httpd.conf - Não vai funcionar no ."
+"htaccess"
 
 #: src\index.html:1283
 msgid ""
 "&quot;-Indexes&quot; will have Apache block users from browsing folders "
 "without a default document"
 msgstr ""
+"&quot;-Indexes&quot; Se desejar que o Apache bloqueie usuários de navegarem "
+"em pastas sem um documento padrão"
 
 #: src\index.html:1284
 msgid ""
@@ -1899,18 +1931,25 @@ msgid ""
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
+"Usualmente você deve deixar isso ativado, pois você não deve permitir que "
+"todos possam navegar por todas as pastas no seu servidor (que inclui, desde "
+"de locais privados, como as pastas do seu CMS)."
 
 #: src\index.html:1290
 msgid ""
 "Block access to &quot;hidden&quot; directories whose names begin with a "
 "period. "
 msgstr ""
+"Bloqueia o acesso aos diretórios &quot;ocultos&quot; cujos nomes iniciam com "
+"um ponto periódico."
 
 #: src\index.html:1291 src emplate\htaccess.txt:461
 msgid ""
 "This includes directories used by version control systems such as Subversion "
 "or Git."
 msgstr ""
+"Isso inclui diretórios usados por sistemas controladores de versões como o "
+"Subversion ou Git."
 
 #: src\index.html:1299
 msgid ""
@@ -1919,10 +1958,15 @@ msgid ""
 "OFF. This closes a major security hole that is abused by most XSS (cross-"
 "site scripting) attacks. For more information:"
 msgstr ""
+"Se o seu servidor não estiver configurado como tais, a seguinte diretiva "
+"deve ser descomentada, afim de definir a opção register_globals do PHP para "
+"OFF. Isso fecha uma brecha de segurança maior, que é explorada por muitos "
+"ataques XSS (cross-site scripting). Para mais informações, veja:"
 
 #: src\index.html:1301 src emplate\htaccess.txt:471
 msgid "IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :"
 msgstr ""
+"SE A DIRETIVA REGISTER_GLOBALS PROVOCAR ERROS INTERNOS 500 NO SERVIDOR:"
 
 #: src\index.html:1303 src emplate\htaccess.txt:473
 msgid ""
@@ -1933,72 +1977,85 @@ msgid ""
 "PHP configurations (not just this one), or you will effectively reset "
 "everything to PHP defaults."
 msgstr ""
+"Seu servidor não permite que sejam definidas diretivas PHP via .htaccess. "
+"Neste caso você deve fazer estas alterações no seu seu arquivo php.ini. Se "
+"você estiver usando ele. Nem todos os servidores permitem arquivos php.ini "
+"locais, e devem incluir todas as configurações de PHP (não apenas esta "
+"aqui), ou você vai efetivamente redefinir tudo aos padrões PHP."
 
 #: src\index.html:1304 src emplate\htaccess.txt:474
 msgid ""
 "Consult www.php.net for more detailed information about setting PHP "
 "directives."
 msgstr ""
+"Consulte o www.php.net para informações mais detalhes sobre as diretivas de "
+"configurações PHP."
 
 #: src\index.html:1309 src emplate\htaccess.txt:479
 msgid "Rename session cookie to something else, than PHPSESSID"
-msgstr ""
+msgstr "Renomeie o cookie de session para algo que não seja PHPSESSID"
 
 #: src\index.html:1312 src emplate\htaccess.txt:482
 msgid "Do not show you are using PHP"
-msgstr ""
+msgstr "Não mostrar que você está usando PHP"
 
 #: src\index.html:1313
 msgid "Note: Move this line to php.ini since it won&apos;t work in .htaccess"
 msgstr ""
+"Nota: Mova esta linha para o php.ini, pois isso não funciona no .htaccess"
 
 #: src\index.html:1316 src emplate\htaccess.txt:486
 msgid "Level of log detail - log all errors"
-msgstr ""
+msgstr "Nível do detalhamenteo de log - log de todos os erros"
 
 #: src\index.html:1319 src emplate\htaccess.txt:489
 msgid "Write errors to log file"
-msgstr ""
+msgstr "Escreve erros para o arquivo de log"
 
 #: src\index.html:1322 src emplate\htaccess.txt:492
 msgid "Do not display errors in browser (production - Off, development - On)"
-msgstr ""
+msgstr "Não exibir erros no navegador (produção - Off, desenvolvimento - On)"
 
 #: src\index.html:1325 src emplate\htaccess.txt:495
 msgid "Do not display startup errors (production - Off, development - On)"
 msgstr ""
+"Não exibir erros de inicialização (produção - Off, desenvolvimento - On)"
 
 #: src\index.html:1328 src emplate\htaccess.txt:498
 msgid "Format errors in plain text"
-msgstr ""
+msgstr "Formata erros em texto simples"
 
 #: src\index.html:1331 src emplate\htaccess.txt:501
 msgid "Show multiple occurrence of error"
-msgstr ""
+msgstr "Mostra multiplas ocorrencias de erro"
 
 #: src\index.html:1334 src emplate\htaccess.txt:504
 msgid "Show same errors from different sources"
-msgstr ""
+msgstr "Mostra erros iguais provenientes de diferenets fontes"
 
 #: src\index.html:1337 src emplate\htaccess.txt:507
 msgid "Size limit for error messages"
-msgstr ""
+msgstr "Limite de tamanho para mensagens de erro"
 
 #: src\index.html:1340
 msgid ""
 "Don&apos;t precede error with string (doesn&apos;t accept empty string, use "
 "whitespace if you need)"
 msgstr ""
+"Não anteceder erro com string (não aceita string vazia, use espaços em "
+"branco se necessário)"
 
 #: src\index.html:1343
 msgid ""
 "Don&apos;t prepend to error (doesn&apos;t accept empty string, use "
 "whitespace if you need)"
 msgstr ""
+"Não suceder erro com string (não aceita string vazia, use espaços em branco "
+"se necessário)"
 
 #: src\index.html:1346 src emplate\htaccess.txt:516
 msgid "Increase cookie security"
-msgstr ""
+msgstr "Melhora a segurança do cookie"
 
 #: src\index.html:1353
 msgid "Videos"
@@ -2099,93 +2156,105 @@ msgstr "esconder código"
 
 #: src emplate.html:5
 msgid "Page Not Found"
-msgstr ""
+msgstr "Página não encontrada"
 
 #: src emplate.html:21
 msgid "Not found"
-msgstr ""
+msgstr "Não encontrada"
 
 #: src emplate.html:23
 msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
+msgstr "Desculpe, mas a página que você está tentando ver não existe."
 
 #: src emplate.html:24
 msgid "It looks like this was the result of either"
-msgstr ""
+msgstr "Parece que este foi resultado de"
 
 #: src emplate.html:26
 msgid "a mistyped address"
-msgstr ""
+msgstr "um erro na digitação do endereço"
 
 #: src emplate.html:27
 msgid "an out-of-date link"
-msgstr ""
+msgstr "ou um link desatualizado"
 
 #: src emplate\crossdomain.xml:6
 msgid "Read this"
-msgstr ""
+msgstr "Leia isso"
 
 #: src emplate\crossdomain.xml:8
 msgid "Most restrictive policy"
-msgstr ""
+msgstr "Política mais restritiva"
 
 #: src emplate\crossdomain.xml:11
 msgid "Least restrictive policy"
-msgstr ""
+msgstr "Política menos restritiva"
 
 #: src emplate\crossdomain.xml:18
 msgid "If you host a crossdomain.xml file with allow-access-from domain=\"*\""
 msgstr ""
+"Se você hospedar um arquivo corssdomain.xml com allow-access-from domain=\"*"
+"\""
 
 #: src emplate\crossdomain.xml:19
 msgid "and don't understand all of the points described here, you probably"
-msgstr ""
+msgstr "e não compreender todos os pontos descritos aqui, você provavelmente"
 
 #: src emplate\crossdomain.xml:20
 msgid "have a nasty security vulnerability."
-msgstr ""
+msgstr "terá uma desagradável vulnerabilidade de segurança."
 
 #: src emplate\htaccess.txt:26
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
+"Utilize o ChromeFrame se ele estiver instalado para uma melhorar a "
+"experiência dos pobres usuários folclóricos do IE"
 
 #: src emplate\htaccess.txt:31
 msgid ""
 "mod_headers can't match by content-type, but we don't want to send this "
 "header on *everything*"
 msgstr ""
+"mod_headers não pode corresponder por tipo de conteúdo, mas nós não queremos "
+"enviar este cabeçalho em *tudo*"
 
 #: src emplate\htaccess.txt:59
 msgid "your subdomains like \"sub.domain.com\""
-msgstr ""
+msgstr "para seus subdomínios como \"sub.domain.com\""
 
 #: src emplate\htaccess.txt:76
 msgid "Normalize to standard type (it's sniffed in IE anyways) "
-msgstr ""
+msgstr "Normalização do tipo padrão (que é inalado no IE de qualquer maneira)"
 
 #: src emplate\htaccess.txt:203
 msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like \"access plus 1 week\" "
 msgstr ""
+"Se você não utiliza nomes de arquivos para versionar, baixe tempo de css e "
+"js para algo como \"access plus 1 week\" "
 
 #: src emplate\htaccess.txt:274
 msgid ""
 "Since we`re sending far-future expires, we don't need ETags for static "
 "content."
 msgstr ""
+"Uma vez que nós estamos enviando expirações em um futuro distante, nós não "
+"precisamos de ETags para conteúdos estáticos."
 
 #: src emplate\htaccess.txt:284
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers in "
 "combination with the \"ExpiresByType\" rules for images (see above)"
 msgstr ""
+"As diretivas seguintes param a tremulação de tela no IE e nas sobreposições "
+"CSS em combinação com as regras \"ExpiresByType\" para imagens (veja acima)"
 
 #: src emplate\htaccess.txt:323
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
-msgstr ""
+msgstr "Suprime ou força o \"www.\" no início das URLs"
 
 #: src emplate\htaccess.txt:327
 msgid ""
@@ -2193,27 +2262,36 @@ msgid ""
 "especially not with and without \"www.\" at the beginning, since this can "
 "cause SEO problems (duplicate content)."
 msgstr ""
+"O mesmo conteúdo nunca deve estar disponível sobre duas URLs diferentes, "
+"especialmente não deve ter e não ter o \"www.\" no início, uma vez que isso "
+"pode causar problemas de SEO (conteúdo duplicado)."
 
 #: src emplate\htaccess.txt:328
 msgid ""
 "That's why you should choose one of the alternatives and redirect the other "
 "one."
 msgstr ""
+"É por isso que você deve escolher apenas uma das alternativas e redirecionar "
+"a outra."
 
 #: src emplate\htaccess.txt:331
 msgid "By default option 1 (no \"www.\") is activated."
-msgstr ""
+msgstr "Por padrão a opção 1 (sem \"www.\") está ativada."
 
 #: src emplate\htaccess.txt:357
 msgid ""
 "To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
 msgstr ""
+"Para reescrever \"domain.com -> www.domain.com\" descomente as seguintes "
+"linhas."
 
 #: src emplate\htaccess.txt:358
 msgid ""
 "Be aware that the following rule might not be a good idea if you use \"real"
 "\" subdomains for certain parts of your website."
 msgstr ""
+"Esteja ciente de que a regra a seguir pode não ser a melhor idéia se você "
+"utiliza subdomínios \"reais\" para certas partes do seu website."
 
 #: src emplate\htaccess.txt:375
 msgid ""
@@ -2221,18 +2299,26 @@ msgid ""
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
+"Se você não estiver utilizando o compilador de scripts para gerenciar sua "
+"nomeação de arquivos de versões reversionadas, você pode desejar considerar "
+"habilitar isso, o qual deverá rotear as requisições de /css/all.20110203.css "
+"para /res/all.css"
 
 #: src emplate\htaccess.txt:446
 msgid ""
 "Do we want to advertise the exact version number of Apache we're running? "
 "Probably not."
 msgstr ""
+"Queremos anunciar o número da versão exata do Apache que nós estamos "
+"executando? Provavelmente não."
 
 #: src emplate\htaccess.txt:453
 msgid ""
 "\"-Indexes\" will have Apache block users from browsing folders without a "
 "default document"
 msgstr ""
+"\"-Indexes\" Se desejar que o Apache bloqueie usuários de navegarem em "
+"pastas sem um documento padrão"
 
 #: src emplate\htaccess.txt:454
 msgid ""
@@ -2240,11 +2326,16 @@ msgid ""
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
+"Usualmente você deve deixar isso ativado, pois você não deve permitir que "
+"todos possam navegar por todas as pastas no seu servidor (que inclui, desde "
+"de locais privados, como as pastas do seu CMS)."
 
 #: src emplate\htaccess.txt:460
 msgid ""
 "Block access to \"hidden\" directories whose names begin with a period. "
 msgstr ""
+"Bloqueia o acesso aos diretórios \"ocultos\" cujos nomes iniciam com um "
+"ponto periódico."
 
 #: src emplate\htaccess.txt:469
 msgid ""
@@ -2253,34 +2344,43 @@ msgid ""
 "This closes a major security hole that is abused by most XSS (cross-site "
 "scripting) attacks. For more information:"
 msgstr ""
+"Se o seu servidor não estiver configurado como tais, a seguinte diretiva "
+"deve ser descomentada, afim de definir a opção register_globals do PHP para "
+"OFF. Isso fecha uma brecha de segurança maior, que é explorada por muitos "
+"ataques XSS (cross-site scripting). Para mais informações, veja:"
 
 #: src emplate\htaccess.txt:483
 msgid "Note: Move this line to php.ini since it won't work in .htaccess"
 msgstr ""
+"Nota: Mova esta linha para o php.ini, pois isso não funciona no .htaccess"
 
 #: src emplate\htaccess.txt:510
 msgid ""
 "Don't precede error with string (doesn't accept empty string, use whitespace "
 "if you need)"
 msgstr ""
+"Não anteceder erro com string (não aceita string vazia, use espaços em "
+"branco se necessário)"
 
 #: src emplate\htaccess.txt:513
 msgid ""
 "Don't prepend to error (doesn't accept empty string, use whitespace if you "
 "need)"
 msgstr ""
+"Não suceder erro com string (não aceita string vazia, use espaços em branco "
+"se necessário)"
 
 #: src emplate\humans.txt:1
 msgid "the humans responsible & colophon"
-msgstr ""
+msgstr "os seres humanos responsáveis e suas considerações"
 
 #: src emplate\index.html:23
 msgid "CSS: implied media=\"all\""
-msgstr ""
+msgstr "CSS: media=\"all\" implícito"
 
 #: src emplate\index.html:26
 msgid "More ideas for your <head> here: h5bp.com/docs/#head-Tips"
-msgstr ""
+msgstr "Mais idéias para sua tag <head> em: h5bp.com/docs/#head-Tips"
 
 #: src emplate\index.html:29
 msgid ""
@@ -2295,6 +2395,8 @@ msgid ""
 "Grab Google CDN's jQuery, with a protocol relative URL; fall back to local "
 "if necessary"
 msgstr ""
+"Apanhar o jQuery do CDN do Google, com protocolo relativo da URL; fall back "
+"para o local se necessário"
 
 #: src emplate\index.html:62
 msgid "Change UAXXXXXXXX1 to be your site's ID"
@@ -2303,24 +2405,29 @@ msgstr "Mude UAXXXXXXXX1 para o ID do seu site"
 #: src emplate\css\style.css:145
 msgid "Indicate that 'label' will shift focus to the associated form element"
 msgstr ""
+"Indica que a 'label' mudará o foco para o seu elemento de formulário "
+"associado"
 
 #: src emplate\css\style.css:170
 msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
 msgstr ""
+"Reintroduz o espaçamento interno na 'table' para evitar sobreposições e "
+"problemas de espaços em branco no IE6/7"
 
 #: src emplate\css\style.css:273
 msgid "for device pixels, see 'Using a mobile-first approach'"
-msgstr ""
+msgstr "pixels de dispositivos, veja 'Utilização da abordagem mobile-first'"
 
 #: src emplate\css\style.css:298
 msgid "Don't show links for images, or javascript/internal links"
 msgstr ""
+"Para não mostrar links que abrem imagens, links javascript e links internos"
 
 #: src emplate\js\plugins.js:2
 msgid "usage: log('inside coolFunc', this, arguments);"
-msgstr ""
+msgstr "Modo de usar: log('inside coolFunc', this, arguments)"
 
 #~ msgid "Boilerplate documented"
 #~ msgstr "Boilerplate documentado"
