@@ -1457,23 +1457,23 @@ msgstr "EQUIPE"
 
 #: src\index.html:790 src emplate\humans.txt:6
 msgid "your title"
-msgstr ""
+msgstr "seu título"
 
 #: src\index.html:790 src emplate\humans.txt:6
 msgid "your name"
-msgstr ""
+msgstr "seu nome"
 
 #: src\index.html:791 src emplate\humans.txt:7
 msgid "Site"
-msgstr ""
+msgstr "Site"
 
 #: src\index.html:792 src emplate\humans.txt:8
 msgid "Twitter"
-msgstr ""
+msgstr "Twiiter"
 
 #: src\index.html:793 src emplate\humans.txt:9
 msgid "Location"
-msgstr ""
+msgstr "Localização"
 
 #: src\index.html:795 src emplate\humans.txt:11
 msgid "THANKS"
@@ -1481,25 +1481,23 @@ msgstr "AGRADECIMENTOS"
 
 #: src\index.html:796
 msgid "Names (&amp; URL)"
-msgstr ""
+msgstr "Nomes (e URL)"
 
 #: src\index.html:798 src emplate\humans.txt:14
 msgid "SITE"
 msgstr "SITE"
 
 #: src\index.html:799 src emplate\humans.txt:15
-#, fuzzy
 msgid "Standards"
-msgstr "Padroniza"
+msgstr "Padrões"
 
 #: src\index.html:800 src emplate\humans.txt:16
-#, fuzzy
 msgid "Components"
-msgstr "Comentários"
+msgstr "Componentes"
 
 #: src\index.html:801 src emplate\humans.txt:17
 msgid "Software"
-msgstr ""
+msgstr "Software"
 
 #: src\index.html:831 src emplate\htaccess.txt:1
 msgid "Apache configuration file"
@@ -2414,7 +2412,7 @@ msgstr "os seres humanos responsáveis e suas considerações"
 
 #: src emplate\humans.txt:12
 msgid "Names (& URL)"
-msgstr ""
+msgstr "Nomes (e URL)"
 
 #: src emplate\index.html:23
 msgid "CSS: implied media=\"all\""
