@@ -148,7 +148,7 @@
         return;
       }
 
-      self.scroller.animate({scrollTop: h.offset().top}, 0);
+      this.scroller.animate({scrollTop: h.offset().top}, 0);
     },
 
     addPermalinks: function(i, header) {
