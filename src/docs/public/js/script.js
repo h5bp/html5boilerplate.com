@@ -234,8 +234,11 @@
 
       if(!atBottom()) return;
 
-      // ok, user is reaching the page bottom, load comments, but only if it wasn't done before
-      if(!dsq.is(':empty')) return;
+      // ok, user is reaching the page bottom, load comments, but only if it wasn't done before.
+      // assume es5 trim method is there, since non pushstate browser would normally
+      // not reach this code
+      var prevent = dsq.html().trim();
+      if(prevent) return;
 
       loadComments();
     });
