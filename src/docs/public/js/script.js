@@ -2,19 +2,18 @@
 
   var view, router, model,
 
-  loadComments = function(offset) {
-    var dsq = $('#disqus_thread'),
-    loadtxt = $('<span>').text('Loading comments...');
-
-
+  loadComments = function(path, offset) {
     // clean things
     $('link').filter('[href*="disqus"]').remove();
     $('script').filter('[src*="disqus"]').remove();
 
-    dsq.append(loadtxt);
+    // change a few disqus variable before loading in
+    exports.disqus_identifier = path;
+    exports.disqus_url= path;
+    exports.disqus_title = 'h5bp docs comment for ' + path;
+
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      exports.disqus_identifier = exports.disqus_url = location.pathname;
       dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
@@ -24,27 +23,32 @@
   var historyAble = !!(window.history && history.pushState);
 
   (function() {
-    // previous link support: https://github.com/mklabs/h5bp-docs/pull/5
     // doing it here to trigger this on non pushState able browsers too
     // we now prevent non pushState browsers from running the Backbone app
-    // cause it may become tricky to deal with multiple location and so on 
+    // cause it may become tricky to deal with multiple location and so on
     // (/docs/ vs /docs/The-style/)
 
-    var text = location.hash.replace(/^#/,'');
+    var text = location.hash.replace(/^#/,''),
+      parts, heading;
 
     // if no hash in url, does nothing
     if(!text) return;
 
     var links = $('.wikiconvertor-pages a');
 
-    // custom selector may be handy?
+    // also make sure we support `#thiskind#ofurl`
+    parts = text.split(/(#|%23)/);
+    heading = parts[1] ? ('#' + parts[parts.length - 1]) : '';
+
     // iterate through links and try to get a case unsensitive test with hash value
-    var navlink = links.filter('a[href^="/docs/'+ text + '"]').map(function() {
-      return !!this.href.match(new RegExp(text, 'i')) ? $(this).attr('href') : undefined;
+    var navlink = links.map(function() {
+      var m = this.href.match(new RegExp(parts[0], 'i'));
+      return m ? $(this).attr('href') : undefined;
     });
 
-    // if navlink has elements, redirect to the first one
-    if(navlink.length) location.href = navlink[0];
+    // if navlink has elements, redirect to the first one, only when we're
+    // at `/docs/` or `/docs`
+    if (navlink.length && /\/docs\/?$/.test(location.pathname)) location.href = navlink[0] + heading;
 
   })();
 
@@ -125,12 +129,13 @@
     headings: function headings(text) {
       // # or ...
       var t = text || location.hash.replace(/^#/,''),
-      hdr = this.placeholder.find(':header'), h;
+      hdr = this.placeholder.find(':header'), h, self = this;
 
       // First thing first deal with headings and add proper data-wiki-hdr attribute
       hdr
         .each(this.addHdrAttr)
         .each(this.addPermalinks);
+
 
       if(!t || !hdr.length) {
         return;
@@ -142,7 +147,7 @@
         return;
       }
 
-      this.scroller.animate({scrollTop: h.offset().top}, 0);
+      self.scroller.animate({scrollTop: h.offset().top}, 0);
     },
 
     addPermalinks: function(i, header) {
@@ -199,7 +204,7 @@
             // load immediately
 
             if( view.nav.height() - 750 > view.placeholder.height() ) {
-              loadComments();
+              loadComments(path);
             }
           }
         });
@@ -219,7 +224,7 @@
 
 
     // create our app components
-    model = new DocsPage({path: location.pathname });
+    model = new DocsPage({path: location.pathname.replace(/^\//, ''), init: true });
     view = new DocsView({model: model, scroll: true});
     router = new DocsRouter();
 
@@ -240,7 +245,7 @@
       var prevent = dsq.html().trim();
       if(prevent) return;
 
-      loadComments();
+      loadComments(model.get('path'));
     });
 
   });
