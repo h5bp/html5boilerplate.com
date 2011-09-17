@@ -129,7 +129,8 @@
     headings: function headings(text) {
       // # or ...
       var t = text || location.hash.replace(/^#/,''),
-      hdr = this.placeholder.find(':header'), h, self = this;
+        hdr = this.placeholder.find(':header'), 
+        h;
 
       // First thing first deal with headings and add proper data-wiki-hdr attribute
       hdr
@@ -224,7 +225,7 @@
 
 
     // create our app components
-    model = new DocsPage({path: location.pathname.replace(/^\//, ''), init: true });
+    model = new DocsPage({path: location.pathname.replace(/^\//, '')});
     view = new DocsView({model: model, scroll: true});
     router = new DocsRouter();
 
