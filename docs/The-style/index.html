@@ -215,14 +215,7 @@
 <h3>button, input {}</h3>
 
 <ul>
-<li><p><code><span class="pln">line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> normal</span></code> : Addresses FF3/4 setting line-height using !important in the UA stylesheet.</p></li>
-<li><p><code><span class="pun">*</span><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> visible</span></code> : Corrects inner spacing displayed oddly in IE6/7 (but causes IE6/7 problems for <code><span class="pln">input</span></code> in <code><span class="pln">table</span></code>. Corrected by the following rule).</p></li>
-</ul>
-
-<h3>table button, table input {}</h3>
-
-<ul>
-<li><code><span class="pun">*</span><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">auto</span></code> : IE6/7 has issues with the <code><span class="pun">*</span><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> visible</span></code> fix when the elements are inside a table. The <code><span class="pln">input</span></code> elements other than those with <code><span class="pln">type</span></code> of <code><span class="pln">reset</span></code>, <code><span class="pln">button</span></code>, and <code><span class="pln">submit</span></code> will not be completely contained by table cells. This is the only solution that doesn't introduce other significant layout problems or inconsistencies with other browsers. However, it involves reverting back to displaying excess inner padding for these elements in IE6/7 when they are within <code><span class="pln">table</span></code>.</li>
+<li><code><span class="pln">line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> normal</span></code> : Addresses FF3/4 setting line-height using !important in the UA stylesheet.</li>
 </ul>
 
 <h3>button, input[type="button"], input[type="reset"], input[type="submit"] {}</h3>
@@ -230,12 +223,14 @@
 <ul>
 <li><p><code><span class="pln">cursor</span><span class="pun">:</span><span class="pln"> pointer</span></code> : Improves usability by indicating that an action will be performed. Type <code><span class="pln">image</span></code> already has pointer cursor, so this also improves consistency between related <code><span class="pln">input</span></code> types.</p></li>
 <li><p><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">appearance</span><span class="pun">:</span><span class="pln"> button</span></code> : Corrects inability to style clickable 'input' types in iOS.</p></li>
+<li><p><code><span class="pun">*</span><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> visible</span></code> : Corrects inner spacing displayed oddly in IE7. Doesn't effect IE6; there doesn't seem to be a way to apply it to IE6 (without using a class) and avoid triggering a serious bug in text <code><span class="pln">input</span></code>'s. This style, when applied to text inputs in IE6/7, causes them to expand as more content is written into them. This happens even if there is a fixed width applied. If you need to fix the excess inner-spacing bug on <code><span class="pln">button</span></code> and clickable inputs in IE6, then apply this style using a class that is used specifically to style those types of elements.</p></li>
 </ul>
 
 <h3>input[type="checkbox"], input[type="radio"] {}</h3>
 
 <ul>
-<li><code><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">box</span></code> : Normalizes the box sizing, which is set to <code><span class="pln">content</span><span class="pun">-</span><span class="pln">box</span></code> in IE8/9 but <code><span class="pln">border</span><span class="pun">-</span><span class="pln">box</span></code> in all other browsers.</li>
+<li><p><code><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">box</span></code> : Normalizes the box sizing, which is set to <code><span class="pln">content</span><span class="pun">-</span><span class="pln">box</span></code> in IE8/9 but <code><span class="pln">border</span><span class="pun">-</span><span class="pln">box</span></code> in all other browsers.</p></li>
+<li><p><code><span class="pln">padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Corrects excess space around these inputs in IE8/9 and matches Firefox's UA style sheet setting of padding: 0 !important. However, this does not effect the excess space in IE6/7.</p></li>
 </ul>
 
 <h3>input[type="search"] {}</h3>
