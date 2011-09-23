@@ -70,6 +70,16 @@
         
         <h1>Common Analytics Augments</h1>
 
+<h2>More tracking settings</h2>
+
+<p>The <a href="http://mathiasbynens.be/notes/async-analytics-snippet">optimized Google Analytics snippet</a> included with H5BP includes something like this:</p>
+
+<pre><code><span class="pln">&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> _gaq </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[[</span><span class="str">'_setAccount'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'UA-XXXXX-X'</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="str">'_trackPageview'</span><span class="pun">]];</span><span class="pln"><br /></span></code></pre>
+
+<p>In case you need more settings, just extend the array literal instead of <a href="http://mathiasbynens.be/notes/async-analytics-snippet#dont-push-it"><code><span class="pun">.</span><span class="pln">push</span><span class="pun">()</span></code>ing to the array</a> afterwards:</p>
+
+<pre><code><span class="pln">&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> _gaq </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[[</span><span class="str">'_setAccount'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'UA-XXXXX-X'</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="str">'_trackPageview'</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="str">'_setAllowAnchor'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">]];</span><span class="pln"><br /></span></code></pre>
+
 <h2>Track jQuery AJAX Requests in Google Analytics</h2>
 
 <p>An article by @JangoSteve explains how to <a href="http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/">track jQuery AJAX Requests in Google Analytics</a>.</p>
