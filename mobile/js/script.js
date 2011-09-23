@@ -27,11 +27,11 @@ MBP.gestureStart = function () {
 }
 
 var local = [
- './template/index.html',
- './template/css/style.css',
- './template/js/mylibs/helper.js',
- './template/sitemap.xml',
- './template/htaccess.txt?.xml'
+ './mobile/template/index.html',
+ './mobile/template/css/style.css',
+ './mobile/template/js/mylibs/helper.js',
+ './mobile/template/sitemap.xml',
+ './mobile/template/htaccess.txt?.xml'
 ];
  
  
