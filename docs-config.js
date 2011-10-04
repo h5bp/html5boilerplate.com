@@ -20,7 +20,7 @@ exports = module.exports = {
   dest: "./src/docs",
 
   // a single layout files with a {{ content }} placeholder.
-  layout: "./docs/doclayout.html",
+  layout: "./docs/layout.html",
 
   // assets folder
   // - putting a false value will prevent the assets copy.
