@@ -22,7 +22,7 @@ messages: force
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}"
 	@echo "All done. New message files are in ./locale/"
 
-docs:
+docs: force
 	@echo "Cool. Let's build the docs..."
 	h5bp-docs --config docs-config.js
 	@echo "All done. New docs files are in ./src/docs/"
