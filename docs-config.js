@@ -13,17 +13,19 @@ exports = module.exports = {
   // server port used if --server flag provided
   port: 8080,
 
-  // destination folder, place where the generated files will land
-  src: "./src/docs/wiki-upstream",
+  // src folder, this is where the markdown files are
+  src: "./docs/wiki-upstream",
 
   // destination folder, place where the generated files will land
-  dest: "./docs",
+  dest: "./src/docs",
 
   // a single layout files with a {{ content }} placeholder.
-  layout: "./src/docs/doclayout.html",
+  layout: "./docs/doclayout.html",
 
-  // assets folder, default is
-  assets: "./src/docs/public",
+  // assets folder
+  // - putting a false value will prevent the assets copy.
+  // - ommiting assets assets copy the public folder in h5bp-docs package.
+  assets: false,
 
   // allowed extensions, all other files are ignored 
   ext: ['md', 'markdown', 'mkd'],

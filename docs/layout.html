@@ -12,9 +12,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-  <link rel="stylesheet" href="{{ baseurl }}/public/css/style.css" >
-  <link rel="stylesheet" href="{{ baseurl }}/public/css/docs.css" >
-  <script src="{{ baseurl }}/public/js/libs/modernizr-2.0.6.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/docs.css" >
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
   <div id="container" class="wikiconvertor"> 
@@ -95,16 +95,15 @@
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="{{baseurl}}/public/js/jquery.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
 
-  <script src="//ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
-  <script>window.JSON || document.write("<script src='{{baseurl}}/public/js/libs/json2.js'>\x3C/script>")</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
 
-  <script src="//ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
-  <script>window._ || document.write("<script src='{{baseurl}}/public/js/libs/underscore.min.js'>\x3C/script>")</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write('<script src="/js/libs/backbone.min.js">\x3C/script>')</script>
 
-  <script src="{{baseurl}}/public/js/libs/backbone.min.js"></script>
-  <script src="{{baseurl}}/public/js/script.js"></script>
+  <script src="/js/docs.js"></script>
 
   <script>
     (function(exports) {
