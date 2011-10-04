@@ -23,8 +23,12 @@ messages: force
 	@echo "All done. New message files are in ./locale/"
 
 docs: force
-	@echo "Cool. Let's build the docs..."
+	@echo "Cool. First I'm gonna update the wiki files"
+	git submodule update --init
+	cd docs/wiki-upstream && git pull origin master && cd ../..
+	@echo "Let's build the docs..."
 	h5bp-docs --config docs-config.js
+	@echo ""
 	@echo "All done. New docs files are in ./src/docs/"
 
 build: force
@@ -32,5 +36,5 @@ build: force
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
 	@echo "All done translating. New files are in ./built/"
 	@echo ""
-	@echo "You might want to consider manual docs update by running make docs..."
+	@echo "You might want to consider manual docs update by running make docs... (but you'll have to make build again)"
 force: ;
