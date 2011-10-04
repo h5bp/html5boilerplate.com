@@ -11,7 +11,7 @@ exports = module.exports = {
   server: false,
 
   // server port used if --server flag provided
-  port: 4000,
+  port: 8080,
 
   // destination folder, place where the generated files will land
   src: "./src/docs/wiki-upstream",
@@ -31,6 +31,6 @@ exports = module.exports = {
   // baseurl, only used with --server flag. ex: docs
   baseurl: '/docs',
 
-  // Enable verbose output (defaults false)
-  verbose: false
+  // Enable verbose output (defaults true)
+  verbose: true
 };
