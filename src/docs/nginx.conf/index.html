@@ -1,0 +1,226 @@
+<!doctype html public "✰">
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <title>nginx.conf | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/docs.css" >
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <div id="header">
+         <p class="lang">
+           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
+         </p>
+         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
+         <h2>A rock-solid default for HTML5 awesome.</h2>
+    </div>
+    <div id="body" class="docs">
+      <div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/960.gs/">960.gs</a></li>
+                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
+                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
+                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/Experimental/">Experimental</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
+                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
+                      <li><a href="/docs/head-Tips/">head Tips</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
+                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
+                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
+                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
+                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
+                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
+                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
+                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
+                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
+                      <li><a href="/docs/rake/">rake</a></li>
+                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
+                      <li><a href="/docs/The-markup/">The markup</a></li>
+                      <li><a href="/docs/The-style/">The style</a></li>
+                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
+                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
+                      <li><a href="/docs/web.config/">web.config</a></li>
+          </ul>
+      </div>
+      <div class="wikiconvertor-content wikistyle relative">
+        <p class="dwn">
+          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/nginx.conf/_edit">Edit this page</a></span>
+        </P>
+        <p>Nginx ("engine x") is a high-performance HTTP server and reverse proxy server. It's one of the three top HTTP servers in terms of popularity (the other two being Apache HTTP Server and IIS).</p>
+
+<p>In Nginx server, nginx.conf is the configuration file that allows for web server configuration. HTML5 Boilerplate team has identified a number of best practice server rules for making web pages fast and secure, these rules can be applied by configuring nginx.conf file.</p>
+
+<p>This article will help you to gain insights about what it does by studying the settings inside the file: </p>
+
+<h2>Timeouts</h2>
+
+<pre><code><span class="pln">keepalive_timeout &nbsp;</span><span class="lit">65</span><span class="pun">;</span><span class="pln"><br /></span></code></pre>
+
+<p>keepalive_timeout 65 - Timeout values specify the amount of time in seconds that Nginx will wait for the client to complete the specified action. 65 is the value for keep-alive connections with the client.</p>
+
+<h2>sendfile</h2>
+
+<pre><code><span class="pln">sendfile on</span><span class="pun">;</span><span class="pln"><br /></span></code></pre>
+
+<p>sendfile on enables the use of sendfile(). This function can greatly increase overall system performance since sendfile() can do an entire data transfer without switching context. Enable if you allow downloads of large to medium sized files. You need to be careful about using sendfile if the file being sent has any possibility of being modified (especially truncated) while the operation is in progress since some very odd things (like the process crashing) can happen on some platforms.</p>
+
+<h2>TCP options :   These options say how we should use the TCP stack.</h2>
+
+<pre><code><span class="pln">tcp_nopush on</span><span class="pun">;</span><span class="pln"><br />tcp_nodelay off</span><span class="pun">;</span><span class="pln"><br /></span></code></pre>
+
+<p><strong>tcp_nopush on</strong> - If set, don't send out partial frames. All queued partial frames are sent when the option is cleared again. This is useful for pre-pending headers before calling sendfile(2), or for throughput optimization. As currently implemented, there is a 200 millisecond ceiling on the time for which output is corked by TCP_CORK. If this ceiling is reached, then queued data is automatically transmitted. </p>
+
+<p><strong>tcp_nodelay off</strong> - TCP_NODELAY is for a specific purpose; to disable the Nagle buffering algorithm. It should only be set for applications that send frequent small bursts of information without getting an immediate response, where timely delivery of data is required (the canonical example is mouse movements). This is set to false by default because such behavior is not expected in normal web service. </p>
+
+<h2>Compression</h2>
+
+<pre><code><span class="pln">gzip &nbsp;on</span><span class="pun">;</span><span class="pln"><br />gzip_http_version </span><span class="lit">1.0</span><span class="pun">;</span><span class="pln"><br />gzip_comp_level </span><span class="lit">2</span><span class="pun">;</span><span class="pln"><br />gzip_min_length </span><span class="lit">1100</span><span class="pun">;</span><span class="pln"><br />gzip_buffers &nbsp; &nbsp; </span><span class="lit">4</span><span class="pln"> </span><span class="lit">8k</span><span class="pun">;</span><span class="pln"><br />gzip_proxied any</span><span class="pun">;</span><span class="pln"><br />gzip_types text</span><span class="pun">/</span><span class="pln">html text</span><span class="pun">/</span><span class="pln">plain text</span><span class="pun">/</span><span class="pln">xml application</span><span class="pun">/</span><span class="pln">xml application</span><span class="pun">/</span><span class="pln">xml</span><span class="pun">+</span><span class="pln">rss<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;text</span><span class="pun">/</span><span class="pln">css text</span><span class="pun">/</span><span class="pln">javascript application</span><span class="pun">/</span><span class="pln">javascript application</span><span class="pun">/</span><span class="pln">json</span><span class="pun">;</span><span class="pln"><br /><br />gzip_static on</span><span class="pun">;</span><span class="pln"><br /><br />gzip_proxied &nbsp; &nbsp; &nbsp; &nbsp;expired </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">cache </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">store </span><span class="kwd">private</span><span class="pln"> auth</span><span class="pun">;</span><span class="pln"><br />gzip_disable &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="str">"MSIE [1-6]\."</span><span class="pun">;</span><span class="pln"><br />gzip_vary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; on</span><span class="pun">;</span><span class="pln"><br /></span></code></pre>
+
+<p><strong>gzip on</strong> - turn compression on.</p>
+
+<p><strong>gzip_http_version 1.0</strong> - allows the server to send compressed data to HTTP/1.0 clients. HTTP/1.1 clients use the proper headers so they can always ask for compressed data.</p>
+
+<p><strong>gzip_comp_level 2</strong> - compresses files to the second fastest/lowest compression level. Level 1 is the fastest/lowest compression and level 9 is the slowest/best compression. During testing the time difference between level 1 and 9 was around 2 hundredths of a second per file on a P3 500MHz.</p>
+
+<p><strong>gzip_min_length 1100</strong> - this means that nginx should compress files have minimum size of 1100 bytes. The value is the size in bytes. You can always set this value to something higher if you do not wish to compress small files.</p>
+
+<p><strong>gzip_buffers     4 8k</strong> - gzip_buffers 4 8k allows 4 slots of 8k buffers used to respond to clients with a gzip'd response. This means the max size of our compressed responses can be no larger than 4*8= 32 kilobytes. By default Nginx limits compressed responses to 4*8k= 32 kilobytes. If you expect to return responses which compressed size is more than 32KB in size then increase the number of buffers (e.g. 16). The single buffer size of 8K can not be increased.</p>
+
+<p><strong>gzip_types text/html...</strong> - are the only files types to be compressed. For example, JPG's are already compressed so it would be useless for us to try to compress them again. Text files compress very well at an average of 250% smaller. Smaller files mean less bandwidth used and less time to transmit the same amount of data. This makes your site "feel" significantly faster.</p>
+
+<p><strong>gzip_static on</strong> -  allows one to have pre-compressed .gz files served instead of compressing files on the fly. This is the most efficient method of serving compressed data. To use this option simply have a compressed copy of the same .html file in document root. For example, if we have the index.html file in place we will also have a pre-compressed index.html.gz file.</p>
+
+<p><strong>gzip_disable</strong> - Disable gzip compression for User-Agents matching the given regular expression. Requires PCRE library. Introduced in Nginx 0.6.23.<br />You can use "msie6" to disable gzip for Internet Explorer 5.5 and Internet Explorer 6. "SV1" (Service Pack 2) will be ignored since Nginx 0.7.63. In this example, it matches Internet Explorer 1-6.</p>
+
+<p><strong>gzip_proxied        expired no-cache no-store private auth;</strong> - It allows the compression if:</p>
+
+<p>the "Expires" header prevents caching<br />"Cache-Control" header is set to "no-cache" <br />"Cache-Control" header is set to "no-store" <br />"Cache-Control" header is set to "private"<br />there is an "Authorization" header </p>
+
+<p><strong>gzip_vary</strong> - enables the response header "Vary: Accept-Encoding". This way clients know that our server has the ability to send out compressed data.</p>
+
+<h2>Server Expiration</h2>
+
+<pre><code><span class="pln">listen </span><span class="lit">80</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> deferred</span><span class="pun">;</span><span class="pln"><br />server_name example</span><span class="pun">.</span><span class="pln">com</span><span class="pun">;</span><span class="pln"><br />expires </span><span class="lit">1M</span><span class="pun">;</span><span class="pln"><br />root </span><span class="pun">/</span><span class="pln">sites</span><span class="pun">/</span><span class="pln">example</span><span class="pun">.</span><span class="pln">com</span><span class="pun">/</span><span class="kwd">public</span><span class="pun">;</span><span class="pln"><br /></span></code></pre>
+
+<p><strong>listen 80</strong> - Listen to port 80. <br />The listen directive specifies the address and port accepted by the enclosing server {...} block. It is possible to specify only an address, only a port, or a server name as the address. In this case, it listens to port 80.</p>
+
+<p><strong>default deferred</strong> - indicates to use that postponed accept(2) on Linux with. The listen directive accepts several parameters, specific to the system calls listen(2) and bind(2). These parameters must follow the default parameter.</p>
+
+<p><strong>server_name example.com</strong> - The name becomes the basic name of server. By default the name of the machine (hostname) is used. In this case, it's specified as example.com</p>
+
+<p><strong>expires 1M</strong> - expires in 1 month</p>
+
+<p><strong>root</strong> - root specifies the document root for the requests. For example, with this configuration, /sites/example.com/public is the root. </p>
+
+<pre><code><span class="pln">location </span><span class="pun">~*</span><span class="pln"> </span><span class="pun">^.+\.(</span><span class="pln">manifest</span><span class="pun">)</span><span class="pln">$ </span><span class="pun">{</span><span class="pln"><br />&nbsp; expires </span><span class="pun">-</span><span class="lit">1D</span><span class="pun">;</span><span class="pln"><br />&nbsp; root &nbsp; </span><span class="pun">/</span><span class="pln">sites</span><span class="pun">/</span><span class="pln">example</span><span class="pun">.</span><span class="pln">com</span><span class="pun">/</span><span class="kwd">public</span><span class="pun">;</span><span class="pln"><br />&nbsp; access_log logs</span><span class="pun">/</span><span class="kwd">static</span><span class="pun">.</span><span class="pln">log</span><span class="pun">;</span><span class="pln"><br /></span><span class="pun">}</span><span class="pln"><br /></span></code></pre>
+
+<p><strong>location</strong> - This directive allows different configurations depending on the URI. It can be configured using both literal strings and regular expressions. To use regular expressions, you must use a prefix: </p>
+
+<ol>
+<li>"~" for case sensitive matching</li>
+<li>"~*" for case insensitive matching </li>
+</ol>
+
+<p>In the above case, we force files to always expire by setting expiration date to a day before.</p>
+
+<pre><code><span class="pln">location </span><span class="pun">~*</span><span class="pln"> </span><span class="pun">^.+\.(</span><span class="pln">ico</span><span class="pun">|</span><span class="pln">ogg</span><span class="pun">|</span><span class="pln">ogv</span><span class="pun">|</span><span class="pln">svg</span><span class="pun">|</span><span class="pln">svgz</span><span class="pun">|</span><span class="pln">eot</span><span class="pun">|</span><span class="pln">otf</span><span class="pun">|</span><span class="pln">woff</span><span class="pun">|</span><span class="pln">mp4</span><span class="pun">|</span><span class="pln">ttf</span><span class="pun">|</span><span class="pln">css</span><span class="pun">|</span><span class="pln">rss</span><span class="pun">|</span><span class="pln">atom</span><span class="pun">|</span><span class="pln">js</span><span class="pun">|</span><span class="pln">jpg</span><span class="pun">|</span><span class="pln">jpeg</span><span class="pun">|</span><span class="pln">gif</span><span class="pun">|</span><span class="pln">png</span><span class="pun">|</span><span class="pln">ico</span><span class="pun">|</span><span class="pln">zip</span><span class="pun">|</span><span class="pln">tgz</span><span class="pun">|</span><span class="pln">gz</span><span class="pun">|</span><span class="pln">rar</span><span class="pun">|</span><span class="pln">bz2</span><span class="pun">|</span><span class="pln">doc</span><span class="pun">|</span><span class="pln">xls</span><span class="pun">|</span><span class="pln">exe</span><span class="pun">|</span><span class="pln">ppt</span><span class="pun">|</span><span class="pln">tar</span><span class="pun">|</span><span class="pln">mid</span><span class="pun">|</span><span class="pln">midi</span><span class="pun">|</span><span class="pln">wav</span><span class="pun">|</span><span class="pln">bmp</span><span class="pun">|</span><span class="pln">rtf</span><span class="pun">)</span><span class="pln">$ </span><span class="pun">{</span><span class="pln"><br />&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(-</span><span class="pln">f $request_filename</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br />&nbsp; &nbsp; expires max</span><span class="pun">;</span><span class="pln"><br />&nbsp; &nbsp; root &nbsp; </span><span class="pun">/</span><span class="pln">sites</span><span class="pun">/</span><span class="pln">example</span><span class="pun">.</span><span class="pln">com</span><span class="pun">/</span><span class="kwd">public</span><span class="pun">;</span><span class="pln"><br />&nbsp; &nbsp; access_log logs</span><span class="pun">/</span><span class="kwd">static</span><span class="pun">.</span><span class="pln">log</span><span class="pun">;</span><span class="pln"><br />&nbsp; </span><span class="pun">}</span><span class="pln"><br /></span><span class="pun">}</span><span class="pln"><br /></span></code></pre>
+
+<p>Only set expires max if the file is a static file and exists</p>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </footer>
+    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write('<script src="/js/libs/backbone.min.js">\x3C/script>')</script>
+  <script src="/js/docs.js"></script>
+  <script>
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '/docs/nginx.conf/';
+      // todo: change this with something like h5bp.com/docs/docs/nginx.conf/
+      var disqus_url = exports.disqus_url= '/docs/nginx.conf/';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for /docs/nginx.conf/';
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    })(this);
+  </script>
+</body>
+</html>

@@ -11,11 +11,13 @@
 
 /* random oneoff shittttt */
 
-img[src$="server-logos.png"] { float: right; } 
+img[src$="server-logos.png"] { float: right; }
 
 
 /** disqussss */
-.docs #disqus_thread { display: block;}
+.docs #disqus_thread { display: block; }
+.docs #disqus_thread ul li { border-bottom: none; }
+.docs #disqus_thread ul li:before { content: ''; }
 
 .wikiconvertor #header h1{font-size:3em;margin-bottom:1.5em;}
 .wikiconvertor #body, .wikiconvertor #header h2 {margin:0 auto 0;width:78%;}

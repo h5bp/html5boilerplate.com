@@ -1,0 +1,441 @@
+<!doctype html public "✰">
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <title>The style | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/docs.css" >
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <div id="header">
+         <p class="lang">
+           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
+         </p>
+         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
+         <h2>A rock-solid default for HTML5 awesome.</h2>
+    </div>
+    <div id="body" class="docs">
+      <div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/960.gs/">960.gs</a></li>
+                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
+                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
+                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/Experimental/">Experimental</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
+                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
+                      <li><a href="/docs/head-Tips/">head Tips</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
+                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
+                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
+                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
+                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
+                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
+                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
+                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
+                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
+                      <li><a href="/docs/rake/">rake</a></li>
+                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
+                      <li><a href="/docs/The-markup/">The markup</a></li>
+                      <li><a href="/docs/The-style/">The style</a></li>
+                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
+                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
+                      <li><a href="/docs/web.config/">web.config</a></li>
+          </ul>
+      </div>
+      <div class="wikiconvertor-content wikistyle relative">
+        <p class="dwn">
+          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/The-style/_edit">Edit this page</a></span>
+        </P>
+        <h1>The CSS</h1>
+
+<p>The HTML5 Boilerplate uses <a href="http://necolas.github.com/normalize.css">CSS normalization</a> combined with other useful default styles. It comes packaged with a handful of common helper classes and a base print style sheet. The HTML5 Boilerplate favours a "mobile first" approach to design and development; some placeholder Media Queries are included to help you on your way. </p>
+
+<p>This starting CSS does not rely on the presence of conditional classnames, conditional style sheets, or Modernizr. Hence the use of "safe CSS hacks" to target IE6/7 where needed.</p>
+
+<p>Read on for a detailed look at each part of the CSS.</p>
+
+<h2>HTML5 display definitions</h2>
+
+<ul>
+<li><p>Set <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> block</span></code> for HTML5 block elements in browsers (without an HTML5 parser) that treat them as inline elements.</p></li>
+<li><p>Set <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">inline</span><span class="pun">-</span><span class="pln">block</span></code> for HTML5 inline-block elements in browsers that treat them as inline elements. Include the IE6/7 inline-block hack: <code><span class="pun">*</span><span class="pln">display</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">inline</span><span class="pun">;</span><span class="pln"> </span><span class="pun">*</span><span class="pln">zoom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span></code>.</p></li>
+<li><p><code><span class="pln">audio</span><span class="pun">:</span><span class="kwd">not</span><span class="pun">([</span><span class="pln">controls</span><span class="pun">])</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> none </span><span class="pun">}</span></code> : Ensures that <code><span class="pln">audio</span></code> elements without controls remain hidden in modern browsers than have native support for <code><span class="pln">audio</span></code>. Chrome and IE9 do not seem to need this re-hiding of control-less <code><span class="pln">audio</span></code> as they seem to always hide them, irrespective of what you do in the CSS.</p></li>
+<li><p><code><span class="pun">[</span><span class="pln">hidden</span><span class="pun">]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> none </span><span class="pun">}</span></code> : Adds support for the <code><span class="pun">[</span><span class="pln">hidden</span><span class="pun">]</span></code> attribute in legacy browsers (with attribute selector support) that do not include it in their UA stylesheet.</p></li>
+</ul>
+
+<h2>Base Styles</h2>
+
+<h3>html</h3>
+
+<ul>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span></code> : Corrects an IE6/7 bug where text is resized to much greater sizes than normal when the body font-size is set using <code><span class="pln">em</span></code> units. <a href="http://clagnut.com/blog/348/#c790">More info</a></p></li>
+<li><p><code><span class="pln">overflow</span><span class="pun">-</span><span class="pln">y</span><span class="pun">:</span><span class="pln"> scroll</span></code> : Forces the display of a vertical scrollbar even on pages which are smaller than the viewport height. IE displays a vertical scrollbar irrespective of viewport height and this ensures that it also appears in non-IE. Doing this prevents what appears to be a horizontal shift of page content when a scrollbar appears on longer pages.</p></li>
+<li><p><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">text</span><span class="pun">-</span><span class="pln">size</span><span class="pun">-</span><span class="pln">adjust</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span></code> : Prevents iOS text size adjust after orientation change, without disabling user zoom...unlike <code><span class="pln">none</span></code>. <a href="http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/">Source</a></p></li>
+</ul>
+
+<h3>body</h3>
+
+<ul>
+<li><p><code><span class="pln">margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Removes margin in all browsers.</p></li>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13px</span><span class="pun">;</span><span class="pln"> line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.231</span></code> : Set base font size to 13px and line height to 16px. A known limitation is the prevention of text resizing in IE6/7. Changing the <code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span></code> to use <code><span class="pln">em</span></code> or <code><span class="pun">%</span></code> units will allow resizing in those legacy browsers.</p></li>
+</ul>
+
+<h3>body, button, input, select, textarea {}</h3>
+
+<ul>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln"> sans</span><span class="pun">-</span><span class="pln">serif</span></code> : Setting the font-family on <code><span class="pln">body</span></code> and various form elements ensures font-family consistency between body copy, <code><span class="pln">textarea</span></code>, and other form elements. Using the <code><span class="pln">sans</span><span class="pun">-</span><span class="pln">serif</span></code> value will most likely mean Helvetica as the default font for Mac and Arial for Windows.</p></li>
+<li><p><code><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#222</span></code> : Set the default text color to be slightly lighter than pure black to avoid excessive contrast.</p></li>
+</ul>
+
+<h3>::-moz-selection and ::selection</h3>
+
+<p>Highlighted text can look a mess if it also has text shadows of certain colours or sizes. Existing browsers don't let you reset just <code><span class="pln">text</span><span class="pun">-</span><span class="pln">shadow</span></code> in <code><span class="pun">::</span><span class="pln">selection</span></code> without reset the background highlight color. Therefore, to avoid the text-shadow-when-highlighted problem we set <code><span class="pln">text</span><span class="pun">-</span><span class="pln">shadow</span><span class="pun">:</span><span class="pln"> none</span></code> but must also declare a <code><span class="pln">background</span></code> and <code><span class="pln">color</span></code>.</p>
+
+<p>Consider changing the selection background color to fit with the color palette being used on your site.</p>
+
+<h2>Links</h2>
+
+<p>Declaring the default link and visited link colours ensures that they are applied in IE6/7.</p>
+
+<h3>a:focus {}</h3>
+
+<ul>
+<li><code><span class="pln">outline</span><span class="pun">:</span><span class="pln"> thin dotted</span></code> : WebKit on OSX uses a focus halo of a fixed color (usually blue). Chrome on Windows uses an orange outline. Neither of these outlines change with link or background color and people frequently look to remove it with <code><span class="pun">:</span><span class="pln">focus </span><span class="pun">{</span><span class="pln">outline</span><span class="pun">:</span><span class="lit">0</span><span class="pun">}</span></code>. They are also different from the focus outline used by other browsers on Windows or OSX. To improve consistency and avoid either having: a fixed focus style that can clash quite badly or be nearly invisible in certain designs; or removing an important accessibility aide, the outline is normalized to thin and dotted with no fixed color.</li>
+</ul>
+
+<h3>a:hover, a:active {}</h3>
+
+<ul>
+<li><code><span class="pln">outline</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Improves readability in all browsers when a link gains keyboard focus <em>and</em> it is hovered over with the mouse. The outline is shown only if the link gains keyboard focus. <a href="http://people.opera.com/patrickl/experiments/keyboard/test">Source</a></li>
+</ul>
+
+<h2>Typography</h2>
+
+<h3>General</h3>
+
+<ul>
+<li><p><code><span class="pln">abbr</span><span class="pun">[</span><span class="pln">title</span><span class="pun">]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> dotted</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Addresses styling not present in IE7/8/9, S5, Chrome. By not specifying a border color it defaults to the text color it inherits.</p></li>
+<li><p><code><span class="pln">b</span><span class="pun">,</span><span class="pln"> strong </span><span class="pun">{</span><span class="pln"> font</span><span class="pun">-</span><span class="pln">weight</span><span class="pun">:</span><span class="pln"> bold</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Addresses style set to 'bolder' in FF3/4, S4/5, Chrome.</p></li>
+<li><p><code><span class="pln">blockquote </span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1em</span><span class="pln"> </span><span class="lit">40px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Normalize blockquote margins, which differ between modern browsers and IE6/7.</p></li>
+<li><p><code><span class="pln">dfn </span><span class="pun">{</span><span class="pln"> font</span><span class="pun">-</span><span class="pln">style</span><span class="pun">:</span><span class="pln"> italic</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Addresses styling not present in S5, Chrome.</p></li>
+<li><p><code><span class="pln">mark </span><span class="pun">{</span><span class="pln"> background</span><span class="pun">:</span><span class="pln"> </span><span class="com">#ff0; color: #000; }</span></code> : Addresses styling not present in IE6/7/8/9.</p></li>
+<li><p><code><span class="pln">q </span><span class="pun">{</span><span class="pln"> quotes</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Remove quotes because they are not supported in IE6/7.</p></li>
+<li><p><code><span class="pln">q</span><span class="pun">:</span><span class="pln">before</span><span class="pun">,</span><span class="pln"> q</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> content</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span><span class="pln"> content</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Quotes require resetting twice as <a href="http://www.paulchaplin.com/blog/css-reset-and-quirky-quotes">Safari does not support the "quotes" property</a>.</p></li>
+</ul>
+
+<h3>pre, code, kbd, samp {}</h3>
+
+<ul>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln"> monospace</span><span class="pun">,</span><span class="pln"> serif</span></code> : Allows proper font-size control. <a href="http://en.wikipedia.org/wiki/User:Davidgothberg/Test59">Source</a></p></li>
+<li><p><code><span class="pln">_font</span><span class="pun">-</span><span class="pln">family</span><span class="pun">:</span><span class="pln"> </span><span class="str">'courier new'</span><span class="pun">,</span><span class="pln"> monospace</span></code> : Improves poor text-rendering of monospace in IE6.</p></li>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1em</span></code> : Set font-size to be equal to ancestor's font-size.</p></li>
+</ul>
+
+<h3>pre {}</h3>
+
+<ul>
+<li><p><code><span class="pln">white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln"> pre</span></code> : This value makes the element behave as a <code><span class="pln">pre</span></code>: all line breaks, tabs and other oddities of the source code are literally followed.</p></li>
+<li><p><code><span class="pln">white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln"> pre</span><span class="pun">-</span><span class="pln">wrap</span></code> : This value behaves as the pre value, except that it adds extra line breaks to prevent the text breaking out of the element's box. But it is not supported by IE6/7, so...</p></li>
+<li><p><code><span class="pln">word</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">-</span><span class="pln">word</span></code> : ...this property allows long words to be broken and wrap onto the next line in IE6/7</p></li>
+</ul>
+
+<h3>sub, sup {}</h3>
+
+<p>Prevents <code><span class="kwd">sub</span></code> and <code><span class="pln">sup</span></code> affecting line-height in all browsers <a href="http://gist.github.com/413930">Source</a></p>
+
+<ul>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">%</span></code> : Specified in % so that the sup/sup is the right size relative to the surrounding text.</p></li>
+<li><p><code><span class="pln">line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Zero out the line-height so that it doesn't interfere with the positioning that follows.</p></li>
+<li><p><code><span class="pln">position</span><span class="pun">:</span><span class="pln"> relative</span></code> : Makes all browsers position the sup/sup relative to the surrounding text.</p></li>
+<li><p><code><span class="pln">vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> baseline</span></code> : Set the vertical alignment from the baseline.</p></li>
+<li><p><code><span class="pln">sup </span><span class="pun">{</span><span class="pln"> top</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0.5em</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Move the superscripted text up.</p></li>
+<li><p><code><span class="kwd">sub</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0.25em</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Move the subscripted text down, but only half as far down as the superscript moved up.</p></li>
+</ul>
+
+<h2>Lists</h2>
+
+<ul>
+<li><p>Set consistent cross-browser defaults, in line with modern standards, for <code><span class="pln">ul</span></code>, <code><span class="pln">ol</span></code>, and <code><span class="pln">dd</span></code>.</p></li>
+<li><p><code><span class="pln">nav ul</span><span class="pun">,</span><span class="pln"> nav ol </span><span class="pun">{</span><span class="pln"> list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln"> list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : zero out padding and margin, and remove bullets from any lists used in <code><span class="pln">nav</span></code> elements. We need to include <code><span class="pln">list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">-</span><span class="pln">image</span></code> for IE6/7 in case a list image is set on the default <code><span class="pln">ul</span></code>, because those browsers won't remove it otherwise.</p></li>
+</ul>
+
+<h2>Embedded content</h2>
+
+<ul>
+<li><p><code><span class="pln">img </span><span class="pun">{</span><span class="pln"> border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> middle</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Removing the border prevents a border from appearing around images wrapped in links in IE. The <code><span class="pln">vertical</span><span class="pun">-</span><span class="pln">align</span></code> removes the gap between images and borders on image containers. <a href="http://h5bp.com/e">More info</a></p></li>
+<li><p><code><span class="pln">img </span><span class="pun">{</span><span class="pln"> </span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">interpolation</span><span class="pun">-</span><span class="pln">mode</span><span class="pun">:</span><span class="pln"> bicubic</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> improves image resizing in IE. It is on by default in IE8 and is not implemented in IE6, so we only need it on IE7. Firefox has a similar style <code><span class="pln">image</span><span class="pun">-</span><span class="pln">rendering</span><span class="pun">:</span><span class="pln">optimizeQuality</span><span class="pun">;</span></code> but it is a default, so we don't need to include it in the styles. <a href="http://h5bp.com/d">More info</a></p></li>
+<li><p><code><span class="pln">svg</span><span class="pun">:</span><span class="kwd">not</span><span class="pun">(:</span><span class="pln">root</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Corrects overflow not being hidden in IE9. Earlier versions of IE don't support SVG, so we can safely use the <code><span class="pun">:</span><span class="kwd">not</span><span class="pun">()</span></code> and <code><span class="pun">:</span><span class="pln">root</span></code> selectors that modern browsers use in the default UA stylesheets to apply this style.</p></li>
+</ul>
+
+<h2>Forms</h2>
+
+<p>We zero out the border, margin, and padding on <code><span class="pln">form</span></code> and <code><span class="pln">fieldset</span></code>.</p>
+
+<p><code><span class="pln">label </span><span class="pun">{</span><span class="pln"> cursor</span><span class="pun">:</span><span class="pln"> pointer</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : indicate that 'label' will shift focus to the associated form element.</p>
+
+<h3>legend</h3>
+
+<ul>
+<li><p><code><span class="pln">border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Corrects <code><span class="pln">color</span></code> not being inherited in IE6/7/8/9. Without this, <code><span class="pln">legend</span></code> text will always be blue in IE.</p></li>
+<li><p><code><span class="pun">*</span><span class="pln">margin</span><span class="pun">-</span><span class="pln">left</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">7px</span></code> : Corrects alignment displayed oddly in IE6/7.</p></li>
+<li><p><code><span class="pln">padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Since we've removed the <code><span class="pln">fieldset</span></code> border, margin, and padding, we remove the default padding on <code><span class="pln">legend</span></code> to avoid unwanted horizontal whitespace.</p></li>
+</ul>
+
+<h3>button, input, select, textarea</h3>
+
+<ul>
+<li><p><code><span class="pln">font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span></code> : Corrects font size not being inherited in all browsers.</p></li>
+<li><p><code><span class="pln">margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Addresses margins set differently in IE6/7, F3/4, S5, Chrome.</p></li>
+<li><p><code><span class="pln">vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> baseline</span></code> : Produces best looking alignment in modern browsers.</p></li>
+<li><p><code><span class="pun">*</span><span class="pln">vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> middle</span></code> : Improves appearance in IE6/7 to more closely match baseline value position in other browsers.</p></li>
+</ul>
+
+<h3>button, input {}</h3>
+
+<ul>
+<li><code><span class="pln">line</span><span class="pun">-</span><span class="pln">height</span><span class="pun">:</span><span class="pln"> normal</span></code> : Addresses FF3/4 setting line-height using !important in the UA stylesheet.</li>
+</ul>
+
+<h3>button, input[type="button"], input[type="reset"], input[type="submit"] {}</h3>
+
+<ul>
+<li><p><code><span class="pln">cursor</span><span class="pun">:</span><span class="pln"> pointer</span></code> : Improves usability by indicating that an action will be performed. Type <code><span class="pln">image</span></code> already has pointer cursor, so this also improves consistency between related <code><span class="pln">input</span></code> types.</p></li>
+<li><p><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">appearance</span><span class="pun">:</span><span class="pln"> button</span></code> : Corrects inability to style clickable 'input' types in iOS.</p></li>
+<li><p><code><span class="pun">*</span><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> visible</span></code> : Corrects inner spacing displayed oddly in IE7. Doesn't effect IE6; there doesn't seem to be a way to apply it to IE6 (without using a class) and avoid triggering a serious bug in text <code><span class="pln">input</span></code>'s. This style, when applied to text inputs in IE6/7, causes them to expand as more content is written into them. This happens even if there is a fixed width applied. If you need to fix the excess inner-spacing bug on <code><span class="pln">button</span></code> and clickable inputs in IE6, then apply this style using a class that is used specifically to style those types of elements.</p></li>
+</ul>
+
+<h3>input[type="checkbox"], input[type="radio"] {}</h3>
+
+<ul>
+<li><p><code><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">box</span></code> : Normalizes the box sizing, which is set to <code><span class="pln">content</span><span class="pun">-</span><span class="pln">box</span></code> in IE8/9 but <code><span class="pln">border</span><span class="pun">-</span><span class="pln">box</span></code> in all other browsers.</p></li>
+<li><p><code><span class="pln">padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Corrects excess space around these inputs in IE8/9 and matches Firefox's UA style sheet setting of padding: 0 !important. However, this does not effect the excess space in IE6/7.</p></li>
+</ul>
+
+<h3>input[type="search"] {}</h3>
+
+<ul>
+<li><p><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">appearance</span><span class="pun">:</span><span class="pln"> textfield</span></code> : Addresses appearance set to <code><span class="pln">searchfield</span></code> in Safari 5 and Chrome, without removing the benefits of search inputs (e.g. showing past searches).</p>
+
+<p>If the <code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">appearance</span></code> property value is not changed from <code><span class="pln">searchfield</span></code>:</p>
+
+<p>...in WebKit on OSX/iOS you can't control font, padding, border, and background.</p>
+
+<p>...in WebKit on Windows you can't control border properly. It will apply <code><span class="pln">border</span><span class="pun">-</span><span class="pln">width</span></code> but will only show a border color (which cannot be controlled) for the outer 1px of that border.</p></li>
+<li><p><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> content</span><span class="pun">-</span><span class="pln">box</span></code> : Normalizes the box sizing, which is set to <code><span class="pln">border</span><span class="pun">-</span><span class="pln">box</span></code> in Safari 5 and Chrome but <code><span class="pln">content</span><span class="pun">-</span><span class="pln">box</span></code> in all other browsers.</p></li>
+<li><p><code><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> content</span><span class="pun">-</span><span class="pln">box</span></code> : Future-proofing.</p></li>
+<li><p><code><span class="pln">box</span><span class="pun">-</span><span class="pln">sizing</span><span class="pun">:</span><span class="pln"> content</span><span class="pun">-</span><span class="pln">box</span></code> : Future-proofing.</p></li>
+</ul>
+
+<h3>input[type="search"]::-webkit-search-decoration {}</h3>
+
+<ul>
+<li><code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">appearance</span><span class="pun">:</span><span class="pln"> none</span></code> : Remove excess inner padding that appears in Safari 5 and Chrome on OSX once the search input appearance has been changed to <code><span class="pln">textfield</span></code>.</li>
+</ul>
+
+<h3>button::-moz-focus-inner, input::-moz-focus-inner {}</h3>
+
+<ul>
+<li><code><span class="pln">border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Removes inner padding and border from FF3/4.</li>
+</ul>
+
+<h3>textarea {}</h3>
+
+<ul>
+<li><p><code><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">auto</span></code> : Removes default vertical scrollbar on empty textarea in IE6/7/8/9.</p></li>
+<li><p><code><span class="pln">vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> top</span></code> : Improves readability and alignment in all browsers when accompanied by <code><span class="pln">label</span></code> text.</p></li>
+<li><p><code><span class="pln">resize</span><span class="pun">:</span><span class="pln"> vertical</span></code> : Allow only vertical resizing to prevent instances when trying to resize a textarea accidently results in it being resized horizontally over adjacent content.</p></li>
+</ul>
+
+<h2>Tables</h2>
+
+<ul>
+<li>Remove spacing and tweak vertical alignment</li>
+</ul>
+
+<h2>Non-semantic helper classes</h2>
+
+<h3>.ir</h3>
+
+<p>Add the <code><span class="pun">.</span><span class="pln">ir</span></code> class to any element you are applying image-replacement to. Be sure to include <code><span class="pln">background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="pln">pathtoimage</span><span class="pun">.</span><span class="pln">png</span><span class="pun">);</span></code> for that specific element so that image replacement can occur.</p>
+
+<ul>
+<li><code><span class="pln">display</span><span class="pun">:</span><span class="pln"> block</span></code> : Without this, image-replacement won't work on inline elements (e.g. <code><span class="pln">span</span></code>)</li>
+<li><code><span class="pln">border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : Remove the default border from elements like <code><span class="pln">button</span></code></li>
+<li><code><span class="pln">text</span><span class="pun">-</span><span class="pln">indent</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">999em</span></code> : Hide the text off-screen</li>
+<li><code><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> hidden</span></code> : Clip the text and prevent the focus outline from extending off-screen in some browsers.</li>
+<li><code><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> transparent</span></code> : Hide the default background color on elements like <code><span class="pln">button</span></code></li>
+<li><code><span class="pln">background</span><span class="pun">-</span><span class="pln">repeat</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">repeat</span></code> : Prevent tiling of the background image</li>
+<li><code><span class="pln">text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> left</span></code> : Make sure the text is left aligned for the negative text-indent to work</li>
+<li><p><code><span class="pln">direction</span><span class="pun">:</span><span class="pln"> ltr</span></code> : Avoid problems with the off-screen text in <code><span class="pln">rtl</span></code> settings</p></li>
+<li><p><code><span class="pun">.</span><span class="pln">ir br </span><span class="pun">{</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> none</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Hide line breaks within the element as these mess up the off-screen positioning of the text</p></li>
+</ul>
+
+<h3>.hidden</h3>
+
+<p>Add the <code><span class="pun">.</span><span class="pln">hidden</span></code> class to any elements that you want to hide from all presentations, including screen readers. It could be an element that will be populated later with JavaScript or an element you will hide with JavaScript. Do not use this for SEO keyword stuffing. That is just not cool.</p>
+
+<ul>
+<li><p><code><span class="pln">display</span><span class="pun">:</span><span class="pln"> none </span><span class="pun">!</span><span class="pln">important</span></code> : Ensure that elements remain hidden even when their <code><span class="pln">display</span></code> property is set in selectors with a specificity greater than or equal to the <code><span class="pun">.</span><span class="pln">hidden</span></code> selector.</p></li>
+<li><p><code><span class="pln">visibility</span><span class="pun">:</span><span class="pln"> hidden</span></code> : Only included to avoid possible edge-cases in Window-Eyes screenreader where text is read out even when <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> none</span></code> is used. <a href="http://h5bp.com/x">Source</a></p></li>
+</ul>
+
+<h3>.visuallyhidden</h3>
+
+<p>Add the <code><span class="pun">.</span><span class="pln">visuallyhidden</span></code> class to hide text from browsers but make it available for screen readers. You can use this to hide text that is specific to screen readers but that other users should not see. <a href="http://www.webaim.org/techniques/css/invisiblecontent/">About invisible content</a>, <a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding content for accessibility</a>, <a href="https://github.com/paulirish/html5-boilerplate/issues/194/">H5BP issue/research</a></p>
+
+<ul>
+<li><code><span class="pln">border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> :</li>
+<li><code><span class="pln">clip</span><span class="pun">:</span><span class="pln"> rect</span><span class="pun">(</span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span></code> : </li>
+<li><code><span class="pln">height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span></code> : </li>
+<li><code><span class="pln">margin</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1px</span></code> : </li>
+<li><code><span class="pln">overflow</span><span class="pun">:</span><span class="pln"> hidden</span></code> : Prevent any content overflow</li>
+<li><code><span class="pln">padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span></code> : </li>
+<li><code><span class="pln">position</span><span class="pun">:</span><span class="pln"> absolute</span></code> : Remove from the flow of the document</li>
+<li><code><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span></code> :</li>
+</ul>
+
+<h3>.invisible</h3>
+
+<p>Add the <code><span class="pun">.</span><span class="pln">invisible</span></code> class to any element you want to hide without affecting layout. When you use <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> none</span></code> the element would effectively be removed from the layout (width = 0, height = 0), in some cases, you want the element to simply remain invisible while occupying the width and height that it has. </p>
+
+<p>Examples would be, having a form element that is hidden until another choice is selected (or having select dropdowns disappear in IE if over flash), Containers for tabbed navigation to occupy space, even when invisible, making advertisements invisible while a video is played in a modal window and the screen behind is darkened. </p>
+
+<p>If you need the layout to not shift when you show/hide an element, this would be a class you would add/remove.   </p>
+
+<h3>clearfix</h3>
+
+<p>Adding <code><span class="pun">.</span><span class="pln">clearfix</span></code> to an element will ensure that it always fully contains its floated children. There have been many variants of the clearfix hack over the years, and there are other hacks that can also help you to contain floated children, but the H5BP currently provides this <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> helper class.</p>
+
+<ul>
+<li><code><span class="pun">.</span><span class="pln">clearfix</span><span class="pun">:</span><span class="pln">before</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="pln">clearfix</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> content</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> table</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : This rule is understood by all browsers except for IE6/7. It generates a pseudo-element before and after the content of the element that contains floats. Setting <code><span class="pln">display</span><span class="pun">:</span><span class="pln"> table</span></code> creates an anonymous <code><span class="pln">table</span><span class="pun">-</span><span class="pln">cell</span></code> and a new block formatting context. This acts to prevent top-margin collapse and improve the consistency between modern browsers and IE6/7.</li>
+<li><code><span class="pun">.</span><span class="pln">clearfix</span><span class="pun">:</span><span class="pln">after </span><span class="pun">{</span><span class="pln"> clear</span><span class="pun">:</span><span class="pln"> both</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Makes the <code><span class="pun">:</span><span class="pln">after</span></code> pseudo-element clear the floated children of this element, thereby making the element expand to contain the floats.</li>
+<li><code><span class="pun">.</span><span class="pln">clearfix </span><span class="pun">{</span><span class="pln"> zoom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> : Create new block formatting context in IE6/7 by triggering <code><span class="pln">hasLayout</span></code></li>
+</ul>
+
+<h2>Print Styles</h2>
+
+<ul>
+<li>Print styles are inlined to <a href="http://www.phpied.com/delay-loading-your-print-css/">reduce the number of page requests</a>. </li>
+<li>We strip all background colors and change the font color to dark gray and remove text-shadow. This saves your printer's ass. </li>
+<li>Anchors do not need colors to indicate they are linked. They are underlined to indicate so.</li>
+<li>Anchors and Abbreviations are expanded to indicate where users reading the printed page can refer to.</li>
+<li>But we do not want to show link text for image replaced elements (given that they are primarily images). </li>
+</ul>
+
+<h3>Paged Media Styles</h3>
+
+<ul>
+<li>Paged media is supported only in a <a href="http://en.wikipedia.org/wiki/Comparison_of_layout_engines_%28Cascading_Style_Sheets%29#Grammar_and_rules">few browsers</a>.</li>
+<li>Paged media support means browsers would know how to interpret instructions on breaking content into pages and on orphans/widows.</li>
+<li>We use <code><span class="pln">page</span><span class="pun">-</span><span class="kwd">break</span><span class="pun">-</span><span class="pln">inside</span><span class="pun">:</span><span class="pln"> avoid</span><span class="pun">;</span></code> to prevent an image and table row from being split into two different pages, so use the same <code><span class="pln">page</span><span class="pun">-</span><span class="kwd">break</span><span class="pun">-</span><span class="pln">inside</span><span class="pun">:</span><span class="pln"> avoid</span><span class="pun">;</span></code> for that as well.</li>
+<li>Headings should always appear with the text they are titles for. So, we ensure headings never appear in a different page than the text they describe by using <code><span class="pln">page</span><span class="pun">-</span><span class="kwd">break</span><span class="pun">-</span><span class="pln">after</span><span class="pun">:</span><span class="pln"> avoid</span><span class="pun">;</span></code>.</li>
+<li>We also apply a default margin for the page specified in cm.</li>
+<li>We do not want <a href="http://en.wikipedia.org/wiki/Widows_and_orphans">orphans and widows</a> to appear on pages you print. So, by defining <code><span class="pln">orphans</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span></code> and <code><span class="pln">widows</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span></code> you define the minimal number of words that every line should contain. </li>
+</ul>
+
+<h2>Media Queries</h2>
+
+<ul>
+<li>The boilerplate makes it easy to get started with a "Mobile First" and <a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive Web Design</a> approach to development. But it's worth remembering that there are <a href="http://www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/">no silver bullets</a>.</li>
+<li>We include a couple of placeholder Media Queries to build up your mobile styles for wider viewports. It is recommended that you adapt these Media Queries based on the content of your site rather than mirroring the fixed dimensions of specific devices.</li>
+<li>If you do not want to take a "Mobile First" approach, you can simply edit or remove these placeholder Media Queries. One possibility would be to work from wide viewports down and use <code><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span></code> MQs instead, e.g., <code><span class="lit">@media</span><span class="pln"> only screen </span><span class="kwd">and</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">480px</span><span class="pun">)</span></code>.</li>
+<li>Take a look into the <a href="http://html5boilerplate.com/mobile/">Mobile Boilerplate</a> for additional features that are useful when developing mobile websites.</li>
+</ul>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </footer>
+    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write('<script src="/js/libs/backbone.min.js">\x3C/script>')</script>
+  <script src="/js/docs.js"></script>
+  <script>
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '/docs/The-style/';
+      // todo: change this with something like h5bp.com/docs/docs/The-style/
+      var disqus_url = exports.disqus_url= '/docs/The-style/';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for /docs/The-style/';
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    })(this);
+  </script>
+</body>
+</html>

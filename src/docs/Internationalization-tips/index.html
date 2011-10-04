@@ -1,0 +1,160 @@
+<!doctype html public "✰">
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <title>Internationalization tips | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/docs.css" >
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <div id="header">
+         <p class="lang">
+           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
+         </p>
+         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
+         <h2>A rock-solid default for HTML5 awesome.</h2>
+    </div>
+    <div id="body" class="docs">
+      <div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/960.gs/">960.gs</a></li>
+                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
+                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
+                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/Experimental/">Experimental</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
+                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
+                      <li><a href="/docs/head-Tips/">head Tips</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
+                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
+                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
+                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
+                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
+                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
+                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
+                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
+                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
+                      <li><a href="/docs/rake/">rake</a></li>
+                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
+                      <li><a href="/docs/The-markup/">The markup</a></li>
+                      <li><a href="/docs/The-style/">The style</a></li>
+                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
+                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
+                      <li><a href="/docs/web.config/">web.config</a></li>
+          </ul>
+      </div>
+      <div class="wikiconvertor-content wikistyle relative">
+        <p class="dwn">
+          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/Internationalization-tips/_edit">Edit this page</a></span>
+        </P>
+        <ul>
+<li><a href="http://blog.livedoor.jp/dankogai/archives/51081230.html">Using Ruby elements</a></li>
+</ul>
+
+<h2>Right to left layout?</h2>
+
+<p>In general, HTML5 Boilerplate is pretty agnostic when it comes to LTR and RTL but there are three places you want to consider</p>
+
+<ol>
+<li><p><code><span class="pln">ul</span><span class="pun">,</span><span class="pln"> ol </span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.8em</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> this is the only case that is problematic, should either have a comented line below noting that for right-to-left designs this should be margin-right. or, make ol,ul a special case and not reset their margin.</p></li>
+<li><p><code><span class="pln">pre </span><span class="pun">{</span><span class="pln"> padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15px</span><span class="pun">;</span><span class="pln"> &nbsp;</span><span class="pun">...</span><span class="pln"> &nbsp;</span><span class="pun">}</span></code> should also have <code><span class="pln">direction</span><span class="pun">:</span><span class="pln">ltr</span></code>. Code is 99.9% of the time LTR, no reason to make this a special RTL css line.</p></li>
+<li><p><code><span class="pun">.</span><span class="pln">ie6 legend</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="pln">ie7 legend </span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">left</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">7px</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code>, again, margin-right is needed for RTL pages. Can we just add margin-right:-7px? will it break anything if both margins where negative for the general case? legend is an un-stylable tag anyway.</p></li>
+<li><p>Use <code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">margin</span><span class="pun">-</span><span class="pln">start</span></code>, <code><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">margin</span><span class="pun">-</span><span class="pln">start</span></code>.  It won't solve the problem in every browser, but it's the right solution going forward.</p></li>
+</ol>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </footer>
+    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write('<script src="/js/libs/backbone.min.js">\x3C/script>')</script>
+  <script src="/js/docs.js"></script>
+  <script>
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '/docs/Internationalization-tips/';
+      // todo: change this with something like h5bp.com/docs/docs/Internationalization-tips/
+      var disqus_url = exports.disqus_url= '/docs/Internationalization-tips/';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for /docs/Internationalization-tips/';
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    })(this);
+  </script>
+</body>
+</html>
