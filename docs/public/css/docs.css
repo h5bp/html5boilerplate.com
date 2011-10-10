@@ -14,6 +14,11 @@
 img[src$="server-logos.png"] { float: right; } 
 
 
+/* build script wizard */
+
+#build-script-wizard section { display:none; } /* hide sections by default. Using js to fade in first section. */
+
+
 /** disqussss */
 .docs #disqus_thread { display: block;}
 
