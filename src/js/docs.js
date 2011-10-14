@@ -254,7 +254,7 @@
   /* build script wizard */
 
   // show first panel
-  $("#build-script-wizard #wiki-panel-1").fadeIn();
+  $("#build-script-wizard panel-1").fadeIn();
 
   // navigation
   $("#build-script-wizard .nav").click(function(){
