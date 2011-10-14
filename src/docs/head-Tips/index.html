@@ -1,0 +1,275 @@
+<!doctype html public "✰">
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <title>head Tips | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/docs.css" >
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <div id="header">
+         <p class="lang">
+           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
+         </p>
+         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
+         <h2>A rock-solid default for HTML5 awesome.</h2>
+    </div>
+    <div id="body" class="docs">
+      <div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/960.gs/">960.gs</a></li>
+                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
+                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
+                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/Experimental/">Experimental</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
+                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
+                      <li><a href="/docs/head-Tips/">head Tips</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
+                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
+                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
+                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
+                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
+                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
+                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
+                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
+                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
+                      <li><a href="/docs/rake/">rake</a></li>
+                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
+                      <li><a href="/docs/The-markup/">The markup</a></li>
+                      <li><a href="/docs/The-style/">The style</a></li>
+                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
+                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
+                      <li><a href="/docs/web.config/">web.config</a></li>
+          </ul>
+      </div>
+      <div class="wikiconvertor-content wikistyle relative">
+        <p class="dwn">
+          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/head-Tips/_edit">Edit this page</a></span>
+        </P>
+        <p>Granularly adjust the way your application interacts with search engines, browsers, and other applications with easy-to-include elements within the <code><span class="tag">&lt;head&gt;</span></code> of your HTML documents.</p>
+
+<p><strong>Contributor:</strong> <a href="https://github.com/brianblakely">Brian Blakely</a> (Gmail: anewpage.media)</p>
+
+<h3>&lt;head&gt;</h3>
+
+<h5><a href="http://html5boilerplate.com/docs/DNS-Prefetching">DNS prefetching</a></h5>
+
+<p><strong>&#9733; Enable manual DNS prefetching.</strong></p>
+
+<p>Make a DNS handshake with a foreign domain, so the connection goes faster when the user eventually needs to access it.  This works well for loading in assets (like images) from another domain, or a JavaScript library from a CDN.<br /><code><br />&lt;link rel="dns-prefetch" href="//example.com" /&gt;<br />&lt;link rel="dns-prefetch" href="//ajax.googleapis.com" /&gt;<br /></code><br />You can use as many of these as you need, but it's best if they are all immediately after the <a href="https://developer.mozilla.org/en/HTML/Element/meta#attr-charset">Meta Charset</a> element (which should go right at the top of the &lt;head&gt;), so the browser can act on them ASAP.</p>
+
+<p><strong>&#9733; Disable automatic DNS prefetching.</strong></p>
+
+<p><code><br />&lt;meta http-equiv="x-dns-prefetch-control" content="off" /&gt;<br /></code><br /><strong><em>WARNING:</em></strong> THIS MAY MAKE YOUR SITE SLOWER IF YOU RELY ON RESOURCES FROM FOREIGN DOMAINS.</p>
+
+<h5>Read a lot more on our comprehensive page about <a href="http://html5boilerplate.com/docs/DNS-Prefetching">DNS prefetching</a></h5>
+
+<h5>Search</h5>
+
+<p><strong>&#9733; Direct Search Spiders to Your Sitemap</strong></p>
+
+<p><a href="http://www.sitemaps.org/protocol.php">Learn how to make a sitemap</a></p>
+
+<p><code><br />&lt;link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Hiding pages from search engines</strong></p>
+
+<p>According to Heather Champ, former community manager at flickr, you should not allow search engines to index your "Contact Us" or "Complaints" page if you value your sanity. This is an HTML-centric way of achieving that.</p>
+
+<p><code><br />&lt;meta name="robots" content="noindex" /&gt;<br /></code><br /><strong><em>WARNING:</em></strong> DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES.</p>
+
+<p><strong>&#9733; Firefox and IE Search Plugins</strong></p>
+
+<p>Sites with in-site search functionality should be strongly considered for a browser search plugin.  A "search plugin" is an XML file which defines how your plugin behaves in the browser. <a href="http://www.google.com/search?ie=UTF-8&amp;q=how+to+make+browser+search+plugin">How to make a browser search plugin</a>.<br /><code><br />&lt;link rel="search" title="" type="application/opensearchdescription+xml" href="" /&gt;<br /></code></p>
+
+<h5>Suppress IE6 Image Toolbar</h5>
+
+<p>Kill IE6's pop-up-on-mouseover toolbar for images that can interfere with certain designs and be pretty distracting in general.</p>
+
+<p><code><br />&lt;meta http-equiv="imagetoolbar" content="false" /&gt;<br /></code></p>
+
+<h5>IE9 Pinned Sites</h5>
+
+<p>Enabling your application for pinning will allow IE9 users to add it to their Windows Taskbar and Start Menu.  This comes with a range of new tools that you can easily configure with the elements below.  See more <a href="http://msdn.microsoft.com/en-us/library/gg131029.aspx">documentation on IE9 Pinned Sites</a>.</p>
+
+<p><strong>&#9733; Name the Pinned Site for Windows</strong></p>
+
+<p>Without this rule, Windows will use the page title as the name for your application.</p>
+
+<p><code><br />&lt;meta name="application-name" content="Sample Title" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Give Your Pinned Site a Tooltip</strong></p>
+
+<p>You know — a tooltip.  A little textbox that appears when the user holds their mouse over your Pinned Site's icon.</p>
+
+<p><code><br />&lt;meta name="msapplication-tooltip" content="A description of what this site does." /&gt;<br /></code></p>
+
+<p><strong>&#9733; Set a Default Page for Your Pinned Site</strong></p>
+
+<p>If the site should go to a specific URL when it is pinned (such as the homepage), enter it here. One idea is to send it to a special URL so you can track the number of pinned users, like so: <a href='http://www.example.com/index.html?pinned=true'>http://www.example.com/index.html?pinned=true</a></p>
+
+<p><code><br />&lt;meta name="msapplication-starturl" content="<a href='http://www.example.com/index.html?pinned=true'>http://www.example.com/index.html?pinned=true</a>" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Recolor Internet Explorer's Controls Manually</strong></p>
+
+<p>IE9 will automatically use the overall color of your Pinned Site's favicon to shade its browser buttons.  UNLESS you give it another color here. Only use named colors ("red") or hex colors ("#f00").</p>
+
+<p><code><br />&lt;meta name="msapplication-navbutton-color" content="#f00" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Manually Set the Window Size of a Pinned Site</strong></p>
+
+<p>If the site should open at a certain window size once pinned, you can specify the dimensions here. It only supports static pixel dimensions. 800x600 minimum.</p>
+
+<p><code><br />&lt;meta name="msapplication-window" content="width=800;height=600" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Jump List (Right-Click) "Tasks"</strong></p>
+
+<p>Add Jump List Tasks that will appear when the Pinned Site's icon gets a right-click. Each Task goes to the specified URL, and gets its own mini icon (essentially a favicon, a 16x16 .ICO).  You can add as many of these as you need.<br /><code><br />&lt;meta name="msapplication-task" content="name=Task 1;action-uri=<a href='http://host/Page1.html;icon-uri=http://host/icon1.ico'>http://host/Page1.html;icon-uri=http://host/icon1.ico</a>" /&gt;<br />&lt;meta name="msapplication-task" content="name=Task 2;action-uri=<a href='http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico'>http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico</a>" /&gt;<br /></code></p>
+
+<h5>Facebook Open Graph Data</h5>
+
+<p>You can control the information that Facebook displays when users share your site.  Below are just the most basic data points you might need.  Find many more by reading the <a href="http://developers.facebook.com/docs/share">Facebook Open Graph documentation</a>.<br /><code><br />&lt;meta property="og:title" content="" /&gt;<br />&lt;meta property="og:description" content="" /&gt;<br />&lt;meta property="og:image" content="" /&gt;<br /></code></p>
+
+<h5>URLs</h5>
+
+<p><strong>&#9733; Canonical URL</strong></p>
+
+<p>Signal to search engines and others "Use this URL for this page!" Useful when parameters after a # or ? is used to control the display state of a page.  <code><a href='http://www.example.com/cart.html?shopping-cart-open=true'>http://www.example.com/cart.html?shopping-cart-open=true</a></code> can be indexed as the cleaner, more accurate <code><a href='http://www.example.com/cart.html'>http://www.example.com/cart.html</a></code>.</p>
+
+<p><code><br />&lt;link rel="canonical" href="" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Official Shortlink</strong></p>
+
+<p>Signal to the world "This is the shortened URL to use this page!" Poorly supported at this time.  Learn more by reading the <a href="http://microformats.org/wiki/rel-shortlink">article about shortlinks on the Microformats wiki</a>.</p>
+
+<p><code><br />&lt;link rel="shortlink" href="h5bp.com" /&gt;<br /></code></p>
+
+<h5>News Feeds</h5>
+
+<p><strong>&#9733; RSS</strong></p>
+
+<p>Have an RSS feed? Link to it here. Want to <a href="http://www.rssboard.org/rss-specification">learn how to write an RSS feed from scratch</a>?</p>
+
+<p><code><br />&lt;link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" /&gt;<br /></code></p>
+
+<p><strong>&#9733; Atom</strong></p>
+
+<p>Atom is similar to RSS, and you might prefer to use it instead of or in addition to it. <a href="http://www.atomenabled.org/developers/syndication/">See what Atom's all about</a>.</p>
+
+<p><code><br />&lt;link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml" /&gt;<br /></code></p>
+
+<h5>Pingbacks</h5>
+
+<p>Your server may be notified when another site links to yours. The href attribute should contain the location of your pingback service.<br /><code><br />&lt;link rel="pingback" href="" /&gt;<br /></code></p>
+
+<ul>
+<li>High-level explanation: <a href='http://codex.wordpress.org/Introduction_to_Blogging#Pingbacks'>http://codex.wordpress.org/Introduction_to_Blogging#Pingbacks</a></li>
+<li>Step-by-step example case: <a href='http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5'>http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5</a></li>
+<li>PHP pingback service: <a href='http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/'>http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/</a></li>
+</ul>
+
+<h5>Humans.txt</h5>
+
+<p>If you want, you can also add a reference to the <a href="http://humanstxt.org/Standard.html">humans.txt</a>:</p>
+
+<p><code><br />&lt;link rel="author" href="/humans.txt" /&gt;<br /></code></p>
+
+<h3>&lt;/head&gt;</h3>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>
+        <em class="focus">Brought to you by</em>
+        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      </p> 
+      <ul>
+        <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
+        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
+        <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+      </ul> <br>
+      <p>It would not have been possible without the efforts of these superheroes:</p>
+      <ul>
+        <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
+        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
+        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
+        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
+        <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
+        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
+        <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
+        <li><a href="http://remysharp.com/">Remy Sharp</a></li>
+        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
+        <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
+        <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
+        <li><a href="http://miketaylr.com">Mike Taylor</a></li>
+        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://camendesign.com">Kroc Camen</a></li>
+        <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
+        <li><a href="http://peter.sh">Peter Beverloo</a></li>         
+        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
+        <li><a href="http://www.viget.com/inspire/">Viget</a></li>
+        <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
+        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+      </ul>
+    </footer>
+    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write('<script src="/js/libs/backbone.min.js">\x3C/script>')</script>
+  <script src="/js/docs.js"></script>
+  <script>
+    (function(exports) {
+      // with backbone pushState, we might want to move this in script.js
+      // http://docs.disqus.com/help/85/
+      var devmode = ( /file/.test(location.protocol) || /(localhost|dropbox)/.test(location.host) ) ? 1 : undefined;
+      // todo: edit this with appropriate shortname
+      var disqus_shortname = exports.disqus_shortname = 'h5bdocstest';
+      // todo: expose href variable
+      var disqus_identifier = exports.disqus_identifier = '/docs/head-Tips/';
+      // todo: change this with something like h5bp.com/docs/docs/head-Tips/
+      var disqus_url = exports.disqus_url= '/docs/head-Tips/';
+      var disqus_developer = exports.disqus_developer = devmode;
+      var disqus_title = exports.disqus_title = 'h5bp docs comment for /docs/head-Tips/';
+      // todo: delay comments loading like its done on the website?
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    })(this);
+  </script>
+</body>
+</html>
