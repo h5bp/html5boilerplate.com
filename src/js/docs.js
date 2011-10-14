@@ -251,5 +251,18 @@
 
   });
 
+  /* build script wizard */
+
+  // show first panel
+  $("#build-script-wizard #wiki-panel-1").fadeIn();
+
+  // navigation
+  $("#build-script-wizard .nav").click(function(){
+    var href = $(this).attr("href");
+    $(this).parents("section").fadeOut(function(){
+      $(href).fadeIn();
+    });
+  });
+
 })(this.jQuery, this.location, this.document, this);
 
