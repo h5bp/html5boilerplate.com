@@ -36,5 +36,4 @@ build: force
 	@python ./scripts/static_gettext.py --languages "${LANGUAGES}" --build
 	@echo "All done translating. New files are in ./built/"
 	@echo ""
-	@echo "You might want to consider manual docs update by running make docs... (but you'll have to make build again)"
 force: ;
