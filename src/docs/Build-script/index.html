@@ -27,6 +27,7 @@
         <ul>
                       <li><a href="/docs/960.gs/">960.gs</a></li>
                       <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
                       <li><a href="/docs/Build-script/">Build script</a></li>
                       <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
                       <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
@@ -44,8 +45,7 @@
                       <li><a href="/docs/Make-it-better/">Make it better</a></li>
                       <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
                       <li><a href="/docs/Mobile-References/">Mobile References</a></li>
-                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
-                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Notes-on-using-PNG/">Notes on using PNG</a></li>
                       <li><a href="/docs/Offline/">Offline</a></li>
                       <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
                       <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
@@ -100,7 +100,7 @@
 
 <h3>If you're on Mac or Linux...</h3>
 
-<p>You've got all your dependencies pre-installed, likely. You <em>may</em> need a <code><span class="pln">yum install ant</span><span class="pun">-</span><span class="pln">contrib</span></code> or what have you.</p>
+<p>You've got all your dependencies pre-installed, likely. You <em>may</em> need a <code><span class="pln">yum install ant</span><span class="pun">-</span><span class="pln">contrib</span></code> or what have you.<br />On Mac , people using ports can run the following command <code><span class="pln">port install ant</span><span class="pun">-</span><span class="pln">contrib</span></code></p>
 
 <h3>If you're on Windows...</h3>
 
@@ -285,7 +285,7 @@
 <li>so all of mylibs min files go into /libs-xxx.min.js</li>
 <li>all scripts/*.min.js go into scripts-xxx.min.js</li>
 <li>and then those get smushed together into scripts-xxx.min.js again.</li>
-<li>Check out issue <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/165">#165 </a> for everything that's planned for next version</li>
+<li>Check out issue <a href="https://github.com/h5bp/html5-boilerplate/issues/165">#165 </a> for everything that's planned for next version</li>
 <li>Although not officially supported, it is possible to set the publish directory to a relative path outside the project folder. This is useful for generating a snapshot onto a staging server, for instance. In order to do so, set the publish directory to a path relative to the project: <code><span class="pln">dir</span><span class="pun">.</span><span class="pln">publish </span><span class="pun">=</span><span class="pln"> </span><span class="pun">../</span><span class="pln">mysite</span><span class="pun">/</span></code>. Then tell the htmlcompressor script to put the files back where it found them, instead of defining a specific directory. In build.xml, this line <code><span class="tag">&lt;mapper</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"glob"</span><span class="pln"> </span><span class="atn">from</span><span class="pun">=</span><span class="atv">"*"</span><span class="pln"> </span><span class="atn">to</span><span class="pun">=</span><span class="atv">"../${dir.publish}/*"</span><span class="tag">/&gt;</span></code> becomes this line <code><span class="tag">&lt;mapper</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"glob"</span><span class="pln"> </span><span class="atn">from</span><span class="pun">=</span><span class="atv">"*"</span><span class="pln"> </span><span class="atn">to</span><span class="pun">=</span><span class="atv">"*"</span><span class="tag">/&gt;</span></code>.</li>
 <li>Intermediate stages are stored in a new intermediate folder, and only files that should be published are copied into the publish folder.</li>
 <li>Files are not deleted at the beginning of every build, and files that have already been processed will not be reprocessed unless the source has changed.</li>
@@ -380,7 +380,7 @@
         <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
-        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+        <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">More Contributors</a></li>
       </ul> <br>
       <p>It would not have been possible without the efforts of these superheroes:</p>
       <ul>

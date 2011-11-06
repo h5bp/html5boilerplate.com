@@ -27,6 +27,7 @@
         <ul>
                       <li><a href="/docs/960.gs/">960.gs</a></li>
                       <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
                       <li><a href="/docs/Build-script/">Build script</a></li>
                       <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
                       <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
@@ -44,8 +45,7 @@
                       <li><a href="/docs/Make-it-better/">Make it better</a></li>
                       <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
                       <li><a href="/docs/Mobile-References/">Mobile References</a></li>
-                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
-                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Notes-on-using-PNG/">Notes on using PNG</a></li>
                       <li><a href="/docs/Offline/">Offline</a></li>
                       <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
                       <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
@@ -75,7 +75,7 @@
 <ul>
 <li>Use a script loader like <a href="http://github.com/SlexAxton/yepnope.js">yepnope.js</a> in combo with your <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 polyfills</a> to bring the future to all browsers.
 <ul><li>yepnope.js is already part of Modernizr. So you can use it right away.</li></ul></li>
-<li><a href="http://github.com/paulirish/html5-boilerplate/issues/closed#issue/115/comment/439219">Tell your users to Enable JavaScript</a> (maybe with a link to <a href="http://enable-javascript.com/">enable-javascript.com</a>)</li>
+<li><a href="https://github.com/h5bp/html5-boilerplate/issues/115/#issuecomment-439219">Tell your users to Enable JavaScript</a> (maybe with a link to <a href="http://enable-javascript.com/">enable-javascript.com</a>)</li>
 <li><a href="http://beckelman.net/post/2009/02/16/Use-jQuery-to-Show-a-Linke28099s-Address-After-its-Text-When-Printing-In-IE6-and-IE7.aspx">Simulate link printing in IE with JS</a></li>
 <li>Kick off your page-specific javascript <a href="http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/">based on your markup</a>.</li>
 </ul>
@@ -90,14 +90,15 @@
 <li>Using border-radius with a border in Webkit? Try <a href="http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed">-webkit-background-clip</a> to fix the bleed.</li>
 <li>Write <a href="http://css-tricks.com/efficiently-rendering-css/">efficient CSS</a> for optimum browser performance.</li>
 <li><p>Know your available <a href="http://paulirish.com/2009/browser-specific-css-hacks">browser CSS hacks</a>.</p></li>
-<li><p>Gecko-based browsers (Firefox, Flock) have a <a href="https://github.com/paulirish/html5-boilerplate/issues/issue/94">outline bug on buttons</a>(<a href="http://jsfiddle.net/4U3yw/show/">demo</a>). The solution is to add:<br /><code><span class="pln">button</span><span class="pun">:</span><span class="pln">focus </span><span class="pun">{</span><span class="pln"> outline</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="lit">1px</span><span class="pun">;</span><span class="pln"> outline</span><span class="pun">-</span><span class="pln">style</span><span class="pun">:</span><span class="pln">dotted</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> button</span><span class="pun">::-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">focus</span><span class="pun">-</span><span class="pln">inner </span><span class="pun">{</span><span class="pln"> padding</span><span class="pun">:</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> border</span><span class="pun">:</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> <br />(Thanks <a href="http://github.com/ivannikolic">Ivannikolic</a>)</p></li>
+<li><p>Gecko-based browsers (Firefox, Flock) have a <a href="https://github.com/h5bp/html5-boilerplate/issues/94">outline bug on buttons</a>(<a href="http://jsfiddle.net/4U3yw/show/">demo</a>). The solution is to add:<br /><code><span class="pln">button</span><span class="pun">:</span><span class="pln">focus </span><span class="pun">{</span><span class="pln"> outline</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="lit">1px</span><span class="pun">;</span><span class="pln"> outline</span><span class="pun">-</span><span class="pln">style</span><span class="pun">:</span><span class="pln">dotted</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> button</span><span class="pun">::-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">focus</span><span class="pun">-</span><span class="pln">inner </span><span class="pun">{</span><span class="pln"> padding</span><span class="pun">:</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> border</span><span class="pun">:</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code> <br />(Thanks <a href="http://github.com/ivannikolic">Ivannikolic</a>)</p></li>
 <li><a href="http://snook.ca/archives/html_and_css/fieldset-nested-list-item-bug">Fieldset nested in a list item bug in Firefox</a> - description, test case and fix.</li>
 <li>Style input placeholders with <a href="http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css">vendor-prefixed extensions</a></li>
-<li>If <code><span class="pln">hr</span></code> has a width, make sure you have <code><span class="pln">text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> left</span></code> also set for consistent rendering across all browsers. IE8 renders the <code><span class="pln">hr</span></code> in the center while others align it to the left. (see <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/297">#297</a>)</li>
+<li>If <code><span class="pln">hr</span></code> has a width, make sure you have <code><span class="pln">text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> left</span></code> also set for consistent rendering across all browsers. IE8 renders the <code><span class="pln">hr</span></code> in the center while others align it to the left. (see <a href="https://github.com/h5bp/html5-boilerplate/issues/297">#297</a>)</li>
 <li>Consider less visually intese colors for text selection when the <a href="http://css-tricks.com/window-inactive-styling/">window is inactive</a>.</li>
 <li>If you're building a web app you may want <a href="http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/">native style momentum scrolling in iOS5</a> using <code><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">overflow</span><span class="pun">-</span><span class="pln">scrolling</span><span class="pun">:</span><span class="pln"> touch</span></code>.</li>
 <li>Using <code><span class="pln">text</span><span class="pun">-</span><span class="pln">decoration</span><span class="pun">:</span><span class="pln"> underline</span><span class="pun">;</span></code> for anchors cause some issues specially for languages that have dots under some letters. Use <code><span class="pln">border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid currentcolor</span><span class="pun">;</span></code> in such cases. Note: consider that <code><span class="pln">text</span><span class="pun">-</span><span class="pln">shadow</span></code> does not effect borders.</li>
 <li>You can add <code><span class="pln">hyphen</span></code> to hyphenate your text, <a href="http://drublic.de/blog/css3-auto-hyphenation-for-text-elements/">read more here</a></li>
+<li>Consider <a href="https://gist.github.com/1275792">not setting :hover states for touch devices</a></li>
 </ul>
 
 <h2>HTML</h2>
@@ -120,7 +121,7 @@
 <li><p>To remove gloss from iPhone home screen rel value should be "apple-touch-icon-precomposed"</p></li>
 <li><a href="http://www.ravelrumba.com/blog/android-apple-touch-icon/">How to make Android recognize Apple Touch Icons</a></li>
 <li>Use the <a href="http://drublic.de/blog/html5-boilerplate-favicons-psd-template/">favicon PSD template</a> to generate all of the touch icons</li>
-<li>Read more on <a href="https://github.com/paulirish/html5-boilerplate/wiki/DNS-Prefetching">DNS-Prefetching</a></li>
+<li>Read more on <a href="/docs/DNS-Prefetching/">DNS-Prefetching</a></li>
 <li>Use <code><span class="pln">table</span><span class="pun">-</span><span class="pln">layout</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">fixed</span></code> to make <a href="http://eriwen.com/css/use-the-table-layout-css-property-to-speed-up-table-rendering/">large tables render faster</a></li>
 </ul>
 
@@ -128,7 +129,7 @@
 
 <ul>
 <li>If you can, implement raw DEFLATE compression instead of GZIP; DEFLATE is faster and always results in a smaller output. <a href="http://stackoverflow.com/questions/1574168/deflate-compression-browser-compatibility-and-advantages-over-gzip">Deflate compression browser compatibility and advantages over GZIP</a>. (Note: Apache's <code><span class="pln">mod_deflate</span></code> outputs GZIP)</li>
-<li>Using trailing-slash-redirects <a href="https://github.com/paulirish/html5-boilerplate/wiki/Proper-usage-of-trailing-slash-redirects">Proper usage of trailing slash redirects</a></li>
+<li>Using trailing-slash-redirects <a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
 </ul>
 
 <h2>Misc</h2>
@@ -139,13 +140,13 @@
 <li><p>Consider some opinionated <a href="http://webdosanddonts.com/">web do's and web dont's</a></p></li>
 <li>Get your team hooked using the same <a href="http://molecularvoices.molecular.com/standards/">front-end coding standards and best practices</a>.</li>
 <li>What should a developer know before building a public web site? <a href="http://stackoverflow.com/questions/72394/what-should-a-developer-know-before-building-a-public-web-site">Stackoverflow</a> great summaries.</li>
-<li>Read more on <a href="https://github.com/paulirish/html5-boilerplate/wiki/Common-Analytics-Augments">Common-Analytics-Augments</a></li>
+<li>Read more on <a href="/docs/Common-Analytics-Augments/">Common-Analytics-Augments</a></li>
 <li>Screen readers currently have less-than-stellar support for HTML5 but the JS script <a href="https://github.com/yatil/accessifyhtml5.js">accessifyhtml5.js</a> can help increase accessibility by adding ARIA roles to HTML5 elements</li>
 </ul>
 
 <h3>Using a mobile-first approach</h3>
 
-<p>Consider setting your base styles and mobile-friendly less-image-heavy styles first, and <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/166">use media queries to set the more intensive desktop friendly styles</a>. Our 2.0 release includes <a href="https://github.com/scottjehl/Respond">respond.js</a> within the modernizr.js and enables all media-queries to work in IE6, 7 and 8.</p>
+<p>Consider setting your base styles and mobile-friendly less-image-heavy styles first, and <a href="https://github.com/h5bp/html5-boilerplate/issues/166">use media queries to set the more intensive desktop friendly styles</a>. Our 2.0 release includes <a href="https://github.com/scottjehl/Respond">respond.js</a> within the modernizr.js and enables all media-queries to work in IE6, 7 and 8.</p>
         <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
@@ -165,7 +166,7 @@
         <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
-        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+        <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">More Contributors</a></li>
       </ul> <br>
       <p>It would not have been possible without the efforts of these superheroes:</p>
       <ul>

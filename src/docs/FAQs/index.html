@@ -27,6 +27,7 @@
         <ul>
                       <li><a href="/docs/960.gs/">960.gs</a></li>
                       <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
+                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
                       <li><a href="/docs/Build-script/">Build script</a></li>
                       <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
                       <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
@@ -44,8 +45,7 @@
                       <li><a href="/docs/Make-it-better/">Make it better</a></li>
                       <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
                       <li><a href="/docs/Mobile-References/">Mobile References</a></li>
-                      <li><a href="/docs/nginx.conf/">nginx.conf</a></li>
-                      <li><a href="/docs/Notes-on-using-png/">Notes on using png</a></li>
+                      <li><a href="/docs/Notes-on-using-PNG/">Notes on using PNG</a></li>
                       <li><a href="/docs/Offline/">Offline</a></li>
                       <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
                       <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
@@ -69,7 +69,7 @@
         <h2>wtf is this thing?</h2>
 
 <ul>
-<li>boilerplate ships with a default configuration for the apache <strong>web server</strong>. It's documented in <a href="/docs/.htaccess/">.htaccess</a>. Configuration files for  <a href="/docs/web.config/">web.config</a>, <a href="/docs/nginx.conf/">nginx.conf</a>, node.js, and lighthttpd are available in our <a href="https://github.com/paulirish/html5-boilerplate-server-configs/">server-configs</a> repo.</li>
+<li>boilerplate ships with a default configuration for the apache <strong>web server</strong>. It's documented in <a href="/docs/htaccess/">htaccess</a>. Configuration files for  <a href="/docs/web.config/">web.config</a>, <a href="/docs/nginx.conf/">nginx.conf</a>, node.js, and lighthttpd are available in our <a href="https://github.com/h5bp/server-configs/">server-configs</a> repo.</li>
 <li>A custom build of <strong>Modernizr</strong> which includes: 
 <ul><li>Modernizr itself which detects HTML5 and CSS3 features and adds classes to the html tag to let you style accordingly. <a href="/docs/http:/modernizr.com/docs//"><a href='http://modernizr.com/docs/'>http://modernizr.com/docs/</a></a></li>
 <li>Respond.js which is a polyfill that allows you to use media queries with browsers that do not support media queries such as IE6, 7, &amp; 8 <a href="/docs/https:/github.com/scottjehl/Respond/"><a href='https://github.com/scottjehl/Respond'>https://github.com/scottjehl/Respond</a></a>.</li>
@@ -94,7 +94,7 @@
 <h2>No Seriously, it's Boilerplate's fault!</h2>
 
 <ul>
-<li>If that's the case, <a href="https://github.com/paulirish/html5-boilerplate/issues">submit an issue</a> ASAP! Even better if you know the solution, as that would make it faster to fix (everyone wins!) </li>
+<li>If that's the case, <a href="https://github.com/h5bp/html5-boilerplate/issues">submit an issue</a> ASAP! Even better if you know the solution, as that would make it faster to fix (everyone wins!) </li>
 </ul>
 
 <h2>Why is the URL for jQuery without "http"?</h2>
@@ -106,7 +106,7 @@
 <h2>Can I integrate <a href="http://960.gs/">960.gs</a> with HTML5 Boilerplate?</h2>
 
 <ul>
-<li>But of course! <a href="http://github.com/paulirish/html5-boilerplate/wiki/960.gs">Here are some details on integrating 960.gs with HTML5 Boilerplate.</a></li>
+<li>But of course! <a href="http://github.com/h5bp/html5-boilerplate/wiki/960.gs">Here are some details on integrating 960.gs with HTML5 Boilerplate.</a></li>
 </ul>
 
 <h2>If I don't want to support IE6 and I don't want my sites to be IE6 compatible so I can make them lighter, what parts should I remove?</h2>
@@ -115,17 +115,17 @@
 <li>The conditional comments around  the html tag and the conditional include of support for transparent pngs at the bottom should be sufficient in the HTML.  </li>
 <li>In the CSS, just remove all selectors that start with .ie6.</li>
 <li>There are a few style properties that start with <code><span class="pln">_</span></code> for the ie6 hack. You can kill those too, if you're feeling daring.</li>
-<li>a <code><span class="pln">list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln">none</span></code> style that only is necessary for IE6 and IE7 is in the <code><span class="pln">nav ul</span></code> styles. (<a href="https://github.com/paulirish/html5-boilerplate/issues/closed#issue/263">issue #263</a>)</li>
+<li>a <code><span class="pln">list</span><span class="pun">-</span><span class="pln">style</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln">none</span></code> style that only is necessary for IE6 and IE7 is in the <code><span class="pln">nav ul</span></code> styles. (<a href="https://github.com/h5bp/html5-boilerplate/issues/263">issue #263</a>)</li>
 <li>As of Boilerplate 2.0 we already prompt IE6 users to install Chrome Frame for a better experience. </li>
 </ul>
 
 <h2>I get 404 errors and page not found errors, what is the cause?</h2>
 
-<p>Most probably, this is caused by the redirect script in .htaccess, read more about it at the following wiki page: <a href="/docs/proper-usage-of-trailing-slash-redirects/">proper usage of trailing slash redirects</a></p>
+<p>Most probably, this is caused by the redirect script in .htaccess, read more about it at the following wiki page: <a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></p>
 
 <h2>I can't get EmulateIE8 mode to work in IE9 Beta</h2>
 
-<p>The use of conditional comments on the HTML tag seem to trigger IE9 Beta to only render on IE9 Standards mode. If you want to use EmulateIE8 mode, use the conditional comments on the body tag. <a href="https://github.com/paulirish/html5-boilerplate/issues/issue/125">more in issue 125</a></p>
+<p>The use of conditional comments on the HTML tag seem to trigger IE9 Beta to only render on IE9 Standards mode. If you want to use EmulateIE8 mode, use the conditional comments on the body tag. <a href="https://github.com/h5bp/html5-boilerplate/issues/125">more in issue 125</a></p>
 
 <h2>Why is the analytics code at the bottom? Google recommends we put it in the head</h2>
 
@@ -150,7 +150,7 @@
 
 <h2>The phone numbers are looking twice as large and have a Skype highlight!</h2>
 
-<p>Some of your users might have installed the Skype browser extension, which detects phone numbers and lets them automatically dial them with a click. Disabling change of style is documented <a href="https://github.com/paulirish/html5-boilerplate/issues#issue/237">here</a>. </p>
+<p>Some of your users might have installed the Skype browser extension, which detects phone numbers and lets them automatically dial them with a click. Disabling change of style is documented <a href="https://github.com/h5bp/html5-boilerplate/issues#issue/237">here</a>. </p>
 
 <h2>Help! IE does not seem to apply styles to :focus?!</h2>
 
@@ -190,7 +190,7 @@
 
 <h2>Is anything in the .htaccess conflicting with a wordpress theme, or can I just update my .htaccess with boiler plate goodness?</h2>
 
-<p>Theoretically none, but we have not investigated this. There are <a href="https://github.com/paulirish/html5-boilerplate/wiki/">Wordpress themes already available that work with H5BP</a> extensively, you can use them as a reference when you create yours. </p>
+<p>Theoretically none, but we have not investigated this. There are <a href="https://github.com/h5bp/html5-boilerplate/wiki/">Wordpress themes already available that work with H5BP</a> extensively, you can use them as a reference when you create yours. </p>
 
 <h2>Is there a way to integrate this with Zend Framework and still use the build script?</h2>
 
@@ -224,7 +224,7 @@
         <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
-        <li><a href="https://github.com/paulirish/html5-boilerplate/contributors">More Contributors</a></li>
+        <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">More Contributors</a></li>
       </ul> <br>
       <p>It would not have been possible without the efforts of these superheroes:</p>
       <ul>

@@ -263,7 +263,7 @@ img[src$='chrome-frame.png'] { margin-top: -2em; }
   text-indent: 0;
   border-radius: 2px;
   padding: 1px 6px;
-  border-bottom: 1px dotted  #fe57a1;;
+  border-bottom: 1px dotted  #fe57a1;
 }
 .festal:hover {
   background: #fe57a1;
