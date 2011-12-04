@@ -92,18 +92,20 @@ html[lang='he'] em, html[lang='he'] h3 { font-family: 'AharoniCLMBold', Arial, s
 
 
 /* we do not need to link to ourselves. only our friends. <3 */
-html[lang="en-us"] #header p.lang, 
-html[lang="en-us"] p.lang a[lang="en-us"],
+html[lang="en-us"] .english #header p.lang, 
 html[lang="de-de"] p.lang a[lang="de-de"],
-html[lang="pt-br"] p.lang a[lang="pt-br"],
+html[lang="en-us"] p.lang a[lang="en-us"],
+html[lang="es"] p.lang a[lang="es"],
 html[lang="fr-fr"] p.lang a[lang="fr-fr"],
-html[lang="ro-ro"] p.lang a[lang="ro-ro"],
-html[lang="it"]    p.lang a[lang="it"],
-html[lang="nl"]    p.lang a[lang="nl"],
-html[lang="sr"]    p.lang a[lang="sr"],
 html[lang="he"] p.lang a[lang="he"],
-html[lang="ja"] p.lang a[lang="ja"] {
-  display : none;
+html[lang="it"] p.lang a[lang="it"],
+html[lang="ja"] p.lang a[lang="ja"],
+html[lang="nl"] p.lang a[lang="nl"],
+html[lang="pt-br"] p.lang a[lang="pt-br"],
+html[lang="ro-ro"] p.lang a[lang="ro-ro"],
+html[lang="ru"] p.lang a[lang="ru"],
+html[lang="sr"] p.lang a[lang="sr"] {
+	display : none;
 }
 
 /* HEADINGS */

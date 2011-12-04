@@ -1,5 +1,7 @@
 if (!/^en/.test(navigator.language)){
-  document.body.className += ' notenglish';
+	document.body.className += ' notenglish';
+} else {
+	document.body.className += ' english';
 }
 
 SyntaxHighlighter.config.tagName = 'code';
