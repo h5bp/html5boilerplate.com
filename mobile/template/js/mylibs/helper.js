@@ -56,7 +56,7 @@ MBP.hideUrlBar = function () {
 
 
 // Fast Buttons - read wiki below before using
-// https://github.com/shichuan/mobile-html5-boilerplate/wiki/JavaScript-Helper
+// https://github.com/h5bp/mobile-boilerplate/wiki/JavaScript-Helper
 
 MBP.fastButton = function (element, handler) {
     this.element = element;
@@ -134,7 +134,7 @@ MBP.coords = [];
 
 
 // iOS Startup Image
-// https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/2
+// https://github.com/h5bp/mobile-boilerplate/issues#issue/2
 
 MBP.splash = function () {
     var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
