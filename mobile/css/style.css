@@ -240,13 +240,17 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 @media only screen and (min-width: 800px) {
   #frame { display: inline-block; }
   #source, #ppt { display: block; }
-#container b.border-a,
-#container b.border-b,
-#container b.border-c,
-#container b.border-d { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; -o-transform: scale(1.5) rotate(-45deg); -o-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
-#container b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; -o-transform: scale(1.5) rotate(45deg); -o-transform-origin: 80% 0%; left: auto; right: -1em; }
-#container b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; -o-transform: scale(1.5) rotate(-45deg); -o-transform-origin: 20% 0%; left: 2em; top: 0; }
-#container b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%;  -o-transform: scale(1.5) rotate(45deg); -o-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
+  
+  #container b.border-a,
+  #container b.border-b,
+  #container b.border-c,
+  #container b.border-d { display: block; position: fixed; top: 50%; left: -1em; width: 1em; height: 100%; z-index: -1; background: #212624; -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; -o-transform: scale(1.5) rotate(-45deg); -o-transform-origin: 20% 0%; border: 1px dotted #1e2322; }
+
+  #container b.border-b { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%; -o-transform: scale(1.5) rotate(45deg); -o-transform-origin: 80% 0%; left: auto; right: -1em; }
+
+  #container b.border-c { -webkit-transform: scale(1.5) rotate(-45deg); -webkit-transform-origin: 20% 0%; -moz-transform: scale(1.5) rotate(-45deg); -moz-transform-origin: 20% 0%; -o-transform: scale(1.5) rotate(-45deg); -o-transform-origin: 20% 0%; left: 2em; top: 0; }
+
+  #container b.border-d { -webkit-transform: scale(1.5) rotate(45deg); -webkit-transform-origin: 80% 0%; -moz-transform: scale(1.5) rotate(45deg); -moz-transform-origin: 80% 0%;  -o-transform: scale(1.5) rotate(45deg); -o-transform-origin: 80% 0%; left: auto; right: 2em; top: 0; }
 
 }/*/mediaquery*/
 
