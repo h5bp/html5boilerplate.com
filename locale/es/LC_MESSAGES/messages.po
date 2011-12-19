@@ -35,7 +35,7 @@ msgstr "Una base dura como la roca para HTML5."
 
 #: src/index.html:40
 msgid "I'm new here: plz explain why it's so awesome, first."
-msgstr "Soy nuevo aquí: por favor, explíqueme por qué es tan genial, primero"
+msgstr "Soy nuevo aquí: por favor, explíqueme por qué es tan genial, primero."
 
 #: src/index.html:43
 msgid ""
@@ -87,7 +87,7 @@ msgstr "Preparado para HTML5. Usa las nuevas etiquetas con total seguridad."
 #: src/index.html:52
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr ""
-"Recomendaciones sobre caché y compresión para alcanzar el nivel A de "
+"Reglas de caché y compresión para alcanzar el nivel A de "
 "rendimiento"
 
 #: src/index.html:53
@@ -101,7 +101,7 @@ msgstr "Optimizaciones para navegadores móviles"
 #: src/index.html:55
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
-msgstr "Mejora progresiva con degradación gradual &hellip; sí, lo conseguimos!"
+msgstr "Mejora progresiva con degradación gradual &hellip; sí!, lo conseguimos!"
 
 #: src/index.html:56
 msgid "IE specific classes for maximum cross-browser control"
@@ -170,12 +170,12 @@ msgstr "Descargar Boilerplate {{ version }}"
 #: src/index.html:78
 #, fuzzy
 msgid "Updated Aug 10th"
-msgstr "Actualizado el 21 de Marzo"
+msgstr "Actualizado el 18th de Diciembre"
 
 #: src/index.html:81
 #, fuzzy
 msgid "<u>Download</u> Boilerplate "
-msgstr "Descargar Boilerplate {{ version }}"
+msgstr "<u>Descargar</u> Boilerplate {{ version }}"
 
 #: src/index.html:81
 msgid "Keep the hints and links"
@@ -188,7 +188,7 @@ msgstr "o"
 #: src/index.html:83
 #, fuzzy
 msgid "<u>Download</u> Boilerplate \"stripped\""
-msgstr "Boilerplate \"pelado\""
+msgstr "Boilerplate \"Limpio\""
 
 #: src/index.html:83
 msgid "No comments, just the bizniss."
@@ -196,7 +196,7 @@ msgstr "Sin comentarios, sólo el código"
 
 #: src/index.html:85
 msgid "<u>Customize</u> Boilerplate"
-msgstr ""
+msgstr "Boilerplate <u>Personalizado</u>"
 
 #: src/index.html:85
 msgid "100&percnt; hipster."
@@ -214,7 +214,7 @@ msgstr "jQuery minificado"
 #: src/index.html:92
 #, fuzzy
 msgid "Unminified"
-msgstr "jQuery minificado"
+msgstr "jQuery sin minificar"
 
 #: src/index.html:96
 msgid "Server Config"
@@ -222,7 +222,7 @@ msgstr "Configuración de Servidor"
 
 #: src/index.html:102
 msgid "Others"
-msgstr ""
+msgstr "Otros"
 
 #: src/index.html:103
 msgid "All IE classes"
@@ -235,11 +235,11 @@ msgstr ""
 #: src/index.html:105
 #, fuzzy
 msgid "Google Analytics Snippet"
-msgstr "Snippet de Analytics"
+msgstr "Snippet de Google Analytics"
 
 #: src/index.html:106
 msgid "User-installable Chrome Frame for IE6"
-msgstr ""
+msgstr "Frame de Chrome instalable por el usuario para IE6"
 
 #: src/index.html:109
 #, fuzzy
@@ -279,7 +279,7 @@ msgstr ""
 
 #: src/index.html:127
 msgid "Happy Birthday!"
-msgstr ""
+msgstr "Feliz cumpleaños"
 
 #: src/index.html:128
 msgid ""
