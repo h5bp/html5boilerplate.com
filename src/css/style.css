@@ -173,16 +173,14 @@ p.lang,.bptext { font-size: 0.8em; }
 
 
 
-/* BUTTONS */                                               
-.dwn a, a[href="#dsq-content"], #builder-download { position: relative; display: inline-block; padding: 0.5em 1.5em; line-height: 1em; background: rgba(225, 103, 52, 0.6); color: #e3d7bf; margin: 0 0.5em; box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: box-shadow 0.2s ease-out; -o-transition: box-shadow 0.2s ease-out; -webkit-transition: box-shadow 0.2s ease-out; -ms-transition: box-shadow 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; } 
 
-.dwn a { padding: 0.15em 2.5em 0.5em;  }
-.dwn a u { text-decoration: none; display: block; text-transform: uppercase; font-size: 0.7em; text-shadow: none; color: #222; }
+/* BUTTONS */                                               
+.dwn a, a[href="#dsq-content"], #builder-download { position: relative; display: inline-block; padding: 0.5em 1.5em; line-height: 1em; background: rgba(225, 103, 52, 0.6); color: #e3d7bf; margin: 0 0.5em; text-shadow: black 0px 1px 0px; -moz-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -webkit-box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.3); -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -webkit-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; letter-spacing: 0.5px; direction:ltr; } 
 .dwn a:before, a[href="#dsq-content"]:before,  a#builder-download:before { content: ""; position: absolute; top: 0; left: 0; right: 0; border: 1em solid; border-color: transparent #232927; }   
 
-.dwn a:before { border-width: 1.3em; }
+.dwn a:hover, a[href="#dsq-content"]:hover,  a#builder-download:hover { -moz-box-shadow: inset 0px 0px 30px #8b4020; -webkit-box-shadow: inset 0px 0px 30px #8b4020; box-shadow: inset 0px 0px 30px #8b4020; } 
 
-.dwn a:hover, a[href="#dsq-content"]:hover,  a#builder-download:hover { box-shadow: inset 0px 0px 30px #8b4020; } 
+.focus #builder-download:before { border-color: transparent hsl(163, 6%, 23%); }
 
 
 
