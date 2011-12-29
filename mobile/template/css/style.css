@@ -15,7 +15,7 @@
  */
 
 /* Prevent mobile zooming while remain desktop zooming.
-   github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 
+   https://github.com/h5bp/mobile-boilerplate/issues/14
  */
 body {
     -webkit-text-size-adjust: 100%;
@@ -51,7 +51,7 @@ textarea[contenteditable] {-webkit-appearance: none;}
 
 
 /*
- * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
+ * Media queries for responsive design https://github.com/h5bp/mobile-boilerplate/wiki/The-Style
  */
 
 
