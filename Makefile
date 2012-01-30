@@ -27,7 +27,7 @@ docs: force
 	git submodule update --init
 	cd docs/wiki-upstream && git pull origin master && cd ../..
 	@echo "Let's build the docs..."
-	/usr/local/bin/h5bp-docs --config docs-config.js
+	node ../h5bp-docs/bin/h5bp-cli.js --config docs-config.js 
 	@echo ""
 	@echo "All done. New docs files are in ./src/docs/"
 
