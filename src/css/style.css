@@ -73,12 +73,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 /* PRIMARY STYLES */
-@font-face { font-family: "MolotRegular"; src: url('../assets/Molot.eot'); src: local("../assets/Molot"), local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
-@font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot'); src: url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
+@font-face { font-family: "MolotRegular"; 
+  src: url('../assets/Molot.eot?#iefix') format('embedded-opentype'),
+   local("../assets/Molot"), url('../assets/Molot.woff') format("woff"), url('../assets/Molot.ttf') format("truetype"), url('../assets/Molot.svg#Molot') format("svg"); }
+@font-face { font-family: "InsolentRegular"; src: url('../assets/insolent.eot?#iefix') format('embedded-opentype'), url('../assets/insolent.woff') format('woff'), url('../assets/insolent.ttf') format('truetype'), url('../assets/insolent.svg#webfontD7S5Wv86') format('svg'); }
 
 /* Hebrew */
 @font-face {
-    font-family: 'AharoniCLMBold'; src: url('../assets/aharoniclm-bold-webfont.eot'); src: url('../assets/aharoniclm-bold-webfont.eot?iefix') format('eot'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf')  format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); } 
+    font-family: 'AharoniCLMBold';  src: url('../assets/aharoniclm-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/aharoniclm-bold-webfont.woff') format('woff'), url('../assets/aharoniclm-bold-webfont.ttf')  format('truetype'), url('../assets/aharoniclm-bold-webfont.svg#webfont2BBJ9RJ7') format('svg'); } 
 
     
 
