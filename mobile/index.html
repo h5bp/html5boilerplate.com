@@ -20,7 +20,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
   <link rel="apple-touch-startup-image" href="mobile/images/l/splash.png"> 
   <meta http-equiv="cleartype" content="on"> 
-  <link rel="stylesheet" href="mobile/css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <link rel="stylesheet" href="mobile/css/shCore.css"> 
   <script src="mobile/js/libs/modernizr-custom.js"></script>
 </head> 
@@ -48,44 +48,60 @@
     
     <div id="main">
       <section> 
-        <h3>v2.0 Changelog</h3> 
+        <h3>v3.0 Changelog</h3> 
+        <h4>index.html</h4> 
         <ul> 
         <!--index.html-->
-        <li>Prevent links from opening in mobile safari webapp view</li>
-        <li>Fix conditional loading of Media Query Polyfill</li>
-        <li>Updated respond.js with the latest version</li>
-        <li>Default to minified jquery, like we did in H5BP</li>
-        <li>Replaced XHTML-style meta tag with HTML-style tag</li>
-        <li>Removed whitespaces</li>
-        <li>Cleanup, converted to LF instead of CRLF</li>
-        <li>Removed broken charset stuff</li>
-        <li>Added reference link to prevent links in apps scripts</li>
-        <li>Changed to single quotes in doc.write</li>
-        <li>Compressed standalone app script</li>
-        <li>Moved webapp script alongside respective the meta tag</li>
-        <!--style.css-->
-        <li>Changed stylesheet order in build tool</li>
-        <li>Adding mozilla min-device-pixel-ratio variant</li>
-        <li>Hand cursor on all elements with ARIA role button</li>
-        <li>Target attribute instead of class</li>
-        <!--script.js-->
-        <li>Improved MBP.hideUrlBar for iOS and Android</li>
-        <!--.htaccess-->
-        <li>Added default file types to filter</li>
-        <li>Added blackberry vcards MIME type</li>
-        <!--general-->
-        <li>Add .gitattributes</li>
-        <li>Use lowercase PDF extension</li>
-        <li>Updated .gitignore</li>
+          <li>removed initial-scale=1.0 from meta</li>
+          <li>excluded scalefix by default</li>
+          <li>updated startup tablet landscape dimensions</li>
+          <li>added lang attr to be consistent with h5bp</li>
+          <li>removed meta author to be consistent with h5bp</li>
+        </ul>
+        <h4>JavaScript</h4> 
+        <ul>       
+          <li>added MBP.enableActive</li>
+          <li>fixes MBP.hideUrlBar() when addEventListener is undefined</li>
+          <li>added preventing iOS from zooming onfocus</li>
+          <li>working around a tricky bug in Android 2.3 to MBP.fastButton</li>
+          <li>removed respond.js</li>
+          <li>splited hideUrlBar into an intial function, and a general use function cached the scrollTop so that only needs to be detected once</li>
+          <li>moved helper.js one level up</li>
+          <li>updated jQuery to 1.7.1 and added missing fallback local file</li>
+          <li>added iPod (Touch) to MBP.scaleFix</li>
+          <li>updated modernizr to the latest version</li>
+        </ul>
+        <h4>CSS</h4> 
+        <ul>
+          <li>removed input::-moz-focus-inner as it is not required on Firefox on Mobile</li>
+          <li>removed the ellipsis helper class to be consistent with @h5bp</li>
+        </ul>
+        <h4>Build</h4>
+        <ul>
+          <li>updated the build script to match the new one</li>
+          <li>updated the tools in ant script</li>
+          <li>fixes for reference errors (file and variable) encountered after an initial build</li>
         </ul> 
+        <h4>General</h4>
+        <ul>
+          <li>fixed some indentation issue</li>
+          <li>fixed broken links</li>
+          <li>made 404 page consistent with h5bp</li>
+          <li>fixed links used in README markdown</li>
+          <li>removed /demo and /test</li>
+          <li>update README and clarify aim of the project</li>
+          <li>included further details about the project contents and how to get involved</li>
+          <li>described that Mobile Boilerplate is for mobile web applications development rather than 'mobile first' responsive development</li>
+          <li>removed analytics and wspl</li>
+        </ul>
       </section> 
       <section> 
       <h3>Want to dive in?</h3> 
-      <p class="bptext">Download the v2.0</p>
+      <p class="bptext">Download the v3.0</p>
       <p class="dwn"> 
-        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v2.0">Boilerplate documented</a> <small>Keep the hints and links</small></span>       
+        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0">Boilerplate documented</a> <small>Keep the hints and links</small></span>       
         <i>or</i> 
-        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v2.0stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
+        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
       </p> 
       <p class="social">
         <i> 
@@ -131,11 +147,10 @@
           <li>Textarea autogrow</li> 
           <li>Hide Safari browser chrome</li> 
           <li>Mobile bookmark bubble</li> 
-          <li>Browser Database Wrapper API</li> 
           <li>Robust optional User Agent Detection in .htaccess</li> 
           <li>Mobile optimized default CSS</li> 
           <li>Media queries polyfill for Windows Mobile</li> 
-          <li>Google Analytics for low end mobile devices</li> 
+          <li>Preventing iOS from zooming onfocus</li>
         </ul> 
       </section> 
       <section id="source"> 
