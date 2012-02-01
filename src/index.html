@@ -40,7 +40,7 @@
          <a href="#intro" class=introtoggle>{% blocktrans %}I'm new here: plz explain why it's so awesome, first.{% endblocktrans %}</a>
            
          <div id="intro" > 
-           <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-safe site.{% endblocktrans %}</p>
+           <p>{% blocktrans %}HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site.{% endblocktrans %}</p>
            <p>{% blocktrans %}After more than three years in iterative development, you get the best of the best practices baked in: cross-browser normalization, performance optimizations, even optional features like cross-domain Ajax and Flash. A starter apache .htaccess config file hooks you the eff up with caching rules and preps your site to serve HTML5 video, use @font-face, and get your gzip zipple on.{% endblocktrans %}</p>
            <p>{% blocktrans %}Boilerplate is not a framework, nor does it prescribe any philosophy of development, it's just got some tricks to get your project off the ground quickly and right-footed.{% endblocktrans %}</p>
        
@@ -75,16 +75,15 @@
 
     <div id="body">
 
-      <p class="bptext">{% blocktrans with "3.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small>{% blocktrans %}Updated Aug 10th{% endblocktrans %}</small></p>
+      <p class="bptext">{% blocktrans with "2.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small>{% blocktrans %}Updated Aug 10th{% endblocktrans %}</small></p>
 
       <p class="dwn">
-        <span><a href="http://github.com/h5bp/html5-boilerplate/zipball/v3.0">{% blocktrans %}<u>Download</u> Boilerplate {% endblocktrans %}</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
+        <span><a href="http://github.com/h5bp/html5-boilerplate/zipball/v2.0">{% blocktrans %}<u>Download</u> Boilerplate {% endblocktrans %}</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
         <i>{% blocktrans %}or{% endblocktrans %}</i>
-        <span><a href="http://github.com/h5bp/html5-boilerplate/zipball/v3.0stripped">{% blocktrans %}<u>Download</u> Boilerplate "stripped"{% endblocktrans %}</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
+        <span><a href="http://github.com/h5bp/html5-boilerplate/zipball/v2.0stripped">{% blocktrans %}<u>Download</u> Boilerplate "stripped"{% endblocktrans %}</a> <small>{% blocktrans %}No comments, just the bizniss.{% endblocktrans %}</small></span>
         <i>{% blocktrans %}or{% endblocktrans %}</i>        
         <span><a id="builder-custom" href="#builder">{% blocktrans %}<u>Customize</u> Boilerplate{% endblocktrans %}</a> <small>{% blocktrans %}100&#37; hipster.{% endblocktrans %}</small></span>        
       </p>
-
       <div class="focus">
         <div id="builder">     
           <div id="jquery">
@@ -111,83 +110,333 @@
         </div>        
       </div>    
 
-			<p class="social">
-				<i>
-					<a href="//html5boilerplate.com/docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
-					<a href="http://github.com/h5bp/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>             
-					</i>
-					<i>
-						<a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>      
-						<a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a>
-				 </i>
+      <p class="social"><i>
+        <a href="//html5boilerplate.com/docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
+        <a href="http://github.com/h5bp/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>             
+      </i><i>
+        <a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>      
+        <a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a>
+       </i>
       </p>
     
   <div class="new" id="v2">
-    <h3>{% blocktrans %}HTML5 Boilerplate is 3.0!{% endblocktrans %}</h3>
-    <small>{% blocktrans %}Monday, Feb 6th, 2012{% endblocktrans %}</small>
-		<p>{% blocktrans %}The key feature of this update is making Boilerplate smaller. Most of the changes have been working towards that. We have significant work done to our build script, so much so that we thought it <a href="#">deserved its own repository</a>. Meanwhile, here is what's new.{% endblocktrans %}</p>      
-          
+    <h3>{% blocktrans %}HTML5 Boilerplate is 2.0!{% endblocktrans %}</h3>
+    <small>{% blocktrans %}Wednesday, Aug 10th, 2011{% endblocktrans %}</small>
+    <p></p>
+    <div class="notice">
+      <h4>{% blocktrans %}Happy Birthday!{% endblocktrans %}</h4>
+      <p>{% blocktrans %}H5BP is a year old! We launched on August 10th, 2010 and now we've got a plethora of new, exciting changes that comprise our 2.0 release. We've also added <a href="http://mathiasbynens.be/">Mathias Bynens</a> and <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>, two very talented frontend researchers and developers, to the core development team. The highlights of 2.0 are below, followed by a more comprehensive changelog.{% endblocktrans %}</p>      
+    </div>
+     <div class="notice">       
+       <h4>NORMALIZE.CSS</h4>
+       <img src="./img/normalize.png" width="200px" >
+       <p>{% blocktrans %}We are now using <a href="http://github.com/necolas/normalize.css/">normalize.css</a> developed by Nicolas Gallagher along with Jonathan Neal instead of the traditional CSS Reset stylesheet.{% endblocktrans %}</p>
+       <p>{% blocktrans %}normalize.css retains useful browser defaults and includes several common fixes to improve cross-browser (desktop and mobile) styling consistency.{% endblocktrans %}</p>
+
+       <p>{% blocktrans %}Lots of research has gone into normalize, verifying what are the default user agent styles provided by each browser. We can very specifically change only the ones we need to instead of the bulldozer approach.{% endblocktrans %}</p>
+
+       <p>{% blocktrans %}Why this is great news:{% endblocktrans %}</p>
+       <ul>
+       <li>{% blocktrans %}Who likes being so damn redundant and declaring: <code style="font-size:90%">em, i { font-style: italic; }</code>{% endblocktrans %}</li>
+       <li>{% blocktrans %}By using normalization instead of a reset + building up default styles, we use less styles and save bytes{% endblocktrans %}</li>
+       <li>{% blocktrans %}Less noise in your dev tools: when debugging, you don't have to trawl through every reset selector to reach the actual style that is causing the issue.{% endblocktrans %}</li>
+       <li>{% blocktrans %}More details on the <a href="http://necolas.github.com/normalize.css/">project page</a>{% endblocktrans %}</li>
+       </ul>               
+     </div>
+ 
+    <div class="notice">  
+      <h4>{% blocktrans %}BUILD SCRIPT++: Faster, @import inlining, appcache generation{% endblocktrans %}</h4>
+      <p>{% blocktrans %}If 15 seconds was too long to wait before, you'll be happy with the changes. Via a new "intermediate" folder, we cut down build time by 80% or more.{% endblocktrans %}
+      <p>{% blocktrans %}If you use <code>@import</code>s in your CSS to author in multiple files, the build script will inline all these together. This way, you have a maintainable authoring experience, and still a highly performant production version.{% endblocktrans %}
+      <p>{% blocktrans %}Making an app that works offline is a badge of honor. Now with a flick of a config switch, the H5BP build script can autogenerate your cache manifest file with all the right info and wire it up. It'll also keep the manifest revved as you deploy new changes.{% endblocktrans %}
+    </div> 
+    
+    <div class="notice">
+       <h4>{% blocktrans %}PROMPT CHROME FRAME FOR IE6{% endblocktrans %}</h4>
+        <img src="./img/chrome-frame.png">      
+       <ul>
+         <li>{% blocktrans %}With the latest release of Chrome frame which does not require admin access to be installed, we felt it was a good time to prompt IE 6 users to install Chrome Frame.{% endblocktrans %}</li>      
+       </ul>
+     </div>
+    
+     
+    <div class="notice">
+      <h4>RESPOND.JS</h4>
+      <ul>
+        <li>{% blocktrans %}Added <a href="https://github.com/scottjehl/Respond#readme">respond.js</a> as part of a shift to a responsive approach. You can now use media queries anywhere and get full IE6-8 support.{% endblocktrans %}</li>      
+      </ul>      
+    </div>
+    <div class="notice">
+      <h4>{% blocktrans %}PNGFIX &amp; HANDHELD REMOVED{% endblocktrans %}</h4>
+      <ul>
+        <li>{% blocktrans %}We removed handheld.css as we do not think it was useful among the diverse feature phones{% endblocktrans %}</li>
+        <li>{% blocktrans %}We feel tools like <a href="http://pornel.net/imagealpha">imagealpha</a> and <a href="http://pornel.net/pngquant">pngquant</a>, and techniques like <a href="http://html5boilerplate.com/docs/Notes-on-using-png/">using 8-bit PNGs</a> are more useful than using stopgap fixes like belatedpng.{% endblocktrans %}</li>      
+      </ul>      
+    </div> 
     <div class="changelog">
       <h3>{% blocktrans %}Changelog{% endblocktrans %}</h3>
-      <p>{% blocktrans %}3.0 gets some major updates <a href="https://github.com/h5bp/html5-boilerplate/compare/v2.0...v3.0">Here are all the commits since last release</a>.{% endblocktrans %}</p>
-      <p><a href="http://html5boilerplate.com/docs/FAQs/#do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good.{% endblocktrans %}</p>
-
-			<h4>{% blocktrans %}Significant changes{% endblocktrans %}</h4>
-		 
-			<ul class="sigcommits">
-				 <li>{% blocktrans %}Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and <code>/js/mylibs</code>.{% endblocktrans %}
-				 <li>{% blocktrans %}Build script is now a separate project, <a href="#">Read about how to get and use the build script</a>{% endblocktrans %}
-				 <li>{% blocktrans %}Respond.js is no longer available by default. <a href="#">Read about what you should consider for your mobile development strategy</a>.{% endblocktrans %}
-       </ul>                                                                                                                                        
+      <p>{% blocktrans %}2.0 also gets a lot of  major updates <a href="https://github.com/h5bp/html5-boilerplate/compare/v1.0...v2.0">Here are all 299 commits since last release,</a> brought to you by over <a href="https://github.com/h5bp/html5-boilerplate#readme">49 contributors</a>.{% endblocktrans %}</p>
+      <p><a href="http://html5boilerplate.com/docs/FAQs/#do-i-need-to-upgrade-my-sites-to-a-new-version">{% blocktrans %}Should you upgrade existing sites</a>? Short answer: nah, you're good. <small>(Though dropping in the new build script and .htaccess would be cool)</small>{% endblocktrans %}</p>
 
 
-			<h4>index.html</h4>
+      <h4>index.html</h4>
       <ul>
-				<li>{% blocktrans %} Chromeframe no longer applied via script. IE6 users are served links to install Chromeframe or visit Browsehappy to choose an alternative browser.  {% endblocktrans %}
-        <li>{% blocktrans %}Meta viewport updated to prevent iOS scaling bugs.  {% endblocktrans %}
-        <li>{% blocktrans %}<code>html</code> IE classes now target lower than a specific version rather than explicitly specified versions.  {% endblocktrans %}
-        <li>{% blocktrans %}Switch back to the optimized asynchronous Google Analytics snippet instead of using <code>Modernizr.load</code>.  {% endblocktrans %}
-        <li>{% blocktrans %}Drop <code>refer</code> from all scripts to avoid legacy IE bugs.{% endblocktrans %}
-        <li>{% blocktrans %}Design of the 404 has been improved.{% endblocktrans %}
+        <li>{% blocktrans %}Use minified jQuery by default (now 1.6.2){% endblocktrans %}
+
+        <li>{% blocktrans %}Add respond.js as part of shift to &#8216;mobile first&#8217; approach.{% endblocktrans %}
+
+        <li>{% blocktrans %}Updated to Modernizr 2.0 Complete, Production minified (incl yepnope & respond).{% endblocktrans %}
+
+        <li>{% blocktrans %}Prompt IE 6 users to install Chrome Frame{% endblocktrans %}
+
+        <li>{% blocktrans %}Removing touch icon link tags and retaining only the comment.{% endblocktrans %}
+
+        <li>{% blocktrans %}Encourage people to send the <code>X-UA-Compatible</code> HTTP header instead of leaving it in the HTML, to avoid edge case issues.{% endblocktrans %}
+
+        <li>{% blocktrans %}Remove the cache-busting query parameters from the HTML.{% endblocktrans %}
+
+        <li>{% blocktrans %}Simplify the conditional comment containing code for IE 9+ and modern browsers{% endblocktrans %}
+
+        <li><a href="http://mathiasbynens.be/notes/etago">{% blocktrans %}Simpler escape for <code>&lt;/script&gt;</code>{% endblocktrans %}</a>.
+
+        <li>{% blocktrans %}Encourage people to use a custom Modernizr build containing only the features they need for that particular project.{% endblocktrans %}
+
+        <li>{% blocktrans %}Added <a href="http://mathiasbynens.be/notes/touch-icons#sizes">maximum touch-icon support</a>.{% endblocktrans %}
+
+        <li>{% blocktrans %}Add a link to optional &lt;meta> tags that could be added to the &lt;head> element.{% endblocktrans %}
+
+        <li>{% blocktrans %}Standardize{% endblocktrans %} <a href="http://html5boilerplate.com/docs/The-markup/#quotes">{% blocktrans %}the use of single and double quotes</a>.{% endblocktrans %}
+
+        <li>{% blocktrans %}Added Site Speed tracking for Google Analytics{% endblocktrans %} 
+        
+        <li>{% blocktrans %}Google Analytics now retrieved with <code>Modernizr.load()</code> for byte brevity and optimal speed{% endblocktrans %} 
+             
       </ul>
 
       <h4>style&shy;.css</h4>
       <ul>
-        <li>{% blocktrans %}Removed default font sizes and line heights to provide a much better robust default.  {% endblocktrans %}
-        <li>{% blocktrans %}Additions made to normalize.css and to provide better default typography.{% endblocktrans %}
-        <li>{% blocktrans %}More robust .ir helper class.{% endblocktrans %}
-        <li>{% blocktrans %}No more forced scrollbars, this impedes projects like jQuery UI, and others in calculating widths.{% endblocktrans %}
+        <li>{% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles.{% endblocktrans %}
+
+        <li>{% blocktrans %}Add &#8216;oldie&#8217; class to conditional &lt;html> classnames. {% endblocktrans %}
+
+        <li>{% blocktrans %}Add <code>img { max-width: 100%; }</code> to print styles to prevent images from getting cut off.{% endblocktrans %}
+
+        <li>{% blocktrans %}Update clearfix to use <a href="http://nicolasgallagher.com/micro-clearfix-hack/">&#8216;micro&#8217; clearfix</a>{% endblocktrans %}
+
+        <li>{% blocktrans %}Add placeholder CSS MQs for mobile-first approach{% endblocktrans %}
+
+        <li>{% blocktrans %}Tweaking our hot pink <code>::selection</code>. It is now <code>#fe57a1</code>, which is &hellip; <dd class="festal"><b>Festal</b> <i>(adj)</i>: pertaining to or befitting a feast, festival, holiday, or gala occasion.</dd>{% endblocktrans %}
+
+        <li>{% blocktrans %}Use black for links when printing{% endblocktrans %}
+
+        <li>{% blocktrans %}added <code>vertical-align: middle</code> to fix borders on image containers. {% endblocktrans %}
+
+        <li>{% blocktrans %}Add &lt;svg> overflow fix for IE9. Group &lt;img> and &lt;svg> rules in an &#8216;embedded content&#8217; section of CSS file. Add <code>{cursor:pointer}</code> to &lt;label> element.{% endblocktrans %}
+
+        <li>{% blocktrans %}Switch to <code>outline:0</code> for accessible focus treatment. Avoids Opera bug when combined with transitions. Also saves bytes.{% endblocktrans %}
+
+        <li>{% blocktrans %}Set <code>{overflow:auto}</code> for &lt;button> and &lt;input> in &lt;table> in IE6/7. Avoids numerous layout and whitespace issues that result from setting <code>{overflow:visible}</code> to fix the odd inner spacing of those form elements.{% endblocktrans %}
+
+        <li>{% blocktrans %}Add <code>{resize: vertical}</code> to &lt;textarea>. Only allow vertical resizing{% endblocktrans %}
+
       </ul>
       
+      <h4>{% blocktrans %}Build Script{% endblocktrans %}</h4>
+      <ul>
+        <li>{% blocktrans %}CSSLint, JSLint, JSHint tools are now optionally available in the build script{% endblocktrans %}</li>
+        <li>{% blocktrans %}New features in build script:{% endblocktrans %}
+          <p>{% blocktrans %}Added a files.bypass property  which when set, will not compress the listed JavaScript files, but just silently passes it on to the publish folder without any change. {% endblocktrans %}</p>
+          <p>{% blocktrans %}Added a images.bypass with a list of image files or folders within the img directory that you do not want to be optimized. {% endblocktrans %} </p>
+        </li>
+        <li>{% blocktrans %}Build script is compatible with php files now. it appears. </li>{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script compatible with Ant >= 1.8.2. Error message otherwise. {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}removes concatenated css files from index.html when they are linked to with link tag. {% endblocktrans %}</li>
+        <li>{% blocktrans %}Concatenated script is added with a <code>@defer</code> attribute </li>{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Added DOCTYPE so <a href="http://stackoverflow.com/questions/363768/disable-dtd-warning-for-ant-scripts-in-eclipse">Eclipse and other IDE&#8217;s do not complain about the lack of schema</a>.{% endblocktrans %}</li>
+ 
+        <li>{% blocktrans %}Minification affects all .css and .js files in /css and /js dirs,  not just the ones explicitly included in concatenation.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script: compress all images in subfolders, too.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Added gae.js dir and gae.css dir so that App Engine projects can have the correct directory names swapped in their templates.{% endblocktrans %}</li>
+ 
+        <li>{% blocktrans %}Improved build script compatibility with Netbeans IDE.  {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Adding properties to project.properties so that Google App Engine builds don&#8217;t have &#8220;static&#8221; prepended when swapping for minified versions.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}console.log messages are no longer commented out for you. use log() instead{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Much faster build process{% endblocktrans %}
+          <p>{% blocktrans %}Files are not deleted at the beginning of every build, and files that have already been processed will not be reprocessed unless the source has changed. A new "intermediate" folder is used for this.{% endblocktrans %}</p>        
+        </li>
+
+
+        <li>{% blocktrans %}Files are revved by SHA hash, not incrementally at each build{% endblocktrans %}
+          <p>{% blocktrans %}Versioned files are referenced by a SHA-1 hash of the content rather than a build number. This means that changing your HTML and rebuilding will not cause your users to redownload the same CSS and JavaScript, and a reverted change may cause users to use a copy that was previously downloaded. It may be better to use only part of the hash so the HTTP request is shorter.{% endblocktrans %}</p>        
+        </li>
+
+        <li>{% blocktrans %}copy files last This slightly simplifies copying because we don&#8217;t have to exclude PNG, JPEG, or HTML files from the copy stage. it comes preminified, and we don&#8217;t need to minify it again This also updates the HTML so that the script is not missing if the unminified scripts are unavailable on the server. This commit requires a change to existing HTML files :/{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Build script no longer upgrades expires headers in the htaccess. 1yr for everyone! {% endblocktrans %}</li>
+
+        <li>{% blocktrans %}update yuicompressor to 2.4.5. Fixes media query minification issue that shipped with 1.0{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}update htmlcompressor to 1.4.3 which uses the new yuicompressor for CSS and fixed a bunch of edgecasey php bugs users had.{% endblocktrans %}</li>
+
+        <li>{% blocktrans %}Lots of bug fixes for edge cases and improved techniques..{% endblocktrans %}</li>
+        
+      </ul>
+
 
       <h4>{% blocktrans %}Project{% endblocktrans %}</h4>
       <ul>
-        <li>{% blocktrans %}Updated to Modernizr 3.0{% endblocktrans %}
-        <li>{% blocktrans %}Updated to jQuery 1.7.1{% endblocktrans %}
-        <li>{% blocktrans %}Improved .htaccess{% endblocktrans %}
+        <li>{% blocktrans %}gitignore additions: textmate project folder, older CVS folders,  sass_cache.{% endblocktrans %}
+
+        <li>{% blocktrans %}Update HTML elements demo: reduce repetition, remove deprecated elements, add certain HTML5 elements, add more comprehensive collection of HTML5 input types, include different form markup styles, add form elements box-sizing test{% endblocktrans %}
+
+        <li>{% blocktrans %}Add .gitattributes to help with consistent line endings{% endblocktrans %}
+
+        <li>{% blocktrans %}Changed curly quotes to straight quotes in crossdomain.xml{% endblocktrans %}
+
+
       </ul>
-		</div>
+
+      <h4>{% blocktrans %}Webserver Configs{% endblocktrans %}</h4>
+      <h5>.htaccess</h5>
+      <ul>
+        <li>{% blocktrans %}Disable directory browsing by default{% endblocktrans %}
+        <li>{% blocktrans %}removed trailing slash redirects in htaccess. <a href="https://github.com/h5bp/html5-boilerplate/wiki/Proper-usage-of-trailing-slash-redirects">More</a>{% endblocktrans %}
+
+        <li>{% blocktrans %}Updating TTF mimetype to fix Google Chrome warning{% endblocktrans %}
+
+        <li>{% blocktrans %}Improved support for all versions of Apache, including workaround for bug in <code>mod_filter</code>.{% endblocktrans %}
+
+        <li>{% blocktrans %}<b>Way better</b> and more robust gzip rules. {% endblocktrans %}
+
+        <li>{% blocktrans %}Add gzip support for XHTML, RSS, Atom{% endblocktrans %}
+
+        <li>{% blocktrans %}Added m4a (Need it for IE9) and m4v (HandBrake default) MIME types.{% endblocktrans %}
+
+        <li>{% blocktrans %}added <code>Header unset ETag</code> In some servers setting <code>FileETag None</code> alone, is not enough. Removing header and setting it to None fixes the issue.{% endblocktrans %}
+
+        <li>{% blocktrans %}Add <code>Options +FollowSymlinks</code> when <code>RewriteEngine</code> is used. Fixes #489.{% endblocktrans %}
+
+        <li>{% blocktrans %}Some more security for PHP: turn off error display and turn on error logging{% endblocktrans %}
+
+        <li>{% blocktrans %}Allow Blackberry to read vCards, because those people are swell.  {% endblocktrans %}      
+      </ul>     
+       <h5>{% blocktrans %}nginx, node.js, lighttpd, google app engine, IIS{% endblocktrans %}</h5>     
+       <ul>
+         <li>{% blocktrans %}Lots of updates and fixes. View the official <a href="https://github.com/h5bp/server-configs/">h5bp server configs repo{% endblocktrans %}</a>
+       </ul>
+       
+       <h4>{% blocktrans %}Significant commits{% endblocktrans %}</h4>
+       <p>{% blocktrans %}The commit messages on these commits are particularly fun and worth a read if you're into frontend research{% endblocktrans %}</p>
+       
+       <ul class="sigcommits">
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/26a391c">26a391c</a></samp> {% blocktrans %}Revert "Added native iOS inertia scrolling"{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/ddaf66a">ddaf66a</a></samp> {% blocktrans %}Major: Now using css normalization instead of css reset + building up default styles{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/e5e057e">e5e057e</a></samp> {% blocktrans %}Change our conditional comments around the HTML tag to use a single .oldie class.{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/7f53f98">7f53f98</a></samp> {% blocktrans %}Revert "Change our conditional comments around the HTML tag to use a single .oldie class."{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/648026d">648026d</a></samp> {% blocktrans %}Tweaking our hot pink ::selection based on a suggestion from David Murdoch and research from Adam Diehm.{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/0e1c7ba">0e1c7ba</a></samp> {% blocktrans %}Use minified jQuery by default.{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/a0ac99a">a0ac99a</a></samp> {% blocktrans %}optimize build process{% endblocktrans %}
+         <li><samp><a href="https://github.com/h5bp/html5-boilerplate/commit/bb22ca6">bb22ca6</a></samp> {% blocktrans %}Remove the cache-busting query parameters from the HTML.{% endblocktrans %}
+       </ul>                                                                                                                                        
+
+    </div>
   </div>
-	 
-		<div class="videos" id="videos">
-			<h3>{% blocktrans %}Videos{% endblocktrans %}</h3>
-			<ul>
-				 <li><a href="http://www.youtube.com/watch?v=NMEB78VX2P0"> 
-					 <img src="/img/gettingstarted-thumb.jpg" alt="Video on Boilerplate">            
-					 {% blocktrans %}Ready to get started?{% endblocktrans %}</a> <strong>{% blocktrans %}new!{% endblocktrans %}</strong></li>
-				<li><a href="http://www.youtube.com/watch?v=OXpCB3U_4Ig"> 
-					<img src="/img/buildscript-thumb.jpg" alt="Video on Boilerplate">            
-					{% blocktrans %}Intro to the Build Script{% endblocktrans %}</a> <strong>{% blocktrans %}new!{% endblocktrans %}</strong></li>
-				<li><a href="http://www.youtube.com/watch?v=oDlsOyPKUTM">
-					<img src="/img/video-lowdown-thumb.jpg" alt="Video on Boilerplate">            
-					{% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a>
-				</li>
-				<li><a href="http://www.youtube.com/watch?v=qyM37XKkmKQ"> 
-					<img src="/img/video-thumb.png" alt="Video on Boilerplate">            
-					{% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</a></li>        
-			</ul>
-		</div>
-	</div>
+     
+      <div class="source">
+        <h3 id="thesource">{% blocktrans %}Walk through it with me, now{% endblocktrans %}</h3>
+
+        <h4><a href="#" title="{% blocktrans %}click to see the code of{% endblocktrans %} index.html">index.html</a></h4>
+        <pre id="block-1" class="brush:html">{% include "template/index.html" %}</pre>
+
+        <h4><a href="#" title="{% blocktrans %}click to see the code of{% endblocktrans %} style.css">style&shy;.css</a></h4>
+        <pre id="block-2" class="brush:css">{% include "template/css/style.css" %}</pre>
+
+        <h4><a href="#" title="{% blocktrans %}click to see the code of{% endblocktrans %} plugins.js">plugins.js</a></h4>
+        <pre id="block-3" class="brush:js">{% include "template/js/plugins.js" %}</pre>
+
+        <h4><a href="#" title="{% blocktrans %}click to see the code of{% endblocktrans %} script.js">script.js</a></h4>
+        <pre id="block-4" class="brush:js">{% include "template/js/script.js" %}</pre>
+
+        <h4><a href="#"  title="{% blocktrans %}click to see the code of{% endblocktrans %} robots.txt">robots.txt</a></h4>
+        <pre class="brush:xml">{% include "template/robots.txt" %}</pre>
+
+        <h4><a href="#"  title="{% blocktrans %}click to see the code of{% endblocktrans %} humans.txt">humans.txt</a></h4>
+        <pre class="brush:xml">{% include "template/humans.txt" %}</pre>
+
+        <h4><a href="#" title="{% blocktrans %}click to see the code of{% endblocktrans %} .htaccess">.htaccess</a></h4>
+        <pre class="brush:apache">{% include "template/htaccess.txt" %}</pre>        
+      </div>
+      <div class="videos" id="videos">
+        <h3>{% blocktrans %}Videos{% endblocktrans %}</h3>
+          <ul>
+             <li><a class="active" href="#video-getstarted"> 
+               <img src="/img/gettingstarted-thumb.jpg" alt="Video on Boilerplate">            
+               {% blocktrans %}Ready to get started?{% endblocktrans %}</a> <strong>{% blocktrans %}new!{% endblocktrans %}</strong></li>
+            <li><a href="#video-buildtool"> 
+              <img src="/img/buildscript-thumb.jpg" alt="Video on Boilerplate">            
+              {% blocktrans %}Intro to the Build Script{% endblocktrans %}</a> <strong>{% blocktrans %}new!{% endblocktrans %}</strong></li>
+            <li><a href="#video-lowdown">
+              <img src="/img/video-lowdown-thumb.jpg" alt="Video on Boilerplate">            
+              {% blocktrans %}Get the lowdown in 40 minutes, flat!{% endblocktrans %}</a>
+            </li>
+            <li><a href="#video-digdeeper"> 
+              <img src="/img/video-thumb.png" alt="Video on Boilerplate">            
+              {% blocktrans %}Dig deeper in 60 minutes{% endblocktrans %}</a></li>        
+          </ul>
+          <div id="video-getstarted" class="video video-active">
+            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/NMEB78VX2P0" frameborder="0" allowfullscreen></iframe>'>
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/NMEB78VX2P0?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/NMEB78VX2P0?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
+            </noscript>          
+          </div>
+          <div id="video-buildtool" class="video">
+            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/OXpCB3U_4Ig" frameborder="0" allowfullscreen></iframe>'>
+              <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/OXpCB3U_4Ig?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/OXpCB3U_4Ig?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
+            </noscript>          
+          </div>
+          
+          <div id="video-lowdown" class="video">
+            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/oDlsOyPKUTM" frameborder="0" allowfullscreen></iframe>'>
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/oDlsOyPKUTM?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/oDlsOyPKUTM?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
+            </noscript>          
+          </div>
+          <div id="video-digdeeper" class="video ">
+            <noscript data-html='<iframe title="YouTube video player" src="http://www.youtube.com/embed/qyM37XKkmKQ" frameborder="0" allowfullscreen></iframe>'>  
+               <object style="height: 390px; width: 640px">
+	            <param name="movie" value="http://www.youtube.com/v/qyM37XKkmKQ?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded">
+	            <param name="allowFullScreen" value="true">
+	            <embed src="http://www.youtube.com/v/qyM37XKkmKQ?version=3&amp;autohide=1&amp;fs=1&amp;feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+               </object>
+            </noscript>          
+          </div> 
+
+     
+        </div>
+                
+        <div class="recos"> 
+          <h3>{% blocktrans %}Make it even better!{% endblocktrans %}</h3> 
+          <p><a href="http://html5boilerplate.com/docs/#Make-it-Better">{% blocktrans %}Read the docs for how to take your own boilerplate further.{% endblocktrans %}</a></p>          
+        </div>                
+    </div>
     <footer id="footer">
       <h3>{% blocktrans %}Brought to you by{% endblocktrans %}</h3>      
       <p>
@@ -202,8 +451,24 @@
         <li><a href="http://twitter.com/verekia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
+        <li>Dave Kirk</li> 
+        <li><a href="http://twitter.com/ultror">nlogax</a></li>
+        <li><a href="http://www.vervestudios.co/">David Murdoch</a></li>
+        <li><a href="http://www.ad7six.com/">Andy Dawson</a></li>    
+        <li><a href="http://www.mintusability.com">Mikko Tikkanen</a></li> 
+        <li><a href="http://adeelejaz.com/">Adeel Ejaz</a></li> 
+        <li><a href="https://github.com/mdonoughe">Matthew Donoughe</a></li>
+        <li><a href="https://github.com/darktable">Calvin Rein</a></li>
+        
+        
         <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">{% blocktrans %}More Contributors{% endblocktrans %}</a></li>
       </ul> 
+      <br>
+      
+      <a id="v1" class="announcements" href="1.0-release.html">{% blocktrans %}View the archived H5BP 1.0 Release announcement and changelog{% endblocktrans %}</a>.
+      
+      
+      <br>
       
       <p>{% blocktrans %}It would not have been possible without the efforts of these superheroes:{% endblocktrans %}</p>
       
@@ -221,19 +486,30 @@
         <li><a href="http://peter.sh">Peter Beverloo</a></li>         
         <li><a href="http://www.viget.com/inspire/">Viget</a></li>
         <li><a href="http://stevesouders.com/">Steve Souders</a></li>
+        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
         <li><a href="http://na.isobar.com/standards/">Isobar Creative Technology team</a></li>
       </ul>
     </footer>
          
+    <div class="disqus-wrapper">
+      <div id="disqus_thread">
+        <h3>{% blocktrans %}Comments{% endblocktrans %}</h3>
+        <p>{% blocktrans %}If you have any questions about the code, we encourage you to <a href="http://h5bp.com/docs">read HTML5 Boilerplate's extensive documentation</a>, plus you can ask questions in the comment thread at the bottom of each docs page.{% endblocktrans %}</p>
+
+        <p>{% blocktrans %}If you have ideas for changes to the project, join <a href="http://h5bp.com/group">the H5BP community on github</a> and file a ticket!{% endblocktrans %}</p>
+      </div>
+    </div>
   </div>
 
+  <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="50">
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
   
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/plugins.js?v=2"></script>
+  <script src="js/script.js?v=2"></script>
   <!-- end scripts-->
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
