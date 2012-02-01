@@ -7,6 +7,8 @@ RewriteRule ^images(.*)$ http://html5boilerplate.com/img/$1 [L,R=301]
 RewriteRule ^docs/build-script$ http://html5boilerplate.com/docs/Build-script/ [L,R=301]
 RewriteRule ^docs/faqs$ http://html5boilerplate.com/docs/FAQs/ [L,R=301]
 RewriteRule ^docs/head$ http://html5boilerplate.com/docs/html-head/ [L,R=301]
+RewriteRule ^docs/head-Tips$ http://html5boilerplate.com/docs/html-head/ [L,R=301]
+
 
 RewriteRule ^mobile/mobile$ http://html5boilerplate.com/mobile/ [L,R=301]
 
