@@ -1,74 +1,32 @@
 <!doctype html public "✰">
-<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-  <title>Build script | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="/css/style.css" >
-  <link rel="stylesheet" href="/css/docs.css" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width">  
+  <link rel="stylesheet" media="screen" href="../css/style.css" >
+  <!-- JavaScript at the bottom, except for Modernizr -->
   <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
   <div id="container" class="wikiconvertor"> 
     <div id="header">
-         <p class="lang">
-           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
-         </p>
-         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
-         <h2>A rock-solid default for HTML5 awesome.</h2>
+			 <p class="dwn">
+				 <a class="home" href="/">&#8618; Return to the HTML5 Boilerplate website</a>
+				<a class="edit-page" href="//github.com/h5bp/html5-boilerplate/wiki/Build-script/_edit">Edit this page</a>
+			 </p>
+			 <h1>HTML5  <i>&#x2605;</i> Boilerplate Docs</h1> 
     </div>
-    <div id="body" class="docs">
-      <div class="wikiconvertor-pages">
-        <ul>
-                      <li><a href="/docs/960.gs/">960.gs</a></li>
-                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
-                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
-                      <li><a href="/docs/Build-script/">Build script</a></li>
-                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
-                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
-                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
-                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
-                      <li><a href="/docs/Experimental/">Experimental</a></li>
-                      <li><a href="/docs/FAQs/">FAQs</a></li>
-                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
-                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
-                      <li><a href="/docs/head-Tips/">head Tips</a></li>
-                      <li><a href="/docs/">Home</a></li>
-                      <li><a href="/docs/htaccess/">htaccess</a></li>
-                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
-                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
-                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
-                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
-                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
-                      <li><a href="/docs/Notes-on-using-PNG/">Notes on using PNG</a></li>
-                      <li><a href="/docs/Offline/">Offline</a></li>
-                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
-                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
-                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
-                      <li><a href="/docs/rake/">rake</a></li>
-                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
-                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
-                      <li><a href="/docs/Security/">Security</a></li>
-                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
-                      <li><a href="/docs/The-markup/">The markup</a></li>
-                      <li><a href="/docs/The-style/">The style</a></li>
-                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
-                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
-                      <li><a href="/docs/web.config/">web.config</a></li>
-          </ul>
-      </div>
+    <div class="docs">
+      
       <div class="wikiconvertor-content wikistyle relative">
-        <p class="dwn">
-          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/Build-script/_edit">Edit this page</a></span>
-        </P>
-        <h2>What is the Build Script?</h2>
+        <h1>The build script</h1>
 
-<p>In short, a tool that optimizes your code for the Web.</p>
+<p>The build script is a tool that optimizes your code for production use on the web.</p>
 
 <h2>Why use it?</h2>
 
@@ -100,7 +58,7 @@
 
 <h3>If you're on Mac or Linux...</h3>
 
-<p>You've got all your dependencies pre-installed, likely. You <em>may</em> need a <code><span class="pln">yum install ant</span><span class="pun">-</span><span class="pln">contrib</span></code> or what have you.<br />On Mac , people using ports can run the following command <code><span class="pln">port install ant</span><span class="pun">-</span><span class="pln">contrib</span></code></p>
+<p>You've got all your dependencies pre-installed, likely. You <em>may</em> need a <code><span class="pln">yum install ant</span><span class="pun">-</span><span class="pln">contrib</span></code> or what have you.<br />On Mac , people using ports can run the following command <code><span class="pln">port install ant</span><span class="pun">-</span><span class="pln">contrib</span></code>. (For <code><span class="pln">brew</span></code> look <a href="http://www.calvinfroedge.com/installing-apache-ant-with-homebrew-on-mac-os-x/">here</a>.)</p>
 
 <h3>If you're on Windows...</h3>
 
@@ -161,7 +119,7 @@
 
 <p>We have also added the ability to define 'environments' for the build process. The original targets still exist, and run the same functions, however each target now has a prod, test and dev environment too. </p>
 
-<h4>Here is how the environments work:</h4>
+<h3>Here is how the environments work:</h3>
 
 <ul>
 <li><code><span class="pln">dev</span></code> - Increases build number, cleans and copies the build and optimises any images if the target originally did</li>
@@ -209,9 +167,51 @@
 
 <p>There is a special syntax one could use to include or exclude deep nested files in config.</p>
 
-<p>For example, if you put compass source files inside css/src/ folder. but if you are using a setting like the one below, the build script still includes scss files in the build result.<br /><code><br />file.exclude = *.scss<br /></code></p>
+<p>For example, if you put compass source files inside css/src/ folder. but if you are using a setting like the one below, the build script still includes scss files in the build result.</p>
 
-<p>To solve this issue, you could use the syntax below:<br /><code><br />file.exclude = **/*.scss<br /></code></p>
+<p><code><br />file.exclude = *.scss<br /></code></p>
+
+<p>To solve this issue, you could use the syntax below:</p>
+
+<p><code><br />file.exclude = **/*.scss<br /></code></p>
+
+<h4>Support for Modules</h4>
+
+<p>The build script by default will concatenate and compress all the Javascript code not in the /js/libs folder and create a mangled file name for the now-combined Javascript file.  This is for cache-busting purposes, i.e. you can configure your web server to cache this file on the clients for efficiency.  This is a really great thing because users won't have to ever download that file again.  But what if you change your code?  If you do, the build script will generate a different mangled file name so users will pick up your latest-greatest work.</p>
+
+<p>So by default, the build script puts most of your code in this single, huge Javascript file.  But what if you are using a lot of Javascript, such as with a client-side framework like Backbone or Knockout?  These frameworks can cause you to write a LOT of Javascript, much of it page or module-specific. </p>
+
+<p>For example a travel web site written with Backbone.js might have a page to show hotel listings, and have some Javascript like this for the page:</p>
+
+<pre><code><span class="typ">SrchResultsModel</span><span class="pun">.</span><span class="pln">js &nbsp;</span><span class="pun">--</span><span class="pln"> data model </span><span class="kwd">for</span><span class="pln"> search results<br /></span><span class="typ">SrchResultsRouter</span><span class="pun">.</span><span class="pln">js </span><span class="pun">--</span><span class="pln"> a router</span><span class="pun">-</span><span class="pln">dispatcher </span><span class="kwd">for</span><span class="pln"> navigation </span><span class="kwd">or</span><span class="pln"> hash events<br /></span><span class="typ">SrchResultsView</span><span class="pun">.</span><span class="pln">js &nbsp; </span><span class="pun">--</span><span class="pln"> render </span><span class="kwd">and</span><span class="pln"> manage some HTML display<br /></span></code></pre>
+
+<p>This code in turn might represent one panel (the search results) of a larger page, which might include other components such as a panel showing weekly specials, a small survey form, and the overall page "frame".  Each of these elements could very well each have multiple Javascript files.</p>
+
+<pre><code><span class="typ">SpecialsModel</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="typ">SurveyModel</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="typ">FrameModel</span><span class="pun">.</span><span class="pln">js<br /></span><span class="typ">SpecialsRouter</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; </span><span class="typ">SurveyRouter</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">FrameRouter</span><span class="pun">.</span><span class="pln">js<br /></span><span class="typ">SpecialsView</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">SurveyView</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">FrameView</span><span class="pun">.</span><span class="pln">js<br /></span></code></pre>
+
+<p>Maybe for your project it makes sense to tie each of these components' files into one-per-component, leaving you with:</p>
+
+<pre><code><span class="typ">SrchResults</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; </span><span class="typ">Specials</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp; </span><span class="typ">Survey</span><span class="pun">.</span><span class="pln">js &nbsp; &nbsp;</span><span class="typ">Frame</span><span class="pun">.</span><span class="pln">js<br /></span></code></pre>
+
+<p>That's not bad, but let's say for the sake of argument that these 4 files are only useful on some, but not all of your application's pages.  Across your whole application you may have dozens of files like this, but each page may only need a few of them at a time.  For this kind of project it may not make sense to mash everything together in one mother-of-all-Javascript files.  We need something a little more granular.</p>
+
+<p>Enter the /js/modules directory.  (To be clear, "modules" in this context is just a packaging term--not a true module in the sense that a tool like require.js would define them.)  The intent of the /js/modules directory is to hold files that will be minified by the build script, but not concatenated together, allowing you some additional granularity.  So for our example above I might create a directory structure like this:</p>
+
+<pre><code><span class="str">/js/</span><span class="pln">modules</span><span class="pun">/</span><span class="pln">components</span><span class="pun">/</span><span class="typ">Survey</span><span class="pun">.</span><span class="pln">js<br /></span><span class="pun">/</span><span class="pln">js</span><span class="pun">/</span><span class="pln">modules</span><span class="pun">/</span><span class="pln">components</span><span class="pun">/</span><span class="typ">Specials</span><span class="pun">.</span><span class="pln">js<br /></span><span class="pun">/</span><span class="pln">js</span><span class="pun">/</span><span class="pln">modules</span><span class="pun">/</span><span class="pln">components</span><span class="pun">/</span><span class="typ">SrchResults</span><span class="pun">.</span><span class="pln">js<br /></span><span class="pun">/</span><span class="pln">js</span><span class="pun">/</span><span class="pln">modules</span><span class="pun">/</span><span class="typ">Frame</span><span class="pun">.</span><span class="pln">js<br /></span></code></pre>
+
+<p>The organization under /js/modules is purely arbitrary.  When the build script runs, everything works as usual <em>except</em> that files in the new /js/modules directory will be minified but otherwise be left alone.  The /js/modules directory name will be name-mangled for cache-busting purposes for the reasons described above.  By default script.js and style.css get the same treatment by the build script, so this is merely extending the idea to the /js/modules directory.  After running the build script you might see something like this in your publish directory:</p>
+
+<pre><code><span class="str">/js/</span><span class="lit">69db2Qrt</span><span class="pln"><br /></span></code></pre>
+
+<p>Ok so now that you have put your module Javascript code in /js/modules, you'll use it as any other Javascript file in your HTML pages:</p>
+
+<pre><code><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">defer</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"js/modules/sample_module.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln"><br /></span></code></pre>
+
+<p>The build script modifies references to the /js/modules directory just like it does for script.js and style.css.  It might look something like this after running build:</p>
+
+<pre><code><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">defer</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"js/69db2Qrt/sample_module.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln"><br /></span></code></pre>
+
+<p>How (or if) you use the modules feature is up to you.  If you need it, this feature will allow you to have more control over which Javascript code gets bundled into the global script.js file and which code is minified but otherwise left alone.</p>
 
 <h4>Running JSHint and JSLint</h4>
 
@@ -277,15 +277,15 @@
 <ul>
 <li>The build script makes some assumptions about how your javascript files are sorted. 
 <ul><li><code><span class="str">/js/</span><span class="pln">libs</span><span class="pun">/</span></code> contains files from boilerplate. These are minified but not concatenated with others. Modernizr should be alone in the head. jQuery might be pulled off the CDN, and the pngfix is IE6 only.</li>
-<li><code><span class="str">/js/</span><span class="pln">mylibs</span><span class="pun">/</span></code> has your other javascript libraries and plugins.. All files in here will be minified (unless they end with <code><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js</span></code>) and then concatenated together.</li>
-<li>plugins.js and script.js in the <code><span class="str">/js/</span></code> folder are all yours. these will also be min'd and concat'd (after) with the mylibs files.</li></ul></li>
-<li>When the build script changes your HTML to reference the new min'd script (usually named something like <code><span class="pln">scripts</span><span class="pun">-</span><span class="lit">002.min</span><span class="pun">.</span><span class="pln">js</span></code>) it looks for some HTML comments which refer to the beginning and end of the script block. Currently it looks for <code><span class="com">&lt;!-- scripts concatenated</span></code> and <code><span class="com">&lt;!-- end scripts--&gt;</span></code>. If you change or strip these comments, the build script will kinda die. :)</li>
+<li><code><span class="str">/js/</span><span class="pln">mylibs</span><span class="pun">/</span></code> has your other javascript libraries and plugins. All files in this directory will be minified (unless they end with <code><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js</span></code>) and then concatenated together.</li>
+<li>plugins.js and script.js in the <code><span class="str">/js/</span></code> folder are all yours. These will also be minified and concatenated (after) with the mylibs files.</li></ul></li>
+<li>When the build script changes your HTML to reference the new minified script (usually named something like <code><span class="pln">scripts</span><span class="pun">-</span><span class="lit">002.min</span><span class="pun">.</span><span class="pln">js</span></code>) it looks for some HTML comments which refer to the beginning and end of the script block. Currently it looks for <code><span class="com">&lt;!-- scripts concatenated</span></code> and <code><span class="com">&lt;!-- end scripts--&gt;</span></code>. If you change or strip these comments, the build script will kinda die. :)</li>
 <li>It likes your filename extensions to be lowercase. Some things might be skipped if you use a <code><span class="pun">.</span><span class="pln">JPG</span></code> extension, for example.</li>
-<li>Right now, the build.xml et all all have to be in the <code><span class="pun">./</span><span class="pln">build</span><span class="pun">/</span></code> folder. You can't rename it.</li>
+<li>Right now, the build.xml et al all have to be in the <code><span class="pun">./</span><span class="pln">build</span><span class="pun">/</span></code> folder. You can't rename it.</li>
 <li>so all of mylibs min files go into /libs-xxx.min.js</li>
 <li>all scripts/*.min.js go into scripts-xxx.min.js</li>
 <li>and then those get smushed together into scripts-xxx.min.js again.</li>
-<li>Check out issue <a href="https://github.com/h5bp/html5-boilerplate/issues/165">#165 </a> for everything that's planned for next version</li>
+<li>Check out issue <a href="https://github.com/h5bp/html5-boilerplate/issues/165">#165 </a> for everything that's planned for next version.</li>
 <li>Although not officially supported, it is possible to set the publish directory to a relative path outside the project folder. This is useful for generating a snapshot onto a staging server, for instance. In order to do so, set the publish directory to a path relative to the project: <code><span class="pln">dir</span><span class="pun">.</span><span class="pln">publish </span><span class="pun">=</span><span class="pln"> </span><span class="pun">../</span><span class="pln">mysite</span><span class="pun">/</span></code>. Then tell the htmlcompressor script to put the files back where it found them, instead of defining a specific directory. In build.xml, this line <code><span class="tag">&lt;mapper</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"glob"</span><span class="pln"> </span><span class="atn">from</span><span class="pun">=</span><span class="atv">"*"</span><span class="pln"> </span><span class="atn">to</span><span class="pun">=</span><span class="atv">"../${dir.publish}/*"</span><span class="tag">/&gt;</span></code> becomes this line <code><span class="tag">&lt;mapper</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"glob"</span><span class="pln"> </span><span class="atn">from</span><span class="pun">=</span><span class="atv">"*"</span><span class="pln"> </span><span class="atn">to</span><span class="pun">=</span><span class="atv">"*"</span><span class="tag">/&gt;</span></code>.</li>
 <li>Intermediate stages are stored in a new intermediate folder, and only files that should be published are copied into the publish folder.</li>
 <li>Files are not deleted at the beginning of every build, and files that have already been processed will not be reprocessed unless the source has changed.</li>
@@ -364,53 +364,81 @@
         <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div>
+			<div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
+                      <li><a href="/docs/changelog/">changelog</a></li>
+                      <li><a href="/docs/configuration/">configuration</a></li>
+                      <li><a href="/docs/contribute/">contribute</a></li>
+                      <li><a href="/docs/createproject/">createproject</a></li>
+                      <li><a href="/docs/crossdomain/">crossdomain</a></li>
+                      <li><a href="/docs/css/">css</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/extend/">extend</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/forks/">forks</a></li>
+                      <li><a href="/docs/ga-augments/">ga augments</a></li>
+                      <li><a href="/docs/history/">history</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/html/">html</a></li>
+                      <li><a href="/docs/html-head/">html head</a></li>
+                      <li><a href="/docs/install/">install</a></li>
+                      <li><a href="/docs/internationalization/">internationalization</a></li>
+                      <li><a href="/docs/js/">js</a></li>
+                      <li><a href="/docs/library/">library</a></li>
+                      <li><a href="/docs/license/">license</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/sites/">sites</a></li>
+                      <li><a href="/docs/trailing-slash-redirects/">trailing slash redirects</a></li>
+                      <li><a href="/docs/usage/">usage</a></li>
+                      <li><a href="/docs/using-PNG/">using PNG</a></li>
+          </ul>
       </div>
     </div>
     <footer id="footer">
+      <h3>Brought to you by</h3>      
       <p>
-        <em class="focus">Brought to you by</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
-        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
-        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
-        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      <a href="http://paulirish.com"><img width="50" height="50" src="img/paul-irish.png" alt=""> Paul Irish <br><i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="img/divya-manian.png" alt="">Divya Manian <br><i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="img/shichuan.png" alt="">Shichuan <br><i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="img/mathias-bynens.png" alt="">Mathias Bynens <br><i>Freelance web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="img/nicolas-gallagher.png" alt="">Nicolas Gallagher <br> <i>Front-End Web Developer</i></a>                                
       </p> 
       <ul>
         <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
-        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://twitter.com/verekia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
         <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">More Contributors</a></li>
-      </ul> <br>
+      </ul> 
+      
       <p>It would not have been possible without the efforts of these superheroes:</p>
+      
       <ul>
         <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
-        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
-        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
-        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
         <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
-        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
         <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
         <li><a href="http://remysharp.com/">Remy Sharp</a></li>
-        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
         <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
         <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
         <li><a href="http://miketaylr.com">Mike Taylor</a></li>
-        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://twitter.com/jon_neal">Jonathan Neal</a></li>
         <li><a href="http://camendesign.com">Kroc Camen</a></li>
         <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
         <li><a href="http://peter.sh">Peter Beverloo</a></li>         
-        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
         <li><a href="http://www.viget.com/inspire/">Viget</a></li>
         <li><a href="http://stevesouders.com/">Steve Souders</a></li>
-        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
-        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+        <li><a href="http://na.isobar.com/standards/">Isobar Creative Technology team</a></li>
       </ul>
     </footer>
-    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
   <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>

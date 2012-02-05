@@ -89,12 +89,12 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 
     
 
-h1, em, h3, h4,
+h1,h3, h4,
 .wikiconvertor h2 { font-family: "InsolentRegular", Arial, sans-serif; text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871; }   
 
-html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] em, html[lang='en'] h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] em, html[lang='en-us'] h3, html[lang='en-us'] h4, .wikiconvertor h2 { font-family: "MolotRegular", Arial, sans-serif; font-weight: normal; } 
+html[lang='he'] h1, html[lang='en'] h1, html[lang='en'] h3, html[lang='en'] h4, html[lang='en-us'] h1, html[lang='en-us'] h3, html[lang='en-us'] h4, .wikiconvertor h2 { font-family: "MolotRegular", Arial, sans-serif; font-weight: normal; } 
 
-html[lang='he'] em, html[lang='he'] h3 { font-family: 'AharoniCLMBold', Arial, sans-serif; }
+html[lang='he'] h3 { font-family: 'AharoniCLMBold', Arial, sans-serif; }
 #container[dir="rtl"] h4, #container[dir="rtl"] code { direction:ltr; }
 
 
@@ -254,7 +254,7 @@ div > ul > li:before { content: "★"; padding-right: 0.5em; }
 .notice li, .notice h4 { width: auto; max-width: 100%; }
 .notice ul { margin-left: 0; }
 
-.changelog li, .changelog h4, .changelog h5 { min-width: 480px; max-width: 42em; max-width: 42rem; width: auto; }
+.changelog li, .changelog h4, .changelog h5 { max-width: 42em; max-width: 42rem; width: auto; }
 
 
 /* VIDEOS */
@@ -289,7 +289,27 @@ html[lang="en-us"] .recos ul { display:none;}
 
 #footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after, html[lang="sr"] p.lang a[lang="nl"]:after { content: ""; }  
 
+/* DOCS */
+.wikiconvertor { padding-top: 4em; }
+.wikiconvertor h1 { font-size: 3em; }
+.wikiconvertor #header .dwn { position: absolute; top: 0; left: 0; right: 0; z-index: 3; padding-top: 0.5em; text-align: right; margin: 0; }
+.wikiconvertor .dwn a { line-height: 1.5em; border-width: 0.25em; }
+.wikiconvertor .dwn .home { position: absolute; left: 0; background: none; box-shadow: none; }
 
+
+.wikiconvertor-content h1 { font-size: 2em; }
+.wikiconvertor-content > ul > li { text-align: left; line-height: 1.5; border: 0; font-size: 1em; padding: 0; text-transform: none; width: 100%; }
+.wikiconvertor-content > ul > li::before { content: none; } 
+
+.wikiconvertor-content > h2,
+.wikiconvertor-content > h3,
+.wikiconvertor-content > h4 { width: 100%;margin-bottom: 0; margin-top: 1.5em; }
+
+
+#disqus_thread ul > li { display: inline-block; width: auto; padding: 0; border: 0; font-size: 0.9em; }
+#disqus_thread ul > li.dsq-comment { display: block; }
+#disqus_thread ul > li::before, #disqus_thread ul > li::after { content: none; }
+#disqus_thread .dsq-moderator .dsq-comment-header { background: black !important; } 
 /* =============================================================================
    Non-semantic helper classes
    ========================================================================== */
@@ -297,6 +317,7 @@ html[lang="en-us"] .recos ul { display:none;}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
+
 
 .hidden { display: none !important; visibility: hidden; }
 
@@ -348,4 +369,17 @@ html[lang="en-us"] .recos ul { display:none;}
   figure img { width: 100%; }
   em, h3 { font-size: 1.5em; }
   h4 { line-height: 1.2; }
+	#disqus_thread,
+	.wikiconvertor #header .dwn { display: none; }
+	
+	.wikiconvertor h1 { font-size: 2em; }
+	.wikiconvertor-pages { float: none; margin: 0; width: 100%; }
+	.wikiconvertor-content { margin-left: 1em; }
+}
+
+@media screen and (min-width: 800px) {
+	.wikiconvertor #header .dwn { position: fixed; }
+	.wikiconvertor .docs { min-height: 75em; } 
+	.wikiconvertor-pages { position: absolute; top: 10em; width: 15em; }
+	.wikiconvertor-content { margin-left: 16em; margin-right: 1em; }
 }
