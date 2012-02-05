@@ -4,40 +4,40 @@
 
 /* {% blocktrans %}TEAM{% endblocktrans %} */
   <{% blocktrans %}your title{% endblocktrans %}>: <{% blocktrans %}your name{% endblocktrans %}>
-  {% blocktrans %}Site{% endblocktrans %}: 
-  {% blocktrans %}Twitter{% endblocktrans %}: 
-  {% blocktrans %}Location{% endblocktrans %}: 
+  {% blocktrans %}Site{% endblocktrans %}:
+  {% blocktrans %}Twitter{% endblocktrans %}:
+  {% blocktrans %}Location{% endblocktrans %}:
 
 /* {% blocktrans %}THANKS{% endblocktrans %} */
-  {% blocktrans %}Names (& URL){% endblocktrans %}: 
+  {% blocktrans %}Names (& URL){% endblocktrans %}:
 
 /* {% blocktrans %}SITE{% endblocktrans %} */
   {% blocktrans %}Standards{% endblocktrans %}: HTML5, CSS3
   {% blocktrans %}Components{% endblocktrans %}: Modernizr, jQuery
   {% blocktrans %}Software{% endblocktrans %}:
-  
 
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
               -/+ooooooooooooooooooooooooooooooo+/::////:-
                 -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:

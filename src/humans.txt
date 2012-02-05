@@ -8,12 +8,12 @@
   Site: http://paulirish.com/
   Twitter: paul_irish
   Location: Plaid shirt
-  
+
   Troublemaker: Divya Manian
   Site: http://nimbupani.com/
   Twitter: divya
   Location: Where sun shines
-  
+
   Doer: Shi Chuan
   Site: http://blog.highub.com/
   Twitter: shichuan
@@ -24,14 +24,14 @@
   Twitter: mathias
   Location: Belgium
 
-  Nicolas Gallagher 
+  Nicolas Gallagher
   Site: http://nicolasgallagher.com/
   Twitter: necolas
   Location: London, UK
 
 
 /* THANKS */
-  
+
   Adeel Ejaz: https://github.com/adeelejaz
 
   Anton Kovalyov: https://github.com/antonkovalyov
@@ -49,7 +49,7 @@
   Mickael Daniel: https://github.com/mklabs
 
   Mike West: https://github.com/mikewest
-  
+
   Milos Gavrilovic: https://github.com/GaVrA
 
   Niels Bom: https://github.com/nielsbom
@@ -70,29 +70,29 @@
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
   Source: https://github.com/nimbupani/html5boilerplate-site
-  
 
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
               -/+ooooooooooooooooooooooooooooooo+/::////:-
                 -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
