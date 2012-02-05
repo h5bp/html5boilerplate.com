@@ -4,67 +4,14 @@ if (!/^en/.test(navigator.language)){
 	document.body.className += ' english';
 }
 
-SyntaxHighlighter.config.tagName = 'code';
-SyntaxHighlighter.defaults['wrap-lines'] = true; // maybe change this
-SyntaxHighlighter.defaults['auto-links'] = false;
-SyntaxHighlighter.defaults['toolbar'] = false;
-SyntaxHighlighter.defaults['tab-size'] = 4;
-
 $(document).ready(function(){   
-     
-  $('pre[class]').each(function(i, el) {
-    SyntaxHighlighter.highlight(undefined, el);
-  });
-  $('div.source code.comments').each(function(){
-    $(this).html(  linkify( this.innerHTML ) );
-  });
-  
-  $('.source h4 a').toggle(
-    function(e) {
-      $(this).addClass('active');
-      $(this).parent().next().stop().show('slow');
-      e.preventDefault();
-    },
-    function(e) {
-      $(this).removeClass('active');
-      $(this).parent().next().stop().hide('slow');
-      e.preventDefault();
-    }        
-  );
- 
-  var videolinks = $('.videos a[href^="#video-"]');
-  videolinks.bind('click', function(e) {
-    videolinks.removeClass('active');
-    $(this).addClass('active');
-    var activevideo = $(/#(.*)/g.exec(this.href)[0]);
-    $('.videos .video-active').removeClass('video-active');
-    activevideo.addClass('video-active');
-    e.preventDefault();
-  });  
-  
-
-  // lazy inject the videos
-  setTimeout(function(){
-    $('noscript').each(function(){
-      var html = $.trim( $(this).text() ) || $.trim( $(this).attr('data-html') )
-      $(html).insertBefore(this);
-    });
-  }, 3000);
-
-  $('#intro').prevAll('a').first().click(function(){
+   $('#intro').prevAll('a').first().click(function(){
     $('#header').toggleClass('showintro');
     return false;
   });
 
-
 }); // end of doc ready()
 
-
-// google analytics
-var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview'],['_trackPageLoadTime']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
 
 $(function(){
 	var parameters = [], builder = $('#builder'), downloadelm = $('#builder-download'), downloadurl = downloadelm.attr('href');
