@@ -1,101 +1,61 @@
 <!doctype html public "✰">
-<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->   
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
   <meta charset="utf-8">
-  <title>htaccess | HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="/css/style.css" >
-  <link rel="stylesheet" href="/css/docs.css" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+  <meta name="viewport" content="width=device-width">  
+  <link rel="stylesheet" media="screen" href="../css/style.css" >
+  <!-- JavaScript at the bottom, except for Modernizr -->
   <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
   <div id="container" class="wikiconvertor"> 
     <div id="header">
-         <p class="lang">
-           <a href="/">Return to the HTML5 Boilerplate website &#8618;</a>
-         </p>
-         <h1>HTML5  <i>&#x2605;</i> <b>Boilerplate Docs</b></h1> 
-         <h2>A rock-solid default for HTML5 awesome.</h2>
+			 <p class="dwn">
+				 <a class="home" href="/">&#8618; Return to the HTML5 Boilerplate website</a>
+				<a class="edit-page" href="//github.com/h5bp/html5-boilerplate/wiki/htaccess/_edit">Edit this page</a>
+			 </p>
+			 <h1>HTML5  <i>&#x2605;</i> Boilerplate Docs</h1> 
     </div>
-    <div id="body" class="docs">
-      <div class="wikiconvertor-pages">
-        <ul>
-                      <li><a href="/docs/960.gs/">960.gs</a></li>
-                      <li><a href="/docs/ARIA-in-Boilerplate/">ARIA in Boilerplate</a></li>
-                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
-                      <li><a href="/docs/Build-script/">Build script</a></li>
-                      <li><a href="/docs/Common-Analytics-Augments/">Common Analytics Augments</a></li>
-                      <li><a href="/docs/createproject.sh/">createproject.sh</a></li>
-                      <li><a href="/docs/crossdomain.xml/">crossdomain.xml</a></li>
-                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
-                      <li><a href="/docs/Experimental/">Experimental</a></li>
-                      <li><a href="/docs/FAQs/">FAQs</a></li>
-                      <li><a href="/docs/Get-Involved/">Get Involved</a></li>
-                      <li><a href="/docs/Get-Started!/">Get Started!</a></li>
-                      <li><a href="/docs/head-Tips/">head Tips</a></li>
-                      <li><a href="/docs/">Home</a></li>
-                      <li><a href="/docs/htaccess/">htaccess</a></li>
-                      <li><a href="/docs/Internationalization-tips/">Internationalization tips</a></li>
-                      <li><a href="/docs/List-of-commonly-installed-fonts-in-different-devices/">List of commonly installed fonts in different devices</a></li>
-                      <li><a href="/docs/Make-it-better/">Make it better</a></li>
-                      <li><a href="/docs/Mobile-Blogs-and-Articles/">Mobile Blogs and Articles</a></li>
-                      <li><a href="/docs/Mobile-References/">Mobile References</a></li>
-                      <li><a href="/docs/Notes-on-using-PNG/">Notes on using PNG</a></li>
-                      <li><a href="/docs/Offline/">Offline</a></li>
-                      <li><a href="/docs/Patterns-for-writing-better-JavaScript/">Patterns for writing better JavaScript</a></li>
-                      <li><a href="/docs/plugins.js-and-script.js/">plugins.js and script.js</a></li>
-                      <li><a href="/docs/Proper-usage-of-trailing-slash-redirects/">Proper usage of trailing slash redirects</a></li>
-                      <li><a href="/docs/rake/">rake</a></li>
-                      <li><a href="/docs/Reference-sheet-for-mobile-platforms/">Reference sheet for mobile platforms</a></li>
-                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
-                      <li><a href="/docs/Security/">Security</a></li>
-                      <li><a href="/docs/Sites-using-the-boilerplate/">Sites using the boilerplate</a></li>
-                      <li><a href="/docs/The-markup/">The markup</a></li>
-                      <li><a href="/docs/The-style/">The style</a></li>
-                      <li><a href="/docs/Tips-For-Customizing-Boilerplate/">Tips For Customizing Boilerplate</a></li>
-                      <li><a href="/docs/Version-Control-with-Cachebusting/">Version Control with Cachebusting</a></li>
-                      <li><a href="/docs/web.config/">web.config</a></li>
-          </ul>
-      </div>
+    <div class="docs">
+      
       <div class="wikiconvertor-content wikistyle relative">
-        <p class="dwn">
-          <span class="right button"><a class="edit-page" href="//github.com/paulirish/html5-boilerplate/wiki/htaccess/_edit">Edit this page</a></span>
-        </P>
-        <p>In Apache HTTP server, .htaccess (hypertext access) is the configuration file that allows for web server configuration. HTML5 Boilerplate team has identified a number of best practice server rules for making web pages fast and secure, these rules can be applied by configuring .htaccess file.</p>
+        <h1>.htaccess</h1>
 
-<h5>You'll want to have these modules enabled for optimum performance:</h5>
+<p>In Apache HTTP server, <code><span class="pun">.</span><span class="pln">htaccess</span></code> (hypertext access) is the configuration file that allows for web server configuration. HTML5 Boilerplate team has identified a number of best practice server rules for making web pages fast and secure, these rules can be applied by configuring <code><span class="pun">.</span><span class="pln">htaccess</span></code> file.</p>
+
+<p><strong>You'll want to have these modules enabled for optimum performance:</strong></p>
 
 <ul>
-<li>mod_setenvif.c (<strong>setenvif_module</strong>)</li>
-<li>mod_headers.c (<strong>headers_module</strong>)</li>
-<li>mod_deflate.c (<strong>deflate_module</strong>)</li>
-<li>mod_filter.c (<strong>filter_module</strong>)</li>
-<li>mod_expires.c (<strong>expires_module</strong>)</li>
-<li>mod_rewrite.c (<strong>rewrite_module</strong>)</li>
+<li><code><span class="pln">mod_setenvif</span><span class="pun">.</span><span class="pln">c</span></code> (setenvif_module)</li>
+<li><code><span class="pln">mod_headers</span><span class="pun">.</span><span class="pln">c</span></code> (headers_module)</li>
+<li><code><span class="pln">mod_deflate</span><span class="pun">.</span><span class="pln">c</span></code> (deflate_module)</li>
+<li><code><span class="pln">mod_filter</span><span class="pun">.</span><span class="pln">c</span></code> (filter_module)</li>
+<li><code><span class="pln">mod_expires</span><span class="pun">.</span><span class="pln">c</span></code> (expires_module)</li>
+<li><code><span class="pln">mod_rewrite</span><span class="pun">.</span><span class="pln">c</span></code> (rewrite_module)</li>
 </ul>
 
-<h3>On Windows</h3>
+<h2>On Windows</h2>
 
 <p>You've got a couple of options that depend on how you installed Apache.</p>
 
 <ol>
-<li>Wampserver - This is by far the simplest option.  If you have installed Wampserver just click on the icon in the task bar, hover over the Apache section in the menu that comes up and then hover over the modules section.  You will be presented with a list of modules.  Simply click on a module name to enable it (or disable it if it is already enabled).  A check mark next to a module indicates that it is enabled.  Wampserver will automatically restart the Apache service after you enable a module.  </li>
-<li>Manually editing <em>httpd.conf</em> - This assumes that you have manually installed Apache.  You will need to locate the httpd.conf file which is normally in the <em>conf</em> folder in the folder where you installed Apache (for example C:\apache\conf\httpd.conf).  Open up this file in a text editor.  Near the top (after a bunch of comments) you will see a long list of modules.  Check to make sure that the modules listed above are not commented out.  If they are, go ahead and uncomment them and restart Apache.</li>
+<li>Wampserver - This is by far the simplest option. If you have installed Wampserver just click on the icon in the task bar, hover over the Apache section in the menu that comes up and then hover over the modules section. You will be presented with a list of modules. Simply click on a module name to enable it (or disable it if it is already enabled). A check mark next to a module indicates that it is enabled. Wampserver will automatically restart the Apache service after you enable a module.  </li>
+<li>Manually editing <code><span class="pln">httpd</span><span class="pun">.</span><span class="pln">conf</span></code> - This assumes that you have manually installed Apache. You will need to locate the <code><span class="pln">httpd</span><span class="pun">.</span><span class="pln">conf</span></code> file which is normally in the <code><span class="pln">conf</span></code> folder in the folder where you installed Apache (for example <code><span class="pln">C</span><span class="pun">:\</span><span class="pln">apache</span><span class="pun">\</span><span class="pln">conf</span><span class="pun">\</span><span class="pln">httpd</span><span class="pun">.</span><span class="pln">conf</span></code>). Open up this file in a text editor. Near the top (after a bunch of comments) you will see a long list of modules. Check to make sure that the modules listed above are not commented out. If they are, go ahead and uncomment them and restart Apache.</li>
 </ol>
 
 <p>That's it, you're done!</p>
 
-<h3>On Linux</h3>
+<h2>On Linux</h2>
 
-<p>These instructions should work on any distribution where apt-get has been used to install apache.</p>
+<p>These instructions should work on any distribution where <code><span class="pln">apt</span><span class="pun">-</span><span class="kwd">get</span></code> has been used to install Apache.</p>
 
 <ol>
-<li><p>Open up a terminal and type the following command.   Enter your password when prompted.  </p>
+<li><p>Open up a terminal and type the following command. Enter your password when prompted.  </p>
 
 <p><code><span class="pln">sudo a2enmod setenvif headers deflate filter expires rewrite</span></code>  </p></li>
 <li><p>Restart apache by using the following command so the new configuration takes affect.  </p>
@@ -105,25 +65,25 @@
 
 <p>That's it, you're done!</p>
 
-<h3>On Mac</h3>
+<h2>On Mac</h2>
 
 <p>Coming soon...</p>
 
-<h1>Security</h1>
+<h2>Security</h2>
 
-<p>Do not turn off your ServerSignature (i.e., the <code><span class="typ">Server</span><span class="pun">:</span></code> HTTP header).  Serious attackers can use other kinds of fingerprinting methods to figure out the actual server and components running behind a port.  Instead, as a site owner, you should keep track of what's listening on ports on hosts that you control.  Run a periodic scanner to make sure nothing suspicious is running on a host you control, and use the ServerSignature to determine if this is the web server and version that you expect.</p>
+<p>Do not turn off your ServerSignature (i.e., the <code><span class="typ">Server</span><span class="pun">:</span></code> HTTP header). Serious attackers can use other kinds of fingerprinting methods to figure out the actual server and components running behind a port. Instead, as a site owner, you should keep track of what's listening on ports on hosts that you control. Run a periodic scanner to make sure nothing suspicious is running on a host you control, and use the ServerSignature to determine if this is the web server and version that you expect.</p>
 
-<h1>Performance</h1>
+<h2>Performance</h2>
 
 <h3>Configure ETags</h3>
 
 <pre><code><span class="typ">FileETag</span><span class="pln"> </span><span class="kwd">None</span><span class="pln"><br /></span></code></pre>
 
-<p>Entity tags (ETags) are a mechanism that web servers and browsers use to determine whether the component in the browser's cache matches the one on the origin server. (An "entity" is another word a "component": images, scripts, stylesheets, etc.) ETags were added to provide a mechanism for validating entities that is more flexible than the last-modified date. An ETag is a string that uniquely identifies a specific version of a component. The only format constraints are that the string be quoted. The origin server specifies the component's ETag using the ETag response header.</p>
+<p>Entity tags (ETags) are a mechanism that web servers and browsers use to determine whether the component in the browser's cache matches the one on the origin server. (An "entity" is another word a "component": images, scripts, stylesheets, etc.) ETags were added to provide a mechanism for validating entities that is more flexible than the last-modified date. An <code><span class="typ">ETag</span></code> is a string that uniquely identifies a specific version of a component. The only format constraints are that the string be quoted. The origin server specifies the component's <code><span class="typ">ETag</span></code> using the <code><span class="typ">ETag</span></code> response header.</p>
 
 <pre><code><span class="pln">&nbsp; HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK<br />&nbsp; </span><span class="typ">Last</span><span class="pun">-</span><span class="typ">Modified</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Tue</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">2006</span><span class="pln"> </span><span class="lit">03</span><span class="pun">:</span><span class="lit">03</span><span class="pun">:</span><span class="lit">59</span><span class="pln"> GMT<br />&nbsp; </span><span class="typ">ETag</span><span class="pun">:</span><span class="pln"> </span><span class="str">"10c24bc-4ab-457e1c1f"</span><span class="pln"><br />&nbsp; </span><span class="typ">Content</span><span class="pun">-</span><span class="typ">Length</span><span class="pun">:</span><span class="pln"> </span><span class="lit">12195</span><span class="pln"><br /></span></code></pre>
 
-<p>Later, if the browser has to validate a component, it uses the If-None-Match header to pass the ETag back to the origin server. If the ETags match, a 304 status code is returned reducing the response by 12195 bytes for this example.</p>
+<p>Later, if the browser has to validate a component, it uses the <code><span class="typ">If</span><span class="pun">-</span><span class="kwd">None</span><span class="pun">-</span><span class="typ">Match</span></code> header to pass the <code><span class="typ">ETag</span></code> back to the origin server. If the ETags match, a 304 status code is returned reducing the response by 12195 bytes for this example.</p>
 
 <pre><code><span class="pln">&nbsp; GET </span><span class="pun">/</span><span class="pln">i</span><span class="pun">/</span><span class="pln">yahoo</span><span class="pun">.</span><span class="pln">gif HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"><br />&nbsp; </span><span class="typ">Host</span><span class="pun">:</span><span class="pln"> us</span><span class="pun">.</span><span class="pln">yimg</span><span class="pun">.</span><span class="pln">com<br />&nbsp; </span><span class="typ">If</span><span class="pun">-</span><span class="typ">Modified</span><span class="pun">-</span><span class="typ">Since</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Tue</span><span class="pun">,</span><span class="pln"> </span><span class="lit">12</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">2006</span><span class="pln"> </span><span class="lit">03</span><span class="pun">:</span><span class="lit">03</span><span class="pun">:</span><span class="lit">59</span><span class="pln"> GMT<br />&nbsp; </span><span class="typ">If</span><span class="pun">-</span><span class="kwd">None</span><span class="pun">-</span><span class="typ">Match</span><span class="pun">:</span><span class="pln"> </span><span class="str">"10c24bc-4ab-457e1c1f"</span><span class="pln"><br />&nbsp; HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">304</span><span class="pln"> </span><span class="typ">Not</span><span class="pln"> </span><span class="typ">Modified</span><span class="pln"><br /></span></code></pre>
 
@@ -163,53 +123,81 @@
         <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div>
+			<div class="wikiconvertor-pages">
+        <ul>
+                      <li><a href="/docs/Build-script/">Build script</a></li>
+                      <li><a href="/docs/Build-Script-Wizard/">Build Script Wizard</a></li>
+                      <li><a href="/docs/changelog/">changelog</a></li>
+                      <li><a href="/docs/configuration/">configuration</a></li>
+                      <li><a href="/docs/contribute/">contribute</a></li>
+                      <li><a href="/docs/createproject/">createproject</a></li>
+                      <li><a href="/docs/crossdomain/">crossdomain</a></li>
+                      <li><a href="/docs/css/">css</a></li>
+                      <li><a href="/docs/DNS-Prefetching/">DNS Prefetching</a></li>
+                      <li><a href="/docs/extend/">extend</a></li>
+                      <li><a href="/docs/FAQs/">FAQs</a></li>
+                      <li><a href="/docs/forks/">forks</a></li>
+                      <li><a href="/docs/ga-augments/">ga augments</a></li>
+                      <li><a href="/docs/history/">history</a></li>
+                      <li><a href="/docs/">Home</a></li>
+                      <li><a href="/docs/htaccess/">htaccess</a></li>
+                      <li><a href="/docs/html/">html</a></li>
+                      <li><a href="/docs/html-head/">html head</a></li>
+                      <li><a href="/docs/install/">install</a></li>
+                      <li><a href="/docs/internationalization/">internationalization</a></li>
+                      <li><a href="/docs/js/">js</a></li>
+                      <li><a href="/docs/library/">library</a></li>
+                      <li><a href="/docs/license/">license</a></li>
+                      <li><a href="/docs/Offline/">Offline</a></li>
+                      <li><a href="/docs/Script-Loading-Techniques/">Script Loading Techniques</a></li>
+                      <li><a href="/docs/Security/">Security</a></li>
+                      <li><a href="/docs/sites/">sites</a></li>
+                      <li><a href="/docs/trailing-slash-redirects/">trailing slash redirects</a></li>
+                      <li><a href="/docs/usage/">usage</a></li>
+                      <li><a href="/docs/using-PNG/">using PNG</a></li>
+          </ul>
       </div>
     </div>
     <footer id="footer">
+      <h3>Brought to you by</h3>      
       <p>
-        <em class="focus">Brought to you by</em>
-        <a href="http://paulirish.com"><img width="50" height="50" src="/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="/img/divya-manian.png" alt="">Divya Manian <i>Web Opener @ Opera</i></a>
-        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="/img/shichuan.png" alt="">Shichuan <i>Open Web Developer</i></a>
-        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance front-end web developer</i></a>    
-        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>                                
+      <a href="http://paulirish.com"><img width="50" height="50" src="img/paul-irish.png" alt=""> Paul Irish <br><i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="img/divya-manian.png" alt="">Divya Manian <br><i>Web Opener @ Opera</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="img/shichuan.png" alt="">Shichuan <br><i>Open Web Developer</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="img/mathias-bynens.png" alt="">Mathias Bynens <br><i>Freelance web developer</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="img/nicolas-gallagher.png" alt="">Nicolas Gallagher <br> <i>Front-End Web Developer</i></a>                                
       </p> 
       <ul>
         <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
-        <li><a href="http://twitter.com/jverrecchia">Jonathan Verrecchia</a></li>
+        <li><a href="http://twitter.com/verekia">Jonathan Verrecchia</a></li>
         <li><a href="http://htmlcssjavascript.com/">Rob Larsen</a></li>
         <li><a href="http://mikewest.org/">Mike West</a></li>   
         <li><a href="https://github.com/h5bp/html5-boilerplate/contributors">More Contributors</a></li>
-      </ul> <br>
+      </ul> 
+      
       <p>It would not have been possible without the efforts of these superheroes:</p>
+      
       <ul>
         <li><a href="http://www.phpied.com">Stoyan Stefanov</a></li>
-        <li><a href="http://meyerweb.com/">Eric Meyer</a></li>
-        <li><a href="http://richclarkdesign.com/">Richard Clark</a></li>
-        <li><a href="http://www.aestheticallyloyal.com/">Anthony Kolber</a></li>
         <li><a href="http://www.splintered.co.uk/">Patrick H Lauke</a></li>
-        <li><a href="http://timvandamme.com">Tim Van Damme</a></li>
         <li><a href="http://farukat.es/">Faruk Ate&#351;</a></li>
         <li><a href="http://remysharp.com/">Remy Sharp</a></li>
-        <li><a href="http://www.dillerdesign.com/">Drew Diller</a></li>
         <li><a href="http://blog.amodernfable.com/">Adam McIntyre</a></li>
         <li><a href="http://tjkdesign.com/">Thierry Koblentz</a></li>
         <li><a href="http://miketaylr.com">Mike Taylor</a></li>
-        <li><a href="http://iecss.com">Jonathan Neal</a></li>
+        <li><a href="http://twitter.com/jon_neal">Jonathan Neal</a></li>
         <li><a href="http://camendesign.com">Kroc Camen</a></li>
         <li><a href="http://fontsquirrel.com">Ethan Dunham</a></li>
         <li><a href="http://peter.sh">Peter Beverloo</a></li>         
-        <li><a href="http://code.flickr.com/blog/">Flickr</a></li>
         <li><a href="http://www.viget.com/inspire/">Viget</a></li>
         <li><a href="http://stevesouders.com/">Steve Souders</a></li>
-        <li><a href="http://stuffandnonsense.co.uk/blog">Andy Clarke</a>
-        <li><a href="http://na.isobar.com">Isobar Interface Development team</a></li>
+        <li><a href="http://na.isobar.com/standards/">Isobar Creative Technology team</a></li>
       </ul>
     </footer>
-    <img id="html5logo" src="//html5boilerplate.com/img/HTML5_Logo.svg" height="60">
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
   <script>window._ || document.write('<script src="/js/libs/underscore.min.js">\x3C/script>')</script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>

@@ -1,20 +1,18 @@
 <!doctype html public "✰">
-<!--[if lt IE 7]> <html lang="{{ LANGUAGE_CODE }}" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js ie8"> <![endif]-->
+<!--[if lt IE 7]> <html lang="{{ LANGUAGE_CODE }}" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="{{ LANGUAGE_CODE }}" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="{{ LANGUAGE_CODE }}" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
   <title dir="{{ LANGUAGE_DIRECTION }}">{% blocktrans %}HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.{% endblocktrans %}</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width">  
 
-  <link rel="stylesheet" media="screen" href="css/style.css?v=2" >
-  <link rel="stylesheet" media="screen" href="css/shCore.css?v=2" >
+  <link rel="stylesheet" media="screen" href="/css/style.css" >
 
-  <!-- JavaScript at the bottom, except for Modernizr -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
@@ -75,7 +73,7 @@
 
     <div id="body">
 
-      <p class="bptext">{% blocktrans with "3.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small>{% blocktrans %}Updated Aug 10th{% endblocktrans %}</small></p>
+      <p>{% blocktrans with "3.0" as version %}Download Boilerplate {{ version }}{% endblocktrans %}  <small>{% blocktrans %}Updated Feb 6th{% endblocktrans %}</small></p>
 
       <p class="dwn">
         <span><a href="http://github.com/h5bp/html5-boilerplate/zipball/v3.0">{% blocktrans %}<u>Download</u> Boilerplate {% endblocktrans %}</a> <small>{% blocktrans %}Keep the hints and links{% endblocktrans %}</small></span>
@@ -104,22 +102,17 @@
             <label><input checked type='checkbox' id='h5bp-iecond'> {% blocktrans %}All IE classes{% endblocktrans %}</label>
             <label><input checked type='checkbox' id='h5bp-scripts'> {% blocktrans %}script.js & plugin.js{% endblocktrans %}</label>                        
             <label><input checked type='checkbox' id='h5bp-analytics'> {% blocktrans %}Google Analytics Snippet{% endblocktrans %}</label>                     
-            <label><input checked type='checkbox' id='h5bp-chromeframe'> {% blocktrans %}User-installable Chrome Frame for IE6{% endblocktrans %}</label>                                             
+            <label><input checked type='checkbox' id='h5bp-build'> {% blocktrans %}Ant Build Script{% endblocktrans %}</label>                                             
           </div>
 
-            <p>{% blocktrans %}<a href="http://www.initializr.com/builder?mode=h5bp&amp;" id="builder-download">Download!</a> Are these options not enough? Go to <a href="http://initializr.com">Initializr</a> for more!{% endblocktrans %}</p>
+            <p>{% blocktrans %}<a href="http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;" id="builder-download">Download!</a> Need more options? Visit <a href="http://initializr.com">Initializr</a>{% endblocktrans %}</p>
         </div>        
       </div>    
 
 			<p class="social">
-				<i>
 					<a href="//html5boilerplate.com/docs/">{% blocktrans %}Read the docs{% endblocktrans %}</a>        
 					<a href="http://github.com/h5bp/html5-boilerplate">{% blocktrans %}Contribute on Github {% endblocktrans %}</a>             
-					</i>
-					<i>
-						<a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>      
-						<a href="http://groups.google.com/group/html5boilerplate/">{% blocktrans %}Join The Mailing List{% endblocktrans %}</a>
-				 </i>
+          <a href="http://twitter.com/h5bp">{% blocktrans %}Follow on twitter{% endblocktrans %}</a>      
       </p>
     
   <div class="new" id="v2">
@@ -136,8 +129,8 @@
 		 
 			<ul class="sigcommits">
 				 <li>{% blocktrans %}Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and <code>/js/mylibs</code>.{% endblocktrans %}
-				 <li>{% blocktrans %}Build script is now a separate project, <a href="#">Read about how to get and use the build script</a>{% endblocktrans %}
-				 <li>{% blocktrans %}Respond.js is no longer available by default. <a href="#">Read about what you should consider for your mobile development strategy</a>.{% endblocktrans %}
+         <li><a href="https://github.com/h5bp/ant-build-script">{% blocktrans %}Build script is now a separate project{% endblocktrans %}</a>, <a href="/docs">{% blocktrans %}Read about how to get and use the build script{% endblocktrans %}</a>
+         <li>{% blocktrans %}Respond.js is no longer available by default. {% endblocktrans %}</a>.
        </ul>                                                                                                                                        
 
 
@@ -191,11 +184,11 @@
     <footer id="footer">
       <h3>{% blocktrans %}Brought to you by{% endblocktrans %}</h3>      
       <p>
-        <a href="http://paulirish.com"><img width="50" height="50" src="img/paul-irish.png" alt=""> Paul Irish <i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="img/divya-manian.png" alt="">Divya Manian <i>{% blocktrans %}Web Opener @ Opera{% endblocktrans %}</i></a>
-        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="img/shichuan.png" alt="">Shichuan <i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>
-        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="img/mathias-bynens.png" alt="">Mathias Bynens <i>{% blocktrans %}Freelance web developer{% endblocktrans %}</i></a>    
-        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>{% blocktrans %}Front-End Web Developer{% endblocktrans %}</i></a>                                
+      <a href="http://paulirish.com"><img width="50" height="50" src="img/paul-irish.png" alt=""> Paul Irish <br><i>{% blocktrans %}Google Chrome, jQuery{% endblocktrans %}</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="img/divya-manian.png" alt="">Divya Manian <br><i>{% blocktrans %}Web Opener @ Opera{% endblocktrans %}</i></a>
+        <a href="http://www.blog.highub.com/"><img width="50" height="50" src="img/shichuan.png" alt="">Shichuan <br><i>{% blocktrans %}Open Web Developer{% endblocktrans %}</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="img/mathias-bynens.png" alt="">Mathias Bynens <br><i>{% blocktrans %}Freelance web developer{% endblocktrans %}</i></a>    
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="img/nicolas-gallagher.png" alt="">Nicolas Gallagher <br> <i>{% blocktrans %}Front-End Web Developer{% endblocktrans %}</i></a>                                
       </p> 
       <ul>
         <li><a href="http://blog.mklog.fr/">Mickael Daniel</a></li>
@@ -224,24 +217,22 @@
         <li><a href="http://na.isobar.com/standards/">Isobar Creative Technology team</a></li>
       </ul>
     </footer>
-         
   </div>
 
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  
-  <!-- scripts concatenated and minified via ant build script-->
+
+  <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <!-- end scripts-->
+  <!-- end scripts -->
 
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-  
+  <script>
+    var _gaq=[['_setAccount','UA-17904194-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
 </html>

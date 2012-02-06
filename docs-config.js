@@ -1,6 +1,6 @@
 // ## defaults configuration file for documentation generation
 
-// from the root repo 
+// from the root repo
 //
 //    h5bp-docs --config docs-config.js
 //
@@ -27,7 +27,7 @@ exports = module.exports = {
   // - ommiting assets assets copy the public folder in h5bp-docs package.
   assets: false,
 
-  // allowed extensions, all other files are ignored 
+  // allowed extensions, all other files are ignored
   ext: ['md', 'markdown', 'mkd'],
 
   // baseurl, only used with --server flag. ex: docs

@@ -12,116 +12,33 @@
   <!-- For first-generation iPad: --> 
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="mobile/images/m/apple-touch-icon.png"> 
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --> 
-  <link rel="apple-touch-icon-precomposed" href="mobile/images/l/apple-touch-icon-precomposed.png"> 
+  <link rel="apple-touch-icon-precomposed" href="/mobile/images/l/apple-touch-icon-precomposed.png"> 
   <!-- For nokia devices: --> 
-  <link rel="shortcut icon" href="mobile/images/l/apple-touch-icon.png"> 
+  <link rel="shortcut icon" href="/mobile/images/l/apple-touch-icon.png"> 
   
   <meta name="apple-mobile-web-app-capable" content="yes"> 
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-  <link rel="apple-touch-startup-image" href="mobile/images/l/splash.png"> 
+  <link rel="apple-touch-startup-image" href="/mobile/images/l/splash.png"> 
   <meta http-equiv="cleartype" content="on"> 
-  <link rel="stylesheet" href="mobile/css/style.css?v=4">
-  <link rel="stylesheet" href="mobile/css/shCore.css"> 
-  <script src="mobile/js/libs/modernizr-custom.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/mobile/js/libs/modernizr-2.0.6.js"></script>
 </head> 
  
 <body>
   <div id="container"> 
-    <b class="border-a"></b> 
-    <b class="border-b"></b> 
-    <b class="border-c"></b> 
-    <b class="border-d"></b> 
-    <header> 
-      <hgroup> 
-        <h1>Mobile <b> &#x2605; Boilerplate</b></h1>
-        <h2>A best practice baseline for your mobile web app. <br /></h2> 
-      </hgroup> 
-      <p>
-      Mobile Boilerplate is your trusted template made custom for creating rich and performant mobile web apps.  
-      You get cross-browser consistency among A-grade smartphones, and fallback support for legacy Blackberry, Symbian, and IE Mobile. 
-      You get an offline caching setup for free, fast button clicks, a media query polyfill, 
-      and many common mobile WebKit optimizations waiting for you. 
-      Use Mobile Boilerplate to start your mobile webapp quickly and immediately benefit from community best practices.
-      </p>
-      
-    </header> 
-    
-    <div id="main">
-      <section> 
-        <h3>v3.0 Changelog</h3> 
-        <h4>index.html</h4> 
-        <ul> 
-        <!--index.html-->
-          <li>removed initial-scale=1.0 from meta</li>
-          <li>excluded scalefix by default</li>
-          <li>updated startup tablet landscape dimensions</li>
-          <li>added lang attr to be consistent with h5bp</li>
-          <li>removed meta author to be consistent with h5bp</li>
-        </ul>
-        <h4>JavaScript</h4> 
-        <ul>       
-          <li>added MBP.enableActive</li>
-          <li>fixes MBP.hideUrlBar() when addEventListener is undefined</li>
-          <li>added preventing iOS from zooming onfocus</li>
-          <li>working around a tricky bug in Android 2.3 to MBP.fastButton</li>
-          <li>removed respond.js</li>
-          <li>splited hideUrlBar into an intial function, and a general use function cached the scrollTop so that only needs to be detected once</li>
-          <li>moved helper.js one level up</li>
-          <li>updated jQuery to 1.7.1 and added missing fallback local file</li>
-          <li>added iPod (Touch) to MBP.scaleFix</li>
-          <li>updated modernizr to the latest version</li>
-        </ul>
-        <h4>CSS</h4> 
-        <ul>
-          <li>removed input::-moz-focus-inner as it is not required on Firefox on Mobile</li>
-          <li>removed the ellipsis helper class to be consistent with @h5bp</li>
-        </ul>
-        <h4>Build</h4>
-        <ul>
-          <li>updated the build script to match the new one</li>
-          <li>updated the tools in ant script</li>
-          <li>fixes for reference errors (file and variable) encountered after an initial build</li>
-        </ul> 
-        <h4>General</h4>
-        <ul>
-          <li>fixed some indentation issue</li>
-          <li>fixed broken links</li>
-          <li>made 404 page consistent with h5bp</li>
-          <li>fixed links used in README markdown</li>
-          <li>removed /demo and /test</li>
-          <li>update README and clarify aim of the project</li>
-          <li>included further details about the project contents and how to get involved</li>
-          <li>described that Mobile Boilerplate is for mobile web applications development rather than 'mobile first' responsive development</li>
-          <li>removed analytics and wspl</li>
-        </ul>
-      </section> 
-      <section> 
-      <h3>Want to dive in?</h3> 
-      <p class="bptext">Download the v3.0</p>
-      <p class="dwn"> 
-        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0">Boilerplate documented</a> <small>Keep the hints and links</small></span>       
-        <i>or</i> 
-        <span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0stripped">Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
-      </p> 
-      <p class="social">
-        <i> 
-          <a href="https://github.com/h5bp/mobile-boilerplate/wiki">Read the docs</a>        
-          <a href="https://github.com/h5bp/mobile-boilerplate">Contribute on Github </a>        
-          <a href="#disqus_thread">Comment here</a>        
-        </i> 
-        <i>
-          <a href="http://twitter.com/h5bp">Follow on twitter</a> 
-          <a href="http://groups.google.com/group/html5boilerplate/">Join The Mailing List</a>
-        </i> 
-      </p> 
-      </section>
-      <section> 
-      <div id="frame"> 
-        <img src="mobile/images/devices.png" /> 
-      </div> 
-      </section>
-      <section> 
-        <h3>Why it is awesome</h3> 
+    <header id="header"> 
+			<h1>Mobile <b> &#x2605; Boilerplate</b></h1>
+			<h2>A best practice baseline for your mobile web app. <br /></h2> 
+			<a href="#intro" class=introtoggle>I'm new here: plz explain why it's so awesome, first.</a>
+			<div id="intro" > 
+					<p>
+					Mobile Boilerplate is your trusted template made custom for creating rich and performant mobile web apps.  
+				You get cross-browser consistency among A-grade smartphones, and fallback support for legacy Blackberry, Symbian, and IE Mobile. 
+				You get an offline caching setup for free, fast button clicks, a media query polyfill, 
+				and many common mobile WebKit optimizations waiting for you. 
+				Use Mobile Boilerplate to start your mobile webapp quickly and immediately benefit from community best practices.
+				</p>
+				<h3>Why it is awesome</h3> 
         <ul> 
           <li>Cross-platform compatible (Android, iOS, Blackberry, Symbian)</li> 
           <li>CSS class to target IE Mobile 7</li> 
@@ -137,29 +54,20 @@
           <li>Build tool for mobile</li> 
           <li>Fix iPhone reflow scale up bug</li> 
         </ul> 
-      </section> 
-      <section> 
-        <h3>Why it is awesome-er</h3> 
-        <ul> 
-          <li>HTML5 offline caching for smartphones</li> 
-          <li>Hide URL bar to maximize screen area</li> 
-          <li>Button clicks that don't wait for the default 300ms delayed click event</li> 
-          <li>Textarea autogrow</li> 
-          <li>Hide Safari browser chrome</li> 
-          <li>Mobile bookmark bubble</li> 
-          <li>Robust optional User Agent Detection in .htaccess</li> 
-          <li>Mobile optimized default CSS</li> 
-          <li>Media queries polyfill for Windows Mobile</li> 
-          <li>Preventing iOS from zooming onfocus</li>
-        </ul> 
-      </section> 
-      <section id="source"> 
-        <h3 id="thesource">Walk through it with me, now</h3> 
-      </section> 
-      <div id="ppt"> 
-      </div> 
-      <section> 
-        <h3>MAKE IT EVEN BETTER!</h3> 
+				<h3>Why it is awesome-er</h3> 
+					<ul> 
+						<li>HTML5 offline caching for smartphones</li> 
+						<li>Hide URL bar to maximize screen area</li> 
+						<li>Button clicks that don't wait for the default 300ms delayed click event</li> 
+						<li>Textarea autogrow</li> 
+						<li>Hide Safari browser chrome</li> 
+						<li>Mobile bookmark bubble</li> 
+						<li>Robust optional User Agent Detection in .htaccess</li> 
+						<li>Mobile optimized default CSS</li> 
+						<li>Media queries polyfill for Windows Mobile</li> 
+						<li>Preventing iOS from zooming onfocus</li>
+					</ul> 
+					<h3>MAKE IT EVEN BETTER!</h3> 
         <ul> 
           <li><a href="https://github.com/h5bp/mobile-boilerplate/wiki/Mobile-Emulators-%26-Simulators" target="_blank">Mobile Emulators & Simulators</a> - list of mobile development tools</li> 
           <li>Use some of your favorite debugging tools like Firebug and ySlow on mobile browser with <a href="https://github.com/h5bp/mobile-boilerplate/wiki/Mobile-Bookmarklets" target="_blank">Mobile Bookmarklets</a></li>
@@ -171,17 +79,71 @@
           <li>Visit these <a href="https://github.com/h5bp/mobile-boilerplate/wiki/Blog-and-Articles" target="_blank">great blogs and articles</a> on mobile</li> 
           <li>A great <a href="http://library.forum.nokia.com/topic/Design_and_User_Experience_Library/GUID-A8DF3EB8-E97C-4DA0-95F6-F464ECC995BC_cover.html" target="_blank">mobile reference site</a> by Forum Nokia </li> 
         </ul> 
-      </section> 
+
+			</div> 
+    </header> 
+    
+    <div id="body">
+      <p class="bptext">Download v3.0</p>
+      <p class="dwn"> 
+			<span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0"><u>Download</u> Boilerplate</a> <small>Keep the hints and links</small></span>       
+        <i>or</i> 
+				<span><a href="https://github.com/h5bp/mobile-boilerplate/zipball/v3.0stripped"><u>Download</u> Boilerplate "stripped"</a> <small>No comments, just the bizniss.</small></span> 
+      </p> 
+      <p class="social">
+        <i> 
+          <a href="https://github.com/h5bp/mobile-boilerplate/wiki">Read the docs</a>        
+          <a href="https://github.com/h5bp/mobile-boilerplate">Contribute on Github </a>        
+          <a href="http://twitter.com/h5bp">Follow on twitter</a> 
+        </i> 
+      </p> 
+ 
+      <div class="changelog"> 
+        <h3>v3.0 Changelog</h3> 
+        <h4>index.html</h4> 
+        <ul> 
+          <li>Removed <code>initial-scale=1.0</code> from meta</li>
+          <li>Excluded <code>scalefix</code> by default</li>
+          <li>Updated startup tablet landscape dimensions</li>
+          <li>Added lang attr to be consistent with h5bp</li>
+          <li>Removed meta author to be consistent with h5bp</li>
+        </ul>
+        <h4>JavaScript</h4> 
+        <ul>       
+          <li>Added <code>MBP.enableActive</code></li>
+          <li>Fixes <code>MBP.hideUrlBar()</code> when addEventListener is undefined</li>
+          <li>Added preventing iOS from zooming onfocus</li>
+          <li>Worked around a tricky bug in Android 2.3 to <code>MBP.fastButton</code></li>
+          <li>Removed respond.js</li>
+          <li>Split <code>hideUrlBar</code> into an intial function, and a general use function cached the scrollTop so that only needs to be detected once</li>
+          <li>Moved helper.js one level up</li>
+          <li>Updated jQuery to 1.7.1 and added missing fallback local file</li>
+          <li>Updated modernizr to the latest version</li>
+          <li>added iPod (Touch) to <code>MBP.scaleFix</code></li>
+        </ul>
+        <h4>CSS</h4> 
+        <ul>
+          <li>Removed <code>input::-moz-focus-inner</code> as it is not required on Firefox on Mobile</li>
+          <li>Removed the ellipsis helper class to be consistent with h5bp</li>
+        </ul>
+        <h4>General</h4>
+        <ul>
+          <li>Removed the <a href="https://github.com/h5bp/ant-build-script#">build script to its own repo</a></li>
+          <li>Updated 404 page to be consistent with h5bp</li>
+					<li>Removed <code>/demo</code> and <code>/test</code></li>
+          <li>Removed analytics and wspl</li>
+        </ul>
+      </div> 
     </div> 
     
-    <footer>
+		<footer id="footer">
+			<h3>Brought to you by</h3>
       <p> 
-        <em class="focus">Brought to you by</em> 
-        <a href="http://blog.highub.com"><img width="50" height="50" src="//html5boilerplate.com/img/shichuan.png" alt=""> Shi Chuan <i>Open Web Developer</i></a>
-        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/img/paul-irish.png" alt=""> Paul Irish <i>Google Chrome, jQuery</i></a>
-        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/img/divya-manian.png" alt="">Divya Manian <i>Open Web Vigilante</i></a>
-        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="//html5boilerplate.com/img/mathias-bynens.png" alt="">Mathias Bynens <i>Freelance Web Developer</i></a>
-        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="//html5boilerplate.com/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <i>Front-End Web Developer</i></a>
+			<a href="http://blog.highub.com"><img width="50" height="50" src="//html5boilerplate.com/img/shichuan.png" alt=""> Shi Chuan <br> <i>Open Web Developer</i></a>
+        <a href="http://paulirish.com"><img width="50" height="50" src="//html5boilerplate.com/img/paul-irish.png" alt=""> Paul Irish <br><i>Google Chrome, jQuery</i></a>
+        <a href="http://nimbupani.com"><img width="50" height="50" src="//html5boilerplate.com/img/divya-manian.png" alt="">Divya Manian <br><i>Open Web Vigilante</i></a>
+        <a href="http://mathiasbynens.be/"><img width="50" height="50" src="//html5boilerplate.com/img/mathias-bynens.png" alt="">Mathias Bynens <br><i>Freelance Web Developer</i></a>
+        <a href="http://nicolasgallagher.com/"><img width="50" height="50" src="//html5boilerplate.com/img/nicolas-gallagher.png" alt="">Nicolas Gallagher <br><i>Front-End Web Developer</i></a>
       </p> 
       <ul> 
         <li><a href="http://andrewhenderson.me/" target="_blank">Andrew Henderson</a></li> 
@@ -189,36 +151,25 @@
         <li><a href="http://rexxars.com/" target="_blank">Espen Hovlandsdal</a></li>
         <li><a href="http://fabian-beiner.de/" target="_blank">Fabian Beiner</a></li>
         <li><a href="http://irae.pro.br/" target="_blank">Iraê Carvalho</a></li>
-        <li><a href="#" target="_blank">Sasha Sklar</a></li>
+        <li>Sasha Sklar</li>
         <li><a href="http://miniapps.co.uk/" target="_blank">Alex Gibson</a></li> 
         <li><a href="http://twitter.com/#!/jon_neal" target="_blank">Jonathan Neal</a></li> 
         <li><a href="https://github.com/umbrae" target="_blank">umbrae</a></li> 
         <li><a href="https://github.com/kisPocok" target="_blank">kisPocok</a></li> 
-        <li><a href="http://twitter.com/jedisct1" target="_blank">Frank DENIS</a></li> 
+        <li><a href="http://twitter.com/jedisct1" target="_blank">Frank Denis</a></li> 
         <li><a href="https://github.com/johnnycadelco" target="_blank">johnnycadelco</a></li> 
         <li><a href="http://www.jamund.com/" target="_blank">Jamund Ferguson</a></li>
         <li><a href="https://github.com/brianblakely" target="_blank">Brian Blakely</a></li>  
       </ul> 
     </footer> 
-    <div class="disqus-wrapper"> 
-      <div id="disqus_thread"> 
-        <h3>Comments</h3> 
-      </div> 
-      <a href="#dsq-content">Show comments</a> 
-    </div> 
   </div> 
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-  <script src="http://github.com/cowboy/javascript-linkify/raw/master/ba-linkify.min.js"></script> 
-  <script src="mobile/js/plugins.min.js?v=2"></script>
-  <script src="mobile/js/script.js?v=2"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+  <script src="/mobile/js/plugins.min.js"></script>
+  <script src="/mobile/js/script.js"></script>
   <script>
     MBP.scaleFix();
-    yepnope({
-      test : Modernizr.mq('(min-width)'),
-      nope : ['mobile/js/libs/respond.min.js']
-    });
   </script>
   
   <script> 
@@ -227,6 +178,5 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script> 
-  <noscript>Your browser does not support JavaScript!</noscript> 
 </body> 
 </html>

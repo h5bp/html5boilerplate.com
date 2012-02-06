@@ -1,6 +1,5 @@
 ## ASSETS AND FILES FOR HTML5Boilerplate.com
 
-
 Version 0.2
 * Contains internationalization build to enable port to other languages.
 * Website needs to be built using `make build`
