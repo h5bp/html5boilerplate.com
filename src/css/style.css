@@ -129,7 +129,7 @@ h1:hover { color: #e16734; }
 #header h2 { margin-bottom: 0; margin-top: 0; }
 
 
-body { background: #283b36; color: #e3d7bf; text-shadow: 0 1px 1px #000; padding-bottom: 3em; font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; }
+body { background: #283b36; color: #e3d7bf; text-shadow: 0 1px 1px #000; padding-bottom: 3em; font: 300 16px/1.5 "Helvetica Neue", sans-serif; }
 
 a, a:hover, a:focus, a:visited  { text-decoration: none; }
 a, a:visited, .disqus-wrapper a, #builder a.selected, #footer a.announcements { color: #e16734; }
@@ -149,6 +149,7 @@ a:hover, a:focus, #footer a:hover, #footer a:focus { color: #82A6B0; }
 #container[dir="rtl"] #header p { text-align: right; }
 
  
+
 .notenglish #header p.lang { font-size: 1.2em; display:block; }
 
 h2 + p,
@@ -277,14 +278,14 @@ html[lang="en-us"] .recos ul { display:none;}
 #footer p { margin: 0; }
 #footer p:first-of-type a { display: inline-block; margin-bottom: 1em; line-height: 1.3; vertical-align: bottom; width: 13em; text-align: left; }              
 #footer p:first-of-type a img { float: left; margin: 0 0.5em 0 0; border-radius: 5px; }
-#footer p:first-of-type i { font-style: normal; font-size: 0.7em; line-height: 1.2; color: rgb(130, 166, 176); text-transform: uppercase; }
+#footer p:first-of-type i { font-style: normal; font-size: 0.7em; line-height: 1.2; color: #b2dbdb; text-transform: uppercase; }
 #footer p:last-of-type { margin: 3em 0 0.5em 0; font-size: 0.8em; }
 #footer li { display: inline; margin: 0 0.25em 0 0; }
 #footer ul:last-child a { font-size: 0.8em; }
 #footer ul { margin: 0; }
 #footer ul:last-of-type { font-size: 0.9em; }
 /* IN-LINE STAR BULLETS */
-#footer li:after, .social a:after, .lang a:after { content: " ★"; padding-left: 0.25em; color: #e3d7bf; font-style: normal; }                           
+#footer li:after, .social a:after, .lang a:after { content: " ★"; padding-left: 0.25em; color: rgb(179, 239, 255); font-style: normal; }                           
 #container[dir="rtl"] .social a:after { padding-left: 0; padding-right: 0.25em; }
 
 #footer li:last-child:after, .social a:last-child:after, .lang a:last-child:after, html[lang="sr"] p.lang a[lang="nl"]:after { content: ""; }  
