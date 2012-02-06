@@ -91,13 +91,13 @@ MBP.hideUrlBarOnLoad = function () {
 MBP.fastButton = function (element, handler) {
   this.element = element;
   this.handler = handler;
-	
-	addEvt(element, "touchstart", this, false);
-	addEvt(element, "click", this, false);
+  
+  addEvt(element, "touchstart", this, false);
+  addEvt(element, "click", this, false);
 };
  
 MBP.fastButton.prototype.handleEvent = function(event) {
-	event = event || window.event;
+  event = event || window.event;
   switch (event.type) {
     case 'touchstart': this.onTouchStart(event); break;
     case 'touchmove': this.onTouchMove(event); break;
@@ -123,7 +123,7 @@ MBP.fastButton.prototype.onTouchMove = function(event) {
 };
 
 MBP.fastButton.prototype.onClick = function(event) {
-	event = event || window.event;
+  event = event || window.event;
   if (event.stopPropagation) { event.stopPropagation(); }
   this.reset();
   this.handler(event);
@@ -134,8 +134,8 @@ MBP.fastButton.prototype.onClick = function(event) {
 };
 
 MBP.fastButton.prototype.reset = function() {
-	rmEvt(this.element, "touchend", this, false);
-	rmEvt(document.body, "touchmove", this, false);
+  rmEvt(this.element, "touchend", this, false);
+  rmEvt(document.body, "touchmove", this, false);
   this.element.style.backgroundColor = "";
 };
 
@@ -270,21 +270,23 @@ MBP.autogrow = function (element, lh) {
                              element.attachEvent('onkeyup', handler);
 };
 
-})(document);
-
 
 // Enable active
 // Enable CSS active pseudo styles in Mobile Safari
 // http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
 MBP.enableActive = function () {
   document.addEventListener("touchstart", function() {}, false);
-}
+};
 
 
 // Prevent iOS from zooming onfocus
 // http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
 
-var $viewportMeta = $('meta[name="viewport"]');
-$('input, select, textarea').bind('focus blur', function(event) {
-  $viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
-});
+MBP.viewportMeta = $('meta[name="viewport"]');
+MBP.preventZoom = function () {
+  $('input, select, textarea').bind('focus blur', function(event) {
+    MBP.viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
+  });
+};
+
+})(document);
