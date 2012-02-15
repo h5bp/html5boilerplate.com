@@ -2,15 +2,13 @@
 # Copyright (C) 2011
 # This file is distributed under the same license as the PACKAGE package.
 # Yuya Saito <cssradar@gmail.com>, 2011.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-13 03:37+0800\n"
 "PO-Revision-Date: 2011-03-24 00:26-0900\n"
-"Last-Translator: Yuya Saito <cssradar@gmail.com>\n"
+"Last-Translator: Ryuichi Okumura <okuryu@okuryu.com>\n"
 "Language-Team: Japanese <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,24 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/index.html:10
-#, fuzzy
 msgid "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
-msgstr "A rock-solid default template for HTML5 awesome."
+msgstr "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
 
 #: src/index.html:21
 msgid "Now offered in:"
-msgstr "Now offered in:"
+msgstr "対応中の言語:"
 
 #: src/index.html:36
 msgid "A rock-solid default for HTML5 awesome."
-msgstr "A rock-solid default for HTML5 awesome."
+msgstr "素晴らしいHTML5のための堅実なデフォルトスタイル"
 
 #: src/index.html:38
 msgid "I'm new here: plz explain why it's so awesome, first."
-msgstr ""
+msgstr "初めての方へ: まず素晴らしい理由を説明しよう"
 
 #: src/index.html:41
-#, fuzzy
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-safe site."
@@ -69,7 +65,7 @@ msgstr ""
 
 #: src/index.html:46
 msgid "Why it is awesome"
-msgstr "Why it is awesome"
+msgstr "素晴らしい理由"
 
 #: src/index.html:48
 msgid "Cross-browser compatible (IE6, yeah we got that.)"
@@ -106,7 +102,7 @@ msgstr "便利な .no-jsと.jsクラスをつかって機能に合わせたス�
 
 #: src/index.html:58
 msgid "Why it is awesome-er"
-msgstr "Why it is awesome-er"
+msgstr "さらに素晴らしい理由"
 
 #: src/index.html:60
 msgid "Console.log nerfing so you won't break anyone by mistake."
@@ -122,8 +118,7 @@ msgstr "パフォーマンス最適化されたプリントスタイルシート
 
 #: src/index.html:63
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
-msgstr ""
-"iOS、アンドロイド、オペラモバイルに対応できるマークアップとCSSのスケルトン"
+msgstr "iOS、Android、Opera Mobileに対応できるマークアップとCSSのスケルトン"
 
 #: src/index.html:64
 msgid ""
@@ -147,20 +142,20 @@ msgstr "機能がたくさんありすぎる？ HTML5 Boilerplateはデリート
 
 #: src/index.html:70
 msgid "Want to dive in?"
-msgstr "Want to dive in?"
+msgstr "試してみる？"
 
 #: src/index.html:76
 msgid "Download Boilerplate {{ version }}"
 msgstr "ダウンロード Boilerplate {{ version }}"
 
 #: src/index.html:76
-msgid "Updated Feb 6th"
-msgstr ""
+#, fuzzy
+msgid "Updated Feb 8th"
+msgstr "2月6日更新"
 
 #: src/index.html:79
-#, fuzzy
 msgid "<u>Download</u> Boilerplate "
-msgstr "ダウンロード Boilerplate {{ version }}"
+msgstr "<u>ダウンロード</u> Boilerplate "
 
 #: src/index.html:79
 msgid "Keep the hints and links"
@@ -171,22 +166,20 @@ msgid "or"
 msgstr "or"
 
 #: src/index.html:81
-#, fuzzy
 msgid "<u>Download</u> Boilerplate \"stripped\""
-msgstr "ダウンロード Boilerplate {{ version }}"
+msgstr "<u>ダウンロード</u> Boilerplate \"stripped\""
 
 #: src/index.html:81
 msgid "No comments, just the bizniss."
-msgstr "コメントなし"
+msgstr "コメントなし、本番用。"
 
 #: src/index.html:83
 msgid "<u>Customize</u> Boilerplate"
-msgstr ""
+msgstr "<u>カスタマイズ</u> Boilerplate"
 
 #: src/index.html:83
-#, fuzzy
 msgid "100&#37; hipster."
-msgstr "100% ヒップスター"
+msgstr "100&#37; ヒップスター"
 
 #: src/index.html:89
 msgid "jQuery"
@@ -194,23 +187,23 @@ msgstr ""
 
 #: src/index.html:90
 msgid "Minified"
-msgstr ""
+msgstr "縮小化"
 
 #: src/index.html:91
 msgid "Unminified"
-msgstr ""
+msgstr "非縮小化"
 
 #: src/index.html:95
 msgid "Server Config"
-msgstr ""
+msgstr "サーバー設定"
 
 #: src/index.html:101
 msgid "Others"
-msgstr ""
+msgstr "その他"
 
 #: src/index.html:102
 msgid "All IE classes"
-msgstr ""
+msgstr "IEのすべてのクラス"
 
 #: src/index.html:103
 msgid "script.js & plugin.js"
@@ -218,12 +211,11 @@ msgstr ""
 
 #: src/index.html:104
 msgid "Google Analytics Snippet"
-msgstr ""
+msgstr "Google Analyticsスクリプト"
 
 #: src/index.html:105
-#, fuzzy
 msgid "Ant Build Script"
-msgstr "Intro to the Build Script"
+msgstr "Ant Buildスクリプト"
 
 #: src/index.html:108
 msgid ""
@@ -231,6 +223,9 @@ msgid ""
 "\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
 "\"http://initializr.com\">Initializr</a>"
 msgstr ""
+"<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
+"\" id=\"builder-download\">ダウンロード！</a> 他のオプションも知りたい？<a "
+"href=\"http://initializr.com\">Initializr</a>を見る"
 
 #: src/index.html:113
 msgid "Read the docs"
@@ -245,13 +240,12 @@ msgid "Follow on twitter"
 msgstr "Twitterをフォロー"
 
 #: src/index.html:119
-#, fuzzy
 msgid "HTML5 Boilerplate is 3.0!"
-msgstr "HTML5 Boilerplate"
+msgstr "HTML5 Boilerplateは3.0に！"
 
 #: src/index.html:120
 msgid "Monday, Feb 6th, 2012"
-msgstr ""
+msgstr "2012年2月6日（月）"
 
 #: src/index.html:121
 msgid ""
@@ -261,10 +255,14 @@ msgid ""
 "h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
 "what's new."
 msgstr ""
+"今回の更新の主な特徴はBoilerplateをより小さくしたことだ。変更点のほとんどはそ"
+"れにともなうものになっている。我々のビルドスクリプトは重要な処理を行なってい"
+"るため、これらを<a href=\"https://github.com/h5bp/ant-build-script\">我々のレ"
+"ポジトリに置く</a>ことにした。では、ここから新たに変わった点を紹介する。"
 
 #: src/index.html:124
 msgid "Changelog"
-msgstr ""
+msgstr "変更点"
 
 #: src/index.html:125
 msgid ""
@@ -272,109 +270,127 @@ msgid ""
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
 msgstr ""
+"3.0は<a href=\"https://github.com/h5bp/html5-boilerplate/compare/v2.0..."
+"v3.0\">最後のリリース以降のすべてのコミット</a>にある通りいくつかのメジャーな"
+"更新を行った。"
 
 #: src/index.html:126
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
+"あなたは既存のサイトを更新する必要があるか</a>？一言で答えると: その必要はな"
+"い。"
 
 #: src/index.html:128
 msgid "Significant changes"
-msgstr ""
+msgstr "重要な変更点"
 
 #: src/index.html:131
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
 msgstr ""
+"多くのフォルダーを削除した: <code>/demos</code>、<code>/test</code>、そして"
+"<code>/js/mylibs</code>。"
 
 #: src/index.html:132
 msgid "Build script is now a separate project"
-msgstr ""
+msgstr "ビルドスクリプトは別のプロジェクトになった"
 
 #: src/index.html:132
 msgid "Read about how to get and use the build script"
-msgstr ""
+msgstr "ビルドスクリプトの取得と使い方を読む"
 
 #: src/index.html:133
 msgid "Respond.js is no longer available by default. "
-msgstr ""
+msgstr "Respond.jsはデフォルトでは無効になった"
 
 #: src/index.html:139
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
 msgstr ""
+"Chromeframeはスクリプトからは適用されなくなった。IE6ユーザーはChromeframeをイ"
+"ンストールするかBrowse Happyを見て代わりのブラウザーを選ぶようリンクが表示さ"
+"れる。"
 
 #: src/index.html:140
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
-msgstr ""
+msgstr "iOSのスケーリングバグを防ぐためにMeta属性のviewportが更新された。"
 
 #: src/index.html:141
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr ""
+"<code>html</code>のIEクラスは明示的に指定されたバージョンよりも低いバージョン"
+"を適用するようになった。"
 
 #: src/index.html:142
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
 msgstr ""
+"<code>Modernizr.load</code>の代わりに非同期に最適化されたGoogle Analyticsのス"
+"ニペットを使うように変更された。"
 
 #: src/index.html:143
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
+"古いIEのバグを回避するためにすべてのスクリプトから<code>defer</code>が削除さ"
+"れた。"
 
 #: src/index.html:144
 msgid "Design of the 404 has been improved."
-msgstr ""
+msgstr "404ページのデザインが改善された。"
 
 #: src/index.html:149
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
 msgstr ""
+"より優れたデフォルトを提供するためにデフォルトのフォントサイズと行間は削除さ"
+"れた。"
 
 #: src/index.html:150
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
-msgstr ""
+msgstr "より良いタイポグラフィを提供するためにnormalize.cssが追加された。"
 
 #: src/index.html:151
-#, fuzzy
 msgid "More robust .ir helper class."
-msgstr "セマンティックではないヘルパクラス"
+msgstr "より強固な.irヘルパークラス。"
 
 #: src/index.html:152
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
 msgstr ""
+"スクロールバーを強制しなくなった。これはjQuery UIや幅を計算するようなライブラ"
+"リーの邪魔をする。"
 
 #: src/index.html:156
 msgid "Project"
-msgstr ""
+msgstr "プロジェクト"
 
 #: src/index.html:158
 msgid "Updated to Modernizr 2.5"
-msgstr ""
+msgstr "Modernizr 2.5へ更新"
 
 #: src/index.html:159
 msgid "Updated to jQuery 1.7.1"
-msgstr ""
+msgstr "jQuery 1.7.1へ更新"
 
 #: src/index.html:160
 msgid "Improved .htaccess"
-msgstr ""
+msgstr ".htaccessを改善"
 
 #: src/index.html:166
-#, fuzzy
 msgid "Videos"
 msgstr "ビデオ"
 
 #: src/index.html:170
 msgid "Ready to get started?"
-msgstr "Ready to get started?"
+msgstr "始めての方へ"
 
 #: src/index.html:170 standard input:173
 msgid "new!"
@@ -382,19 +398,19 @@ msgstr ""
 
 #: src/index.html:173
 msgid "Intro to the Build Script"
-msgstr "Intro to the Build Script"
+msgstr "ビルドスクリプトの紹介"
 
 #: src/index.html:176
 msgid "Get the lowdown in 40 minutes, flat!"
-msgstr "Get the lowdown in 40 minutes, flat!"
+msgstr "40分で裏側を見る"
 
 #: src/index.html:180
 msgid "Dig deeper in 60 minutes"
-msgstr "Dig deeper in 60 minutes"
+msgstr "60分でより深く"
 
 #: src/index.html:185
 msgid "Brought to you by"
-msgstr "Brought to you by"
+msgstr "彼らからあなたへ"
 
 #: src/index.html:187
 msgid "Google Chrome, jQuery"
@@ -409,18 +425,16 @@ msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
 #: src/index.html:190
-#, fuzzy
 msgid "Freelance web developer"
-msgstr "Open Web Developer"
+msgstr "Freelance web developer"
 
 #: src/index.html:191
-#, fuzzy
 msgid "Front-End Web Developer"
-msgstr "Open Web Developer"
+msgstr "Front-End Web Developer"
 
 #: src/index.html:198
 msgid "More Contributors"
-msgstr ""
+msgstr "その他の貢献者"
 
 #: src/index.html:201
 msgid ""
@@ -428,9 +442,8 @@ msgid ""
 msgstr "彼らスーパーヒーロー抜きには実現は不可能だった:"
 
 #: src/commentarchive.html:11
-#, fuzzy
 msgid "Comment archive : HTML5 Boilerplate"
-msgstr "HTML5 Boilerplate"
+msgstr "コメントアーカイブ : HTML5 Boilerplate"
 
 #: src/commentarchive.html:33
 msgid "Comment Archive"
@@ -500,6 +513,8 @@ msgid ""
 "mod_headers can't match by content-type, but we don't want to send this "
 "header on *everything*"
 msgstr ""
+"mod_headersはcontent-typeによるマッチができませんが、あらゆるものに対してこの"
+"ヘッダーは送る必要はありません。"
 
 #: src/template/htaccess.txt:39
 msgid "Cross-domain AJAX requests"
@@ -507,43 +522,41 @@ msgstr "クロスドメインAjaxリクエスト"
 
 #: src/template/htaccess.txt:42
 msgid "Serve cross-domain ajax requests, disabled."
-msgstr "無効化中。クロスドメインでのajaxリクエストが必要であればコメントをトル"
+msgstr "無効化中。クロスドメインでのajaxリクエストが必要であればコメントを取る"
 
 #: src/template/htaccess.txt:53
 msgid "Webfont access"
-msgstr "ウェブフォントへのアクセス"
+msgstr "Webフォントへのアクセス"
 
 #: src/template/htaccess.txt:57
 msgid "allow access from all domains for webfonts"
-msgstr ""
+msgstr "Webフォントのためにすべてのドメインからのアクセスを許可する"
 
 #: src/template/htaccess.txt:58
 msgid "alternatively you could only whitelist"
-msgstr ""
+msgstr "あるいは、\"sub.domain.com\"といったような"
 
 #: src/template/htaccess.txt:59
 msgid "your subdomains like \"sub.domain.com\""
-msgstr ""
+msgstr "あなたのサブドメインだけホワイトリストとして許可もできる"
 
 #: src/template/htaccess.txt:71
 msgid "Proper MIME type for all files"
 msgstr "すべてのファイルに対して適切なMINEタイプ"
 
 #: src/template/htaccess.txt:75
-#, fuzzy
 msgid "JavaScript"
-msgstr "CSSとJavaScript"
+msgstr ""
 
 #: src/template/htaccess.txt:76
 msgid "Normalize to standard type (it's sniffed in IE anyways) "
-msgstr ""
+msgstr "標準タイプを正規化する（とにかくIEでは検知される）"
 
 #: src/template/htaccess.txt:80
 msgid "Audio"
-msgstr ""
+msgstr "オーディオ"
 
 #: src/template/htaccess.txt:84
-#, fuzzy
 msgid "Video"
 msgstr "ビデオ"
 
@@ -552,19 +565,16 @@ msgid "SVG"
 msgstr ""
 
 #: src/template/htaccess.txt:90
-#, fuzzy
 msgid "Required for svg webfonts on iPad"
-msgstr "SVGの適切な提供法。iPadにてWebfontを利用する際、必須"
+msgstr "iPadにてWebフォントを利用する場合は必須"
 
 #: src/template/htaccess.txt:95 standard input:244
-#, fuzzy
 msgid "Webfonts"
-msgstr "ウェブフォント"
+msgstr "Webフォント"
 
 #: src/template/htaccess.txt:101
-#, fuzzy
 msgid "Assorted types"
-msgstr "他、様々なファイルタイプ"
+msgstr "様々なファイルタイプ"
 
 #: src/template/htaccess.txt:114
 msgid "Allow concatenation from within specific js and css files"
@@ -572,33 +582,31 @@ msgstr "指定したJSとCSSファイルから結合を行う"
 
 #: src/template/htaccess.txt:117
 msgid "e.g. Inside of script.combined.js you could have"
-msgstr ""
+msgstr "例: script.combined.js内にこのような記述があれば"
 
 #: src/template/htaccess.txt:120
 msgid "and they would be included into this single file."
-msgstr ""
+msgstr "一つのファイル内にこれらが読み込まれる。"
 
 #: src/template/htaccess.txt:122
 msgid "This is not in use in the boilerplate as it stands. You may"
-msgstr ""
+msgstr "現状ではこれはboilerplateでは使われていない。この方法で"
 
 #: src/template/htaccess.txt:123
 msgid "choose to name your files in this way for this advantage or"
-msgstr ""
+msgstr "自分のファイル名を選択、または手動でファイルを固めて"
 
 #: src/template/htaccess.txt:124
-#, fuzzy
 msgid "concatenate and minify them manually."
-msgstr "結合し圧縮したスクリプト終わり"
+msgstr "縮小することもできる。"
 
 #: src/template/htaccess.txt:125
 msgid "Disabled by default."
-msgstr "デフォルトでは無効"
+msgstr "デフォルトでは無効。"
 
 #: src/template/htaccess.txt:141
-#, fuzzy
 msgid "Gzip compression"
-msgstr "gzipによる圧縮"
+msgstr "Gzip圧縮"
 
 #: src/template/htaccess.txt:147
 msgid "force deflate for mangled headers"
@@ -614,26 +622,25 @@ msgstr "ヘッダ期限(よりよいキャッシュ制御のため)"
 
 #: src/template/htaccess.txt:195
 msgid "These are pretty far-future expires headers"
-msgstr ""
+msgstr "これらは遠い未来に期限が切れるヘッダのやり方"
 
 #: src/template/htaccess.txt:196
 msgid "They assume you control versioning with cachebusting query params like:"
 msgstr ""
+"次のようなクエリーパラメーターによってキャッシュを防ぎバージョンを制御する:"
 
 #: src/template/htaccess.txt:198
 msgid "Additionally, consider that outdated proxies may miscache"
 msgstr ""
+"加えて、古いプロキシがキャッシュに失敗する可能性があることを考慮すること"
 
 #: src/template/htaccess.txt:203
-#, fuzzy
 msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like \"access plus 1 week\" "
 msgstr ""
-"\n"
-"# ファイルネームをバージョン管理しない場合、CSSとJSについては、 # \"access "
-"plus 1 week\" のような設定をすること\n"
-"# "
+"ファイルネームをバージョン管理しない場合、CSSとJSについては、 # \"access "
+"plus 1 week\" のような設定をすること"
 
 #: src/template/htaccess.txt:209
 msgid "Perhaps better to whitelist expires rules? Perhaps."
@@ -646,69 +653,60 @@ msgstr ""
 "cache.manifestはFF 3.6にて再リクエストが必要 (Remy ~Introducing HTML5より)"
 
 #: src/template/htaccess.txt:217
-#, fuzzy
 msgid "Your document html"
 msgstr "htmlドキュメント用"
 
 #: src/template/htaccess.txt:220
 msgid "Data"
-msgstr ""
+msgstr "データ"
 
 #: src/template/htaccess.txt:225
-#, fuzzy
 msgid "RSS feed"
 msgstr "RSSフィード"
 
 #: src/template/htaccess.txt:228
-#, fuzzy
 msgid "Favicon (cannot be renamed)"
 msgstr "Favicon (リネームできません)"
 
 #: src/template/htaccess.txt:231
-#, fuzzy
 msgid "Media: images, video, audio"
 msgstr "メディア: 画像、動画、音声"
 
 #: src/template/htaccess.txt:241
-#, fuzzy
 msgid "HTC files  (css3pie)"
-msgstr "htcファイル(CSS3pie用)"
+msgstr "HTCファイル(CSS3pie用)"
 
 #: src/template/htaccess.txt:251
-#, fuzzy
 msgid "CSS and JavaScript"
 msgstr "CSSとJavaScript"
 
 #: src/template/htaccess.txt:265
 msgid "ETag removal"
-msgstr "Etagの削除"
+msgstr "ETagの削除"
 
 #: src/template/htaccess.txt:274
-#, fuzzy
 msgid ""
 "Since we`re sending far-future expires, we don't need ETags for static "
 "content."
 msgstr ""
-"\n"
-"# 長期間の有効期限を設定しているため, 静的コンテンツ用のETagsは\n"
-"# 必要ではない。\n"
-"# "
+"長期間の有効期限を設定しているため, 静的コンテンツ用のETagsは必要ではない。"
 
 #: src/template/htaccess.txt:281
 msgid "Stop screen flicker in IE on CSS rollovers"
-msgstr "IEでCSSのマウスオーバ時にスクリーンがフリッカするのを止める"
+msgstr "IEでCSSのマウスオーバー時にスクリーンがフリッカするのを止める"
 
 #: src/template/htaccess.txt:284
 #, fuzzy
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers in "
 "combination with the \"ExpiresByType\" rules for images (see above)"
-msgstr "画像用の&quot;ExpiresByType&quot;ルール(上記参照)とともに、"
+msgstr ""
+"次のディレクティブはIEでCSSのマウスオーバー時に画像用の\"ExpiresByType\"ルー"
+"ル（上記参照）とともに、スクリーンがフリッカーするのを止める"
 
 #: src/template/htaccess.txt:285
-#, fuzzy
 msgid "If needed, un-comment the following rules."
-msgstr "必要であれば、以下のルールのコメントをトル"
+msgstr "必要であれば、以下のルールのコメントを取る"
 
 #: src/template/htaccess.txt:295
 msgid "Cookie setting from iframes"
@@ -739,117 +737,98 @@ msgstr ""
 
 #: src/template/htaccess.txt:314
 msgid "FollowSymLinks must be enabled for this to work."
-msgstr ""
+msgstr "FollowSymLinksは有効にする必要がある"
 
 #: src/template/htaccess.txt:323
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
-msgstr "URLの最初の&quot;www.&quot;を削除あるいは、強制する"
+msgstr "URLの最初の\"www.\"を削除あるいは、強制する"
 
 #: src/template/htaccess.txt:327
-#, fuzzy
 msgid ""
 "The same content should never be available under two different URLs, "
 "especially not with and without \"www.\" at the beginning, since this can "
 "cause SEO problems (duplicate content)."
 msgstr ""
-"\n"
-"# SEOの問題(重複するコンテント)があるため同じコンテントは2つの異なるURLに存在"
-"する\n"
-"# べきではない。\"www.\"がURLの最初につくかつかないかの問題は特に。\n"
-"# 従って、下記からどちらへリダイレクトするかを選ぶ必要がある。\n"
-"# "
+"SEOの問題（重複するコンテント）があるため同じコンテントは2つの異なるURLに存在"
+"するべきではない。\"www.\"がURLの最初につくかつかないかの問題は特に。従って、"
+"下記からどちらへリダイレクトするかを選ぶ必要がある。"
 
 #: src/template/htaccess.txt:328
 msgid ""
 "That's why you should choose one of the alternatives and redirect the other "
 "one."
-msgstr ""
+msgstr "どれか一つを選んで、他の一つにリダイレクトさせる必要がある"
 
 #: src/template/htaccess.txt:331
-#, fuzzy
 msgid "By default option 1 (no \"www.\") is activated."
-msgstr "デフォルトはオプション1(強制的に最後のスラッシュを追加)"
+msgstr "デフォルトはオプション1（\"www.\"なし）が有効"
 
 #: src/template/htaccess.txt:332
 msgid "Remember: Shorter URLs are sexier."
-msgstr ""
+msgstr "メモ: 短いURLは良いこと。"
 
 #: src/template/htaccess.txt:336
-#, fuzzy
 msgid ""
 "If you rather want to use option 2, just comment out all option 1 lines and "
 "uncomment option 2."
 msgstr ""
-"\n"
-"# オプション2を利用したい場合はオプション1用の行をコメントアウトし\n"
-"# オプション2用の行からコメントをトル。\n"
-"# 重要: 両方のルールを同時に利用可能にしないこと。\n"
-"# "
+"オプション2を利用したい場合はオプション1用の行をコメントアウトしオプション2用"
+"の行からコメントを取る。"
 
 #: src/template/htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
-msgstr ""
+msgstr "重要: 両方のルールを同時に使わないこと！"
 
 #: src/template/htaccess.txt:343
 msgid "Option 1:"
-msgstr ""
+msgstr "オプション1:"
 
 #: src/template/htaccess.txt:344
 msgid "Rewrite"
-msgstr ""
+msgstr "リライト"
 
 #: src/template/htaccess.txt:356
 msgid "Option 2:"
-msgstr ""
+msgstr "オプション2:"
 
 #: src/template/htaccess.txt:357
 msgid ""
 "To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
 msgstr ""
+"\"domain.comからwww.domain.com\"にリライトするには次の行のコメントを取る"
 
 #: src/template/htaccess.txt:358
-#, fuzzy
 msgid ""
 "Be aware that the following rule might not be a good idea if you use \"real"
 "\" subdomains for certain parts of your website."
 msgstr ""
-"\n"
-"# オプション2:\n"
-"# \"domain.com -> www.domain.com\"のようにリライトする場合は、以下のコメント"
-"をトル\n"
-"# 以下のルールは\"本当の\"サブドメインをウェブサイトで利用する際に\n"
-"# いいアイデアとは言えない \n"
-"# "
+"以下のルールは\"本当の\"サブドメインをウェブサイトで利用する際にいいアイデア"
+"とは言えない"
 
 #: src/template/htaccess.txt:371
 msgid "Built-in filename-based cache busting"
 msgstr "ファイル名でのキャッシュバスタをビルトイン"
 
 #: src/template/htaccess.txt:375
-#, fuzzy
 msgid ""
 "If you're not using the build script to manage your filename version "
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
-"\n"
 "# ビルトスクリプトを利用していない場合は、こちらを利用することを検討するこ"
-"と。\n"
-"# /css/all.20110203.css というファイル名を /res/all.cssへリダイレクトする。\n"
-"# "
+"と。/css/all.20110203.css というファイル名を /res/all.cssへリダイレクトする。"
 
 #: src/template/htaccess.txt:378
-#, fuzzy
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
 msgstr ""
-" all.css?v1231という手法でキャッシュバスタを行うよりファイル名で行う方が\n"
-"いいアイデアである理由は"
+"all.css?v1231という手法でキャッシュバスタを行うよりファイル名で行う方がいいア"
+"イデアである理由は:"
 
 #: src/template/htaccess.txt:381
 msgid "Uncomment to enable."
-msgstr "利用可能にするためにはコメントをトル"
+msgstr "利用可能にするためにはコメントを取る"
 
 #: src/template/htaccess.txt:391
 msgid "Prevent SSL cert warnings"
@@ -857,37 +836,33 @@ msgstr "SSLの警告を止める"
 
 #: src/template/htaccess.txt:395
 msgid "Rewrite secure requests properly to prevent SSL cert warnings"
-msgstr ""
+msgstr "SSLの警告を防ぐために安全なリクエストを適切にリライトする"
 
 #: src/template/htaccess.txt:396
 msgid ""
 "e.g. prevent https://www.domain.com when your cert only allows https://"
 "secure.domain.com "
 msgstr ""
+"例: あなたの証明書がhttps://secure.domain.comにだけ許可しているときにhttps://"
+"www.domain.comの警告を防ぐ"
 
 #: src/template/htaccess.txt:397
-#, fuzzy
 msgid "Uncomment the following lines to use this feature."
-msgstr "必要であれば、以下のルールのコメントをトル"
+msgstr "必要であれば、以下のルールのコメントを取る"
 
 #: src/template/htaccess.txt:408
 msgid "Prevent 404 errors for non-existing redirected folders"
 msgstr "存在しないリダイレクト先フォルダでの404を止める"
 
 #: src/template/htaccess.txt:412
-#, fuzzy
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist e.g."
 msgstr ""
-"\n"
-"# -MultiViewsがない場合、Apacheは同じ名前のリライトしたフォルダがない場合404"
-"を返す\n"
-"# 例: /blog/hello : webmasterworld.com/apache/3808792.htm\n"
-"# "
+"-MultiViewsがない場合、Apacheは同じ名前のリライトしたフォルダがない場合404を"
+"返す。例:"
 
 #: src/template/htaccess.txt:420
-#, fuzzy
 msgid "Custom 404 page"
 msgstr "カスタム404ページ"
 
@@ -913,75 +888,49 @@ msgid "A little more security"
 msgstr "少しだけセキュリティを追加"
 
 #: src/template/htaccess.txt:446
-#, fuzzy
 msgid ""
 "Do we want to advertise the exact version number of Apache we're running? "
 "Probably not."
 msgstr ""
-"\n"
-"# 正確にどのApacheのバージョンを使っているか宣伝する必要がある?\n"
-"# もちろん、そんなことはない。\n"
-"# httpd.confで設定した時のみ利用可能。.htaccessでは設定は無効になる\n"
-"# "
+"正確にどのApacheのバージョンを使っているか宣伝する必要がある?もちろん、そんな"
+"ことはない。"
 
 #: src/template/htaccess.txt:447
-#, fuzzy
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
-msgstr ""
-"\n"
-"# 正確にどのApacheのバージョンを使っているか宣伝する必要がある?\n"
-"# もちろん、そんなことはない。\n"
-"# httpd.confで設定した時のみ利用可能。.htaccessでは設定は無効になる\n"
-"# "
+msgstr "httpd.confで設定した時のみ利用可能。.htaccessでは設定は無効になる。"
 
 #: src/template/htaccess.txt:453
-#, fuzzy
 msgid ""
 "\"-Indexes\" will have Apache block users from browsing folders without a "
 "default document"
 msgstr ""
-"Apacheにてデフォルトドキュメントのないフォルダを閲覧するのをブロックする"
+"\"-Indexes\"オプションはApacheにてデフォルトドキュメントが存在しないフォルダ"
+"の閲覧をブロックする。"
 
 #: src/template/htaccess.txt:454
-#, fuzzy
 msgid ""
 "Usually you should leave this activated, because you shouldn't allow "
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
-"\n"
-"# \"-Indexes\" オプションはApacheにてデフォルトドキュメントが存在しないフォル"
-"ダの閲覧をブロックする。\n"
-"# 通常はサーバ上にあるすべてのフォルダ(例えばCMSのシステムフォルダのようなプ"
-"ライベートフォルダ)を全ユーザに閲覧される必要はないので、このオプションは常"
-"に\n"
-"# 利用するべき。\n"
-"# "
+"通常はサーバ上にあるすべてのフォルダ(例えばCMSのシステムフォルダのようなプラ"
+"イベートフォルダ)を全ユーザに閲覧される必要はないので、このオプションは常に利"
+"用するべき。"
 
 #: src/template/htaccess.txt:460
-#, fuzzy
 msgid ""
 "Block access to \"hidden\" directories whose names begin with a period. "
-msgstr ""
-"\n"
-"# ピリオドで始まる \"隠し属性\" のディレクトリへのアクセスをブロックする\n"
-"# SubversionやGitなどのバージョンコントロールシステムで生成したディレクトリな"
-"ど。\n"
-"# "
+msgstr "ピリオドで始まる\"hidden\"のディレクトリへのアクセスをブロックする。"
 
 #: src/template/htaccess.txt:461
-#, fuzzy
 msgid ""
 "This includes directories used by version control systems such as Subversion "
 "or Git."
 msgstr ""
-"\n"
-"# ピリオドで始まる \"隠し属性\" のディレクトリへのアクセスをブロックする\n"
-"# SubversionやGitなどのバージョンコントロールシステムで生成したディレクトリな"
-"ど。\n"
-"# "
+"SubversionやGitなどのバージョンコントロールシステムで生成したディレクトリな"
+"ど。"
 
 #: src/template/htaccess.txt:469
 msgid ""
@@ -990,13 +939,17 @@ msgid ""
 "This closes a major security hole that is abused by most XSS (cross-site "
 "scripting) attacks. For more information:"
 msgstr ""
+"もしあなたのサーバーがこのように設定されていないなら、PHPのregister_globalsオ"
+"プションをオフにするために次のディレクティブのコメントを取るべき。これは多く"
+"のXSS（cross-site scripting）攻撃によるセキュリティホールを防ぐ。詳しい情報:"
 
 #: src/template/htaccess.txt:471
 msgid "IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :"
 msgstr ""
+"もしREGISTER_GLOBALSディレクティブが500 INTERNAL SERVER ERRORを起こしていた"
+"ら:"
 
 #: src/template/htaccess.txt:473
-#, fuzzy
 msgid ""
 "Your server does not allow PHP directives to be set via .htaccess. In that "
 "case you must make this change in your php.ini file instead.If you are using "
@@ -1005,127 +958,112 @@ msgid ""
 "PHP configurations (not just this one), or you will effectively reset "
 "everything to PHP defaults."
 msgstr ""
-"\n"
-"# サーバ側の設定を行っておらず、PHPのregister_globalsオプションをオフにするた"
-"めには\n"
-"# 以下の命令はコメントをトル必要がある。 \n"
-"# この命令は、ほとんどのXSS(クロスサイトスクリプティング)アタックに利用され"
-"る\n"
-"# セキュリティホールを閉じる事ができる。詳しくは: http://php.net/"
-"register_globals\n"
-"#\n"
-"# register_globalsオプションが500 Internal server errorを起こす場合:\n"
-"#\n"
-"# 利用しているサーバはPHPの命令を.htacceess経由で設定することができません。\n"
-"# その場合、この設定はphp.iniファイルで行う事。もしレンタルウェブホストを利用"
-"して\n"
-"# いる場合、管理者のサポートを得てください。\n"
-"# すべてのサーバでphp.iniをローカルに保存することが許可されているわけではな"
-"く、\n"
-"# すべてのPHPの設定(この設定だけではなく)をphp.iniで行っている、それができな"
-"い場合、 \n"
-"# 事実上PHPのデフォルト設定にリセットすることになる。PHPの命令について詳しく"
-"は、\n"
-"# www.php.netを参照してください。\n"
-"# "
+"利用しているサーバはPHPの命令を.htacceess経由で設定することができません。その"
+"場合、この設定はphp.iniファイルで行う事。もしレンタルウェブホストを利用してい"
+"る場合、管理者のサポートを得てください。すべてのサーバでphp.iniをローカルに保"
+"存することが許可されているわけではなく、すべてのPHPの設定(この設定だけではな"
+"く)をphp.iniで行っている、それができない場合、事実上PHPのデフォルト設定にリ"
+"セットすることになる。"
 
 #: src/template/htaccess.txt:474
 msgid ""
 "Consult www.php.net for more detailed information about setting PHP "
 "directives."
-msgstr ""
+msgstr "PHPの命令について詳しくは、www.php.netを参照してください。"
 
 #: src/template/htaccess.txt:479
 msgid "Rename session cookie to something else, than PHPSESSID"
-msgstr ""
+msgstr "セッションCookieをPHPSESSIDでない他のものに変更する"
 
 #: src/template/htaccess.txt:482
 msgid "Do not show you are using PHP"
-msgstr ""
+msgstr "PHPを使っていることを見せないようにする"
 
 #: src/template/htaccess.txt:483
 msgid "Note: Move this line to php.ini since it won't work in .htaccess"
-msgstr ""
+msgstr "メモ: これは.htaccessでは動かないためphp.iniで記述すること"
 
 #: src/template/htaccess.txt:486
 msgid "Level of log detail - log all errors"
-msgstr ""
+msgstr "ログレベル"
 
 #: src/template/htaccess.txt:489
 msgid "Write errors to log file"
-msgstr ""
+msgstr "ログファイルにエラーを書き込む"
 
 #: src/template/htaccess.txt:492
 msgid "Do not display errors in browser (production - Off, development - On)"
 msgstr ""
+"ブラウザーにエラーを表示しない（プロダクション環境 - オフ、開発環境 - オン）"
 
 #: src/template/htaccess.txt:495
 msgid "Do not display startup errors (production - Off, development - On)"
-msgstr ""
+msgstr "起動エラーを表示しない（プロダクション環境 - オフ、開発環境 - オン）"
 
 #: src/template/htaccess.txt:498
 msgid "Format errors in plain text"
-msgstr ""
+msgstr "プレーンテキストでエラーを出力する"
 
 #: src/template/htaccess.txt:501
 msgid "Show multiple occurrence of error"
-msgstr ""
+msgstr "繰り返されるエラーを表示する"
 
 #: src/template/htaccess.txt:504
 msgid "Show same errors from different sources"
-msgstr ""
+msgstr "異なるソースからの同じエラーを表示する"
 
 #: src/template/htaccess.txt:507
 msgid "Size limit for error messages"
-msgstr ""
+msgstr "エラーメッセージの最大長"
 
 #: src/template/htaccess.txt:510
 msgid ""
 "Don't precede error with string (doesn't accept empty string, use whitespace "
 "if you need)"
 msgstr ""
+"エラーの前に出力する文字列（空文字は受け取れない、必要ならホワイトスペースを"
+"使うこと）"
 
 #: src/template/htaccess.txt:513
 msgid ""
 "Don't prepend to error (doesn't accept empty string, use whitespace if you "
 "need)"
 msgstr ""
+"エラーの後に出力する文字列（空文字は受け取れない、必要ならホワイトスペースを"
+"使うこと）"
 
 #: src/template/htaccess.txt:516
 msgid "Increase cookie security"
-msgstr ""
+msgstr "Cookieのセキュリティの危険性が増す"
 
 #: src/template/crossdomain.xml:6
-#, fuzzy
 msgid "Read this"
 msgstr "ドキュメントを読む"
 
 #: src/template/crossdomain.xml:8
-#, fuzzy
 msgid "Most restrictive policy"
-msgstr "もっとも厳しいポリシー:"
+msgstr "もっとも厳しいポリシー"
 
 #: src/template/crossdomain.xml:11
-#, fuzzy
 msgid "Least restrictive policy"
-msgstr "もっとも甘いポリシー:"
+msgstr "もっとも甘いポリシー"
 
 #: src/template/crossdomain.xml:18
 msgid "If you host a crossdomain.xml file with allow-access-from domain=\"*\""
 msgstr ""
+"あなたがallow-access-from domain=\"*\"としたcrossdomain.xmlをホストして、"
 
 #: src/template/crossdomain.xml:19
 msgid "and don't understand all of the points described here, you probably"
-msgstr ""
+msgstr "ここに書いていることを理解できていない場合は、おそらく"
 
 #: src/template/crossdomain.xml:20
 msgid "have a nasty security vulnerability."
-msgstr ""
+msgstr "セキュリティの脆弱性を抱えています。"
 
 #: src/template/404.html:5
-#, fuzzy
 msgid "Page Not Found"
-msgstr "見つかりません"
+msgstr "ページが見つかりません"
 
 #: src/template/404.html:21
 msgid "Not found"
@@ -1133,38 +1071,39 @@ msgstr "見つかりません"
 
 #: src/template/404.html:23
 msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
+msgstr "申し訳ありません、あなたが開いたページは見つかりません。"
 
 #: src/template/404.html:24
 msgid "It looks like this was the result of either"
-msgstr ""
+msgstr "次のいずれかの可能性があります"
 
 #: src/template/404.html:26
 msgid "a mistyped address"
-msgstr ""
+msgstr "アドレスの入力ミス"
 
 #: src/template/404.html:27
 msgid "an out-of-date link"
-msgstr ""
+msgstr "リンク切れ"
 
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
-msgstr ""
+msgstr "一部の問題を回避するためには.htaccessを使ってこの行を削除する"
 
 #: src/template/index.html:11
 msgid "More info:"
-msgstr ""
+msgstr "詳しい情報:"
 
 #: src/template/index.html:18
 msgid "Mobile viewport optimized:"
 msgstr "モバイルビューポート最適化:"
 
 #: src/template/index.html:21
-#, fuzzy
 msgid ""
 "Place favicon.ico and apple-touch-icon.png in the root directory: "
 "mathiasbynens.be/notes/touch-icons"
-msgstr "favicon.icoとapple-touch-icon.pngはドメインのルートに置くこと"
+msgstr ""
+"favicon.icoとapple-touch-icon.pngはドメインのルートに置くこと: mathiasbynens."
+"be/notes/touch-icons"
 
 #: src/template/index.html:23
 msgid "CSS: implied media=\"all\""
@@ -1172,28 +1111,27 @@ msgstr "CSS : media=\"all\" と解釈される"
 
 #: src/template/index.html:26
 msgid "More ideas for your <head> here: h5bp.com/docs/#head-Tips"
-msgstr ""
+msgstr "<head>に関する詳しい情報はこちら: h5bp.com/docs/#head-Tips"
 
 #: src/template/index.html:28
-#, fuzzy
 msgid "All JavaScript at the bottom, except for Modernizr and Respond."
-msgstr ""
-"Modernizr以外のJavaScriptはファイルの下部に。ModernizrはHTML5の新要素を利用可"
-"能にし、ブラウザ別の機能をHTMLタグ内に表示してくれる"
+msgstr "Modernizr以外のJavaScriptはファイルの下部に。"
 
 #: src/template/index.html:29
 msgid ""
 "Modernizr enables HTML5 elements & feature detects; Respond is a polyfill "
 "for min/max-width CSS3 Media Queries"
 msgstr ""
+"ModernizrはHTML5の要素や機能を利用可能にし、min/max-width CSS3 Media Queries"
+"に対してpolyfillとして実現する"
 
 #: src/template/index.html:30
 msgid "For optimal performance, use a custom Modernizr build:"
-msgstr ""
+msgstr "最適なパフォーマンスのためにカスタマイズされたModernizrを使う:"
 
 #: src/template/index.html:46
 msgid "end of #container"
-msgstr ""
+msgstr "#containerの終わり"
 
 #: src/template/index.html:49
 msgid "JavaScript at the bottom for fast page loading"
@@ -1211,18 +1149,19 @@ msgstr "スクリプトはantビルドスクリプトを利用して結合、圧
 
 #: src/template/index.html:59
 msgid "end scripts"
-msgstr "JavaScript 終わり"
+msgstr "スクリプトの終わり"
 
 #: src/template/index.html:62
-#, fuzzy
 msgid "Change UAXXXXXXXX1 to be your site's ID"
-msgstr "UA-XXXX-Xを自分のサイトIDに変更すること"
+msgstr "UAXXXXXXXX1を自分のサイトIDに変更すること"
 
 #: src/template/index.html:70
 msgid ""
 "Prompt IE 6 users to install Chrome Frame. Remove this if you want to "
 "support IE 6."
 msgstr ""
+"IE 6ユーザーにChrome Frameをインストールするように促す。もしIE 6をサポートし"
+"たいならこれを削除すること。"
 
 #: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
@@ -1234,15 +1173,15 @@ msgstr "チーム"
 
 #: src/template/humans.txt:6
 msgid "your title"
-msgstr ""
+msgstr "タイトル"
 
 #: src/template/humans.txt:6
 msgid "your name"
-msgstr ""
+msgstr "名前"
 
 #: src/template/humans.txt:7
 msgid "Site"
-msgstr ""
+msgstr "サイト"
 
 #: src/template/humans.txt:8
 msgid "Twitter"
@@ -1250,7 +1189,7 @@ msgstr ""
 
 #: src/template/humans.txt:9
 msgid "Location"
-msgstr ""
+msgstr "場所"
 
 #: src/template/humans.txt:11
 msgid "THANKS"
@@ -1258,7 +1197,7 @@ msgstr "サンクス"
 
 #: src/template/humans.txt:12
 msgid "Names (& URL)"
-msgstr ""
+msgstr "名前（とURL）"
 
 #: src/template/humans.txt:14
 msgid "SITE"
@@ -1266,32 +1205,33 @@ msgstr "サイト"
 
 #: src/template/humans.txt:15
 msgid "Standards"
-msgstr ""
+msgstr "標準技術"
 
 #: src/template/humans.txt:16
-#, fuzzy
 msgid "Components"
-msgstr "コメント"
+msgstr "コンポーネント"
 
 #: src/template/humans.txt:17
 msgid "Software"
-msgstr ""
+msgstr "ソフトウェア"
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
 msgstr ""
+"これらはクロスブラウザーのためのスタイルにおいて多くのリサーチした成果です。"
 
 #: src/template/css/style.css:5
 msgid "Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,"
 msgstr ""
+"Nicolas Gallagher、Jonathan Neal、Kroc Camen、そしてH5BPコミュニティ、チーム"
 
 #: src/template/css/style.css:6
 msgid "Kroc Camen, and the H5BP dev community and team."
-msgstr ""
+msgstr "にはクレジットに名前を残すとともに多大な感謝を贈ります。"
 
 #: src/template/css/style.css:8
 msgid "Detailed information about this CSS: h5bp.com/css"
-msgstr ""
+msgstr "このCSSについて詳しい情報: h5bp.com/css"
 
 #: src/template/css/style.css:13
 msgid "HTML5 element display"
@@ -1306,9 +1246,9 @@ msgid ""
 "Correct text resizing oddly in IE6/7 when body font-size is set using em "
 "units"
 msgstr ""
+"IE6/7でbodyのfont-sizeをemを使って指定したときおかしくなる現象を正しくする"
 
 #: src/template/css/style.css:30
-#, fuzzy
 msgid "Force vertical scrollbar in non-IE"
 msgstr "IE以外でスクロールバーを表示する"
 
@@ -1317,10 +1257,12 @@ msgid ""
 "Prevent iOS text size adjust on device orientation change, without disabling "
 "user zoom:"
 msgstr ""
+"iOSのデバイスの方向を変えたときにズームを無効にせずにテキストサイズが調整され"
+"るのを防ぐ:"
 
 #: src/template/css/style.css:43
 msgid "Remove text-shadow in selection highlight: h5bp.com/i"
-msgstr ""
+msgstr "選択時の反転ではtext-shadowを削除する: h5bp.com/i"
 
 #: src/template/css/style.css:45
 msgid "These selection declarations have to be separate"
@@ -1330,6 +1272,7 @@ msgstr "選択用の宣言はカンマでつなぐことが出来ないので、
 msgid ""
 "Also: hot pink! (or customize the background color to match your design)"
 msgstr ""
+"補足: ピンク！（またはあなたのデザインにマッチする背景色にカスタマイズする）"
 
 #: src/template/css/style.css:56
 msgid "Links"
@@ -1338,6 +1281,7 @@ msgstr ""
 #: src/template/css/style.css:64
 msgid "Improve readability when focused and hovered in all browsers:"
 msgstr ""
+"すべてのブラウザーでフォーカスしたりマウスオーバーしたときの可読性を改善する"
 
 #: src/template/css/style.css:70
 msgid "Typography"
@@ -1345,17 +1289,16 @@ msgstr ""
 
 #: src/template/css/style.css:87
 msgid "Redeclare monospace font family"
-msgstr ""
+msgstr "monospaceのフォントファミリーを再宣言する"
 
 #: src/template/css/style.css:90
 msgid "Improve readability of pre-formatted text in all browsers"
-msgstr ""
+msgstr "すべてのブラウザーでpre形式を指定されたテキストの可読性を改善する"
 
 #: src/template/css/style.css:98
-#, fuzzy
 msgid ""
 "Position subscript and superscript content without affecting line-height"
-msgstr "sub、supをline-heightに影響を出ないように設定"
+msgstr "sub、supをline-heightに影響を出ないようにする"
 
 #: src/template/css/style.css:105
 msgid "Lists"
@@ -1367,15 +1310,15 @@ msgstr ""
 
 #: src/template/css/style.css:118
 msgid "Improve image quality when scaled in IE7"
-msgstr ""
+msgstr "IE7で拡大したときに画像の画質を改善する"
 
 #: src/template/css/style.css:119
 msgid "Remove the gap between images and borders on image containers"
-msgstr ""
+msgstr "画像間の隙間や画像の枠を削除する"
 
 #: src/template/css/style.css:125
 msgid "Correct overflow not hidden in IE9 "
-msgstr ""
+msgstr "IE9のhiddenでないoverflowを正しくする"
 
 #: src/template/css/style.css:132
 msgid "Figures"
@@ -1387,68 +1330,71 @@ msgstr ""
 
 #: src/template/css/style.css:145
 msgid "Indicate that 'label' will shift focus to the associated form element"
-msgstr ""
+msgstr "関連したフォーム要素にフォーカスした'label'を明示する"
 
 #: src/template/css/style.css:148
 msgid "Correct color not inheriting in IE6/7/8/9"
-msgstr ""
+msgstr "IE6/7/8/9で継承しない色を正しくする"
 
 #: src/template/css/style.css:149
 msgid "Correct alignment displayed oddly in IE6/7"
-msgstr ""
+msgstr "IE6/7で揃えの表示を正しくする"
 
 #: src/template/css/style.css:155
 msgid "Correct font-size not inheriting in all browsers"
-msgstr ""
+msgstr "すべてのブラウザーで継承されないfont-sizeを正しくする"
 
 #: src/template/css/style.css:156
 msgid "Remove margins in FF3/4 S5 Chrome"
-msgstr ""
+msgstr "FF3/4、S5、Chromeでmarginを削除する"
 
 #: src/template/css/style.css:157
 msgid "Define consistent vertical alignment display in all browsers"
-msgstr ""
+msgstr "すべてのブラウザーで一貫性のある縦揃えを定義する"
 
 #: src/template/css/style.css:163
 msgid ""
 "Define line-height as normal to match FF3/4 (set using !important in the UA "
 "stylesheet)"
 msgstr ""
+"FF3/4にマッチするようにline-heightを合わせる（UAのスタイルシートでは!"
+"importantを使用して設定する）"
 
 #: src/template/css/style.css:164
 msgid "Correct inner spacing displayed oddly in IE6/7"
-msgstr ""
+msgstr "IE6/7の内側の余白の表示を正しくする"
 
 #: src/template/css/style.css:170
 msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
 msgstr ""
+"IE6/7の重なる問題とホワイトスペースの問題を回避するために'table'の内側の余白"
+"を再設定する"
 
 #: src/template/css/style.css:176
-#, fuzzy
 msgid "Display hand cursor for clickable form elements"
-msgstr "クリックできるインプット要素でハンドカーソルを使う"
+msgstr "クリックできるインプット要素でハンドカーソルを表示する"
 
 #: src/template/css/style.css:177
 msgid "Allow styling of clickable form elements in iOS"
-msgstr ""
+msgstr "iOSでクリックできるフォーム要素のスタイルを許可する"
 
 #: src/template/css/style.css:183
 msgid "Consistent box sizing and appearance"
-msgstr ""
+msgstr "一貫性のあるボックスサイズと外観にする"
 
 #: src/template/css/style.css:191
 msgid "Remove inner padding and border in FF3/4"
-msgstr ""
+msgstr "FF3/4で内側のpaddingとborderを削除する"
 
 #: src/template/css/style.css:197
 msgid "Remove default vertical scrollbar in IE6/7/8/9"
-msgstr ""
+msgstr "IE6/7/8/9でデフォルトの縦スクロールバーを削除する"
 
 #: src/template/css/style.css:198
 msgid "Allow only vertical resizing"
-msgstr ""
+msgstr "縦のリサイズだけ許可する"
 
 #: src/template/css/style.css:203
 msgid "Colors for form validity"
@@ -1460,40 +1406,33 @@ msgstr ""
 
 #: src/template/css/style.css:216
 msgid "Primary styles"
-msgstr "メインスタイル"
+msgstr ""
 
 #: src/template/css/style.css:217
-#, fuzzy
 msgid "Author"
-msgstr "制作者:"
+msgstr ""
 
 #: src/template/css/style.css:236
 msgid "Non-semantic helper classes"
 msgstr "セマンティックではないヘルパクラス"
 
 #: src/template/css/style.css:237
-#, fuzzy
 msgid "Please define your styles before this section."
-msgstr ""
-"セマンティックではないヘルパクラス: このセクションの前で自分のスタイルを書く"
-"事。"
+msgstr "このセクションの前で自分のスタイルを定義してください。"
 
 #: src/template/css/style.css:240
 msgid "For image replacement"
 msgstr "画像置き換え用"
 
 #: src/template/css/style.css:244
-#, fuzzy
 msgid "Hide for both screenreaders and browsers"
 msgstr "ブラウザ、スクリーンリーダから隠す"
 
 #: src/template/css/style.css:247
-#, fuzzy
 msgid " Hide only visually, but have it available for screenreaders:"
-msgstr "ブラウザからは隠し、スクリーンリーダからは利用できる"
+msgstr "表示はせずにスクリーンリーダからは利用できる"
 
 #: src/template/css/style.css:250
-#, fuzzy
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard"
@@ -1506,57 +1445,51 @@ msgstr "ブラウザとスクリーンリーダから隠し、レイアウトを
 
 #: src/template/css/style.css:256
 msgid "Contain floats"
-msgstr ""
+msgstr "floatを内包する"
 
 #: src/template/css/style.css:270
-#, fuzzy
 msgid "Use Media Queries for Responsive Design."
-msgstr "レスポンシブデザイン用メディアクエリ"
+msgstr "レスポンシブデザインのためにMedia Queriesを使う。"
 
 #: src/template/css/style.css:271
 msgid "Pixel widths given as samples."
-msgstr ""
+msgstr "ピクセル値はサンプルです。"
 
 #: src/template/css/style.css:272
 msgid "Edit the widths to suit where your design breaks, rather than "
-msgstr ""
+msgstr "デバイスのピクセル値よりも、あなたのデザインに最適な幅に編集"
 
 #: src/template/css/style.css:273
 msgid "for device pixels, see 'Using a mobile-first approach'"
-msgstr ""
+msgstr "してください。'Using a mobile-first approach'を参考"
 
 #: src/template/css/style.css:277
-#, fuzzy
 msgid "Style adjustments for viewports 480px and over go here"
-msgstr "縦位置のスタイル設定はこちら"
+msgstr "viewportが480pxのスタイル設定はこちら"
 
 #: src/template/css/style.css:282
-#, fuzzy
 msgid "Style adjustments for viewports 768px and over go here"
-msgstr "縦位置のスタイル設定はこちら"
+msgstr "viewportが768pxのスタイル設定はこちら"
 
 #: src/template/css/style.css:289
 msgid "Print styles."
 msgstr "印刷スタイル"
 
 #: src/template/css/style.css:290
-#, fuzzy
 msgid "Inlined to avoid required HTTP connection"
 msgstr "余計なHTTP接続を避けるためインラインで記述"
 
 #: src/template/css/style.css:294
-#, fuzzy
 msgid "Black prints faster"
-msgstr "黒の方が印刷が早い"
+msgstr "黒の方が印刷が速い"
 
 #: src/template/css/style.css:298
-#, fuzzy
 msgid "Don't show links for images, or javascript/internal links"
 msgstr "画像用のリンク、JavaScript、内部リンクは隠す"
 
 #: src/template/js/script.js:1
 msgid "Author:"
-msgstr "制作者:"
+msgstr ""
 
 #: src/template/js/plugins.js:2
 msgid "usage: log('inside coolFunc', this, arguments);"

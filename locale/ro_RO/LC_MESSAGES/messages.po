@@ -162,8 +162,8 @@ msgid "Download Boilerplate {{ version }}"
 msgstr "Descarcă Boilerplate {{ version }}"
 
 #: src/index.html:76
-msgid "Updated Feb 6th"
-msgstr "Actualizat în 6 februarie"
+msgid "Updated Feb 8th"
+msgstr "Actualizat în 8 februarie"
 
 #: src/index.html:79
 msgid "<u>Download</u> Boilerplate "

@@ -158,7 +158,7 @@ msgstr "Baixe o Boilerplate {{ version }}"
 
 #: src/index.html:76
 #, fuzzy
-msgid "Updated Feb 6th"
+msgid "Updated Feb 8th"
 msgstr "Atualizado em 10 de agosto"
 
 #: src/index.html:79
