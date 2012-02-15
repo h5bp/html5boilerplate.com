@@ -237,8 +237,9 @@ msgstr ""
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
-"build script, so much so that we thought it <a href=\"#\">deserved its own "
-"repository</a>. Meanwhile, here is what's new."
+"build script, so much so that we thought it <a href=\"https://github.com/"
+"h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
+"what's new."
 msgstr ""
 
 #: src/index.html:124
@@ -301,7 +302,7 @@ msgid ""
 msgstr ""
 
 #: src/index.html:143
-msgid "Drop <code>refer</code> from all scripts to avoid legacy IE bugs."
+msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
 
 #: src/index.html:144
@@ -334,7 +335,7 @@ msgid "Project"
 msgstr ""
 
 #: src/index.html:158
-msgid "Updated to Modernizr 3.0"
+msgid "Updated to Modernizr 2.5"
 msgstr ""
 
 #: src/index.html:159

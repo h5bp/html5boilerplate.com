@@ -1,13 +1,13 @@
-# Romanian Translation 
+# Romanian Translation
 # Copyright (C) 2011
 # This file is distributed under the same license as the PACKAGE package.
-# alrra, 2011
+# alrra, 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: 3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-27 02:15+0200\n"
-"PO-Revision-Date: 2011-03-28 20:13+0200\n"
+"POT-Creation-Date: 2012-02-15 20:15+0200\n"
+"PO-Revision-Date: 2012-02-15 22:15+0200\n"
 "Last-Translator: alrra \n"
 "Language-Team: \n"
 "Language: Română\n"
@@ -32,7 +32,6 @@ msgid "I'm new here: plz explain why it's so awesome, first."
 msgstr "Ești nou ? Află de ce HTML5 Boilerplate e așa grozav."
 
 #: src/index.html:41
-#, fuzzy
 msgid ""
 "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
 "a fast, robust and future-safe site."
@@ -53,7 +52,7 @@ msgstr ""
 "practici încorporate: normalizare peste browsere, optimizări ale "
 "performanţei, chiar şi funcţionalităţi opţionale cum ar fi AJAX şi Flash "
 "peste domenii; un model de început pentru fişierul .htaccess de configurare "
-"pentru Apache conţinând reguli de stocare a componentelor şi pregătiri "
+"pentru Apache, conţinând reguli de stocare a componentelor şi pregătiri "
 "pentru a putea servi HTML5 video, pentru a putea folosi @font-face şi pentru "
 "a activa compresia cu gzip."
 
@@ -120,7 +119,7 @@ msgstr ""
 
 #: src/index.html:61
 msgid "Never go wrong with your doctype or markup!"
-msgstr "Nu greşi niciodata când vine vorba de 'doctype' sau 'markup'"
+msgstr "Nu greşi niciodata când vine vorba de 'doctype' sau 'markup'!"
 
 #: src/index.html:62
 msgid "An optimal print stylesheet, performance optimized."
@@ -163,14 +162,12 @@ msgid "Download Boilerplate {{ version }}"
 msgstr "Descarcă Boilerplate {{ version }}"
 
 #: src/index.html:76
-#, fuzzy
 msgid "Updated Feb 6th"
-msgstr "Actualizat în 21 Martie 2011"
+msgstr "Actualizat în 6 februarie"
 
 #: src/index.html:79
-#, fuzzy
 msgid "<u>Download</u> Boilerplate "
-msgstr "Descarcă Boilerplate {{ version }}"
+msgstr "<u>Descarcă</u> Boilerplate"
 
 #: src/index.html:79
 msgid "Keep the hints and links"
@@ -181,9 +178,8 @@ msgid "or"
 msgstr "sau"
 
 #: src/index.html:81
-#, fuzzy
 msgid "<u>Download</u> Boilerplate \"stripped\""
-msgstr "Boilerplate nedocumentat"
+msgstr "<ul>Descarcă</u> Boilerplate \"nedocumentat\""
 
 #: src/index.html:81
 msgid "No comments, just the bizniss."
@@ -191,26 +187,23 @@ msgstr "Fără comentarii, doar partea esenţială "
 
 #: src/index.html:83
 msgid "<u>Customize</u> Boilerplate"
-msgstr ""
+msgstr "<u>Customizează</u> Boilerplate"
 
 #: src/index.html:83
-#, fuzzy
 msgid "100&#37; hipster."
-msgstr "100&percnt; hipster."
+msgstr "100&#37; hipster."
 
 #: src/index.html:89
 msgid "jQuery"
 msgstr "jQuery"
 
 #: src/index.html:90
-#, fuzzy
 msgid "Minified"
-msgstr "jQuery minificat"
+msgstr "Minificat"
 
 #: src/index.html:91
-#, fuzzy
 msgid "Unminified"
-msgstr "jQuery minificat"
+msgstr "Neminificat"
 
 #: src/index.html:95
 msgid "Server Config"
@@ -218,7 +211,7 @@ msgstr "Configurări Server"
 
 #: src/index.html:101
 msgid "Others"
-msgstr ""
+msgstr "Altele"
 
 #: src/index.html:102
 msgid "All IE classes"
@@ -226,28 +219,25 @@ msgstr "Toate clasele pentru IE"
 
 #: src/index.html:103
 msgid "script.js & plugin.js"
-msgstr ""
+msgstr "script.js și plugin.js"
 
 #: src/index.html:104
-#, fuzzy
 msgid "Google Analytics Snippet"
-msgstr "Da"
+msgstr "Google Analytics"
 
 #: src/index.html:105
-#, fuzzy
 msgid "Ant Build Script"
-msgstr "Scriptul de construcție"
+msgstr "Scriptul de construcție Ant"
 
 #: src/index.html:108
-#, fuzzy
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
 "\"http://initializr.com\">Initializr</a>"
 msgstr ""
-"<a href=\"http://initializr.com/generate?boilerplate&amp;\" id=\"builder-"
-"download\">Descarcă!</a> Sunt aceste opţiuni prea puține? Dacă da, vizitează "
-"<a href=\"http://initializr.com\">Initializr</a> pentru mai multe!"
+"<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
+"\" id=\"builder-download\">Descarcă!</a> Sunt aceste opţiuni prea puține? "
+"Dacă da, vizitează <a href=\"http://initializr.com\">Initializr</a>"
 
 #: src/index.html:113
 msgid "Read the docs"
@@ -262,131 +252,153 @@ msgid "Follow on twitter"
 msgstr "Urmăreşte-ne pe Twitter"
 
 #: src/index.html:119
-#, fuzzy
 msgid "HTML5 Boilerplate is 3.0!"
-msgstr "HTML5 Boilerplate a ajuns la varianta 1.0!"
+msgstr "HTML5 Boilerplate a ajuns la versiunea 3.0!"
 
 #: src/index.html:120
 msgid "Monday, Feb 6th, 2012"
-msgstr ""
+msgstr "Luni, 6 februarie 2012"
 
 #: src/index.html:121
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
-"build script, so much so that we thought it <a href=\"#\">deserved its own "
-"repository</a>. Meanwhile, here is what's new."
+"build script, so much so that we thought it <a href=\"https://github.com/"
+"h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
+"what's new."
 msgstr ""
+"Scopul principal al acestei actualizări a fost micșorarea Boilerplate-ului, "
+"cele mai multe schimbări lucrând înspre această scop. Am lucrat în special "
+"la scriptul de construcție, atât de mult încât ne-am gândit că <a href="
+"\"https://github.com/h5bp/ant-build-script\">merită propriul depozit</a>. Și "
+"acum, ce este nou:"
 
 #: src/index.html:124
 msgid "Changelog"
-msgstr ""
+msgstr "Schimbări"
 
 #: src/index.html:125
-#, fuzzy
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
 msgstr ""
-"Practic o mulțime de actualizări au fost facute pentru varianta 1.0. <a href="
-"\"https://github.com/paulirish/html5-boilerplate/compare/v0.9.5..."
-"v1.0\">Aici sunt ultimele 220 commit-uri de la ultima lansare,</a> realizate "
-"de cei peste  <a href=\"https://github.com/paulirish/html5-boilerplate#readme"
-"\">102 contribuitori</a>."
+"3.0 vine cu niște update-uri majore <a href=\"https://github.com/h5bp/html5-"
+"boilerplate/compare/v2.0...v3.0\">Aici sunt toate commit-urile de la ultima "
+"lansare</a>."
 
 #: src/index.html:126
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
+"Ar trebui să updatezi site-urile existente</a>? Răspunsul scurt: neh, e ok."
 
 #: src/index.html:128
 msgid "Significant changes"
-msgstr ""
+msgstr "Schimbări semnificative"
 
 #: src/index.html:131
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
 msgstr ""
+"Am șters multe directoare: <code>/demos</code>, <code>/test</code> și<code>/"
+"js/mylibs</code>."
 
 #: src/index.html:132
 msgid "Build script is now a separate project"
-msgstr ""
+msgstr "Scriptul de construcție este de acum un proiect separat"
 
 #: src/index.html:132
 msgid "Read about how to get and use the build script"
-msgstr ""
+msgstr "Citește despre cum să obți și să utilizezi scriptul de construcție."
 
 #: src/index.html:133
 msgid "Respond.js is no longer available by default. "
-msgstr ""
+msgstr "Respond.js nu mai e disponibil în mod implicit. "
 
 #: src/index.html:139
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
 msgstr ""
+"ChromeFrame nu mai este aplicat prin intermediul scriptului, iar "
+"utilizatorilor de IE6 le este sugerat: link-ul de unde pot instala "
+"ChromeFrame sau pagina de web Browsehappy, de unde pot alege un alt browser."
 
 #: src/index.html:140
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr ""
+"Meta viewport-ul a fost updatat pentru a preveni bug-urile de scalare din "
+"iOS."
 
 #: src/index.html:141
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr ""
+"Clasele IE din <code>html</code> vizează versiuni \"mai mici decat\" o "
+"anumită versiune, decât versiuni explicite."
 
 #: src/index.html:142
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
 msgstr ""
+"Am revenit la fragmentul \"Google Analytics\" optimizat și asincron, în "
+"defavoarea utilizării <code>Modernizr.load</code>."
 
 #: src/index.html:143
-msgid "Drop <code>refer</code> from all scripts to avoid legacy IE bugs."
+msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
+"Am renunțat la <code>defer</code> pentru toate scripturile, pentru a evita "
+"bug-urile moștenite de IE."
 
 #: src/index.html:144
 msgid "Design of the 404 has been improved."
-msgstr ""
+msgstr "Designul paginii 404 a fost îmbunătățit."
 
 #: src/index.html:149
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
 msgstr ""
+"Am renunțat a specifica marimea fontului și înălțimea liniei pentru a putea "
+"furniza un \"implicit\" mai bun și robust."
 
 #: src/index.html:150
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
 msgstr ""
+"Am făcut adăugări semnificative la \"normalize.css\" și pentru a oferi o "
+"tipografie implicită mai bună."
 
 #: src/index.html:151
 msgid "More robust .ir helper class."
-msgstr ""
+msgstr "O clasa '.ir' mai robustă"
 
 #: src/index.html:152
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
 msgstr ""
+"Nu mai forțăm scrollbar-ul, acest lucru împiedicând proiecte ca jQuery UI și "
+"altele să calculeze corect lungimile."
 
 #: src/index.html:156
 msgid "Project"
 msgstr "Proiect"
 
 #: src/index.html:158
-msgid "Updated to Modernizr 3.0"
-msgstr ""
+msgid "Updated to Modernizr 2.5"
+msgstr "Modernizr a fost updatat la versiunea 2.5"
 
 #: src/index.html:159
 msgid "Updated to jQuery 1.7.1"
-msgstr ""
+msgstr "jQuery a fost updatat la versiunea 1.7.1"
 
 #: src/index.html:160
 msgid "Improved .htaccess"
-msgstr ""
+msgstr ".htaccess a fost îmbunătățit"
 
 #: src/index.html:166
 msgid "Videos"
@@ -429,14 +441,12 @@ msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
 #: src/index.html:190
-#, fuzzy
 msgid "Freelance web developer"
-msgstr "Open Web Developer"
+msgstr "Freelance Web Developer"
 
 #: src/index.html:191
-#, fuzzy
 msgid "Front-End Web Developer"
-msgstr "Open Web Developer"
+msgstr "Front-End Web Developer"
 
 #: src/index.html:198
 msgid "More Contributors"
@@ -504,7 +514,7 @@ msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
 msgstr ""
-"Forţează ultima versiune a IE-ului în diferitele situaţii când acesta ar "
+"Forţează ultima versiune a IE-ului în diferitele situaţii când aceasta ar "
 "reveni la modul IE7 "
 
 #: src/template/htaccess.txt:26
@@ -520,6 +530,8 @@ msgid ""
 "mod_headers can't match by content-type, but we don't want to send this "
 "header on *everything*"
 msgstr ""
+"mod_headers nu poate potrivi bazându-se pe content-type, dar nu dorim să "
+"trimitem acest antent pe *orice*"
 
 #: src/template/htaccess.txt:39
 msgid "Cross-domain AJAX requests"
@@ -550,43 +562,36 @@ msgid "Proper MIME type for all files"
 msgstr "Tip MIME adecvat pentru toate fişierele"
 
 #: src/template/htaccess.txt:75
-#, fuzzy
 msgid "JavaScript"
-msgstr "Javascript"
+msgstr "JavaScript"
 
 #: src/template/htaccess.txt:76
 msgid "Normalize to standard type (it's sniffed in IE anyways) "
-msgstr ""
+msgstr "Normalizează la tipul standard"
 
 #: src/template/htaccess.txt:80
-#, fuzzy
 msgid "Audio"
-msgstr "audio"
+msgstr "Audio"
 
 #: src/template/htaccess.txt:84
-#, fuzzy
 msgid "Video"
-msgstr "Videouri"
+msgstr "Video"
 
 #: src/template/htaccess.txt:89
 msgid "SVG"
-msgstr ""
+msgstr "SVG"
 
 #: src/template/htaccess.txt:90
-#, fuzzy
 msgid "Required for svg webfonts on iPad"
-msgstr ""
-"Servire corespunzătoare a svg-urilor. Necesară pentru webfont-uri svg pe iPad"
+msgstr "Necesară pentru webfont-uri svg pe iPad"
 
 #: src/template/htaccess.txt:95 standard input:244
-#, fuzzy
 msgid "Webfonts"
-msgstr "webfont-uri"
+msgstr "Webfont-uri"
 
 #: src/template/htaccess.txt:101
-#, fuzzy
 msgid "Assorted types"
-msgstr "alte tipuri"
+msgstr "Alte tipuri"
 
 #: src/template/htaccess.txt:114
 msgid "Allow concatenation from within specific js and css files"
@@ -597,28 +602,27 @@ msgid "e.g. Inside of script.combined.js you could have"
 msgstr "ex: În interiorul script.combined.js ai putea avea"
 
 #: src/template/htaccess.txt:120
-#, fuzzy
 msgid "and they would be included into this single file."
 msgstr "şi ele vor fi incluse în acelaşi fişier"
 
 #: src/template/htaccess.txt:122
 msgid "This is not in use in the boilerplate as it stands. You may"
-msgstr ""
+msgstr "Aceasta nu este momentan in uz în Boilerplate. Poți "
 
 #: src/template/htaccess.txt:123
 msgid "choose to name your files in this way for this advantage or"
 msgstr ""
+"să alegi să denumești fișierele în acest mod, datorită acestui avantaj sau "
 
 #: src/template/htaccess.txt:124
 msgid "concatenate and minify them manually."
-msgstr ""
+msgstr "poți să le concatenezi și minifici manual."
 
 #: src/template/htaccess.txt:125
 msgid "Disabled by default."
 msgstr "Dezactivată în mod implicit."
 
 #: src/template/htaccess.txt:141
-#, fuzzy
 msgid "Gzip compression"
 msgstr "Compresie folosind gzip"
 
@@ -635,32 +639,28 @@ msgid "Expires headers (for better cache control)"
 msgstr "Antete de expirare (pentru un control mai bun al cache-ului)"
 
 #: src/template/htaccess.txt:195
-#, fuzzy
 msgid "These are pretty far-future expires headers"
-msgstr "aceste antete conţin termeni de expirare foarte îndepărtaţi"
+msgstr "Aceste antete conţin termeni de expirare foarte îndepărtaţi"
 
 #: src/template/htaccess.txt:196
-#, fuzzy
 msgid "They assume you control versioning with cachebusting query params like:"
 msgstr ""
-"ele se bazează pe faptul că tu controlezi versionarea cu parametrii, ca de "
+"Ele se bazează pe faptul că tu controlezi versionarea cu parametrii, ca de "
 "exemplu:"
 
 #: src/template/htaccess.txt:198
-#, fuzzy
 msgid "Additionally, consider that outdated proxies may miscache"
 msgstr ""
-"în plus, ia în considerare faptul că unele proxy-uri învechite ar putea să "
+"În plus, ia în considerare faptul că unele proxy-uri învechite ar putea să "
 "nu stocheze resursele"
 
 #: src/template/htaccess.txt:203
-#, fuzzy
 msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like \"access plus 1 week\" "
 msgstr ""
-"dacă nu pui versiunea în numele fişierului, reduce timpul de stocare pentru "
-"CSS şi JS la ceva de genu \"access plus 1 week\""
+"Dacă nu folosești versiunea în numele fişierului, reduce timpul de stocare "
+"pentru CSS şi JS la ceva de genu \"access plus 1 week\""
 
 #: src/template/htaccess.txt:209
 msgid "Perhaps better to whitelist expires rules? Perhaps."
@@ -676,36 +676,30 @@ msgstr ""
 "~Introducing HTML5)"
 
 #: src/template/htaccess.txt:217
-#, fuzzy
 msgid "Your document html"
-msgstr "documentul html"
+msgstr "Documentul html"
 
 #: src/template/htaccess.txt:220
 msgid "Data"
-msgstr ""
+msgstr "Date"
 
 #: src/template/htaccess.txt:225
-#, fuzzy
 msgid "RSS feed"
-msgstr "feed RSS"
+msgstr "Feed RSS"
 
 #: src/template/htaccess.txt:228
-#, fuzzy
 msgid "Favicon (cannot be renamed)"
-msgstr "favicon (nu poate fi redenumită)"
+msgstr "Favicon (nu poate fi redenumită)"
 
 #: src/template/htaccess.txt:231
-#, fuzzy
 msgid "Media: images, video, audio"
-msgstr "media: imagini, video, audio"
+msgstr "Media: imagini, video, audio"
 
 #: src/template/htaccess.txt:241
-#, fuzzy
 msgid "HTC files  (css3pie)"
-msgstr "fișiere htc (css3pie)"
+msgstr "Fișiere htc (css3pie)"
 
 #: src/template/htaccess.txt:251
-#, fuzzy
 msgid "CSS and JavaScript"
 msgstr "CSS și JavaScript"
 
@@ -730,6 +724,8 @@ msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers in "
 "combination with the \"ExpiresByType\" rules for images (see above)"
 msgstr ""
+"Următoarea directivă oprește pâlpâitul în IE pentru \"CSS rollovers\", în "
+"combinație cu regulile \"ExpiresByType\" pentru imagini (vezi mai sus)"
 
 #: src/template/htaccess.txt:285
 msgid "If needed, un-comment the following rules."
@@ -748,7 +744,7 @@ msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
 msgstr ""
 "Dacă e necesar, decomentează şi specifică o cale sau o expresie regulată în "
-"directivă 'Location'"
+"directivă \"Location\""
 
 #: src/template/htaccess.txt:310
 msgid "Start rewrite engine"
@@ -765,10 +761,11 @@ msgstr ""
 #: src/template/htaccess.txt:314
 msgid "FollowSymLinks must be enabled for this to work."
 msgstr ""
+"\"FollowSymLinks\" trebuie să fie activă pentru ca aceasta să funcționeze."
 
 #: src/template/htaccess.txt:323
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
-msgstr ""
+msgstr "Suprimă sau forțează \"www.\" la începutul URL-urilor"
 
 #: src/template/htaccess.txt:327
 msgid ""
@@ -776,16 +773,21 @@ msgid ""
 "especially not with and without \"www.\" at the beginning, since this can "
 "cause SEO problems (duplicate content)."
 msgstr ""
+"Același conținut nu ar trebui să fie niciodată accesibil sub doua URL-uri "
+"diferite, mai ales cu sau fără \"www.\" la început, deoarece acest lucru ar "
+"putea cauza probleme legate de SEO (conținut duplicat)"
 
 #: src/template/htaccess.txt:328
 msgid ""
 "That's why you should choose one of the alternatives and redirect the other "
 "one."
 msgstr ""
+"De aceea ar trebui să alegi una din alternative și sa redirectezi spre "
+"cealaltă."
 
 #: src/template/htaccess.txt:331
 msgid "By default option 1 (no \"www.\") is activated."
-msgstr ""
+msgstr "Împlicit, opțiunea 1 (fără \"www.\") este activă."
 
 #: src/template/htaccess.txt:332
 msgid "Remember: Shorter URLs are sexier."
@@ -797,7 +799,7 @@ msgid ""
 "uncomment option 2."
 msgstr ""
 "Dacă vrei mai degrabă să utilizezi opțiunea 2, comentează toate linile de la "
-"opțiunea 1 și decomenteaza opțiunea 2"
+"opțiunea 1 și decomenteaza opțiunea 2."
 
 #: src/template/htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
@@ -819,12 +821,16 @@ msgstr "Opțiunea 2:"
 msgid ""
 "To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
 msgstr ""
+"Pentru a rescrie \"domain.com -> www.domain.com\" decomentează următoarea "
+"linie."
 
 #: src/template/htaccess.txt:358
 msgid ""
 "Be aware that the following rule might not be a good idea if you use \"real"
 "\" subdomains for certain parts of your website."
 msgstr ""
+"Fi conștient că următoarea regulă ar putea să nu fie o idee prea bună dacă "
+"folosești subdomenii \"reale\" pentru diferite părți ale site-ului"
 
 #: src/template/htaccess.txt:371
 msgid "Built-in filename-based cache busting"
@@ -836,14 +842,17 @@ msgid ""
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
+"Dacă nu folosești scriptul de construcție pentru a administra versiunea "
+"fișierelor, ai putea considera activarea acesteia, ce va redirecționa "
+"cererile pentru \"/css/all.20110203.css\" la \"/res/all.css\""
 
 #: src/template/htaccess.txt:378
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
 msgstr ""
-"Pentru a înțelege de ce este importantă și chiar o idee mai buna decat all."
-"css?v1231, citește:"
+"Pentru a înțelege de ce este importantă și chiar o idee mai buna decat \"all."
+"css?v1231\", citește:"
 
 #: src/template/htaccess.txt:381
 msgid "Uncomment to enable."
@@ -884,9 +893,8 @@ msgstr ""
 "acelasi nume nu există ex:"
 
 #: src/template/htaccess.txt:420
-#, fuzzy
 msgid "Custom 404 page"
-msgstr "pagina 404 customizată"
+msgstr "Pagina 404 customizată"
 
 #: src/template/htaccess.txt:423
 msgid ""
@@ -902,8 +910,8 @@ msgstr "Codificare UTF-8"
 #: src/template/htaccess.txt:432
 msgid "use utf-8 encoding for anything served text/plain or text/html"
 msgstr ""
-"utilizează codificarea UTF-8 pentru tot ce este servit ca şi 'text/plain' "
-"sau 'text/html'"
+"utilizează codificarea UTF-8 pentru tot ce este servit ca şi \"text/plain\" "
+"sau \"text/html\""
 
 #: src/template/htaccess.txt:435
 msgid "force utf-8 for a number of file formats"
@@ -918,19 +926,23 @@ msgid ""
 "Do we want to advertise the exact version number of Apache we're running? "
 "Probably not."
 msgstr ""
+"Chiar vrem să facem cunoscută versiunea exacta de Apache pe care o folosim? "
+"Probabil că nu."
 
 #: src/template/htaccess.txt:447
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
 msgstr ""
-"Aceasta poate fi activată doar in 'httpd.conf' - Nu va funcționa în .htaccess"
+"Aceasta poate fi activată doar in httpd.conf - Nu va funcționa în .htaccess"
 
 #: src/template/htaccess.txt:453
 msgid ""
 "\"-Indexes\" will have Apache block users from browsing folders without a "
 "default document"
 msgstr ""
+"\"-Indexes\" va informa pe Apache să blocheze utilizatorii în a naviga în "
+"directoare fără un document împlicit"
 
 #: src/template/htaccess.txt:454
 msgid ""
@@ -938,11 +950,16 @@ msgid ""
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
+"Ar fi indicat să lași această opțiune activă deoarece nu ar trebui să lași "
+"pe nimeni să navigheze prin orice director de pe server (aici fiind incluse "
+"și locațile private cum sunt directoarele de sistem folosite de CMS)."
 
 #: src/template/htaccess.txt:460
 msgid ""
 "Block access to \"hidden\" directories whose names begin with a period. "
 msgstr ""
+"Blochează accesul catre directoarele \"ascunse\" ale căror nume încep cu "
+"punct."
 
 #: src/template/htaccess.txt:461
 msgid ""
@@ -959,6 +976,11 @@ msgid ""
 "This closes a major security hole that is abused by most XSS (cross-site "
 "scripting) attacks. For more information:"
 msgstr ""
+"Dacă servarul nu este configurat după cum urmează, următoarea directivă ar "
+"trebui decomentată pentru a putea seta opțiunea register_globals din PHP pe "
+"OFF. Aceasta închide o gaură de securitate mare care este abuzată de "
+"majoritatea atacurilor de tip XSS (Cross-Site Scripting). Pentru mai multe "
+"informații:"
 
 #: src/template/htaccess.txt:471
 msgid "IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :"
@@ -988,133 +1010,139 @@ msgstr ""
 
 #: src/template/htaccess.txt:479
 msgid "Rename session cookie to something else, than PHPSESSID"
-msgstr ""
+msgstr "Redenumește cookie-ul de sesiune cu ceva diferit de PHPSESSID"
 
 #: src/template/htaccess.txt:482
 msgid "Do not show you are using PHP"
-msgstr ""
+msgstr "Nu arăta că folosești PHP"
 
 #: src/template/htaccess.txt:483
 msgid "Note: Move this line to php.ini since it won't work in .htaccess"
 msgstr ""
+"Notă: Mută această linie în php.ini, deoarece nu va funcționa in .htaccess"
 
 #: src/template/htaccess.txt:486
 msgid "Level of log detail - log all errors"
-msgstr ""
+msgstr "Nivelul de detaliu pentru log - loggează toate erorile"
 
 #: src/template/htaccess.txt:489
 msgid "Write errors to log file"
-msgstr ""
+msgstr "Scrie erorile în fișierele de log"
 
 #: src/template/htaccess.txt:492
 msgid "Do not display errors in browser (production - Off, development - On)"
-msgstr ""
+msgstr "Nu afișa erorile în browser (producție - oprit, dezvoltare - pornit)"
 
 #: src/template/htaccess.txt:495
 msgid "Do not display startup errors (production - Off, development - On)"
-msgstr ""
+msgstr "Nu afișa erorile de start (producție - oprit, dezvoltare - pornit)"
 
 #: src/template/htaccess.txt:498
 msgid "Format errors in plain text"
-msgstr ""
+msgstr "Afișează erorile în text simplu"
 
 #: src/template/htaccess.txt:501
 msgid "Show multiple occurrence of error"
-msgstr ""
+msgstr "Afișează apariția multiplă a unei erori"
 
 #: src/template/htaccess.txt:504
 msgid "Show same errors from different sources"
-msgstr ""
+msgstr "Afișează aceleași erori în diferite surse"
 
 #: src/template/htaccess.txt:507
 msgid "Size limit for error messages"
-msgstr ""
+msgstr "Limita de mărime pentru mesajele de eroare"
 
 #: src/template/htaccess.txt:510
 msgid ""
 "Don't precede error with string (doesn't accept empty string, use whitespace "
 "if you need)"
 msgstr ""
+"Nu precede eroarea cu un string (Nu accepta string gol, folosește spații "
+"albe dacă e necesar)"
 
 #: src/template/htaccess.txt:513
 msgid ""
 "Don't prepend to error (doesn't accept empty string, use whitespace if you "
 "need)"
 msgstr ""
+"Nu adăuga la eroare (Nu accepta string gol, folosește spații albe dacă e "
+"necesar)"
 
 #: src/template/htaccess.txt:516
 msgid "Increase cookie security"
-msgstr ""
+msgstr "Sporește securitatea cookie-urilor"
 
 #: src/template/crossdomain.xml:6
-#, fuzzy
 msgid "Read this"
-msgstr "Citeşte documentaţia"
+msgstr "Citeşte"
 
 #: src/template/crossdomain.xml:8
 msgid "Most restrictive policy"
-msgstr ""
+msgstr "Cea mai restrictivă politică"
 
 #: src/template/crossdomain.xml:11
 msgid "Least restrictive policy"
-msgstr ""
+msgstr "Cea mai puțin restrictivă politică"
 
 #: src/template/crossdomain.xml:18
 msgid "If you host a crossdomain.xml file with allow-access-from domain=\"*\""
 msgstr ""
+"Dacă gazduiești un fișier crossdomain.xml cu allow-access-from domain=\"*\""
 
 #: src/template/crossdomain.xml:19
 msgid "and don't understand all of the points described here, you probably"
-msgstr ""
+msgstr "și nu înțelegi toate punctele descrise aici, probabil"
 
 #: src/template/crossdomain.xml:20
 msgid "have a nasty security vulnerability."
-msgstr ""
+msgstr "ai o vulnerabilitate serioasă de securitate."
 
 #: src/template/404.html:5
 msgid "Page Not Found"
-msgstr ""
+msgstr "Pagina nu a fost găsită"
 
 #: src/template/404.html:21
 msgid "Not found"
-msgstr ""
+msgstr "Nu a fost găsit"
 
 #: src/template/404.html:23
 msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
+msgstr "Ne pare rău, dar pagina pe care doriți să o vizualizați nu există."
 
 #: src/template/404.html:24
 msgid "It looks like this was the result of either"
-msgstr ""
+msgstr "Se pare că acesta a fost rezultatul fie"
 
 #: src/template/404.html:26
 msgid "a mistyped address"
-msgstr ""
+msgstr "unei adrese scrisă greșit"
 
 #: src/template/404.html:27
 msgid "an out-of-date link"
-msgstr ""
+msgstr "unui link expirat"
 
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
 msgstr ""
+"Folosește '.htaccess'-ul și șterge aceste linii pentru a evita eventualele "
+"problemele"
 
 #: src/template/index.html:11
 msgid "More info:"
-msgstr ""
+msgstr "Mai multe informații:"
 
 #: src/template/index.html:18
 msgid "Mobile viewport optimized:"
 msgstr "'Viewport' optimizat pentru browserele telefoanelor mobile:"
 
 #: src/template/index.html:21
-#, fuzzy
 msgid ""
 "Place favicon.ico and apple-touch-icon.png in the root directory: "
 "mathiasbynens.be/notes/touch-icons"
 msgstr ""
-"Plasează 'favicon.ico' şi 'apple-touch-icon.png' în rădăcina domeniului tău "
-"şi apoi şterge aceste referinţe"
+"Plasează 'favicon.ico' şi 'apple-touch-icon.png' în rădăcina domeniului tău:"
+"mathiasbynens.be/notes/touch-icons"
 
 #: src/template/index.html:23
 msgid "CSS: implied media=\"all\""
@@ -1122,24 +1150,26 @@ msgstr "CSS: implică media=\"all\""
 
 #: src/template/index.html:26
 msgid "More ideas for your <head> here: h5bp.com/docs/#head-Tips"
-msgstr ""
+msgstr "Mai multe idei pentry <head>, aici: h5bp.com/docs/#head-Tips"
 
 #: src/template/index.html:28
-#, fuzzy
 msgid "All JavaScript at the bottom, except for Modernizr and Respond."
 msgstr ""
-"Toate JavaScript-urile la baza paginii, excepţia fiind Modernizr care face "
-"posibilă folosirea noilor elemente HTML5 şi detectează funcţionalităţi"
+"Toate JavaScript-urile la baza paginii, exceptând Modernizr și Respond."
 
 #: src/template/index.html:29
 msgid ""
 "Modernizr enables HTML5 elements & feature detects; Respond is a polyfill "
 "for min/max-width CSS3 Media Queries"
 msgstr ""
+"Modernizr permite folosirea elementelor HTML5 și detectează suportul pentru "
+"anumite funcționalități; Respond este un polyfill pentru min/max-width CSS3 "
+"Media Queries"
 
 #: src/template/index.html:30
 msgid "For optimal performance, use a custom Modernizr build:"
 msgstr ""
+"Pentru performanță optimă, folosește un build customizat pentru Modernizr"
 
 #: src/template/index.html:46
 msgid "end of #container"
@@ -1168,15 +1198,16 @@ msgid "end scripts"
 msgstr "sfârșit scripturi"
 
 #: src/template/index.html:62
-#, fuzzy
 msgid "Change UAXXXXXXXX1 to be your site's ID"
-msgstr "Înlocuiește 'UA-XXXXX-X' cu ID-ul site-ului tău"
+msgstr "Înlocuiește 'UUAXXXXXXXX1' cu ID-ul site-ului tău"
 
 #: src/template/index.html:70
 msgid ""
 "Prompt IE 6 users to install Chrome Frame. Remove this if you want to "
 "support IE 6."
 msgstr ""
+"Avertizează utilizatorii de IE6 să instaleze Chrome Frame. Șterge toate "
+"acestea dacă vrei să suporți IE 6"
 
 #: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
@@ -1188,23 +1219,23 @@ msgstr "ECHIPĂ"
 
 #: src/template/humans.txt:6
 msgid "your title"
-msgstr ""
+msgstr "titlu"
 
 #: src/template/humans.txt:6
 msgid "your name"
-msgstr ""
+msgstr "numele tău"
 
 #: src/template/humans.txt:7
 msgid "Site"
-msgstr ""
+msgstr "Site"
 
 #: src/template/humans.txt:8
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: src/template/humans.txt:9
 msgid "Location"
-msgstr ""
+msgstr "Locație"
 
 #: src/template/humans.txt:11
 msgid "THANKS"
@@ -1212,7 +1243,7 @@ msgstr "MULȚUMIRI"
 
 #: src/template/humans.txt:12
 msgid "Names (& URL)"
-msgstr ""
+msgstr "NUME (ȘI URL)"
 
 #: src/template/humans.txt:14
 msgid "SITE"
@@ -1220,61 +1251,67 @@ msgstr "SITE"
 
 #: src/template/humans.txt:15
 msgid "Standards"
-msgstr ""
+msgstr "Standarde"
 
 #: src/template/humans.txt:16
-#, fuzzy
 msgid "Components"
-msgstr "Comentarii"
+msgstr "Componente"
 
 #: src/template/humans.txt:17
 msgid "Software"
-msgstr ""
+msgstr "Software"
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
 msgstr ""
+"Ce urmează este rezultatul unei cercetări îndelungate asupra aplicări "
+"stilurilor într-o manieră cross-browser"
 
 #: src/template/css/style.css:5
 msgid "Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,"
 msgstr ""
+"Creditul este lăsat înăuntru și multe mulțumiri lui Nicolas Gallagher, "
+"Jonathan Neal,"
 
 #: src/template/css/style.css:6
 msgid "Kroc Camen, and the H5BP dev community and team."
-msgstr ""
+msgstr "Kroc Camen, comunității H5BP și echipei"
 
 #: src/template/css/style.css:8
 msgid "Detailed information about this CSS: h5bp.com/css"
-msgstr ""
+msgstr "Informații detaliate despre CSS: h5bp.com/css"
 
 #: src/template/css/style.css:13
 msgid "HTML5 element display"
-msgstr ""
+msgstr "Afișare pentru elementele HTML5"
 
 #: src/template/css/style.css:24
 msgid "Base"
-msgstr ""
+msgstr "Baza"
 
 #: src/template/css/style.css:28
 msgid ""
 "Correct text resizing oddly in IE6/7 when body font-size is set using em "
 "units"
 msgstr ""
+"Redimensionare ciudată a textului în IE6/7 când marimea textului pentru body "
+"e setată folosind unități em."
 
 #: src/template/css/style.css:30
-#, fuzzy
 msgid "Force vertical scrollbar in non-IE"
-msgstr "Întotdeauna forţează un 'scrollbar' în browserele diferite de IE"
+msgstr "Forţează un 'scrollbar' în browserele diferite de IE"
 
 #: src/template/css/style.css:32
 msgid ""
 "Prevent iOS text size adjust on device orientation change, without disabling "
 "user zoom:"
 msgstr ""
+" Împiedică ajustarea mărimii textului la schimbarea orientării pentru iOS, "
+"fără a dezactiva zoom-ul utilizatorului:"
 
 #: src/template/css/style.css:43
 msgid "Remove text-shadow in selection highlight: h5bp.com/i"
-msgstr ""
+msgstr "Scoate \"text-shadow\" la selecție: h5bp.com/i"
 
 #: src/template/css/style.css:45
 msgid "These selection declarations have to be separate"
@@ -1284,125 +1321,133 @@ msgstr "Aceste declaraţii de selecţie trebuie să fie separate."
 msgid ""
 "Also: hot pink! (or customize the background color to match your design)"
 msgstr ""
+"De asemenea: roz! (sau customizează-ți culoarea fundalului pentru a se "
+"protrivi design-ului tău"
 
 #: src/template/css/style.css:56
 msgid "Links"
-msgstr ""
+msgstr "Link-uri"
 
 #: src/template/css/style.css:64
 msgid "Improve readability when focused and hovered in all browsers:"
-msgstr ""
+msgstr "Îmbunătățește lizibilitatea la focus și hover în toate browserele:"
 
 #: src/template/css/style.css:70
 msgid "Typography"
-msgstr ""
+msgstr "Tipografie"
 
 #: src/template/css/style.css:87
 msgid "Redeclare monospace font family"
-msgstr ""
+msgstr "Redeclară monospace font family"
 
 #: src/template/css/style.css:90
 msgid "Improve readability of pre-formatted text in all browsers"
 msgstr ""
+"Îmbunătățește lizibilitatea pentru textul preformatat în toate browserele"
 
 #: src/template/css/style.css:98
-#, fuzzy
 msgid ""
 "Position subscript and superscript content without affecting line-height"
-msgstr "Setează 'sub' și 'sup' fără a afecta 'line-height': "
+msgstr "Setează '<sub'> și '<sup>' fără a afecta înălțimea liniei"
 
 #: src/template/css/style.css:105
 msgid "Lists"
-msgstr ""
+msgstr "Liste"
 
 #: src/template/css/style.css:114
 msgid "Embedded content"
-msgstr ""
+msgstr "Conținut încorporat"
 
 #: src/template/css/style.css:118
 msgid "Improve image quality when scaled in IE7"
-msgstr ""
+msgstr "Îmbunătățește calitatea imaginii, la scalare, în IE7"
 
 #: src/template/css/style.css:119
 msgid "Remove the gap between images and borders on image containers"
 msgstr ""
+"Elimină decalajul dintre imagini și bordură pentru elementele care conțin "
+"imaginile"
 
 #: src/template/css/style.css:125
 msgid "Correct overflow not hidden in IE9 "
-msgstr ""
+msgstr "overflow-ul nu este ascuns în IE9"
 
 #: src/template/css/style.css:132
 msgid "Figures"
-msgstr ""
+msgstr "Figures"
 
 #: src/template/css/style.css:139
 msgid "Forms"
-msgstr ""
+msgstr "Forme"
 
+# ####
 #: src/template/css/style.css:145
 msgid "Indicate that 'label' will shift focus to the associated form element"
-msgstr ""
+msgstr "Indică că \"label\" va schimba focusul către elementul asociat"
 
 #: src/template/css/style.css:148
 msgid "Correct color not inheriting in IE6/7/8/9"
-msgstr ""
+msgstr "Culoarea nu se moștenește în IE6/7/8/9"
 
 #: src/template/css/style.css:149
 msgid "Correct alignment displayed oddly in IE6/7"
-msgstr ""
+msgstr " "
 
 #: src/template/css/style.css:155
 msgid "Correct font-size not inheriting in all browsers"
-msgstr ""
+msgstr "Mărimea fontului nu este moștenită în toate browserele"
 
 #: src/template/css/style.css:156
 msgid "Remove margins in FF3/4 S5 Chrome"
-msgstr ""
+msgstr "Scoate marginile în F3/4 S5 Chrome"
 
 #: src/template/css/style.css:157
 msgid "Define consistent vertical alignment display in all browsers"
-msgstr ""
+msgstr " "
 
 #: src/template/css/style.css:163
 msgid ""
 "Define line-height as normal to match FF3/4 (set using !important in the UA "
 "stylesheet)"
 msgstr ""
+"Definește \"line-height\" ca normal, pentru a se potrivi cu FF3/4 (setată "
+"folosinf !important în stilurile UA-ului)"
 
 #: src/template/css/style.css:164
 msgid "Correct inner spacing displayed oddly in IE6/7"
-msgstr ""
+msgstr " "
 
 #: src/template/css/style.css:170
 msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
 msgstr ""
+"Reintroduce spațiul înterior în \"table\", pentru a evita suprapunerea și "
+"problemele cu spațile albe în IE6/7"
 
 #: src/template/css/style.css:176
-#, fuzzy
 msgid "Display hand cursor for clickable form elements"
-msgstr "Cursor-mâna pe elementele de input clickabile"
+msgstr "Afișează cursor-mâna pentru elementele de input clickabile"
 
 #: src/template/css/style.css:177
 msgid "Allow styling of clickable form elements in iOS"
-msgstr ""
+msgstr "Permite stilizarea elementelor clickabile din forme în iOS"
 
 #: src/template/css/style.css:183
 msgid "Consistent box sizing and appearance"
-msgstr ""
+msgstr "Aspect și box sizing consistent"
 
 #: src/template/css/style.css:191
 msgid "Remove inner padding and border in FF3/4"
-msgstr ""
+msgstr "Scoate padding-ul înterior și bordura în FF3/4"
 
 #: src/template/css/style.css:197
 msgid "Remove default vertical scrollbar in IE6/7/8/9"
-msgstr ""
+msgstr "Scoate scrollbar-ul vertical implicit în IE6/7/8/9"
 
 #: src/template/css/style.css:198
 msgid "Allow only vertical resizing"
-msgstr ""
+msgstr "Permite doar redimensionare verticală"
 
 #: src/template/css/style.css:203
 msgid "Colors for form validity"
@@ -1410,52 +1455,44 @@ msgstr "Culori pentru validitatea form-urilor"
 
 #: src/template/css/style.css:209
 msgid "Tables"
-msgstr ""
+msgstr "Tabele"
 
 #: src/template/css/style.css:216
 msgid "Primary styles"
 msgstr "Stiluri Primare"
 
 #: src/template/css/style.css:217
-#, fuzzy
 msgid "Author"
 msgstr "Autor"
 
 #: src/template/css/style.css:236
 msgid "Non-semantic helper classes"
-msgstr ""
+msgstr "Clase non-semantice ajutătoare"
 
 #: src/template/css/style.css:237
-#, fuzzy
 msgid "Please define your styles before this section."
-msgstr ""
-"Clase non-semantice ajutătoare: te rugăm să-ți defineaști stiluri înainte de "
-"această secţiune."
+msgstr "Te rugăm să-ți defineaști stiluri înainte de această secţiune."
 
 #: src/template/css/style.css:240
 msgid "For image replacement"
 msgstr "Pentru înlocuirea cu imagini"
 
 #: src/template/css/style.css:244
-#, fuzzy
 msgid "Hide for both screenreaders and browsers"
 msgstr "Ascunde atât de cititoarele de ecran cât şi de browsere"
 
 #: src/template/css/style.css:247
-#, fuzzy
 msgid " Hide only visually, but have it available for screenreaders:"
 msgstr ""
-"Ascunde doar vizual, menţinând accesibilitatea pentru cititoarele de ecran: "
-"de Jon Neal."
+"Ascunde doar vizual, menţinând accesibilitatea pentru cititoarele de ecran:"
 
 #: src/template/css/style.css:250
-#, fuzzy
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard"
 msgstr ""
 "Extinde clasa .visuallyhidden astfel încât să permită elementului să fie "
-"focusabil când este navigat cu ajutorul tastaturii:"
+"focusabil cu ajutorul tastaturii:"
 
 #: src/template/css/style.css:253
 msgid "Hide visually and from screenreaders, but maintain layout"
@@ -1463,46 +1500,42 @@ msgstr "Ascunde vizual şi de cititoarele de ecran, dar menţine layout-ul"
 
 #: src/template/css/style.css:256
 msgid "Contain floats"
-msgstr ""
+msgstr "Floats"
 
 #: src/template/css/style.css:270
-#, fuzzy
 msgid "Use Media Queries for Responsive Design."
-msgstr "Interogări media pentru un design responsabil"
+msgstr "Folosește interogări media pentru un design responsabil"
 
 #: src/template/css/style.css:271
 msgid "Pixel widths given as samples."
-msgstr ""
+msgstr " "
 
 #: src/template/css/style.css:272
 msgid "Edit the widths to suit where your design breaks, rather than "
-msgstr ""
+msgstr "Editează lungimile pentru a satisface unde designul se strică, decât"
 
 #: src/template/css/style.css:273
 msgid "for device pixels, see 'Using a mobile-first approach'"
 msgstr ""
+"pentru \"device pixels\", uită-te la \"folosind abordare mobile-first\""
 
 #: src/template/css/style.css:277
-#, fuzzy
 msgid "Style adjustments for viewports 480px and over go here"
-msgstr "Stilurile pentru ajustarea modului portret vin aici"
+msgstr "Stilurile pentru ajustarea viewport-urilor de 480px și peste vin aici"
 
 #: src/template/css/style.css:282
-#, fuzzy
 msgid "Style adjustments for viewports 768px and over go here"
-msgstr "Stilurile pentru ajustarea modului portret vin aici"
+msgstr "Stilurile pentru ajustarea viewport-urilor de 768px și peste vin aici"
 
 #: src/template/css/style.css:289
 msgid "Print styles."
 msgstr "Stiluri pentru imprimare"
 
 #: src/template/css/style.css:290
-#, fuzzy
 msgid "Inlined to avoid required HTTP connection"
 msgstr "'inline' pentru a evita conexiunea HTTP necesară"
 
 #: src/template/css/style.css:294
-#, fuzzy
 msgid "Black prints faster"
 msgstr "Negru se imprimă mai repede"
 
