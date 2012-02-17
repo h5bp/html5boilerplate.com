@@ -129,7 +129,7 @@ h1:hover { color: #e16734; }
 #header h2 { margin-bottom: 0; margin-top: 0; }
 
 
-body { background: #283b36; color: #e3d7bf; text-shadow: 0 1px 1px #000; padding-bottom: 3em; font: 300 16px/1.5 "Helvetica Neue", sans-serif; }
+body { background: #283b36; color: #e3d7bf; text-shadow: 0 1px 1px #000; padding-bottom: 3em; font: 300 16px/1.5 "Helvetica", sans-serif; }
 
 a, a:hover, a:focus, a:visited  { text-decoration: none; }
 a, a:visited, .disqus-wrapper a, #builder a.selected, #footer a.announcements { color: #e16734; }
