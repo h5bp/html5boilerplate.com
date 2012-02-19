@@ -26,6 +26,21 @@ allow from all
 
 
 
+# ----------------------------------------------------------------------
+# Cross-domain AJAX requests
+# ----------------------------------------------------------------------
+
+# Serve cross-domain Ajax requests, disabled by default.
+# enable-cors.org
+# code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
+
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+
+
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
