@@ -13,7 +13,8 @@ RewriteRule ^docs/head-Tips$ http://html5boilerplate.com/docs/html-head/ [L,R=30
 RewriteRule ^mobile/mobile$ http://html5boilerplate.com/mobile/ [L,R=301]
 
 # and for some old l10ns
-RewriteRule ^js/libs/modernizr-1.7.min.js$ http://html5boilerplate.com/js/libs/modernizr-2.0.6.min.js  [L,R=301]
+RewriteRule ^js/libs/modernizr-1.7.min.js$ http://html5boilerplate.com/js/libs/modernizr-2.5.3.min.js  [L,R=301]
+RewriteRule ^js/libs/modernizr-2.0.6.min.js$ http://html5boilerplate.com/js/libs/modernizr-2.5.3.min.js  [L,R=301]
 
 order allow,deny
 deny from 90.168.89.100
