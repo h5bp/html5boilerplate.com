@@ -163,7 +163,7 @@ msgstr "Scarica Boilerplate {{ version }}"
 
 #: src/index.html:76
 #, fuzzy
-msgid "Updated Feb 8th"
+msgid "Updated Feb 19th"
 msgstr "Aggiornato al 21 Marzo"
 
 #: src/index.html:79

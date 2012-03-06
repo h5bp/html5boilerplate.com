@@ -147,7 +147,7 @@ msgstr "下载H5BP {{ version }}"
 
 #: src/index.html:76
 #, fuzzy
-msgid "Updated Feb 8th"
+msgid "Updated Feb 19th"
 msgstr "3月21日更新"
 
 #: src/index.html:79
