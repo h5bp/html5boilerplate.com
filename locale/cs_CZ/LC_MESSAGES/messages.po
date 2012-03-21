@@ -28,45 +28,52 @@ msgid "A rock-solid default for HTML5 awesome."
 msgstr "Skálopevný výchozí pro HTML5 krásu."
 
 #: src/index.html:38
-msgid "I'm new here: plz explain why it's so awesome, first."
+#, fuzzy
+msgid "I'm new here: plz explain why it's good, first."
 msgstr "Jsem tady nový: můžete mi vysvětlit, proč je to tak úžasné."
 
 #: src/index.html:41
+#, fuzzy
 msgid ""
-"HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
-"a fast, robust and future-safe site."
-msgstr "HTML5 Boilerplate je profesionální základná HTML/CSS/JS šablona pro "
-"rychlý, robustní a bezpečnou web stránku."
+"HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
+"template for a fast, robust and future-safe site."
+msgstr ""
+"HTML5 Boilerplate je profesionální základná HTML/CSS/JS šablona pro rychlý, "
+"robustní a bezpečnou web stránku."
 
 #: src/index.html:42
+#, fuzzy
 msgid ""
-"After more than three years in iterative development, you get the best of "
-"the best practices baked in: cross-browser normalization, performance "
-"optimizations, even optional features like cross-domain Ajax and Flash. A "
-"starter apache .htaccess config file hooks you the eff up with caching rules "
-"and preps your site to serve HTML5 video, use @font-face, and get your gzip "
-"zipple on."
-msgstr "Po více než třech letech iterativního vývoje, získáte ty nejlepší "
-"z nejlepších postupů zahrnuté v cross-browser normalizací, "
-"výkonnostní optimalizace, dokonce i volitelné funkce, jako jsou Ajax a Flash. "
-"Startovací apache konfigurační soubor .htaccess vám pomůže připravit stránku s HTML5 pro "
-"video, používání @font-face a gzip."
+"After more than four years in iterative development, you get the best of the "
+"best practices baked in: cross-browser normalization, performance "
+"optimizations, even optional features like cross-domain XHR and Flash. A "
+"starter Apache <code>.htaccess</code> config file hooks you up with caching "
+"rules and preps your site to serve HTML5 video, use @font-face, and drop "
+"your site's filesize by half with robust gzipping."
+msgstr ""
+"Po více než třech letech iterativního vývoje, získáte ty nejlepší z "
+"nejlepších postupů zahrnuté v cross-browser normalizací, výkonnostní "
+"optimalizace, dokonce i volitelné funkce, jako jsou Ajax a Flash. Startovací "
+"apache konfigurační soubor .htaccess vám pomůže připravit stránku s HTML5 "
+"pro video, používání @font-face a gzip."
 
 #: src/index.html:43
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
-msgstr "Boilerplate není framework, také nestanovuje žádnou filozofi vývoje, "
-"je to jen zopár triků, jak dostat váš projekt ze země "
-"tou správnou nohou a rychle."
+msgstr ""
+"Boilerplate není framework, také nestanovuje žádnou filozofi vývoje, je to "
+"jen zopár triků, jak dostat váš projekt ze země tou správnou nohou a rychle."
 
 #: src/index.html:46
-msgid "Why it is awesome"
+#, fuzzy
+msgid "Why it is good"
 msgstr "Proč je to tak úžasné"
 
 #: src/index.html:48
-msgid "Cross-browser compatible (IE6, yeah we got that.)"
+#, fuzzy
+msgid "Cross-browser compatible (IE6+, yeah we got that.)"
 msgstr "Kompatibilita při různých prohlížečích (IE6, ano i to.)"
 
 #: src/index.html:49
@@ -98,327 +105,352 @@ msgstr "Specifické IE třídy pro maximálni kontrolu kompatibility prohlíže�
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "Praktické .no-js a .js třídy se stylem na základě kompatibility"
 
-#: src/index.html:58
-msgid "Why it is awesome-er"
-msgstr "Proč je ještě více úžasný"
-
-#: src/index.html:60
-msgid "Console.log nerfing so you won't break anyone by mistake."
+#: src/index.html:57
+#, fuzzy
+msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "Předem připravte Console.log, takže nezpůsobíte žádne chyby."
 
-#: src/index.html:61
+#: src/index.html:58
 msgid "Never go wrong with your doctype or markup!"
 msgstr "Nikdy si nezmýlte svůj doctype anebo zápis!"
 
-#: src/index.html:62
+#: src/index.html:59
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "Optimální styl tisku, výkon optimalizovaný."
 
-#: src/index.html:63
+#: src/index.html:60
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "iOS, Android, Opera Mobile-přizpůsobivý zápis a CSS jadro."
 
-#: src/index.html:64
+#: src/index.html:61
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ".clearfix, .visuallyhidden třídy pro rozumní stylovaní a dostupnost."
 
-#: src/index.html:65
+#: src/index.html:62
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ".htaccess soubor, který umožňuje správné používání HTML5 funkcí a rychlejší načítání stránky"
+msgstr ""
+".htaccess soubor, který umožňuje správné používání HTML5 funkcí a rychlejší "
+"načítání stránky"
 
-#: src/index.html:66
+#: src/index.html:63
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "CDN hostované jQuery s nouzovými řešeními."
 
-#: src/index.html:67
+#: src/index.html:64
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
-msgstr "Zdá se vám, že je toho moc? HTML5 Boilerplate můžete klidně přemazat. :)"
+msgstr ""
+"Zdá se vám, že je toho moc? HTML5 Boilerplate můžete klidně přemazat. :)"
 
-#: src/index.html:70
+#: src/index.html:67
 msgid "Want to dive in?"
 msgstr "Chcete se do toho ponořit?"
 
-#: src/index.html:76
+#: src/index.html:73
 msgid "Download Boilerplate {{ version }}"
 msgstr "Stáhněte si Boilerplate {{ version }}"
 
-#: src/index.html:76
+#: src/index.html:73
 msgid "Updated Feb 19th"
 msgstr "Aktualizováno 19. února"
 
-#: src/index.html:79
+#: src/index.html:76
 msgid "<u>Download</u> Boilerplate "
 msgstr "<u>Stáhnout</u> Boilerplate "
 
-#: src/index.html:79
+#: src/index.html:76
 msgid "Keep the hints and links"
 msgstr "Taky pokyny a odkazy"
 
-#: src/index.html:80 standard input:82
+#: src/index.html:77 standard input:79
 msgid "or"
 msgstr "nebo"
 
-#: src/index.html:81
+#: src/index.html:78
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "<u>Stáhnout</u> Boilerplate \"čistý\""
 
-#: src/index.html:81
+#: src/index.html:78
 msgid "No comments, just the bizniss."
 msgstr "Bez komentáře, jen kód."
 
-#: src/index.html:83
+#: src/index.html:80
 msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>Přizpůsobit</u> Boilerplate"
 
-#: src/index.html:83
+#: src/index.html:80
 msgid "100&#37; hipster."
 msgstr "100&#37; hipster."
 
-#: src/index.html:89
+#: src/index.html:86
 msgid "jQuery"
 msgstr "jQuery"
 
-#: src/index.html:90
+#: src/index.html:87
 msgid "Minified"
 msgstr "Komprimované"
 
-#: src/index.html:91
+#: src/index.html:88
 msgid "Unminified"
 msgstr "Nekomprimované"
 
-#: src/index.html:95
+#: src/index.html:92
 msgid "Server Config"
 msgstr "Konfigurace servru"
 
-#: src/index.html:101
+#: src/index.html:98
 msgid "Others"
 msgstr "Další"
 
-#: src/index.html:102
+#: src/index.html:99
 msgid "All IE classes"
 msgstr "Všechny třídy IE"
 
-#: src/index.html:103
+#: src/index.html:100
 msgid "script.js & plugin.js"
 msgstr "script.js a plugin.js"
 
-#: src/index.html:104
+#: src/index.html:101
 msgid "Google Analytics Snippet"
 msgstr "Google Analytics Snippet"
 
-#: src/index.html:105
+#: src/index.html:102
 msgid "Ant Build Script"
 msgstr "Ant Build Script"
 
-#: src/index.html:108
+#: src/index.html:105
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
 "\"http://initializr.com\">Initializr</a>"
-msgstr "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"\" id=\"builder-download\">Stáhnout!</a> Potřebujete více možností? Navštívte <a href="
-"\"http://initializr.com\">Initializr</a>"
+msgstr ""
+"<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
+"\" id=\"builder-download\">Stáhnout!</a> Potřebujete více možností? "
+"Navštívte <a href=\"http://initializr.com\">Initializr</a>"
 
-#: src/index.html:113
+#: src/index.html:110
 msgid "Read the docs"
 msgstr "Přečíst dokumentaci"
 
-#: src/index.html:114
+#: src/index.html:111
 msgid "Contribute on Github "
 msgstr "Spolupracovat na Github "
 
-#: src/index.html:115
+#: src/index.html:112
 msgid "Follow on twitter"
 msgstr "Sleduj náš twitter"
 
-#: src/index.html:119
+#: src/index.html:116
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "HTML5 Boilerplate je 3.0!"
 
-#: src/index.html:120
+#: src/index.html:117
 msgid "Monday, Feb 6th, 2012"
 msgstr "Pondělí, 6. února, 2012"
 
-#: src/index.html:121
+#: src/index.html:118
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
 "build script, so much so that we thought it <a href=\"https://github.com/"
 "h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
 "what's new."
-msgstr "Hlavním rysem této aktualizace je, že Boilerplate je menší. většina "
-"změn se uskutečnila právě kvůli tomu. Vykonali jsme významnou práci na našem build skripte, "
-"rozhodli jsme se že si <a href=\"https://github.com/"
-"h5bp/ant-build-script\">zaslouží vlastní repozitár</a>. Mezitím, tady je to, "
-"co je nového."
+msgstr ""
+"Hlavním rysem této aktualizace je, že Boilerplate je menší. většina změn se "
+"uskutečnila právě kvůli tomu. Vykonali jsme významnou práci na našem build "
+"skripte, rozhodli jsme se že si <a href=\"https://github.com/h5bp/ant-build-"
+"script\">zaslouží vlastní repozitár</a>. Mezitím, tady je to, co je nového."
 
-#: src/index.html:124
+#: src/index.html:121
 msgid "Changelog"
 msgstr "Changelog"
 
-#: src/index.html:125
+#: src/index.html:122
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
-msgstr "3.0 se sebou přináší významné aktualizace <a href=\"https://github.com/h5bp/html5-"
-"boilerplate/compare/v2.0...v3.0\">Zde jsou změny, od posledního "
+msgstr ""
+"3.0 se sebou přináší významné aktualizace <a href=\"https://github.com/h5bp/"
+"html5-boilerplate/compare/v2.0...v3.0\">Zde jsou změny, od posledního "
 "vydání</a>."
 
-#: src/index.html:126
+#: src/index.html:123
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
-msgstr "Měli by ste aktualizovat existující stránky</a>? Stručná odpověď: ne, není potřeba."
+msgstr ""
+"Měli by ste aktualizovat existující stránky</a>? Stručná odpověď: ne, není "
+"potřeba."
 
-#: src/index.html:128
+#: src/index.html:125
 msgid "Significant changes"
 msgstr "Podstatné změny"
 
-#: src/index.html:131
+#: src/index.html:128
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
-msgstr "Odstránené složky: <code>/demos</code>, <code>/test</code>, and "
-"<code>/js/mylibs</code>."
+msgstr ""
+"Odstránené složky: <code>/demos</code>, <code>/test</code>, and <code>/js/"
+"mylibs</code>."
 
-#: src/index.html:132
+#: src/index.html:130
 msgid "Build script is now a separate project"
 msgstr "Build script je nyní samostatný projekt"
 
-#: src/index.html:132
-msgid "Read about how to get and use the build script"
+#: src/index.html:130
+#, fuzzy
+msgid "node.js build script"
+msgstr "Ant Build Script"
+
+#: src/index.html:130
+msgid "ruby/rake build scripts"
+msgstr ""
+
+#: src/index.html:130
+#, fuzzy
+msgid ""
+"Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
+"script</a>"
 msgstr "Přečtete si,jak získat a použít build script"
 
-#: src/index.html:133
+#: src/index.html:131
 msgid "Respond.js is no longer available by default. "
 msgstr "Respond.js již niný není k dispozici ve výchozím nastavení. "
 
-#: src/index.html:139
+#: src/index.html:137
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
-msgstr "Chromeframe již není používan přes skript. Pro uživatele IE6 jsou podávané odkazy pro "
-"instalaci Chromeframe nebo navštívte Browsehappy pro alternatívní prohlížeč  "
+msgstr ""
+"Chromeframe již není používan přes skript. Pro uživatele IE6 jsou podávané "
+"odkazy pro instalaci Chromeframe nebo navštívte Browsehappy pro alternatívní "
+"prohlížeč  "
 
-#: src/index.html:140
+#: src/index.html:138
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr "Meta viewport aktualizován, aby se zabránilo iOS chybám.  "
 
-#: src/index.html:141
+#: src/index.html:139
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
-msgstr "<code>html</code> IE třídy odchytávají "
-"nižší verzi místo uvedené.  "
+msgstr "<code>html</code> IE třídy odchytávají nižší verzi místo uvedené.  "
 
-#: src/index.html:142
+#: src/index.html:140
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
-msgstr "Návrat optimalizované asynchronní verzi Google Analytics místo "
-"užívání <code>Modernizr.load</code>.  "
+msgstr ""
+"Návrat optimalizované asynchronní verzi Google Analytics místo užívání "
+"<code>Modernizr.load</code>.  "
 
-#: src/index.html:143
+#: src/index.html:141
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
-msgstr "Odstraňte <code>defer</code> ve všech skriptů, abyste se vyhnuli chybám při starších IE."
+msgstr ""
+"Odstraňte <code>defer</code> ve všech skriptů, abyste se vyhnuli chybám při "
+"starších IE."
 
-#: src/index.html:144
+#: src/index.html:142
 msgid "Design of the 404 has been improved."
 msgstr "Vylepšený design chybové stránky 404."
 
-#: src/index.html:149
+#: src/index.html:147
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
-msgstr "Odstraněna výchozí velikost písma a výška řádků abychom poskytli lepší robustní"
-"standard.  "
+msgstr ""
+"Odstraněna výchozí velikost písma a výška řádků abychom poskytli lepší "
+"robustnístandard.  "
 
-#: src/index.html:150
+#: src/index.html:148
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
-msgstr "Přidáno změn pro normalize.css pro poskytování lepší standardní typografie."
+msgstr ""
+"Přidáno změn pro normalize.css pro poskytování lepší standardní typografie."
 
-#: src/index.html:151
+#: src/index.html:149
 msgid "More robust .ir helper class."
 msgstr "Robustnejší .ir pomocní třídy."
 
-#: src/index.html:152
+#: src/index.html:150
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
-msgstr "Už žádný vynucený scrollbar, toto brání projektům jako jQuery UI, a jiným "
-"v kalkulaci šířek"
+msgstr ""
+"Už žádný vynucený scrollbar, toto brání projektům jako jQuery UI, a jiným v "
+"kalkulaci šířek"
 
-#: src/index.html:156
+#: src/index.html:154
 msgid "Project"
 msgstr "Projekt"
 
-#: src/index.html:158
+#: src/index.html:156
 msgid "Updated to Modernizr 2.5"
 msgstr "Aktualizován Modernizr 2.5"
 
-#: src/index.html:159
+#: src/index.html:157
 msgid "Updated to jQuery 1.7.1"
 msgstr "Aktualizován jQuery 1.7.1"
 
-#: src/index.html:160
+#: src/index.html:158
 msgid "Improved .htaccess"
 msgstr "Vylepšený .htaccess"
 
-#: src/index.html:166
+#: src/index.html:164
 msgid "Videos"
 msgstr "Videa"
 
-#: src/index.html:170
+#: src/index.html:168
 msgid "Ready to get started?"
 msgstr "Připraven začít?"
 
-#: src/index.html:170 standard input:173
+#: src/index.html:168 standard input:171
 msgid "new!"
 msgstr "nové!"
 
-#: src/index.html:173
+#: src/index.html:171
 msgid "Intro to the Build Script"
 msgstr "Intro pro Build Script"
 
-#: src/index.html:176
+#: src/index.html:174
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Spoznej fakta za 40 minut, hladce!"
 
-#: src/index.html:180
+#: src/index.html:178
 msgid "Dig deeper in 60 minutes"
 msgstr "Pronikni hlouběji za 60 minut"
 
-#: src/index.html:185
+#: src/index.html:183
 msgid "Brought to you by"
 msgstr "Vám přináší"
 
-#: src/index.html:187
+#: src/index.html:185
 msgid "Google Chrome, jQuery"
 msgstr "Google Chrome, jQuery"
 
-#: src/index.html:188
+#: src/index.html:186
 msgid "Web Opener @ Opera"
 msgstr "Web Opener @ Opera"
 
-#: src/index.html:189
+#: src/index.html:187
 msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
-#: src/index.html:190
+#: src/index.html:188
 msgid "Freelance web developer"
 msgstr "Freelance web developer"
 
-#: src/index.html:191
+#: src/index.html:189
 msgid "Front-End Web Developer"
 msgstr "Front-End Web Developer"
 
-#: src/index.html:198
+#: src/index.html:196
 msgid "More Contributors"
 msgstr "Další přispěvatelé"
 
-#: src/index.html:201
+#: src/index.html:199
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "To vše by nebylo možné bez úsilí těchto superhrdinů:"
@@ -443,7 +475,8 @@ msgstr "Komentáře"
 msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
-msgstr "Prosím, aktivujte si JavaScript pro prohlédnutí <a href=\"http://disqus.com/?"
+msgstr ""
+"Prosím, aktivujte si JavaScript pro prohlédnutí <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">komentářů přes Disqus.</a>"
 
 #: src/template/htaccess.txt:1
@@ -454,8 +487,9 @@ msgstr "Konfigurační soubor Apache"
 msgid ""
 "Note .htaccess files are an overhead, this logic should be in your Apache "
 "config if possible"
-msgstr "Pozor, .htaccess soubory jsou systémové, tato logika by mohla být použita ve vašem Apache "
-"config pokud je to možné"
+msgstr ""
+"Pozor, .htaccess soubory jsou systémové, tato logika by mohla být použita ve "
+"vašem Apache config pokud je to možné"
 
 #: src/template/htaccess.txt:7
 msgid "Techniques in here adapted from all over, including:"
@@ -477,21 +511,21 @@ msgstr "Větší zážitek pro uživatelé IE"
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
-msgstr "Vynutí poslední verzi IE, v různých případech když se přepne zpět do IE7 "
-"modu"
+msgstr ""
+"Vynutí poslední verzi IE, v různých případech když se přepne zpět do IE7 modu"
 
 #: src/template/htaccess.txt:26
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
-msgstr "Používejte ChromeFrame pro lepší zážitek pro bídných IE "
-"užívatelů"
+msgstr "Používejte ChromeFrame pro lepší zážitek pro bídných IE užívatelů"
 
 #: src/template/htaccess.txt:31
 msgid ""
 "mod_headers can't match by content-type, but we don't want to send this "
 "header on *everything*"
-msgstr "mod_headers se nemůže shodovat s content-type, ale nechceme použít tento "
+msgstr ""
+"mod_headers se nemůže shodovat s content-type, ale nechceme použít tento "
 "header na *všechno*"
 
 #: src/template/htaccess.txt:39
@@ -614,8 +648,9 @@ msgstr "Navíc předpokládejme, že neaktualizované proxy mohou dělat bordel"
 msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like \"access plus 1 week\" "
-msgstr "Pokud jste nepoužívali verzi v názvu souboru, snižte css a js na něco"
-"jako \"přístup +1 týden\" "
+msgstr ""
+"Pokud jste nepoužívali verzi v názvu souboru, snižte css a js na něcojako "
+"\"přístup +1 týden\" "
 
 #: src/template/htaccess.txt:209
 msgid "Perhaps better to whitelist expires rules? Perhaps."
@@ -624,7 +659,9 @@ msgstr "Lépe vypsat pravidla expirace? Možná."
 #: src/template/htaccess.txt:212
 msgid ""
 "cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)"
-msgstr "cache.appcache potřebuje znovu zaslat poptávku v FF 3.6 (ďěkujeme Remy ~Introducing HTML5)"
+msgstr ""
+"cache.appcache potřebuje znovu zaslat poptávku v FF 3.6 (ďěkujeme Remy "
+"~Introducing HTML5)"
 
 #: src/template/htaccess.txt:217
 msgid "Your document html"
@@ -662,7 +699,8 @@ msgstr "ETag odstraněn"
 msgid ""
 "Since we`re sending far-future expires, we don't need ETags for static "
 "content."
-msgstr "Odkdy používame exspirování v budoucnosti, nepotřebujeme ETags pro statický "
+msgstr ""
+"Odkdy používame exspirování v budoucnosti, nepotřebujeme ETags pro statický "
 "obsah."
 
 #: src/template/htaccess.txt:281
@@ -673,8 +711,9 @@ msgstr "Zastaví blikání obrazovky v IE na CSS rollovers"
 msgid ""
 "The following directives stop screen flicker in IE on CSS rollovers in "
 "combination with the \"ExpiresByType\" rules for images (see above)"
-msgstr "Následující pravidla zastavují blikání v IE na CSS rollovers v "
-"kombinaci s \"ExpiresByType\" pravidlami pro obrázky (viz výše)"
+msgstr ""
+"Následující pravidla zastavují blikání v IE na CSS rollovers v kombinaci s "
+"\"ExpiresByType\" pravidlami pro obrázky (viz výše)"
 
 #: src/template/htaccess.txt:285
 msgid "If needed, un-comment the following rules."
@@ -691,7 +730,9 @@ msgstr "Povolte cookies aby byly nastaveny z iframes (platí pouze pro IE)"
 #: src/template/htaccess.txt:299
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
-msgstr "V případě potřeby, odkomentujte a specifikujte cestu nebo regex v Location pravidle"
+msgstr ""
+"V případě potřeby, odkomentujte a specifikujte cestu nebo regex v Location "
+"pravidle"
 
 #: src/template/htaccess.txt:310
 msgid "Start rewrite engine"
@@ -701,8 +742,8 @@ msgstr "Zapnout rewrite engine"
 msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
-msgstr "Zapnutí přepisování enginu je důležité pro následující pravidla a "
-"funkce."
+msgstr ""
+"Zapnutí přepisování enginu je důležité pro následující pravidla a funkce."
 
 #: src/template/htaccess.txt:314
 msgid "FollowSymLinks must be enabled for this to work."
@@ -710,23 +751,23 @@ msgstr "FollowSymLinks musí být povoleno aby vše fungovalo."
 
 #: src/template/htaccess.txt:323
 msgid "Suppress or force the \"www.\" at the beginning of URLs"
-msgstr "Potlačí nebo vynutí \ "www. \" na začátku adres URL"
+msgstr "Potlačí nebo vynutí \"www. \" na začátku adres URL"
 
 #: src/template/htaccess.txt:327
 msgid ""
 "The same content should never be available under two different URLs, "
 "especially not with and without \"www.\" at the beginning, since this can "
 "cause SEO problems (duplicate content)."
-msgstr "Stejný obsah by neměl být k dispozici na dvou různých adresách URL, "
-"především ne s a bez \ "www. \" na začátku, protože to může "
-"spůsobit SEO problémy (duplikován obsah)."
+msgstr ""
+"Stejný obsah by neměl být k dispozici na dvou různých adresách URL, "
+"především ne s a bez \"www. \" na začátku, protože to může spůsobit SEO "
+"problémy (duplikován obsah)."
 
 #: src/template/htaccess.txt:328
 msgid ""
 "That's why you should choose one of the alternatives and redirect the other "
 "one."
-msgstr "Proto byste mohli vybrat jednu z alternativ a přesměrovat "
-"druhou."
+msgstr "Proto byste mohli vybrat jednu z alternativ a přesměrovat druhou."
 
 #: src/template/htaccess.txt:331
 msgid "By default option 1 (no \"www.\") is activated."
@@ -740,8 +781,9 @@ msgstr "Pamatujte: Kratší URL adresy jsou více sexy."
 msgid ""
 "If you rather want to use option 2, just comment out all option 1 lines and "
 "uncomment option 2."
-msgstr "Pokud raději použijete 2. možnost, jen zakomentujte všechny řádky 1. možnosti a "
-"odkomentujte možnost 2."
+msgstr ""
+"Pokud raději použijete 2. možnost, jen zakomentujte všechny řádky 1. "
+"možnosti a odkomentujte možnost 2."
 
 #: src/template/htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
@@ -762,14 +804,17 @@ msgstr "Možnost 2:"
 #: src/template/htaccess.txt:357
 msgid ""
 "To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
-msgstr "Abychom mohli přepsat \"domain.com -> www.domain.com\" odkomentujte následující řádky."
+msgstr ""
+"Abychom mohli přepsat \"domain.com -> www.domain.com\" odkomentujte "
+"následující řádky."
 
 #: src/template/htaccess.txt:358
 msgid ""
 "Be aware that the following rule might not be a good idea if you use \"real"
 "\" subdomains for certain parts of your website."
-msgstr "Pamatujte, že toto pravidlo nemusí být dobrý nápad, pokud používáte \ "skutečné"
-"\ "subdomény pro uplatňování některých části vašeho webu."
+msgstr ""
+"Pamatujte, že toto pravidlo nemusí být dobrý nápad, pokud používáte "
+"\"skutečné\"subdomény pro uplatňování některých části vašeho webu."
 
 #: src/template/htaccess.txt:371
 msgid "Built-in filename-based cache busting"
@@ -780,15 +825,17 @@ msgid ""
 "If you're not using the build script to manage your filename version "
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
-msgstr "Pokud nepoužíváte build script pro správu změn názvu souboru verze, "
-"měli byste zvážit povolit toto, čímž můžete směřovat požadavky "
-"pro /css/all.20110203.css na /res/all.css"
+msgstr ""
+"Pokud nepoužíváte build script pro správu změn názvu souboru verze, měli "
+"byste zvážit povolit toto, čímž můžete směřovat požadavky pro /css/"
+"all.20110203.css na /res/all.css"
 
 #: src/template/htaccess.txt:378
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
-msgstr "Pro porozumění proč je toto důležitý a je lepší nápad než all.css?V1231, "
+msgstr ""
+"Pro porozumění proč je toto důležitý a je lepší nápad než all.css?V1231, "
 "čtěte:"
 
 #: src/template/htaccess.txt:381
@@ -801,14 +848,16 @@ msgstr "Zabraňte varováním SSL certifikátů"
 
 #: src/template/htaccess.txt:395
 msgid "Rewrite secure requests properly to prevent SSL cert warnings"
-msgstr "Přepište zabezpečené požadavky, aby se předešlo varováním SSL certifikátů"
+msgstr ""
+"Přepište zabezpečené požadavky, aby se předešlo varováním SSL certifikátů"
 
 #: src/template/htaccess.txt:396
 msgid ""
 "e.g. prevent https://www.domain.com when your cert only allows https://"
 "secure.domain.com "
-msgstr "např. zabrání https://www.domain.com pokud vaše certifikáty povolují pouze https://"
-"secure.domain.com "
+msgstr ""
+"např. zabrání https://www.domain.com pokud vaše certifikáty povolují pouze "
+"https://secure.domain.com "
 
 #: src/template/htaccess.txt:397
 msgid "Uncomment the following lines to use this feature."
@@ -822,7 +871,8 @@ msgstr "Zamezte chybám 404 pro neexistující přesměrována složky"
 msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist e.g."
-msgstr "bez-MultiViews, Apache vyhodí chybu 404 pro přepisování, např. pokud složka "
+msgstr ""
+"bez-MultiViews, Apache vyhodí chybu 404 pro přepisování, např. pokud složka "
 "se stejným jménem neexistuje."
 
 #: src/template/htaccess.txt:420
@@ -832,7 +882,9 @@ msgstr "Vlastní stránka 404"
 #: src/template/htaccess.txt:423
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
-msgstr "Můžete velmi snadno přidat vlastní stránky pro chybové stránky jako je 500 nebo 403."
+msgstr ""
+"Můžete velmi snadno přidat vlastní stránky pro chybové stránky jako je 500 "
+"nebo 403."
 
 #: src/template/htaccess.txt:429
 msgid "UTF-8 encoding"
@@ -840,7 +892,8 @@ msgstr "kódování UTF-8"
 
 #: src/template/htaccess.txt:432
 msgid "use utf-8 encoding for anything served text/plain or text/html"
-msgstr "použijte kódování utf-8 na cokoliv co slouží jako text/plain nebo text/html"
+msgstr ""
+"použijte kódování utf-8 na cokoliv co slouží jako text/plain nebo text/html"
 
 #: src/template/htaccess.txt:435
 msgid "force utf-8 for a number of file formats"
@@ -854,42 +907,49 @@ msgstr "Trochu více zabezpečení"
 msgid ""
 "Do we want to advertise the exact version number of Apache we're running? "
 "Probably not."
-msgstr "Chceme propagovat přesné číslo verze Apache který používáme? "
-"Pravděpodobně ne."
+msgstr ""
+"Chceme propagovat přesné číslo verze Apache který používáme? Pravděpodobně "
+"ne."
 
 #: src/template/htaccess.txt:447
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
-msgstr "Toto bude fungovat pouze pokud to použijeme v httpd.conf - Nebude to fungovat v "
-".htaccess"
+msgstr ""
+"Toto bude fungovat pouze pokud to použijeme v httpd.conf - Nebude to "
+"fungovat v .htaccess"
 
 #: src/template/htaccess.txt:453
 msgid ""
 "\"-Indexes\" will have Apache block users from browsing folders without a "
 "default document"
-msgstr "\"-Indexes\" Apache znemožní uživatelům prohlížení složek bez "
-"výchozího dokumentu"
+msgstr ""
+"\"-Indexes\" Apache znemožní uživatelům prohlížení složek bez výchozího "
+"dokumentu"
 
 #: src/template/htaccess.txt:454
 msgid ""
 "Usually you should leave this activated, because you shouldn't allow "
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
-msgstr "Obvykle byste mohli nechat tuto možnost aktivovanou, protože byste neměli "
-"povolit každému prohlížet každou jednu složku na vašem serveru (který zahrnuje dříve "
-"soukromná místa jako systémové zložky CMS)."
+msgstr ""
+"Obvykle byste mohli nechat tuto možnost aktivovanou, protože byste neměli "
+"povolit každému prohlížet každou jednu složku na vašem serveru (který "
+"zahrnuje dříve soukromná místa jako systémové zložky CMS)."
 
 #: src/template/htaccess.txt:460
 msgid ""
 "Block access to \"hidden\" directories whose names begin with a period. "
-msgstr "Zablokování přístupu do \"skrytých\" adresářů, jejichž jména začínají s tečkou. "
+msgstr ""
+"Zablokování přístupu do \"skrytých\" adresářů, jejichž jména začínají s "
+"tečkou. "
 
 #: src/template/htaccess.txt:461
 msgid ""
 "This includes directories used by version control systems such as Subversion "
 "or Git."
-msgstr "Zahrnuje to adresáře použity systémy pro správu verzí jako jsou Subversion "
+msgstr ""
+"Zahrnuje to adresáře použity systémy pro správu verzí jako jsou Subversion "
 "nebo Git."
 
 #: src/template/htaccess.txt:469
@@ -898,9 +958,10 @@ msgid ""
 "should be uncommented in order to set PHP's register_globals option to OFF. "
 "This closes a major security hole that is abused by most XSS (cross-site "
 "scripting) attacks. For more information:"
-msgstr "Pokud váš server již není nakonfigurován jako takový, následující směrnice "
-"odkomentujte, abyste nastavili PHP register_globals možnost na OFF. "
-"Tímto uzavřeme hlavní bezpečnostní díru, kterou zneužívá většina XSS (cross-site "
+msgstr ""
+"Pokud váš server již není nakonfigurován jako takový, následující směrnice "
+"odkomentujte, abyste nastavili PHP register_globals možnost na OFF. Tímto "
+"uzavřeme hlavní bezpečnostní díru, kterou zneužívá většina XSS (cross-site "
 "scropting) útoků. Pro více informací:"
 
 #: src/template/htaccess.txt:471
@@ -915,18 +976,20 @@ msgid ""
 "this.Not all servers allow local php.ini files, and they should include all "
 "PHP configurations (not just this one), or you will effectively reset "
 "everything to PHP defaults."
-msgstr "Váš server nepovoluje PHP směrnice nastavit pomocí .htaccess. V tomto "
-"případě musíte provést následující změnu ve vašem php.ini souboru. Pokud používáte "
-"komerční web hosting, kontaktujte administrátora pro asistenci. "
-"Ne všechny servery povolují lokální php.ini soubory a mohou obsahovat všechny "
-"PHP konfigurace (nejen tuto jedinou) nebo účinně obnovíte "
-"vše na PHP standardní nastavení."
+msgstr ""
+"Váš server nepovoluje PHP směrnice nastavit pomocí .htaccess. V tomto "
+"případě musíte provést následující změnu ve vašem php.ini souboru. Pokud "
+"používáte komerční web hosting, kontaktujte administrátora pro asistenci. Ne "
+"všechny servery povolují lokální php.ini soubory a mohou obsahovat všechny "
+"PHP konfigurace (nejen tuto jedinou) nebo účinně obnovíte vše na PHP "
+"standardní nastavení."
 
 #: src/template/htaccess.txt:474
 msgid ""
 "Consult www.php.net for more detailed information about setting PHP "
 "directives."
-msgstr "Informujte se na www.php.net pro detailnejší informace o nastaveních PHP "
+msgstr ""
+"Informujte se na www.php.net pro detailnejší informace o nastaveních PHP "
 "adresářů."
 
 #: src/template/htaccess.txt:479
@@ -939,7 +1002,9 @@ msgstr "Nezobrazujte, že používáte PHP"
 
 #: src/template/htaccess.txt:483
 msgid "Note: Move this line to php.ini since it won't work in .htaccess"
-msgstr "Poznámka: Přesunte tenhle řádek do php.ini, protože nebude fungovat v .htaccess"
+msgstr ""
+"Poznámka: Přesunte tenhle řádek do php.ini, protože nebude fungovat v ."
+"htaccess"
 
 #: src/template/htaccess.txt:486
 msgid "Level of log detail - log all errors"
@@ -977,14 +1042,16 @@ msgstr "Obmedzení velkosti chybových hlášení"
 msgid ""
 "Don't precede error with string (doesn't accept empty string, use whitespace "
 "if you need)"
-msgstr "Nikdy nepredchádzajte chyby s řetězci (neakceptuje prázdný řetězec, pokud je to nutné "
-"použite mezeru)"
+msgstr ""
+"Nikdy nepredchádzajte chyby s řetězci (neakceptuje prázdný řetězec, pokud je "
+"to nutné použite mezeru)"
 
 #: src/template/htaccess.txt:513
 msgid ""
 "Don't prepend to error (doesn't accept empty string, use whitespace if you "
 "need)"
-msgstr "Nenechte předřadit k chybám (neakceptuje prázdný řetězec, pokud je to nutné "
+msgstr ""
+"Nenechte předřadit k chybám (neakceptuje prázdný řetězec, pokud je to nutné "
 "použite mezeru)"
 
 #: src/template/htaccess.txt:516
@@ -1005,7 +1072,8 @@ msgstr "Nejméně restriktivní politika"
 
 #: src/template/crossdomain.xml:18
 msgid "If you host a crossdomain.xml file with allow-access-from domain=\"*\""
-msgstr "Ak hostujete crossdomain.xml soubor s povolením odmezení z domain=\"*\""
+msgstr ""
+"Ak hostujete crossdomain.xml soubor s povolením odmezení z domain=\"*\""
 
 #: src/template/crossdomain.xml:19
 msgid "and don't understand all of the points described here, you probably"
@@ -1041,7 +1109,9 @@ msgstr "zastaralý odkaz"
 
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
-msgstr "Použijte .htaccess a odstraňte tyto řádky abyste se vyhnuli problémům okrajových záležitostí."
+msgstr ""
+"Použijte .htaccess a odstraňte tyto řádky abyste se vyhnuli problémům "
+"okrajových záležitostí."
 
 #: src/template/index.html:11
 msgid "More info:"
@@ -1055,7 +1125,8 @@ msgstr "Optimalizovaný viewport pro mobilní zařízení:"
 msgid ""
 "Place favicon.ico and apple-touch-icon.png in the root directory: "
 "mathiasbynens.be/notes/touch-icons"
-msgstr "Umístěte favicon.ico a apple-touch-icon.png do kořenového adresáře:"
+msgstr ""
+"Umístěte favicon.ico a apple-touch-icon.png do kořenového adresáře:"
 "mathiasbynens.be/notes/touch-icons"
 
 #: src/template/index.html:23
@@ -1074,8 +1145,9 @@ msgstr "Celý JavaScript v spodní částí, s výjimkou Modernizr a Respond."
 msgid ""
 "Modernizr enables HTML5 elements & feature detects; Respond is a polyfill "
 "for min/max-width CSS3 Media Queries"
-msgstr "Modernizr aktivuje HTML5 detekování prvků a funkcí; Respond je polyfill "
-"pro min/max-šířku CSS3 Media Queries"
+msgstr ""
+"Modernizr aktivuje HTML5 detekování prvků a funkcí; Respond je polyfill pro "
+"min/max-šířku CSS3 Media Queries"
 
 #: src/template/index.html:30
 msgid "For optimal performance, use a custom Modernizr build:"
@@ -1093,8 +1165,8 @@ msgstr "JavaScript v spodní částí pro rychlejší načítaní stránky"
 msgid ""
 "Grab Google CDN's jQuery, with a protocol relative URL; fall back to local "
 "if necessary"
-msgstr "Použite Google CDN's jQuery, s použitím lokální verze "
-"pokud je potřebné"
+msgstr ""
+"Použite Google CDN's jQuery, s použitím lokální verze pokud je potřebné"
 
 #: src/template/index.html:56
 msgid "scripts concatenated and minified via ant build script"
@@ -1112,7 +1184,8 @@ msgstr "Změňte ID vaší stránky na UAXXXXXXXX1"
 msgid ""
 "Prompt IE 6 users to install Chrome Frame. Remove this if you want to "
 "support IE 6."
-msgstr "Podnítit uživatele IE 6 k instalaci Chrome Frame. Odstraňte to pokud chcete "
+msgstr ""
+"Podnítit uživatele IE 6 k instalaci Chrome Frame. Odstraňte to pokud chcete "
 "podporovat IE 6."
 
 #: src/template/humans.txt:1
@@ -1169,7 +1242,8 @@ msgstr "Software"
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
-msgstr "To co následuje, je výsledkem mnoha výzkumů cross-browser stylovaných. "
+msgstr ""
+"To co následuje, je výsledkem mnoha výzkumů cross-browser stylovaných. "
 
 #: src/template/css/style.css:5
 msgid "Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,"
@@ -1195,7 +1269,8 @@ msgstr "Základ"
 msgid ""
 "Correct text resizing oddly in IE6/7 when body font-size is set using em "
 "units"
-msgstr "Opraví chybné zvětšování testu v IE6/7 pokud je body font uvedení v em "
+msgstr ""
+"Opraví chybné zvětšování testu v IE6/7 pokud je body font uvedení v em "
 "měřítku"
 
 #: src/template/css/style.css:30
@@ -1206,8 +1281,9 @@ msgstr "Vynutí vertikální scrollbar pro ne-IE"
 msgid ""
 "Prevent iOS text size adjust on device orientation change, without disabling "
 "user zoom:"
-msgstr "Zabrání změně velikosti textu při změně orientace při iOS zařízení bez"
-"omezení zoomu:"
+msgstr ""
+"Zabrání změně velikosti textu při změně orientace při iOS zařízení "
+"bezomezení zoomu:"
 
 #: src/template/css/style.css:43
 msgid "Remove text-shadow in selection highlight: h5bp.com/i"
@@ -1220,7 +1296,9 @@ msgstr "Tyto deklarace výběru musí být odděleny"
 #: src/template/css/style.css:47
 msgid ""
 "Also: hot pink! (or customize the background color to match your design)"
-msgstr "Také: krásná růžová! (nebo si nastavte barvu pozadí aby odpovídala vašemu designu)"
+msgstr ""
+"Také: krásná růžová! (nebo si nastavte barvu pozadí aby odpovídala vašemu "
+"designu)"
 
 #: src/template/css/style.css:56
 msgid "Links"
@@ -1303,7 +1381,8 @@ msgstr "Definuje sladěny zobrazení svislého zarovnání ve všech prohlíže�
 msgid ""
 "Define line-height as normal to match FF3/4 (set using !important in the UA "
 "stylesheet)"
-msgstr "Definuje výšku řádků aby odpovídaly FF3/4 (nastaví používání !important v UA "
+msgstr ""
+"Definuje výšku řádků aby odpovídaly FF3/4 (nastaví používání !important v UA "
 "stylu)"
 
 #: src/template/css/style.css:164
@@ -1314,8 +1393,9 @@ msgstr "Opraví inner spacing, kteří se podivně zobrazuje v IE6/7"
 msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
-msgstr "Znovu zavede inner spacing v 'table' abyste se vyhnuli překrývání a problémům s mezerami "
-"v IE6/7"
+msgstr ""
+"Znovu zavede inner spacing v 'table' abyste se vyhnuli překrývání a "
+"problémům s mezerami v IE6/7"
 
 #: src/template/css/style.css:176
 msgid "Display hand cursor for clickable form elements"
@@ -1381,8 +1461,9 @@ msgstr "Skrýt jen vizuálně, ale nechat dostupné pro čtečku:"
 msgid ""
 "Extends the .visuallyhidden class to allow the element to be focusable when "
 "navigated to via the keyboard"
-msgstr "Rozšírte třídu .visuallyhidden tak, aby byl prvek zaměřen pokud "
-"je navigace pomocí klávesnice"
+msgstr ""
+"Rozšírte třídu .visuallyhidden tak, aby byl prvek zaměřen pokud je navigace "
+"pomocí klávesnice"
 
 #: src/template/css/style.css:253
 msgid "Hide visually and from screenreaders, but maintain layout"
@@ -1452,5 +1533,8 @@ msgstr "zajistí vždy bezpečné použití console.log"
 msgid ""
 "place any jQuery/helper plugins in here, instead of separate, slower script "
 "files."
-msgstr "umístěte jQuery/helper pluginy zde, místo oddělených a pomalejších "
-"skriptů"
+msgstr ""
+"umístěte jQuery/helper pluginy zde, místo oddělených a pomalejších skriptů"
+
+#~ msgid "Why it is awesome-er"
+#~ msgstr "Proč je ještě více úžasný"

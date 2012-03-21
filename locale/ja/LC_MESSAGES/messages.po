@@ -28,25 +28,28 @@ msgid "A rock-solid default for HTML5 awesome."
 msgstr "素晴らしいHTML5のための堅実なデフォルトスタイル"
 
 #: src/index.html:38
-msgid "I'm new here: plz explain why it's so awesome, first."
+#, fuzzy
+msgid "I'm new here: plz explain why it's good, first."
 msgstr "初めての方へ: まず素晴らしい理由を説明しよう"
 
 #: src/index.html:41
+#, fuzzy
 msgid ""
-"HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for "
-"a fast, robust and future-safe site."
+"HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
+"template for a fast, robust and future-safe site."
 msgstr ""
 "HTML5 Boilerplateはページロード時間も早く、強固でかつ将来性のある、プロフェッ"
 "ショナルな連中のための基本HTML/CSS/JSテンプレート"
 
 #: src/index.html:42
+#, fuzzy
 msgid ""
-"After more than three years in iterative development, you get the best of "
-"the best practices baked in: cross-browser normalization, performance "
-"optimizations, even optional features like cross-domain Ajax and Flash. A "
-"starter apache .htaccess config file hooks you the eff up with caching rules "
-"and preps your site to serve HTML5 video, use @font-face, and get your gzip "
-"zipple on."
+"After more than four years in iterative development, you get the best of the "
+"best practices baked in: cross-browser normalization, performance "
+"optimizations, even optional features like cross-domain XHR and Flash. A "
+"starter Apache <code>.htaccess</code> config file hooks you up with caching "
+"rules and preps your site to serve HTML5 video, use @font-face, and drop "
+"your site's filesize by half with robust gzipping."
 msgstr ""
 "2年以上に渡る開発の中から生み出されたベストの中のベストプラクティスがここには"
 "ある。クロスブラウザのノーマライズ、パフォーマンス最適化、AjaxとFlashの"
@@ -64,11 +67,13 @@ msgstr ""
 "しく、素早くプロジェクトを開始するのに便利なトリックである。"
 
 #: src/index.html:46
-msgid "Why it is awesome"
+#, fuzzy
+msgid "Why it is good"
 msgstr "素晴らしい理由"
 
 #: src/index.html:48
-msgid "Cross-browser compatible (IE6, yeah we got that.)"
+#, fuzzy
+msgid "Cross-browser compatible (IE6+, yeah we got that.)"
 msgstr "クロスブラウザ対応(IE6も含む)"
 
 #: src/index.html:49
@@ -100,124 +105,121 @@ msgstr "IE専用クラスの使用でクロスブラウザの制御を最大化"
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "便利な .no-jsと.jsクラスをつかって機能に合わせたスタイル"
 
-#: src/index.html:58
-msgid "Why it is awesome-er"
-msgstr "さらに素晴らしい理由"
-
-#: src/index.html:60
-msgid "Console.log nerfing so you won't break anyone by mistake."
+#: src/index.html:57
+#, fuzzy
+msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "Console.logでブラウザがクラッシュする問題は解決済み"
 
-#: src/index.html:61
+#: src/index.html:58
 msgid "Never go wrong with your doctype or markup!"
 msgstr "ドキュメントタイプやマークアップはもう完璧なので間違えない"
 
-#: src/index.html:62
+#: src/index.html:59
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "パフォーマンス最適化されたプリントスタイルシート"
 
-#: src/index.html:63
+#: src/index.html:60
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "iOS、Android、Opera Mobileに対応できるマークアップとCSSのスケルトン"
 
-#: src/index.html:64
+#: src/index.html:61
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ".clearfixや.visuallyhiddenクラスで賢くアクセシブルなスタイルを"
 
-#: src/index.html:65
+#: src/index.html:62
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
 ".htaccessファイルはHTML5の機能を正しく活用し、より早いページロードを実現する"
 
-#: src/index.html:66
+#: src/index.html:63
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "CDNでホストされたjQueryとローカルにもフェールセーフする呼び出し"
 
-#: src/index.html:67
+#: src/index.html:64
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr "機能がたくさんありすぎる？ HTML5 Boilerplateはデリートキーと仲良し。:)"
 
-#: src/index.html:70
+#: src/index.html:67
 msgid "Want to dive in?"
 msgstr "試してみる？"
 
-#: src/index.html:76
+#: src/index.html:73
 msgid "Download Boilerplate {{ version }}"
 msgstr "ダウンロード Boilerplate {{ version }}"
 
-#: src/index.html:76
+#: src/index.html:73
 #, fuzzy
 msgid "Updated Feb 19th"
 msgstr "2月6日更新"
 
-#: src/index.html:79
+#: src/index.html:76
 msgid "<u>Download</u> Boilerplate "
 msgstr "<u>ダウンロード</u> Boilerplate "
 
-#: src/index.html:79
+#: src/index.html:76
 msgid "Keep the hints and links"
 msgstr "リンクとヒントを残しておく"
 
-#: src/index.html:80 standard input:82
+#: src/index.html:77 standard input:79
 msgid "or"
 msgstr "or"
 
-#: src/index.html:81
+#: src/index.html:78
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "<u>ダウンロード</u> Boilerplate \"stripped\""
 
-#: src/index.html:81
+#: src/index.html:78
 msgid "No comments, just the bizniss."
 msgstr "コメントなし、本番用。"
 
-#: src/index.html:83
+#: src/index.html:80
 msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>カスタマイズ</u> Boilerplate"
 
-#: src/index.html:83
+#: src/index.html:80
 msgid "100&#37; hipster."
 msgstr "100&#37; ヒップスター"
 
-#: src/index.html:89
+#: src/index.html:86
 msgid "jQuery"
 msgstr ""
 
-#: src/index.html:90
+#: src/index.html:87
 msgid "Minified"
 msgstr "縮小化"
 
-#: src/index.html:91
+#: src/index.html:88
 msgid "Unminified"
 msgstr "非縮小化"
 
-#: src/index.html:95
+#: src/index.html:92
 msgid "Server Config"
 msgstr "サーバー設定"
 
-#: src/index.html:101
+#: src/index.html:98
 msgid "Others"
 msgstr "その他"
 
-#: src/index.html:102
+#: src/index.html:99
 msgid "All IE classes"
 msgstr "IEのすべてのクラス"
 
-#: src/index.html:103
+#: src/index.html:100
 msgid "script.js & plugin.js"
 msgstr ""
 
-#: src/index.html:104
+#: src/index.html:101
 msgid "Google Analytics Snippet"
 msgstr "Google Analyticsスクリプト"
 
-#: src/index.html:105
+#: src/index.html:102
 msgid "Ant Build Script"
 msgstr "Ant Buildスクリプト"
 
-#: src/index.html:108
+#: src/index.html:105
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
@@ -227,27 +229,27 @@ msgstr ""
 "\" id=\"builder-download\">ダウンロード！</a> 他のオプションも知りたい？<a "
 "href=\"http://initializr.com\">Initializr</a>を見る"
 
-#: src/index.html:113
+#: src/index.html:110
 msgid "Read the docs"
 msgstr "ドキュメントを読む"
 
-#: src/index.html:114
+#: src/index.html:111
 msgid "Contribute on Github "
 msgstr "Githubで貢献する"
 
-#: src/index.html:115
+#: src/index.html:112
 msgid "Follow on twitter"
 msgstr "Twitterをフォロー"
 
-#: src/index.html:119
+#: src/index.html:116
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "HTML5 Boilerplateは3.0に！"
 
-#: src/index.html:120
+#: src/index.html:117
 msgid "Monday, Feb 6th, 2012"
 msgstr "2012年2月6日（月）"
 
-#: src/index.html:121
+#: src/index.html:118
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
@@ -260,11 +262,11 @@ msgstr ""
 "るため、これらを<a href=\"https://github.com/h5bp/ant-build-script\">我々のレ"
 "ポジトリに置く</a>ことにした。では、ここから新たに変わった点を紹介する。"
 
-#: src/index.html:124
+#: src/index.html:121
 msgid "Changelog"
 msgstr "変更点"
 
-#: src/index.html:125
+#: src/index.html:122
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
@@ -274,17 +276,17 @@ msgstr ""
 "v3.0\">最後のリリース以降のすべてのコミット</a>にある通りいくつかのメジャーな"
 "更新を行った。"
 
-#: src/index.html:126
+#: src/index.html:123
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 "あなたは既存のサイトを更新する必要があるか</a>？一言で答えると: その必要はな"
 "い。"
 
-#: src/index.html:128
+#: src/index.html:125
 msgid "Significant changes"
 msgstr "重要な変更点"
 
-#: src/index.html:131
+#: src/index.html:128
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
@@ -292,19 +294,31 @@ msgstr ""
 "多くのフォルダーを削除した: <code>/demos</code>、<code>/test</code>、そして"
 "<code>/js/mylibs</code>。"
 
-#: src/index.html:132
+#: src/index.html:130
 msgid "Build script is now a separate project"
 msgstr "ビルドスクリプトは別のプロジェクトになった"
 
-#: src/index.html:132
-msgid "Read about how to get and use the build script"
+#: src/index.html:130
+#, fuzzy
+msgid "node.js build script"
+msgstr "Ant Buildスクリプト"
+
+#: src/index.html:130
+msgid "ruby/rake build scripts"
+msgstr ""
+
+#: src/index.html:130
+#, fuzzy
+msgid ""
+"Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
+"script</a>"
 msgstr "ビルドスクリプトの取得と使い方を読む"
 
-#: src/index.html:133
+#: src/index.html:131
 msgid "Respond.js is no longer available by default. "
 msgstr "Respond.jsはデフォルトでは無効になった"
 
-#: src/index.html:139
+#: src/index.html:137
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
@@ -313,11 +327,11 @@ msgstr ""
 "ンストールするかBrowse Happyを見て代わりのブラウザーを選ぶようリンクが表示さ"
 "れる。"
 
-#: src/index.html:140
+#: src/index.html:138
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr "iOSのスケーリングバグを防ぐためにMeta属性のviewportが更新された。"
 
-#: src/index.html:141
+#: src/index.html:139
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
@@ -325,7 +339,7 @@ msgstr ""
 "<code>html</code>のIEクラスは明示的に指定されたバージョンよりも低いバージョン"
 "を適用するようになった。"
 
-#: src/index.html:142
+#: src/index.html:140
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
@@ -333,17 +347,17 @@ msgstr ""
 "<code>Modernizr.load</code>の代わりに非同期に最適化されたGoogle Analyticsのス"
 "ニペットを使うように変更された。"
 
-#: src/index.html:143
+#: src/index.html:141
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
 "古いIEのバグを回避するためにすべてのスクリプトから<code>defer</code>が削除さ"
 "れた。"
 
-#: src/index.html:144
+#: src/index.html:142
 msgid "Design of the 404 has been improved."
 msgstr "404ページのデザインが改善された。"
 
-#: src/index.html:149
+#: src/index.html:147
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
@@ -351,16 +365,16 @@ msgstr ""
 "より優れたデフォルトを提供するためにデフォルトのフォントサイズと行間は削除さ"
 "れた。"
 
-#: src/index.html:150
+#: src/index.html:148
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
 msgstr "より良いタイポグラフィを提供するためにnormalize.cssが追加された。"
 
-#: src/index.html:151
+#: src/index.html:149
 msgid "More robust .ir helper class."
 msgstr "より強固な.irヘルパークラス。"
 
-#: src/index.html:152
+#: src/index.html:150
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
@@ -368,75 +382,75 @@ msgstr ""
 "スクロールバーを強制しなくなった。これはjQuery UIや幅を計算するようなライブラ"
 "リーの邪魔をする。"
 
-#: src/index.html:156
+#: src/index.html:154
 msgid "Project"
 msgstr "プロジェクト"
 
-#: src/index.html:158
+#: src/index.html:156
 msgid "Updated to Modernizr 2.5"
 msgstr "Modernizr 2.5へ更新"
 
-#: src/index.html:159
+#: src/index.html:157
 msgid "Updated to jQuery 1.7.1"
 msgstr "jQuery 1.7.1へ更新"
 
-#: src/index.html:160
+#: src/index.html:158
 msgid "Improved .htaccess"
 msgstr ".htaccessを改善"
 
-#: src/index.html:166
+#: src/index.html:164
 msgid "Videos"
 msgstr "ビデオ"
 
-#: src/index.html:170
+#: src/index.html:168
 msgid "Ready to get started?"
 msgstr "始めての方へ"
 
-#: src/index.html:170 standard input:173
+#: src/index.html:168 standard input:171
 msgid "new!"
 msgstr ""
 
-#: src/index.html:173
+#: src/index.html:171
 msgid "Intro to the Build Script"
 msgstr "ビルドスクリプトの紹介"
 
-#: src/index.html:176
+#: src/index.html:174
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "40分で裏側を見る"
 
-#: src/index.html:180
+#: src/index.html:178
 msgid "Dig deeper in 60 minutes"
 msgstr "60分でより深く"
 
-#: src/index.html:185
+#: src/index.html:183
 msgid "Brought to you by"
 msgstr "彼らからあなたへ"
 
-#: src/index.html:187
+#: src/index.html:185
 msgid "Google Chrome, jQuery"
 msgstr "Google Chrome, jQuery"
 
-#: src/index.html:188
+#: src/index.html:186
 msgid "Web Opener @ Opera"
 msgstr "Web Opener @ Opera"
 
-#: src/index.html:189
+#: src/index.html:187
 msgid "Open Web Developer"
 msgstr "Open Web Developer"
 
-#: src/index.html:190
+#: src/index.html:188
 msgid "Freelance web developer"
 msgstr "Freelance web developer"
 
-#: src/index.html:191
+#: src/index.html:189
 msgid "Front-End Web Developer"
 msgstr "Front-End Web Developer"
 
-#: src/index.html:198
+#: src/index.html:196
 msgid "More Contributors"
 msgstr "その他の貢献者"
 
-#: src/index.html:201
+#: src/index.html:199
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "彼らスーパーヒーロー抜きには実現は不可能だった:"
@@ -1510,3 +1524,6 @@ msgid ""
 msgstr ""
 "別々のスクリプトファイルではなく(リクエストを増やさない)jQueryのプラグイン、"
 "ヘルパプラグインをここに記述すること。"
+
+#~ msgid "Why it is awesome-er"
+#~ msgstr "さらに素晴らしい理由"
