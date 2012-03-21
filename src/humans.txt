@@ -69,7 +69,7 @@
 
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
-  Source: https://github.com/nimbupani/html5boilerplate-site
+  Source: https://github.com/h5bp/html5boilerplate.com
 
 
 

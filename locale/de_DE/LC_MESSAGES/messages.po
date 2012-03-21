@@ -139,7 +139,7 @@ msgid "Download Boilerplate {{ version }}"
 msgstr ""
 
 #: src/index.html:76
-msgid "Updated Feb 8th"
+msgid "Updated Feb 19th"
 msgstr ""
 
 #: src/index.html:79
