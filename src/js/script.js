@@ -4,7 +4,7 @@ if (!/^en/.test(navigator.language)){
 	document.body.className += ' english';
 }
 
-$(document).ready(function(){   
+$(document).ready(function(){
    $('#intro').prevAll('a').first().click(function(){
     $('#header').toggleClass('showintro');
     return false;
@@ -19,9 +19,9 @@ $(function(){
 	  builder.css({ opacity: 0 }).show().animate({ opacity: 1}, 1000);
     e.preventDefault();
 	}, function(e) { builder.animate({ opacity: 0 }, 1000, function() { builder.hide('slow'); }); e.preventDefault(); });
-	
+
 	$('#builder input:checked').each(function() { parameters.push(this.id); });
-	
+
 	$("#builder input").click(function(e){
 	  var that = $(this),
 	      choice = that[0].id,
@@ -32,26 +32,26 @@ $(function(){
       if(choice == 'h5bp-iecond') {
         var iecond = parameters.indexOf('simplehtmltag');
         if(iecond > -1) {
-          parameters.splice(iecond, 1);          
+          parameters.splice(iecond, 1);
         }
-      }       
+      }
     }
 
     if(!that.is(':checked') && (existsAt !== -1)) {
       parameters.splice(existsAt, 1);
       if(choice == 'h5bp-iecond') {
         parameters.push('simplehtmltag');
-      }       
+      }
     } else if(!that.is(':checked') && (choice == 'jquerydev' || choice == 'jquerymin')) {
         var jquery = parameters.indexOf('jquery');
         if(jquery > -1) {
           parameters.push(choice == 'jquerymin'? 'jquerydev': 'jquerymin');
-          parameters.splice(jquery, 1);          
-        }              
+          parameters.splice(jquery, 1);
+        }
     }
 	});
-	
-	downloadelm.click(function() { 
+
+        downloadelm.click(function() {
 	  var params = '';
 	  //Replace refs to both jQueries with one
 	  var jquerymin = parameters.indexOf('jquerymin'),
@@ -61,15 +61,15 @@ $(function(){
 	    parameters.splice(jquerymin, 1);
 	    jquerydev = parameters.indexOf('jquerydev');
 	    if(jquerydev > -1) {
-	      parameters.splice(jquerydev, 1);	      
+              parameters.splice(jquerydev, 1);
 	    }
 	    parameters.push('jquery');
 	  }
-	  	
+
 	  params = parameters.join('&');
 		_gaq.push(['_trackPageview', '/build/&print&'+ params]);
 		this.href =  downloadurl + params;
-	});	
+        });
 });
 
 
@@ -88,3 +88,10 @@ $(document).keydown(function(e) {
   }
 });
 
+
+// analytics
+$(function(){
+  $('.dwn a[name], a[name="custom"]').click(function(){
+    _gaq.push(['_trackEvent', 'download', this.name, this.href ]);
+  });
+});
