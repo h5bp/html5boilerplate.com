@@ -4,7 +4,7 @@
 # Marcos Coelho <marcos@coelho.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0\n"
+"Project-Id-Version: 3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-27 02:15+0200\n"
 "PO-Revision-Date: 2011-09-08 17:58+0200\n"
@@ -28,22 +28,18 @@ msgid "A rock-solid default for HTML5 awesome."
 msgstr "Um padrão sólido para o incrível HTML5"
 
 #: src/index.html:38
-#, fuzzy
 msgid "I'm new here: plz explain why it's good, first."
-msgstr ""
-"Sou novo aqui: Por favor, primeiro me diz o que faz isso ser tão incrível."
+msgstr "Sou novo aqui: Por favor, primeiramente explique-me por que isso é bom."
 
 #: src/index.html:41
-#, fuzzy
 msgid ""
 "HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
 "template for a fast, robust and future-safe site."
 msgstr ""
-"HTML5 Boilerplate constitui-se de modelos básicos e super profissionais de "
-"HTML/CSS/JS para criar um site rápido, robusto e com futuro garantido."
+"HTML5 Boilerplate é um modelo base de HTML/CSS/JS para um desenvolvedor "
+"front-end profissional criar um site rápido, robusto e com futuro garantido."
 
 #: src/index.html:42
-#, fuzzy
 msgid ""
 "After more than four years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "
@@ -52,10 +48,10 @@ msgid ""
 "rules and preps your site to serve HTML5 video, use @font-face, and drop "
 "your site's filesize by half with robust gzipping."
 msgstr ""
-"Após mais de três anos em desenvolvimento iterativo, você poderá obter o "
-"melhor das melhores práticas cozidas em: normalizações cross-broswer, "
+"Após mais de quatro anos em desenvolvimento iterativo, você poderá obter o "
+"melhor das melhores práticas preparadas em: normalizações cross-broswer, "
 "otimizações de desempenho e até mesmo de recursos opcionais como cross-"
-"domain para Ajax e Flash. Um arquivo inicial .htaccess de configuração do "
+"domain para XHR e Flash. Um arquivo <code>.htaccess</code> de configuração do "
 "apache com regras de cache e preparações para o seu site oferecer vídeos "
 "HTML5, usando @font-face, comprimindo com gzip e por aí em diante."
 
@@ -70,14 +66,12 @@ msgstr ""
 "com algum fundamento rapidez e com o pé direito."
 
 #: src/index.html:46
-#, fuzzy
 msgid "Why it is good"
-msgstr "O que o faz ser incrível"
+msgstr "O que o faz ser bom"
 
 #: src/index.html:48
-#, fuzzy
 msgid "Cross-browser compatible (IE6+, yeah we got that.)"
-msgstr "Compatibilidade cross-browser (Até mesmo com o IE6)."
+msgstr "Compatibilidade cross-browser (Até mesmo com IE6+)."
 
 #: src/index.html:49
 msgid "HTML5 ready. Use the new tags with certainty."
@@ -110,9 +104,8 @@ msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "Classes .no-js e .js para criar estilos baseados em sua capacidade."
 
 #: src/index.html:57
-#, fuzzy
 msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
-msgstr "Console.log moderado para previnir erros de produção."
+msgstr "<code>Console.log</code> moderado para previnir erros de produção."
 
 #: src/index.html:58
 msgid "Never go wrong with your doctype or markup!"
@@ -158,9 +151,8 @@ msgid "Download Boilerplate {{ version }}"
 msgstr "Baixe o Boilerplate {{ version }}"
 
 #: src/index.html:73
-#, fuzzy
 msgid "Updated Feb 19th"
-msgstr "Atualizado em 10 de agosto"
+msgstr "Atualizado em 19 de fevereiro"
 
 #: src/index.html:76
 msgid "<u>Download</u> Boilerplate "
@@ -187,9 +179,8 @@ msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>Personalize</u> o Boilerplate"
 
 #: src/index.html:80
-#, fuzzy
 msgid "100&#37; hipster."
-msgstr "100&percnt; moderno"
+msgstr "100&#37; moderno"
 
 #: src/index.html:86
 msgid "jQuery"
@@ -224,20 +215,18 @@ msgid "Google Analytics Snippet"
 msgstr "Código do Google Analytics"
 
 #: src/index.html:102
-#, fuzzy
 msgid "Ant Build Script"
-msgstr "Script de compilação"
+msgstr "Script de compilação Ant"
 
 #: src/index.html:105
-#, fuzzy
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
 "\"http://initializr.com\">Initializr</a>"
 msgstr ""
-"<a href=\"http://www.initializr.com/builder?mode=h5bp&amp;\" id=\"builder-"
-"download\">Baixar!</a> Essas opções não são suficientes? Vá até <a href="
-"\"http://initializr.com\">Initializr</a> para encontrar mais!"
+"<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
+"\" id=\"builder-download\">Baixar!</a> Quer mais opções? Visite <a href="
+"\"http://initializr.com\">Initializr</a>"
 
 #: src/index.html:110
 msgid "Read the docs"
@@ -252,14 +241,12 @@ msgid "Follow on twitter"
 msgstr "Seguir no twitter"
 
 #: src/index.html:116
-#, fuzzy
 msgid "HTML5 Boilerplate is 3.0!"
-msgstr "HTML5 Boilerplate 2.0!"
+msgstr "HTML5 Boilerplate 3.0!"
 
 #: src/index.html:117
-#, fuzzy
 msgid "Monday, Feb 6th, 2012"
-msgstr "Quarta-feira, 10 de agosto de 2011"
+msgstr "Segunda-feira, 6 de fevereiro de 2012"
 
 #: src/index.html:118
 msgid ""
@@ -275,30 +262,24 @@ msgid "Changelog"
 msgstr "Changelog"
 
 #: src/index.html:122
-#, fuzzy
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
 msgstr ""
-"A versão 2.0 também recebeu muitas atualizações. <a href=\"https://github."
-"com/paulirish/html5-boilerplate/compare/v1.0...v2.0\">Aqui estão todos os "
-"299 commits desde a versão passada,</a> trazido a você por mais de <a href="
-"\"https://github.com/paulirish/html5-boilerplate#readme\">49 colaboradores</"
-"a>."
+"A versão 3.0 recebeu algumas atualizações importantes <a href=\"https://"
+"github.com/h5bp/html5-boilerplate/compare/v2.0...v3.0\">Aqui estão todos os "
+"commits desde a versão anterior</a>."
 
 #: src/index.html:123
-#, fuzzy
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 "Você precisa atualizar sites existentes?</a> Resposta curta: não, ainda são "
-"confiáveis. <small>(Embora o caimento do novo script de compilação e do ."
-"htaccess possam ser considerações agradáveis)</small>."
+"confiáveis."
 
 #: src/index.html:125
-#, fuzzy
 msgid "Significant changes"
-msgstr "Commits mais significativos:"
+msgstr "Alterações mais significativas:"
 
 #: src/index.html:128
 msgid ""
@@ -311,9 +292,8 @@ msgid "Build script is now a separate project"
 msgstr ""
 
 #: src/index.html:130
-#, fuzzy
 msgid "node.js build script"
-msgstr "Script de compilação"
+msgstr "Script de compilação node.js"
 
 #: src/index.html:130
 msgid "ruby/rake build scripts"
@@ -371,9 +351,8 @@ msgid ""
 msgstr ""
 
 #: src/index.html:149
-#, fuzzy
 msgid "More robust .ir helper class."
-msgstr "Classes auxiliares não semanticas"
+msgstr "Classe auxiliar \".ir\" mais robusta."
 
 #: src/index.html:150
 msgid ""
