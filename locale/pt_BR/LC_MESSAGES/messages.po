@@ -256,6 +256,11 @@ msgid ""
 "h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
 "what's new."
 msgstr ""
+"A principal característica dessa atualização foi tornar o Boilerplate menor. "
+"A maioria das mudanças têm vindo a trabalhar nesse sentido. Temos feito um "
+"trabalho importante em nosso script de compilação, tanto que nós pensamos que "
+"ele <a href=\"https://github.com/h5bp/ant-build-script\">merecia seu próprio "
+"repositorio</a>. Enquanto isso, aqui está o que há de novo."
 
 #: src/index.html:121
 msgid "Changelog"
@@ -286,10 +291,12 @@ msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
 msgstr ""
+"Remoção de um monte de pastas: <code>/demos</code>, <code>/test</code>, e "
+"<code>/js/mylibs</code>."
 
 #: src/index.html:130
 msgid "Build script is now a separate project"
-msgstr ""
+msgstr "O script de compilação se tornou um projeto separado"
 
 #: src/index.html:130
 msgid "node.js build script"
@@ -297,27 +304,32 @@ msgstr "Script de compilação node.js"
 
 #: src/index.html:130
 msgid "ruby/rake build scripts"
-msgstr ""
+msgstr "scripts de compilação ruby/rake"
 
 #: src/index.html:130
 msgid ""
 "Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
 "script</a>"
 msgstr ""
+"Leia sobre <a href=\"/docs/#build-scripts\">como obter e utilizar o script "
+"de compilação</a>"
 
 #: src/index.html:131
 msgid "Respond.js is no longer available by default. "
-msgstr ""
+msgstr "Respond.js não está mais disponível por padrão. "
 
 #: src/index.html:137
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
 msgstr ""
+" Chromeframe não é mais aplicado via script. Agora serão servidos aos "
+"usuários do IE6 links para instalar o Chromeframe ou visitar o Browsehappy "
+"para escolher um navegador alternativo.  "
 
 #: src/index.html:138
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
-msgstr ""
+msgstr "Metatag viewport atualizada para evitar erros de dimensionamento no iOS"
 
 #: src/index.html:139
 msgid ""
