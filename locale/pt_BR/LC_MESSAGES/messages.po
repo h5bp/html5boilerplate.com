@@ -23,15 +23,16 @@ msgstr "HTML5 Boilerplate - Um modelo padrão sólido para o incrível HTML5."
 msgid "Now offered in:"
 msgstr "Disponível em:"
 
-#: src/index.html:36
+#: src/index.html:35
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "Um padrão sólido para o incrível HTML5"
 
-#: src/index.html:38
+#: src/index.html:37
 msgid "I'm new here: plz explain why it's good, first."
-msgstr "Sou novo aqui: Por favor, primeiramente explique-me por que isso é bom."
+msgstr ""
+"Sou novo aqui: Por favor, primeiramente explique-me por que isso é bom."
 
-#: src/index.html:41
+#: src/index.html:40
 msgid ""
 "HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
 "template for a fast, robust and future-safe site."
@@ -39,7 +40,7 @@ msgstr ""
 "HTML5 Boilerplate é um modelo base de HTML/CSS/JS para um desenvolvedor "
 "front-end profissional criar um site rápido, robusto e com futuro garantido."
 
-#: src/index.html:42
+#: src/index.html:41
 msgid ""
 "After more than four years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "
@@ -51,11 +52,11 @@ msgstr ""
 "Após mais de quatro anos em desenvolvimento iterativo, você poderá obter o "
 "melhor das melhores práticas preparadas em: normalizações cross-broswer, "
 "otimizações de desempenho e até mesmo de recursos opcionais como cross-"
-"domain para XHR e Flash. Um arquivo <code>.htaccess</code> de configuração do "
-"apache com regras de cache e preparações para o seu site oferecer vídeos "
+"domain para XHR e Flash. Um arquivo <code>.htaccess</code> de configuração "
+"do apache com regras de cache e preparações para o seu site oferecer vídeos "
 "HTML5, usando @font-face, comprimindo com gzip e por aí em diante."
 
-#: src/index.html:43
+#: src/index.html:42
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -65,190 +66,191 @@ msgstr ""
 "desenvolvimento, ele só tem alguns truques para você começar o seu projeto "
 "com algum fundamento rapidez e com o pé direito."
 
-#: src/index.html:46
+#: src/index.html:45
 msgid "Why it is good"
 msgstr "Quais são as vantagens?"
 
-#: src/index.html:48
+#: src/index.html:47
 msgid "Cross-browser compatible (IE6+, yeah we got that.)"
 msgstr "Compatibilidade cross-browser (Até mesmo com IE6+)."
 
-#: src/index.html:49
+#: src/index.html:48
 msgid "HTML5 ready. Use the new tags with certainty."
 msgstr "Pronto para HTML5. Use as novas tags com confiança."
 
-#: src/index.html:50
+#: src/index.html:49
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr "Regras de caching e compressão para otimizar o desempenho na grade-A."
 
-#: src/index.html:51
+#: src/index.html:50
 msgid "Best practice site configuration defaults"
 msgstr "Melhores práticas para sites em configurações padronizadas."
 
-#: src/index.html:52
+#: src/index.html:51
 msgid "Mobile browser optimizations"
 msgstr "Otimização para navegadores móveis."
 
-#: src/index.html:53
+#: src/index.html:52
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
 "Progressive enhancement e graceful degradation &hellip; sim, nos temos."
 
-#: src/index.html:54
+#: src/index.html:53
 msgid "IE specific classes for maximum cross-browser control"
 msgstr "Classes específicas para IE, por um máximo controle cross-browser."
 
-#: src/index.html:55
+#: src/index.html:54
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "Classes .no-js e .js para criar estilos baseados em sua capacidade."
 
-#: src/index.html:57
+#: src/index.html:56
 msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "<code>Console.log</code> moderado para previnir erros de produção."
 
-#: src/index.html:58
+#: src/index.html:57
 msgid "Never go wrong with your doctype or markup!"
 msgstr "Nunca é injusto com o seu doctype ou marcação!"
 
-#: src/index.html:59
+#: src/index.html:58
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "Um ótimo estilo de impressão, desempenho otimizado."
 
-#: src/index.html:60
+#: src/index.html:59
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "Esquelo CSS e marcação adaptável para iOS, Android, Opera Mobile."
 
-#: src/index.html:61
+#: src/index.html:60
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ""
 "Classes .clearfix, .visuallyhidden para estilizar coisas com sabedoria e "
 "acessibilidade."
 
-#: src/index.html:62
+#: src/index.html:61
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
 "Um arquivo .htaccess que permite a utilização adequada dos recursos HTML5 e "
 "carregamento mais rápido da página"
 
-#: src/index.html:63
+#: src/index.html:62
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "jQuery hospedado em CDN com refêrencia local como opção de fallback."
 
-#: src/index.html:64
+#: src/index.html:63
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr "Acha muito? O HTML5 Boilerplate é amigável com a tecla delete. :)"
 
-#: src/index.html:67
+#: src/index.html:66
 msgid "Want to dive in?"
 msgstr "Quer ir mais a fundo?"
 
-#: src/index.html:73
+#: src/index.html:72
 msgid "Download Boilerplate {{ version }}"
 msgstr "Baixe o Boilerplate {{ version }}"
 
-#: src/index.html:73
+#: src/index.html:72
 msgid "Updated Feb 19th"
 msgstr "Atualizado em 19 de fevereiro"
 
-#: src/index.html:76
+#: src/index.html:75
 msgid "<u>Download</u> Boilerplate "
 msgstr "<u>Baixe</u> o Boilerplate"
 
-#: src/index.html:76
+#: src/index.html:75
 msgid "Keep the hints and links"
 msgstr "Mantém sugestões e links"
 
-#: src/index.html:77 standard input:79
+#: src/index.html:76 standard input:78
 msgid "or"
 msgstr "ou"
 
-#: src/index.html:78
+#: src/index.html:77
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "<u>Baixe</u> o Boilerplate não documentado"
 
-#: src/index.html:78
+#: src/index.html:77
 msgid "No comments, just the bizniss."
 msgstr "Sem comentários, apenas os códigos"
 
-#: src/index.html:80
+#: src/index.html:79
 msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>Personalize</u> o Boilerplate"
 
-#: src/index.html:80
+#: src/index.html:79
 msgid "100&#37; hipster."
 msgstr "100&#37; moderno"
 
-#: src/index.html:86
+#: src/index.html:85
 msgid "jQuery"
 msgstr "jQuery"
 
-#: src/index.html:87
+#: src/index.html:86
 msgid "Minified"
 msgstr "Minificado"
 
-#: src/index.html:88
+#: src/index.html:87
 msgid "Unminified"
 msgstr "Não minificado"
 
-#: src/index.html:92
+#: src/index.html:91
 msgid "Server Config"
 msgstr "Configuração de servidor"
 
-#: src/index.html:98
+#: src/index.html:97
 msgid "Others"
 msgstr "Outros"
 
-#: src/index.html:99
+#: src/index.html:98
 msgid "All IE classes"
 msgstr "Todas as classes para IE"
 
-#: src/index.html:100
+#: src/index.html:99
 msgid "script.js & plugin.js"
 msgstr "Arquivos: script.js e plugin.js"
 
-#: src/index.html:101
+#: src/index.html:100
 msgid "Google Analytics Snippet"
 msgstr "Código do Google Analytics"
 
-#: src/index.html:102
+#: src/index.html:101
 msgid "Ant Build Script"
 msgstr "Script de compilação Ant"
 
-#: src/index.html:105
+#: src/index.html:104
+#, fuzzy
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
-"\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
-"\"http://initializr.com\">Initializr</a>"
+"\" id=\"builder-download\" name=\"custom\">Download!</a> Need more options? "
+"Visit <a href=\"http://initializr.com\">Initializr</a>"
 msgstr ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Baixar!</a> Quer mais opções? Visite <a href="
 "\"http://initializr.com\">Initializr</a>"
 
-#: src/index.html:110
+#: src/index.html:109
 msgid "Read the docs"
 msgstr "Leia as documentações"
 
-#: src/index.html:111
+#: src/index.html:110
 msgid "Contribute on Github "
 msgstr "Colabore no Github"
 
-#: src/index.html:112
+#: src/index.html:111
 msgid "Follow on twitter"
 msgstr "Siga-nos no twitter"
 
-#: src/index.html:116
+#: src/index.html:115
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "HTML5 Boilerplate 3.0!"
 
-#: src/index.html:117
+#: src/index.html:116
 msgid "Monday, Feb 6th, 2012"
 msgstr "Segunda-feira, 6 de fevereiro de 2012"
 
-#: src/index.html:118
+#: src/index.html:117
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
@@ -258,15 +260,15 @@ msgid ""
 msgstr ""
 "A principal característica dessa atualização foi tornar o Boilerplate menor. "
 "A maioria das mudanças têm vindo a trabalhar nesse sentido. Temos feito um "
-"trabalho importante em nosso script de compilação, tanto que nós pensamos que "
-"ele <a href=\"https://github.com/h5bp/ant-build-script\">merecia seu próprio "
-"repositorio</a>. Enquanto isso, aqui está o que há de novo."
+"trabalho importante em nosso script de compilação, tanto que nós pensamos "
+"que ele <a href=\"https://github.com/h5bp/ant-build-script\">merecia seu "
+"próprio repositorio</a>. Enquanto isso, aqui está o que há de novo."
 
-#: src/index.html:121
+#: src/index.html:120
 msgid "Changelog"
 msgstr "Changelog"
 
-#: src/index.html:122
+#: src/index.html:121
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
@@ -276,17 +278,17 @@ msgstr ""
 "github.com/h5bp/html5-boilerplate/compare/v2.0...v3.0\">Aqui estão todos os "
 "commits desde a versão anterior</a>."
 
-#: src/index.html:123
+#: src/index.html:122
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 "Você precisa atualizar sites existentes?</a> Resposta curta: Não, ainda são "
 "confiáveis."
 
-#: src/index.html:125
+#: src/index.html:124
 msgid "Significant changes"
 msgstr "Alterações mais significativas:"
 
-#: src/index.html:128
+#: src/index.html:127
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
@@ -294,19 +296,19 @@ msgstr ""
 "Remoção de um monte de pastas: <code>/demos</code>, <code>/test</code>, e "
 "<code>/js/mylibs</code>."
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "Build script is now a separate project"
 msgstr "O script de compilação se tornou um projeto separado"
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "node.js build script"
 msgstr "Script de compilação node.js"
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "ruby/rake build scripts"
 msgstr "scripts de compilação ruby/rake"
 
-#: src/index.html:130
+#: src/index.html:129
 msgid ""
 "Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
 "script</a>"
@@ -314,11 +316,11 @@ msgstr ""
 "Leia sobre <a href=\"/docs/#build-scripts\">como obter e utilizar o script "
 "de compilação</a>."
 
-#: src/index.html:131
+#: src/index.html:130
 msgid "Respond.js is no longer available by default. "
 msgstr "Respond.js não está mais disponível por padrão. "
 
-#: src/index.html:137
+#: src/index.html:136
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
@@ -327,20 +329,21 @@ msgstr ""
 "usuários do IE6 links para instalar o Chromeframe ou visitar o Browsehappy "
 "para escolher um navegador alternativo.  "
 
-#: src/index.html:138
+#: src/index.html:137
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr ""
 "Meta tag viewport atualizada para evitar bugs de dimensionamento no iOS."
 
-#: src/index.html:139
+#: src/index.html:138
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr ""
-"As classes do IE na tag <code>html</code> agoram apontam para versões menores "
-"que as específicadas, em vez de versões explicitamente especificadas.  "
+"As classes do IE na tag <code>html</code> agoram apontam para versões "
+"menores que as específicadas, em vez de versões explicitamente "
+"especificadas.  "
 
-#: src/index.html:140
+#: src/index.html:139
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
@@ -348,17 +351,17 @@ msgstr ""
 "Voltou para a otimização assíncrona de código do Google Analytics, em vez de "
 "usar o <code>Modernizr.load</code>.  "
 
-#: src/index.html:141
+#: src/index.html:140
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
 "Remoção do <code>defer</code> de todos os scripts para evitar erros em "
 "versões legadas do IE."
 
-#: src/index.html:142
+#: src/index.html:141
 msgid "Design of the 404 has been improved."
 msgstr "O desenho da página de erro 404 foi melhorado."
 
-#: src/index.html:147
+#: src/index.html:146
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
@@ -366,17 +369,17 @@ msgstr ""
 "Remoção dos tamanhos de fonte e altura de linha para fornecer um padrão bem "
 "mais robusto.  "
 
-#: src/index.html:148
+#: src/index.html:147
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
 msgstr ""
 "Adições feitas ao normalize.css fornecendo uma melhoria da tipografia padrão."
 
-#: src/index.html:149
+#: src/index.html:148
 msgid "More robust .ir helper class."
 msgstr "Classe auxiliar \".ir\" mais robusta."
 
-#: src/index.html:150
+#: src/index.html:149
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
@@ -384,75 +387,77 @@ msgstr ""
 "Não há mais o forçamento de barras de rolagem, isto impede projetos como "
 "jQuery UI, e outros no cálculo larguras."
 
-#: src/index.html:154
+#: src/index.html:153
 msgid "Project"
 msgstr "Projeto"
 
-#: src/index.html:156
+#: src/index.html:155
 msgid "Updated to Modernizr 2.5"
 msgstr "Modernizr atualizado para versão 2.5"
 
-#: src/index.html:157
+#: src/index.html:156
 msgid "Updated to jQuery 1.7.1"
 msgstr "jQuery atualizado para versão 1.7.1"
 
-#: src/index.html:158
+#: src/index.html:157
 msgid "Improved .htaccess"
 msgstr "Melhoria do .htaccess"
 
-#: src/index.html:164
+#: src/index.html:163
 msgid "Videos"
 msgstr "Vídeos"
 
-#: src/index.html:168
+#: src/index.html:167
 msgid "Ready to get started?"
 msgstr "Preparado para introdução?"
 
-#: src/index.html:168 standard input:171
+#: src/index.html:167 standard input:170
 msgid "new!"
 msgstr "novo!"
 
-#: src/index.html:171
+#: src/index.html:170
 msgid "Intro to the Build Script"
 msgstr "Introdução para o<br>Script de compilação"
 
-#: src/index.html:174
+#: src/index.html:173
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Obtenha os segredos em<br>40 minutos!"
 
-#: src/index.html:178
+#: src/index.html:177
 msgid "Dig deeper in 60 minutes"
 msgstr "Aprofundamento em 60 minutos"
 
-#: src/index.html:183
+#: src/index.html:182
 msgid "Brought to you by"
 msgstr "Apresentado por"
 
-#: src/index.html:185
-msgid "Google Chrome, jQuery"
-msgstr "Google Chrome, jQuery"
-
-#: src/index.html:186
-msgid "Web Opener @ Opera"
-msgstr "Web Opener @ Opera"
-
-#: src/index.html:187
-msgid "Open Web Developer"
-msgstr "Open Web Developer"
-
-#: src/index.html:188
-msgid "Freelance web developer"
-msgstr "Freelance web developer"
-
-#: src/index.html:189
+#: src/index.html:184
 msgid "Front-End Web Developer"
 msgstr "Front-End Web Developer"
 
-#: src/index.html:196
+#: src/index.html:186
+#, fuzzy
+msgid "Open Web Vigilante"
+msgstr "Open Web Developer"
+
+#: src/index.html:187
+#, fuzzy
+msgid "Front end Developer"
+msgstr "Front-End Web Developer"
+
+#: src/index.html:188
+msgid "Open Web Developer"
+msgstr "Open Web Developer"
+
+#: src/index.html:190
+msgid "Freelance web developer"
+msgstr "Freelance web developer"
+
+#: src/index.html:200
 msgid "More Contributors"
 msgstr "Mais colaboradores"
 
-#: src/index.html:199
+#: src/index.html:203
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "Não teria sido possível sem os esforços desses super-heróis:"
@@ -480,6 +485,30 @@ msgid ""
 msgstr ""
 "Por favor, habilite o JavaCript para ver os <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comentários alimentados por Disqus.</a>"
+
+#: src/template/404.html:5
+msgid "Page Not Found"
+msgstr "Página não encontrada"
+
+#: src/template/404.html:21
+msgid "Not found"
+msgstr "Não encontrada"
+
+#: src/template/404.html:23
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Desculpe, mas a página que você está tentando ver não existe."
+
+#: src/template/404.html:24
+msgid "It looks like this was the result of either"
+msgstr "Parece que este foi resultado de"
+
+#: src/template/404.html:26
+msgid "a mistyped address"
+msgstr "um erro na digitação do endereço"
+
+#: src/template/404.html:27
+msgid "an out-of-date link"
+msgstr "ou um link desatualizado"
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
@@ -1097,30 +1126,6 @@ msgstr "e não compreender todos os pontos descritos aqui, você provavelmente"
 msgid "have a nasty security vulnerability."
 msgstr "terá uma desagradável vulnerabilidade de segurança."
 
-#: src/template/404.html:5
-msgid "Page Not Found"
-msgstr "Página não encontrada"
-
-#: src/template/404.html:21
-msgid "Not found"
-msgstr "Não encontrada"
-
-#: src/template/404.html:23
-msgid "Sorry, but the page you were trying to view does not exist."
-msgstr "Desculpe, mas a página que você está tentando ver não existe."
-
-#: src/template/404.html:24
-msgid "It looks like this was the result of either"
-msgstr "Parece que este foi resultado de"
-
-#: src/template/404.html:26
-msgid "a mistyped address"
-msgstr "um erro na digitação do endereço"
-
-#: src/template/404.html:27
-msgid "an out-of-date link"
-msgstr "ou um link desatualizado"
-
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
 msgstr ""
@@ -1255,6 +1260,28 @@ msgstr "Componentes"
 #: src/template/humans.txt:17
 msgid "Software"
 msgstr "Software"
+
+#: src/template/js/script.js:1
+msgid "Author:"
+msgstr "Autor"
+
+#: src/template/js/plugins.js:2
+msgid "usage: log('inside coolFunc', this, arguments);"
+msgstr "Modo de usar: log('inside coolFunc', this, arguments)"
+
+#: src/template/js/plugins.js:5
+msgid "store logs to an array for reference"
+msgstr "armazena logs em um array para referência"
+
+#: src/template/js/plugins.js:13
+msgid "make it safe to use console.log always"
+msgstr "torna sempre segura a utilização do console.log"
+
+#: src/template/js/plugins.js:17
+msgid ""
+"place any jQuery/helper plugins in here, instead of separate, slower script "
+"files."
+msgstr "coloque qualquer plugin jQuery ou auxiliar aqui, em vez de separa-los."
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
@@ -1540,28 +1567,3 @@ msgstr "Impressão em preto é mais rápida"
 msgid "Don't show links for images, or javascript/internal links"
 msgstr ""
 "Para não mostrar links que abrem imagens, links javascript e links internos"
-
-#: src/template/js/script.js:1
-msgid "Author:"
-msgstr "Autor"
-
-#: src/template/js/plugins.js:2
-msgid "usage: log('inside coolFunc', this, arguments);"
-msgstr "Modo de usar: log('inside coolFunc', this, arguments)"
-
-#: src/template/js/plugins.js:5
-msgid "store logs to an array for reference"
-msgstr "armazena logs em um array para referência"
-
-#: src/template/js/plugins.js:13
-msgid "make it safe to use console.log always"
-msgstr "torna sempre segura a utilização do console.log"
-
-#: src/template/js/plugins.js:17
-msgid ""
-"place any jQuery/helper plugins in here, instead of separate, slower script "
-"files."
-msgstr "coloque qualquer plugin jQuery ou auxiliar aqui, em vez de separa-los."
-
-#~ msgid "Why it is awesome-er"
-#~ msgstr "O que o faz ser ainda mais incrível"

@@ -23,16 +23,16 @@ msgstr "HTML5 样板 - 精心打造的HTML5基础平台。"
 msgid "Now offered in:"
 msgstr "选择语言："
 
-#: src/index.html:36
+#: src/index.html:35
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "精心打造的HTML5平台。"
 
-#: src/index.html:38
+#: src/index.html:37
 #, fuzzy
 msgid "I'm new here: plz explain why it's good, first."
 msgstr "我第一次使用，请解释内容大意。"
 
-#: src/index.html:41
+#: src/index.html:40
 #, fuzzy
 msgid ""
 "HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "HTML5 Boilerplate 是用来打造快速，可靠的，面向未来的专业HTML/CSS/JS平台"
 
-#: src/index.html:42
+#: src/index.html:41
 #, fuzzy
 msgid ""
 "After more than four years in iterative development, you get the best of the "
@@ -54,7 +54,7 @@ msgstr ""
 "览器的正常化， 性能优化， 甚至包括跨域的Ajax and Flash。Apache .htaccess帮你"
 "解决了缓存规则，HTML5视频, 字体， 压缩等问题。"
 
-#: src/index.html:43
+#: src/index.html:42
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -63,198 +63,198 @@ msgstr ""
 "H5BP 并不是一个框架，也没有任何开发哲学，它只是用来帮你快速的，准确的开始你的"
 "开发项目的基础平台。"
 
-#: src/index.html:46
+#: src/index.html:45
 #, fuzzy
 msgid "Why it is good"
 msgstr "为什么它牛"
 
-#: src/index.html:48
+#: src/index.html:47
 #, fuzzy
 msgid "Cross-browser compatible (IE6+, yeah we got that.)"
 msgstr "浏览器兼容性 (IE6+,Firefox,Safari,Chrome,Opera)"
 
-#: src/index.html:49
+#: src/index.html:48
 msgid "HTML5 ready. Use the new tags with certainty."
 msgstr "HTML5 就绪。放心使用新的标签"
 
-#: src/index.html:50
+#: src/index.html:49
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr "为达到A级性能的优化缓存和压缩规则"
 
-#: src/index.html:51
+#: src/index.html:50
 msgid "Best practice site configuration defaults"
 msgstr "网站调试最佳做法"
 
-#: src/index.html:52
+#: src/index.html:51
 msgid "Mobile browser optimizations"
 msgstr "移动电话浏览器优化"
 
-#: src/index.html:53
+#: src/index.html:52
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr "渐进增强 降低规格"
 
-#: src/index.html:54
+#: src/index.html:53
 msgid "IE specific classes for maximum cross-browser control"
 msgstr "最大的跨浏览器控制的IE具体类别"
 
-#: src/index.html:55
+#: src/index.html:54
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "以浏览器能力为基础的方便的.no-js和.js类别"
 
-#: src/index.html:57
+#: src/index.html:56
 #, fuzzy
 msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "防止Console.log在非火狐浏览器的错误"
 
-#: src/index.html:58
+#: src/index.html:57
 msgid "Never go wrong with your doctype or markup!"
 msgstr "不出差错的文档类型或标记"
 
-#: src/index.html:59
+#: src/index.html:58
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "一个最佳的打印CSS样式，性能优化。"
 
-#: src/index.html:60
+#: src/index.html:59
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "苹果iOS，安卓，Opera移动标记和CSS适应架构"
 
-#: src/index.html:61
+#: src/index.html:60
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr "用.clearfix, .visuallyhidden类别明智的无障碍的美化网页"
 
-#: src/index.html:62
+#: src/index.html:61
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr "htaccess文件，允许HTML5功能的正常使用和更快的网页载入"
 
-#: src/index.html:63
+#: src/index.html:62
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "CDN托管的和本地双重jQuery"
 
-#: src/index.html:64
+#: src/index.html:63
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr "觉得太多东西？你是可以删掉不需要的部分。 ：）"
 
-#: src/index.html:67
+#: src/index.html:66
 msgid "Want to dive in?"
 msgstr "想要深入探索？"
 
-#: src/index.html:73
+#: src/index.html:72
 msgid "Download Boilerplate {{ version }}"
 msgstr "下载H5BP {{ version }}"
 
-#: src/index.html:73
+#: src/index.html:72
 #, fuzzy
 msgid "Updated Feb 19th"
 msgstr "3月21日更新"
 
-#: src/index.html:76
+#: src/index.html:75
 #, fuzzy
 msgid "<u>Download</u> Boilerplate "
 msgstr "下载H5BP {{ version }}"
 
-#: src/index.html:76
+#: src/index.html:75
 msgid "Keep the hints and links"
 msgstr "带有说明和连接"
 
-#: src/index.html:77 standard input:79
+#: src/index.html:76 standard input:78
 msgid "or"
 msgstr "或"
 
-#: src/index.html:78
+#: src/index.html:77
 #, fuzzy
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "精髓版"
 
-#: src/index.html:78
+#: src/index.html:77
 msgid "No comments, just the bizniss."
 msgstr "不带提示与说明"
 
-#: src/index.html:80
+#: src/index.html:79
 msgid "<u>Customize</u> Boilerplate"
 msgstr ""
 
-#: src/index.html:80
+#: src/index.html:79
 #, fuzzy
 msgid "100&#37; hipster."
 msgstr "100&percnt; 自设制"
 
-#: src/index.html:86
+#: src/index.html:85
 msgid "jQuery"
 msgstr "要jQuery"
 
-#: src/index.html:87
+#: src/index.html:86
 #, fuzzy
 msgid "Minified"
 msgstr "jQuery压缩版"
 
-#: src/index.html:88
+#: src/index.html:87
 #, fuzzy
 msgid "Unminified"
 msgstr "jQuery压缩版"
 
-#: src/index.html:92
+#: src/index.html:91
 msgid "Server Config"
 msgstr "服务器设置"
 
-#: src/index.html:98
+#: src/index.html:97
 msgid "Others"
 msgstr ""
 
-#: src/index.html:99
+#: src/index.html:98
 msgid "All IE classes"
 msgstr "所有IE类别"
 
-#: src/index.html:100
+#: src/index.html:99
 msgid "script.js & plugin.js"
 msgstr ""
 
-#: src/index.html:101
+#: src/index.html:100
 #, fuzzy
 msgid "Google Analytics Snippet"
 msgstr "Analytics嵌入代码"
 
-#: src/index.html:102
+#: src/index.html:101
 #, fuzzy
 msgid "Ant Build Script"
 msgstr "自动生成程序"
 
-#: src/index.html:105
+#: src/index.html:104
 #, fuzzy
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
-"\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
-"\"http://initializr.com\">Initializr</a>"
+"\" id=\"builder-download\" name=\"custom\">Download!</a> Need more options? "
+"Visit <a href=\"http://initializr.com\">Initializr</a>"
 msgstr ""
 "<a href=\"http://initializr.com/generate?boilerplate&amp;\" id=\"builder-"
 "download\">下载！</a>这些选项还不够吗？去<a href=\"http://initializr.com"
 "\">Initializr</a>！"
 
-#: src/index.html:110
+#: src/index.html:109
 msgid "Read the docs"
 msgstr "阅读文档"
 
-#: src/index.html:111
+#: src/index.html:110
 msgid "Contribute on Github "
 msgstr "在Github贡献"
 
-#: src/index.html:112
+#: src/index.html:111
 msgid "Follow on twitter"
 msgstr "加关注"
 
-#: src/index.html:116
+#: src/index.html:115
 #, fuzzy
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "H5BP 1.0版"
 
-#: src/index.html:117
+#: src/index.html:116
 msgid "Monday, Feb 6th, 2012"
 msgstr ""
 
-#: src/index.html:118
+#: src/index.html:117
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
@@ -263,176 +263,178 @@ msgid ""
 "what's new."
 msgstr ""
 
-#: src/index.html:121
+#: src/index.html:120
 msgid "Changelog"
 msgstr ""
 
-#: src/index.html:122
+#: src/index.html:121
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
 msgstr ""
 
-#: src/index.html:123
+#: src/index.html:122
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 
-#: src/index.html:125
+#: src/index.html:124
 msgid "Significant changes"
 msgstr ""
 
-#: src/index.html:128
+#: src/index.html:127
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
 msgstr ""
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "Build script is now a separate project"
 msgstr ""
 
-#: src/index.html:130
+#: src/index.html:129
 #, fuzzy
 msgid "node.js build script"
 msgstr "自动生成程序"
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "ruby/rake build scripts"
 msgstr ""
 
-#: src/index.html:130
+#: src/index.html:129
 msgid ""
 "Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
 "script</a>"
 msgstr ""
 
-#: src/index.html:131
+#: src/index.html:130
 msgid "Respond.js is no longer available by default. "
 msgstr ""
 
-#: src/index.html:137
+#: src/index.html:136
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
 msgstr ""
 
-#: src/index.html:138
+#: src/index.html:137
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr ""
 
-#: src/index.html:139
+#: src/index.html:138
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr ""
 
-#: src/index.html:140
+#: src/index.html:139
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
 msgstr ""
 
-#: src/index.html:141
+#: src/index.html:140
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
 
-#: src/index.html:142
+#: src/index.html:141
 msgid "Design of the 404 has been improved."
 msgstr ""
 
-#: src/index.html:147
+#: src/index.html:146
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
 msgstr ""
 
-#: src/index.html:148
+#: src/index.html:147
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
 msgstr ""
 
-#: src/index.html:149
+#: src/index.html:148
 msgid "More robust .ir helper class."
 msgstr ""
 
-#: src/index.html:150
+#: src/index.html:149
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
 msgstr ""
 
-#: src/index.html:154
+#: src/index.html:153
 msgid "Project"
 msgstr "项目"
 
-#: src/index.html:156
+#: src/index.html:155
 msgid "Updated to Modernizr 2.5"
 msgstr ""
 
-#: src/index.html:157
+#: src/index.html:156
 msgid "Updated to jQuery 1.7.1"
 msgstr ""
 
-#: src/index.html:158
+#: src/index.html:157
 msgid "Improved .htaccess"
 msgstr ""
 
-#: src/index.html:164
+#: src/index.html:163
 msgid "Videos"
 msgstr ""
 
-#: src/index.html:168
+#: src/index.html:167
 msgid "Ready to get started?"
 msgstr ""
 
-#: src/index.html:168 standard input:171
+#: src/index.html:167 standard input:170
 msgid "new!"
 msgstr "新功能"
 
-#: src/index.html:171
+#: src/index.html:170
 msgid "Intro to the Build Script"
 msgstr "构建脚本简介"
 
-#: src/index.html:174
+#: src/index.html:173
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "在40分钟内获得内幕！"
 
-#: src/index.html:178
+#: src/index.html:177
 msgid "Dig deeper in 60 minutes"
 msgstr "60分钟内深入研究"
 
-#: src/index.html:183
+#: src/index.html:182
 msgid "Brought to you by"
 msgstr "作者"
 
-#: src/index.html:185
-msgid "Google Chrome, jQuery"
-msgstr "谷歌浏览器，jQuery"
-
-#: src/index.html:186
-msgid "Web Opener @ Opera"
-msgstr "网络开瓶器@Opera"
-
-#: src/index.html:187
-msgid "Open Web Developer"
-msgstr "开放网络开发者"
-
-#: src/index.html:188
-#, fuzzy
-msgid "Freelance web developer"
-msgstr "开放网络开发者"
-
-#: src/index.html:189
+#: src/index.html:184
 #, fuzzy
 msgid "Front-End Web Developer"
 msgstr "开放网络开发者"
 
-#: src/index.html:196
+#: src/index.html:186
+#, fuzzy
+msgid "Open Web Vigilante"
+msgstr "开放网络开发者"
+
+#: src/index.html:187
+#, fuzzy
+msgid "Front end Developer"
+msgstr "开放网络开发者"
+
+#: src/index.html:188
+msgid "Open Web Developer"
+msgstr "开放网络开发者"
+
+#: src/index.html:190
+#, fuzzy
+msgid "Freelance web developer"
+msgstr "开放网络开发者"
+
+#: src/index.html:200
 msgid "More Contributors"
 msgstr "更多的贡献者"
 
-#: src/index.html:199
+#: src/index.html:203
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "没有这些超级英雄的努力是不行的"
@@ -460,6 +462,30 @@ msgid ""
 msgstr ""
 "请启用JavaScript来阅读<a href=\"http://disqus.com/?ref_noscript=boilerplate"
 "\">由Disqus支持的评论</a>"
+
+#: src/template/404.html:5
+msgid "Page Not Found"
+msgstr ""
+
+#: src/template/404.html:21
+msgid "Not found"
+msgstr ""
+
+#: src/template/404.html:23
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: src/template/404.html:24
+msgid "It looks like this was the result of either"
+msgstr ""
+
+#: src/template/404.html:26
+msgid "a mistyped address"
+msgstr ""
+
+#: src/template/404.html:27
+msgid "an out-of-date link"
+msgstr ""
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
@@ -1020,30 +1046,6 @@ msgstr ""
 msgid "have a nasty security vulnerability."
 msgstr ""
 
-#: src/template/404.html:5
-msgid "Page Not Found"
-msgstr ""
-
-#: src/template/404.html:21
-msgid "Not found"
-msgstr ""
-
-#: src/template/404.html:23
-msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
-
-#: src/template/404.html:24
-msgid "It looks like this was the result of either"
-msgstr ""
-
-#: src/template/404.html:26
-msgid "a mistyped address"
-msgstr ""
-
-#: src/template/404.html:27
-msgid "an out-of-date link"
-msgstr ""
-
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
 msgstr ""
@@ -1171,6 +1173,28 @@ msgstr "评论"
 
 #: src/template/humans.txt:17
 msgid "Software"
+msgstr ""
+
+#: src/template/js/script.js:1
+msgid "Author:"
+msgstr "作者："
+
+#: src/template/js/plugins.js:2
+msgid "usage: log('inside coolFunc', this, arguments);"
+msgstr "用法： log('inside coolFunc', this, arguments);"
+
+#: src/template/js/plugins.js:5
+msgid "store logs to an array for reference"
+msgstr ""
+
+#: src/template/js/plugins.js:13
+msgid "make it safe to use console.log always"
+msgstr ""
+
+#: src/template/js/plugins.js:17
+msgid ""
+"place any jQuery/helper plugins in here, instead of separate, slower script "
+"files."
 msgstr ""
 
 #: src/template/css/style.css:4
@@ -1443,28 +1467,3 @@ msgstr "黑色速度快："
 #: src/template/css/style.css:298
 msgid "Don't show links for images, or javascript/internal links"
 msgstr "不显示图像的链接，或Javascript /内部链接"
-
-#: src/template/js/script.js:1
-msgid "Author:"
-msgstr "作者："
-
-#: src/template/js/plugins.js:2
-msgid "usage: log('inside coolFunc', this, arguments);"
-msgstr "用法： log('inside coolFunc', this, arguments);"
-
-#: src/template/js/plugins.js:5
-msgid "store logs to an array for reference"
-msgstr ""
-
-#: src/template/js/plugins.js:13
-msgid "make it safe to use console.log always"
-msgstr ""
-
-#: src/template/js/plugins.js:17
-msgid ""
-"place any jQuery/helper plugins in here, instead of separate, slower script "
-"files."
-msgstr ""
-
-#~ msgid "Why it is awesome-er"
-#~ msgstr "没有最牛，只有更牛"

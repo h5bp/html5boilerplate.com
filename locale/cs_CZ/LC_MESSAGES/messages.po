@@ -23,16 +23,16 @@ msgstr "Skálopevný výchozí pro HTML5 krásu."
 msgid "Now offered in:"
 msgstr "Nyní v nabídce:"
 
-#: src/index.html:36
+#: src/index.html:35
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "Skálopevný výchozí pro HTML5 krásu."
 
-#: src/index.html:38
+#: src/index.html:37
 #, fuzzy
 msgid "I'm new here: plz explain why it's good, first."
 msgstr "Jsem tady nový: můžete mi vysvětlit, proč je to tak úžasné."
 
-#: src/index.html:41
+#: src/index.html:40
 #, fuzzy
 msgid ""
 "HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
@@ -41,7 +41,7 @@ msgstr ""
 "HTML5 Boilerplate je profesionální základná HTML/CSS/JS šablona pro rychlý, "
 "robustní a bezpečnou web stránku."
 
-#: src/index.html:42
+#: src/index.html:41
 #, fuzzy
 msgid ""
 "After more than four years in iterative development, you get the best of the "
@@ -57,7 +57,7 @@ msgstr ""
 "apache konfigurační soubor .htaccess vám pomůže připravit stránku s HTML5 "
 "pro video, používání @font-face a gzip."
 
-#: src/index.html:43
+#: src/index.html:42
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
@@ -66,191 +66,192 @@ msgstr ""
 "Boilerplate není framework, také nestanovuje žádnou filozofi vývoje, je to "
 "jen zopár triků, jak dostat váš projekt ze země tou správnou nohou a rychle."
 
-#: src/index.html:46
+#: src/index.html:45
 #, fuzzy
 msgid "Why it is good"
 msgstr "Proč je to tak úžasné"
 
-#: src/index.html:48
+#: src/index.html:47
 #, fuzzy
 msgid "Cross-browser compatible (IE6+, yeah we got that.)"
 msgstr "Kompatibilita při různých prohlížečích (IE6, ano i to.)"
 
-#: src/index.html:49
+#: src/index.html:48
 msgid "HTML5 ready. Use the new tags with certainty."
 msgstr "Pohotové HTML5. Používejte nové tagy s jistotou."
 
-#: src/index.html:50
+#: src/index.html:49
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr "Optimální uchovávání a kompresi pro prvotřídní výkon"
 
-#: src/index.html:51
+#: src/index.html:50
 msgid "Best practice site configuration defaults"
 msgstr "Osvědčené postupy výchozí konfigurace stránky"
 
-#: src/index.html:52
+#: src/index.html:51
 msgid "Mobile browser optimizations"
 msgstr "Optimalizace pro mobilné zařízení"
 
-#: src/index.html:53
+#: src/index.html:52
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr "Vyspělá progresivní degradace &hellip; ano zajisté, i tohle"
 
-#: src/index.html:54
+#: src/index.html:53
 msgid "IE specific classes for maximum cross-browser control"
 msgstr "Specifické IE třídy pro maximálni kontrolu kompatibility prohlížeče"
 
-#: src/index.html:55
+#: src/index.html:54
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "Praktické .no-js a .js třídy se stylem na základě kompatibility"
 
-#: src/index.html:57
+#: src/index.html:56
 #, fuzzy
 msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "Předem připravte Console.log, takže nezpůsobíte žádne chyby."
 
-#: src/index.html:58
+#: src/index.html:57
 msgid "Never go wrong with your doctype or markup!"
 msgstr "Nikdy si nezmýlte svůj doctype anebo zápis!"
 
-#: src/index.html:59
+#: src/index.html:58
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "Optimální styl tisku, výkon optimalizovaný."
 
-#: src/index.html:60
+#: src/index.html:59
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "iOS, Android, Opera Mobile-přizpůsobivý zápis a CSS jadro."
 
-#: src/index.html:61
+#: src/index.html:60
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ".clearfix, .visuallyhidden třídy pro rozumní stylovaní a dostupnost."
 
-#: src/index.html:62
+#: src/index.html:61
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
 msgstr ""
 ".htaccess soubor, který umožňuje správné používání HTML5 funkcí a rychlejší "
 "načítání stránky"
 
-#: src/index.html:63
+#: src/index.html:62
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "CDN hostované jQuery s nouzovými řešeními."
 
-#: src/index.html:64
+#: src/index.html:63
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr ""
 "Zdá se vám, že je toho moc? HTML5 Boilerplate můžete klidně přemazat. :)"
 
-#: src/index.html:67
+#: src/index.html:66
 msgid "Want to dive in?"
 msgstr "Chcete se do toho ponořit?"
 
-#: src/index.html:73
+#: src/index.html:72
 msgid "Download Boilerplate {{ version }}"
 msgstr "Stáhněte si Boilerplate {{ version }}"
 
-#: src/index.html:73
+#: src/index.html:72
 msgid "Updated Feb 19th"
 msgstr "Aktualizováno 19. února"
 
-#: src/index.html:76
+#: src/index.html:75
 msgid "<u>Download</u> Boilerplate "
 msgstr "<u>Stáhnout</u> Boilerplate "
 
-#: src/index.html:76
+#: src/index.html:75
 msgid "Keep the hints and links"
 msgstr "Taky pokyny a odkazy"
 
-#: src/index.html:77 standard input:79
+#: src/index.html:76 standard input:78
 msgid "or"
 msgstr "nebo"
 
-#: src/index.html:78
+#: src/index.html:77
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "<u>Stáhnout</u> Boilerplate \"čistý\""
 
-#: src/index.html:78
+#: src/index.html:77
 msgid "No comments, just the bizniss."
 msgstr "Bez komentáře, jen kód."
 
-#: src/index.html:80
+#: src/index.html:79
 msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>Přizpůsobit</u> Boilerplate"
 
-#: src/index.html:80
+#: src/index.html:79
 msgid "100&#37; hipster."
 msgstr "100&#37; hipster."
 
-#: src/index.html:86
+#: src/index.html:85
 msgid "jQuery"
 msgstr "jQuery"
 
-#: src/index.html:87
+#: src/index.html:86
 msgid "Minified"
 msgstr "Komprimované"
 
-#: src/index.html:88
+#: src/index.html:87
 msgid "Unminified"
 msgstr "Nekomprimované"
 
-#: src/index.html:92
+#: src/index.html:91
 msgid "Server Config"
 msgstr "Konfigurace servru"
 
-#: src/index.html:98
+#: src/index.html:97
 msgid "Others"
 msgstr "Další"
 
-#: src/index.html:99
+#: src/index.html:98
 msgid "All IE classes"
 msgstr "Všechny třídy IE"
 
-#: src/index.html:100
+#: src/index.html:99
 msgid "script.js & plugin.js"
 msgstr "script.js a plugin.js"
 
-#: src/index.html:101
+#: src/index.html:100
 msgid "Google Analytics Snippet"
 msgstr "Google Analytics Snippet"
 
-#: src/index.html:102
+#: src/index.html:101
 msgid "Ant Build Script"
 msgstr "Ant Build Script"
 
-#: src/index.html:105
+#: src/index.html:104
+#, fuzzy
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
-"\" id=\"builder-download\">Download!</a> Need more options? Visit <a href="
-"\"http://initializr.com\">Initializr</a>"
+"\" id=\"builder-download\" name=\"custom\">Download!</a> Need more options? "
+"Visit <a href=\"http://initializr.com\">Initializr</a>"
 msgstr ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\">Stáhnout!</a> Potřebujete více možností? "
 "Navštívte <a href=\"http://initializr.com\">Initializr</a>"
 
-#: src/index.html:110
+#: src/index.html:109
 msgid "Read the docs"
 msgstr "Přečíst dokumentaci"
 
-#: src/index.html:111
+#: src/index.html:110
 msgid "Contribute on Github "
 msgstr "Spolupracovat na Github "
 
-#: src/index.html:112
+#: src/index.html:111
 msgid "Follow on twitter"
 msgstr "Sleduj náš twitter"
 
-#: src/index.html:116
+#: src/index.html:115
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "HTML5 Boilerplate je 3.0!"
 
-#: src/index.html:117
+#: src/index.html:116
 msgid "Monday, Feb 6th, 2012"
 msgstr "Pondělí, 6. února, 2012"
 
-#: src/index.html:118
+#: src/index.html:117
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
@@ -263,11 +264,11 @@ msgstr ""
 "skripte, rozhodli jsme se že si <a href=\"https://github.com/h5bp/ant-build-"
 "script\">zaslouží vlastní repozitár</a>. Mezitím, tady je to, co je nového."
 
-#: src/index.html:121
+#: src/index.html:120
 msgid "Changelog"
 msgstr "Changelog"
 
-#: src/index.html:122
+#: src/index.html:121
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
@@ -277,17 +278,17 @@ msgstr ""
 "html5-boilerplate/compare/v2.0...v3.0\">Zde jsou změny, od posledního "
 "vydání</a>."
 
-#: src/index.html:123
+#: src/index.html:122
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 "Měli by ste aktualizovat existující stránky</a>? Stručná odpověď: ne, není "
 "potřeba."
 
-#: src/index.html:125
+#: src/index.html:124
 msgid "Significant changes"
 msgstr "Podstatné změny"
 
-#: src/index.html:128
+#: src/index.html:127
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
@@ -295,31 +296,31 @@ msgstr ""
 "Odstránené složky: <code>/demos</code>, <code>/test</code>, and <code>/js/"
 "mylibs</code>."
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "Build script is now a separate project"
 msgstr "Build script je nyní samostatný projekt"
 
-#: src/index.html:130
+#: src/index.html:129
 #, fuzzy
 msgid "node.js build script"
 msgstr "Ant Build Script"
 
-#: src/index.html:130
+#: src/index.html:129
 msgid "ruby/rake build scripts"
 msgstr ""
 
-#: src/index.html:130
+#: src/index.html:129
 #, fuzzy
 msgid ""
 "Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
 "script</a>"
 msgstr "Přečtete si,jak získat a použít build script"
 
-#: src/index.html:131
+#: src/index.html:130
 msgid "Respond.js is no longer available by default. "
 msgstr "Respond.js již niný není k dispozici ve výchozím nastavení. "
 
-#: src/index.html:137
+#: src/index.html:136
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
@@ -328,17 +329,17 @@ msgstr ""
 "odkazy pro instalaci Chromeframe nebo navštívte Browsehappy pro alternatívní "
 "prohlížeč  "
 
-#: src/index.html:138
+#: src/index.html:137
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
 msgstr "Meta viewport aktualizován, aby se zabránilo iOS chybám.  "
 
-#: src/index.html:139
+#: src/index.html:138
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr "<code>html</code> IE třídy odchytávají nižší verzi místo uvedené.  "
 
-#: src/index.html:140
+#: src/index.html:139
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
@@ -346,17 +347,17 @@ msgstr ""
 "Návrat optimalizované asynchronní verzi Google Analytics místo užívání "
 "<code>Modernizr.load</code>.  "
 
-#: src/index.html:141
+#: src/index.html:140
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
 "Odstraňte <code>defer</code> ve všech skriptů, abyste se vyhnuli chybám při "
 "starších IE."
 
-#: src/index.html:142
+#: src/index.html:141
 msgid "Design of the 404 has been improved."
 msgstr "Vylepšený design chybové stránky 404."
 
-#: src/index.html:147
+#: src/index.html:146
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
@@ -364,17 +365,17 @@ msgstr ""
 "Odstraněna výchozí velikost písma a výška řádků abychom poskytli lepší "
 "robustnístandard.  "
 
-#: src/index.html:148
+#: src/index.html:147
 msgid ""
 "Additions made to normalize.css and to provide better default typography."
 msgstr ""
 "Přidáno změn pro normalize.css pro poskytování lepší standardní typografie."
 
-#: src/index.html:149
+#: src/index.html:148
 msgid "More robust .ir helper class."
 msgstr "Robustnejší .ir pomocní třídy."
 
-#: src/index.html:150
+#: src/index.html:149
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
@@ -382,75 +383,77 @@ msgstr ""
 "Už žádný vynucený scrollbar, toto brání projektům jako jQuery UI, a jiným v "
 "kalkulaci šířek"
 
-#: src/index.html:154
+#: src/index.html:153
 msgid "Project"
 msgstr "Projekt"
 
-#: src/index.html:156
+#: src/index.html:155
 msgid "Updated to Modernizr 2.5"
 msgstr "Aktualizován Modernizr 2.5"
 
-#: src/index.html:157
+#: src/index.html:156
 msgid "Updated to jQuery 1.7.1"
 msgstr "Aktualizován jQuery 1.7.1"
 
-#: src/index.html:158
+#: src/index.html:157
 msgid "Improved .htaccess"
 msgstr "Vylepšený .htaccess"
 
-#: src/index.html:164
+#: src/index.html:163
 msgid "Videos"
 msgstr "Videa"
 
-#: src/index.html:168
+#: src/index.html:167
 msgid "Ready to get started?"
 msgstr "Připraven začít?"
 
-#: src/index.html:168 standard input:171
+#: src/index.html:167 standard input:170
 msgid "new!"
 msgstr "nové!"
 
-#: src/index.html:171
+#: src/index.html:170
 msgid "Intro to the Build Script"
 msgstr "Intro pro Build Script"
 
-#: src/index.html:174
+#: src/index.html:173
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "Spoznej fakta za 40 minut, hladce!"
 
-#: src/index.html:178
+#: src/index.html:177
 msgid "Dig deeper in 60 minutes"
 msgstr "Pronikni hlouběji za 60 minut"
 
-#: src/index.html:183
+#: src/index.html:182
 msgid "Brought to you by"
 msgstr "Vám přináší"
 
-#: src/index.html:185
-msgid "Google Chrome, jQuery"
-msgstr "Google Chrome, jQuery"
-
-#: src/index.html:186
-msgid "Web Opener @ Opera"
-msgstr "Web Opener @ Opera"
-
-#: src/index.html:187
-msgid "Open Web Developer"
-msgstr "Open Web Developer"
-
-#: src/index.html:188
-msgid "Freelance web developer"
-msgstr "Freelance web developer"
-
-#: src/index.html:189
+#: src/index.html:184
 msgid "Front-End Web Developer"
 msgstr "Front-End Web Developer"
 
-#: src/index.html:196
+#: src/index.html:186
+#, fuzzy
+msgid "Open Web Vigilante"
+msgstr "Open Web Developer"
+
+#: src/index.html:187
+#, fuzzy
+msgid "Front end Developer"
+msgstr "Front-End Web Developer"
+
+#: src/index.html:188
+msgid "Open Web Developer"
+msgstr "Open Web Developer"
+
+#: src/index.html:190
+msgid "Freelance web developer"
+msgstr "Freelance web developer"
+
+#: src/index.html:200
 msgid "More Contributors"
 msgstr "Další přispěvatelé"
 
-#: src/index.html:199
+#: src/index.html:203
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "To vše by nebylo možné bez úsilí těchto superhrdinů:"
@@ -478,6 +481,30 @@ msgid ""
 msgstr ""
 "Prosím, aktivujte si JavaScript pro prohlédnutí <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">komentářů přes Disqus.</a>"
+
+#: src/template/404.html:5
+msgid "Page Not Found"
+msgstr "Stránka nenalezena"
+
+#: src/template/404.html:21
+msgid "Not found"
+msgstr "Nenalezeno"
+
+#: src/template/404.html:23
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Ospravedlňujeme sa, stránka ktorú ste sa snažili zobrazit neexistuje."
+
+#: src/template/404.html:24
+msgid "It looks like this was the result of either"
+msgstr "Vypadá to tak, že toto byl výsledek buď"
+
+#: src/template/404.html:26
+msgid "a mistyped address"
+msgstr "špatně napsané adresy"
+
+#: src/template/404.html:27
+msgid "an out-of-date link"
+msgstr "zastaralý odkaz"
 
 #: src/template/htaccess.txt:1
 msgid "Apache configuration file"
@@ -1083,30 +1110,6 @@ msgstr "a nerozumíte všem bodům popsaným zde, pravděpodobně"
 msgid "have a nasty security vulnerability."
 msgstr "máte velmi zranitelnou bezpečnost."
 
-#: src/template/404.html:5
-msgid "Page Not Found"
-msgstr "Stránka nenalezena"
-
-#: src/template/404.html:21
-msgid "Not found"
-msgstr "Nenalezeno"
-
-#: src/template/404.html:23
-msgid "Sorry, but the page you were trying to view does not exist."
-msgstr "Ospravedlňujeme sa, stránka ktorú ste sa snažili zobrazit neexistuje."
-
-#: src/template/404.html:24
-msgid "It looks like this was the result of either"
-msgstr "Vypadá to tak, že toto byl výsledek buď"
-
-#: src/template/404.html:26
-msgid "a mistyped address"
-msgstr "špatně napsané adresy"
-
-#: src/template/404.html:27
-msgid "an out-of-date link"
-msgstr "zastaralý odkaz"
-
 #: src/template/index.html:10
 msgid "Use the .htaccess and remove these lines to avoid edge case issues."
 msgstr ""
@@ -1239,6 +1242,29 @@ msgstr "Komponenty"
 #: src/template/humans.txt:17
 msgid "Software"
 msgstr "Software"
+
+#: src/template/js/script.js:1
+msgid "Author:"
+msgstr "Autor:"
+
+#: src/template/js/plugins.js:2
+msgid "usage: log('inside coolFunc', this, arguments);"
+msgstr "použití: log('inside coolFunc', this, arguments);"
+
+#: src/template/js/plugins.js:5
+msgid "store logs to an array for reference"
+msgstr "uloží záznamy do pole pro reference"
+
+#: src/template/js/plugins.js:13
+msgid "make it safe to use console.log always"
+msgstr "zajistí vždy bezpečné použití console.log"
+
+#: src/template/js/plugins.js:17
+msgid ""
+"place any jQuery/helper plugins in here, instead of separate, slower script "
+"files."
+msgstr ""
+"umístěte jQuery/helper pluginy zde, místo oddělených a pomalejších skriptů"
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
@@ -1512,29 +1538,3 @@ msgstr "Černá se vytiskne rychleji"
 #: src/template/css/style.css:298
 msgid "Don't show links for images, or javascript/internal links"
 msgstr "Neukazujte odkazy k obrázkům, nebo javascript/interní odkazy"
-
-#: src/template/js/script.js:1
-msgid "Author:"
-msgstr "Autor:"
-
-#: src/template/js/plugins.js:2
-msgid "usage: log('inside coolFunc', this, arguments);"
-msgstr "použití: log('inside coolFunc', this, arguments);"
-
-#: src/template/js/plugins.js:5
-msgid "store logs to an array for reference"
-msgstr "uloží záznamy do pole pro reference"
-
-#: src/template/js/plugins.js:13
-msgid "make it safe to use console.log always"
-msgstr "zajistí vždy bezpečné použití console.log"
-
-#: src/template/js/plugins.js:17
-msgid ""
-"place any jQuery/helper plugins in here, instead of separate, slower script "
-"files."
-msgstr ""
-"umístěte jQuery/helper pluginy zde, místo oddělených a pomalejších skriptů"
-
-#~ msgid "Why it is awesome-er"
-#~ msgstr "Proč je ještě více úžasný"
