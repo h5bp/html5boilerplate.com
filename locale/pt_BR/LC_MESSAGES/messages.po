@@ -350,8 +350,8 @@ msgstr ""
 #: src/index.html:141
 msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
 msgstr ""
-Remoção do <code>defer</code> de todos os scripts para evitar erros em versões "
-"legadas do IE."
+"Remoção do <code>defer</code> de todos os scripts para evitar erros em "
+"versões legadas do IE."
 
 #: src/index.html:142
 msgid "Design of the 404 has been improved."
