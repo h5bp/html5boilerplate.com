@@ -67,7 +67,7 @@ msgstr ""
 
 #: src/index.html:46
 msgid "Why it is good"
-msgstr "O que o faz ser bom"
+msgstr "Quais são as vantagens?"
 
 #: src/index.html:48
 msgid "Cross-browser compatible (IE6+, yeah we got that.)"
@@ -230,15 +230,15 @@ msgstr ""
 
 #: src/index.html:110
 msgid "Read the docs"
-msgstr "Ler as documentações"
+msgstr "Leia as documentações"
 
 #: src/index.html:111
 msgid "Contribute on Github "
-msgstr "Colaborar no Github"
+msgstr "Colabore no Github"
 
 #: src/index.html:112
 msgid "Follow on twitter"
-msgstr "Seguir no twitter"
+msgstr "Siga-nos no twitter"
 
 #: src/index.html:116
 msgid "HTML5 Boilerplate is 3.0!"
@@ -279,7 +279,7 @@ msgstr ""
 #: src/index.html:123
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
-"Você precisa atualizar sites existentes?</a> Resposta curta: não, ainda são "
+"Você precisa atualizar sites existentes?</a> Resposta curta: Não, ainda são "
 "confiáveis."
 
 #: src/index.html:125
@@ -312,7 +312,7 @@ msgid ""
 "script</a>"
 msgstr ""
 "Leia sobre <a href=\"/docs/#build-scripts\">como obter e utilizar o script "
-"de compilação</a>"
+"de compilação</a>."
 
 #: src/index.html:131
 msgid "Respond.js is no longer available by default. "
@@ -329,7 +329,8 @@ msgstr ""
 
 #: src/index.html:138
 msgid "Meta viewport updated to prevent iOS scaling bugs.  "
-msgstr "Metatag viewport atualizada para evitar erros de dimensionamento no iOS"
+msgstr ""
+"Meta tag viewport atualizada para evitar bugs de dimensionamento no iOS."
 
 #: src/index.html:139
 msgid ""
