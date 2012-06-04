@@ -1,76 +1,79 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
 
-  Instigator: Paul Irish
-  Site: http://paulirish.com/
-  Twitter: paul_irish
-  Location: Plaid shirt
+    Divya Manian
+    Site: http://nimbupani.com/
+    Twitter: divya
+    Location: San Francisco, USA
 
-  Troublemaker: Divya Manian
-  Site: http://nimbupani.com/
-  Twitter: divya
-  Location: Where sun shines
+    Hans Christian Reinl
+    Site: http://drublic.de/
+    Twitter: drublic
+    Location: Freiburg, Germany
 
-  Doer: Shi Chuan
-  Site: http://blog.highub.com/
-  Twitter: shichuan
-  Location: Uniquely Singapore
+    Mathias Bynens
+    Site: http://mathiasbynens.be/
+    Twitter: mathias
+    Location: Belgium
 
-  Mathias Bynens
-  Site: http://mathiasbynens.be/
-  Twitter: mathias
-  Location: Belgium
+    Nicolas Gallagher
+    Site: http://nicolasgallagher.com/
+    Twitter: necolas
+    Location: London, UK
 
-  Nicolas Gallagher
-  Site: http://nicolasgallagher.com/
-  Twitter: necolas
-  Location: London, UK
+    Paul Irish
+    Site: http://paulirish.com/
+    Twitter: paul_irish
+    Location: San Francisco, USA
+
+    Shi Chuan
+    Site: http://blog.highub.com/
+    Twitter: shichuan
+    Location: UK
 
 
 /* THANKS */
 
-  Adeel Ejaz: https://github.com/adeelejaz
+    Adeel Ejaz: https://github.com/adeelejaz
 
-  Anton Kovalyov: https://github.com/antonkovalyov
+    Anton Kovalyov: https://github.com/antonkovalyov
 
-  Catalin Maris: https://github.com/alrra
+    Catalin Maris: https://github.com/alrra
 
-  Daniel Lenz: https://github.com/lenzcom
+    Daniel Lenz: https://github.com/lenzcom
 
-  Giovanni Brescia: https://github.com/skill83
+    Giovanni Brescia: https://github.com/skill83
 
-  Jonas Westerlund: https://github.com/nlogax
+    Jonas Westerlund: https://github.com/nlogax
 
-  Lavi Perchik: https://github.com/laviperchik
+    Lavi Perchik: https://github.com/laviperchik
 
-  Mickael Daniel: https://github.com/mklabs
+    Mickael Daniel: https://github.com/mklabs
 
-  Mike West: https://github.com/mikewest
+    Mike West: https://github.com/mikewest
 
-  Milos Gavrilovic: https://github.com/GaVrA
+    Milos Gavrilovic: https://github.com/GaVrA
 
-  Niels Bom: https://github.com/nielsbom
+    Niels Bom: https://github.com/nielsbom
 
-  Ricardo Tomasi: https://github.com/ricardobeat
+    Ricardo Tomasi: https://github.com/ricardobeat
 
-  Sean Caetano Martin: https://github.com/xonecas
+    Sean Caetano Martin: https://github.com/xonecas
 
-  Yuya Saito: https://github.com/studiomohawk
+    Yuya Saito: https://github.com/studiomohawk
 
-  https://github.com/jorge-vitrubio
+    https://github.com/jorge-vitrubio
 
-  https://github.com/Zee-Julien
+    https://github.com/Zee-Julien
 
 
 /* SITE */
 
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
-  Source: https://github.com/h5bp/html5boilerplate.com
-
+    Standards: HTML5, CSS3
+    Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
+    Source: https://github.com/h5bp/html5boilerplate.com
 
 
                                -o/-
