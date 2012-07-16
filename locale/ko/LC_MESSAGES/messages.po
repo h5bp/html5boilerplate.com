@@ -238,7 +238,7 @@ msgstr "깃헙(Github)으로 기여하기 "
 
 #: src/index.html:111
 msgid "Follow on twitter"
-msgstr "Twitter 팔로우하"
+msgstr "Twitter 팔로우하기"
 
 #: src/index.html:115
 msgid "HTML5 Boilerplate is 3.0!"
