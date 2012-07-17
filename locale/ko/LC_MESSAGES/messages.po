@@ -23,23 +23,23 @@ msgstr "HTML5 Boilerplate - A rock-solid default template for HTML5 awesome."
 msgid "Now offered in:"
 msgstr "다른 언어로 보기:"
 
-#: src/index.html:35
+#: src/index.html:36
 msgid "A rock-solid default for HTML5 awesome."
 msgstr "멋진 HTML5 를 위한 견고한 기본 스타일."
 
-#: src/index.html:37
+#: src/index.html:38
 msgid "I'm new here: plz explain why it's good, first."
 msgstr "처음 방문했어요: 우선 뭐가 좋은지 설명해 줘요."
 
-#: src/index.html:40
+#: src/index.html:41
 msgid ""
 "HTML5 Boilerplate is the professional frontend developers's base HTML/CSS/JS "
 "template for a fast, robust and future-safe site."
 msgstr ""
-"HTML5 Boilerplate 는 프로페셔널한 프론트엔드 개발자의 빠르고 강력한 미래형 "
-"사이트를 만들기 위한 기본 HTML/CSS/JS 템플릿입니다."
+"HTML5 Boilerplate 는 프로페셔널한 프론트엔드 개발자의 빠르고 강력한 미래형 사"
+"이트를 만들기 위한 기본 HTML/CSS/JS 템플릿입니다."
 
-#: src/index.html:41
+#: src/index.html:42
 msgid ""
 "After more than four years in iterative development, you get the best of the "
 "best practices baked in: cross-browser normalization, performance "
@@ -48,177 +48,173 @@ msgid ""
 "rules and preps your site to serve HTML5 video, use @font-face, and drop "
 "your site's filesize by half with robust gzipping."
 msgstr ""
-"4년이상의 반복적인 개발을 통해, 최고만을 엄선하여 모범사례를 "
-"만들었습니다: 크로스 브라우저의 정상적인 작동 지원, 성능 최적화, "
-"크로스 도메인 XHR 과 Flash 관련 옵션도 제공해요. "
-"아파치용 <code>.htaccess</code> 설정파일에는 캐싱 룰을 작성하여, "
-"HTML5 비디오, @font-face 에 대응하고 있습니다. 강력한 gzipping 으로 "
-"사이트의 파일사이즈를 절반으로 떨어뜨렸구요. "
+"4년이상의 반복적인 개발을 통해, 최고만을 엄선하여 모범사례를 만들었습니다: 크"
+"로스 브라우저의 정상적인 작동 지원, 성능 최적화, 크로스 도메인 XHR 과 Flash "
+"관련 옵션도 제공해요. 아파치용 <code>.htaccess</code> 설정파일에는 캐싱 룰을 "
+"작성하여, HTML5 비디오, @font-face 에 대응하고 있습니다. 강력한 gzipping 으"
+"로 사이트의 파일사이즈를 절반으로 떨어뜨렸구요. "
 
-#: src/index.html:42
+#: src/index.html:43
 msgid ""
 "Boilerplate is not a framework, nor does it prescribe any philosophy of "
 "development, it's just got some tricks to get your project off the ground "
 "quickly and right-footed."
 msgstr ""
-"Boilerplate 는 프레임워크가 아닙니다. 어떠한 개발철학을 규정짓거나 하지 "
-"않고, 단지 여러분의 프로젝트를 쉽고 빠르게 진행할 수 있는 몇가지 트릭을 "
-"제공합니다."
+"Boilerplate 는 프레임워크가 아닙니다. 어떠한 개발철학을 규정짓거나 하지 않"
+"고, 단지 여러분의 프로젝트를 쉽고 빠르게 진행할 수 있는 몇가지 트릭을 제공합"
+"니다."
 
-#: src/index.html:45
+#: src/index.html:46
 msgid "Why it is good"
 msgstr "좋은 점들"
 
-#: src/index.html:47
-msgid "Cross-browser compatible (IE6+, yeah we got that.)"
-msgstr ""
-"크로스 브라우저 호환 (IE6+, 물론 지원해요.)" 
-
 #: src/index.html:48
-msgid "HTML5 ready. Use the new tags with certainty."
-msgstr ""
-"HTML5 의 새로운 태그들을 사용했음."
+msgid "Cross-browser compatible (IE6+, yeah we got that.)"
+msgstr "크로스 브라우저 호환 (IE6+, 물론 지원해요.)"
 
 #: src/index.html:49
+msgid "HTML5 ready. Use the new tags with certainty."
+msgstr "HTML5 의 새로운 태그들을 사용했음."
+
+#: src/index.html:50
 msgid "Optimal caching and compression rules for grade-A performance"
 msgstr "A등급 성능을 위한 최적화 캐싱과 압축 룰"
 
-#: src/index.html:50
+#: src/index.html:51
 msgid "Best practice site configuration defaults"
 msgstr "사이트 기본 설정에 대한 최고의 모범사례"
 
-#: src/index.html:51
+#: src/index.html:52
 msgid "Mobile browser optimizations"
 msgstr "모바일 브라우저 최적화"
 
-#: src/index.html:52
+#: src/index.html:53
 msgid ""
 "Progressive enhancement graceful degradation &hellip; yeah yeah we got that"
 msgstr ""
 "우아한 퇴보(graceful degradation)와 점진적 향상(Progressive enhancement) "
 "&hellip; 을 적용했어요"
 
-#: src/index.html:53
+#: src/index.html:54
 msgid "IE specific classes for maximum cross-browser control"
 msgstr "크로스 브라우저 제어의 최대화를 위해, IE만의 클래스 사용"
 
-#: src/index.html:54
+#: src/index.html:55
 msgid "Handy .no-js and .js classes to style based on capability"
 msgstr "간편한 .no-js 와 .js 클래스를 사용해서 기능에 맞춘 스타일"
 
-#: src/index.html:56
+#: src/index.html:57
 msgid "<code>Console.log</code> nerfing so you won't break anyone by mistake."
 msgstr "<code>Console.log</code> 로 브라우저가 다운되는 문제를 해결함."
 
-#: src/index.html:57
+#: src/index.html:58
 msgid "Never go wrong with your doctype or markup!"
 msgstr "doctype  markup 은 완벽하므로, 절대 잘못될 수 없음!"
 
-#: src/index.html:58
+#: src/index.html:59
 msgid "An optimal print stylesheet, performance optimized."
 msgstr "성능 최적화된 프린트 스타일 시트"
 
-#: src/index.html:59
+#: src/index.html:60
 msgid "iOS, Android, Opera Mobile-adaptable markup and CSS skeleton."
 msgstr "iOS, 안드로이드, 오페라 모바일에 대응하는 마크업과 CSS 뼈대(skeleton)."
 
-#: src/index.html:60
+#: src/index.html:61
 msgid ""
 ".clearfix, .visuallyhidden classes to style things wisely and accessibly."
 msgstr ".clearfix, .visuallyhidden 클래스에서 현명하고 접근성높은 스타일 적용."
 
-#: src/index.html:61
+#: src/index.html:62
 msgid ""
 ".htaccess file that allows proper use of HTML5 features and faster page load"
-msgstr ""
-"HTML5 기능의 올바른 사용과 빠른 페이지로딩을 .htaccess 파일에 적용"
+msgstr "HTML5 기능의 올바른 사용과 빠른 페이지로딩을 .htaccess 파일에 적용"
 
-#: src/index.html:62
+#: src/index.html:63
 msgid "CDN hosted jQuery with local fallback failsafe."
 msgstr "CDN 호스팅의 jQuery 를 사용하고, 실패시 로컬에서 호출하도록 적용"
 
-#: src/index.html:63
+#: src/index.html:64
 msgid ""
 "Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)"
 msgstr "너무 많은 기능이 있나요? HTML5 Boilerplate 은 delete 키와 친해요. :)"
 
-#: src/index.html:66
+#: src/index.html:67
 msgid "Want to dive in?"
 msgstr "한번 써볼래요?"
 
-#: src/index.html:72
+#: src/index.html:73
 msgid "Download Boilerplate {{ version }}"
 msgstr "다운로드 Boilerplate {{ version }}"
 
-#: src/index.html:72
+#: src/index.html:73
 msgid "Updated Feb 19th"
 msgstr "2월 19일 업데이트됨"
 
-#: src/index.html:75
+#: src/index.html:76
 msgid "<u>Download</u> Boilerplate "
 msgstr "<u>다운로드</u> Boilerplate "
 
-#: src/index.html:75
+#: src/index.html:76
 msgid "Keep the hints and links"
 msgstr "링크와 힌트를 남겨둠"
 
-#: src/index.html:76 standard input:78
+#: src/index.html:77 standard input:79
 msgid "or"
 msgstr "or"
 
-#: src/index.html:77
+#: src/index.html:78
 msgid "<u>Download</u> Boilerplate \"stripped\""
 msgstr "<u>다운로드</u> Boilerplate \"stripped\""
 
-#: src/index.html:77
+#: src/index.html:78
 msgid "No comments, just the bizniss."
 msgstr "주석없음, 실서비스용."
 
-#: src/index.html:79
+#: src/index.html:80
 msgid "<u>Customize</u> Boilerplate"
 msgstr "<u>사용자정의</u> Boilerplate"
 
-#: src/index.html:79
+#: src/index.html:80
 msgid "100&#37; hipster."
 msgstr "100&#37; 내맘대로."
 
-#: src/index.html:85
+#: src/index.html:86
 msgid "jQuery"
 msgstr "제이쿼리(jQuery)"
 
-#: src/index.html:86
+#: src/index.html:87
 msgid "Minified"
 msgstr "압축판(Minified)"
 
-#: src/index.html:87
+#: src/index.html:88
 msgid "Unminified"
 msgstr "비압축판(Unminified)"
 
-#: src/index.html:91
+#: src/index.html:92
 msgid "Server Config"
 msgstr "서버 설정"
 
-#: src/index.html:97
+#: src/index.html:98
 msgid "Others"
 msgstr "기타"
 
-#: src/index.html:98
+#: src/index.html:99
 msgid "All IE classes"
 msgstr "IE의 모든 클래스"
 
-#: src/index.html:99
+#: src/index.html:100
 msgid "script.js & plugin.js"
 msgstr ""
 
-#: src/index.html:100
+#: src/index.html:101
 msgid "Google Analytics Snippet"
 msgstr "Google Analytics 스니펫"
 
-#: src/index.html:101
+#: src/index.html:102
 msgid "Ant Build Script"
 msgstr "Ant 빌드스크립트"
 
-#: src/index.html:104
+#: src/index.html:105
 msgid ""
 "<a href=\"http://2.jverrecchia-initializr.appspot.com/builder?mode=h5bp&amp;"
 "\" id=\"builder-download\" name=\"custom\">Download!</a> Need more options? "
@@ -228,27 +224,27 @@ msgstr ""
 "\" id=\"builder-download\" name=\"custom\">다운로드!</a> 더 많은 옵션이 필요"
 "하다면 <a href=\"http://initializr.com\">Initializr</a> 에 방문해보세요"
 
-#: src/index.html:109
+#: src/index.html:110
 msgid "Read the docs"
 msgstr "문서 읽기"
 
-#: src/index.html:110
+#: src/index.html:111
 msgid "Contribute on Github "
 msgstr "깃헙(Github)으로 기여하기 "
 
-#: src/index.html:111
+#: src/index.html:112
 msgid "Follow on twitter"
 msgstr "Twitter 팔로우하기"
 
-#: src/index.html:115
+#: src/index.html:116
 msgid "HTML5 Boilerplate is 3.0!"
 msgstr "HTML5 Boilerplate 는 3.0 이에요!"
 
-#: src/index.html:116
+#: src/index.html:117
 msgid "Monday, Feb 6th, 2012"
 msgstr "2012년 2월 6일, 월요일"
 
-#: src/index.html:117
+#: src/index.html:118
 msgid ""
 "The key feature of this update is making Boilerplate smaller. Most of the "
 "changes have been working towards that. We have significant work done to our "
@@ -256,201 +252,200 @@ msgid ""
 "h5bp/ant-build-script\">deserved its own repository</a>. Meanwhile, here is "
 "what's new."
 msgstr ""
-"이번 업데이트의 주요기능은 Boilerplate 를 보다 작게 만든 거에요. 대부분의 "
-"변경사항이 작게 만드는데 초첨을 맞췄어요. 우리의 중요한 작업을 위한 빌드스크"
-"립트를 <a href=\"https://github.com/h5bp/ant-build-script\">우리의 저장소에 "
-"보관</a>하기로 했어요. 그럼 이제 새로운 변경사항을 소개할께요."
+"이번 업데이트의 주요기능은 Boilerplate 를 보다 작게 만든 거에요. 대부분의 변"
+"경사항이 작게 만드는데 초첨을 맞췄어요. 우리의 중요한 작업을 위한 빌드스크립"
+"트를 <a href=\"https://github.com/h5bp/ant-build-script\">우리의 저장소에 보"
+"관</a>하기로 했어요. 그럼 이제 새로운 변경사항을 소개할께요."
 
-#: src/index.html:120
+#: src/index.html:121
 msgid "Changelog"
 msgstr "변경내역"
 
-#: src/index.html:121
+#: src/index.html:122
 msgid ""
 "3.0 gets some major updates <a href=\"https://github.com/h5bp/html5-"
 "boilerplate/compare/v2.0...v3.0\">Here are all the commits since last "
 "release</a>."
 msgstr ""
-"3.0 은 몇몇 주요 업데이트를 했어요. <a href=\"https://github.com/h5b"
-"p/html5-boilerplate/compare/v2.0...v3.0\">이 링크에 마지막 릴리즈이후 "
-"커밋된 모든 내용을 담고 있어요</a>."
+"3.0 은 몇몇 주요 업데이트를 했어요. <a href=\"https://github.com/h5bp/html5-"
+"boilerplate/compare/v2.0...v3.0\">이 링크에 마지막 릴리즈이후 커밋된 모든 내"
+"용을 담고 있어요</a>."
 
-#: src/index.html:122
+#: src/index.html:123
 msgid "Should you upgrade existing sites</a>? Short answer: nah, you're good."
 msgstr ""
 "기존 사이트를 업데이트해야할까요</a>? 짧게 답하자면: 아뇨, 안해도 돼요."
 
-#: src/index.html:124
+#: src/index.html:125
 msgid "Significant changes"
 msgstr "주요 변경사항"
 
-#: src/index.html:127
+#: src/index.html:128
 msgid ""
 "Removed a lot of folders: <code>/demos</code>, <code>/test</code>, and "
 "<code>/js/mylibs</code>."
 msgstr ""
-"많은 폴더를 지웠어요: <code>/demos</code>, <code>/test</code>, 그리고 "
-"<code>/js/mylibs</code>."
+"많은 폴더를 지웠어요: <code>/demos</code>, <code>/test</code>, 그리고 <code>/"
+"js/mylibs</code>."
 
-#: src/index.html:129
+#: src/index.html:130
 msgid "Build script is now a separate project"
 msgstr "빌드스크립트는 별도의 프로젝트로 분리했어요"
 
-#: src/index.html:129
+#: src/index.html:130
 msgid "node.js build script"
 msgstr "node.js 빌드스크립트"
 
-#: src/index.html:129
+#: src/index.html:130
 msgid "ruby/rake build scripts"
 msgstr "ruby/rake 빌드스크립트"
 
-#: src/index.html:129
+#: src/index.html:130
 msgid ""
 "Read about <a href=\"/docs/#build-scripts\">how to get and use the build "
 "script</a>"
 msgstr ""
-"<a href=\"/docs/#build-scripts\">빌드스크립트를 얻고 사용하는 "
-"방법</a>에 대해 읽기"
+"<a href=\"/docs/#build-scripts\">빌드스크립트를 얻고 사용하는 방법</a>에 대"
+"해 읽기"
 
-#: src/index.html:130
+#: src/index.html:131
 msgid "Respond.js is no longer available by default. "
 msgstr "Respond.js 는 기본적으로 사용하지 않기로 했어요. "
 
-#: src/index.html:136
+#: src/index.html:137
 msgid ""
 " Chromeframe no longer applied via script. IE6 users are served links to "
 "install Chromeframe or visit Browsehappy to choose an alternative browser.  "
 msgstr ""
 "Chromeframe 은 스크립트로 적용하지 않기로 했어요. IE6 사용자는 Chromeframe "
-"을 설치할 지, 아니면 Browse Happy 를 방문해서 다른 브라우저를 선택하게 "
-"할 지 링크를 표시합니다.  "
-
-#: src/index.html:137
-msgid "Meta viewport updated to prevent iOS scaling bugs.  "
-msgstr ""
-"iOS 의 스케일링 버그(scaling bugs)를 막기 위해 Meta 속성의 viewport "
-"를 업데이트했어요.  "
+"을 설치할 지, 아니면 Browse Happy 를 방문해서 다른 브라우저를 선택하게 할 지 "
+"링크를 표시합니다.  "
 
 #: src/index.html:138
+msgid "Meta viewport updated to prevent iOS scaling bugs.  "
+msgstr ""
+"iOS 의 스케일링 버그(scaling bugs)를 막기 위해 Meta 속성의 viewport 를 업데이"
+"트했어요.  "
+
+#: src/index.html:139
 msgid ""
 "<code>html</code> IE classes now target lower than a specific version rather "
 "than explicitly specified versions.  "
 msgstr ""
-"<code>html</code> 안의 IE 클래스는 명시적으로 지정된 버전보다 낮은 버전을 "
-"적용하도록 했어요."
+"<code>html</code> 안의 IE 클래스는 명시적으로 지정된 버전보다 낮은 버전을 적"
+"용하도록 했어요."
 
-#: src/index.html:139
+#: src/index.html:140
 msgid ""
 "Switch back to the optimized asynchronous Google Analytics snippet instead "
 "of using <code>Modernizr.load</code>.  "
 msgstr ""
-"<code>Modernizr.load</code> 대신 최적화된 Google Analytics 의 스니펫을"
-"사용하도록 했어요.  "
-
-#: src/index.html:140
-msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
-msgstr ""
-"오래된 IE 버그를 피하기 위해 모든 스크립트에서 <code>defer</code> 를 "
-"제거했어요."
+"<code>Modernizr.load</code> 대신 최적화된 Google Analytics 의 스니펫을사용하"
+"도록 했어요.  "
 
 #: src/index.html:141
+msgid "Drop <code>defer</code> from all scripts to avoid legacy IE bugs."
+msgstr ""
+"오래된 IE 버그를 피하기 위해 모든 스크립트에서 <code>defer</code> 를 제거했어"
+"요."
+
+#: src/index.html:142
 msgid "Design of the 404 has been improved."
 msgstr "404 페이지의 디자인을 개선했어요."
 
-#: src/index.html:146
+#: src/index.html:147
 msgid ""
 "Removed default font sizes and line heights to provide a much better robust "
 "default.  "
-msgstr "보다 나은 기본환경을 제공하기 위해 기본폰트사이즈와 행간은 삭제했어요. "
-
-#: src/index.html:147
-msgid ""
-"Additions made to normalize.css and to provide better default typography."
 msgstr ""
-"보다 나은 타이포그래피를 제공하기 위해 normalize.css 를 추가했어요."
+"보다 나은 기본환경을 제공하기 위해 기본폰트사이즈와 행간은 삭제했어요. "
 
 #: src/index.html:148
+msgid ""
+"Additions made to normalize.css and to provide better default typography."
+msgstr "보다 나은 타이포그래피를 제공하기 위해 normalize.css 를 추가했어요."
+
+#: src/index.html:149
 msgid "More robust .ir helper class."
 msgstr "보다 강력한 .ir 헬퍼 클래스."
 
-#: src/index.html:149
+#: src/index.html:150
 msgid ""
 "No more forced scrollbars, this impedes projects like jQuery UI, and others "
 "in calculating widths."
 msgstr ""
-"jQuery UI 프로젝트와 다른 폭을 계산하는 라이브러리등에 영향을 주지 않도록 "
-"더이상 스크롤바를 강제하지 않아요."
+"jQuery UI 프로젝트와 다른 폭을 계산하는 라이브러리등에 영향을 주지 않도록 더"
+"이상 스크롤바를 강제하지 않아요."
 
-
-#: src/index.html:153
+#: src/index.html:154
 msgid "Project"
 msgstr "프로젝트"
 
-#: src/index.html:155
+#: src/index.html:156
 msgid "Updated to Modernizr 2.5"
 msgstr "Modernizr 2.5 로 업데이트"
 
-#: src/index.html:156
+#: src/index.html:157
 msgid "Updated to jQuery 1.7.1"
 msgstr "jQuery 1.7.1 로 업데이트"
 
-#: src/index.html:157
+#: src/index.html:158
 msgid "Improved .htaccess"
 msgstr ".htaccess 개선"
 
-#: src/index.html:163
+#: src/index.html:164
 msgid "Videos"
 msgstr "비디오"
 
-#: src/index.html:167
+#: src/index.html:168
 msgid "Ready to get started?"
 msgstr "시작할 준비됐나요?"
 
-#: src/index.html:167 standard input:170
+#: src/index.html:168 standard input:171
 msgid "new!"
 msgstr "신규!"
 
-#: src/index.html:170
+#: src/index.html:171
 msgid "Intro to the Build Script"
 msgstr "빌드스크립트 소개"
 
-#: src/index.html:173
+#: src/index.html:174
 msgid "Get the lowdown in 40 minutes, flat!"
 msgstr "40분만에 핵심 파악하기!"
 
-#: src/index.html:177
+#: src/index.html:178
 msgid "Dig deeper in 60 minutes"
 msgstr "60분동안 깊게 파헤치기"
 
-#: src/index.html:182
+#: src/index.html:183
 msgid "Brought to you by"
 msgstr "공헌한 사람들"
 
-#: src/index.html:184
+#: src/index.html:185
 msgid "Front-End Web Developer"
 msgstr "프론트엔드 웹 개발자"
 
-#: src/index.html:186
+#: src/index.html:187
 msgid "Open Web Vigilante"
 msgstr "오픈 웹 개발자"
 
-#: src/index.html:187
+#: src/index.html:188
 msgid "Front end Developer"
 msgstr "프론트엔드 개발자"
 
-#: src/index.html:188
+#: src/index.html:189
 msgid "Open Web Developer"
 msgstr "오픈 웹 개발자"
 
-#: src/index.html:190
+#: src/index.html:191
 msgid "Freelance web developer"
 msgstr "프리랜서 웹 개발자"
 
-#: src/index.html:200
+#: src/index.html:201
 msgid "More Contributors"
 msgstr "그외 공헌자들"
 
-#: src/index.html:203
+#: src/index.html:204
 msgid ""
 "It would not have been possible without the efforts of these superheroes:"
 msgstr "아래 슈퍼히어로들의 노력없이는 불가능했을 거에요:"
@@ -476,8 +471,8 @@ msgid ""
 "Please enable JavaScript to view the <a href=\"http://disqus.com/?"
 "ref_noscript=boilerplate\">comments powered by Disqus.</a>"
 msgstr ""
-"댓글을 보기 위해서는 자바스크립트를 켜놓으세요. <a href=\"http://d"
-"isqus.com/?ref_noscript=boilerplate\"> powered by Disqus.</a>"
+"댓글을 보기 위해서는 자바스크립트를 켜놓으세요. <a href=\"http://disqus.com/?"
+"ref_noscript=boilerplate\"> powered by Disqus.</a>"
 
 #: src/template/404.html:5
 msgid "Page Not Found"
@@ -519,7 +514,6 @@ msgstr ""
 msgid "Techniques in here adapted from all over, including:"
 msgstr "여기서 소개하는 기술은 아래를 포함한 여러곳에서 채용하였음:"
 
-
 #: src/template/htaccess.txt:10
 msgid "Sample .htaccess file of CMS MODx:"
 msgstr "CMS MODx 용 .htaccess 샘플 파일:"
@@ -536,24 +530,22 @@ msgstr "IE 사용자를 위한 더 나은 웹사이트 경험제공"
 msgid ""
 "Force the latest IE version, in various cases when it may fall back to IE7 "
 "mode"
-msgstr ""
-"IE7 모드로 변경하려는 여러 경우에, IE 최신버전으로 동작하도록 강제화"
+msgstr "IE7 모드로 변경하려는 여러 경우에, IE 최신버전으로 동작하도록 강제화"
 
 #: src/template/htaccess.txt:26
 msgid ""
 "Use ChromeFrame if it's installed for a better experience for the poor IE "
 "folk"
 msgstr ""
-"IE 에서의 더 나은 경험을 제공하기 위해 설치 후 ChromeFrame 을 사용하도록 "
-"함"
+"IE 에서의 더 나은 경험을 제공하기 위해 설치 후 ChromeFrame 을 사용하도록 함"
 
 #: src/template/htaccess.txt:31
 msgid ""
 "mod_headers can't match by content-type, but we don't want to send this "
 "header on *everything*"
 msgstr ""
-"mod_headers 는 content-type 에 의해 매칭할 순 없음, *모든 것* 에 대해 "
-"이 헤더를 보내길 원하지는 않음"
+"mod_headers 는 content-type 에 의해 매칭할 순 없음, *모든 것* 에 대해 이 헤더"
+"를 보내길 원하지는 않음"
 
 #: src/template/htaccess.txt:39
 msgid "Cross-domain AJAX requests"
@@ -636,7 +628,7 @@ msgid "choose to name your files in this way for this advantage or"
 msgstr "자신의 파일명을 선택하거나 수동으로 지정한 파일명을 연결하여"
 
 #: src/template/htaccess.txt:124
-msgid "축소화 할 수 있음."
+msgid "concatenate and minify them manually."
 msgstr ""
 
 #: src/template/htaccess.txt:125
@@ -676,14 +668,13 @@ msgid ""
 "If you don`t use filenames to version, lower the css and js to something "
 "like \"access plus 1 week\" "
 msgstr ""
-"파일명을 버전으로 관리하지 않으면, CSS 와 JS에 대해서는 \"access "
-"plus 1 week\" 와 같은 설정을 할 것"
+"파일명을 버전으로 관리하지 않으면, CSS 와 JS에 대해서는 \"access plus 1 week"
+"\" 와 같은 설정을 할 것"
 
 #: src/template/htaccess.txt:209
 msgid "Perhaps better to whitelist expires rules? Perhaps."
 msgstr ""
-"어쩌면 만료기간 규칙의 화이트리스트에는 더 좋은 방법이 "
-"있을지도 모름? 추측임."
+"어쩌면 만료기간 규칙의 화이트리스트에는 더 좋은 방법이 있을지도 모름? 추측임."
 
 #: src/template/htaccess.txt:212
 msgid ""
@@ -728,8 +719,7 @@ msgid ""
 "Since we`re sending far-future expires, we don't need ETags for static "
 "content."
 msgstr ""
-"만료기한을 길게 설정하고 있기 때문에, 동적 컨텐츠용 ETags 는 필요하지 "
-"않음"
+"만료기한을 길게 설정하고 있기 때문에, 동적 컨텐츠용 ETags 는 필요하지 않음"
 
 #: src/template/htaccess.txt:281
 msgid "Stop screen flicker in IE on CSS rollovers"
@@ -758,8 +748,7 @@ msgstr "iframe 에서 cookie 를 설정할 수 있도록 함 (IE용)"
 #: src/template/htaccess.txt:299
 msgid ""
 "If needed, uncomment and specify a path or regex in the Location directive"
-msgstr ""
-"필요한 경우 주석을 제거하고 경로 또는 정규표현식으로 위치를 지정할 것 "
+msgstr "필요한 경우 주석을 제거하고 경로 또는 정규표현식으로 위치를 지정할 것 "
 
 #: src/template/htaccess.txt:310
 msgid "Start rewrite engine"
@@ -770,8 +759,7 @@ msgid ""
 "Turning on the rewrite engine is necessary for the following rules and "
 "features."
 msgstr ""
-"아래의 규칙과, 기능을 이용하기 위해서는 재작성(rewrite) 엔진을 "
-"활성화해야함."
+"아래의 규칙과, 기능을 이용하기 위해서는 재작성(rewrite) 엔진을 활성화해야함."
 
 #: src/template/htaccess.txt:314
 msgid "FollowSymLinks must be enabled for this to work."
@@ -787,14 +775,15 @@ msgid ""
 "especially not with and without \"www.\" at the beginning, since this can "
 "cause SEO problems (duplicate content)."
 msgstr ""
-"동일한 컨텐츠는 SEO 문제 (중복 컨텐츠)를 야기할 수 있으므로, 2개의 다른 "
-"URL을 가져서는 안됨. 특히 \"www.\"가 URL앞에 붙거나 붙지 않는 경우등. "
+"동일한 컨텐츠는 SEO 문제 (중복 컨텐츠)를 야기할 수 있으므로, 2개의 다른 URL"
+"을 가져서는 안됨. 특히 \"www.\"가 URL앞에 붙거나 붙지 않는 경우등. "
 
 #: src/template/htaccess.txt:328
 msgid ""
 "That's why you should choose one of the alternatives and redirect the other "
 "one."
-msgstr "그러므로 하나만을 선택하고, 나머지는 선택한 곳으로 리다이렉트시켜야 함."
+msgstr ""
+"그러므로 하나만을 선택하고, 나머지는 선택한 곳으로 리다이렉트시켜야 함."
 
 #: src/template/htaccess.txt:331
 msgid "By default option 1 (no \"www.\") is activated."
@@ -809,8 +798,8 @@ msgid ""
 "If you rather want to use option 2, just comment out all option 1 lines and "
 "uncomment option 2."
 msgstr ""
-"옵션2를 사용하고 싶으면, 옵션1의 줄을 모두 주석처리하고, 옵션2의 줄을 "
-"주석제거한다."
+"옵션2를 사용하고 싶으면, 옵션1의 줄을 모두 주석처리하고, 옵션2의 줄을 주석제"
+"거한다."
 
 #: src/template/htaccess.txt:337
 msgid "IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!"
@@ -832,8 +821,8 @@ msgstr "옵션2:"
 msgid ""
 "To rewrite \"domain.com -> www.domain.com\" uncomment the following lines."
 msgstr ""
-"\"domain.com 을 -> www.domain.com\" 으로 재작성(rewrite) 할 경우 다음 줄의 "
-"주석을 제거함."
+"\"domain.com 을 -> www.domain.com\" 으로 재작성(rewrite) 할 경우 다음 줄의 주"
+"석을 제거함."
 
 #: src/template/htaccess.txt:358
 msgid ""
@@ -852,15 +841,14 @@ msgid ""
 "revving, you might want to consider enabling this, which will route requests "
 "for /css/all.20110203.css to /res/all.css"
 msgstr ""
-"파일명 버전관리를 위한 빌드스크립트를 사용하지 않는 경우, 활성화할 것을 "
-"고려해 볼 것。/css/all.20110203.css 파일을 res/all.css 로 바꿔서 요청한다."
+"파일명 버전관리를 위한 빌드스크립트를 사용하지 않는 경우, 활성화할 것을 고려"
+"해 볼 것。/css/all.20110203.css 파일을 res/all.css 로 바꿔서 요청한다."
 
 #: src/template/htaccess.txt:378
 msgid ""
 "To understand why this is important and a better idea than all.css?v1231, "
 "read:"
-msgstr ""
-"이것이 보다 중요하며 all.css?v1231, 보다 더 좋은 생각인 이유는, "
+msgstr "이것이 보다 중요하며 all.css?v1231, 보다 더 좋은 생각인 이유는, "
 
 #: src/template/htaccess.txt:381
 msgid "Uncomment to enable."
@@ -879,8 +867,8 @@ msgid ""
 "e.g. prevent https://www.domain.com when your cert only allows https://"
 "secure.domain.com "
 msgstr ""
-"예) 인증서가 https://secure.domain.com 에만 허가했을 때, https://"
-"www.domain.com 의 경고를 하지 않음"
+"예) 인증서가 https://secure.domain.com 에만 허가했을 때, https://www.domain."
+"com 의 경고를 하지 않음"
 
 #: src/template/htaccess.txt:397
 msgid "Uncomment the following lines to use this feature."
@@ -895,8 +883,8 @@ msgid ""
 "without -MultiViews, Apache will give a 404 for a rewrite if a folder of the "
 "same name does not exist e.g."
 msgstr ""
-"-MultiViews 가 아니면, Apache는 동일한 이름으로 재작성(rewrite)한 폴더가 없는 "
-"경우 404 를 제공한다. 예)"
+"-MultiViews 가 아니면, Apache는 동일한 이름으로 재작성(rewrite)한 폴더가 없"
+"는 경우 404 를 제공한다. 예)"
 
 #: src/template/htaccess.txt:420
 msgid "Custom 404 page"
@@ -905,8 +893,7 @@ msgstr "404 페이지 사용자화"
 #: src/template/htaccess.txt:423
 msgid ""
 "You can add custom pages to handle 500 or 403 pretty easily, if you like."
-msgstr ""
-"원하는 경우 500 또는 403 페이지를 간단하게 사용자화 할 수 있음."
+msgstr "원하는 경우 500 또는 403 페이지를 간단하게 사용자화 할 수 있음."
 
 #: src/template/htaccess.txt:429
 msgid "UTF-8 encoding"
@@ -929,24 +916,23 @@ msgid ""
 "Do we want to advertise the exact version number of Apache we're running? "
 "Probably not."
 msgstr ""
-"정확히 어떤 버전의 Apache 를 사용중인지 알려야 하나요? 아마도 "
-"그럴 필요없죠."
+"정확히 어떤 버전의 Apache 를 사용중인지 알려야 하나요? 아마도 그럴 필요없죠."
 
 #: src/template/htaccess.txt:447
 msgid ""
 "This can only be enabled if used in httpd.conf - It will not work in ."
 "htaccess"
 msgstr ""
-"httpd.conf 안에 설정했을 때만 활성화함- .htaccess 안에서의 설정을 동작"
-"하지 않음"
+"httpd.conf 안에 설정했을 때만 활성화함- .htaccess 안에서의 설정을 동작하지 않"
+"음"
 
 #: src/template/htaccess.txt:453
 msgid ""
 "\"-Indexes\" will have Apache block users from browsing folders without a "
 "default document"
 msgstr ""
-"\"-Indexes\" 옵션은 Apache에서 기본 문서가 존재하지 않는 폴더의 브라우징을 "
-"못하도록 블로킹한다."
+"\"-Indexes\" 옵션은 Apache에서 기본 문서가 존재하지 않는 폴더의 브라우징을 못"
+"하도록 블로킹한다."
 
 #: src/template/htaccess.txt:454
 msgid ""
@@ -954,9 +940,9 @@ msgid ""
 "everybody to surf through every folder on your server (which includes rather "
 "private places like CMS system folders)."
 msgstr ""
-"일반적으로 서버의 모든 폴더 (예로 CMS의 시스템폴더 같은 개인적인 폴더)를 "
-"모든 사용자에게 접근가능한 권한을 줄 필요는 없기 때문에, 이 옵션은 항상 "
-"사용할 것"
+"일반적으로 서버의 모든 폴더 (예로 CMS의 시스템폴더 같은 개인적인 폴더)를 모"
+"든 사용자에게 접근가능한 권한을 줄 필요는 없기 때문에, 이 옵션은 항상 사용할 "
+"것"
 
 #: src/template/htaccess.txt:460
 msgid ""
@@ -994,11 +980,11 @@ msgid ""
 "PHP configurations (not just this one), or you will effectively reset "
 "everything to PHP defaults."
 msgstr ""
-"이용중인 서버가 PHP명령을 .htacceess를 경유해서 설정할 수 없음. 그런 경우, 이 "
-"설정은 php.ini 파일에 설정할 것. 만약 웹호스팅서비스를 이용중인 경우, 해당 "
-"관리자에게 지원을 별도문의해야 함. 모든 서버에서 php.ini의 로컬저장이 허가되"
-"지 않으면, 모든 PHP의 설정(이 설정뿐아니라 모두)을 php.ini로 "
-"하게 해야함. 그렇지 않으면 PHP의 기본설정을 초기화해야 함."
+"이용중인 서버가 PHP명령을 .htacceess를 경유해서 설정할 수 없음. 그런 경우, "
+"이 설정은 php.ini 파일에 설정할 것. 만약 웹호스팅서비스를 이용중인 경우, 해"
+"당 관리자에게 지원을 별도문의해야 함. 모든 서버에서 php.ini의 로컬저장이 허가"
+"되지 않으면, 모든 PHP의 설정(이 설정뿐아니라 모두)을 php.ini로 하게 해야함. "
+"그렇지 않으면 PHP의 기본설정을 초기화해야 함."
 
 #: src/template/htaccess.txt:474
 msgid ""
@@ -1061,8 +1047,8 @@ msgid ""
 "Don't prepend to error (doesn't accept empty string, use whitespace if you "
 "need)"
 msgstr ""
-"오류 앞에 출력할 문자열 (빈값은 사용불가, 필요시에는 공백 스페이스를 "
-"사용해야 함)"
+"오류 앞에 출력할 문자열 (빈값은 사용불가, 필요시에는 공백 스페이스를 사용해"
+"야 함)"
 
 #: src/template/htaccess.txt:516
 msgid "Increase cookie security"
@@ -1082,8 +1068,7 @@ msgstr "느슨한 제한정책"
 
 #: src/template/crossdomain.xml:18
 msgid "If you host a crossdomain.xml file with allow-access-from domain=\"*\""
-msgstr ""
-"allow-access-from domain=\"*\"을 사용한 crossdomain.xml을 호스팅하고"
+msgstr "allow-access-from domain=\"*\"을 사용한 crossdomain.xml을 호스팅하고"
 
 #: src/template/crossdomain.xml:19
 msgid "and don't understand all of the points described here, you probably"
@@ -1150,8 +1135,8 @@ msgid ""
 "Grab Google CDN's jQuery, with a protocol relative URL; fall back to local "
 "if necessary"
 msgstr ""
-"Google CDN 의 jQuery 를 사용함; 불가피하게 CDN 접근을 할 수 없으면 "
-"로컬 파일을 사용함"
+"Google CDN 의 jQuery 를 사용함; 불가피하게 CDN 접근을 할 수 없으면 로컬 파일"
+"을 사용함"
 
 #: src/template/index.html:56
 msgid "scripts concatenated and minified via ant build script"
@@ -1170,8 +1155,8 @@ msgid ""
 "Prompt IE 6 users to install Chrome Frame. Remove this if you want to "
 "support IE 6."
 msgstr ""
-"IE6 사용자에게 Chrome Frame 을 설치하도록 함。만일 IE6 을 지원하고 싶은 "
-"경우는 이 줄을 제거할 것."
+"IE6 사용자에게 Chrome Frame 을 설치하도록 함。만일 IE6 을 지원하고 싶은 경우"
+"는 이 줄을 제거할 것."
 
 #: src/template/humans.txt:1
 msgid "the humans responsible & colophon"
@@ -1246,13 +1231,12 @@ msgid ""
 "place any jQuery/helper plugins in here, instead of separate, slower script "
 "files."
 msgstr ""
-"분리되어 있거나, 무거운 자바스크립트 파일이 아닌, jQuery 플러그인/헬퍼 "
-"플러그인은 여기에 작성해 둘 것."
+"분리되어 있거나, 무거운 자바스크립트 파일이 아닌, jQuery 플러그인/헬퍼 플러그"
+"인은 여기에 작성해 둘 것."
 
 #: src/template/css/style.css:4
 msgid "What follows is the result of much research on cross-browser styling. "
-msgstr ""
-"다음 내용은 크로스브라우저의 스타일에 관해 깊게 연구한 결과입니다."
+msgstr "다음 내용은 크로스브라우저의 스타일에 관해 깊게 연구한 결과입니다."
 
 #: src/template/css/style.css:5
 msgid "Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,"
@@ -1291,8 +1275,8 @@ msgid ""
 "Prevent iOS text size adjust on device orientation change, without disabling "
 "user zoom:"
 msgstr ""
-"iOS 기기의 방향을 변경했을 때 사용자 줌 기능을 비활성하지 않고 텍스트 "
-"사이즈가 조정되는 것을 막음:"
+"iOS 기기의 방향을 변경했을 때 사용자 줌 기능을 비활성하지 않고 텍스트 사이즈"
+"가 조정되는 것을 막음:"
 
 #: src/template/css/style.css:43
 msgid "Remove text-shadow in selection highlight: h5bp.com/i"
@@ -1305,8 +1289,7 @@ msgstr "선택 선언은 분리해야함"
 #: src/template/css/style.css:47
 msgid ""
 "Also: hot pink! (or customize the background color to match your design)"
-msgstr ""
-"추가: 핫 핑크! (또는 디자인에 맞는 배경색으로 커스터마이징)"
+msgstr "추가: 핫 핑크! (또는 디자인에 맞는 배경색으로 커스터마이징)"
 
 #: src/template/css/style.css:56
 msgid "Links"
@@ -1390,8 +1373,8 @@ msgid ""
 "Define line-height as normal to match FF3/4 (set using !important in the UA "
 "stylesheet)"
 msgstr ""
-"FF3/4 에 맞게 line-height 를 정의함 (UA 스타일시트에서는 !important "
-"를 사용해서 설정함)"
+"FF3/4 에 맞게 line-height 를 정의함 (UA 스타일시트에서는 !important 를 사용해"
+"서 설정함)"
 
 #: src/template/css/style.css:164
 msgid "Correct inner spacing displayed oddly in IE6/7"
@@ -1402,8 +1385,8 @@ msgid ""
 "Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues "
 "in IE6/7"
 msgstr ""
-"IE6/7 의 오버랩(overlap) 이슈와 공백(whitespace) 이슈를 피하기 위해 'table' 의 "
-"안쪽 여백을 재설정함"
+"IE6/7 의 오버랩(overlap) 이슈와 공백(whitespace) 이슈를 피하기 위해 'table' "
+"의 안쪽 여백을 재설정함"
 
 #: src/template/css/style.css:176
 msgid "Display hand cursor for clickable form elements"
