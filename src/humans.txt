@@ -1,98 +1,15 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# humanstxt.org/
+# The humans responsible & technology colophon
 
+# TEAM
 
-/* TEAM */
+    <name> -- <role> -- <twitter>
 
-  Instigator: Paul Irish
-  Site: http://paulirish.com/
-  Twitter: paul_irish
-  Location: Plaid shirt
-  
-  Troublemaker: Divya Manian
-  Site: http://nimbupani.com/
-  Twitter: divya
-  Location: Where sun shines
-  
-  Doer: Shi Chuan
-  Site: http://blog.highub.com/
-  Twitter: shichuan
-  Location: Uniquely Singapore
+# THANKS
 
-  Mathias Bynens
-  Site: http://mathiasbynens.be/
-  Twitter: mathias
-  Location: Belgium
+    <name>
 
-  Nicolas Gallagher 
-  Site: http://nicolasgallagher.com/
-  Twitter: necolas
-  Location: London, UK
+# TECHNOLOGY COLOPHON
 
-
-/* THANKS */
-  
-  Adeel Ejaz: https://github.com/adeelejaz
-
-  Anton Kovalyov: https://github.com/antonkovalyov
-
-  Catalin Maris: https://github.com/alrra
-
-  Daniel Lenz: https://github.com/lenzcom
-
-  Giovanni Brescia: https://github.com/skill83
-
-  Jonas Westerlund: https://github.com/nlogax
-
-  Lavi Perchik: https://github.com/laviperchik
-
-  Mickael Daniel: https://github.com/mklabs
-
-  Mike West: https://github.com/mikewest
-  
-  Milos Gavrilovic: https://github.com/GaVrA
-
-  Niels Bom: https://github.com/nielsbom
-
-  Ricardo Tomasi: https://github.com/ricardobeat
-
-  Sean Caetano Martin: https://github.com/xonecas
-
-  Yuya Saito: https://github.com/studiomohawk
-
-  https://github.com/jorge-vitrubio
-
-  https://github.com/Zee-Julien
-
-
-/* SITE */
-
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery, Linkify, SyntaxHighlighter, awesome python translation/file inlining scripts
-  Source: https://github.com/nimbupani/html5boilerplate-site
-  
-
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+    HTML5, CSS3
+    jQuery, Modernizr
