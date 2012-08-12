@@ -3,13 +3,20 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Nicolas Gallagher -- @necolas
+    Paul Irish -- @paul_irish
+    Divya Manian -- @divya
+    Mathias Bynens -- @mathias
+    Hans Christian Reinl -- @drublic
 
 # THANKS
 
-    <name>
+    Mickael Daniel -- @mklabs
+    Catalin Maris -- @alrra
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    Normalize.css, HTML5 Boilerplate, Grunt
+
+    Source: https://github.com/h5bp/html5boilerplate.com
