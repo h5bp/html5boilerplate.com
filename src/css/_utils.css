@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/**
+ * Grid
+ */
+
+.grid {
+    margin: 0 -15px;
+    /* Remove inter-unit whitespace for all non-monospace font-families */
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+    /* Protect against WebKit bug with optimizelegibility */
+    text-rendering: optimizespeed;
+}
+
+.grid-cell {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: left;
+    text-rendering: auto;
+}
+
+.grid-cell > * {
+    padding: 0 15px;
+}
+
+/**
+ * Inline-block list items
+ */
+
+.inline-block-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inline-block-list li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0 1.5em;
+    vertical-align: top;
+}
+
+.inline-block-list li:first-child {
+    margin-left: 0;
+}
+
+/**
+ * Icons
+ */
+
+.icon {
+    position: relative;
+    top: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+/**
+ * Flexible multi-media embeds
+ */
+
+.flex-embed {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%
+}
+
+.flex-embed iframe,
+.flex-embed embed,
+.flex-embed object {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * Clearfix helper
+ */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (max-width: 720px) {
+    .site-logo,
+    .site-nav {
+        float: none;
+    }
+
+    .site-nav li {
+        margin: 0 0.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .grid-cell {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
