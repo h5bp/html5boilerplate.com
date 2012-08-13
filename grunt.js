@@ -24,6 +24,10 @@ module.exports = function(grunt) {
             grunt: ['grunt.js']
         },
 
+        min: {
+            'dist/js/main.min.js': '<%= dir.src %>/js/main.js'
+        },
+
         mincss: {
             'dist/css/main.min.css': [
                 '<%= dir.src %>/css/_normalize.css',
@@ -52,5 +56,5 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', ['watch']);
     // Build task.
-    grunt.registerTask('build', ['clean', 'copy', 'mincss', 'usemin']);
+    grunt.registerTask('build', ['clean', 'copy', 'min', 'mincss', 'usemin']);
 };
