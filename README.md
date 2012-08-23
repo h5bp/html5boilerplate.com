@@ -5,7 +5,7 @@ The HTML5 Boilerplate website is a simple static site.
 * The development code is in the `src` directory.
 * The build process relies on grunt - a Node.js build script. The grunt
   configuration is found in `grunt.js` and the individual tasks are found in
-the `tasks` directory.
+  the `tasks` directory.
 
 ## Development setup
 
