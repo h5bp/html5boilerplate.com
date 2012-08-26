@@ -12,6 +12,19 @@ html {
 
 body {
     background: #222;
+    background-image: -webkit-linear-gradient(45deg, 
+        hsla(0, 0%, 0%, 0.1) 25%,
+        #222 25%, 
+        #222 50%, 
+        hsla(0, 0%, 0%, 0.1) 50%,
+        hsla(0, 0%, 0%, 0.1) 75%,
+        #222 75%
+    );
+    background-image: -moz-linear-gradient(45deg, hsla(0, 0%, 0%, 0.1) 25%, #222 25%, #222 50%, hsla(0, 0%, 0%, 0.1) 50%, hsla(0, 0%, 0%, 0.1) 75%, #222 75%);
+    background-image: -ms-linear-gradient(45deg, hsla(0, 0%, 0%, 0.1) 25%, #222 25%, #222 50%, hsla(0, 0%, 0%, 0.1) 50%, hsla(0, 0%, 0%, 0.1) 75%, #222 75%);
+    background-image: -o-linear-gradient(45deg, hsla(0, 0%, 0%, 0.1) 25%, #222 25%, #222 50%, hsla(0, 0%, 0%, 0.1) 50%, hsla(0, 0%, 0%, 0.1) 75%, #222 75%);
+    background-image: linear-gradient(45deg, hsla(0, 0%, 0%, 0.1) 25%, #222 25%, #222 50%, hsla(0, 0%, 0%, 0.1) 50%, hsla(0, 0%, 0%, 0.1) 75%, #222 75%);
+    background-size: 5px 5px;
 }
 
 a {
