@@ -76,6 +76,7 @@
     padding: 1em 0 5em;
     color: #333;
     background: #fff;
+    box-shadow: -5px 0 10px 5px black;
 }
 
 .in-the-wild {
