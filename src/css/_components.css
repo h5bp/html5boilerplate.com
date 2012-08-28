@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Reusable components
+   ========================================================================== */
+
+/**
+ * Container
+ *
+ * Controls consitent width and centering of site structure.
+ */
+
+.container {
+    max-width: 720px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/**
+ * Aside
+ */
+
+.aside {
+    padding: 1em 0;
+    border: solid #e3e3e3;
+    border-width: 1px 0;
+    background: #eee;
+    font-size: 1.125em;
+}
+
+/**
+ * Calls to action
+ */
+
+.cta-option {
+    position: relative;
+    display: inline-block;
+    margin: 2.5em 0.5em 0;
+    vertical-align: top;
+}
+
+/**
+ * Download button
+ */
+
+.btn-download {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.6em 1em;
+    border: 1px solid #995309;
+    color: #fff;
+    background: #d9750b;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px -2px #111, inset 0 2px 5px 0 rgba(255, 255, 255, 0.3);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active {
+    background: #e0811b;
+    text-decoration: none;
+}
+
+.btn-download:active {
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.2);
+    background: #cf6a00;
+}
+
+/**
+ * Alternative download button
+ *
+ * @extends .btn-download
+ */
+
+.btn-download-alt {
+    margin-top: 0.25em;
+    border-color: #222;
+    background: #444;
+    box-shadow: none;
+    font-size: 1.25em;
+
+}
+
+.btn-download-alt:hover,
+.btn-download-alt:focus,
+.btn-download-alt:active {
+    background: #555;
+}
+
+.btn-download-alt:active {
+    background: #3f3f3f;
+}
+
+/**
+ * Star
+ */
+
+.star {
+    color: #e08524;
+}

@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+body {
+    background: #222;
+}
+
+a {
+    color: #069;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+/*
+ * Remove text-shadow in selection highlight.
+ * These selection declarations have to be separate.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/* Typography
+   ========================================================================== */
+
+h1 {
+    margin: 0 0 0.75em;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+h2 {
+    margin: 1.5em 0 1em;
+    font-size: 2em;
+}
+
+h3 {
+    margin: 0 0 0.5em;
+    color: #555;
+    font-size: 1.25em;
+}
+
+p {
+    margin: 0 0 2em;
+}

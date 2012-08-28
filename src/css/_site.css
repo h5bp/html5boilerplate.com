@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Major site components
+   ========================================================================== */
+
+/**
+ * Site header
+ */
+
+.site-header {
+    padding-top: 30px;
+}
+
+/* Site logo */
+
+.site-logo {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+}
+
+/* Site nav */
+
+.site-nav {
+    float: right;
+    padding: 0;
+    margin: 7px 0 0;
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    color: #e08524;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a:active {
+    color: #fff;
+}
+
+/**
+ * Site promo
+ */
+
+.site-promo {
+    padding: 3em 0;
+}
+
+.site-promo .description {
+    margin: 1em 2em 0;
+    font-size: 1.25em;
+    color: #ddd;
+}
+
+.last-update {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.75em;
+}
+
+/**
+ * Support content
+ */
+
+.site-content {
+    overflow: hidden;
+    padding: 1em 0 5em;
+    color: #333;
+    background: #fff;
+}
+
+.in-the-wild {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+    padding: 2em 0;
+    font-size: 0.875em;
+}
+
+.site-footer .container {
+    max-width: 500px;
+}
+
+.site-footer a {
+    color: #e08524;
+}

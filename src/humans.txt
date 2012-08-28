@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Nicolas Gallagher -- @necolas
+    Paul Irish -- @paul_irish
+    Divya Manian -- @divya
+    Mathias Bynens -- @mathias
+    Hans Christian Reinl -- @drublic
+
+# THANKS
+
+    Mickael Daniel -- @mklabs
+    Catalin Maris -- @alrra
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, HTML5 Boilerplate, Grunt
+
+    Source: https://github.com/h5bp/html5boilerplate.com

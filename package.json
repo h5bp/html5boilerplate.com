@@ -1,0 +1,27 @@
+{
+    "name": "html5boilerplate-com",
+    "description": "Website for the HTML5 Boilerplate project",
+    "version": "1.0.0",
+    "author": "Nicolas Gallagher (http://nicolasgallagher.com/)",
+    "homepage": "http://html5boilerplate.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/h5bp/html5boilerplate.com.git"
+    },
+    "bugs": {
+        "url" : "https://github.com/h5bp/html5boilerplate.com/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/h5bp/html5boilerplate.com/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+        "clean-css": "~0.4.1",
+        "grunt": "0.3.x",
+        "rimraf": "2.0.x"
+    }
+}
