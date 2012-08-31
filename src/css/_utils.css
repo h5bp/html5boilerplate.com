@@ -69,7 +69,8 @@
     position: relative;
     height: 0;
     overflow: hidden;
-    padding-bottom: 56.25%
+    padding-bottom: 56.25%;
+    border: 1px solid #999;
 }
 
 .flex-embed iframe,
