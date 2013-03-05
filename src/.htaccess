@@ -31,6 +31,14 @@
   RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
+# Fix /mobile bug
+# Rewrite "/mobile -> /mobile/"
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^mobile$ mobile/ [R=301,L]
+</IfModule>
+
 # ???
 order allow,deny
 deny from 90.168.89.100
