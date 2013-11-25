@@ -16,7 +16,7 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, HTML5 Boilerplate, Grunt
+    CSS3, HTML5
+    Grunt, HTML5 Boilerplate, jQuery, Normalize.css
 
     Source: https://github.com/h5bp/html5boilerplate.com
