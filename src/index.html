@@ -6,8 +6,20 @@
         <meta name="description" content="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time reinventing the wheel.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
-        <link rel="stylesheet" href="css/main.css">
+
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="css/_normalize.css">
+        <link rel="stylesheet" href="css/_base.css">
+        <link rel="stylesheet" href="css/_utils.css">
+        <link rel="stylesheet" href="css/_components.css">
+        <link rel="stylesheet" href="css/_site.css">
+        <link rel="stylesheet" href="css/_mq.css">
+        <link rel="stylesheet" href="css/_print.css">
+        <!-- endbuild -->
+
+        <!-- build:js js/html5shiv.js -->
         <script src="js/html5shiv.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
 
@@ -180,7 +192,11 @@
         </footer><!-- end site-footer -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- build:js js/main.js -->
         <script src="js/main.js"></script>
+        <!-- endbuild -->
+
         <script>
             // Twitter widgets
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='http://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');

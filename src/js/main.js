@@ -1,8 +1,11 @@
+/* global _gaq:false */
+
 var H5BP = H5BP || {};
 
 // Google Analytics event tracking
-//
 H5BP.track = (function () {
+
+    'use strict';
 
     $(function () {
         H5BP.track.init();
@@ -25,6 +28,8 @@ H5BP.track = (function () {
     }
 
     function _event(category, action, label, value) {
+
+
         //console.log(category + " | " + action + " | " + label + " | " + value);
         if (_gaq) {
             _gaq.push(['_trackEvent', category, action, label, value]);
