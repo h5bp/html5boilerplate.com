@@ -27,6 +27,16 @@
             <header class="site-header cf" role="banner">
                 <div class="site-logo">
                     HTML5 <span class="star">&#x2605;</span> Boilerplate
+
+                    <!--
+                         Make `/logo.svg` discoverable by search engines:
+                         http://googlewebmastercentral.blogspot.ro/2013/05/using-schemaorg-markup-for-organization.html
+                    -->
+                    <div class="hidden" itemscope itemtype="http://schema.org/Organization">
+                        <a itemprop="url" href="http://html5boilerplate.com/">Home</a>
+                        <img itemprop="logo" src="http://html5boilerplate.com/logo.svg" alt="HTML5 Boilerplate logo"/>
+                    </div>
+
                 </div>
                 <ul class="site-nav inline-block-list">
                     <li><a href="https://github.com/h5bp/html5-boilerplate"
