@@ -78,6 +78,21 @@ module.exports = function (grunt) {
             }
         },
 
+        filerev: {
+
+            files: {
+                src: [
+                    '<%= settings.dir.dist %>/js/*.js',
+                    '<%= settings.dir.dist %>/css/*.css'
+                ]
+            },
+
+            options: {
+                algorithm: 'sha1',
+                length: 7
+            }
+        },
+
         jshint: {
             files: [
                 'Gruntfile.js',
@@ -121,22 +136,6 @@ module.exports = function (grunt) {
             }
         },
 
-        rev: {
-            build: {
-                files: {
-                    all: [
-                        '<%= settings.dir.dest %>/js/*.js',
-                        '<%= settings.dir.dest %>/css/*.css',
-                    ]
-                }
-            },
-
-            options: {
-                algorithm: 'md5',
-                length: 7
-            }
-        },
-
         uglify: {
             options: {
                 // Preserve all comments that start with a bang (!) or include a
@@ -148,11 +147,7 @@ module.exports = function (grunt) {
         usemin: {
             // List of files for which to update asset references
             css: '<%= settings.dir.dist %>/css/*.css',
-            html: '<%= settings.dir.dist %>/index.html',
-
-            options: {
-                assetsDirs: '<%= settings.dir.dist >'
-            }
+            html: '<%= settings.dir.dist %>/index.html'
         },
 
         useminPrepare: {
@@ -189,7 +184,7 @@ module.exports = function (grunt) {
         'concat',
         'uglify',
         'cssmin',
-        'rev',
+        'filerev',
         'usemin',
         'htmlmin',
         'clean:tmp'
