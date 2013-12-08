@@ -70,15 +70,10 @@ module.exports = function (grunt) {
                     // copy all files
                     '**',
 
-                    // except:
-                    // 1) files from the `css/` and `js/` directory
-                    //    (other tasks will handle the copying of these files)
+                    // except: files from the `css/` and `js/` directory
+                    // (other tasks will handle the copying of these files)
                     '!css/*',
-                    '!js/*',
-
-                    // 2) the `.htaccess` file
-                    //    (see: h5bp/html5boilerplate.com#104)
-                    '!.htaccess'
+                    '!js/*'
                 ]
             }
         },
