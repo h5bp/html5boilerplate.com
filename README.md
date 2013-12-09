@@ -19,10 +19,11 @@ The HTML5 Boilerplate website is a simple static site.
 
 You should be able to work almost entirely in the `src` directory.
 
-While developing run `grunt dev`. This will open the website in your default
-browser and automatically update it whenever changes are made to any of the
-files contained in the page. Also, it will lint the code and inform you about
-any suspicious language usage.
+While developing run `grunt dev`. This will:
+
+* open the website in your default browser and automatically update it whenever
+changes are made to the page or any of the files contained in the page
+* lint the code and inform you about any suspicious language usage
 
 ## Build
 
