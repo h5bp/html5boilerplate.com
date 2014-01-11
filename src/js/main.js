@@ -1,4 +1,4 @@
-/* global _gaq:false */
+/* global ga:false */
 
 var H5BP = H5BP || {};
 
@@ -17,7 +17,7 @@ H5BP.track = (function () {
         $rootEl.on('click', '[data-ga-category]', function (e) {
             var $target = $(e.currentTarget);
             var category = $target.attr('data-ga-category') || undefined; // required
-            var action = $target.attr('data-ga-action') || undefined; // required
+            var action = $target.attr('data-ga-action') || undefined;     // required
             var label = $target.attr('data-ga-label') || undefined;
             var value = parseInt($target.attr('data-ga-value'), 10) || undefined;
 
@@ -28,25 +28,29 @@ H5BP.track = (function () {
     }
 
     function _event(category, action, label, value) {
-
-
-        //console.log(category + " | " + action + " | " + label + " | " + value);
-        if (_gaq) {
-            _gaq.push(['_trackEvent', category, action, label, value]);
+        //console.log(category + ' | ' + action + ' | ' + label + ' | ' + value);
+        if (ga) {
+            // Track events
+            // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+            ga('send', 'event', category, action, label, value);
         }
     }
 
     function _social(network, action, target) {
-        //console.log(network + " | " + action + " | " + target);
-        if (_gaq) {
-            _gaq.push(['_trackSocial', network, action, target]);
+        //console.log(network + ' | ' + action + ' | ' + target);
+        if (ga) {
+            // Track social interactions
+            // https://developers.google.com/analytics/devguides/collection/analyticsjs/social-interactions
+            ga('send', 'social', network, action, target);
         }
     }
 
     function _page(url) {
         //console.log(url);
-        if (_gaq) {
-            _gaq.push('_trackPageview', url);
+        if (ga) {
+            // Sends a pageview
+            // https://developers.google.com/analytics/devguides/collection/analyticsjs/pages
+            ga('send', 'pageview', url);
         }
     }
 
