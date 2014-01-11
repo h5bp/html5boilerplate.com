@@ -109,6 +109,30 @@ module.exports = function (grunt) {
             }
         },
 
+        // `htmlcompressor` is mainly use to minify and obfuscate the inline
+        // scripts, as `htmlmin` doesn't have that feature
+        htmlcompressor: {
+            build: {
+                files: {
+                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html',
+                    // DO NOT minify the 404 page! (the page needs to have more
+                    // than 512 bytes in order for IE to display it)
+                    // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
+                },
+
+                // In-depth explanation of the minifier options:
+                // http://code.google.com/p/htmlcompressor/#Compressing_HTML_and_XML_files_from_a_command_line
+                options: {
+                    compressCss: true,
+                    compressJs: true,
+                    jsCompressor: 'closure',
+                    type: 'html'
+                    /* there is no need to enable the other
+                       obtions, `htmlmin` takes care of that */
+                }
+            }
+        },
+
         htmlmin: {
             build: {
                 files: {
@@ -186,6 +210,7 @@ module.exports = function (grunt) {
         'cssmin',
         'filerev',
         'usemin',
+        'htmlcompressor',
         'htmlmin',
         'clean:tmp'
     ]);
