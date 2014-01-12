@@ -27,16 +27,6 @@
             <header class="site-header cf" role="banner">
                 <div class="site-logo">
                     HTML5 <span class="star">&#x2605;</span> Boilerplate
-
-                    <!--
-                         Make `/logo.svg` discoverable by search engines:
-                         http://googlewebmastercentral.blogspot.ro/2013/05/using-schemaorg-markup-for-organization.html
-                    -->
-                    <div class="hidden" itemscope itemtype="http://schema.org/Organization">
-                        <a itemprop="url" href="http://html5boilerplate.com/">Home</a>
-                        <img itemprop="logo" src="http://html5boilerplate.com/logo.svg" alt="HTML5 Boilerplate logo"/>
-                    </div>
-
                 </div>
                 <ul class="site-nav inline-block-list">
                     <li><a href="https://github.com/h5bp/html5-boilerplate"
@@ -114,7 +104,8 @@
                 </div>
 
                 <div class="flex-embed">
-                    <iframe width="720" height="540" src="http://www.youtube.com/embed/WkLO-q2wC80?theme=light" frameborder="0" allowfullscreen></iframe>
+                    <!-- The YouTube <iframe> will replace the following <div> -->
+                    <div id="js-youtube-player"></div>
                 </div>
 
                 <h2>Who uses HTML5 Boilerplate?</h2>
@@ -155,21 +146,21 @@
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="Report issues">
-                        <img class="icon" src="http://www.google.com/s2/favicons?domain=github.com" alt="">
+                        <img class="icon" src="http://www.google.com/s2/favicons?domain=github.com" width="16px" height="16px" alt="GitHub logo">
                         Report issues
                     </a></li>
                     <li><a href="http://stackoverflow.com/questions/tagged/html5boilerplate"
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="Help on Stack Overflow">
-                        <img class="icon" src="http://www.google.com/s2/favicons?domain=stackoverflow.com" alt="">
+                        <img class="icon" src="http://www.google.com/s2/favicons?domain=stackoverflow.com" width="16px" height="16px" alt="StackOverflow logo">
                         Help on Stack Overflow
                     </a></li>
                     <li><a href="http://h5bp.net"
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="View the showcase">
-                        <img class="icon" src="http://24.media.tumblr.com/avatar_c11b98176b89_16.png" alt="">
+                        <img class="icon" src="http://24.media.tumblr.com/avatar_c11b98176b89_16.png" width="16px" height="16px" alt="HTML5 logo">
                         View the showcase
                     </a></li>
                 </ul>
@@ -208,99 +199,149 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
 
-/* global ga:false */
+/* global ga:false, YT:false */
 
 (function () {
 
     'use strict';
 
     var configs = {
-        gaTrackingId: 'UA-17904194-1'
+        gaTrackingId: 'UA-17904194-1',
+        youTubeVideoId: 'WkLO-q2wC80'
     };
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // | Google Universal Analytics                                            |
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    // Google Universal Analytics
+    // More information about the Google Universal Analytics:
     // https://developers.google.com/analytics/devguides/collection/analyticsjs/
     // http://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics
 
-    /* jshint ignore:start */
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    /* jshint ignore:end */
+    function loadGoogleAnalytics(){
 
-    // Create tracker object
-    ga('create', configs.gaTrackingId);
+        /* jshint ignore:start */
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        /* jshint ignore:end */
 
-    // Send a page view
-    // https://developers.google.com/analytics/devguides/collection/analyticsjs/pages
-    ga('send', 'pageview');
+        // Create tracker object
+        ga('create', configs.gaTrackingId);
 
-    // Track events
-    // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-    $('body').on('click', '[data-ga-category]', function (e) {
+        // Send a page view
+        // https://developers.google.com/analytics/devguides/collection/analyticsjs/pages
+        ga('send', 'pageview');
 
-        var $target = $(e.currentTarget);
-        var action = $target.attr('data-ga-action') || undefined;     // required
-        var category = $target.attr('data-ga-category') || undefined; // required
-        var label = $target.attr('data-ga-label') || undefined;
-        var url = $target.attr('href');
-        var value = parseInt($target.attr('data-ga-value'), 10) || undefined;
+        // Track events
+        // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+        $('body').on('click', '[data-ga-category]', function (e) {
 
-        if ( ga && category && action ) {
+            var $target = $(e.currentTarget);
+            var action = $target.attr('data-ga-action') || undefined;     // required
+            var category = $target.attr('data-ga-category') || undefined; // required
+            var label = $target.attr('data-ga-label') || undefined;
+            var url = $target.attr('href');
+            var value = parseInt($target.attr('data-ga-value'), 10) || undefined;
 
-            // Handle outbound links manually to ensure that
-            // they are registered with Google Analytics
-            e.preventDefault();
+            if ( ga && category && action ) {
 
-            // 1. Ensure that `Download` links work as intended
+                // Handle outbound links manually to ensure that
+                // they are registered with Google Analytics
+                e.preventDefault();
 
-            // The `Download` links aren't directing the user away from the
-            // page. So, using `window.location.href` in this case may cause
-            // unwanted problems. E.g: If the user clicks on a `Download` link
-            // before all the page's content is downloaded, the browser will
-            // abort any remaining downloads. This happens because the browser
-            // considers that it no longer needs to download anything from this
-            // page, and should start downloading the next page and its content.
+                // 1. Ensure that `Download` links work as intended
 
-            // Also, the following is done here and not in `hitCallback`, in
-            // order to prevent the browser popup blocking behavior
+                //    The `Download` links aren't directing the user away
+                //    from the page. So, using `window.location.href` in this
+                //    case may cause unwanted problems. E.g: If the user clicks
+                //    on a `Download` link before all the page's content is
+                //    downloaded, the browser will abort any remaining downloads.
+                //    This happens because the browser considers that it no
+                //    longer needs to download anything from this page, and
+                //    should start downloading the next page and its content.
 
-            if ( category === 'Download' ) {
-                window.open(url);
-            }
+                //    Also, the following is done here, and not in `hitCallback`,
+                //    so that it prevents the browser popup blocking behavior
 
-            (function (url) {
-                // Registerd the event
-                ga('send', 'event', category, action, label, value, {
-                    // 2. Ensure that `Outbound links` are registerd before
-                    //    navigating away from the current page
-                    //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
-                    'hitCallback': function () {
+                if ( category === 'Download' ) {
+                    window.open(url);
+                }
+
+                (function (url) {
+
+                    // Registerd the event
+                    ga('send', 'event', category, action, label, value, {
+                        // 2. Ensure that `Outbound links` are registerd before
+                        //    navigating away from the current page
+                        //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
+                        'hitCallback': function () {
+                            if ( category === 'Outbound links' ) {
+                                window.location.href = url;
+                            }
+                        }
+                    });
+
+                    // In case `hitCallback` takes to long
+                    setTimeout(function () {
                         if ( category === 'Outbound links' ) {
                             window.location.href = url;
                         }
-                    }
-                });
+                    }, 1000);
+                }(url));
+            }
 
-                // In case `hitCallback` takes to long
-                setTimeout(function () {
-                    if ( category === 'Outbound links' ) {
-                        window.location.href = url;
-                    }
-                }, 1000);
-            }(url));
-        }
+        });
+    }
 
-    });
-
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // | Twitter                                                               |
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     // Tweet Buttons
     // https://dev.twitter.com/docs/tweet-button
 
-    /* jshint ignore:start */
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='http://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');
-    /* jshint ignore:end */
+    function loadTweetButtons() {
+        /* jshint ignore:start */
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='http://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');
+        /* jshint ignore:end */
+    }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // | YouTube                                                               |
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    // YouTube Player API Reference for iframe Embeds:
+    // https://developers.google.com/youtube/iframe_api_reference
+
+    function loadYouTubePlayer() {
+
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        var tag = document.createElement('script');
+
+        tag.src = 'https://www.youtube.com/iframe_api';
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // The YouTube API will call this function when the page has finished
+        // downloading the JavaScript for the player API
+        window.onYouTubeIframeAPIReady = function () {
+            // Create the `<iframe>` after the YouTube API code has downloaded
+            /* jshint nonew:false */
+            new YT.Player('js-youtube-player', {
+                videoId: configs.youTubeVideoId,
+                playerVars: {
+                    theme: 'light'
+                }
+            });
+            /* jshint nonew:true */
+        };
+
+    }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    // load widgets asynchronously
+    loadGoogleAnalytics();
+    loadYouTubePlayer();
+    loadTweetButtons();
 
 }());
 
