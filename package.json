@@ -1,8 +1,17 @@
 {
-  "author": "Nicolas Gallagher (http://nicolasgallagher.com/)",
+  "author": {
+    "name" : "Nicolas Gallagher",
+    "url" : "http://nicolasgallagher.com/"
+  },
   "bugs": {
     "url": "https://github.com/h5bp/html5boilerplate.com/issues"
   },
+  "contributors": [
+    {
+      "name" : "Cătălin Mariș",
+      "url" : "https://twitter.com/alrra"
+    }
+  ],
   "description": "Website for the HTML5 Boilerplate project",
   "devDependencies": {
     "load-grunt-tasks": "~0.2.0",
