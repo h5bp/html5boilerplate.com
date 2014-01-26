@@ -26,11 +26,11 @@
 }
 
 @media only screen and (max-width: 420px) {
-    html {
-        font-size: 13px;
-    }
-
     h1 {
         font-size: 2.5em;
+    }
+
+    html {
+        font-size: 13px;
     }
 }
