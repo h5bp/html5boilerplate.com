@@ -104,3 +104,7 @@
 .site-footer a {
     color: #e08524;
 }
+
+.site-footer p {
+    margin: 2em 0 0;
+}
