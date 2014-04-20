@@ -10,7 +10,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 760px;
     padding: 0 10px;
 }
 
@@ -37,30 +37,45 @@
     vertical-align: top;
 }
 
-/*
- * Download button
- */
 
-.btn-download {
-    background: #d9750b;
-    border: 1px solid #995309;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px -2px #111,
-                0 2px 5px 0 rgba(255, 255, 255, 0.3) inset;
+.btn {
     color: #fff;
     display: inline-block;
     font-size: 1.5em;
     padding: 0.6em 1em;
     position: relative;
     text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
     vertical-align: middle;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    text-decoration: none;
+}
+
+/*
+ * Download button
+ *
+ * @extends .btn
+ */
+
+.btn-download {
+    background: #d9750b;
+    background: linear-gradient(#f90 10%, #e76a00 100%);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+                0 1px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid #995309;
 }
 
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
     background: #e0811b;
-    text-decoration: none;
+    background: linear-gradient(#f0a100 10%, #f70 100%);
 }
 
 .btn-download:active {
@@ -69,12 +84,12 @@
 }
 
 /*
- * Alternative download button
+ * Alternative button
  *
- * @extends .btn-download
+ * @extends .btn
  */
 
-.btn-download-alt {
+.btn-alt {
     background: #444;
     border-color: #222;
     box-shadow: none;
@@ -82,9 +97,9 @@
     margin-top: 0.25em;
 }
 
-.btn-download-alt:hover,
-.btn-download-alt:focus,
-.btn-download-alt:active {
+.btn-alt:hover,
+.btn-alt:focus,
+.btn-alt:active {
     background: #555;
 }
 

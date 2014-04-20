@@ -4,14 +4,15 @@
 
 html {
     color: #fff;
-    font-family: 'Open sans', sans-serif;
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
     line-height: 1.4;
     text-align: center;
 }
 
 body {
-    background: #222;
+    background: #2f3135;
+    background-image: url('../img/bg.png');
 }
 
 a {
@@ -60,7 +61,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin: 1.5em 0 1em;
+    margin: 1.5em 0;
 }
 
 h3 {
