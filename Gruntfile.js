@@ -23,6 +23,17 @@ module.exports = function (grunt) {
         // | Tasks Configurations                                              |
         // ---------------------------------------------------------------------
 
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version', 'ie 6', 'ie 7', 'ie 8' ],
+                cascade: true
+            },
+            dist: {
+                expand: true,
+                src: '.tmp/**/*.css',
+            }
+        },
+
         clean: {
             // List of files that will be removed before the
             // build process is started
@@ -79,14 +90,12 @@ module.exports = function (grunt) {
         },
 
         filerev: {
-
             files: {
                 src: [
                     '<%= settings.dir.dist %>/js/*.js',
                     '<%= settings.dir.dist %>/css/*.css'
                 ]
             },
-
             options: {
                 algorithm: 'sha1',
                 length: 7
@@ -206,6 +215,7 @@ module.exports = function (grunt) {
         'copy',
         'useminPrepare',
         'concat',
+        'autoprefixer',
         'uglify',
         'cssmin',
         'filerev',

@@ -7,7 +7,7 @@
  */
 
 .site-header {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 /*
@@ -17,7 +17,7 @@
 .site-logo {
     color: #fff;
     float: left;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 32px;
     text-decoration: none;
@@ -37,7 +37,7 @@
 }
 
 .site-nav a {
-    color: #e08524;
+    color: #ffa000;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -54,12 +54,12 @@
  */
 
 .site-promo {
-    padding: 3em 0;
+    padding: 4em 0 6em;
 }
 
 .site-promo .description {
     color: #ddd;
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin: 1em 2em 0;
 }
 
@@ -74,18 +74,36 @@
  * Support content
  */
 
-.site-content {
-    background: #fff;
+.site-section {
+    background: #f9f9f9;
     color: #333;
     overflow: hidden;
-    padding: 1em 0 5em;
+    padding: 2em 0 6em;
 }
+
+.site-section-video {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0 3em;
+}
+
+
+.site-section-video .content {
+    max-width: 720px;
+    margin: auto;
+    padding: 10px;
+}
+
+.site-section-video h2 {
+    margin: 1em 0;
+}
+
 
 .in-the-wild {
     font-size: 1.25em;
-    font-weight: bold;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 720px;
 }
 
 /*
@@ -94,17 +112,9 @@
 
 .site-footer {
     font-size: 0.875em;
-    padding: 2em 0;
-}
-
-.site-footer .container {
-    max-width: 540px;
+    padding: 2em;
 }
 
 .site-footer a {
-    color: #e08524;
-}
-
-.site-footer p {
-    margin: 2em 0 0;
+    color: #ffa000;
 }
