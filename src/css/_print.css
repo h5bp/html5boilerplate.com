@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @media print {
+
     * {
         background: transparent !important;
         box-shadow:none !important;
@@ -34,13 +35,22 @@
         max-width: 100% !important;
     }
 
-    .flex-embed,
-    iframe {
-        display: none;
+    h1 {
+        padding: 1em 0 0;
     }
 
-    .site-promo {
-        margin-bottom: 0;
+    .site-promo,
+    .site-section {
+        margin: 1em;
+        padding: 0;
+    }
+
+    .site-section {
+        margin: 2em 1em;
+    }
+
+    .site-section-video {
+        display: none;
     }
 
     p,
@@ -54,4 +64,5 @@
     h3 {
         page-break-after: avoid;
     }
+
 }
