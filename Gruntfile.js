@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 expand: true,
-                src: '.tmp/**/*.css',
+                src: '.tmp/**/*.css'
             }
         },
 
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
                     // Automatically open the webpage in the default browser
                     open: true
                 }
-            },
+            }
         },
 
         copy: {
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
         htmlcompressor: {
             build: {
                 files: {
-                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html',
+                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html'
                     // DO NOT minify the 404 page! (the page needs to have more
                     // than 512 bytes in order for IE to display it)
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
         htmlmin: {
             build: {
                 files: {
-                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html',
+                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html'
                     // DO NOT minify the 404 page! (the page needs to have more
                     // than 512 bytes in order for IE to display it)
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
@@ -152,15 +152,15 @@ module.exports = function (grunt) {
                     collapseBooleanAttributes: true,
                     collapseWhitespace: true,
                     removeAttributeQuotes: true,
-                    removeEmptyAttributes: true,
-                    removeEmptyElements: false,
-                    removeOptionalTags: true,
                     removeCDATASectionsFromCDATA: true,
                     removeComments: true,
                     removeCommentsFromCDATA: true,
+                    removeEmptyAttributes: true,
+                    removeEmptyElements: false,
+                    removeOptionalTags: true,
                     removeRedundantAttributes: true,
-                    useShortDoctype: true,
-                },
+                    useShortDoctype: true
+                }
             }
         },
 
