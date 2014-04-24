@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 expand: true,
-                src: '.tmp/**/*.css',
+                src: '.tmp/**/*.css'
             }
         },
 
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         connect: {
             options: {
                 hostname: 'localhost',  // → Change this to '0.0.0.0' if
-                                        // the server needs to be access
+                                        // the server needs to be accessed
                                         // from outside of the LAN
                 livereload: 35729,
                 port: 8080              // → 8080 is used as it is the official
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
                     // Automatically open the webpage in the default browser
                     open: true
                 }
-            },
+            }
         },
 
         copy: {
@@ -109,12 +109,7 @@ module.exports = function (grunt) {
             ],
             options: {
                 // Search for `.jshintrc` files relative to files being linted
-                jshintrc: true,
-
-                // List of files that will be ignored by the linter
-                ignores: [
-                    '<%= settings.dir.src %>/js/html5shiv.js'
-                ]
+                jshintrc: true
             }
         },
 
@@ -123,7 +118,7 @@ module.exports = function (grunt) {
         htmlcompressor: {
             build: {
                 files: {
-                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html',
+                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html'
                     // DO NOT minify the 404 page! (the page needs to have more
                     // than 512 bytes in order for IE to display it)
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
@@ -145,7 +140,7 @@ module.exports = function (grunt) {
         htmlmin: {
             build: {
                 files: {
-                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html',
+                    '<%= settings.dir.dist %>/index.html': '<%= settings.dir.dist %>/index.html'
                     // DO NOT minify the 404 page! (the page needs to have more
                     // than 512 bytes in order for IE to display it)
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
@@ -157,23 +152,15 @@ module.exports = function (grunt) {
                     collapseBooleanAttributes: true,
                     collapseWhitespace: true,
                     removeAttributeQuotes: true,
-                    removeEmptyAttributes: true,
-                    removeEmptyElements: false,
-                    removeOptionalTags: true,
                     removeCDATASectionsFromCDATA: true,
                     removeComments: true,
                     removeCommentsFromCDATA: true,
+                    removeEmptyAttributes: true,
+                    removeEmptyElements: false,
+                    removeOptionalTags: true,
                     removeRedundantAttributes: true,
-                    useShortDoctype: true,
+                    useShortDoctype: true
                 },
-            }
-        },
-
-        uglify: {
-            options: {
-                // Preserve all comments that start with a bang (!) or include a
-                // closure compiler style directive (@preserve @license @cc_on)
-                preserveComments: 'some'
             }
         },
 
@@ -195,7 +182,7 @@ module.exports = function (grunt) {
                 livereload: '<%= connect.options.livereload %>'
             },
             scripts: {
-                files: '<%= settings.dir.src %>/js/*.js',
+                files: '<%= jshint.files %>',
                 tasks: 'jshint',
                 options: {
                     spawn: false,
@@ -216,7 +203,6 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concat',
         'autoprefixer',
-        'uglify',
         'cssmin',
         'filerev',
         'usemin',
