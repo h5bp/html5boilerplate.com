@@ -12,13 +12,11 @@
     "noarg": true,
     "nonew": true,
     "quotmark": "single",
+    "strict": true,
     "undef": true,
     "unused": true,
-    "strict": true,
-    "trailing": true,
 
     "esnext": true,
-    "smarttabs": true,
     "sub": true,
 
     "browser": true,
