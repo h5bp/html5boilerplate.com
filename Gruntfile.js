@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         connect: {
             options: {
                 hostname: 'localhost',  // → Change this to '0.0.0.0' if
-                                        // the server needs to be access
+                                        // the server needs to be accessed
                                         // from outside of the LAN
                 livereload: 35729,
                 port: 8080              // → 8080 is used as it is the official
