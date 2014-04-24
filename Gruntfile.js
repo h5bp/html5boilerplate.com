@@ -114,8 +114,23 @@ module.exports = function (grunt) {
             }
         },
 
+        validation: {
+            files: {
+                src: '<%= settings.dir.dist %>/index.html'
+            },
+
+            // In-depth explanation of the validation options:
+            // https://github.com/praveenvijayan/grunt-html-validation#options
+            options: {
+                charset: 'utf-8',
+                doctype: 'HTML5',
+                failHard: true,
+                reset: true
+            }
+        },
+
         // `htmlcompressor` is mainly use to minify and obfuscate the inline
-        // scripts, as `htmlmin` doesn't have that feature
+        // scripts, as `htmlmin` doesn't have that feature yet
         htmlcompressor: {
             build: {
                 files: {
@@ -218,10 +233,15 @@ module.exports = function (grunt) {
         'build'
     ]);
 
-    // development task
     grunt.registerTask('dev', [
         'connect:livereload',
         'watch'
+    ]);
+
+    grunt.registerTask('test', [
+        'build',
+        'jshint',
+        'validation'
     ]);
 
 };
