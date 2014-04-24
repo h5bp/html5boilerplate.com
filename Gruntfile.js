@@ -109,12 +109,7 @@ module.exports = function (grunt) {
             ],
             options: {
                 // Search for `.jshintrc` files relative to files being linted
-                jshintrc: true,
-
-                // List of files that will be ignored by the linter
-                ignores: [
-                    '<%= settings.dir.src %>/js/html5shiv.js'
-                ]
+                jshintrc: true
             }
         },
 
@@ -169,14 +164,6 @@ module.exports = function (grunt) {
             }
         },
 
-        uglify: {
-            options: {
-                // Preserve all comments that start with a bang (!) or include a
-                // closure compiler style directive (@preserve @license @cc_on)
-                preserveComments: 'some'
-            }
-        },
-
         usemin: {
             // List of files for which to update asset references
             css: '<%= settings.dir.dist %>/css/*.css',
@@ -195,7 +182,7 @@ module.exports = function (grunt) {
                 livereload: '<%= connect.options.livereload %>'
             },
             scripts: {
-                files: '<%= settings.dir.src %>/js/*.js',
+                files: '<%= jshint.files %>',
                 tasks: 'jshint',
                 options: {
                     spawn: false,
@@ -216,7 +203,6 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concat',
         'autoprefixer',
-        'uglify',
         'cssmin',
         'filerev',
         'usemin',
