@@ -36,6 +36,7 @@
     "grunt-htmlcompressor": "^0.1.10",
     "grunt-html-validation": "^0.1.16",
     "grunt-usemin": "^2.1.1",
+    "grunt-uncss": "^0.3.3",
     "load-grunt-tasks": "^0.4.0"
   },
   "engines": {
