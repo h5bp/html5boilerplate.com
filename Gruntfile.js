@@ -93,7 +93,8 @@ module.exports = function (grunt) {
             files: {
                 src: [
                     '<%= settings.dir.dist %>/js/*.js',
-                    '<%= settings.dir.dist %>/css/*.css'
+                    '<%= settings.dir.dist %>/css/*.css',
+                    '<%= settings.dir.dist %>/img/*.png'
                 ]
             },
             options: {
