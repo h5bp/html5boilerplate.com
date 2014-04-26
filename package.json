@@ -1,26 +1,4 @@
 {
-  "author": {
-    "name": "H5BP Team",
-    "url": "http://h5bp.github.io/"
-  },
-  "bugs": {
-    "url": "https://github.com/h5bp/html5boilerplate.com/issues"
-  },
-  "contributors": [
-    {
-      "name": "Nicolas Gallagher",
-      "url": "http://nicolasgallagher.com/"
-    },
-    {
-      "name": "Cătălin Mariș",
-      "url": "https://twitter.com/alrra"
-    },
-    {
-      "name": "Hans Christian Reinl",
-      "url": "http://drublic.de/"
-    }
-  ],
-  "description": "Website for the HTML5 Boilerplate project",
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-autoprefixer": "^0.7.2",
@@ -41,18 +19,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "homepage": "http://html5boilerplate.com/",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/h5bp/html5boilerplate.com/blob/master/LICENSE.md"
-    }
-  ],
-  "name": "html5boilerplate-com",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/h5bp/html5boilerplate.com.git"
-  },
+  "private": true,
   "scripts": {
     "test": "grunt test"
   }
