@@ -5,7 +5,7 @@
 @media print {
 
     * {
-        background: transparent !important;
+        background-color: transparent !important;
         box-shadow:none !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
         text-shadow: none !important;

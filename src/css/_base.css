@@ -4,14 +4,12 @@
 
 html {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    line-height: 1.4;
+    font: 17px/1.4 'Open Sans', sans-serif;
     text-align: center;
 }
 
 body {
-    background: #2f3135;
+    background-color: #2f3135;
     background-image: url('../img/bg.png');
 }
 
@@ -32,12 +30,12 @@ a:active {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background-color: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background-color: #b3d4fc;
     text-shadow: none;
 }
 

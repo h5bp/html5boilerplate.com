@@ -31,7 +31,7 @@
 
 .site-nav {
     float: right;
-    list-style: none;
+    list-style-type: none;
     margin: 7px 0 0;
     padding: 0;
 }
@@ -75,14 +75,14 @@
  */
 
 .site-section {
-    background: #f9f9f9;
+    background-color: #f9f9f9;
     color: #333;
     overflow: hidden;
     padding: 2em 0 6em;
 }
 
 .site-section-video {
-    background: transparent;
+    background-color: transparent;
     color: #fff;
     text-align: center;
     padding: 2em 0 3em;
