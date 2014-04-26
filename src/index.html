@@ -5,7 +5,7 @@
         <title>HTML5 Boilerplate: The web's most popular front-end template</title>
         <meta name="description" content="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time reinventing the wheel.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
 
         <!-- build:css css/main.css -->
         <link rel="stylesheet" href="css/_normalize.css">
@@ -108,13 +108,13 @@
             <h2>Introduction to v4.0</h2>
             <div class="content">
                 <div class="flex-embed">
-                    <a href="https://www.youtube.com/embed/WkLO-q2wC80?autoplay=1&vq=hd720">
-                        <img src="http://i.ytimg.com/vi/WkLO-q2wC80/hqdefault.jpg" width="100%" height="100%" alt="video thumbnail">
+                    <a href="https://www.youtube.com/embed/WkLO-q2wC80?autoplay=1&amp;vq=hd720">
+                        <img src="http://i.ytimg.com/vi/WkLO-q2wC80/hqdefault.jpg" width="480" height="360" alt="video thumbnail">
                         <div class="play-btn"></div>
                     </a>
                 </div>
                 <div class="cta-option">
-                    <a class="btn btn-alt" href="https://www.youtube.com/watch?v=WkLO-q2wC80&index=2&list=PLdWHXDIdpitG0Ttvat9G5wJoqaU9cQvHh">Watch older videos!</a>
+                    <a class="btn btn-alt" href="https://www.youtube.com/watch?v=WkLO-q2wC80&amp;index=2&amp;list=PLdWHXDIdpitG0Ttvat9G5wJoqaU9cQvHh">Watch older videos!</a>
                 </div>
             </div>
         </div>
@@ -157,21 +157,21 @@
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="Report issues">
-                        <img class="icon" src="http://www.google.com/s2/favicons?domain=github.com" width="16px" height="16px" alt="GitHub logo">
+                        <img class="icon" src="http://www.google.com/s2/favicons?domain=github.com" width="16" height="16" alt="GitHub logo">
                         Report issues
                     </a></li>
                     <li><a href="http://stackoverflow.com/questions/tagged/html5boilerplate"
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="Help on Stack Overflow">
-                        <img class="icon" src="http://www.google.com/s2/favicons?domain=stackoverflow.com" width="16px" height="16px" alt="StackOverflow logo">
+                        <img class="icon" src="http://www.google.com/s2/favicons?domain=stackoverflow.com" width="16" height="16" alt="StackOverflow logo">
                         Help on Stack Overflow
                     </a></li>
                     <li><a href="http://h5bp.net"
                            data-ga-category="Outbound links"
                            data-ga-action="Footer click"
                            data-ga-label="View the showcase">
-                        <img class="icon" src="http://www.google.com/s2/favicons?domain=h5bp.net" width="16px" height="16px" alt="HTML5 logo">
+                        <img class="icon" src="http://www.google.com/s2/favicons?domain=h5bp.net" width="16" height="16" alt="HTML5 logo">
                         View the showcase
                     </a></li>
                 </ul>
@@ -209,10 +209,10 @@
                 </p>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
 
-/* global ga:false, YT:false */
+/* global ga:false */
 
 (function () {
 
@@ -276,9 +276,9 @@
 
                 (function (url) {
 
-                    // Registerd the event
+                    // Register the event
                     ga('send', 'event', category, action, label, value, {
-                        // 2. Ensure that `Outbound links` are registerd before
+                        // 2. Ensure that `Outbound links` are registered before
                         //    navigating away from the current page
                         //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
                         'hitCallback': function () {
