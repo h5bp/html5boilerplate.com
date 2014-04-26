@@ -1,5 +1,7 @@
 # [html5boilerplate.com](http://html5boilerplate.com/) source code
 
+[![Build Status](https://travis-ci.org/h5bp/html5boilerplate.com.svg)](https://travis-ci.org/h5bp/html5boilerplate.com)
+
 The HTML5 Boilerplate website is a simple static site.
 
 * The development code is in the `src` directory.
