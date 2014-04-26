@@ -1,6 +1,7 @@
 # [html5boilerplate.com](http://html5boilerplate.com/) source code
 
 [![Build Status](https://travis-ci.org/h5bp/html5boilerplate.com.svg)](https://travis-ci.org/h5bp/html5boilerplate.com)
+[![devDependency Status](https://david-dm.org/h5bp/html5boilerplate.com/dev-status.svg)](https://david-dm.org/h5bp/html5boilerplate.com#info=devDependencies)
 
 The HTML5 Boilerplate website is a simple static site.
 
