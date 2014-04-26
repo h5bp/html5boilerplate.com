@@ -283,6 +283,8 @@
 
                 (function (url) {
 
+                    var timeout = undefined;
+
                     // Register the event
                     ga('send', 'event', category, action, label, value, {
                         // 2. Ensure that `Outbound links` are registered before
@@ -290,13 +292,14 @@
                         //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
                         'hitCallback': function () {
                             if ( category === 'Outbound links' ) {
+                                timeout && clearTimeout(timeout);
                                 window.location.href = url;
                             }
                         }
                     });
 
                     // In case `hitCallback` takes to long
-                    setTimeout(function () {
+                    timeout = setTimeout(function () {
                         if ( category === 'Outbound links' ) {
                             window.location.href = url;
                         }
