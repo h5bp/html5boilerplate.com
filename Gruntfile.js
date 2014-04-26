@@ -114,6 +114,18 @@ module.exports = function (grunt) {
             }
         },
 
+        validation: {
+            options: {
+                charset: 'utf-8',
+                doctype: 'HTML5',
+                failHard: true,
+                reset: true
+            },
+            files: {
+                src: '<%= settings.dir.dist %>/index.html'
+            }
+        },
+
         // `htmlcompressor` is mainly use to minify and obfuscate the inline
         // scripts, as `htmlmin` doesn't have that feature
         htmlcompressor: {
@@ -216,6 +228,12 @@ module.exports = function (grunt) {
     // (same as `build`, as `build` will be used more often)
     grunt.registerTask('default', [
         'build'
+    ]);
+
+    grunt.registerTask('test', [
+        'build',
+        'jshint',
+        'validation'
     ]);
 
     // development task
