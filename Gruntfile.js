@@ -25,12 +25,12 @@ module.exports = function (grunt) {
 
         autoprefixer: {
             options: {
-                browsers: ['last 2 version', 'ie 6', 'ie 7', 'ie 8' ],
+                browsers: ['last 2 version', 'ie 6', 'ie 7', 'ie 8'],
                 cascade: true
             },
             dist: {
                 expand: true,
-                src: '.tmp/**/*.css'
+                src: '<%= settings.dir.dist %>/**/*.css'
             }
         },
 
@@ -38,14 +38,7 @@ module.exports = function (grunt) {
             // List of files that will be removed before the
             // build process is started
             all: [
-                '.tmp', // used by the `usemin` task
                 '<%= settings.dir.dist %>'
-            ],
-
-            // List of files no longer required after the build
-            // process is completed
-            tmp: [
-                '.tmp'  // used by the `usemin` task
             ]
         },
 
@@ -63,7 +56,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    base: '<%= settings.dir.src %>',
+                    base: '<%= settings.dir.dist %>',
 
                     // Automatically open the webpage in the default browser
                     open: true
@@ -86,6 +79,21 @@ module.exports = function (grunt) {
                     '!css/*',
                     '!js/*'
                 ]
+            }
+        },
+
+        concat: {
+            css: {
+                src: [
+                    '<%= settings.dir.src %>/css/_normalize.css',
+                    '<%= settings.dir.src %>/css/_base.css',
+                    '<%= settings.dir.src %>/css/_utils.css',
+                    '<%= settings.dir.src %>/css/_components.css',
+                    '<%= settings.dir.src %>/css/_site.css',
+                    '<%= settings.dir.src %>/css/_mq.css',
+                    '<%= settings.dir.src %>/css/_print.css'
+                ],
+                dest: '<%= settings.dir.dist %>/css/main.css'
             }
         },
 
@@ -148,7 +156,7 @@ module.exports = function (grunt) {
                     jsCompressor: 'closure',
                     type: 'html'
                     /* there is no need to enable the other
-                       obtions, `htmlmin` takes care of that */
+                       options, `htmlmin` takes care of that */
                 }
             }
         },
@@ -180,16 +188,38 @@ module.exports = function (grunt) {
             }
         },
 
-        usemin: {
-            // List of files for which to update asset references
-            css: '<%= settings.dir.dist %>/css/*.css',
-            html: '<%= settings.dir.dist %>/index.html'
+        cssmin: {
+            minify: {
+                options: {
+                    compatibility: 'ie8',
+                    keepSpecialComments: '*'
+                },
+                files: {
+                    '<%= uncss.dist.dest %>': '<%= concat.css.dest %>'
+                }
+            }
+        },
+
+        uncss: {
+            options: {
+                ignoreSheets: [/fonts.googleapis/]
+            },
+            dist: {
+                src: '<%= settings.dir.dist %>/index.html',
+                dest: '<%= concat.css.dest %>'
+            }
         },
 
         useminPrepare: {
             // List of HTML files from which to process the usemin blocks
             // https://github.com/yeoman/grunt-usemin#blocks
             html: '<%= settings.dir.src %>/index.html'
+        },
+
+        usemin: {
+            // List of files for which to update asset references
+            css: '<%= settings.dir.dist %>/css/*.css',
+            html: '<%= settings.dir.dist %>/index.html'
         },
 
         watch: {
@@ -214,17 +244,17 @@ module.exports = function (grunt) {
 
     // build task
     grunt.registerTask('build', [
-        'clean:all',
+        'clean',
         'copy',
         'useminPrepare',
         'concat',
         'autoprefixer',
+        'uncss',
         'cssmin',
         'filerev',
         'usemin',
         'htmlcompressor',
-        'htmlmin',
-        'clean:tmp'
+        'htmlmin'
     ]);
 
     // default task
@@ -234,6 +264,13 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('dev', [
+        'clean',
+        'copy',
+        'useminPrepare',
+        'concat',
+        'autoprefixer',
+        'filerev',
+        'usemin',
         'connect:livereload',
         'watch'
     ]);
