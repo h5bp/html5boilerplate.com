@@ -19,7 +19,7 @@
  */
 
 .aside {
-    background: #eee;
+    background-color: #eee;
     border: solid #e3e3e3;
     border-width: 1px 0;
     font-size: 1.125em;
@@ -64,8 +64,8 @@
  */
 
 .btn-download {
-    background: #d9750b;
-    background: linear-gradient(#f90 10%, #e76a00 100%);
+    background-color: #d9750b;
+    background-image: linear-gradient(#f90 10%, #e76a00 100%);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
                 0 1px 3px rgba(0, 0, 0, 0.2);
     border: 1px solid #995309;
@@ -74,12 +74,12 @@
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
-    background: #e0811b;
-    background: linear-gradient(#f0a100 10%, #f70 100%);
+    background-color: #e0811b;
+    background-image: linear-gradient(#f0a100 10%, #f70 100%);
 }
 
 .btn-download:active {
-    background: #cf6a00;
+    background-color: #cf6a00;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
@@ -90,7 +90,7 @@
  */
 
 .btn-alt {
-    background: #444;
+    background-color: #444;
     border-color: #222;
     box-shadow: none;
     font-size: 1.25em;
@@ -100,11 +100,11 @@
 .btn-alt:hover,
 .btn-alt:focus,
 .btn-alt:active {
-    background: #555;
+    background-color: #555;
 }
 
 .btn-download-alt:active {
-    background: #3f3f3f;
+    background-color: #3f3f3f;
 }
 
 /*
