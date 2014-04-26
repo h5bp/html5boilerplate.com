@@ -212,7 +212,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
 
-/* global ga:false, YT:false */
+/* global ga:false */
 
 (function () {
 
@@ -276,9 +276,9 @@
 
                 (function (url) {
 
-                    // Registerd the event
+                    // Register the event
                     ga('send', 'event', category, action, label, value, {
-                        // 2. Ensure that `Outbound links` are registerd before
+                        // 2. Ensure that `Outbound links` are registered before
                         //    navigating away from the current page
                         //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
                         'hitCallback': function () {
