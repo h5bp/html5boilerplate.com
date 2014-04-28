@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = function (grunt) {
 
     'use strict';
@@ -24,14 +26,12 @@ module.exports = function (grunt) {
         // ---------------------------------------------------------------------
 
         autoprefixer: {
+            // In-depth information about the options:
+            // https://github.com/nDmitry/grunt-autoprefixer#options
             options: {
-                browsers: ['last 2 version', 'ie 6', 'ie 7', 'ie 8' ],
+                browsers: [ 'last 2 version', 'ie 6', 'ie 7', 'ie 8' ],
                 cascade: true
             },
-            dist: {
-                expand: true,
-                src: '.tmp/**/*.css'
-            }
         },
 
         clean: {
@@ -48,6 +48,18 @@ module.exports = function (grunt) {
                 '.tmp'  // used by the `usemin` task
             ]
         },
+
+        cssmin: {
+            minify: {
+                // In-depth information about the options:
+                // https://github.com/GoalSmashers/clean-css#how-to-use-clean-css-programmatically
+                options: {
+                    compatibility: 'ie8',
+                    keepSpecialComments: '*'
+                }
+            }
+        },
+
 
         connect: {
             options: {
@@ -117,7 +129,7 @@ module.exports = function (grunt) {
         validation: {
             files: '<%= settings.dir.src %>/**/*.html',
 
-            // In-depth explanation of the validation options:
+            // In-depth information about the options:
             // https://github.com/praveenvijayan/grunt-html-validation#options
             options: {
                 charset: 'utf-8',
@@ -138,7 +150,7 @@ module.exports = function (grunt) {
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
                 },
 
-                // In-depth explanation of the minifier options:
+                // In-depth information about the options:
                 // http://code.google.com/p/htmlcompressor/#Compressing_HTML_and_XML_files_from_a_command_line
                 options: {
                     compressCss: true,
@@ -146,7 +158,7 @@ module.exports = function (grunt) {
                     jsCompressor: 'closure',
                     type: 'html'
                     /* there is no need to enable the other
-                       obtions, `htmlmin` takes care of that */
+                       options, `htmlmin` takes care of that */
                 }
             }
         },
@@ -160,7 +172,7 @@ module.exports = function (grunt) {
                     // http://www.404-error-page.com/404-error-page-too-short-problem-microsoft-ie.shtml
                 },
 
-                // HTML minifier options in-depth explanation:
+                // In-depth information about the options:
                 // http://perfectionkills.com/experimenting-with-html-minifier/#options
                 options: {
                     collapseBooleanAttributes: true,
@@ -178,6 +190,14 @@ module.exports = function (grunt) {
             }
         },
 
+        uncss: {
+            // In-depth information about the options:
+            // https://github.com/addyosmani/grunt-uncss#options
+            options: {
+                ignoreSheets: [/fonts.googleapis/]
+            }
+        },
+
         usemin: {
             // List of files for which to update asset references
             css: '<%= settings.dir.dist %>/css/*.css',
@@ -187,7 +207,68 @@ module.exports = function (grunt) {
         useminPrepare: {
             // List of HTML files from which to process the usemin blocks
             // https://github.com/yeoman/grunt-usemin#blocks
-            html: '<%= settings.dir.src %>/index.html'
+            html: '<%= settings.dir.src %>/index.html',
+
+            // Workflow configurations:
+            // https://github.com/yeoman/grunt-usemin#flow
+            options: {
+                flow: {
+                    html: {
+                        steps: {
+                            css: [
+
+                                {
+                                    // Note: this task will also take care of concatenation
+                                    name: 'uncss',
+                                    createConfig: function (context, block) {
+
+                                        // Set the location where this task will created
+                                        // its files, so that the next task knows where
+                                        // to take them from
+                                        context.outFiles = [ block.dest ];
+
+                                        // Task configurations
+                                        return {
+                                            files: [{
+                                                dest: path.join(context.outDir, block.dest),
+
+                                                // List of HTML files that UnCSS will use
+                                                // TODO: find a better solution
+                                                src: [ '<%= settings.dir.src %>/index.html' ]
+                                            }]
+                                        };
+                                    }
+                                },
+
+                                // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                                {
+                                    name: 'autoprefixer',
+                                    createConfig: function (context, block) {
+
+                                        context.outFiles = [ block.dest ];
+
+                                        // Task configuration
+                                        return {
+                                            files: [{
+                                                src: path.join(context.inDir, block.dest),
+                                                dest: path.join(context.outDir, block.dest),
+                                            }]
+                                        };
+                                    }
+                                },
+
+                                // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                                'cssmin'
+
+                            ]
+
+                        },
+                        post: {}
+                    }
+                }
+            }
         },
 
         watch: {
@@ -210,12 +291,11 @@ module.exports = function (grunt) {
     // | Main Tasks                                                            |
     // -------------------------------------------------------------------------
 
-    // build task
     grunt.registerTask('build', [
         'clean:all',
         'copy',
         'useminPrepare',
-        'concat',
+        'uncss',
         'autoprefixer',
         'cssmin',
         'filerev',
