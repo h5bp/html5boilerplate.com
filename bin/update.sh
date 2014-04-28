@@ -53,13 +53,14 @@ print_success() {
 }
 
 remove_unneeded_content() {
-    # Remove all content except for the `dist/` and `.git/` directories,
+    # Remove all files except for the `.git/`, `.travis.yml` and `dist/`,
     # and then move the content from within the `dist/` directory in the
     # root of the project
     find . -maxdepth 1 \
             ! -name "." \
-            ! -name "dist" \
             ! -name ".git" \
+            ! -name ".travis.yml" \
+            ! -name "dist" \
             -exec rm -rf {} \; \
         && cp -r dist/ . \
         && rm -rf dist/
@@ -67,7 +68,7 @@ remove_unneeded_content() {
 }
 
 update_content() {
-    npm install > /dev/null \
+    npm -q install > /dev/null \
         && grunt > /dev/null
     print_result $? "Update content"
 }
