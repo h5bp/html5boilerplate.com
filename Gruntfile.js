@@ -115,9 +115,7 @@ module.exports = function (grunt) {
         },
 
         validation: {
-            files: {
-                src: '<%= settings.dir.dist %>/index.html'
-            },
+            files: '<%= settings.dir.src %>/**/*.html',
 
             // In-depth explanation of the validation options:
             // https://github.com/praveenvijayan/grunt-html-validation#options
@@ -239,9 +237,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('test', [
-        'build',
+        'validation',
         'jshint',
-        'validation'
+        'build'
     ]);
 
 };
