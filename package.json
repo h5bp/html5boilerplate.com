@@ -10,7 +10,6 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^0.2.1",
-    "grunt-html-validation": "^0.1.16",
     "grunt-htmlcompressor": "^0.1.10",
     "grunt-uncss": "^0.3.3",
     "grunt-usemin": "^2.1.1",
