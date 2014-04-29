@@ -11,10 +11,11 @@ commit_and_push_changes() {
     # the branch intended for the server with the temporary branch, push the
     # changes upstream, and switch back to the original branch
     git add -A \
+        && git reset -- ".gitignore" \
         && git commit -m "Yo server! This content is for you! 💜" > /dev/null \
         && git branch -M "$tmpBranch" "$serverBranch" > /dev/null \
         && git push -fq origin "$serverBranch" > /dev/null \
-        && git checkout -q "$currentBranch"
+        && git checkout -fq "$currentBranch"
     print_result $? "Commit and push changes"
 }
 
@@ -53,14 +54,15 @@ print_success() {
 }
 
 remove_unneeded_content() {
-    # Remove all files except for the `.git/`, `.travis.yml` and `dist/`,
-    # and then move the content from within the `dist/` directory in the
-    # root of the project
+    # Remove the unneded file, and then move the content from
+    # within the `dist/` directory in the root of the project
     find . -maxdepth 1 \
             ! -name "." \
             ! -name ".git" \
+            ! -name ".gitignore" \
             ! -name ".travis.yml" \
             ! -name "dist" \
+            ! -name "node_modules" \
             -exec rm -rf {} \; \
         && cp -r dist/ . \
         && rm -rf dist/
