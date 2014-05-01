@@ -1,4 +1,4 @@
-# Apache Server Configs v2.2.0 | MIT License
+# Apache Server Configs | MIT License
 # https://github.com/h5bp/server-configs-apache
 
 # ##############################################################################
@@ -81,19 +81,19 @@ ErrorDocument 404 /404.html
     AddType application/font-woff                       woff
     AddType application/vnd.ms-fontobject               eot
 
-    # Browsers usually ignore the font MIME types and simply sniff the bytes
-    # to figure out the font type.
+    # Browsers usually ignore the font MIME types and simply sniff
+    # the bytes to figure out the font type.
     # http://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
 
-    # Chrome however, shows a warning if any other MIME types are used for
-    # the following fonts.
+    # Chrome however, shows a warning if any other MIME types are
+    # used for the following fonts.
 
     AddType application/x-font-ttf                      ttc ttf
     AddType font/opentype                               otf
 
     # Make SVGZ fonts work on the iPad.
     # https://twitter.com/FontSquirrel/status/14855840545
-    AddType     image/svg+xml                           svgz
+    AddType     image/svg+xml                           svg svgz
     AddEncoding gzip                                    svgz
 
   # Other
@@ -104,7 +104,7 @@ ErrorDocument 404 /404.html
     AddType application/x-xpinstall                     xpi
     AddType application/xml                             atom rdf rss xml
     AddType image/webp                                  webp
-    AddType image/x-icon                                cur
+    AddType image/x-icon                                cur ico
     AddType text/cache-manifest                         appcache manifest
     AddType text/vtt                                    vtt
     AddType text/x-component                            htc
@@ -159,6 +159,47 @@ AddDefaultCharset utf-8
 # ##############################################################################
 
 # ------------------------------------------------------------------------------
+# | Clickjacking                                                               |
+# ------------------------------------------------------------------------------
+
+# Protect website against clickjacking and other types of attacks, by informing
+# browsers not to display the web page content in any frame.
+
+# https://cure53.de/xfo-clickjacking.pdf
+# http://tools.ietf.org/html/rfc7034
+# http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx
+# https://www.owasp.org/index.php/Clickjacking
+
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "DENY"
+    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+        Header unset X-Frame-Options
+    </FilesMatch>
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | Content Security Policy (CSP)                                              |
+# ------------------------------------------------------------------------------
+
+# Mitigate the risk of cross-site scripting and other content-injection attacks.
+
+# http://html5rocks.com/en/tutorials/security/content-security-policy
+# http://w3.org/TR/CSP
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "\
+default-src 'none';\
+font-src http://themes.googleusercontent.com;\
+frame-src http://platform.twitter.com;\
+img-src 'self' http://i.ytimg.com www.google-analytics.com www.google.com;\
+script-src 'self' 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
+style-src 'self' http://fonts.googleapis.com"
+    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+        Header unset Content-Security-Policy
+    </FilesMatch>
+</IfModule>
+
+# ------------------------------------------------------------------------------
 # | File access                                                                |
 # ------------------------------------------------------------------------------
 
@@ -184,7 +225,7 @@ AddDefaultCharset utf-8
 
 # IMPORTANT: Update the `<FilesMatch>` regular expression from below to include
 # any files that might end up on the production server and can expose sensitive
-# information about your website. These files may include: configuration files,
+# information about the website. These files may include: configuration files,
 # files that contain metadata about the project (e.g.: project dependencies),
 # build scripts, etc..
 
@@ -198,6 +239,22 @@ AddDefaultCharset utf-8
     </IfModule>
 
 </FilesMatch>
+
+# ------------------------------------------------------------------------------
+# | Reducing MIME type security risks                                          |
+# ------------------------------------------------------------------------------
+
+# Prevent some browsers from MIME-sniffing the response.
+
+# http://www.slideshare.net/hasegawayosuke/owasp-hasegawa
+# http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-v-comprehensive-protection.aspx
+# http://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
+# http://mimesniff.spec.whatwg.org/
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
 
 # ##############################################################################
 # # WEB PERFORMANCE                                                            #
