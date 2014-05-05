@@ -31,7 +31,7 @@ module.exports = function (grunt) {
             options: {
                 browsers: [ 'last 2 version', 'ie 6', 'ie 7', 'ie 8' ],
                 cascade: true
-            },
+            }
         },
 
         clean: {
@@ -142,15 +142,11 @@ module.exports = function (grunt) {
                     collapseWhitespace: true,
                     minifyJS: true,
                     removeAttributeQuotes: true,
-                    removeCDATASectionsFromCDATA: true,
                     removeComments: true,
-                    removeCommentsFromCDATA: true,
                     removeEmptyAttributes: true,
-                    removeEmptyElements: false,
                     removeOptionalTags: true,
-                    removeRedundantAttributes: true,
-                    useShortDoctype: true
-                },
+                    removeRedundantAttributes: true
+                }
             }
         },
 
@@ -216,7 +212,7 @@ module.exports = function (grunt) {
                                         return {
                                             files: [{
                                                 src: path.join(context.inDir, block.dest),
-                                                dest: path.join(context.outDir, block.dest),
+                                                dest: path.join(context.outDir, block.dest)
                                             }]
                                         };
                                     }
@@ -244,7 +240,7 @@ module.exports = function (grunt) {
                 files: '<%= jshint.files %>',
                 tasks: 'jshint',
                 options: {
-                    spawn: false,
+                    spawn: false
                 }
             }
         }
