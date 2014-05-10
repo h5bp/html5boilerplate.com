@@ -187,6 +187,8 @@ AddDefaultCharset utf-8
 # http://w3.org/TR/CSP
 
 <IfModule mod_headers.c>
+
+    # All HTML pages
     Header set Content-Security-Policy "\
 default-src 'none';\
 font-src http://themes.googleusercontent.com;\
@@ -194,6 +196,15 @@ frame-src http://platform.twitter.com;\
 img-src 'self' http://i.ytimg.com www.google-analytics.com www.google.com;\
 script-src 'self' 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
 style-src 'self' http://fonts.googleapis.com"
+
+    # The 404 page
+    <FilesMatch "404.html">
+        # Replace previous set header
+        Header set Content-Security-Policy "\
+default-src 'none';\
+style-src 'unsafe-inline'"
+    </FilesMatch>
+
     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
         Header unset Content-Security-Policy
     </FilesMatch>
