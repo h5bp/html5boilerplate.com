@@ -55,10 +55,9 @@
  */
 
 .icon {
-    float: left;
-    margin-right: 5px;
-    position: relative;
-    top: 5px;
+    height: 100%;
+    margin: -3px 2px 0 0;
+    vertical-align: middle;
 }
 
 /*
