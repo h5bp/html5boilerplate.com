@@ -114,3 +114,32 @@
 .star {
     color: #e08524;
 }
+
+
+/*
+ * Logo's sprite
+ */
+
+.sprite {
+    background-image: url("../img/logos-sprite.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-github-logo {
+    background-position: -5px -5px;
+    width: 16px;
+    height: 16px;
+}
+
+.sprite-html5-logo {
+    background-position: -5px -31px;
+    width: 16px;
+    height: 16px;
+}
+
+.sprite-stackoverflow-logo {
+    background-position: -5px -57px;
+    width: 16px;
+    height: 16px;
+}
