@@ -193,7 +193,7 @@ AddDefaultCharset utf-8
 default-src 'none';\
 font-src http://themes.googleusercontent.com;\
 frame-src http://platform.twitter.com;\
-img-src 'self' http://i.ytimg.com www.google-analytics.com www.google.com;\
+img-src 'self' http://i.ytimg.com www.google-analytics.com;\
 script-src 'self' 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
 style-src 'self' http://fonts.googleapis.com"
 
