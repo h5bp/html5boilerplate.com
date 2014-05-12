@@ -50,7 +50,7 @@ module.exports = function (grunt) {
         },
 
         cssmin: {
-            minify: {
+            generated: {
                 // In-depth information about the options:
                 // https://github.com/GoalSmashers/clean-css#how-to-use-clean-css-programmatically
                 options: {
