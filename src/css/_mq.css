@@ -30,7 +30,8 @@
         font-size: 14px;
     }
 
-    .last-update, .site-footer {
+    .last-update,
+    .site-footer {
         font-size: 1em;
     }
 }

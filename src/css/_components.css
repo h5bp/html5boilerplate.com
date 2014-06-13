@@ -121,25 +121,20 @@
  */
 
 .sprite {
-    background-image: url("../img/logos-sprite.png");
-    background-repeat: no-repeat;
+    background: url('../img/logos-sprite.png') no-repeat;
     display: inline-block;
+    width: 16px;
+    height: 16px;
 }
 
 .sprite-github-logo {
     background-position: -5px -5px;
-    width: 16px;
-    height: 16px;
 }
 
 .sprite-html5-logo {
     background-position: -5px -31px;
-    width: 16px;
-    height: 16px;
 }
 
 .sprite-stackoverflow-logo {
     background-position: -5px -57px;
-    width: 16px;
-    height: 16px;
 }

@@ -87,7 +87,7 @@
 }
 
 .flex-embed .play-btn {
-    background: url('../img/play-btn.png');
+    background: url('../img/play-btn.png') no-repeat;
     height: 77px;
     left: 50%;
     margin: -38px 0 0 -38px;
@@ -115,7 +115,7 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";   /* 1 */
+    content: ' ';   /* 1 */
     display: table; /* 2 */
 }
 
