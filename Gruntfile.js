@@ -96,8 +96,6 @@ module.exports = function (grunt) {
                     // except: files from the `css/` and `js/` directory
                     // (other tasks will handle the copying of these files)
                     '!css/*',
-                    '!js/*',
-
                     '!img/old/*'
                 ]
             }
@@ -106,9 +104,10 @@ module.exports = function (grunt) {
         filerev: {
             files: {
                 src: [
-                    '<%= settings.dir.dist %>/js/*.js',
                     '<%= settings.dir.dist %>/css/*.css',
-                    '<%= settings.dir.dist %>/img/*.png'
+                    '<%= settings.dir.dist %>/img/*.png',
+                    '<%= settings.dir.dist %>/js/*.js',
+                    '!<%= settings.dir.dist %>/js/jquery*.min.js'
                 ]
             },
             options: {
@@ -120,7 +119,8 @@ module.exports = function (grunt) {
         jshint: {
             files: [
                 'Gruntfile.js',
-                '<%= settings.dir.src %>/js/*.js'
+                '<%= settings.dir.src %>/js/*.js',
+                '!<%= settings.dir.src %>/js/*.min.js'
             ],
             options: {
                 // Search for `.jshintrc` files relative to files being linted
