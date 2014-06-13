@@ -284,7 +284,7 @@
 
                 (function (url) {
 
-                    var timeout = undefined;
+                    var timeout;
 
                     // Register the event
                     ga('send', 'event', category, action, label, value, {
@@ -293,7 +293,9 @@
                         //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
                         'hitCallback': function () {
                             if ( category === 'Outbound links' ) {
-                                timeout && clearTimeout(timeout);
+                                if ( timeout ) {
+                                    clearTimeout(timeout);
+                                }
                                 window.location.href = url;
                             }
                         }
