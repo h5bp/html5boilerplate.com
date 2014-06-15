@@ -3,12 +3,15 @@
 
 # TEAM
 
+    Mathias Bynens -- @mathias
+    Cătălin Mariș -- @alrra
+    Hans Christian Reinl -- @drublic
+
+# PAST TEAM MEMBERS:
+
     Nicolas Gallagher -- @necolas
     Paul Irish -- @paul_irish
     Divya Manian -- @divya
-    Mathias Bynens -- @mathias
-    Hans Christian Reinl -- @drublic
-    Catalin Maris -- @alrra
 
 # THANKS
 
