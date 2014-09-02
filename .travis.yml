@@ -6,3 +6,5 @@ before_script:
 branches:
     except:
         - server-content
+git:
+  depth: 10
