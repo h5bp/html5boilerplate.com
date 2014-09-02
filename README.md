@@ -38,8 +38,7 @@ correct by running `grunt test` and then checking the output.
 
 ## Deploy
 
-The server will periodically pull from the `server-content` branch,
-so in order to update the site, the `server-content` branch will also need to be
-updated. This can be done simply by runing `npm run update` or by executing the
-[`update`](https://github.com/h5bp/html5boilerplate.com/tree/master/bin/update.sh)
-script.
+This step is done automatically: the server will
+[periodically pull](https://github.com/h5bp/html5boilerplate.com/wiki) from
+the `server-content` branch, branch that will be updated by Travis CI every
+time a commit is pushed to the `master` branch and the tests pass.

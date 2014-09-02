@@ -2,12 +2,23 @@
 # in this file, please see the Travis CI documentation:
 # http://docs.travis-ci.com
 
+after_success:
+  - npm run update-site
+
 before_script:
   - travis_retry npm install -g grunt-cli
 
 branches:
   except:
     - server-content
+
+env:
+  global:
+    - GH_REPO: "h5bp/html5boilerplate.com"
+    - GH_SERVER_BRANCH: "server-content"
+    - GH_USER_NAME: "H5BP"
+    - secure: "EAfnMNcXAPVoHE0gFI8PhVNY9eWUs0021HRjHYviy3CtiMwZdpNxlJQC5qNgoF5DfevySHuMxB/iyTaL4jmj5jR7Lime7B/LmJ3M856KyEYg5rQo2rHGPtKnW7pZEYuIIvI+s+NNGbWpMA+86uoNh7AfVnQeW84/nYB/GSubg+I="
+    - secure: "UVGF8C59cBLsPVHesmoV0w4gUYAAOqxCCggs5X1IqMCANC+SJBp0hj/vgGE07zojTRYG+JZqTzrWyPG4fwJq86W+LDh3K1ykZBpX3lBR2Xd+ehsjRraICgRKGj77dboHyCrEmNTeocG+7ybvlVD+nWiSDlRSNQ667VSBTX0UYTw="
 
 git:
   depth: 10

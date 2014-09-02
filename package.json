@@ -20,6 +20,6 @@
   "private": true,
   "scripts": {
     "test": "grunt test",
-    "update": "bin/update.sh"
+    "update-site": "bin/update_server_branch.sh"
   }
 }
