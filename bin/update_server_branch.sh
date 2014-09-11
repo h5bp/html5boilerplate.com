@@ -7,6 +7,8 @@
 #
 # See also: https://github.com/h5bp/html5boilerplate.com/wiki
 
+declare repository_url=""
+
 commit_and_push_changes() {
 
     # Commit and push changes upstream, overwriting
@@ -18,9 +20,13 @@ commit_and_push_changes() {
         && git add -A \
         && git commit --message "Hey server, this content is for you! 💜" > /dev/null \
         && git checkout -b "${GH_SERVER_BRANCH}" 2> /dev/null \
-        && git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REPO}.git" ${GH_SERVER_BRANCH}
+        && git push --force --quiet "$repository_url" ${GH_SERVER_BRANCH}
     print_result $? "Commit and push changes"
 
+}
+
+get_repository_url() {
+    printf "https://${GH_TOKEN}@$(git config --get remote.origin.url | sed 's/git:\/\///g')"
 }
 
 print_error() {
@@ -75,9 +81,13 @@ main() {
     # changes were made in the `master` branch
 
     if [ "$TRAVIS_BRANCH" == "master" ]; then
+
+        repository_url="$(get_repository_url)"
+
         update_content
         remove_unneeded_files
         commit_and_push_changes
+
     fi
 
 }

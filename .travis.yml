@@ -14,7 +14,6 @@ branches:
 
 env:
   global:
-    - GH_REPO: "h5bp/html5boilerplate.com"
     - GH_SERVER_BRANCH: "server-content"
     - secure: "FpwKgXOGYIAh6LuRWfbX4ezFpIynoEa0kR2zvXMBYgXJzE9DLuavcXkJF8FPGeDmveSCXFdS6QPNhgyQB4fzDG625CdFYxpObJMgRBDoO71LYSpr6NPSsS6n82KU+1gisG1FPqXCGKd9yDekIHNb+AosCbhYEeLfq4yFSaE/J2g="
 
