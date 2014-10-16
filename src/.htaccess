@@ -226,7 +226,7 @@ AddDefaultCharset utf-8
     # All HTML pages
     Header set Content-Security-Policy "\
 default-src 'none';\
-font-src http://themes.googleusercontent.com;\
+font-src http://fonts.gstatic.com;\
 frame-src http://platform.twitter.com;\
 img-src 'self' http://i.ytimg.com www.google-analytics.com;\
 script-src 'self' 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
