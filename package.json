@@ -9,10 +9,10 @@
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-filerev": "^2.0.0",
+    "grunt-filerev": "^2.1.1",
     "grunt-uncss": "^0.3.6",
-    "grunt-usemin": "^2.4.0",
-    "load-grunt-tasks": "^0.6.0"
+    "grunt-usemin": "^2.5.1",
+    "load-grunt-tasks": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
