@@ -3,7 +3,8 @@
 # http://docs.travis-ci.com
 
 after_success:
-  - npm run update-site
+  - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/master/update_server_branch.sh" |
+      bash /dev/stdin "server-content" "Hey server, this content is for you!"
 
 before_script:
   - travis_retry npm install -g grunt-cli
@@ -14,7 +15,6 @@ branches:
 
 env:
   global:
-    - GH_SERVER_BRANCH: "server-content"
     - secure: "FpwKgXOGYIAh6LuRWfbX4ezFpIynoEa0kR2zvXMBYgXJzE9DLuavcXkJF8FPGeDmveSCXFdS6QPNhgyQB4fzDG625CdFYxpObJMgRBDoO71LYSpr6NPSsS6n82KU+1gisG1FPqXCGKd9yDekIHNb+AosCbhYEeLfq4yFSaE/J2g="
 
 git:
