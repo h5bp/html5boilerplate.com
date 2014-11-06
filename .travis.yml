@@ -3,8 +3,8 @@
 # http://docs.travis-ci.com
 
 after_success:
-  - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/master/update_server_branch.sh" |
-      bash /dev/stdin "server-content" "Hey server, this content is for you!"
+  - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.2.0/update_site_branch.sh" |
+      bash /dev/stdin "dist" "server-content" "Hey server, this content is for you!"
 
 before_script:
   - travis_retry npm install -g grunt-cli

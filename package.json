@@ -19,7 +19,7 @@
   },
   "private": true,
   "scripts": {
-    "test": "grunt test",
-    "update-site": "bin/update_server_branch.sh"
+    "build": "grunt build",
+    "test": "grunt test"
   }
 }
