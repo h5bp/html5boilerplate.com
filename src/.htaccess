@@ -228,9 +228,9 @@ AddDefaultCharset utf-8
 default-src 'none';\
 font-src http://fonts.gstatic.com;\
 frame-src http://platform.twitter.com;\
-img-src 'self' http://i.ytimg.com www.google-analytics.com;\
-script-src 'self' 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
-style-src 'self' http://fonts.googleapis.com"
+img-src data: http://i.ytimg.com www.google-analytics.com;\
+script-src 'unsafe-inline' www.google-analytics.com http://ajax.googleapis.com http://platform.twitter.com;\
+style-src 'unsafe-inline' http://fonts.googleapis.com"
 
     # The 404 page
     <FilesMatch "404.html">
