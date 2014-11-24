@@ -6,9 +6,6 @@ after_success:
   - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.4.0/update_site_branch.sh" |
       bash /dev/stdin "dist" "gh-pages" "Hey server, this content is for you! [skip ci]"
 
-before_script:
-  - travis_retry npm install -g grunt-cli
-
 env:
   global:
     - secure: "TZRZZdTAsLIl0V1TFzXcPH5WIeJj57Ii+Qv+zosGmWRAKMxdFaqMsLJGDjXrtcZSVdrkwH/E5Vr6rqGfRsks4ec1IgGRIk5nLhGE+SN7UAUaXGyH5ivjLolJpoNRz5XOBr22+zExa97+wlP8XQWowqkL8eVquk0xAcs39qOKKpE="
