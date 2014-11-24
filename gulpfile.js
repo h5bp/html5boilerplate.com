@@ -26,7 +26,7 @@ var browserSyncOptions = {
 
 var supportedBrowsers = [
     'last 2 versions',
-    'ie >= 6',
+    'ie > 8',
     '> 1%'
 ];
 
@@ -99,7 +99,6 @@ gulp.task('lint:js', function () {
     return gulp.src([
         'gulpfile.js',
         dirs.dist + '/js/**/*.js',
-        '!' + dirs.dist + '/js/jquery*.js'
     ]).pipe(reload({ stream: true, once: true }))
       .pipe(plugins.jshint())
       .pipe(plugins.jshint.reporter('jshint-stylish'))
