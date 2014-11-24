@@ -16,8 +16,7 @@
     "gulp-useref": "^1.0.2",
     "jshint-stylish": "^1.0.0",
     "rework-suit": "^4.0.0",
-    "run-sequence": "^1.0.2",
-    "suitcss": "^0.6.0"
+    "run-sequence": "^1.0.2"
   },
   "h5bp-configs": {
     "directories": {
