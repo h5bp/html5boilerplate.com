@@ -1,4 +1,4 @@
-@import "./_normalize.css";
+@import "normalize.css";
 @import "./_base.css";
 @import "./_utils.css";
 @import "./_components.css";
