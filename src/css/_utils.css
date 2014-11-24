@@ -51,16 +51,6 @@
 }
 
 /*
- * Icons
- */
-
-.icon {
-    height: 100%;
-    margin: -3px 2px 0 0;
-    vertical-align: middle;
-}
-
-/*
  * Flexible multi-media embeds
  */
 
@@ -87,17 +77,19 @@
 }
 
 .flex-embed .play-btn {
-    background: url('../img/play-btn.png') no-repeat;
-    height: 77px;
+    background: url("../img/play-btn.svg");
+    height: 150px;
     left: 50%;
-    margin: -38px 0 0 -38px;
+    margin-left:-75px;
+    margin-top:-75px;
     position: absolute;
     top: 50%;
-    width: 77px;
+    transition: 1s;
+    width: 150px;
 }
 
 .flex-embed:hover .play-btn {
-    opacity: .7;
+    opacity: 0.5;
 }
 
 /*

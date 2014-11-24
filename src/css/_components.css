@@ -117,24 +117,25 @@
 
 
 /*
- * Logo's sprite
+ * Icon
  */
 
-.sprite {
-    background: url('../img/logos-sprite.png') no-repeat;
+.Icon {
     display: inline-block;
-    width: 16px;
     height: 16px;
+    margin: -3px 1px 0 0;
+    vertical-align: middle;
+    width: 16px;
 }
 
-.sprite-github-logo {
-    background-position: -5px -5px;
+.Icon--github {
+    background-image: url("../img/github.svg");
 }
 
-.sprite-html5-logo {
-    background-position: -5px -31px;
+.Icon--html5 {
+    background-image: url("../img/html5.svg");
 }
 
-.sprite-stackoverflow-logo {
-    background-position: -5px -57px;
+.Icon--stackoverflow {
+    background-image: url("../img/stackoverflow.svg");
 }

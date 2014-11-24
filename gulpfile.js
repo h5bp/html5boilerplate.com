@@ -21,10 +21,13 @@ var browserSyncOptions = {
     logPrefix: 'H5BP',
     notify: false,
     port: 8080
-
 };
 
 var supportedBrowsers = [
+
+    // In-depth information about the options:
+    // https://github.com/postcss/autoprefixer#browsers
+
     'last 2 versions',
     'ie > 8',
     '> 1%'
@@ -98,9 +101,8 @@ gulp.task('generate:main.css', function () {
 gulp.task('lint:js', function () {
     return gulp.src([
         'gulpfile.js',
-        dirs.dist + '/js/**/*.js',
-    ]).pipe(reload({ stream: true, once: true }))
-      .pipe(plugins.jshint())
+        dirs.src + '/js/**/*.js',
+    ]).pipe(plugins.jshint())
       .pipe(plugins.jshint.reporter('jshint-stylish'))
       .pipe(plugins.if(!browserSync.active, plugins.jshint.reporter('fail')));
 });
@@ -149,10 +151,20 @@ gulp.task('serve', ['generate:main.css'], function () {
     browserSyncOptions.server = dirs.src;
     browserSync(browserSyncOptions);
 
-    gulp.watch(['gulpfile.js'], ['lint:js']);
-    gulp.watch([dirs.src + '/**/*.html', dirs.src + '/img/**/*'], reload);
-    gulp.watch([dirs.src + '/css/**/*.css', '!' + dirs.src + '/css/main.css'], ['generate:main.css']);
-    gulp.watch([dirs.src + '/js/**/*.js'], reload);
+    gulp.watch([
+        dirs.src + '/**/*.html'
+    ], reload);
+
+    gulp.watch([
+        dirs.src + '/css/**/*.css',
+        dirs.src + '/img/**/*',
+        '!' + dirs.src + '/css/main.css'
+    ], ['generate:main.css']);
+
+    gulp.watch([
+        dirs.src + '/js/**/*.js',
+        'gulpfile.js'
+    ], ['lint:js', reload]);
 
 });
 
