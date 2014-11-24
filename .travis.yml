@@ -4,7 +4,7 @@
 
 after_success:
   - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.4.0/update_site_branch.sh" |
-      bash /dev/stdin "dist" "server-content" "Hey server, this content is for you! [skip ci]"
+      bash /dev/stdin "dist" "gh-pages" "Hey server, this content is for you! [skip ci]"
 
 before_script:
   - travis_retry npm install -g grunt-cli
