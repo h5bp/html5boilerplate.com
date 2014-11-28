@@ -1,225 +1,209 @@
 # Apache Server Configs | MIT License
 # https://github.com/h5bp/server-configs-apache
 
-# ##############################################################################
-# # ERRORS                                                                     #
-# ##############################################################################
+# ######################################################################
+# # ERRORS                                                             #
+# ######################################################################
 
-# ------------------------------------------------------------------------------
-# | 404 error prevention                                                       |
-# ------------------------------------------------------------------------------
-
-# Disable the pattern matching based on filenames.
-
-# This setting prevents Apache from returning a 404 error as the result
-# of a rewrite when the directory with the same name does not exist.
-
-# http://httpd.apache.org/docs/current/content-negotiation.html#multiviews
-# http://www.webmasterworld.com/apache/3808792.htm
-
-Options -MultiViews
-
-# ------------------------------------------------------------------------------
-# | Custom error messages / pages                                              |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Custom error messages/pages                                        |
+# ----------------------------------------------------------------------
 
 # Customize what Apache returns to the client in case of an error.
-# http://httpd.apache.org/docs/current/mod/core.html#errordocument
+# https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
 ErrorDocument 404 /404.html
 
+# ----------------------------------------------------------------------
+# | Error prevention                                                   |
+# ----------------------------------------------------------------------
 
-# ##############################################################################
-# # INTERNET EXPLORER                                                          #
-# ##############################################################################
+# Disable the pattern matching based on filenames.
+#
+# This setting prevents Apache from returning a 404 error as the result
+# of a rewrite when the directory with the same name does not exist.
+#
+# https://httpd.apache.org/docs/current/content-negotiation.html#multiviews
 
-# ------------------------------------------------------------------------------
-# | Better website experience                                                  |
-# ------------------------------------------------------------------------------
+Options -MultiViews
 
-# Force Internet Explorer to render pages in the highest available
-# mode in the various cases when it may not.
+
+# ######################################################################
+# # INTERNET EXPLORER                                                  #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Document modes                                                     |
+# ----------------------------------------------------------------------
+
+# Force Internet Explorer 8/9/10 to render pages in the highest mode
+# available in the various cases when it may not.
+#
 # https://hsivonen.fi/doctype/#ie8
+#
+# (!) Starting with Internet Explorer 11, document modes are deprecated.
+#
+# http://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
+# http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11.aspx
 
 <IfModule mod_headers.c>
+
     Header set X-UA-Compatible "IE=edge"
-    # `mod_headers` cannot match based on the content-type, however, this header
-    # should be send only for HTML documents and not for the other resources
-    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+
+    <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|woff2?|xloc|xml|xpi)$">
         Header unset X-UA-Compatible
     </FilesMatch>
+
 </IfModule>
 
 
-# ##############################################################################
-# # MEDIA TYPES AND CHARACTER ENCODINGS                                        #
-# ##############################################################################
+# ######################################################################
+# # MEDIA TYPES AND CHARACTER ENCODINGS                                #
+# ######################################################################
 
-# ------------------------------------------------------------------------------
-# | Media types                                                                |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Media types                                                        |
+# ----------------------------------------------------------------------
 
-# Serve resources with the proper media types (formerly known as MIME types).
-# http://www.iana.org/assignments/media-types/media-types.xhtml
+# Serve resources with the proper media types (f.k.a. MIME types).
+#
+# https://www.iana.org/assignments/media-types/media-types.xhtml
+# https://httpd.apache.org/docs/current/mod/mod_mime.html#addtype
 
 <IfModule mod_mime.c>
 
-  # Audio
-    AddType audio/mp4                                   f4a f4b m4a
-    AddType audio/ogg                                   oga ogg opus
-
   # Data interchange
     AddType application/json                            json map
-    AddType application/ld+json                         jsonld
+    AddType application/xml                             atom rdf rss xml
 
   # JavaScript
-    # Normalize to standard type.
-    # http://tools.ietf.org/html/rfc4329#section-7.2
     AddType application/javascript                      js
 
-  # Manifest files
-
-    # If you are providing a web application manifest file (see the
-    # specification: http://w3c.github.io/manifest/), it is recommended
-    # that you serve it with the `application/manifest+json` media type.
-    #
-    # Because the web application manifest file doesn't have its own
-    # unique file extension, you can set its media type either by matching:
-    #
-    # 1) the exact location of the file (this can be done using a directive
-    #    such as `<Location>`, but it will NOT work in the `.htaccess` file,
-    #    so you will have to do it in the main server configuration file or
-    #    inside of a `<VirtualHost>` container)
-    #
-    #    e.g.:
-    #
-    #       <Location "/.well-known/manifest.json">
-    #           AddType application/manifest+json               json
-    #       </Location>
-    #
-    # 2) the filename (this can be problematic as you will need to ensure
-    #    that you don't have any other file with the same name as the one
-    #    you gave to your web application manifest file)
-    #
-    #    e.g.:
-    #
-    #       <Files "manifest.json">
-    #           AddType application/manifest+json               json
-    #       </Files>
-
-    AddType application/x-web-app-manifest+json         webapp
-    AddType text/cache-manifest                         appcache manifest
-
-  # Video
-    AddType video/mp4                                   f4v f4p m4v mp4
-    AddType video/ogg                                   ogv
-    AddType video/webm                                  webm
-    AddType video/x-flv                                 flv
+  # Media files
+    AddType image/svg+xml                               svg svgz
+    AddType image/x-icon                                cur ico
 
   # Web fonts
     AddType application/font-woff                       woff
+    AddType application/font-woff2                      woff2
     AddType application/vnd.ms-fontobject               eot
 
     # Browsers usually ignore the font media types and simply sniff
     # the bytes to figure out the font type.
-    # http://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
-
-    # Chrome however, shows a warning if any other media types are used
-    # for the following two font types.
+    # https://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
+    #
+    # However, Blink and WebKit based browsers will show a warning
+    # in the console if the following font types are served with any
+    # other media types.
 
     AddType application/x-font-ttf                      ttc ttf
     AddType font/opentype                               otf
 
-    AddType image/svg+xml                               svg svgz
-
-  # Other
-    AddType application/octet-stream                    safariextz
-    AddType application/x-chrome-extension              crx
-    AddType application/x-opera-extension               oex
-    AddType application/x-xpinstall                     xpi
-    AddType application/xml                             atom rdf rss xml
-    AddType image/webp                                  webp
-    AddType image/x-icon                                cur ico
-    AddType text/vtt                                    vtt
-    AddType text/x-component                            htc
-    AddType text/x-vcard                                vcf
-
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Character encodings                                                        |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Character encodings                                                |
+# ----------------------------------------------------------------------
 
-# Set `UTF-8` as the character encoding for all resources served with
-# the media type of `text/html` or `text/plain`.
+# Serve all resources labeled as `text/html` or `text/plain`
+# with the media type `charset` parameter set to `UTF-8`.
+#
+# https://httpd.apache.org/docs/current/mod/core.html#adddefaultcharset
+
 AddDefaultCharset utf-8
 
-# Set `UTF-8` as the character encoding for other certain resources.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Serve the following file types with the media type `charset`
+# parameter set to `UTF-8`.
+#
+# https://httpd.apache.org/docs/current/mod/mod_mime.html#addcharset
+
 <IfModule mod_mime.c>
-    AddCharset utf-8 .atom .css .js .json .jsonld .rss .vtt .webapp .xml
+    AddCharset utf-8 .atom \
+                     .css \
+                     .js \
+                     .json \
+                     .rdf \
+                     .rss \
+                     .xml
 </IfModule>
 
 
-# ##############################################################################
-# # URL REWRITES                                                               #
-# ##############################################################################
+# ######################################################################
+# # REWRITES                                                           #
+# ######################################################################
 
-# ------------------------------------------------------------------------------
-# | Rewrite engine                                                             |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Rewrite engine                                                     |
+# ----------------------------------------------------------------------
 
-# Turn on the rewrite engine and enable the `FollowSymLinks` option
-# (this is necessary in order for the following directives to work).
+# (1) Turn on the rewrite engine (this is necessary in order for
+#     the `RewriteRule` directives to work).
+#     https://httpd.apache.org/docs/current/mod/mod_rewrite.html#RewriteEngine
+#
+# (2) Enable the `FollowSymLinks` option if it isn't already.
+#     https://httpd.apache.org/docs/current/mod/core.html#options
 
 <IfModule mod_rewrite.c>
-    Options +FollowSymlinks
+
+    # (1)
     RewriteEngine On
+
+    # (2)
+    Options +FollowSymlinks
+
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Suppressing the `www.` at the beginning of URLs                            |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Suppressing the `www.` at the beginning of URLs                    |
+# ----------------------------------------------------------------------
 
-# Rewrite www.example.com → example.com
+# Rewrite `www.example.com` → `example.com`
 
 <IfModule mod_rewrite.c>
+    RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
     RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 
-# ##############################################################################
-# # SECURITY                                                                   #
-# ##############################################################################
+# ######################################################################
+# # SECURITY                                                           #
+# ######################################################################
 
-# ------------------------------------------------------------------------------
-# | Clickjacking                                                               |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Clickjacking                                                       |
+# ----------------------------------------------------------------------
 
 # Protect website against clickjacking and other types of attacks by
 # informing browsers not to display the web page content in any frame.
-
-# https://cure53.de/xfo-clickjacking.pdf
-# http://tools.ietf.org/html/rfc7034
+#
+# https://cure53.de/xfo-clickjacking.pdf.
+# https://tools.ietf.org/html/rfc7034
 # http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx
 # https://www.owasp.org/index.php/Clickjacking
 
 <IfModule mod_headers.c>
+
     Header set X-Frame-Options "DENY"
-    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|tt[cf]|vcf|vtt|webapp|web[mp]|woff|xml|xpi)$">
+
+    <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|woff2?|xloc|xml|xpi)$">
         Header unset X-Frame-Options
     </FilesMatch>
+
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Content Security Policy (CSP)                                              |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Content Security Policy (CSP)                                      |
+# ----------------------------------------------------------------------
 
-# Mitigate the risk of cross-site scripting and other content-injection attacks.
-
-# http://html5rocks.com/en/tutorials/security/content-security-policy
-# http://w3.org/TR/CSP
+# Mitigate the risk of cross-site scripting and other content-injection
+# attacks.
+#
+# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+# http://www.w3.org/TR/CSP11/
 
 <IfModule mod_headers.c>
 
@@ -246,9 +230,9 @@ style-src 'unsafe-inline'"
 
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | File access                                                                |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | File access                                                        |
+# ----------------------------------------------------------------------
 
 # Block access to directories without a default document.
 
@@ -256,11 +240,26 @@ style-src 'unsafe-inline'"
     Options -Indexes
 </IfModule>
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Block access to hidden files and directories.
+# Block access to all hidden files and directories with the exception of
+# the visible content from within the `/.well-known/` hidden directory.
+#
+# These types of files usually contain user preferences or the preserved
+# state of an utility, and can include rather private places like, for
+# example, the `.git` or `.svn` directories.
+#
+# The `/.well-known/` directory represents the standard (RFC 5785) path
+# prefix for "well-known locations" (e.g.: `/.well-known/manifest.json`,
+# `/.well-known/keybase.txt`), and therefore, access to its visible
+# content should not be blocked.
+#
+# https://www.mnot.net/blog/2010/04/07/well-known
+# https://tools.ietf.org/html/rfc5785
 
 <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
     RewriteCond %{SCRIPT_FILENAME} -d [OR]
     RewriteCond %{SCRIPT_FILENAME} -f
     RewriteRule "(^|/)\." - [F]
@@ -269,12 +268,12 @@ style-src 'unsafe-inline'"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Block access to files that can expose sensitive information.
-
-# IMPORTANT: Update the `<FilesMatch>` regular expression from below to include
-# any files that might end up on the production server and can expose sensitive
-# information about the website. These files may include: configuration files,
-# files that contain metadata about the project (e.g.: project dependencies),
-# build scripts, etc..
+#
+# (!) Update the `<FilesMatch>` regular expression from below to
+# include any files that might end up on your production server and
+# can expose sensitive information about your website. These files may
+# include: configuration files, files that contain metadata about the
+# project (e.g.: project dependencies), build scripts, etc..
 
 <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
     <IfModule !mod_authz_core.c>
@@ -284,33 +283,80 @@ style-src 'unsafe-inline'"
     </IfModule>
 </FilesMatch>
 
-# ------------------------------------------------------------------------------
-# | Reducing MIME type security risks                                          |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Reducing MIME type security risks                                  |
+# ----------------------------------------------------------------------
 
 # Prevent some browsers from MIME-sniffing the response.
-
+#
 # http://www.slideshare.net/hasegawayosuke/owasp-hasegawa
 # http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-v-comprehensive-protection.aspx
 # http://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
-# http://mimesniff.spec.whatwg.org/
+# https://mimesniff.spec.whatwg.org/
 
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
 </IfModule>
 
+# ----------------------------------------------------------------------
+# | Reflected Cross-Site Scripting (XSS) attacks                       |
+# ----------------------------------------------------------------------
 
-# ##############################################################################
-# # WEB PERFORMANCE                                                            #
-# ##############################################################################
+# (1) Try to re-enable the cross-site scripting (XSS) filter built
+#     into most web browsers.
+#
+#     The filter is usually enabled by default, but in some cases it
+#     may be disabled by the user. However, in Internet Explorer for
+#     example, it can be re-enabled just by sending the
+#     `X-XSS-Protection` header with the value of `1`.
+#
+# (2) Prevent web browsers from rendering the web page if a potential
+#     reflected (a.k.a non-persistent) XSS attack is detected by the
+#     filter.
+#
+#     By default, if the filter is enabled and browsers detect a
+#     reflected XSS attack, they will attempt to block the attack
+#     by making the smallest possible modifications to the returned
+#     web page.
+#
+#     Unfortunately, in some browsers (e.g.: Internet Explorer),
+#     this default behavior may allow the XSS filter to be exploited,
+#     thereby, it's better to inform browsers to prevent the rendering
+#     of the page altogether, instead of attempting to modify it.
+#
+#     http://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
+#
+# (!) Do not rely on the XSS filter to prevent XSS attacks! Ensure that
+#     you are taking all possible measures to prevent XSS attacks, the
+#     most obvious being: validating and sanitizing your website's inputs.
+#
+# http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-iv-the-xss-filter.aspx
+# http://blogs.msdn.com/b/ieinternals/archive/2011/01/31/controlling-the-internet-explorer-xss-filter-with-the-x-xss-protection-http-header.aspx
+# https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
 
-# ------------------------------------------------------------------------------
-# | Compression                                                                |
-# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+
+    #                           (1)    (2)
+    Header set X-XSS-Protection "1; mode=block"
+
+    <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|woff2?|xloc|xml|xpi)$">
+        Header unset X-XSS-Protection
+    </FilesMatch>
+
+</IfModule>
+
+
+# ######################################################################
+# # WEB PERFORMANCE                                                    #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Compression                                                        |
+# ----------------------------------------------------------------------
 
 <IfModule mod_deflate.c>
 
-    # Force compression for mangled headers.
+    # Force compression for mangled `Accept-Encoding` request headers
     # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
 
     <IfModule mod_setenvif.c>
@@ -320,63 +366,53 @@ style-src 'unsafe-inline'"
         </IfModule>
     </IfModule>
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Mark certain resources as been compressed in order to:
-    #
-    #  1) prevent Apache from recompressing them
-    #  2) ensure that they are served with the
-    #     `Content-Encoding: gzip` HTTP response header
-
-    <IfModule mod_mime.c>
-        AddEncoding gzip          svgz
-    </IfModule>
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # Compress all output labeled with one of the following media types.
+    # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
 
-    AddOutputFilterByType DEFLATE application/atom+xml \
-                                  application/javascript \
-                                  application/json \
-                                  application/ld+json \
-                                  application/manifest+json \
-                                  application/rss+xml \
-                                  application/vnd.ms-fontobject \
-                                  application/x-font-ttf \
-                                  application/x-web-app-manifest+json \
-                                  application/xhtml+xml \
-                                  application/xml \
-                                  font/opentype \
-                                  image/svg+xml \
-                                  image/x-icon \
-                                  text/cache-manifest \
-                                  text/css \
-                                  text/html \
-                                  text/plain \
-                                  text/vtt \
-                                  text/x-component \
-                                  text/xml
+    AddOutputFilterByType DEFLATE "application/javascript" \
+                                  "application/json" \
+                                  "application/manifest+json" \
+                                  "application/vnd.ms-fontobject" \
+                                  "application/x-font-ttf" \
+                                  "application/xml" \
+                                  "font/opentype" \
+                                  "image/svg+xml" \
+                                  "image/vnd.microsoft.icon" \
+                                  "text/css" \
+                                  "text/html" \
+                                  "text/plain"
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    # Map the following filename extensions to the specified
+    # encoding type in order to make Apache serve the file types
+    # with the appropriate `Content-Encoding` response header
+    # (do note that this will NOT make Apache compress them!).
+    #
+    # If these files types would be served without an appropriate
+    # `Content-Enable` response header, client applications (e.g.:
+    # browsers) wouldn't know that they first need to uncompress
+    # the response, and thus, wouldn't be able to understand the
+    # content.
+    #
+    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
+
+    <IfModule mod_mime.c>
+        AddEncoding gzip              svgz
+    </IfModule>
 
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Content transformation                                                     |
-# ------------------------------------------------------------------------------
-
-# Prevent mobile network providers from modifying the website's content.
-# http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.5.
-
-# <IfModule mod_headers.c>
-#     Header merge Cache-Control "no-transform"
-# </IfModule>
-
-# ------------------------------------------------------------------------------
-# | ETags                                                                      |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | ETags                                                              |
+# ----------------------------------------------------------------------
 
 # Remove `ETags` as resources are sent with far-future expires headers.
+#
 # https://developer.yahoo.com/performance/rules.html#etags
+# https://tools.ietf.org/html/rfc7232#section-2.3
 
 # `FileETag None` doesn't work in all cases.
 <IfModule mod_headers.c>
@@ -385,61 +421,33 @@ style-src 'unsafe-inline'"
 
 FileETag None
 
-# ------------------------------------------------------------------------------
-# | Expires headers                                                            |
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# | Expires headers                                                    |
+# ----------------------------------------------------------------------
 
 # Serve resources with far-future expires headers.
+# https://httpd.apache.org/docs/current/mod/mod_expires.html
 
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 year"
+    ExpiresDefault                                      "access plus 1 month"
 
   # CSS
     ExpiresByType text/css                              "access plus 1 year"
 
   # Data interchange
     ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
 
   # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/x-icon                          "access plus 1 week"
 
-  # HTML components (HTCs)
-    ExpiresByType text/x-component                      "access plus 1 month"
-
   # HTML
     ExpiresByType text/html                             "access plus 1 hour"
 
   # JavaScript
     ExpiresByType application/javascript                "access plus 1 year"
-
-  # Manifest files
-    ExpiresByType application/manifest+json             "access plus 1 year"
-    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
-    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
-  # Media
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
-
-  # Web feeds
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
-
-  # Web fonts
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
-    ExpiresByType font/opentype                         "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
 
 </IfModule>

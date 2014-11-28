@@ -56,7 +56,7 @@ gulp.task('copy', [
 
 gulp.task('copy:html', function () {
     var assets = plugins.useref.assets();
-    return gulp.src('src/index.html')
+    return gulp.src(dirs.src + '/index.html')
         .pipe(assets)
         .pipe(assets.restore())
         .pipe(plugins.useref())
@@ -84,17 +84,17 @@ gulp.task('copy:misc', function () {
 });
 
 gulp.task('generate:main.css', function () {
-    return gulp.src('src/css/index.css')
+    return gulp.src(dirs.src + '/css/index.css')
             .pipe(plugins.rework(reworkSuit({
                 browsers: supportedBrowsers
             })))
             .pipe(plugins.cssBase64())
             .pipe(plugins.uncss({
-                html: ['src/index.html']
+                html: [dirs.src + '/index.html']
             }))
             .pipe(plugins.csso())
             .pipe(plugins.rename('main.css'))
-            .pipe(gulp.dest('src/css/'))
+            .pipe(gulp.dest(dirs.src + '/css/'))
             .pipe(reload({ stream: true }));
 });
 
