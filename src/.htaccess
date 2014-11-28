@@ -368,6 +368,74 @@ style-src 'unsafe-inline'"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    # Map the following filename extensions to the specified
+    # encoding type in order to make Apache serve the file types
+    # with the appropriate `Content-Encoding` response header
+    # (do note that this will NOT make Apache compress them!).
+    #
+    # If these files types would be served without an appropriate
+    # `Content-Enable` response header, client applications (e.g.:
+    # browsers) wouldn't know that they first need to uncompress
+    # the response, and thus, wouldn't be able to understand the
+    # content.
+    #
+    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
+
+    <IfModule mod_mime.c>
+        AddEncoding gzip              gz
+        AddEncoding gzip              svgz
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    # Make Apache serve the Zopfli compressed version of the requested
+    # file if it exists on the server and the browser supports `gzip`
+    # compression
+
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        ReWriteCond %{HTTP:accept-encoding} gzip
+        ReWriteCond %{REQUEST_FILENAME} !\.gz$
+        RewriteCond %{REQUEST_FILENAME}.gz -f
+        RewriteRule ^(.+)\.(css|html|ico|js|svg|txt|xml)$ $1.$2.gz [L]
+    </IfModule>
+
+    <FilesMatch "\.css\.gz$">
+        ForceType text/css
+    </FilesMatch>
+
+    <FilesMatch "\.html\.gz$">
+        ForceType text/html
+    </FilesMatch>
+
+    <FilesMatch "\.ico\.gz$">
+        ForceType image/x-icon
+    </FilesMatch>
+
+    <FilesMatch "\.js\.gz$">
+        ForceType application/javascript
+    </FilesMatch>
+
+    <FilesMatch "\.svg\.gz$">
+        ForceType image/svg+xml
+    </FilesMatch>
+
+    <FilesMatch "\.txt\.gz$">
+        ForceType text/plain
+    </FilesMatch>
+
+    <FilesMatch "\.xml\.gz$">
+        ForceType application/xml
+    </FilesMatch>
+
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(css|html|ico|js|svg|txt|xml)\.gz$">
+            Header merge Vary "Accept-Encoding"
+        </FilesMatch>
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
     # Compress all output labeled with one of the following media types.
     # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
 
@@ -383,25 +451,6 @@ style-src 'unsafe-inline'"
                                   "text/css" \
                                   "text/html" \
                                   "text/plain"
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    # Map the following filename extensions to the specified
-    # encoding type in order to make Apache serve the file types
-    # with the appropriate `Content-Encoding` response header
-    # (do note that this will NOT make Apache compress them!).
-    #
-    # If these files types would be served without an appropriate
-    # `Content-Enable` response header, client applications (e.g.:
-    # browsers) wouldn't know that they first need to uncompress
-    # the response, and thus, wouldn't be able to understand the
-    # content.
-    #
-    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
-
-    <IfModule mod_mime.c>
-        AddEncoding gzip              svgz
-    </IfModule>
 
 </IfModule>
 

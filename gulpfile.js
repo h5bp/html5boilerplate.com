@@ -130,6 +130,12 @@ gulp.task('minify:html', function () {
 
 });
 
+gulp.task('zopfli', function() {
+    gulp.src(dirs.dist + '/**/*.{css,html,ico,js,svg,txt,xml}')
+        .pipe(plugins.zopfli())
+        .pipe(gulp.dest(dirs.dist));
+});
+
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
@@ -141,6 +147,7 @@ gulp.task('build', function (done) {
         'copy',
         'minify:html',
         'clean:after',
+        'zopfli',
     done);
 });
 

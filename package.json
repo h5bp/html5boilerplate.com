@@ -14,6 +14,7 @@
     "gulp-smoosher": "0.0.7",
     "gulp-uncss": "^0.5.1",
     "gulp-useref": "^1.0.2",
+    "gulp-zopfli": "^0.1.1",
     "jshint-stylish": "^1.0.0",
     "normalize.css": "^3.0.2",
     "rework-suit": "^4.0.0",
