@@ -6,26 +6,28 @@
 
     var document = window.document;
 
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    // | Google Universal Analytics                                     |
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // -----------------------------------------------------------------
+    // | Google Universal Analytics                                    |
+    // -----------------------------------------------------------------
 
     function handleClickEvent(e) {
 
         var action;
         var category;
         var label;
-        var $target = hasAttr(e.target, 'data-ga-action');
+        var target = hasAttr(e.target, 'data-ga-action');
         var url;
         var value;
 
-        if ( $target !== undefined ) {
+        var openInNewTab = false;
 
-            action = $target.getAttribute('data-ga-action') || undefined;     // required
-            category = $target.getAttribute('data-ga-category') || undefined; // required
-            label = $target.getAttribute('data-ga-label') || undefined;
-            url = $target.getAttribute('href');
-            value = parseInt($target.getAttribute('data-ga-value'), 10) || undefined;
+        if ( target !== undefined ) {
+
+            action = target.getAttribute('data-ga-action') || undefined;     // required
+            category = target.getAttribute('data-ga-category') || undefined; // required
+            label = target.getAttribute('data-ga-label') || undefined;
+            url = target.getAttribute('href');
+            value = parseInt(target.getAttribute('data-ga-value'), 10) || undefined;
 
             if ( ga !== undefined &&
                  category !== undefined &&
@@ -35,22 +37,37 @@
                 // they are registered with Google Analytics
                 e.preventDefault();
 
-                // 1. Ensure that `Download` links work as intended
+                // 1. Ensure that links which need to be open in a new
+                //    tab, are so.
+                //
+                //  These include:
+                //
+                //  * `Download` links
+                //
+                //     The `Download` links aren't directing the user
+                //     away from the page, so using `window.location.href`
+                //     in this case may cause unwanted problems.
+                //
+                //     E.g: If the user clicks on a `Download` link
+                //     before all the page's content is downloaded, the
+                //     browser will abort any remaining downloads. This
+                //     happens because the browser considers that it no
+                //     longer needs to download anything from current
+                //     page and should start downloading the next page
+                //     and its content.
+                //
+                //  * Outbound links that are opened by the user using
+                //    ctrl+click (or cmd+click on Macintosh)
 
-                //    The `Download` links aren't directing the user away
-                //    from the page. So, using `window.location.href` in this
-                //    case may cause unwanted problems. E.g: If the user clicks
-                //    on a `Download` link before all the page's content is
-                //    downloaded, the browser will abort any remaining downloads.
-                //    This happens because the browser considers that it no
-                //    longer needs to download anything from this page, and
-                //    should start downloading the next page and its content.
+                if ( category === 'Download' ||
+                     e.ctrlKey === true ||
+                     e.metaKey === true ) {
 
-                //    Also, the following is done here, and not in `hitCallback`,
-                //    so that it prevents the browser popup blocking behavior
-
-                if ( category === 'Download' ) {
-                    window.open(url);
+                    openInNewTab = true;
+                    window.open(url);  // This is done here, and not
+                                       // in `hitCallback` so that it
+                                       // prevents the browser popup
+                                       // blocking behavior
                 }
 
                 (function (url) {
@@ -59,22 +76,25 @@
 
                     // Register the event
                     ga('send', 'event', category, action, label, value, {
-                        // 2. Ensure that `Outbound links` are registered before
-                        //    navigating away from the current page
+
+                        // 2. Ensure that outbound links are registered
+                        //    before navigating away from the current page
                         //    https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#hitCallback
+
                         'hitCallback': function () {
-                            if ( category === 'Outbound links' ) {
+                            if ( openInNewTab === false ) {
                                 if ( timeout !== undefined ) {
                                     clearTimeout(timeout);
                                 }
-                                window.location.href = url;
+                                window.location = url;
                             }
                         }
+
                     });
 
                     // In case `hitCallback` takes too long
                     timeout = setTimeout(function () {
-                        if ( category === 'Outbound links' ) {
+                        if ( openInNewTab === false ) {
                             window.location.href = url;
                         }
                     }, 1000);
@@ -99,7 +119,7 @@
 
     // More information about the Google Universal Analytics:
     // https://developers.google.com/analytics/devguides/collection/analyticsjs/
-    // http://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics
+    // https://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics
 
     function loadGoogleAnalytics() {
 
@@ -116,13 +136,13 @@
 
         // Track events
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-        document.querySelector('body').addEventListener('click', handleClickEvent);
+        window.document.addEventListener('click', handleClickEvent);
 
     }
 
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // -----------------------------------------------------------------
     // | Twitter                                                       |
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // -----------------------------------------------------------------
 
     // Tweet Buttons
     // https://dev.twitter.com/docs/tweet-button
