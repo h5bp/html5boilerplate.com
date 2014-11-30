@@ -72,7 +72,7 @@
                         }
                     });
 
-                    // In case `hitCallback` takes to long
+                    // In case `hitCallback` takes too long
                     timeout = setTimeout(function () {
                         if ( category === 'Outbound links' ) {
                             window.location.href = url;
