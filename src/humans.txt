@@ -20,6 +20,6 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Gulp, HTML5 Boilerplate, jQuery, Normalize.css
+    Gulp, HTML5 Boilerplate, Normalize.css
 
     Source: https://github.com/h5bp/html5boilerplate.com
