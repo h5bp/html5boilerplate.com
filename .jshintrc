@@ -20,7 +20,6 @@
     "sub": true,
 
     "browser": true,
-    "jquery": true,
     "node": true
 
 }
