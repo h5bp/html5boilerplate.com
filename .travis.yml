@@ -4,7 +4,8 @@
 
 after_success:
   - curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.5.1/update_site_branch.sh" |
-         bash -s -- --commit-message "Hey server, this content is for you! [skip ci]"
+         bash -s -- --commands "npm install && npm run build"
+                    --commit-message "Hey server, this content is for you! [skip ci]"
                     --directory "dist"
                     --distribution-branch "gh-pages"
                     --source-branch "master"
