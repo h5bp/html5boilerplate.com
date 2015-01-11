@@ -169,9 +169,28 @@ AddDefaultCharset utf-8
 </IfModule>
 
 
+
+# ----------------------------------------------------------------------
+# | Forcing `https://`                                                 |
+# ----------------------------------------------------------------------
+
+# Redirect from the `http://` to the `https://` version of the URL.
+# We're using Flexible-SSL from Cloudflare so our configuration is funny.
+#   https://support.cloudflare.com/hc/en-us/articles/200170536-How-do-I-redirect-HTTPS-traffic-with-Flexible-SSL-and-Apache-
+#   https://support.cloudflare.com/hc/en-us/articles/200170416-What-do-the-SSL-options-Off-Flexible-SSL-Full-SSL-Full-SSL-Strict-mean-
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+    
+
 # ######################################################################
 # # SECURITY                                                           #
 # ######################################################################
+
+
 
 # ----------------------------------------------------------------------
 # | Clickjacking                                                       |
