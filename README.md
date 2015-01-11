@@ -35,6 +35,8 @@ is correct by running `npm run test` and then checking the output.
 
 ## Deploy
 
+It's being hosted on Paul's dreamhost VPS (even tho our branch is gh-pages). It has a cloudflare frontend, as well.
+
 This step is done automatically: the server will
 [periodically pull](https://github.com/h5bp/html5boilerplate.com/wiki) from
 the `gh-pages` branch, branch that will be updated by Travis CI every time a
