@@ -8,7 +8,7 @@ after_success:
   # https://github.com/travis-ci/travis-ci/issues/929
 
   - python travis_after_all.py
-  - export $(cat .to_export_back)
+  - export $(cat .to_export_back) &> /dev/null
   - |
 
       # If all the tests pass in all the runtimes, make Travis
@@ -20,6 +20,7 @@ after_success:
           # Clean up helper files
           rm -rf travis_after_all.py .to_export_back && \
 
+          # Update the content from the `gh-pages` branch
           curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.6.1/update_site_branch.sh" |
               bash -s -- --commands "npm install && npm run build" \
                          --commit-message "Hey server, this content is for you! [skip ci]" \
@@ -53,7 +54,7 @@ env:
     #   * GitHub access token, see:
     #     https://help.github.com/articles/creating-an-access-token-for-command-line-use/
 
-    - secure: "TZRZZdTAsLIl0V1TFzXcPH5WIeJj57Ii+Qv+zosGmWRAKMxdFaqMsLJGDjXrtcZSVdrkwH/E5Vr6rqGfRsks4ec1IgGRIk5nLhGE+SN7UAUaXGyH5ivjLolJpoNRz5XOBr22+zExa97+wlP8XQWowqkL8eVquk0xAcs39qOKKpE="
+    - secure: "IIrfJ320jqEwlK7jy+ddKH+YMTg3UQv4gnpd7Yov1PO5Phh9LA34/Md+tpJdPvxZWCH0dMGZIgAPz6iTk+21Y/6dq+88uSaOSplC2zGI5rM3+kZNnvboz6mRy3xraBa1iXrRuEc2SJ3OOLFP0Xea1CXS33ygTJlJfeDdBbWg7sY="
 
 git:
   depth: 10
