@@ -1,6 +1,7 @@
 'use strict';
 
 var browserSync = require('browser-sync');
+var del = require('del');
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var reworkSuit = require('rework-suit');
@@ -38,11 +39,11 @@ var supportedBrowsers = [
 // ---------------------------------------------------------------------
 
 gulp.task('clean:before', function (done) {
-    require('del')([dirs.dist], done);
+    del([dirs.dist], done);
 });
 
 gulp.task('clean:after', function (done) {
-    require('del')([
+    del([
         dirs.dist + '/{css,css/**}',
         dirs.dist + '/{img,/img/**}',
         dirs.dist + '/{js,/js/**}'
