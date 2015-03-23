@@ -43,7 +43,7 @@ Options -MultiViews
 #
 # (!) Starting with Internet Explorer 11, document modes are deprecated.
 #
-# http://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
+# https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
 # http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11.aspx
 
 <IfModule mod_headers.c>
@@ -284,6 +284,20 @@ style-src 'unsafe-inline'"
 </FilesMatch>
 
 # ----------------------------------------------------------------------
+# | HTTP Strict Transport Security (HSTS)                              |
+# ----------------------------------------------------------------------
+#
+# Force client-side SSL redirection.
+#
+# http://www.html5rocks.com/en/tutorials/security/transport-layer-security/
+# https://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1
+# http://blogs.msdn.com/b/ieinternals/archive/2014/08/18/hsts-strict-transport-security-attacks-mitigations-deployment-https.aspx
+
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=16070400"
+</IfModule>
+
+# ----------------------------------------------------------------------
 # | Reducing MIME type security risks                                  |
 # ----------------------------------------------------------------------
 
@@ -291,7 +305,7 @@ style-src 'unsafe-inline'"
 #
 # http://www.slideshare.net/hasegawayosuke/owasp-hasegawa
 # http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-v-comprehensive-protection.aspx
-# http://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
+# https://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
 # https://mimesniff.spec.whatwg.org/
 
 <IfModule mod_headers.c>
@@ -324,7 +338,7 @@ style-src 'unsafe-inline'"
 #     thereby, it's better to inform browsers to prevent the rendering
 #     of the page altogether, instead of attempting to modify it.
 #
-#     http://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
+#     https://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
 #
 # (!) Do not rely on the XSS filter to prevent XSS attacks! Ensure that
 #     you are taking all possible measures to prevent XSS attacks, the
