@@ -58,6 +58,7 @@ gulp.task('copy', [
 gulp.task('copy:html', function () {
     var assets = plugins.useref.assets();
     return gulp.src(dirs.src + '/index.html')
+        .pipe(plugins.replace(/{{h5bp-version}}/g, pkg.version))
         .pipe(assets)
         .pipe(assets.restore())
         .pipe(plugins.useref())
