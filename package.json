@@ -19,7 +19,7 @@
     "gulp-zopfli": "^1.0.0",
     "jshint-stylish": "^1.0.1",
     "normalize.css": "^3.0.2",
-    "rework-suit": "^4.0.0",
+    "rework-npm": "^1.0.0",
     "run-sequence": "^1.0.2"
   },
   "h5bp-configs": {
