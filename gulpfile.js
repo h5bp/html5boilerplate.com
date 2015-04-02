@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var del = require('del');
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
-var reworkSuit = require('rework-suit');
+var reworkNpm = require('rework-npm');
 var runSequence = require('run-sequence');  // Temporary solution until Gulp 4
                                             // https://github.com/gulpjs/gulp/issues/355
 
@@ -87,7 +87,7 @@ gulp.task('copy:misc', function () {
 
 gulp.task('generate:main.css', function () {
     return gulp.src(dirs.src + '/css/index.css')
-            .pipe(plugins.rework(reworkSuit(
+            .pipe(plugins.rework(reworkNpm(
             )))
             .pipe(plugins.autoprefixer({browsers: supportedBrowsers}))
             .pipe(plugins.cssBase64())
