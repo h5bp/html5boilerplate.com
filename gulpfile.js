@@ -87,9 +87,10 @@ gulp.task('copy:misc', function () {
 
 gulp.task('generate:main.css', function () {
     return gulp.src(dirs.src + '/css/index.css')
-            .pipe(plugins.rework(reworkSuit({
+            .pipe(plugins.rework(reworkSuit()))
+            .pipe(plugins.autoprefixer({
                 browsers: supportedBrowsers
-            })))
+            }))
             .pipe(plugins.cssBase64())
             .pipe(plugins.uncss({
                 html: [dirs.src + '/index.html']
