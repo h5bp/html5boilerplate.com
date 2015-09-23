@@ -3,40 +3,21 @@
 # http://docs.travis-ci.com
 
 after_success:
-
-  # Temporary workaround for:
-  # https://github.com/travis-ci/travis-ci/issues/929
-
-  - python travis_after_all.py
-  - export $(cat .to_export_back) &> /dev/null
   - |
 
-      # If all the tests pass in all the runtimes, make Travis
-      # automatically download and execute the following script
-
-      if [ "$BUILD_LEADER" == "YES" ]; then
-        if [ "$BUILD_AGGREGATE_STATUS" == "others_succeeded" ]; then \
-
-          # Clean up helper files
-          rm -rf travis_after_all.py .to_export_back && \
-
-          # Update the content from the `gh-pages` branch
-          curl -sSL "https://raw.githubusercontent.com/h5bp-bot/scripts/0.6.1/update_site_branch.sh" |
-              bash -s -- --commands "npm install && npm run build" \
-                         --commit-message "Hey server, this content is for you! [skip ci]" \
-                         --directory "dist" \
-                         --distribution-branch "gh-pages" \
-                         --source-branch "master";
-
-        fi
-      fi
+      # Automatically update the content from the `gh-pages` branch
+      $(npm bin)/update-branch --commands "npm run build" \
+                               --commit-message "Hey server, this content is for you! [skip ci]" \
+                               --directory "dist" \
+                               --distribution-branch "gh-pages" \
+                               --source-branch "master";
 
 env:
   global:
 
     # The `secure` key contains three encrypted environment variables
     # (GH_TOKEN, GH_USER_EMAIL and GH_USER_NAME), the values of which
-    # are used by the scripts that are automatically executed by Travis.
+    # are used by automation script from the `after_success` step.
     #
     # Note: The `secure` key will only work for this repository, so if
     # you create your own fork, you will need to generate your own key:
@@ -62,10 +43,6 @@ git:
 language: node_js
 
 node_js:
-  - "iojs"
   - "0.12"
-
-script:
-  - curl -sSLo travis_after_all.py https://raw.github.com/dmakhno/travis_after_all/master/travis_after_all.py
 
 sudo: false

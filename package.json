@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@alrra/travis-scripts": "^1.1.1",
     "browser-sync": "^2.6.9",
     "del": "^1.0.0",
     "gulp": "^3.8.10",
