@@ -58,10 +58,13 @@
                 //
                 //  * Outbound links that are opened by the user using
                 //    ctrl+click (or cmd+click on Macintosh)
+                //
+                //  * Center button clicks
 
                 if ( category === 'Download' ||
                      e.ctrlKey === true ||
-                     e.metaKey === true ) {
+                     e.metaKey === true ||
+                     e.which === 2 ) {
 
                     openInNewTab = true;
                     window.open(url);  // This is done here, and not
