@@ -39,7 +39,9 @@ var supportedBrowsers = [
 // ---------------------------------------------------------------------
 
 gulp.task('clean:before', function (done) {
-    del([dirs.dist], done);
+    del([dirs.dist]).then(function () {
+        done();
+    });
 });
 
 gulp.task('clean:after', function (done) {
@@ -47,7 +49,9 @@ gulp.task('clean:after', function (done) {
         dirs.dist + '/{css,css/**}',
         dirs.dist + '/{img,/img/**}',
         dirs.dist + '/{js,/js/**}'
-    ], done);
+    ]).then(function () {
+        done();
+    });
 });
 
 gulp.task('copy', [
