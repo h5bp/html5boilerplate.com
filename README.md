@@ -12,8 +12,7 @@ The HTML5 Boilerplate website is a simple static site:
 
 ## Setup
 
-1. Install [`io.js`](https://iojs.org/en/index.html) /
-   [`Node.js`](https://nodejs.org/download/) and
+1. Install [`Node.js`](https://nodejs.org/) and
    [`npm`](http://blog.npmjs.org/post/85484771375/how-to-install-npm).
 2. Run `npm install`.
 
