@@ -16,7 +16,7 @@
     "gulp-rework": "^1.0.2",
     "gulp-smoosher": "0.0.8",
     "gulp-uncss": "^1.0.0",
-    "gulp-useref": "^1.1.2",
+    "gulp-useref": "^2.0.0",
     "gulp-zopfli": "^1.0.0",
     "jshint-stylish": "^2.0.1",
     "normalize.css": "^3.0.2",
