@@ -9,7 +9,7 @@
     "gulp-csso": "^1.0.0",
     "gulp-htmlmin": "^1.2.0",
     "gulp-if": "^2.0.0",
-    "gulp-jshint": "^1.9.4",
+    "gulp-jshint": "^2.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-rename": "^1.2.0",
     "gulp-replace": "^0.5.3",
