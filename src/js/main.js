@@ -10,6 +10,18 @@
     // | Google Universal Analytics                                    |
     // -----------------------------------------------------------------
 
+    // Check if an element or any of its parents has the specified attribute
+    function hasAttr(element, attribute) {
+
+        if ( element.hasAttribute(attribute) === true ) {
+            return element;
+        } else if ( element.parentNode !== document.body ) {
+            return hasAttr(element.parentNode, attribute);
+        }
+
+        return undefined;
+    }
+
     function handleClickEvent(e) {
 
         var action;
@@ -106,18 +118,6 @@
 
             }
         }
-    }
-
-    // Check if an element or any of its parents has the specified attribute
-    function hasAttr(element, attribute) {
-
-        if ( element.hasAttribute(attribute) === true ) {
-            return element;
-        } else if ( element.parentNode !== document.body ) {
-            return hasAttr(element.parentNode, attribute);
-        }
-
-        return undefined;
     }
 
     // More information about the Google Universal Analytics:

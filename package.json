@@ -18,7 +18,7 @@
     "gulp-uncss": "^1.0.0",
     "gulp-useref": "^3.0.0",
     "gulp-zopfli": "^1.0.0",
-    "jshint": "^2.8.0",
+    "jshint": "^2.9.1",
     "jshint-stylish": "^2.0.1",
     "normalize.css": "^3.0.2",
     "rework-npm": "^1.0.0",
