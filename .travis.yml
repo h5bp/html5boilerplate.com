@@ -1,41 +1,13 @@
 # For more information about the configurations used
 # in this file, please see the Travis CI documentation:
-# http://docs.travis-ci.com
+# https://docs.travis-ci.com
 
 after_success:
-  - |
-
-      # Automatically update the content from the `gh-pages` branch
-      $(npm bin)/update-branch --commands "npm run build" \
-                               --commit-message "Hey server, this content is for you! [skip ci]" \
-                               --directory "dist" \
-                               --distribution-branch "gh-pages" \
-                               --source-branch "master";
+  - ./scripts/travis/auto_update.sh
 
 env:
   global:
-
-    # The `secure` key contains three encrypted environment variables
-    # (GH_TOKEN, GH_USER_EMAIL and GH_USER_NAME), the values of which
-    # are used by automation script from the `after_success` step.
-    #
-    # Note: The `secure` key will only work for this repository, so if
-    # you create your own fork, you will need to generate your own key:
-    #
-    #   travis encrypt -r "<username>/<repository>" \
-    #     GH_TOKEN="<your_github_access_token>" \
-    #     GH_USER_EMAIL="<your_email>" \
-    #     GH_USER_NAME="<your_name>"
-    #
-    # To learn more about how to generate the:
-    #
-    #   * `secure` key, see:
-    #     http://docs.travis-ci.com/user/encryption-keys/
-    #
-    #   * GitHub access token, see:
-    #     https://help.github.com/articles/creating-an-access-token-for-command-line-use/
-
-    - secure: "IIrfJ320jqEwlK7jy+ddKH+YMTg3UQv4gnpd7Yov1PO5Phh9LA34/Md+tpJdPvxZWCH0dMGZIgAPz6iTk+21Y/6dq+88uSaOSplC2zGI5rM3+kZNnvboz6mRy3xraBa1iXrRuEc2SJ3OOLFP0Xea1CXS33ygTJlJfeDdBbWg7sY="
+    - secure: "i6taz4QbN7Uspu5XEtTlQoZGXMNsZMVQWCafo1pTwThsx/KwJc4J/WuqzF08c++7SWPtBwQIyXdOkNDffWLZxoda5zdLFS/xiH+t1YfJEhgybH+X538QBAPKJqJqeS+3YkkK1GE2zqWX0Y+pQOQLxTXviE88Md9JFy+oeAO/IEo="
 
 git:
   depth: 10

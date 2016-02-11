@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "@alrra/travis-scripts": "^1.1.1",
+    "@alrra/travis-scripts": "^2.0.0",
     "browser-sync": "^2.11.1",
     "del": "^2.0.2",
-    "gulp": "^3.8.10",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-css-base64": "^1.3.1",
     "gulp-csso": "^1.0.0",
@@ -16,13 +16,14 @@
     "gulp-rework": "^1.0.2",
     "gulp-smoosher": "0.0.9",
     "gulp-uncss": "^1.0.0",
-    "gulp-useref": "^3.0.0",
+    "gulp-useref": "^3.0.5",
     "gulp-zopfli": "^1.0.0",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.0.1",
     "normalize.css": "^3.0.2",
     "rework-npm": "^1.0.0",
-    "run-sequence": "^1.1.0"
+    "run-sequence": "^1.1.0",
+    "travis-after-all": "^1.4.4"
   },
   "h5bp-configs": {
     "directories": {
