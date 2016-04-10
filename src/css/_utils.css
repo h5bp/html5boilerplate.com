@@ -80,8 +80,8 @@
     background: url("../img/play-btn.svg");
     height: 150px;
     left: 50%;
-    margin-left:-75px;
-    margin-top:-75px;
+    margin-left: -75px;
+    margin-top: -75px;
     position: absolute;
     top: 50%;
     transition: 1s;
