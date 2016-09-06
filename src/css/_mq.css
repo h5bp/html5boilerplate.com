@@ -34,6 +34,15 @@
     .site-footer {
         font-size: 1em;
     }
+
+    .inline-block-list li {
+        display: block;
+        margin: 0 auto 1.5em;
+    }
+
+    .inline-block-list li:last-child {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 460px) {
