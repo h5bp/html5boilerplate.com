@@ -7,6 +7,7 @@ var plugins = require('gulp-load-plugins')();
 var reworkNpm = require('rework-npm');
 var runSequence = require('run-sequence');  // Temporary solution until Gulp 4
                                             // https://github.com/gulpjs/gulp/issues/355
+var gzip = require('gulp-gzip');
 
 var pkg = require('./package.json');
 var dirs = pkg['h5bp-configs'].directories;
@@ -56,6 +57,7 @@ gulp.task('clean:after', function (done) {
 
 gulp.task('copy', [
     'copy:html',
+    'copy:css',
     'copy:misc'
 ]);
 
@@ -66,6 +68,12 @@ gulp.task('copy:html', function () {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('copy:css', function () {
+    return gulp.src(dirs.src + '/css/main.css')
+        .pipe(gulp.dest(dirs.dist + '/css/'));
+});
+
+
 gulp.task('copy:misc', function () {
     return gulp.src([
 
@@ -75,8 +83,7 @@ gulp.task('copy:misc', function () {
         // Exclude the following files
         // (other tasks will handle the copying of these files)
         '!' + dirs.src + '/index.html',
-        '!' + dirs.src + '/{css,css/**}',
-        '!' + dirs.src + '/{js,/js/**}'
+        '!' + dirs.src + '/{css,css/**}'
 
     ], {
 
@@ -133,13 +140,6 @@ gulp.task('minify:html', function () {
       .pipe(gulp.dest(dirs.dist));
 
 });
-
-gulp.task('zopfli', function() {
-    gulp.src(dirs.dist + '/**/*.{css,html,ico,js,svg,txt,xml}')
-        .pipe(plugins.zopfli())
-        .pipe(gulp.dest(dirs.dist));
-});
-
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
@@ -151,8 +151,15 @@ gulp.task('build', function (done) {
         'copy',
         'minify:html',
         'clean:after',
-        'zopfli',
+        'compress',
     done);
+});
+
+
+gulp.task('compress', function() {
+   gulp.src(dirs.dist + '/**/*.{css,html,ico,js,svg,txt,xml}')
+        .pipe(gzip())
+        .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task('default', ['build']);
