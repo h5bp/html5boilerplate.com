@@ -94,6 +94,13 @@
     margin: auto;
     padding: 10px;
 }
+.site-section-video .content .new{
+  text-align:left;
+}
+.site-section-video .content h3{
+    color:#fff;
+}
+
 
 .site-section-video h2 {
     margin: 1em 0;
