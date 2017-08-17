@@ -94,6 +94,9 @@
     margin: auto;
     padding: 10px;
 }
+.site-section-video .content a {
+    color: #ffa000;
+}
 .site-section-video .content .new{
   text-align:left;
 }
