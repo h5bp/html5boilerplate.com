@@ -6,14 +6,14 @@
 The HTML5 Boilerplate website is a simple static site:
 
 * The development code is in the [`src/`](src) directory.
-* The build process relies on [`gulp`](http://gulpjs.com/).
+* The build process relies on [`gulp`](https://gulpjs.com/).
 * The `gulp` tasks can be found in the [`gulpfile.js`](gulpfile.js)
   file.
 
 ## Setup
 
 1. Install [`Node.js`](https://nodejs.org/) and
-   [`npm`](http://blog.npmjs.org/post/85484771375/how-to-install-npm).
+   [`npm`](https://docs.npmjs.com/getting-started/installing-node).
 2. Run `npm install`.
 
 ## Development
