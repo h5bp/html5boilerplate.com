@@ -18,7 +18,7 @@ var reload = browserSync.reload;
 var browserSyncOptions = {
 
     // In-depth information about the options:
-    // http://www.browsersync.io/docs/options/
+    // https://www.browsersync.io/docs/options/
 
     logPrefix: 'H5BP',
     notify: false,
