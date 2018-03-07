@@ -211,9 +211,9 @@ AddDefaultCharset utf-8
     Header set Content-Security-Policy "\
 default-src 'none';\
 font-src fonts.gstatic.com;\
-frame-src platform.twitter.com;\
-img-src data: i.ytimg.com www.google-analytics.com;\
-script-src 'unsafe-inline' www.google-analytics.com ajax.googleapis.com platform.twitter.com;\
+frame-src *.twitter.com;\
+img-src 'self' data: i.ytimg.com www.google-analytics.com;\
+script-src 'unsafe-inline' www.google-analytics.com ajax.googleapis.com *.twitter.com;\
 style-src 'unsafe-inline' fonts.googleapis.com"
 
     # The 404 page
