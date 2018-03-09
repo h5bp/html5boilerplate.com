@@ -44,7 +44,7 @@ Options -MultiViews
 # (!) Starting with Internet Explorer 11, document modes are deprecated.
 #
 # https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
-# http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11.aspx
+# https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
 
 <IfModule mod_headers.c>
 
@@ -182,7 +182,7 @@ AddDefaultCharset utf-8
 #
 # https://cure53.de/xfo-clickjacking.pdf.
 # https://tools.ietf.org/html/rfc7034
-# http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx
+# https://blogs.msdn.microsoft.com/ieinternals/2010/03/30/combating-clickjacking-with-x-frame-options/
 # https://www.owasp.org/index.php/Clickjacking
 
 <IfModule mod_headers.c>
@@ -202,8 +202,8 @@ AddDefaultCharset utf-8
 # Mitigate the risk of cross-site scripting and other content-injection
 # attacks.
 #
-# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
-# http://www.w3.org/TR/CSP11/
+# https://www.html5rocks.com/en/tutorials/security/content-security-policy/
+# https://www.w3.org/TR/CSP11/
 
 <IfModule mod_headers.c>
 
@@ -289,9 +289,9 @@ style-src 'unsafe-inline'"
 #
 # Force client-side SSL redirection.
 #
-# http://www.html5rocks.com/en/tutorials/security/transport-layer-security/
+# https://www.html5rocks.com/en/tutorials/security/transport-layer-security/
 # https://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1
-# http://blogs.msdn.com/b/ieinternals/archive/2014/08/18/hsts-strict-transport-security-attacks-mitigations-deployment-https.aspx
+# https://blogs.msdn.microsoft.com/ieinternals/2014/08/18/strict-transport-security/
 
 <IfModule mod_headers.c>
     Header always set Strict-Transport-Security "max-age=16070400"
@@ -303,8 +303,8 @@ style-src 'unsafe-inline'"
 
 # Prevent some browsers from MIME-sniffing the response.
 #
-# http://www.slideshare.net/hasegawayosuke/owasp-hasegawa
-# http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-v-comprehensive-protection.aspx
+# https://www.slideshare.net/hasegawayosuke/owasp-hasegawa
+# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-v-comprehensive-protection/
 # https://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
 # https://mimesniff.spec.whatwg.org/
 
@@ -344,8 +344,8 @@ style-src 'unsafe-inline'"
 #     you are taking all possible measures to prevent XSS attacks, the
 #     most obvious being: validating and sanitizing your website's inputs.
 #
-# http://blogs.msdn.com/b/ie/archive/2008/07/02/ie8-security-part-iv-the-xss-filter.aspx
-# http://blogs.msdn.com/b/ieinternals/archive/2011/01/31/controlling-the-internet-explorer-xss-filter-with-the-x-xss-protection-http-header.aspx
+# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-iv-the-xss-filter/
+# https://blogs.msdn.microsoft.com/ieinternals/2011/01/31/controlling-the-xss-filter/
 # https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
 
 <IfModule mod_headers.c>
@@ -371,7 +371,6 @@ style-src 'unsafe-inline'"
 <IfModule mod_deflate.c>
 
     # Force compression for mangled `Accept-Encoding` request headers
-    # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
 
     <IfModule mod_setenvif.c>
         <IfModule mod_headers.c>
