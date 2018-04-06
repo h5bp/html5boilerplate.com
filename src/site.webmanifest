@@ -1,5 +1,8 @@
 {
     "name": "HTML5 Boilerplate",
+    "short_name": "H5BP",
+    "lang": "en",
+    "theme_color": "#E08524",
     "description": "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.",
     "icons": [{
         "src": "icon.png",
