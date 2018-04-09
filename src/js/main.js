@@ -148,7 +148,7 @@
     // -----------------------------------------------------------------
 
     // Tweet Buttons
-    // https://dev.twitter.com/docs/tweet-button
+    // https://dev.twitter.com/web/tweet-button
 
     function loadTweetButtons() {
         /* jshint ignore:start */
