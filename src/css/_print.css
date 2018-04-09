@@ -7,7 +7,7 @@
     * {
         background-color: transparent !important;
         box-shadow:none !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important; /* Black prints faster */
         text-shadow: none !important;
     }
 
@@ -23,7 +23,7 @@
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group; /* http://css-discuss.incutio.com/wiki/Printing_Tables */
     }
 
     tr,
