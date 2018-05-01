@@ -3,8 +3,10 @@
 
 # TEAM
 
+    Rob Larsen -- @roblarsen
     Mathias Bynens -- @mathias
     Hans Christian Reinl -- @drublic
+    Christian Oliff -- @coliff
 
 # PAST TEAM MEMBERS:
 
