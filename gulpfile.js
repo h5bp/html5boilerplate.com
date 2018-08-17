@@ -7,8 +7,6 @@ var plugins = require('gulp-load-plugins')();
 var reworkNpm = require('rework-npm');
 var runSequence = require('run-sequence');  // Temporary solution until Gulp 4
                                             // https://github.com/gulpjs/gulp/issues/355
-var gzip = require('gulp-gzip');
-
 var pkg = require('./package.json');
 var dirs = pkg['h5bp-configs'].directories;
 var reload = browserSync.reload;
@@ -65,7 +63,7 @@ gulp.task('copy:html', function () {
     return gulp.src(dirs.src + '/index.html')
         .pipe(plugins.replace(/{{h5bp-version}}/g, pkg.version))
         .pipe(plugins.useref())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 });
 
 gulp.task('copy:css', function () {
@@ -151,15 +149,7 @@ gulp.task('build', function (done) {
         'copy',
         'minify:html',
         'clean:after',
-        'compress',
     done);
-});
-
-
-gulp.task('compress', function() {
-   gulp.src(dirs.dist + '/**/*.{css,html,ico,js,svg,txt,xml}')
-        .pipe(gzip())
-        .pipe(gulp.dest(dirs.dist));
 });
 
 gulp.task('default', ['build']);
