@@ -2,33 +2,13 @@
 # in this file, please see the Travis CI documentation:
 # https://docs.travis-ci.com
 
-after_success:
-  - |
-
-      # Automatically update the content from the `gh-pages` branch
-
-      $(npm bin)/travis-after-all \
-        && $(npm bin)/set-up-ssh -k "$encrypted_61ec48e9c4ba_key" \
-                                 -iv "$encrypted_61ec48e9c4ba_iv" \
-                                 --path-encrypted-key ".travis/github_deploy_key.enc" \
-        && $(npm bin)/update-branch --commands "npm run build" \
-                               --commit-message "Hey server, this content is for you! [skip ci]" \
-                               --directory "dist" \
-                               --distribution-branch "gh-pages" \
-                               --source-branch "master"
-
-env:
-  global:
-    - secure: "i6taz4QbN7Uspu5XEtTlQoZGXMNsZMVQWCafo1pTwThsx/KwJc4J/WuqzF08c++7SWPtBwQIyXdOkNDffWLZxoda5zdLFS/xiH+t1YfJEhgybH+X538QBAPKJqJqeS+3YkkK1GE2zqWX0Y+pQOQLxTXviE88Md9JFy+oeAO/IEo="
-
 git:
   depth: 10
 
 language: node_js
 
 node_js:
-  - 4
   - 6
-  - 7
-
+  - 8
+  - 9
 sudo: false
