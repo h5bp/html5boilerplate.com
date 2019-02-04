@@ -31,9 +31,4 @@ When you have finished your changes, make sure that the distribution
 package is correct by running `npm run test` and then checking the
 output.
 
-## Deploy
-
-This step is done automatically: the server will
-[periodically pull from the `gh-pages` branch](https://github.com/h5bp/html5boilerplate.com/wiki#html5boilerplatecom),
-branch that will be updated by Travis CI every time a commit is pushed
-to the `master` branch and the tests pass.
+The site is served directly from the `docs/` directory
