@@ -56,12 +56,12 @@
         all in one little package.</p>
 
       <div class="cta-option">
-        <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
+        <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
           data-ga-category="Download" data-ga-action="Download - top" data-ga-label="v{{h5bp-version}}">
           <strong>Download</strong>
           <span class="version">v{{h5bp-version}}</span>
         </a>
-        <a class="last-update" href="https://github.com/h5bp/html5-boilerplate/blob/{{h5bp-version}}/CHANGELOG.md" data-ga-category="Outbound links"
+        <a class="last-update" href="https://github.com/h5bp/html5-boilerplate/blob/v{{h5bp-version}}/CHANGELOG.md" data-ga-category="Outbound links"
           data-ga-action="See the CHANGELOG" data-ga-label="v{{h5bp-version}}">
           See the CHANGELOG
         </a>
@@ -110,19 +110,16 @@
   </div>
 
   <div class="site-section site-section-video">
-    <h2>Introduction to v6</h2>
+    <h2>Introduction to v7</h2>
     <div class="content">
-      <p class="new">What's new? Plenty. It's taken us a while to get a new version out the door, but we've been busy, so we hope you'll
-        find it's worth the wait. Here are some highlights:</p>
+      <p class="new">What's new? </p>
       <ul class="new">
-        <li>After much discussion we're now fetching jQuery from jQuery's CDN instead of Google's.</li>
-        <li>After even more discussion we dropped IE8 support ✌️ We're now tracking to the latest Normalize and jQuery.</li>
-        <li>We updated Modernizr to v3 and added a sample Modernizr configuration file so you can create your own custom build.
-        </li>
-        <li>We added a sample web app manifest file to the project to help you properly format your site or app to save to a
-          device's home screen.</li>
-        <li>That's just the tip of the iceberg. This update includes well over 100 commits from more than 45 developers.
-          <a href="https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md">Check out the Changelog for all the fun.</a>
+          <li>Dropped support for Internet Explorer 9 and 10.</li>
+          <li>For added flexibility we moved the main.css file to a <a href="https://github.com/h5bp/main.css">separate repository</a>. This change allows projects (including HTML5 Boilerplate itself) to consume main.css as a whole, while also allowing the component styles to be used individually in different, and hopefully interesting, ways.
+          </li>
+          <li>Upgraded Normalize to v8.0.1 and  <a href="https://github.com/h5bp/server-configs-apache">server-configs-apache</a> (the .htaccess file) to v3.1.0.</li>
+          <li>Big docs update! We fixed links, removed IE9/IE10 specific info, made touch icons section more concise, added details on security.txt and generally cleaned things up.</li>
+        <li>That's just the start of all the goodness. <a href="https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md">Check out the Changelog for all the details.</a>
         </li>
       </ul>
 
@@ -147,7 +144,7 @@
     </p>
 
     <div class="cta-option">
-      <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
+      <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
         data-ga-category="Download" data-ga-action="Download - bottom" data-ga-label="v{{h5bp-version}}">
         <strong>Download</strong>
         <span class="version">v{{h5bp-version}}</span>
