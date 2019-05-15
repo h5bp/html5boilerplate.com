@@ -24,30 +24,6 @@ a:active {
     text-decoration: underline;
 }
 
-/*
- * Remove text-shadow in selection highlight.
- * These selection declarations have to be separate.
- */
-
-::-moz-selection {
-    background-color: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background-color: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-img {
-    vertical-align: middle;
-}
-
 /* Typography
    ========================================================================== */
 
