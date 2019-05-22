@@ -4,33 +4,6 @@
 
 @media print {
 
-    * {
-        background-color: transparent !important;
-        box-shadow:none !important;
-        color: #000 !important; /* Black prints faster */
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* http://css-discuss.incutio.com/wiki/Printing_Tables */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
     img {
         max-width: 100% !important;
     }
@@ -51,18 +24,6 @@
 
     .site-section-video {
         display: none;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
     }
 
 }

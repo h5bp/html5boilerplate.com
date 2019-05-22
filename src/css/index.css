@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "main.css/dist/main.css";
 @import "./_base.css";
 @import "./_utils.css";
 @import "./_components.css";
