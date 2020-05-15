@@ -1,4 +1,24 @@
 {
+  "name": "html5boilerplate.com",
+  "version": "7.3.0",
+  "homepage": "https://html5boilerplate.com/",
+  "author": "@h5bp",
+  "license": "MIT",
+  "description": "static website for https://html5boilerplate.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h5bp/html5boilerplate.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h5bp/html5boilerplate.com/issues"
+  },
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "serve": "gulp serve",
+    "serve:build": "gulp serve:build",
+    "test": "gulp build"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
@@ -9,7 +29,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^2.0.2",
     "gulp-jshint": "^2.1.0",
-    "gulp-load-plugins": "^1.5.0",
+    "gulp-load-plugins": "^1.6.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-rework": "^4.0.0",
@@ -23,22 +43,14 @@
     "rework-npm": "^1.0.0",
     "run-sequence": "^2.2.1"
   },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=3"
+  },
   "h5bp-configs": {
     "directories": {
       "dist": "docs",
       "src": "src"
     }
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=3"
-  },
-  "private": true,
-  "scripts": {
-    "build": "gulp build",
-    "serve": "gulp serve",
-    "serve:build": "gulp serve:build",
-    "test": "gulp build"
-  },
-  "version": "7.3.0"
+  }
 }
