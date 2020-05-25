@@ -23,16 +23,6 @@ var browserSyncOptions = {
     port: 8080
 };
 
-var supportedBrowsers = [
-
-    // In-depth information about the options:
-    // https://github.com/postcss/autoprefixer#browsers
-
-    'last 2 versions',
-    'ie > 8',
-    '> 1%'
-];
-
 // ---------------------------------------------------------------------
 // | Helper tasks                                                      |
 // ---------------------------------------------------------------------
@@ -94,9 +84,7 @@ gulp.task('copy:misc', function () {
 gulp.task('generate:main.css', function () {
     return gulp.src(dirs.src + '/css/index.css')
             .pipe(plugins.rework(reworkNpm()))
-            .pipe(plugins.autoprefixer({
-                browsers: supportedBrowsers
-            }))
+            .pipe(plugins.autoprefixer())
             .pipe(plugins.cssBase64())
             .pipe(plugins.uncss({
                 html: [dirs.src + '/index.html']
