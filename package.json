@@ -15,8 +15,8 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "preinstall": "npx npm-force-resolutions",
     "serve": "gulp serve",
+    "preinstall": "npx npm-force-resolutions",
     "serve:build": "gulp serve:build",
     "test": "gulp build"
   },
