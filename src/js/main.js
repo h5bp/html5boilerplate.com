@@ -133,6 +133,10 @@
         // Create tracker object
         ga('create', 'UA-17904194-1', 'auto');
 
+        // anonymizeIP
+        // https://developers.google.com/analytics/devguides/collection/analyticsjs/ip-anonymization
+        ga('set', 'anonymizeIp', true);
+
         // Send a page view
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/pages
         ga('send', 'pageview');
@@ -148,7 +152,7 @@
     // -----------------------------------------------------------------
 
     // Tweet Buttons
-    // https://dev.twitter.com/web/tweet-button
+    // https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview
 
     function loadTweetButtons() {
         /* jshint ignore:start */

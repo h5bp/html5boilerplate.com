@@ -1,6 +1,6 @@
 {
   "name": "html5boilerplate.com",
-  "version": "7.3.0",
+  "version": "8.0.0",
   "homepage": "https://html5boilerplate.com/",
   "author": "@h5bp",
   "license": "MIT",
@@ -15,8 +15,8 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "preinstall": "npx npm-force-resolutions",
     "serve": "gulp serve",
+    "preinstall": "npx npm-force-resolutions",
     "serve:build": "gulp serve:build",
     "test": "gulp build"
   },
