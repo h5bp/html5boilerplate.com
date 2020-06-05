@@ -16,6 +16,7 @@
   "scripts": {
     "build": "gulp build",
     "preinstall": "npx npm-force-resolutions",
+    "css-lint": "stylelint \"src/css/*_*.css\"",
     "serve": "gulp serve",
     "serve:build": "gulp serve:build",
     "test": "gulp build"

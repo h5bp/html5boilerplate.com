@@ -3,60 +3,60 @@
    ========================================================================== */
 
 @media only screen and (max-width: 800px) {
-    .site-logo,
-    .site-nav {
-        float: none;
-    }
+  .site-logo,
+  .site-nav {
+    float: none;
+  }
 
-    .site-nav li {
-        margin: 0 0.5em;
-    }
+  .site-nav li {
+    margin: 0 0.5em;
+  }
 
-    .site-header {
-        padding-top: 40px;
-    }
+  .site-header {
+    padding-top: 40px;
+  }
 
-    .site-promo {
-        padding: 3em 0;
-    }
+  .site-promo {
+    padding: 3em 0;
+  }
 
-    .site-section {
-        padding: 0 1em 4em;
-    }
+  .site-section {
+    padding: 0 1em 4em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 
-    .last-update,
-    .site-footer {
-        font-size: 1em;
-    }
+  .last-update,
+  .site-footer {
+    font-size: 1em;
+  }
 
-    .inline-block-list li {
-        display: block;
-        margin: 0 auto 1.5em;
-    }
+  .inline-block-list li {
+    display: block;
+    margin: 0 auto 1.5em;
+  }
 
-    .inline-block-list li:last-child {
-        margin: 0;
-    }
+  .inline-block-list li:last-child {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 460px) {
-    .grid-cell {
-        width: 100%;
-    }
+  .grid-cell {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-    h1 {
-        font-size: 2.5em;
-    }
+  h1 {
+    font-size: 2.5em;
+  }
 
-    html {
-        font-size: 13px;
-    }
+  html {
+    font-size: 13px;
+  }
 }
