@@ -1,25 +1,32 @@
 {
   "name": "html5boilerplate.com",
   "version": "8.0.0",
-  "homepage": "https://html5boilerplate.com/",
-  "author": "@h5bp",
-  "license": "MIT",
+  "private": true,
   "description": "static website for https://html5boilerplate.com",
+  "homepage": "https://html5boilerplate.com/",
+  "bugs": {
+    "url": "https://github.com/h5bp/html5boilerplate.com/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/h5bp/html5boilerplate.com.git"
   },
-  "bugs": {
-    "url": "https://github.com/h5bp/html5boilerplate.com/issues"
-  },
-  "private": true,
+  "license": "MIT",
+  "author": "@h5bp",
   "scripts": {
     "build": "gulp build",
-    "serve": "gulp serve",
     "preinstall": "npx npm-force-resolutions",
+    "serve": "gulp serve",
     "serve:build": "gulp serve:build",
     "test": "gulp build"
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ],
   "resolutions": {
     "graceful-fs": "4.2.3"
   },
@@ -45,15 +52,10 @@
     "main.css": "2.1.0",
     "normalize.css": "^8.0.1",
     "rework-npm": "^1.0.0",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead",
-    "IE 11"
-  ],
   "engines": {
     "node": ">=10",
     "npm": ">=3"
