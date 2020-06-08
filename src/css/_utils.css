@@ -7,26 +7,26 @@
  */
 
 .grid {
-    margin: 0 -15px;
-    /* Remove inter-unit whitespace for all non-monospace font-families */
-    letter-spacing: -0.31em;
-    word-spacing: -0.43em;
-    /* Protect against WebKit bug with optimizelegibility */
-    text-rendering: optimizespeed;
+  margin: 0 -15px;
+  /* Remove inter-unit whitespace for all non-monospace font-families */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  /* Protect against WebKit bug with optimizelegibility */
+  text-rendering: optimizeSpeed;
 }
 
 .grid-cell {
-    display: inline-block;
-    letter-spacing: normal;
-    text-align: left;
-    text-rendering: auto;
-    vertical-align: top;
-    width: 50%;
-    word-spacing: normal;
+  display: inline-block;
+  letter-spacing: normal;
+  text-align: left;
+  text-rendering: auto;
+  vertical-align: top;
+  width: 50%;
+  word-spacing: normal;
 }
 
 .grid-cell > * {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 /*
@@ -34,60 +34,18 @@
  */
 
 .inline-block-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .inline-block-list li {
-    display: inline-block;
-    margin: 0 0 0 1.5em;
-    padding: 0;
-    vertical-align: top;
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  vertical-align: top;
 }
 
 .inline-block-list li:first-child {
-    margin-left: 0;
-}
-
-/*
- * Flexible multi-media embeds
- */
-
-.flex-embed {
-    background-color: #000;
-    box-shadow: 0 0 10px #000;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-}
-
-.flex-embed a, /* required by IE 6/7 */
-.flex-embed iframe,
-.flex-embed img,
-.flex-embed embed,
-.flex-embed object {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.flex-embed .play-btn {
-    background: url("../img/play-btn.svg");
-    height: 150px;
-    left: 50%;
-    margin-left: -75px;
-    margin-top: -75px;
-    position: absolute;
-    top: 50%;
-    transition: 1s;
-    width: 150px;
-}
-
-.flex-embed:hover .play-btn {
-    opacity: 0.5;
+  margin-left: 0;
 }

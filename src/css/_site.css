@@ -7,7 +7,7 @@
  */
 
 .site-header {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 /*
@@ -15,14 +15,27 @@
  */
 
 .site-logo {
-    color: #fff;
-    float: left;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 32px;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 #000;
-    text-transform: uppercase;
+  color: #fff;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 32px;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #000;
+  text-transform: uppercase;
+}
+
+/*
+ * Site footer
+ */
+
+.site-footer a {
+  color: #ffa000;
+}
+
+.site-footer {
+  font-size: 0.875em;
+  padding: 2em;
 }
 
 /*
@@ -30,23 +43,23 @@
  */
 
 .site-nav {
-    float: right;
-    list-style-type: none;
-    margin: 7px 0 0;
-    padding: 0;
+  float: right;
+  list-style-type: none;
+  margin: 7px 0 0;
+  padding: 0;
 }
 
 .site-nav a {
-    color: #ffa000;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #ffa000;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .site-nav a:hover,
 .site-nav a:focus,
 .site-nav a:active {
-    color: #fff;
+  color: #fff;
 }
 
 /*
@@ -54,20 +67,20 @@
  */
 
 .site-promo {
-    padding: 4em 0 6em;
+  padding: 4em 0 6em;
 }
 
 .site-promo .description {
-    color: #ddd;
-    font-size: 1.2em;
-    margin: 1em 2em 0;
+  color: #ddd;
+  font-size: 1.2em;
+  margin: 1em 2em 0;
 }
 
 .last-update {
-    color: #999;
-    display: block;
-    font-size: 0.75em;
-    margin-top: 10px;
+  color: #999;
+  display: block;
+  font-size: 0.75em;
+  margin-top: 10px;
 }
 
 /*
@@ -75,56 +88,43 @@
  */
 
 .site-section {
-    background-color: #f9f9f9;
-    color: #333;
-    overflow: hidden;
-    padding: 2em 0 6em;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow: hidden;
+  padding: 2em 0 6em;
 }
 
 .site-section-video {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    padding: 2em 0 3em;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0 3em;
 }
-
 
 .site-section-video .content {
-    max-width: 720px;
-    margin: auto;
-    padding: 10px;
-}
-.site-section-video .content a {
-    color: #ffa000;
-}
-.site-section-video .content .new{
-  text-align:left;
-}
-.site-section-video .content h3{
-    color:#fff;
+  max-width: 720px;
+  margin: auto;
+  padding: 10px;
 }
 
+.site-section-video .content a {
+  color: #ffa000;
+}
+
+.site-section-video .content .new {
+  text-align: left;
+}
+
+.site-section-video .content h3 {
+  color: #fff;
+}
 
 .site-section-video h2 {
-    margin: 1em 0;
+  margin: 1em 0;
 }
-
 
 .in-the-wild {
-    font-size: 1.25em;
-    margin: 0 auto;
-    max-width: 720px;
-}
-
-/*
- * Site footer
- */
-
-.site-footer {
-    font-size: 0.875em;
-    padding: 2em;
-}
-
-.site-footer a {
-    color: #ffa000;
+  font-size: 1.25em;
+  margin: 0 auto;
+  max-width: 720px;
 }
