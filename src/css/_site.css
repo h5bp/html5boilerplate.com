@@ -1,52 +1,45 @@
-/* ==========================================================================
-   Major site components
-   ========================================================================== */
-
-/*
- * Site header
- */
-
-.site-header {
+nav {
   padding-top: 50px;
 }
-
-/*
- * Site logo
- */
 
 .site-logo {
   color: #fff;
   float: left;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: 32px;
   text-decoration: none;
   text-shadow: 2px 2px 0 #000;
   text-transform: uppercase;
 }
 
-/*
- * Site footer
- */
+.star {
+  color: #e08524;
+}
 
-.site-footer a {
+footer a {
   color: #ffa000;
 }
 
-.site-footer {
-  font-size: 0.875em;
+footer {
+  font-size: 0.9rem;
   padding: 2em;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
-
-/*
- * Site nav
- */
 
 .site-nav {
   float: right;
   list-style-type: none;
   margin: 7px 0 0;
   padding: 0;
+}
+
+.aside a {
+  margin: 5px;
+}
+
+.aside img {
+  margin-right: 5px;
 }
 
 .site-nav a {
@@ -62,69 +55,92 @@
   color: #fff;
 }
 
-/*
- * Site promo
- */
-
-.site-promo {
-  padding: 4em 0 6em;
+header {
+  margin-bottom: 85px;
+  margin-top: 85px;
 }
 
-.site-promo .description {
+header p {
   color: #ddd;
-  font-size: 1.2em;
-  margin: 1em 2em 0;
+  font-size: 1.25rem;
+  margin: 25px;
 }
 
-.last-update {
+.changelog {
   color: #999;
   display: block;
-  font-size: 0.75em;
   margin-top: 10px;
 }
 
-/*
- * Support content
- */
-
-.site-section {
-  background-color: #f9f9f9;
-  color: #333;
-  overflow: hidden;
-  padding: 2em 0 6em;
+.section-features h3 {
+  color: #111;
+  margin: 8px;
 }
 
-.site-section-video {
-  background-color: transparent;
-  color: #fff;
+.section-features p {
+  padding: 0 15px 6px 15px;
+}
+
+.section-features .col {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.section-features img {
+  margin-bottom: 9px;
+}
+
+main {
+  background-color: #eee;
+  color: #222;
+}
+
+section {
+  padding: 35px 0 55px;
+}
+
+.aside {
+  background-color: #ccc;
+  padding: 25px 0 25px;
+  border-top: 1px solid #bbb;
+}
+
+.section-who-uses {
+  color: #222;
+  border-top: 1px solid #bbb;
+  background-color: #ddd;
+}
+
+.section-who-uses .col {
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.section-who-uses img {
   text-align: center;
-  padding: 2em 0 3em;
+  max-width: 90%;
+  vertical-align: middle;
+  max-height: 40px;
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
 }
 
-.site-section-video .content {
-  max-width: 720px;
-  margin: auto;
-  padding: 10px;
+.inline-block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.site-section-video .content a {
-  color: #ffa000;
+.inline-block-list li {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  vertical-align: top;
 }
 
-.site-section-video .content .new {
-  text-align: left;
-}
-
-.site-section-video .content h3 {
-  color: #fff;
-}
-
-.site-section-video h2 {
-  margin: 1em 0;
-}
-
-.in-the-wild {
-  font-size: 1.25em;
-  margin: 0 auto;
-  max-width: 720px;
+.inline-block-list li:first-child {
+  margin-left: 0;
 }
