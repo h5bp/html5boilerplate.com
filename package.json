@@ -42,7 +42,7 @@
     "gulp-if": "^2.0.2",
     "gulp-jshint": "^2.1.0",
     "gulp-load-plugins": "^1.6.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-rework": "^4.0.0",
     "gulp-smoosher": "0.0.9",
