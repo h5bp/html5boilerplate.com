@@ -1,218 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      HTML5 Boilerplate: The web&#8217;s most popular front-end template
+    </title>
+    <meta
+      name="description"
+      content="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time reinventing the wheel."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="html5-boilerplate" />
+    <meta name="author" content="H5BP" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=fallback"
+    />
+    <link rel="manifest" href="site.webmanifest" />
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML5 Boilerplate: The web&#8217;s most popular front-end template</title>
-  <meta name="description" content="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time reinventing the wheel.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=fallback">
-  <link rel="manifest" href="site.webmanifest">
+    <meta property="og:url" content="https://html5boilerplate.com/" />
+    <meta property="og:title" content="HTML5 ★ BOILERPLATE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites."
+    />
+    <meta property="og:image" content="https://html5boilerplate.com/icon.png" />
 
-  <meta property="og:url" content="https://html5boilerplate.com/">
-  <meta property="og:title" content="HTML5 ★ BOILERPLATE">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites.">
-  <meta property="og:image" content="https://html5boilerplate.com/icon.png">
+    <meta name="theme-color" content="#E08524" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@h5bp" />
+    <meta name="twitter:url" content="https://html5boilerplate.com/" />
+    <meta name="twitter:title" content="HTML5 ★ BOILERPLATE" />
+    <meta
+      name="twitter:description"
+      content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://html5boilerplate.com/icon.png"
+    />
 
-  <meta name="theme-color" content="#E08524">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@h5bp">
-  <meta name="twitter:url" content="https://html5boilerplate.com/">
-  <meta name="twitter:title" content="HTML5 ★ BOILERPLATE">
-  <meta name="twitter:description" content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites.">
-  <meta name="twitter:image" content="https://html5boilerplate.com/icon.png">
+    <!-- smoosh -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- endbuild -->
+    <!-- endsmoosh -->
+  </head>
 
-  <!-- smoosh -->
-  <!-- build:css css/main.css -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- endbuild -->
-  <!-- endsmoosh -->
-
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="site-header clearfix" role="banner">
-      <div class="site-logo">
-        HTML5
-        <span class="star">&#x2605;</span> Boilerplate
+  <body>
+    <div class="container">
+      <div class="site-header clearfix" role="banner">
+        <div class="site-logo">
+          HTML5
+          <span class="star">&#x2605;</span> Boilerplate
+        </div>
+        <ul class="site-nav inline-block-list">
+          <li>
+            <a
+              href="https://github.com/h5bp/html5-boilerplate"
+              data-ga-category="Outbound links"
+              data-ga-action="Nav click"
+              data-ga-label="Source code"
+              >Source code</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/h5bp/html5-boilerplate/blob/v{{h5bp-version}}/dist/doc/TOC.md"
+              data-ga-category="Outbound links"
+              data-ga-action="Nav click"
+              data-ga-label="Docs"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://h5bp.org"
+              data-ga-category="Outbound links"
+              data-ga-action="Nav click"
+              data-ga-label="Other projects"
+              >Other projects</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="site-nav inline-block-list">
-        <li>
-          <a href="https://github.com/h5bp/html5-boilerplate" data-ga-category="Outbound links" data-ga-action="Nav click" data-ga-label="Source code">Source code</a>
-        </li>
-        <li>
-          <a href="https://github.com/h5bp/html5-boilerplate/blob/v{{h5bp-version}}/dist/doc/TOC.md" data-ga-category="Outbound links"
-            data-ga-action="Nav click" data-ga-label="Docs">Docs</a>
-        </li>
-        <li>
-          <a href="https://h5bp.org" data-ga-category="Outbound links" data-ga-action="Nav click" data-ga-label="Other projects">Other projects</a>
-        </li>
-      </ul>
+
+      <div class="site-promo">
+        <h1>The web&#8217;s most popular front-end template</h1>
+        <p class="description">
+          HTML5 Boilerplate helps you build <strong>fast</strong>,
+          <strong>robust</strong>, and <strong>adaptable</strong> web apps or
+          sites. Kick-start your project with the combined knowledge and effort
+          of 100s of developers, all in one little package.
+        </p>
+
+        <div class="cta-option">
+          <a
+            class="btn btn-download"
+            href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
+            data-ga-category="Download"
+            data-ga-action="Download - top"
+            data-ga-label="v{{h5bp-version}}"
+          >
+            <strong>Download</strong>
+            <span class="version">v{{h5bp-version}}</span>
+          </a>
+          <a
+            class="last-update"
+            href="https://github.com/h5bp/html5-boilerplate/blob/v{{h5bp-version}}/CHANGELOG.md"
+            data-ga-category="Outbound links"
+            data-ga-action="See the CHANGELOG"
+            data-ga-label="v{{h5bp-version}}"
+          >
+            See the CHANGELOG
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="site-promo">
-      <h1>The web&#8217;s most popular front-end template</h1>
-      <p class="description">HTML5 Boilerplate helps you build
-        <strong>fast</strong>,
-        <strong>robust</strong>, and
-        <strong>adaptable</strong> web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers,
-        all in one little package.</p>
+    <div class="site-section">
+      <div class="container">
+        <h2>Save time. Create with confidence.</h2>
+
+        <div class="grid">
+          <div class="grid-cell">
+            <h3>
+              <span class="star">&#x2605;</span> Analytics, icons, and more
+            </h3>
+            <p>
+              A lean, mobile-friendly HTML template; optimized Google Analytics
+              snippet; placeholder touch-device icon; and docs covering dozens
+              of extra tips and tricks.
+            </p>
+          </div>
+
+          <div class="grid-cell">
+            <h3>
+              <span class="star">&#x2605;</span> Normalize.css and helpers
+            </h3>
+            <p>
+              Includes
+              <a href="https://necolas.github.io/normalize.css/"
+                >Normalize.css</a
+              >
+              &mdash; a modern, HTML5-ready alternative to CSS resets &mdash;
+              and further base styles, helpers, media queries, and print styles.
+            </p>
+          </div>
+
+          <div class="grid-cell">
+            <h3><span class="star">&#x2605;</span>Modernizr</h3>
+            <p>
+              Get the latest minified versions of Modernizr:
+              <a href="https://modernizr.com/">Modernizr</a> feature detection
+              library, complete with a custom build configuration
+            </p>
+          </div>
+
+          <div class="grid-cell">
+            <h3><span class="star">&#x2605;</span> High performance</h3>
+            <p>
+              Apache settings to help you deliver excellent site performance. We
+              independently maintain
+              <a href="https://github.com/h5bp/server-configs"
+                >server configs</a
+              >
+              for multiple platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section site-section-video">
+      <h2>Introduction to v8</h2>
+      <div class="content">
+        <p class="new">What's new?</p>
+        <ul class="new">
+          <li>
+            Added a sample package.json with basic Parcel commands to jump start
+            your app development
+          </li>
+          <li>Added sample Open Graph metadata</li>
+          <li>Updated Modernizr and main.css</li>
+          <li>Removed jQuery</li>
+          <li>Set anonymizeIp to true in Google Analytics snippet</li>
+          <li>Removed Browser Upgrade Prompt</li>
+          <li>
+            That's just the start of all the goodness.
+            <a
+              href="https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md"
+              >Check out the Changelog for all the details.</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <h2>Who uses HTML5 Boilerplate?</h2>
+      <p class="in-the-wild">
+        <a href="https://www.microsoft.com/surface/">Microsoft</a>,
+        <a href="https://data.nasa.gov/">NASA</a>,
+        <a href="http://www.nikeskateboarding.com/">Nike</a>,
+        <a href="https://www.barackobama.com/">Barack Obama</a>,
+        <a href="https://www.itv.com/news/">ITV News</a>,
+        <a href="https://creativecommons.org/">Creative Commons</a>,
+        <a href="https://auspost.com.au/">Australia Post</a>, and
+        <a href="https://github.com/h5bp/html5-boilerplate/wiki/sites"
+          >many more</a
+        >.
+      </p>
 
       <div class="cta-option">
-        <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
-          data-ga-category="Download" data-ga-action="Download - top" data-ga-label="v{{h5bp-version}}">
+        <a
+          class="btn btn-download"
+          href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
+          data-ga-category="Download"
+          data-ga-action="Download - bottom"
+          data-ga-label="v{{h5bp-version}}"
+        >
           <strong>Download</strong>
           <span class="version">v{{h5bp-version}}</span>
         </a>
-        <a class="last-update" href="https://github.com/h5bp/html5-boilerplate/blob/v{{h5bp-version}}/CHANGELOG.md" data-ga-category="Outbound links"
-          data-ga-action="See the CHANGELOG" data-ga-label="v{{h5bp-version}}">
-          See the CHANGELOG
-        </a>
       </div>
-
     </div>
-  </div>
 
-  <div class="site-section">
-    <div class="container">
-      <h2>Save time. Create with confidence.</h2>
-
-      <div class="grid">
-        <div class="grid-cell">
-          <h3>
-            <span class="star">&#x2605;</span> Analytics, icons, and more</h3>
-          <p>A lean, mobile-friendly HTML template; optimized Google Analytics snippet; placeholder touch-device icon; and docs
-            covering dozens of extra tips and tricks.</p>
-        </div>
-
-        <div class="grid-cell">
-          <h3>
-            <span class="star">&#x2605;</span> Normalize.css and helpers</h3>
-          <p>Includes
-            <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> &mdash; a modern, HTML5-ready alternative to CSS resets &mdash; and further base styles, helpers,
-            media queries, and print styles.</p>
-        </div>
-
-        <div class="grid-cell">
-          <h3>
-            <span class="star">&#x2605;</span>Modernizr</h3>
-          <p>Get the latest minified versions of Modernizr:
-            <a href="https://modernizr.com/">Modernizr</a> feature detection library, complete with a custom build configuration</p>
-        </div>
-
-        <div class="grid-cell">
-          <h3>
-            <span class="star">&#x2605;</span> High performance</h3>
-          <p>Apache settings to help you deliver excellent site performance. We independently maintain
-            <a href="https://github.com/h5bp/server-configs">server configs</a> for multiple platforms.</p>
-        </div>
+    <div class="aside">
+      <div class="container">
+        <ul class="inline-block-list">
+          <li>
+            <a
+              href="https://github.com/h5bp/html5-boilerplate/issues"
+              data-ga-category="Outbound links"
+              data-ga-action="Footer click"
+              data-ga-label="Report issues"
+            >
+              <span class="Icon Icon--github"></span>
+              Report issues
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/html5boilerplate"
+              data-ga-category="Outbound links"
+              data-ga-action="Footer click"
+              data-ga-label="Help on Stack Overflow"
+            >
+              <span class="Icon Icon--stackoverflow"></span>
+              Help on Stack Overflow
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://h5bp.net"
+              data-ga-category="Outbound links"
+              data-ga-action="Footer click"
+              data-ga-label="View the showcase"
+            >
+              <span class="Icon Icon--html5"></span>
+              View the showcase
+            </a>
+          </li>
+        </ul>
       </div>
-
     </div>
-  </div>
 
-  <div class="site-section site-section-video">
-    <h2>Introduction to v8</h2>
-    <div class="content">
-      <p class="new">What's new? </p>
-      <ul class="new">
-        <li>Added a sample package.json with basic Parcel commands to jump start your app development</li>
-        <li>Added sample Open Graph metadata</li>
-        <li>Updated Modernizr and main.css</li>
-        <li>Removed jQuery</li>
-        <li>Set anonymizeIp to true in Google Analytics snippet</li>
-        <li>Removed Browser Upgrade Prompt</li>
-        <li>That's just the start of all the goodness. <a href="https://github.com/h5bp/html5-boilerplate/blob/master/CHANGELOG.md">Check out the Changelog for all the details.</a>
-      </ul>
+    <footer class="site-footer">
+      <p>
+        <a
+          class="twitter-share-button"
+          href="https://twitter.com/share"
+          data-count="none"
+          data-lang="en"
+          data-via="h5bp"
+          data-size="large"
+          data-text="HTML5 Boilerplate: The rock-solid professional front-end template"
+          data-url="https://html5boilerplate.com/"
+          >Tweet</a
+        >
+        &nbsp;
+        <a
+          class="twitter-follow-button"
+          href="https://twitter.com/h5bp"
+          data-show-count="false"
+          data-lang="en"
+          data-size="large"
+          >Follow @h5bp</a
+        >
+      </p>
 
-    </div>
-  </div>
+      <p>
+        A project from <a href="https://github.com/h5bp">H5BP</a> currently
+        maintained by
+        <br />
+        <a href="https://htmlcssjavascript.com/">Rob Larsen</a> &amp;
+        <a href="https://github.com/coliff">Christian Oliff</a>
+      </p>
 
-  <div class="site-section">
-    <h2>Who uses HTML5 Boilerplate?</h2>
-    <p class="in-the-wild">
-      <a href="https://www.microsoft.com/surface/">Microsoft</a>,
-      <a href="https://data.nasa.gov/">NASA</a>,
-      <a href="http://www.nikeskateboarding.com/">Nike</a>,
-      <a href="https://www.barackobama.com/">Barack Obama</a>,
-      <a href="https://www.itv.com/news/">ITV News</a>,
-      <a href="https://creativecommons.org/">Creative Commons</a>,
-      <a href="https://auspost.com.au/">Australia Post</a>, and
-      <a href="https://github.com/h5bp/html5-boilerplate/wiki/sites">many more</a>.
-    </p>
+      <p>
+        This project wouldn't have been possible without our past team members:
+        <br />
+        <a href="https://mathiasbynens.be/">Mathias Bynens</a>,
+        <a href="https://twitter.com/alrra">C&#259;t&#259;lin Mari&#x219;</a>,
+        <a href="https://drublic.de/">Hans Christian Reinl</a>,
+        <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>,
+        <a href="https://www.paulirish.com/">Paul Irish</a>, and
+        <a href="http://nimbupani.com/">Divya Manian</a>.
+      </p>
+    </footer>
 
-    <div class="cta-option">
-      <a class="btn btn-download" href="https://github.com/h5bp/html5-boilerplate/releases/download/v{{h5bp-version}}/html5-boilerplate_v{{h5bp-version}}.zip"
-        data-ga-category="Download" data-ga-action="Download - bottom" data-ga-label="v{{h5bp-version}}">
-        <strong>Download</strong>
-        <span class="version">v{{h5bp-version}}</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="aside">
-    <div class="container">
-      <ul class="inline-block-list">
-        <li>
-          <a href="https://github.com/h5bp/html5-boilerplate/issues" data-ga-category="Outbound links" data-ga-action="Footer click"
-            data-ga-label="Report issues">
-            <span class="Icon Icon--github"></span>
-            Report issues
-          </a>
-        </li>
-        <li>
-          <a href="https://stackoverflow.com/questions/tagged/html5boilerplate" data-ga-category="Outbound links" data-ga-action="Footer click"
-            data-ga-label="Help on Stack Overflow">
-            <span class="Icon Icon--stackoverflow"></span>
-            Help on Stack Overflow
-          </a>
-        </li>
-        <li>
-          <a href="https://h5bp.net" data-ga-category="Outbound links" data-ga-action="Footer click" data-ga-label="View the showcase">
-            <span class="Icon Icon--html5"></span>
-            View the showcase
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a class="twitter-share-button" href="https://twitter.com/share" data-count="none" data-lang="en" data-via="h5bp" data-size="large"
-        data-text="HTML5 Boilerplate: The rock-solid professional front-end template" data-url="https://html5boilerplate.com/">Tweet</a>
-      &nbsp;
-      <a class="twitter-follow-button" href="https://twitter.com/h5bp" data-show-count="false" data-lang="en" data-size="large">Follow @h5bp</a>
-    </p>
-
-    <p>A project from
-      <a href="https://github.com/h5bp">H5BP</a> currently maintained by
-      <br>
-      <a href="https://htmlcssjavascript.com/">Rob Larsen</a> &amp; <a href="https://github.com/coliff">Christian Oliff</a>
-    </p>
-
-    <p>This project wouldn't have been possible without our past team members:
-      <br>
-      <a href="https://mathiasbynens.be/">Mathias Bynens</a>,
-      <a href="https://twitter.com/alrra">C&#259;t&#259;lin Mari&#x219;</a>,
-      <a href="https://drublic.de/">Hans Christian Reinl</a>,
-      <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>,
-      <a href="https://www.paulirish.com/">Paul Irish</a>, and
-      <a href="http://nimbupani.com/">Divya Manian</a>.
-    </p>
-  </footer>
-
-  <!-- smoosh -->
-  <!-- build:js js/main.js -->
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
-  <!-- endsmoosh -->
-
-</body>
-
+    <!-- smoosh -->
+    <!-- build:js js/main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
+    <!-- endsmoosh -->
+  </body>
 </html>
