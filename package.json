@@ -55,7 +55,7 @@
     "rework-npm": "^1.0.0",
     "run-sequence": "^2.2.1",
     "stylelint": "^13.13.0",
-    "stylelint-config-standard": "^21.0.0"
+    "stylelint-config-standard": "^22.0.0"
   },
   "engines": {
     "node": ">=10",
