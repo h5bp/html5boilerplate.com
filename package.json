@@ -57,10 +57,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=3"
-  },
   "h5bp-configs": {
     "directories": {
       "dist": "docs",
