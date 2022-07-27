@@ -98,7 +98,14 @@ gulp.task('lint:js', function () {
   return gulp.src([
     'gulpfile.js',
     dirs.src + '/js/main.js',
-  ]).pipe(plugins.eslint());
+  ])
+    .pipe(plugins.eslint())
+    .pipe(plugins.eslint.results(results => {
+      console.log(`Total Results: ${results.length}`);
+      console.log(`Total Warnings: ${results.warningCount}`);
+      console.log(`Total Errors: ${results.errorCount}`);
+    }))
+    .pipe(plugins.eslint.failAfterError());
 });
 
 gulp.task('minify:html', function () {
