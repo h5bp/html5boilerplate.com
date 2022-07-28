@@ -1,8 +1,5 @@
 # [html5boilerplate.com](https://html5boilerplate.com/)
 
-[![Build Status](https://travis-ci.org/h5bp/html5boilerplate.com.svg)](https://travis-ci.org/h5bp/html5boilerplate.com)
-[![devDependency Status](https://david-dm.org/h5bp/html5boilerplate.com/dev-status.svg)](https://david-dm.org/h5bp/html5boilerplate.com#info=devDependencies)
-
 The HTML5 Boilerplate website is a simple static site:
 
 * The development code is in the [`src/`](src) directory.
