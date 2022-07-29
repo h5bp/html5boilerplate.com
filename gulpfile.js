@@ -83,7 +83,6 @@ gulp.task('copy:misc', function () {
 gulp.task('generate:main.css', function () {
   return gulp.src(dirs.src + '/css/index.css')
     .pipe(plugins.rework(reworkNpm()))
-    .pipe(plugins.autoprefixer())
     .pipe(plugins.cssBase64())
     .pipe(plugins.uncss({
       html: [dirs.src + '/index.html']
@@ -108,28 +107,6 @@ gulp.task('lint:js', function () {
     .pipe(plugins.eslint.failAfterError());
 });
 
-gulp.task('minify:html', function () {
-
-  // In-depth information about the `htmlmin` options:
-  // https://github.com/kangax/html-minifier#options-quick-reference
-  var htmlminOptions = {
-    collapseBooleanAttributes: true,
-    collapseWhitespace: true,
-    minifyJS: true,
-    removeAttributeQuotes: true,
-    removeComments: true,
-    removeEmptyAttributes: true,
-    removeOptionalTags: true,
-    removeRedundantAttributes: true
-  };
-
-  return gulp.src([
-    dirs.dist + '/index.html'
-  ]).pipe(plugins.smoosher())
-    .pipe(plugins.htmlmin(htmlminOptions))
-    .pipe(gulp.dest(dirs.dist));
-
-});
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
@@ -139,7 +116,6 @@ gulp.task('build', function (done) {
     ['clean:before', 'lint:js'],
     'generate:main.css',
     'copy',
-    'minify:html',
     'clean:after',
     done);
 });
