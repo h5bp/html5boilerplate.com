@@ -14,12 +14,11 @@
   "license": "MIT",
   "author": "@h5bp",
   "scripts": {
-    "build": "gulp build",
-    "preinstall": "npx npm-force-resolutions",
+    "build": "webpack build",
     "css-lint": "stylelint \"src/css/*_*.css\"",
-    "serve": "gulp serve",
-    "serve:build": "gulp serve:build",
-    "test": "gulp build"
+    "serve": "webpack-dev-server --open --port 8080",
+    "serve:build": "",
+    "test": ""
   },
   "browserslist": [
     "> 0.5%",
@@ -36,26 +35,14 @@
     "del": "^6.1.1",
     "eslint": "^8.18.0",
     "eslint-config-recommended": "^4.1.0",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-css-base64": "^1.3.4",
-    "gulp-csso": "^4.0.1",
-    "gulp-eslint": "^6.0.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^2.0.2",
-    "gulp-load-plugins": "^2.0.7",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.1.3",
-    "gulp-rework": "^4.0.0",
-    "gulp-smoosher": "0.0.9",
-    "gulp-uncss": "^1.0.6",
-    "gulp-useref": "^3.1.6",
+    "html-webpack-plugin": "^5.5.0",
     "main.css": "3.0.0",
     "normalize.css": "^8.0.1",
-    "rework-npm": "^1.0.0",
-    "run-sequence": "^2.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   },
   "h5bp-configs": {
     "directories": {
