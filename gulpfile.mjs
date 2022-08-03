@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import del from 'del';
+import { deleteSync } from 'del';
 import gulpAutoprefixer from 'gulp-autoprefixer';
 import gulpCSSBase64 from 'gulp-css-base64';
 import gulpCSSO from 'gulp-csso';
@@ -25,20 +25,17 @@ const browserSyncOptions = {
   port: 8080
 };
 
-function cleanBefore(cb) {
-  del([dirs.dist]).then(function () {
-    cb();
-  });
+async function cleanBefore() {
+  deleteSync([dirs.dist]);
+
 }
 
-function cleanAfter(cb) {
-  del([
+async function cleanAfter() {
+  deleteSync([
     dirs.dist + '/{css,css/**}',
     dirs.dist + '/{img,/img/**}',
     dirs.dist + '/{js,/js/**}'
-  ]).then(function () {
-    cb();
-  });
+  ]);
 }
 
 function copyHTML() {
