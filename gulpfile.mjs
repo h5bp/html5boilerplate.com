@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-//import browserSync from 'browser-sync';
+import browserSync from 'browser-sync';
 import del from 'del';
 import gulpAutoprefixer from 'gulp-autoprefixer';
 import gulpCSSBase64 from 'gulp-css-base64';
@@ -17,16 +17,13 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const pkg = require('./package.json');
 const dirs = pkg['h5bp-configs'].directories;
+const reload = browserSync.reload;
+const browserSyncOptions = {
 
-//const browserSyncOptions = {
-
-// In-depth information about the options:
-// https://www.browsersync.io/docs/options/
-
-//logPrefix: 'H5BP',
-//notify: false,
-//port: 8080
-//};
+  logPrefix: 'H5BP',
+  notify: false,
+  port: 8080
+};
 
 function cleanBefore(cb) {
   del([dirs.dist]).then(function () {
@@ -126,6 +123,35 @@ function minifyHTML() {
     .pipe(gulp.dest(dirs.dist));
 
 }
+function browserSyncFn(){
+  
+  browserSyncOptions.server = dirs.src;
+  browserSync(browserSyncOptions);
+
+  gulp.watch([
+    dirs.src + '/**/*.html'
+  ], reload);
+
+  gulp.watch([
+    dirs.src + '/css/**/*.css',
+    dirs.src + '/img/**/*',
+    '!' + dirs.src + '/css/main.css'
+  ], gulp.series(generateMainCSS));
+
+  gulp.watch([
+    dirs.src + '/js/**/*.js',
+    'gulpfile.mjs'
+  ], gulp.parallel(lintJS, reload));
+
+}
+
+
+gulp.task(
+  'serve', 
+  gulp.series(
+    generateMainCSS, 
+    browserSyncFn
+  ));
 
 gulp.task(
   'build',gulp.series(
@@ -137,4 +163,9 @@ gulp.task(
     minifyHTML,
     cleanAfter
   ));
+
+gulp.task('serve:build', gulp.series('build', function () {
+  browserSyncOptions.server = dirs.dist;
+  browserSync(browserSyncOptions);
+}));
 
