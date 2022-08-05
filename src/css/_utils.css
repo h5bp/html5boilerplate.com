@@ -11,8 +11,6 @@
   /* Remove inter-unit whitespace for all non-monospace font-families */
   letter-spacing: -0.31em;
   word-spacing: -0.43em;
-  /* Protect against WebKit bug with optimizelegibility */
-  text-rendering: optimizeSpeed;
 }
 
 .grid-cell {
