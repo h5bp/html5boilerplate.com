@@ -15,7 +15,6 @@
   "author": "@h5bp",
   "scripts": {
     "build": "node --experimental-modules ./node_modules/gulp/bin/gulp.js build",
-    "preinstall": "npx npm-force-resolutions",
     "css-lint": "stylelint \"src/css/*_*.css\"",
     "serve": "gulp serve",
     "serve:build": "gulp serve:build",
@@ -28,9 +27,6 @@
     "not dead",
     "IE 11"
   ],
-  "resolutions": {
-    "graceful-fs": "4.2.3"
-  },
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^7.0.0",
