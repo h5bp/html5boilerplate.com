@@ -1,38 +1,38 @@
-/* ==========================================================================
-   Media Queries for Responsive Design.
-   ========================================================================== */
+/* Media Queries for Responsive Design */
 
-@media only screen and (max-width: 800px) {
+/* small screens */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: calc(0.8rem + 0.5vw) !important;
+  }
+
+  h1 {
+    font-size: calc(1.4rem + 1.5vw) !important;
+  }
+
+  h2 {
+    font-size: calc(1.2rem + 1vw) !important;
+  }
+
   .site-logo,
   .site-nav {
-    float: none;
+    float: none !important;
   }
 
   .site-nav li {
     margin: 0 0.5em;
   }
 
-  .site-header {
-    padding-top: 40px;
+  header {
+    margin-top: 40px !important;
   }
 
-  .site-promo {
-    padding: 3em 0;
+  header p {
+    font-size: calc(1rem + 0.3vw) !important;
   }
 
-  .site-section {
-    padding: 0 1em 4em;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
-
-  .last-update,
-  .site-footer {
-    font-size: 1em;
+  section {
+    padding: 25px 0 !important;
   }
 
   .inline-block-list li {
@@ -41,22 +41,34 @@
   }
 
   .inline-block-list li:last-child {
-    margin: 0;
+    margin-right: 1.5em;
   }
 }
 
-@media only screen and (max-width: 460px) {
-  .grid-cell {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  h1 {
-    font-size: 2.5em;
+/* extra small screens */
+@media only screen and (max-width: 575px) {
+  .site-logo {
+    float: none !important;
   }
 
-  html {
-    font-size: 13px;
+  header {
+    margin-top: 30px;
+  }
+
+  .site-nav {
+    text-align: center;
+    float: none;
+    display: block;
+  }
+
+  .section-who-uses img {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .aside .inline-block-list li {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }

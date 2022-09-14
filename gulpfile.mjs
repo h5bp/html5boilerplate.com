@@ -99,70 +99,61 @@ function lintJS() {
 }
 
 function minifyHTML() {
-
   // In-depth information about the `htmlmin` options:
   // https://github.com/kangax/html-minifier#options-quick-reference
   var htmlminOptions = {
     collapseBooleanAttributes: true,
-    collapseWhitespace: true,
     minifyJS: true,
     removeAttributeQuotes: true,
     removeComments: true,
     removeEmptyAttributes: true,
     removeOptionalTags: true,
-    removeRedundantAttributes: true
+    removeRedundantAttributes: true,
   };
 
-  return gulp.src([
-    dirs.dist + '/index.html'
-  ]).pipe(gulpSmoosher())
+  return gulp
+    .src([dirs.dist + "/index.html"])
+    .pipe(gulpSmoosher())
     .pipe(gulpHTMLMin(htmlminOptions))
     .pipe(gulp.dest(dirs.dist));
-
 }
-function browserSyncFn(){
-  
+function browserSyncFn() {
   browserSyncOptions.server = dirs.src;
   browserSync(browserSyncOptions);
 
-  gulp.watch([
-    dirs.src + '/**/*.html'
-  ], reload);
+  gulp.watch([dirs.src + "/**/*.html"], reload);
 
-  gulp.watch([
-    dirs.src + '/css/**/*.css',
-    dirs.src + '/img/**/*',
-    '!' + dirs.src + '/css/main.css'
-  ], gulp.series(generateMainCSS));
+  gulp.watch(
+    [
+      dirs.src + "/css/**/*.css",
+      dirs.src + "/img/**/*",
+      "!" + dirs.src + "/css/main.css",
+    ],
+    gulp.series(generateMainCSS)
+  );
 
-  gulp.watch([
-    dirs.src + '/js/**/*.js',
-    'gulpfile.mjs'
-  ], gulp.parallel(lintJS, reload));
-
+  gulp.watch([dirs.src + "/js/**/*.js", "gulpfile.mjs"], gulp.parallel(reload));
 }
 
+gulp.task("serve", gulp.series(generateMainCSS, browserSyncFn));
 
 gulp.task(
-  'serve', 
+  "build",
   gulp.series(
-    generateMainCSS, 
-    browserSyncFn
-  ));
-
-gulp.task(
-  'build',gulp.series(
-    gulp.parallel(cleanBefore,lintJS),
+    gulp.parallel(cleanBefore),
     generateMainCSS,
     copyHTML,
     copyCSS,
     copyMisc,
     minifyHTML,
     cleanAfter
-  ));
+  )
+);
 
-gulp.task('serve:build', gulp.series('build', function () {
-  browserSyncOptions.server = dirs.dist;
-  browserSync(browserSyncOptions);
-}));
-
+gulp.task(
+  "serve:build",
+  gulp.series("build", function () {
+    browserSyncOptions.server = dirs.dist;
+    browserSync(browserSyncOptions);
+  })
+);

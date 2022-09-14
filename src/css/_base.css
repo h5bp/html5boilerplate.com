@@ -4,13 +4,13 @@
 
 html {
   color: #fff;
-  font: 17px/1.4 "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 body {
-  background-color: #2f3135;
-  background-image: url("../img/bg.png");
+  background-color: #111;
 }
 
 a {
@@ -24,26 +24,17 @@ a:active {
   text-decoration: underline;
 }
 
-/* Typography
-   ========================================================================== */
-
 h1 {
-  font-size: 3em;
+  font-size: 3.2rem;
   line-height: 1.2em;
-  margin: 0 0.5em 0.75em;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 1.5em 0;
+  font-size: 2rem;
 }
 
 h3 {
   color: #555;
-  font-size: 1.25em;
-  margin: 0 0 0.5em;
-}
-
-p {
-  margin: 0 0 2em;
+  font-size: 1.2rem;
+  margin-bottom: 0;
 }

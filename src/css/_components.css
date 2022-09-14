@@ -1,140 +1,30 @@
-/* ==========================================================================
-   Reusable components
-   ========================================================================== */
-
-/*
- * Container
- *
- * Controls consistent width and centering of site structure.
- */
-
-.container {
-  margin: 0 auto;
-  max-width: 760px;
-  padding: 0 10px;
-}
-
-/*
- * Aside
- */
-
-.aside {
-  background-color: #eee;
-  border: solid #e3e3e3;
-  border-width: 1px 0;
-  font-size: 1.125em;
-  padding: 1em 0;
-}
-
-/*
- * Calls to action
- */
-
-.cta-option {
-  display: inline-block;
-  margin: 2.5em 0.5em 0;
-  position: relative;
-  vertical-align: top;
-}
-
-.btn {
+.btn-download {
   color: #fff;
   display: inline-block;
   font-size: 1.5em;
   padding: 0.6em 1em;
   position: relative;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgb(0 0 0 / 50%);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   border-radius: 4px;
-  border: 1px solid #333;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active {
-  text-decoration: none;
-}
-
-/*
- * Download button
- *
- * @extends .btn
- */
-
-.btn-download {
   background-color: #d9750b;
   background-image: linear-gradient(#f90 10%, #e76a00 100%);
   box-shadow:
-    0 1px 0 rgb(255 255 255 / 50%) inset,
-    0 1px 3px rgb(0 0 0 / 20%);
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid #995309;
 }
 
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
+  text-decoration: none;
   background-color: #e0811b;
   background-image: linear-gradient(#f0a100 10%, #f70 100%);
 }
 
 .btn-download:active {
   background-color: #cf6a00;
-  box-shadow: 0 2px 3px 0 rgb(0 0 0 / 20%) inset;
-}
-
-/*
- * Alternative button
- *
- * @extends .btn
- */
-
-.btn-alt {
-  background-color: #444;
-  border-color: #222;
-  box-shadow: none;
-  font-size: 1.25em;
-  margin-top: 0.25em;
-}
-
-.btn-alt:hover,
-.btn-alt:focus,
-.btn-alt:active {
-  background-color: #555;
-}
-
-.btn-download-alt:active {
-  background-color: #3f3f3f;
-}
-
-/*
- * Star
- */
-
-.star {
-  color: #e08524;
-}
-
-/*
- * Icon
- */
-
-.Icon {
-  display: inline-block;
-  height: 16px;
-  margin: -3px 1px 0 0;
-  vertical-align: middle;
-  width: 16px;
-}
-
-.Icon--github {
-  background-image: url("../img/github.svg");
-}
-
-.Icon--html5 {
-  background-image: url("../img/html5.svg");
-}
-
-.Icon--stackoverflow {
-  background-image: url("../img/stackoverflow.svg");
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
