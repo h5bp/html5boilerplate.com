@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "alpha-value-notation": null,
+    "comment-empty-line-before": null,
+    "color-function-notation": null
+  }
+}
