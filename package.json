@@ -29,7 +29,7 @@
   "devDependencies": {
     "browser-sync": "^2.29.1",
     "del": "^7.0.0",
-    "eslint": "^8.35.0",
+    "eslint": "^8.39.0",
     "eslint-config-recommended": "^4.1.0",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "^8.0.0",
