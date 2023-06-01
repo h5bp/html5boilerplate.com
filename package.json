@@ -27,7 +27,7 @@
     "not dead"
   ],
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^2.29.3",
     "del": "^7.0.0",
     "eslint": "^8.40.0",
     "eslint-config-recommended": "^4.1.0",
