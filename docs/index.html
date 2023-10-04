@@ -7,6 +7,7 @@
   <title>HTML5 Boilerplate: The web&#8217;s most popular front-end template</title>
   <meta name=description content="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time reinventing the wheel.">
 
+
   <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}strong{font-weight:bolder}small{font-size:80%}img{border-style:none;vertical-align:middle}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.clearfix::after,.clearfix::before{content:"";display:table}.clearfix::after{clear:both}@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}img{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
 /*!
@@ -16,6 +17,7 @@ html{-webkit-text-size-adjust:100%;color:#222;font-size:1em;line-height:1.4}body
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1rem;font-family:"Open Sans",sans-serif;text-align:center}*,::after,::before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-12,.col-lg-8,.col-md-10,.col-sm-11{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.row-cols-1>*{flex:0 0 100%;max-width:100%}.row-cols-2>*{flex:0 0 50%;max-width:50%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.row-cols-sm-2>*{flex:0 0 50%;max-width:50%}.row-cols-sm-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-sm-11{flex:0 0 91.666667%;max-width:91.666667%}}@media (min-width:768px){.row-cols-md-6>*{flex:0 0 16.666667%;max-width:16.666667%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media (min-width:992px){.row-cols-lg-3>*{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.d-flex{display:flex!important}.align-items-center{align-items:center!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}body{background-color:#111}a{color:#069;text-decoration:none}a:active,a:focus,a:hover{text-decoration:underline}h1{font-size:3.2rem;line-height:1.2em}h2{font-size:2rem}h3{color:#555;font-size:1.2rem;margin-bottom:0}.btn-download{color:#fff;display:inline-block;font-size:1.5em;padding:.6em 1em;position:relative;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,.5);vertical-align:middle;border-radius:4px;background-color:#d9750b;background-image:linear-gradient(#f90 10%,#e76a00 100%);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.2);border:1px solid #995309}.btn-download:active,.btn-download:focus,.btn-download:hover{text-decoration:none;background-color:#e0811b;background-image:linear-gradient(#f0a100 10%,#f70 100%)}.btn-download:active{background-color:#cf6a00;box-shadow:0 2px 3px 0 rgba(0,0,0,.2) inset}nav{padding-top:50px}.site-logo{color:#fff;float:left;font-size:1.5rem;font-weight:700;text-decoration:none;text-shadow:2px 2px 0 #000;text-transform:uppercase}.star{color:#e08524}footer a{color:#ffa000}footer{font-size:.9rem;padding:2em;margin-bottom:25px;margin-top:25px}.site-nav{float:right;list-style-type:none;margin-top:7px;padding:0}.aside a{margin:5px}.aside img{margin-right:5px}.site-nav a{color:#ffa000;display:block;text-decoration:none;text-transform:uppercase}.site-nav a:active,.site-nav a:focus,.site-nav a:hover{color:#fff}header{margin-bottom:85px;margin-top:85px}header p{color:#ddd;font-size:1.25rem;margin:25px}.changelog{color:#999;display:block;margin-top:10px}.section-features h3{color:#111;margin:8px}.section-features p{padding:0 15px 6px}.section-features .col{margin-bottom:25px;margin-top:15px}.section-features img{margin-bottom:9px}main{background-color:#eee;color:#222}section{padding:35px 0 55px}.aside{background-color:#ccc;padding:25px 0;border-top:1px solid #bbb}.section-who-uses{color:#222;border-top:1px solid #bbb;background-color:#ddd}.section-who-uses .col{margin-bottom:9px;margin-top:9px}.section-who-uses img{text-align:center;max-width:90%;vertical-align:middle;max-height:40px;display:flex;align-items:center;margin-left:auto;margin-right:auto;padding:6px}.inline-block-list li{display:inline-block;margin-left:12px}.inline-block-list li:first-child{margin-left:0}@media only screen and (max-width:768px){html{font-size:calc(.8rem + .5vw)!important}h1{font-size:calc(1.4rem + 1.5vw)!important}h2{font-size:calc(1.2rem + 1vw)!important}.site-logo,.site-nav{float:none!important}.site-nav li{margin:0 .5em}header{margin-top:40px!important}header p{font-size:calc(1rem + .3vw)!important}section{padding:25px 0!important}.inline-block-list li{display:block;margin:0 auto 1.5em}.inline-block-list li:last-child{margin-right:1.5em}}@media only screen and (max-width:575px){.site-logo{float:none!important}header{margin-top:30px}.site-nav{text-align:center;float:none;display:block}.section-who-uses img{padding-left:15px;padding-right:15px}.aside .inline-block-list li{display:block;margin-top:15px;margin-bottom:15px}}</style>
+
 
   <link rel=manifest href=site.webmanifest>
   <link rel=apple-touch-icon href=icon.png>
@@ -27,8 +29,6 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1re
   <meta name=og:image content=https://html5boilerplate.com/icon.png>
 
   <meta name=theme-color content=#E08524>
-  <meta name=twitter:card content=summary>
-  <meta name=twitter:site content=@h5bp>
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX8P3FN86W"></script>
   <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-VX8P3FN86W")</script>
@@ -184,11 +184,6 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar;color:#fff;font-size:1re
         <li>
           <a href=https://stackoverflow.com/questions/tagged/html5boilerplate>
             <img src=stack-overflow.svg height=18 width=18 alt="Stack Overflow">Help on Stack Overflow
-          </a>
-        </li>
-        <li>
-          <a href=https://twitter.com/h5bp>
-            <img src=twitter.svg height=18 width=18 alt=Twitter>Tweet @h5bp
           </a>
         </li>
       </ul>
