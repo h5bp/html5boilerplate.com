@@ -28,4 +28,4 @@ When you have finished your changes, make sure that the distribution
 package is correct by running `npm run test` and then checking the
 output.
 
-The site is served directly from the `docs/` directory
+The site is served directly from the `docs/` directory.
