@@ -45,7 +45,6 @@
     "gulp-uncss": "^1.0.6",
     "gulp-useref": "^5.0.0",
     "main.css": "3.0.0",
-    "normalize.css": "^8.0.1",
     "rework-npm": "^1.0.0",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0"
