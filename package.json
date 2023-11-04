@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/h5bp/html5boilerplate.com.git"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "license": "MIT",
   "author": "@h5bp",
   "scripts": {
@@ -20,19 +23,13 @@
     "serve:build": "gulp serve:build",
     "test": "gulp build"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead"
-  ],
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.1.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.53.0",
     "eslint-config-recommended": "^4.1.0",
     "gulp": "4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-css-base64": "^2.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-eslint": "^6.0.0",
@@ -46,7 +43,7 @@
     "gulp-useref": "^5.0.0",
     "main.css": "3.0.0",
     "rework-npm": "^1.0.0",
-    "stylelint": "^15.10.3",
+    "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0"
   },
   "h5bp-configs": {
