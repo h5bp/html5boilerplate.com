@@ -1,7 +1,7 @@
 # Contributing to HTML5 Boilerplate
 
 ♥ [HTML5 Boilerplate](https://html5boilerplate.com/) and want to get involved?
-Thanks! We're actively looking for folks interested in helping out and there 
+Thanks! We're actively looking for folks interested in helping out and there
 are plenty of ways you can help!
 
 Please take a moment to review this document in order to make the contribution
@@ -12,11 +12,10 @@ the developers managing and developing this open source project. In return,
 they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
-
 ## Using the issue tracker
 
 The [issue tracker](https://github.com/h5bp/html5boilerplate.com/issues) is
-the preferred channel for [bug reports](#bugs), [features requests](#features)
+the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
@@ -26,7 +25,6 @@ restrictions:
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
 
-<a name="bugs"></a>
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
@@ -67,8 +65,6 @@ Example:
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
-
-<a name="features"></a>
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
@@ -76,8 +72,6 @@ fits with the scope and aims of the project. It's up to *you* to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
-
-<a name="pull-requests"></a>
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
