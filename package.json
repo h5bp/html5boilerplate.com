@@ -24,7 +24,7 @@
     "test": "gulp build"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "del": "^7.1.0",
     "eslint": "^8.53.0",
     "eslint-config-recommended": "^4.1.0",
