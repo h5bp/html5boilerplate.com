@@ -43,7 +43,7 @@
     "gulp-useref": "^5.0.0",
     "main.css": "3.0.0",
     "rework-npm": "^1.0.0",
-    "stylelint": "^16.1.0",
+    "stylelint": "^16.2.0",
     "stylelint-config-standard": "^36.0.0"
   },
   "h5bp-configs": {
