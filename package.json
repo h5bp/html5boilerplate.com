@@ -26,7 +26,7 @@
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-recommended": "^4.1.0",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "^9.0.0",
