@@ -28,7 +28,7 @@
     "del": "^7.1.0",
     "eslint": "^8.56.0",
     "eslint-config-recommended": "^4.1.0",
-    "gulp": "4.0.2",
+    "gulp": "5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-css-base64": "^2.0.0",
     "gulp-csso": "^4.0.1",
