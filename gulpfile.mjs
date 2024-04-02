@@ -66,7 +66,7 @@ function copyMisc() {
     '!' + dirs.src + '/{css,css/**}'
 
   ], {
-
+    encoding: false,
     // Include hidden files by default
     dot: true
 
