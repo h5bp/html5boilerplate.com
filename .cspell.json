@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "words": [
+    "Bynens",
+    "codeql",
+    "CSSO",
+    "Divya",
+    "endsmoosh",
+    "Oliff",
+    "Reinl",
+    "smoosh",
+    "smoosher"
+  ],
+  "language": "en,en-US",
+  "allowCompoundWords": true,
+  "ignoreRegExpList": ["\\_\\w+", "\\#\\w+"],
+  "ignorePaths": [".cspell.json"],
+  "useGitignore": true
+}

@@ -11,14 +11,15 @@
     "type": "git",
     "url": "https://github.com/h5bp/html5boilerplate.com.git"
   },
-  "engines": {
-    "node": ">=16"
-  },
   "license": "MIT",
   "author": "@h5bp",
   "scripts": {
     "build": "node --experimental-modules ./node_modules/gulp/bin/gulp.js build",
-    "css-lint": "stylelint \"src/css/*_*.css\"",
+    "css-lint": "stylelint \"src/css/*_*.css\" --fix -f verbose",
+    "html-lint": "npx htmlhint src/*.html",
+    "js-lint": "eslint *.mjs --fix",
+    "lint": "npm run css-lint && npm run js-lint && npm run html-lint",
+    "pa11y": "npx pa11y https://html5boilerplate.com/",
     "serve": "gulp serve",
     "serve:build": "gulp serve:build",
     "test": "gulp build"
@@ -39,17 +40,19 @@
     "gulp-replace": "^1.1.4",
     "gulp-rework": "^4.0.0",
     "gulp-smoosher": "0.0.9",
-    "gulp-uncss": "^1.0.6",
     "gulp-useref": "^5.0.0",
     "main.css": "3.0.0",
     "rework-npm": "^1.0.0",
-    "stylelint": "^16.9.0",
-    "stylelint-config-standard": "^36.0.0"
+    "stylelint": "^16.17.0",
+    "stylelint-config-standard": "^37.0.0"
   },
   "h5bp-configs": {
     "directories": {
       "dist": "docs",
       "src": "src"
     }
+  },
+  "engines": {
+    "node": ">=16"
   }
 }

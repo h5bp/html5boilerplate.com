@@ -20,6 +20,7 @@ a {
 h1 {
   font-size: 3.2rem;
   line-height: 1.2em;
+  text-wrap: balance;
 }
 
 h2 {
