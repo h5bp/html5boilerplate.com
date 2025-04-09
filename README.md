@@ -4,7 +4,7 @@ The HTML5 Boilerplate website is a simple static site:
 
 * The development code is in the [`src/`](src) directory.
 * The build process relies on [`gulp`](https://gulpjs.com/).
-* The `gulp` tasks can be found in the [`gulpfile.js`](gulpfile.mjs)
+* The `gulp` tasks can be found in the [`gulpfile.mjs`](gulpfile.mjs)
   file.
 
 ## Setup

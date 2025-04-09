@@ -9,8 +9,7 @@ import gulpHTMLMin from 'gulp-htmlmin';
 import gulpRename from 'gulp-rename';
 import gulpReplace from 'gulp-replace';
 import gulpRework from 'gulp-rework';
-import gulpSmoosher from 'gulp-smoosher';
-import gulpUnCSS from 'gulp-uncss';
+import gulpSmoosher from "gulp-smoosher";
 import gulpUseRef from 'gulp-useref';
 import reworkNpm from 'rework-npm';
 import { createRequire } from 'module';
@@ -73,16 +72,14 @@ function copyMisc() {
   }).pipe(gulp.dest(dirs.dist));
 }
 function generateMainCSS() {
-  return gulp.src(dirs.src + '/css/index.css')
+  return gulp
+    .src(dirs.src + "/css/index.css")
     .pipe(gulpRework(reworkNpm()))
     .pipe(gulpAutoprefixer())
     .pipe(gulpCSSBase64())
-    .pipe(gulpUnCSS({
-      html: [dirs.src + '/index.html']
-    }))
     .pipe(gulpCSSO())
-    .pipe(gulpRename('main.css'))
-    .pipe(gulp.dest(dirs.src + '/css/'));
+    .pipe(gulpRename("main.css"))
+    .pipe(gulp.dest(dirs.src + "/css/"));
 }
 
 function lintJS() {
@@ -112,7 +109,7 @@ function minifyHTML() {
   };
 
   return gulp
-    .src([dirs.dist + "/index.html"])
+    .src([dirs.dist + '/index.html'])
     .pipe(gulpSmoosher())
     .pipe(gulpHTMLMin(htmlminOptions))
     .pipe(gulp.dest(dirs.dist));
@@ -121,24 +118,24 @@ function browserSyncFn() {
   browserSyncOptions.server = dirs.src;
   browserSync(browserSyncOptions);
 
-  gulp.watch([dirs.src + "/**/*.html"], reload);
+  gulp.watch([dirs.src + '/**/*.html'], reload);
 
   gulp.watch(
     [
-      dirs.src + "/css/**/*.css",
-      dirs.src + "/img/**/*",
-      "!" + dirs.src + "/css/main.css",
+      dirs.src + '/css/**/*.css',
+      dirs.src + '/img/**/*',
+      '!' + dirs.src + '/css/main.css',
     ],
     gulp.series(generateMainCSS)
   );
 
-  gulp.watch([dirs.src + "/js/**/*.js", "gulpfile.mjs"], gulp.parallel(reload));
+  gulp.watch([dirs.src + '/js/**/*.js', 'gulpfile.mjs'], gulp.parallel(reload));
 }
 
-gulp.task("serve", gulp.series(generateMainCSS, browserSyncFn));
+gulp.task('serve', gulp.series(generateMainCSS, browserSyncFn));
 
 gulp.task(
-  "build",
+  'build',
   gulp.series(
     gulp.parallel(cleanBefore),
     generateMainCSS,
@@ -151,8 +148,8 @@ gulp.task(
 );
 
 gulp.task(
-  "serve:build",
-  gulp.series("build", function () {
+  'serve:build',
+  gulp.series('build', function () {
     browserSyncOptions.server = dirs.dist;
     browserSync(browserSyncOptions);
   })
