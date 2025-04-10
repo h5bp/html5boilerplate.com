@@ -44,7 +44,7 @@
     "main.css": "3.0.0",
     "rework-npm": "^1.0.0",
     "stylelint": "^16.18.0",
-    "stylelint-config-standard": "^37.0.0"
+    "stylelint-config-standard": "^38.0.0"
   },
   "h5bp-configs": {
     "directories": {
