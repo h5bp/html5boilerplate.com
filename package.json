@@ -29,7 +29,7 @@
     "del": "^7.1.0",
     "eslint": "^8.57.1",
     "eslint-config-recommended": "^4.1.0",
-    "gulp": "5.0.0",
+    "gulp": "5.0.1",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-css-base64": "^2.0.0",
     "gulp-csso": "^4.0.1",
