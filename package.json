@@ -29,7 +29,7 @@
     "del": "^7.1.0",
     "eslint": "^8.57.1",
     "eslint-config-recommended": "^4.1.0",
-    "gulp": "5.0.0",
+    "gulp": "5.0.1",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-css-base64": "^2.0.0",
     "gulp-csso": "^4.0.1",
@@ -43,7 +43,7 @@
     "gulp-useref": "^5.0.0",
     "main.css": "3.0.0",
     "rework-npm": "^1.0.0",
-    "stylelint": "^16.20.0",
+    "stylelint": "^16.21.0",
     "stylelint-config-standard": "^38.0.0"
   },
   "h5bp-configs": {
