@@ -1,31 +1,49 @@
-# [html5boilerplate.com](https://html5boilerplate.com/)
+# Starlight Starter Kit: Basics
 
-The HTML5 Boilerplate website is a simple static site:
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-* The development code is in the [`src/`](src) directory.
-* The build process relies on [`gulp`](https://gulpjs.com/).
-* The `gulp` tasks can be found in the [`gulpfile.mjs`](gulpfile.mjs)
-  file.
+```
+npm create astro@latest -- --template starlight
+```
 
-## Setup
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-1. Install [`Node.js`](https://nodejs.org/) and
-   [`npm`](https://docs.npmjs.com/getting-started/installing-node).
-2. Run `npm install`.
+## 🚀 Project Structure
 
-## Development
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-You should be able to work almost entirely in the [`src/`](src)
-directory.
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-While developing run `npm run serve` as this will open the website
-in your default browser and automatically update it whenever changes
-are made to the page or any of the files contained in the page.
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-## Build
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-When you have finished your changes, make sure that the distribution
-package is correct by running `npm run test` and then checking the
-output.
+Static assets, like favicons, can be placed in the `public/` directory.
 
-The site is served directly from the `docs/` directory.
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

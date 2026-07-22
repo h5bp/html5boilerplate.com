@@ -1,6 +1,6 @@
 {
   "name": "html5boilerplate.com",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "private": true,
   "description": "static website for https://html5boilerplate.com",
   "homepage": "https://html5boilerplate.com/",
@@ -12,47 +12,16 @@
     "url": "https://github.com/h5bp/html5boilerplate.com.git"
   },
   "license": "MIT",
-  "author": "@h5bp",
-  "scripts": {
-    "build": "node --experimental-modules ./node_modules/gulp/bin/gulp.js build",
-    "css-lint": "stylelint \"src/css/*_*.css\" --fix -f verbose",
-    "html-lint": "npx htmlhint src/*.html",
-    "js-lint": "eslint *.mjs --fix",
-    "lint": "npm run css-lint && npm run js-lint && npm run html-lint",
-    "pa11y": "npx pa11y https://html5boilerplate.com/",
-    "serve": "gulp serve",
-    "serve:build": "gulp serve:build",
-    "test": "gulp build"
+  "author": "@h5bp",  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "del": "^7.1.0",
-    "eslint": "^8.57.1",
-    "eslint-config-recommended": "^4.1.0",
-    "gulp": "5.0.1",
-    "gulp-autoprefixer": "^9.0.0",
-    "gulp-css-base64": "^2.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-eslint": "^6.0.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^3.0.0",
-    "gulp-rename": "^2.1.0",
-    "gulp-replace": "^1.1.4",
-    "gulp-rework": "^4.0.0",
-    "gulp-smoosher": "0.0.9",
-    "gulp-useref": "^5.0.0",
-    "main.css": "3.0.0",
-    "rework-npm": "^1.0.0",
-    "stylelint": "^16.21.0",
-    "stylelint-config-standard": "^38.0.0"
-  },
-  "h5bp-configs": {
-    "directories": {
-      "dist": "docs",
-      "src": "src"
-    }
-  },
-  "engines": {
-    "node": ">=16"
+  "dependencies": {
+    "@astrojs/starlight": "^0.41.4",
+    "astro": "^7.0.2",
+    "sharp": "^0.34.5"
   }
 }
