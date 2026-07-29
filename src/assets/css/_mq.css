@@ -1,0 +1,74 @@
+/* Media Queries for Responsive Design */
+
+/* small screens */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: calc(0.8rem + 0.5vw) !important;
+  }
+
+  h1 {
+    font-size: calc(1.4rem + 1.5vw) !important;
+  }
+
+  h2 {
+    font-size: calc(1.2rem + 1vw) !important;
+  }
+
+  .site-logo,
+  .site-nav {
+    float: none !important;
+  }
+
+  .site-nav li {
+    margin: 0 0.5em;
+  }
+
+  header {
+    margin-top: 40px !important;
+  }
+
+  header p {
+    font-size: calc(1rem + 0.3vw) !important;
+  }
+
+  section {
+    padding: 25px 0 !important;
+  }
+
+  .inline-block-list li {
+    display: block;
+    margin: 0 auto 1.5em;
+  }
+
+  .inline-block-list li:last-child {
+    margin-right: 1.5em;
+  }
+}
+
+/* extra small screens */
+@media only screen and (max-width: 575px) {
+  .site-logo {
+    float: none !important;
+  }
+
+  header {
+    margin-top: 30px;
+  }
+
+  .site-nav {
+    text-align: center;
+    float: none;
+    display: block;
+  }
+
+  .section-who-uses img {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .aside .inline-block-list li {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,138 @@
+nav {
+  padding-top: 50px;
+}
+
+.site-logo {
+  color: #fff;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #000;
+  text-transform: uppercase;
+}
+
+.star {
+  color: #e08524;
+}
+
+footer a {
+  color: #ffa000;
+}
+
+footer {
+  font-size: 0.9rem;
+  padding: 2em;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.site-nav {
+  float: right;
+  list-style-type: none;
+  margin-top: 7px;
+  padding: 0;
+}
+
+.aside a {
+  margin: 5px;
+}
+
+.aside img {
+  margin-right: 5px;
+}
+
+.site-nav a {
+  color: #ffa000;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a:active {
+  color: #fff;
+}
+
+header {
+  margin-bottom: 85px;
+  margin-top: 85px;
+}
+
+header p {
+  color: #ddd;
+  font-size: 1.25rem;
+  margin: 25px;
+}
+
+.changelog {
+  color: #999;
+  display: block;
+  margin-top: 10px;
+}
+
+.section-features h3 {
+  color: #111;
+  margin: 8px;
+}
+
+.section-features p {
+  padding: 0 15px 6px;
+}
+
+.section-features .col {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.section-features img {
+  margin-bottom: 9px;
+}
+
+main {
+  background-color: #eee;
+  color: #222;
+}
+
+section {
+  padding: 35px 0 55px;
+}
+
+.aside {
+  background-color: #ccc;
+  padding: 25px 0;
+  border-top: 1px solid #bbb;
+}
+
+.section-who-uses {
+  color: #222;
+  border-top: 1px solid #bbb;
+  background-color: #ddd;
+}
+
+.section-who-uses .col {
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.section-who-uses img {
+  text-align: center;
+  max-width: 90%;
+  vertical-align: middle;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+}
+
+.inline-block-list li {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.inline-block-list li:first-child {
+  margin-left: 0;
+}

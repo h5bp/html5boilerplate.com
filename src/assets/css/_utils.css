@@ -1,0 +1,16 @@
+.inline-block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-block-list li {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  vertical-align: top;
+}
+
+.inline-block-list li:first-child {
+  margin-left: 0;
+}
